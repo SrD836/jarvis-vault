@@ -1,0 +1,38 @@
+---
+title: "gsd-explore (external skill)"
+type: skill-mirror
+external: true
+category: general
+date: 2026-05-17T03:15:01+00:00
+source_path: ~/.claude/skills/gsd-explore
+source_file: SKILL.md
+related:
+  - "[[00-MOC]]"
+  - "[[skills/external/gsd-discuss-phase]]"
+  - "[[skills/external/gsd-plan-phase]]"
+  - "[[skills/external/gsd-research-phase]]"
+  - "[[skills/external/gsd-sketch]]"
+  - "[[skills/external/gsd-spike]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-17
+---
+
+
+# `gsd-explore` (external skill)
+
+**Categoría**: `general`  
+**Source**: `~/.claude/skills/gsd-explore/`  
+**Mirrored at**: 2026-05-17T03:15:01+00:00
+
+## Descripción
+
+Socratic ideation and idea routing — think through ideas before committing to plans
+
+## Cómo usar
+
+Skill local del usuario. Para invocarla: `/gsd-explore` desde Claude Code, o referenciar el path desde un agent runtime que sepa leerlo.
+
+## Human notes
+
+_(no se sobrescribe por automatización)_

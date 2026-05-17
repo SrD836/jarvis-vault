@@ -1,0 +1,44 @@
+========================================
+  JARVIS — Progress Tracker
+  Actualizado: 2026-05-14T13:50:00+01:00
+========================================
+
+## ÚLTIMA TAREA EJECUTADA
+- Tarea: Preparación local del Hermes Upgrade (Memoria + Refinamiento)
+- Iteración: (Fuera de loop, Tarea de Infraestructura)
+- Resultado: ✅ Scripts y estructuras locales creados
+- Timestamp: 2026-05-14T15:25:00+01:00
+
+## ERRORES ENCONTRADOS
+- [2026-05-14] session-export retorna 0 sesiones (Documentado localmente en 03-decisions/)
+- [2026-05-14] Skill-logs duplicados entre 05-13 y 05-14 (Documentado localmente en 03-decisions/)
+- [2026-05-14] memory-wiki: 0 concepts, 0 entities, 0 syntheses generados (Documentado localmente)
+
+## TAREAS PENDIENTES (próximas)
+1. [CRÍTICA] Reparar/Verificar session-export en VPS (F1.1)
+2. [CRÍTICA] Desplegar parche de deduplicación a curator.py en VPS (F1.5.2)
+3. [CRÍTICA] Desplegar pipeline de consolidación en VPS (F1.5.1)
+4. [CRÍTICA] Activar y validar memory-wiki bridge en VPS (F1.5.3)
+
+## ESTADO ACTUAL
+- Fase: 1 — Estabilización
+- Iteración Ralph Loop: 0
+- Skills activas: 2 (crear-skills, curator)
+- Cron jobs: 5 activos
+- Disco VPS: 60% (43/75 GB)
+- Vault: bootstrapped, MOC + seeds + templates OK
+- Memoria persistente: parcialmente funcional (memory-core OK, memory-wiki inactivo)
+- Delegación multi-agente: configurada pero no probada
+
+## CHECKPOINT
+- Snapshot: pre-deploy-hermes-upgrade
+- Fecha: 2026-05-14T15:25:00+01:00
+- Archivos creados: temporal-log.md, hermes-upgrade/consolidate.py, hermes-upgrade/curator_patch.py
+- Estado: Estable (Scripts en el vault listos para copiar al VPS)
+
+## HISTORIAL DE SESIONES
+| Fecha | Iteración | Tarea | Resultado |
+|---|---|---|---|
+| 2026-05-14 | 0 | Bootstrap Ralph Loop + Supersmooth | ✅ |
+| 2026-05-14 | 10 | 10 iteraciones (F0/F1.2 identidades + docs fallos VPS) | ✅ |
+| 2026-05-14 | Infra | Local preparation for Hermes Upgrade (Memory & Skills) | ✅ |

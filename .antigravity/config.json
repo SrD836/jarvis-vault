@@ -1,0 +1,104 @@
+{
+  "version": "1.0.0",
+  "project": "JARVIS Vault",
+  "created": "2026-05-14T13:50:00+01:00",
+  "updated": "2026-05-14T13:50:00+01:00",
+
+  "ralph_loop": {
+    "enabled": true,
+    "max_iterations_per_session": 10,
+    "checkpoint_interval": 1,
+    "auto_commit": false,
+    "commit_message_template": "[ralph-loop] iter-{iteration}: {task_description}",
+    "validation_after_each_iteration": true,
+    "auto_recovery": true,
+    "recovery_max_retries": 1,
+    "pause_on_consecutive_errors": 3,
+    "state_file": "../LOOP_STATE.json",
+    "tasks_file": "../TASKS.md",
+    "progress_file": "../progress.txt",
+    "workflow": [
+      "1. Leer LOOP_STATE.json",
+      "2. Identificar tarea activa de TASKS.md",
+      "3. Analizar tarea y planificar cambio mínimo",
+      "4. Ejecutar cambio",
+      "5. Validar resultado",
+      "6. Actualizar progress.txt",
+      "7. Actualizar LOOP_STATE.json",
+      "8. Actualizar TASKS.md",
+      "9. Guardar memoria en .antigravity/memory.md",
+      "10. Siguiente tarea o fin de iteración"
+    ]
+  },
+
+  "supersmooth": {
+    "enabled": true,
+    "context_stability": {
+      "enabled": true,
+      "reread_prd_interval": 3,
+      "reread_rules_interval": 5,
+      "max_context_drift_score": 0.3
+    },
+    "memory_persistence": {
+      "enabled": true,
+      "memory_file": "memory.md",
+      "auto_save_interval": 1,
+      "compress_after_iterations": 5
+    },
+    "error_recovery": {
+      "mode": "auto",
+      "max_auto_retries": 1,
+      "revert_on_stability_error": true,
+      "log_all_errors": true
+    },
+    "anti_loop_detection": {
+      "enabled": true,
+      "max_same_task_attempts": 3,
+      "similarity_threshold": 0.9,
+      "action_on_loop": "skip_and_report"
+    },
+    "continuity": {
+      "save_context_on_pause": true,
+      "resume_from_last_checkpoint": true,
+      "cross_session_memory": true
+    },
+    "drift_prevention": {
+      "enabled": true,
+      "alignment_check_interval": 3,
+      "sources": ["../PRD.md", "../TASKS.md", "../AGENT_RULES.md"],
+      "action_on_drift": "realign_and_report"
+    }
+  },
+
+  "protection": {
+    "protected_paths": [
+      "seeds/**",
+      "templates/**",
+      ".agent/Rules.md",
+      "00-MOC.md"
+    ],
+    "safe_write_zones": [
+      "01-briefs/",
+      "02-sessions/",
+      "03-decisions/",
+      "04-skills-log/",
+      "wiki/",
+      "projects/",
+      "agents/",
+      "skills/",
+      "memories/",
+      ".antigravity/"
+    ],
+    "snapshot_before_refactor": true,
+    "max_files_per_change": 5
+  },
+
+  "quality": {
+    "priorities": ["estabilidad", "precisión", "mantenibilidad", "claridad", "velocidad"],
+    "require_frontmatter": true,
+    "require_wikilinks": true,
+    "validate_yaml": true,
+    "language_content": "es",
+    "language_code": "en"
+  }
+}

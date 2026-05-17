@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\david\" -Force | Select-Object Name, Mode, LastWriteTime, @{Name=\"SizeMB\";Expression={if\\($_.PSIsContainer\\){\"DIR\"}else{[math]::Round\\($_.Length/1MB,2\\)}}} | Sort-Object Mode, Name | Format-Table -AutoSize)",
+      "PowerShell(Write-Output \"=== DESKTOP ===\"; Get-ChildItem -Path \"C:\\\\Users\\\\david\\\\Desktop\" -Force | Select-Object Name, Mode, LastWriteTime, @{Name=\"SizeMB\";Expression={if\\($_.PSIsContainer\\){\"DIR\"}else{[math]::Round\\($_.Length/1MB,2\\)}}} | Format-Table -AutoSize; Write-Output \"\"; Write-Output \"=== DOWNLOADS ===\"; Get-ChildItem -Path \"C:\\\\Users\\\\david\\\\Downloads\" -Force | Select-Object Name, Mode, LastWriteTime, @{Name=\"SizeMB\";Expression={if\\($_.PSIsContainer\\){\"DIR\"}else{[math]::Round\\($_.Length/1MB,2\\)}}} | Sort-Object LastWriteTime -Descending | Format-Table -AutoSize)",
+      "PowerShell(Write-Output \"=== DOCUMENTS ===\"; Get-ChildItem -Path \"C:\\\\Users\\\\david\\\\Documents\" -Force | Select-Object Name, Mode, LastWriteTime, @{Name=\"SizeMB\";Expression={if\\($_.PSIsContainer\\){\"DIR\"}else{[math]::Round\\($_.Length/1MB,2\\)}}} | Format-Table -AutoSize; Write-Output \"\"; Write-Output \"=== SCRIPTS ===\"; Get-ChildItem -Path \"C:\\\\Users\\\\david\\\\scripts\" -Force | Select-Object Name, Mode, LastWriteTime, @{Name=\"SizeMB\";Expression={if\\($_.PSIsContainer\\){\"DIR\"}else{[math]::Round\\($_.Length/1MB,2\\)}}} | Format-Table -AutoSize; Write-Output \"\"; Write-Output \"=== TEMP ===\"; Get-ChildItem -Path \"C:\\\\Users\\\\david\\\\temp\" -Force | Select-Object Name, Mode, LastWriteTime, @{Name=\"SizeMB\";Expression={if\\($_.PSIsContainer\\){\"DIR\"}else{[math]::Round\\($_.Length/1MB,2\\)}}} | Format-Table -AutoSize)",
+      "PowerShell(Write-Output \"=== eva ===\"; Get-ChildItem -Path \"C:\\\\Users\\\\david\\\\Desktop\\\\eva\" -Recurse -Force | Select-Object FullName, Mode, @{Name=\"SizeKB\";Expression={if\\($_.PSIsContainer\\){\"DIR\"}else{[math]::Round\\($_.Length/1KB,1\\)}}} | Format-Table -AutoSize; Write-Output \"\"; Write-Output \"=== Plan v6 content \\(first 30 lines\\) ===\"; Get-Content \"C:\\\\Users\\\\david\\\\Desktop\\\\Plan v6 — Evolución de JARVIS memor.txt\" -TotalCount 30; Write-Output \"\"; Write-Output \"=== token.txt ===\"; Get-Content \"C:\\\\Users\\\\david\\\\Desktop\\\\token.txt\")",
+      "PowerShell(Get-ChildItem *)",
+      "PowerShell(git *)",
+      "PowerShell(Test-Path *)",
+      "WebFetch(domain:github.com)",
+      "WebSearch",
+      "WebFetch(domain:raw.githubusercontent.com)"
+    ]
+  }
+}

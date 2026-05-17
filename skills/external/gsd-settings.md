@@ -1,0 +1,38 @@
+---
+title: "gsd-settings (external skill)"
+type: skill-mirror
+external: true
+category: general
+date: 2026-05-17T03:15:01+00:00
+source_path: ~/.claude/skills/gsd-settings
+source_file: SKILL.md
+related:
+  - "[[00-MOC]]"
+  - "[[skills/external/gsd-health]]"
+  - "[[skills/external/gsd-manager]]"
+  - "[[skills/external/gsd-set-profile]]"
+  - "[[skills/external/gsd-settings-advanced]]"
+  - "[[skills/external/gsd-settings-integrations]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-17
+---
+
+
+# `gsd-settings` (external skill)
+
+**Categoría**: `general`  
+**Source**: `~/.claude/skills/gsd-settings/`  
+**Mirrored at**: 2026-05-17T03:15:01+00:00
+
+## Descripción
+
+Configure GSD workflow toggles and model profile
+
+## Cómo usar
+
+Skill local del usuario. Para invocarla: `/gsd-settings` desde Claude Code, o referenciar el path desde un agent runtime que sepa leerlo.
+
+## Human notes
+
+_(no se sobrescribe por automatización)_

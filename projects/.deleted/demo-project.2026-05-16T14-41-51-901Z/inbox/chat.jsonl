@@ -1,0 +1,2 @@
+{"id":"u-1778942510402-ubu0a5","ts":"2026-05-16T14:41:50.402Z","from":"dashboard-user","role":"user","text":"Mensaje al proyecto demo","project":"demo-project"}
+{"id":"a-1778942510406-f0dwp4","ts":"2026-05-16T14:41:50.406Z","from":"system","role":"assistant","text":"✓ Mensaje encolado en proyecto «demo-project» (vault/projects/demo-project/inbox/). JARVIS procesará usando las instrucciones y archivos del proyecto.","pending":true,"project":"demo-project"}

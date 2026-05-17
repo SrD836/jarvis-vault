@@ -1,0 +1,3 @@
+# JARVIS overnight-code: una ruta absoluta por línea (vista desde dentro del container del gateway).
+# Líneas que empiezan con # se ignoran.
+/home/node/.openclaw/workspace/test-repo-jarvis
