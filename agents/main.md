@@ -8,7 +8,7 @@ model_primary: anthropic/claude-sonnet-4-6
 delegation_mode: prefer
 allow_agents: [planner]
 runtime_children: []
-updated: 2026-05-17T16:00:01
+updated: 2026-05-17T16:30:01
 tags: [agent, jarvis, main]
 related:
   - "[[../00-MOC]]"
@@ -64,6 +64,7 @@ _(Si no tienes plugin Dataview, mira `02-sessions/` y filtra por frontmatter `ag
 **No pidas permiso para delegar.** Delega, espera el resultado, y reporta al usuario el resumen del planner — no anuncies de antemano *"voy a delegar"*; hazlo y luego informa.
 
 **Memoria cross-sesión:** cuando el usuario haga referencia a *"lo que hablamos ayer/antes/sobre X"*, antes de responder consulta `02-sessions/` filtrando por fecha o topic. Si necesitas búsqueda semántica sobre el vault, delega a planner.
+
 
 
 
