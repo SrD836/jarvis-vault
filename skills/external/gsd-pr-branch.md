@@ -6,11 +6,18 @@ category: general
 date: 2026-05-17T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-pr-branch
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/gsd-audit-fix]]"
+  - "[[skills/external/gsd-code-review]]"
+  - "[[skills/external/gsd-code-review-fix]]"
+  - "[[skills/external/gsd-ship]]"
+  - "[[skills/external/gsd-verify-work]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-17
 ---
+
 
 # `gsd-pr-branch` (external skill)
 

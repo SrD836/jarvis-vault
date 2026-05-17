@@ -6,11 +6,18 @@ category: general
 date: 2026-05-17T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-manager
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/external/gsd-executor]]"
+  - "[[skills/external/gsd-execute-phase]]"
+  - "[[skills/external/gsd-plan-phase]]"
+  - "[[skills/external/gsd-stats]]"
+  - "[[skills/external/gsd-workstreams]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-17
 ---
+
 
 # `gsd-manager` (external skill)
 

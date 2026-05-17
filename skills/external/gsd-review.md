@@ -6,11 +6,18 @@ category: general
 date: 2026-05-17T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-review
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/skill-reviewer]]"
+  - "[[skills/external/gsd-eval-review]]"
+  - "[[skills/external/gsd-plan-review-convergence]]"
+  - "[[skills/external/gsd-review-backlog]]"
+  - "[[skills/external/gsd-validate-phase]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-17
 ---
+
 
 # `gsd-review` (external skill)
 

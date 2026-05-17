@@ -1,11 +1,17 @@
 ---
 title: "Research queue"
 type: queue
-tags: [research, queue]
 related:
-  - "[[agents/researcher]]"
   - "[[00-MOC]]"
+  - "[[01-briefs/2026-05-17]]"
+  - "[[agents/researcher]]"
+  - "[[projects/guia-fases-pendientes]]"
+  - "[[skills/external/gsd-research-phase]]"
+  - "[[wiki/reports/open-questions]]"
+tags: [research, queue]
+# auto-linked 2026-05-17
 ---
+
 
 # 🔬 Research queue
 

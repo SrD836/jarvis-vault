@@ -6,11 +6,18 @@ category: general
 date: 2026-05-17T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-plan-review-convergence
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/planner]]"
+  - "[[skills/external/gsd-eval-review]]"
+  - "[[skills/external/gsd-plan-phase]]"
+  - "[[skills/external/gsd-review]]"
+  - "[[skills/external/gsd-validate-phase]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-17
 ---
+
 
 # `gsd-plan-review-convergence` (external skill)
 

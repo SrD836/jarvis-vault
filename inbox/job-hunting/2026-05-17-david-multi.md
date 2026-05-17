@@ -5,11 +5,17 @@ type: job-hunting-report
 profile: David González Nuez, 21 años, Gran Canaria
 model: claude-sonnet-4-6
 buckets: [ai-annotation, freelance, contrato-remoto-junior, b2b-canarias]
-tags: [empleo, remoto, ai-annotation, freelance, IT-support, b2b]
 related:
-  - "[[USER]]"
   - "[[00-MOC]]"
+  - "[[USER]]"
+  - "[[agents/job-hunter]]"
+  - "[[inbox/job-hunting/2026-05-16-ai-engineer-cross-source]]"
+  - "[[inbox/job-hunting/2026-05-16-madrid-ai]]"
+  - "[[projects/job-hunt/2026-05-16-search]]"
+tags: [empleo, remoto, ai-annotation, freelance, IT-support, b2b]
+# auto-linked 2026-05-17
 ---
+
 
 # Búsqueda Multi-Bucket — 2026-05-17
 
