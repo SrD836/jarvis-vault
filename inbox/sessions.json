@@ -7,7 +7,7 @@
         "chat_id": 1478080070,
         "title": "test",
         "started_at": "2026-05-17T11:29:26.338Z",
-        "ended_at": "2026-05-17T12:57:14.166Z",
+        "ended_at": "2026-05-17T19:20:22.607Z",
         "message_count": 0,
         "vault_path": "/vault/02-sessions/2026-05-17/112926-test.md"
       },
@@ -16,7 +16,7 @@
         "chat_id": 1478080070,
         "title": "feature-y",
         "started_at": "2026-05-17T11:49:26.567Z",
-        "ended_at": "2026-05-17T12:56:53.070Z",
+        "ended_at": "2026-05-17T19:20:19.516Z",
         "message_count": 0,
         "vault_path": "/vault/02-sessions/2026-05-17/114926-feature-y.md"
       },

@@ -1,0 +1,24 @@
+Tarea ESTRICTAMENTE de formato y entrega — NO investigación nueva, NO web fetch, NO subagentes.
+
+CONTEXTO: Ya existe un informe en /home/agent/agent-stack/vault/inbox/job-hunting/2026-05-17-david-multi.md con 15 ofertas + 3 leads B2B + cursos. David ya recibió un resumen ejecutivo por Telegram ANTERIOR, pero las 15 ofertas detalladas se enviaron por API directa (sendMessage) y NO quedaron registradas en sesión ni en vault. Hay que re-enviarlas pasando por el runtime agente para que sí se persistan.
+
+QUÉ DEBES HACER:
+
+1. Lee /home/agent/agent-stack/vault/inbox/job-hunting/2026-05-17-david-multi.md completo.
+
+2. Reformátealo en 3 mensajes Telegram HTML de ≤3800 caracteres cada uno (margen para HTML escape). Cada mensaje DEBE entrar dentro del límite de 4096 chars de Telegram — cuenta caracteres antes de enviar.
+
+3. Estructura propuesta:
+   - MSG A: encabezado + tabla resumen 15 ofertas (lista compacta empresa/puesto/bucket/fit/link)
+   - MSG B: Top 3 enriched (DataAnnotation, Crisp, Careerswift) con gaps y hints concretos
+   - MSG C: Bucket 4 leads B2B (Lopesan, Binter, Gestorías) + cursos prioritarios + plataformas bloqueadas + path archivo
+
+4. Formato HTML válido para Telegram: <b>bold</b>, <i>italic</i>, <code>monoespaciada</code>, <a href="URL">texto</a>. Escape obligatorio: < → &lt;, > → &gt;, & → &amp;. NO uses tablas markdown (Telegram no las renderiza), usa listas con bullets/saltos.
+
+5. Envíalos POR TI MISMO a David usando los tools de mensajería que tengas disponibles (telegram messaging tool del gateway, no API directa). El propósito es que QUEDEN REGISTRADOS en la sesión y el chat del dashboard, no solo entregados a Telegram.
+
+6. Tras enviar los 3 chunks, responde SOLO con: "✅ 3 chunks enviados — verificar en dashboard sesión actual y en Telegram."
+
+Modelo: anthropic/claude-sonnet-4-6. Thinking: medium. Sin delegación a subagentes.
+
+Si tu tool de telegram solo permite UN mensaje por turn, envía solo el MSG A y termina el turn con instrucción al usuario de pedirte el siguiente — pero intenta los 3 si tu tool lo soporta.
