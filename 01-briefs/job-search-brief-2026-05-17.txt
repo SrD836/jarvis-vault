@@ -1,0 +1,35 @@
+Tarea: búsqueda de empleo multi-bucket. Delega a planner → job-hunter (no resuelvas tú directamente).
+
+Perfil: lee /home/agent/agent-stack/vault/USER.md (acabo de actualizarlo, 2026-05-17). Resumen rápido — estudiante 21 años, CFGS Admin y Finanzas en curso + 2 años Economía ULPGC, inglés alto, certs Google IT Support Professional (May 2025) + Microsoft Azure AI-900 Specialization (Oct 2025). Sin experiencia técnica formal pero tengo stack de certs IT/AI 2025. Uso JARVIS como copiloto IA para tareas complejas, así que NO descartes ofertas por exigir habilidades que pueda compensar con asistencia IA.
+
+Requisitos NO negociables:
+- 100% remoto
+- Sin horario fijo (pago preferente por tarea / proyecto / async)
+- Geo: España (Canarias incluido) + UE + global remote
+- Abierto a hacer cursos previos si la oferta lo justifica
+
+Buckets a cubrir (los 4, distribuir las 10-15 ofertas entre ellos):
+
+1) AI training / annotation / RLHF — Outlier AI, Mercor, Scale AI / Outlier, Invisible Technologies, Toloka, Surge AI, Remotasks, Labelbox, DataAnnotation.tech. Encaje natural por bilingual ES/EN + IA certs, paga USD por tarea, onboarding 1-2 semanas.
+
+2) Freelance bolsa abierta — Upwork, Malt, Workana, Fiverr Pro. Roles: Excel automation, prompt engineering, asistente virtual técnico, traducción técnica EN↔ES, soporte IT remoto puntual, configuración Azure básico.
+
+3) Contrato remoto formal junior — IT Support tier 1/2 ES+EN, customer success técnico, junior cloud support Azure, AI ops junior, soporte chatbot. Plataformas: Indeed (Indeed MCP primero), LinkedIn (Google search site:linkedin.com/jobs si bloquea), RemoteOK, We Work Remotely, InfoJobs, Tecnoempleo, JustRemote, Working Nomads.
+
+4) Oportunidad B2B — empresas españolas (especial Canarias) y PYMEs UE que necesiten automatización con IA / chatbots empresariales / agentes a medida. Buscar 2-3 leads CONCRETOS (no genéricos): nombre empresa, sector, dolor identificado, link de contacto. JARVIS resuelve estos casos.
+
+Output esperado en vault/inbox/job-hunting/2026-05-17-david-multi.md (créalo, no existe):
+- 10-15 ofertas top-fit distribuidas entre los 4 buckets
+- Por oferta: empresa, puesto, link aplicación directo, salario si visible, fit score 1-10, gaps de perfil concretos (qué pediría que David no tiene), curso/skill recomendado si conviene cursarlo antes (con duración estimada), fecha publicación
+- Tabla resumen al inicio ordenada por fit score descendente
+- Lista al final de 3-5 cursos cortos (Coursera, edX, Microsoft Learn, Cloud Skills Boost) ≤2 semanas que subirían el fit en >2 puntos
+
+Restricciones operativas:
+- NO aplicar a ninguna oferta automáticamente. Solo investigar y reportar.
+- Para las 3 top-fit, delega a researcher para enriquecer info de la empresa (tamaño, glassdoor, reviews, stack tech, contacto directo si público).
+- Si Indeed MCP falla, fallback inmediato a WebFetch sobre listings públicos.
+- Si una plataforma bloquea (LinkedIn login wall), usa Google search "site:linkedin.com/jobs ..." para snippets cacheados.
+
+Cuando termines, mándame mensaje Telegram con resumen ejecutivo (3-5 líneas) + path absoluto al .md completo en el vault.
+
+Modelo: usa anthropic/claude-sonnet-4-6 (no fallback a ollama/qwen — la calidad importa aquí).
