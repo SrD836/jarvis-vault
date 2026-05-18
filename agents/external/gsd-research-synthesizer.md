@@ -4,11 +4,18 @@ type: agent-mirror
 external: true
 date: 2026-05-18T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-research-synthesizer.md
-tags: [agent, external, mirror]
 related:
-  - "[[agents/external/index]]"
   - "[[00-MOC]]"
+  - "[[agents/external/gsd-doc-synthesizer]]"
+  - "[[agents/external/gsd-domain-researcher]]"
+  - "[[agents/external/index]]"
+  - "[[agents/researcher]]"
+  - "[[skills/external/gsd-new-project]]"
+  - "[[skills/external/gsd-research-phase]]"
+tags: [agent, external, mirror]
+# auto-linked 2026-05-18
 ---
+
 
 # `gsd-research-synthesizer` (external Claude Code agent)
 
