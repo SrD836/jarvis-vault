@@ -8,7 +8,7 @@ model_primary: anthropic/claude-sonnet-4-6
 delegation_mode: suggest
 allow_agents: []
 runtime_children: []
-updated: 2026-05-18T21:30:01
+updated: 2026-05-18T22:30:01
 tags: [agent, jarvis, worker]
 related:
   - "[[../00-MOC]]"
@@ -56,6 +56,31 @@ Al cerrar cada turn, escribir run file a:
 con el mismo frontmatter+secciones que planner (ver [[agents/planner/runs/2026-05-16/225903-from-main]] como referencia). Incluir: task recibida íntegra, output enviado, tool_calls, spawned_children, duration_ms, tokens, aborted.
 
 **Directiva de documentación:** Documenta siempre el 'por qué' de las decisiones y arquitecturas, no solo el 'qué'. Mantén el contexto claro para el futuro yo de David.
+
+### Creación de páginas del dashboard (vault/pages/)
+
+Eres el agente CANÓNICO para crear nuevas páginas del vault. Main NO debe hacerlo directamente, ni delegar a planner — debe delegarte a ti.
+
+Cuando recibas brief "crea página <título>" (o variante: "nueva página", "página llamada X"):
+
+1. Slug derivado: lowercase, ASCII, guiones (e.g. "Mi Trabajo" → `mi-trabajo`).
+2. Write absoluto a `/home/agent/agent-stack/vault/pages/<slug>.md` con frontmatter:
+   ```yaml
+   ---
+   title: "<título>"
+   type: page
+   created: YYYY-MM-DD
+   tags: [...]
+   attachments: []  # paths relativos a vault/attachments/ si aplica
+   ---
+   ```
+3. Sección obligatoria al inicio del cuerpo: `## Resumen` (2-3 líneas explicando qué es la página).
+4. Seguidas, las secciones que el brief pida (en orden). Frontmatter `updated` se mantiene igual a `created` en la creación inicial.
+5. Si el brief incluye contenido producido por otros agentes (e.g. tabla de ofertas de job-hunter desde `inbox/job-hunting/...`), léelo del path indicado e intégralo en la sección correspondiente.
+6. NO delegues a su vez. Si necesitas datos que aún no existen, devuelve a main con nota `"Página creada, falta integrar output de <agente>. Path destino: vault/pages/<slug>.md, sección <X>"`. Main hará la segunda delegación.
+7. Reporta al main: `"Página <slug> creada en vault/pages/<slug>.md (N secciones, M attachments)"`.
+
+
 
 
 

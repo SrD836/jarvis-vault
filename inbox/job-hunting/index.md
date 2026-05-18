@@ -8,6 +8,8 @@ Tracking de búsquedas realizadas, ofertas presentadas, estado de aplicación.
 |---|---|---|---|---|---|---|
 | 2026-05-16 | AI Engineer + Backend + Remote DevOps Madrid | indeed-mcp | 30 | 5 | presented | [2026-05-16-madrid-ai.md](2026-05-16-madrid-ai.md) |
 | 2026-05-16 | AI Engineer Madrid (cross-source) | indeed-web+linkedin+tecnoempleo | 30 | 8 | presented | [2026-05-16-ai-engineer-cross-source.md](2026-05-16-ai-engineer-cross-source.md) |
+| 2026-05-17 | Multi-bucket David (IT support, AI training, VA) | multi-source | — | — | presented | [2026-05-17-david-multi.md](2026-05-17-david-multi.md) |
+| 2026-05-18 | LinkedIn multi-bucket (IT support, AI training, CS, VA) | linkedin-only | 10 | 10 | presented | [2026-05-18-trabajo-page-linkedin.md](2026-05-18-trabajo-page-linkedin.md) |
 
 ## Empresas contactadas / aplicadas
 

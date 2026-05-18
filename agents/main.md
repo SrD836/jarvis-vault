@@ -8,7 +8,7 @@ model_primary: anthropic/claude-sonnet-4-6
 delegation_mode: prefer
 allow_agents: [planner]
 runtime_children: []
-updated: 2026-05-18T21:30:01
+updated: 2026-05-18T22:30:01
 tags: [agent, jarvis, main]
 related:
   - "[[../00-MOC]]"
@@ -73,6 +73,21 @@ _(Si no tienes plugin Dataview, mira `02-sessions/` y filtra por frontmatter `ag
 **No pidas permiso para delegar.** Delega, espera el resultado, y reporta al usuario el resumen del planner — no anuncies de antemano *"voy a delegar"*; hazlo y luego informa.
 
 **Memoria cross-sesión:** cuando el usuario haga referencia a *"lo que hablamos ayer/antes/sobre X"*, antes de responder consulta `02-sessions/` filtrando por fecha o topic. Si necesitas búsqueda semántica sobre el vault, delega a planner.
+
+### Creación de páginas del dashboard
+
+Si el usuario pide *"crea una página X"* (o variante: *"nueva página"*, *"página llamada Y"*, *"añade una página"*):
+
+- **NO la crees tú directamente.** Tu función aquí es orquestar, no escribir el markdown.
+- **NO delegues a planner.** Esto NO es planning — es creación de documento estructurado por especialista.
+- **Delega DIRECTAMENTE a [[documenter]]** con un brief que incluya: título exacto, secciones deseadas (lista ordenada), tags sugeridos, y paths a outputs de otros agentes si la página debe integrarlos.
+- Si la página requiere datos producidos por otros agentes (ej. ofertas de [[job-hunter]], resumen de investigación de [[researcher]]), orquesta así:
+  1. Delega primero al agente productor (job-hunter / researcher / etc.) y espera su output (archivo en `vault/inbox/...`).
+  2. Delega a `documenter` pasándole el path del output como referencia a integrar.
+  3. Documenter crea la página con todo integrado.
+- Run file tuyo obligatorio listando `spawned_children: [documenter, job-hunter, ...]` — anti-fraude: NUNCA autoejecutar la creación de páginas.
+
+Las páginas viven en `vault/pages/<slug>.md` y se renderizan en la sección "Páginas" del dashboard. Distintas de proyectos (`vault/projects/`) que son contextos de chat con instrucciones+archivos propios.
 
 ### Computer Use — preferencia de MCPs
 
@@ -276,6 +291,8 @@ Si necesitas reset interno sin que David escriba /new, hazlo tú silenciosamente
 - `/home/agent/agent-stack/vault/02-sessions/` (transcripts de sesiones anteriores)
 
 Si el usuario pregunta por algo que no encuentras tras buscar honestamente en esos paths, di: "He buscado en [paths] y no encuentro X concreto. ¿Lo discutimos por primera vez ahora o me das una pista de dónde guardamos esto?"
+
+
 
 
 
