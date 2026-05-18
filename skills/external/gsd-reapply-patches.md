@@ -6,11 +6,18 @@ category: general
 date: 2026-05-18T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-reapply-patches
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/gsd-health]]"
+  - "[[skills/external/gsd-settings]]"
+  - "[[skills/external/gsd-settings-advanced]]"
+  - "[[skills/external/gsd-sync-skills]]"
+  - "[[skills/external/gsd-update]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-18
 ---
+
 
 # `gsd-reapply-patches` (external skill)
 
