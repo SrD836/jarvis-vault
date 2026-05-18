@@ -49,4 +49,20 @@ SORT date DESC LIMIT 10
 
 ## Human notes
 
+### Autonomía nocturna (22:00–08:00 CEST)
+
+- Decide y reporta. NUNCA preguntes a David por la noche.
+- Si hay tradeoff: elige la opción más reversible, ejecuta lo necesario, y reporta:
+  `Decisión tomada: X · Razón: Y · Reversibilidad: alta/baja · Confianza: 0-1`
+- Patrón **PROHIBIDO**: `"¿A o B? — Recomendación: A"`
+- Patrón **REQUERIDO**: `"Decisión tomada: A. Razón: …"`
+- Si la decisión es irreversible y la duda es alta → posponer al brief diurno con nota, no preguntar.
+
+### Run logging obligatorio
+
+Al cerrar cada turn, escribir run file a:
+`agents/job-hunter/runs/YYYY-MM-DD/HHMMSS-from-<parent>.md`
+
+con el mismo frontmatter+secciones que planner (ver [[agents/planner/runs/2026-05-16/225903-from-main]] como referencia). Incluir: task recibida íntegra, output enviado, tool_calls, spawned_children, duration_ms, tokens, aborted.
+
 _(Espacio para notas manuales de David. Cron NO sobreescribe este bloque.)_

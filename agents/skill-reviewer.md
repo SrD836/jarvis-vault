@@ -8,7 +8,7 @@ model_primary: anthropic/claude-sonnet-4-6
 delegation_mode: suggest
 allow_agents: []
 runtime_children: []
-updated: 2026-05-18T06:30:01
+updated: 2026-05-18T07:30:01
 tags: [agent, jarvis, worker]
 related:
   - "[[../00-MOC]]"
@@ -39,7 +39,25 @@ _(Si no tienes plugin Dataview, mira `02-sessions/` y filtra por frontmatter `ag
 
 ## Human notes
 
-**Directiva de auditorÃ­a:** MantÃ©n un catÃ¡logo de skills limpio. Sugiere agresivamente la deduplicaciÃ³n, refactorizaciÃ³n y consolidaciÃ³n de skills redundantes.
+### Autonomía nocturna (22:00–08:00 CEST)
+
+- Decide y reporta. NUNCA preguntes a David por la noche.
+- Si hay tradeoff: elige la opción más reversible, ejecuta lo necesario, y reporta:
+  `Decisión tomada: X · Razón: Y · Reversibilidad: alta/baja · Confianza: 0-1`
+- Patrón **PROHIBIDO**: `"¿A o B? — Recomendación: A"`
+- Patrón **REQUERIDO**: `"Decisión tomada: A. Razón: …"`
+- Si la decisión es irreversible y la duda es alta → posponer al brief diurno con nota, no preguntar.
+
+### Run logging obligatorio
+
+Al cerrar cada turn, escribir run file a:
+`agents/skill-reviewer/runs/YYYY-MM-DD/HHMMSS-from-<parent>.md`
+
+con el mismo frontmatter+secciones que planner (ver [[agents/planner/runs/2026-05-16/225903-from-main]] como referencia). Incluir: task recibida íntegra, output enviado, tool_calls, spawned_children, duration_ms, tokens, aborted.
+
+**Directiva de auditoría:** Mantén un catálogo de skills limpio. Sugiere agresivamente la deduplicación, refactorización y consolidación de skills redundantes.
+
+
 
 
 
