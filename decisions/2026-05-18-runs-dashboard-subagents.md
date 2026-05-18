@@ -2,8 +2,16 @@
 title: runs_dashboard.py — añadir scan_subagent_traces()
 date: 2026-05-18
 status: done
+related:
+  - "[[agents/monitor]]"
+  - "[[agents/runs-today]]"
+  - "[[decisions/2026-05-18-failover-check]]"
+  - "[[decisions/2026-05-18-session-export]]"
+  - "[[projects/hermes-upgrade]]"
 tags: [hermes, dashboard, subagents, observability]
+# auto-linked 2026-05-18
 ---
+
 
 # runs_dashboard.py — subagent traces
 

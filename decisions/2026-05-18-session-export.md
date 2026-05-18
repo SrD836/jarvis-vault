@@ -4,11 +4,18 @@ type: decision
 date: 2026-05-18
 decision: Root cause identificado. Fix propuesto sin restart de gateway.
 outcome: pending
-tags: [decision, bug, sessions, cron, telegram, gateway]
 related:
-  - "[[../03-decisions/2026-05-14-session-export-analysis]]"
   - "[[../02-sessions/index]]"
+  - "[[../03-decisions/2026-05-14-session-export-analysis]]"
+  - "[[02-sessions/2026-05-16/234354-resumen-el-cron-session-export-sigue-activo-o-lo]]"
+  - "[[02-sessions/index]]"
+  - "[[03-decisions/2026-05-14-session-export-analysis]]"
+  - "[[03-decisions/2026-05-17-telegram-bot-typescript-findings]]"
+  - "[[agents/monitor]]"
+tags: [decision, bug, sessions, cron, telegram, gateway]
+# auto-linked 2026-05-18
 ---
+
 
 ## Síntoma reportado
 

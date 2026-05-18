@@ -6,11 +6,18 @@ category: general
 date: 2026-05-18T03:15:01+00:00
 source_path: ~/.claude/skills/voltagent-core-reference
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/archivist]]"
+  - "[[agents/external/gsd-codebase-mapper]]"
+  - "[[skills/external/gsd-map-codebase]]"
+  - "[[skills/external/llm-council]]"
+  - "[[skills/external/voltagent-best-practices]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-18
 ---
+
 
 # `voltagent-core-reference` (external skill)
 

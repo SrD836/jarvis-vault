@@ -2,8 +2,16 @@
 title: Config edits openclaw.json — crons + ollama fallback
 date: 2026-05-18
 status: proposed
+related:
+  - "[[03-decisions/2026-05-13-budget-guardian]]"
+  - "[[03-decisions/2026-05-14-session-export-analysis]]"
+  - "[[agents/archivist]]"
+  - "[[decisions/2026-05-18-failover-check]]"
+  - "[[decisions/2026-05-18-session-export]]"
 tags: [config, crons, ollama, fallback]
+# auto-linked 2026-05-18
 ---
+
 
 # Config edits 2026-05-18
 

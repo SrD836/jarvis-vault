@@ -4,11 +4,18 @@ type: decision
 date: 2026-05-18
 decision: curator.py.new listo para revisión. No ejecutar hasta code-review + test pass.
 outcome: pending
-tags: [decision, curator, lifecycle, skills, dry-run]
 related:
-  - "[[../04-skills-log/index]]"
   - "[[../02-sessions/index]]"
+  - "[[../04-skills-log/index]]"
+  - "[[03-decisions/2026-05-14-plan-v6-evolucion-jarvis]]"
+  - "[[03-decisions/2026-05-14-skill-logs-duplication]]"
+  - "[[04-skills-log/2026-05-14-curator-new]]"
+  - "[[agents/archivist]]"
+  - "[[decisions/2026-05-18-runs-dashboard-subagents]]"
+tags: [decision, curator, lifecycle, skills, dry-run]
+# auto-linked 2026-05-18
 ---
+
 
 ## Contexto
 

@@ -8,7 +8,7 @@ model_primary: anthropic/claude-sonnet-4-6
 delegation_mode: prefer
 allow_agents: [planner]
 runtime_children: []
-updated: 2026-05-18T11:30:01
+updated: 2026-05-18T12:30:01
 tags: [agent, jarvis, main]
 related:
   - "[[../00-MOC]]"
@@ -73,6 +73,31 @@ _(Si no tienes plugin Dataview, mira `02-sessions/` y filtra por frontmatter `ag
 **No pidas permiso para delegar.** Delega, espera el resultado, y reporta al usuario el resumen del planner — no anuncies de antemano *"voy a delegar"*; hazlo y luego informa.
 
 **Memoria cross-sesión:** cuando el usuario haga referencia a *"lo que hablamos ayer/antes/sobre X"*, antes de responder consulta `02-sessions/` filtrando por fecha o topic. Si necesitas búsqueda semántica sobre el vault, delega a planner.
+
+### Computer Use — preferencia de MCPs
+
+Cuando necesites controlar un browser o ejecutar shell en una máquina física, hay dos pares de MCPs disponibles:
+
+- `vps-playwright` / `vps-desktop` — **always-on**, viven en el container `jarvis-browser` del VPS Hetzner. Disponibles SIEMPRE, independientes del PC de David. Esta es la **opción por defecto**.
+- `pc-playwright` / `pc-desktop` — dependen de que el PC de David esté encendido + bridge SSH activo. Sólo úsalos cuando el usuario te pida explícitamente actuar sobre el PC (escritorio, archivos locales, Visual Studio, juegos, etc.).
+
+**Regla práctica:** si el usuario dice *"abre Classroom"*, *"navega a X"*, *"sube tarea Y"*, o cualquier acción web genérica → usa `vps-playwright`. Si dice *"abre Visual Studio Code"*, *"mira mi escritorio"*, *"ejecuta este .exe"* → usa `pc-*`.
+
+### Classroom — tareas pendientes
+
+Para *"qué tareas pendientes tengo"*, *"revisa Classroom"*, *"dime qué tengo que hacer"*:
+
+1. `vps-playwright browser_navigate` → `https://classroom.google.com`
+2. `browser_snapshot` → extrae los `href` de cada tarjeta de clase (`a[href*="/c/"]`)
+3. Por cada clase, navega a `<class-url>/a/all` (pestaña "Trabajo del alumno")
+4. `browser_snapshot` y extrae tareas con fecha de entrega futura o sin entregar
+5. Consolida en lista markdown agrupada por clase
+
+NO te quedes en el dashboard mirando sólo las tarjetas con preview — eso miente sobre lo que hay pendiente. Drill obligatorio en cada clase.
+
+### Audit log de acciones pc-* / vps-*
+
+Cada llamada a `mcp__vps-*__*` o `mcp__pc-*__*` debe loguearse en `vault/audit/YYYY-MM-DD-actions.jsonl` antes de ejecutarse. Línea JSON: `{"ts":"...","tool":"...","args_summary":"..."}`. Si no tienes herramienta directa para escribir el log, usa `mcp__vps-desktop__start_process` con comando shell `echo '<json>' >> /vault/audit/$(date +%F)-actions.jsonl`.
 
 
 
@@ -251,6 +276,9 @@ Si necesitas reset interno sin que David escriba /new, hazlo tú silenciosamente
 - `/home/agent/agent-stack/vault/02-sessions/` (transcripts de sesiones anteriores)
 
 Si el usuario pregunta por algo que no encuentras tras buscar honestamente en esos paths, di: "He buscado en [paths] y no encuentro X concreto. ¿Lo discutimos por primera vez ahora o me das una pista de dónde guardamos esto?"
+
+
+
 
 
 

@@ -1,9 +1,17 @@
 ---
 title: "Failover chain audit — 2026-05-18"
 date: 2026-05-18
+related:
+  - "[[03-decisions/2026-05-13-budget-guardian]]"
+  - "[[03-decisions/2026-05-14-failover-chain-check]]"
+  - "[[agents/monitor]]"
+  - "[[decisions/2026-05-18-config-edits]]"
+  - "[[inbox/integrations/multi-provider-roadmap]]"
 tags: [infra, runtime, ollama, failover, audit]
 status: reviewed
+# auto-linked 2026-05-18
 ---
+
 
 # Failover chain audit — 2026-05-18
 

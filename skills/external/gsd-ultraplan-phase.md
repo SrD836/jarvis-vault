@@ -6,11 +6,18 @@ category: general
 date: 2026-05-18T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-ultraplan-phase
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/external/gsd-planner]]"
+  - "[[skills/external/gsd-execute-phase]]"
+  - "[[skills/external/gsd-import]]"
+  - "[[skills/external/gsd-plan-phase]]"
+  - "[[skills/external/gsd-plan-review-convergence]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-18
 ---
+
 
 # `gsd-ultraplan-phase` (external skill)
 
