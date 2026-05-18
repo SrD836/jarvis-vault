@@ -3,15 +3,6 @@
     "active_id": "sess-20260517-29e187",
     "sessions": [
       {
-        "id": "sess-20260517-b9cb23",
-        "chat_id": 1478080070,
-        "title": "test",
-        "started_at": "2026-05-17T11:29:26.338Z",
-        "ended_at": "2026-05-17T19:20:22.607Z",
-        "message_count": 0,
-        "vault_path": "/vault/02-sessions/2026-05-17/112926-test.md"
-      },
-      {
         "id": "sess-20260517-bba0ce",
         "chat_id": 1478080070,
         "title": "feature-y",
