@@ -3,27 +3,20 @@ title: "claude-mem (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-17T03:15:01+00:00
+date: 2026-05-18T03:15:01+00:00
 source_path: ~/.claude/skills/claude-mem
 source_file: README.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/external/index]]"
-  - "[[skills/external/gsd-intel]]"
-  - "[[skills/external/gsd-session-report]]"
-  - "[[skills/external/gsd-settings]]"
-  - "[[skills/external/gsd-sync-skills]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-17
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `claude-mem` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/claude-mem/`  
-**Mirrored at**: 2026-05-17T03:15:01+00:00
+**Mirrored at**: 2026-05-18T03:15:01+00:00
 
 ## Descripción
 

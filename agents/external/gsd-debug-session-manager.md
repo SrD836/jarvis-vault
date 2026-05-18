@@ -2,25 +2,18 @@
 title: "gsd-debug-session-manager (external agent)"
 type: agent-mirror
 external: true
-date: 2026-05-17T03:15:01+00:00
+date: 2026-05-18T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-debug-session-manager.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/debugger]]"
-  - "[[agents/external/gsd-code-fixer]]"
-  - "[[agents/external/gsd-code-reviewer]]"
-  - "[[agents/external/gsd-debugger]]"
-  - "[[agents/external/index]]"
-  - "[[skills/external/gsd-debug]]"
 tags: [agent, external, mirror]
-# auto-linked 2026-05-17
+related:
+  - "[[agents/external/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `gsd-debug-session-manager` (external Claude Code agent)
 
 **Source**: `~/.claude/agents/gsd-debug-session-manager.md`  
-**Mirrored at**: 2026-05-17T03:15:01+00:00
+**Mirrored at**: 2026-05-18T03:15:01+00:00
 
 ## Descripción
 

@@ -3,27 +3,20 @@ title: "voltagent-core-reference (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-17T03:15:01+00:00
+date: 2026-05-18T03:15:01+00:00
 source_path: ~/.claude/skills/voltagent-core-reference
 source_file: SKILL.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/external/index]]"
-  - "[[skills/external/claude-mem]]"
-  - "[[skills/external/gstack]]"
-  - "[[skills/external/superpowers]]"
-  - "[[skills/external/voltagent-best-practices]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-17
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `voltagent-core-reference` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/voltagent-core-reference/`  
-**Mirrored at**: 2026-05-17T03:15:01+00:00
+**Mirrored at**: 2026-05-18T03:15:01+00:00
 
 ## Descripción
 
