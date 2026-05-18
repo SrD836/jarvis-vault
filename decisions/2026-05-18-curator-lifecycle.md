@@ -114,3 +114,32 @@ python3 ~/.openclaw/scripts/curator.py --update-activity "$SKILL_PATH"
 cp /home/node/.openclaw/scripts/curator.py.bak-pre-lifecycle-1779095848 \
    /home/node/.openclaw/scripts/curator.py
 ```
+
+---
+
+## Resultados de Testing — 2026-05-18T12:30 UTC
+
+**Entorno:** `/tmp/curator-test-20260518` (efímero, skills sintéticas)
+**Script testeado:** `/home/node/.openclaw/scripts/curator.py.new`
+
+| # | Caso | Comando/Función | Output esperado | Output real | Resultado |
+|---|------|-----------------|-----------------|-------------|-----------|
+| 1 | dry-run sin `.usage.json` | `is_skill_registered(skill, dry_run=True)` | retorna False, no crea `.usage.json` | `''` (no escribe) | ✅ PASS |
+| 2 | dry-run 45d inactividad | `check_lifecycle(skill, "skill-45d", dry_run=True)` | `[DRY-RUN] skill-45d: active → stale (45d inactivo)` | `[DRY-RUN] skill-45d: active → stale (45d inactivo)` | ✅ PASS |
+| 3 | dry-run 95d inactividad | `check_lifecycle(skill, "skill-95d", dry_run=True)` | `[DRY-RUN] skill-95d: active → archived (95d inactivo)` | `[DRY-RUN] skill-95d: active → archived (95d inactivo)` | ✅ PASS |
+| 4 | dry-run PROBATION+95d guard | `check_lifecycle(skill, "skill-probation-95d", dry_run=True)` | stale (no archived) | `[DRY-RUN] skill-probation-95d: active → stale (95d inactivo)` | ✅ PASS |
+| 5 | update_last_activity en stale | `update_last_activity(skill_stale)` | state=active, last_activity_at=hoy | state=active, last_activity_at=2026-05-18 | ✅ PASS |
+| 6 | generate_index dry-run | `generate_index(skills, dry_run=True)` | `[DRY-RUN] SKILL_INDEX.md → 2 skills (no escrito)`, no crea archivo | `[DRY-RUN] SKILL_INDEX.md → 2 skills (no escrito)` | ✅ PASS |
+
+**Resultado global: 6/6 PASS**
+
+### Acción tomada
+```bash
+cp /home/node/.openclaw/scripts/curator.py.new \
+   /home/node/.openclaw/scripts/curator.py
+```
+`curator.py` promovido a v4. Backup intacto en `curator.py.bak-pre-lifecycle-1779095848`.
+
+### outcome
+decision: promoted
+outcome: success

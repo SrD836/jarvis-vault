@@ -4,7 +4,7 @@ type: session
 session_id: sess-20260517-bba0ce
 chat_id: 1478080070
 date: 2026-05-17T11:49:26.567Z
-ended: 2026-05-17T19:20:19.515Z
+ended: 2026-05-18T10:33:56.952Z
 message_count: 1
 agent: "[[agents/main]]"
 tags: [sesion, dashboard, multi-sesion]
@@ -15,7 +15,7 @@ related:
 ## Resumen
 
 Sesión `feature-y` con 1 mensaje.
-Iniciada 2026-05-17T11:49:26.567Z, cerrada 2026-05-17T19:20:19.515Z.
+Iniciada 2026-05-17T11:49:26.567Z, cerrada 2026-05-18T10:33:56.952Z.
 
 ## Transcript
 

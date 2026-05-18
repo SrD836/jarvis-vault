@@ -1,13 +1,13 @@
 {
   "1478080070": {
-    "active_id": "sess-20260517-29e187",
+    "active_id": "sess-20260517-bba0ce",
     "sessions": [
       {
         "id": "sess-20260517-bba0ce",
         "chat_id": 1478080070,
         "title": "feature-y",
         "started_at": "2026-05-17T11:49:26.567Z",
-        "ended_at": "2026-05-17T19:20:19.516Z",
+        "ended_at": null,
         "message_count": 0,
         "vault_path": "/vault/02-sessions/2026-05-17/114926-feature-y.md"
       },
@@ -16,7 +16,7 @@
         "chat_id": 1478080070,
         "title": "job",
         "started_at": "2026-05-17T12:35:04.993Z",
-        "ended_at": null,
+        "ended_at": "2026-05-18T10:34:02.814Z",
         "message_count": 0,
         "vault_path": "/vault/02-sessions/2026-05-17/123504-job.md"
       }
