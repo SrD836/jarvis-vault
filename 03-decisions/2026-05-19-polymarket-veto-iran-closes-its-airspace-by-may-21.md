@@ -2,13 +2,13 @@
 title: "Polymarket veto — iran-closes-its-airspace-by-may-21"
 type: decision
 date: 2026-05-19
-decision: "Veto de tesis 'Iran closes its airspace by May 21?' (rule V2): catalyst dentro de ventana 72h pre-resolución: resolución en 36 horas"
+decision: "Veto de tesis 'Iran closes its airspace by May 21?' (rule N2): silencio mediático sobre catalyst inminente (1 días al cierre)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, v2]
+tags: [decision, polymarket, bot, veto, n2]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,19 @@ related:
 
 - **Slug**: `iran-closes-its-airspace-by-may-21`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.1050
-- **Volumen 24h**: 637731.49 USD
+- **Precio YES**: 0.0750
+- **Volumen 24h**: 645160.41 USD
 - **End date**: 2026-05-21T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `V2`
+**Regla aplicada**: `N2`
 
-catalyst dentro de ventana 72h pre-resolución: resolución en 36 horas
+silencio mediático sobre catalyst inminente (1 días al cierre)
+
+## Investigación de noticias
+
+Tavily+DeepSeek: confirms=false contradicts=false silent=true score=0.50 — Ningún titular reciente confirma o contradice el cierre del espacio aéreo iraní antes del 21 de mayo
 
 ## Human notes
 

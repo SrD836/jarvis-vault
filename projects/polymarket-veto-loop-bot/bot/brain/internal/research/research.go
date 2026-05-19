@@ -13,23 +13,34 @@ import (
 	"strings"
 	"sync"
 	"time"
+
+	commontypes "github.com/davidgn/polymarket-veto-loop-bot/bot/common/types"
 )
 
 // Headline is a single news search result from Tavily.
 type Headline struct {
-	Title   string `json:"title"`
-	URL     string `json:"url"`
-	Content string `json:"content"` // snippet
-	Score   float64 `json:"score"`
+	Title         string  `json:"title"`
+	URL           string  `json:"url"`
+	Content       string  `json:"content"` // snippet
+	Score         float64 `json:"score"`
+	PublishedDate string  `json:"published_date,omitempty"` // ISO date from Tavily (advanced search)
+	Source        string  `json:"source,omitempty"`         // derived from URL host
+}
+
+// CitedDate is what the LLM asserts having based its verdict on.
+type CitedDate struct {
+	HeadlineTitle string `json:"headline_title"`
+	Date          string `json:"date"`
 }
 
 // Verdict is the structured output of the LLM auditor synthesis.
 type Verdict struct {
-	Confirms    bool    `json:"confirms"`    // news supports YES
-	Contradicts bool    `json:"contradicts"` // news supports NO
-	Silent      bool    `json:"silent"`      // no relevant news
-	Score       float64 `json:"score"`       // 0-1 confidence
-	Summary     string  `json:"summary"`     // <120 chars
+	Confirms    bool        `json:"confirms"`
+	Contradicts bool        `json:"contradicts"`
+	Silent      bool        `json:"silent"`
+	Score       float64     `json:"score"`
+	Summary     string      `json:"summary"`
+	CitedDates  []CitedDate `json:"cited_dates,omitempty"` // pruebas temporales del veredicto
 }
 
 // CacheEntry is one row of research-cache.jsonl.
@@ -44,23 +55,25 @@ type CacheEntry struct {
 
 // Client wraps Tavily search + LLM synthesis with disk cache.
 type Client struct {
-	TavilyAPIKey string
-	DashboardURL string // e.g. http://jarvis-dashboard:3000
-	CachePath    string // vault/inbox/trading/research-cache.jsonl
-	CacheTTL     time.Duration
-	HTTPTimeout  time.Duration
-	cache        map[string]CacheEntry
-	cacheMu      sync.Mutex
-	loaded       bool
+	TavilyAPIKey       string
+	DashboardURL       string // e.g. http://jarvis-dashboard:3000
+	CachePath          string // vault/inbox/trading/research-cache.jsonl
+	CacheTTL           time.Duration
+	HTTPTimeout        time.Duration
+	BlacklistedDomains []string // set externally per cycle; subtracted from include_domains
+	cache              map[string]CacheEntry
+	cacheMu            sync.Mutex
+	loaded             bool
 }
 
 const (
 	tavilyURL       = "https://api.tavily.com/search"
-	defaultTTL      = 1 * time.Hour
-	defaultTimeout  = 25 * time.Second
-	maxHeadlines    = 5
+	defaultTTL      = 6 * time.Hour
+	defaultTimeout  = 30 * time.Second
+	maxHeadlines    = 10
+	recencyDays     = 7
 	llmModel        = "deepseek/deepseek-chat"
-	systemPrompt    = `Eres un analista de mercados de predicción. Lees titulares de noticias y decides si confirman, contradicen, o son silentes respecto a una tesis de trading.
+	systemPrompt    = `Eres un analista de mercados de predicción. Lees titulares de noticias RECIENTES (últimos 7 días) y decides si confirman, contradicen, o son silentes respecto a una tesis de trading.
 
 Devuelves EXCLUSIVAMENTE un JSON válido con este shape (sin markdown, sin code-fence):
 
@@ -69,17 +82,22 @@ Devuelves EXCLUSIVAMENTE un JSON válido con este shape (sin markdown, sin code-
   "contradicts": false,
   "silent": true,
   "score": 0.7,
-  "summary": "Una frase ≤ 120 caracteres explicando el veredicto"
+  "summary": "Una frase <= 120 caracteres explicando el veredicto",
+  "cited_dates": [
+    {"headline_title": "titulo exacto del titular X", "date": "2026-05-18"}
+  ]
 }
 
-Reglas estrictas:
-- Solo uno de confirms/contradicts/silent puede ser true. El otro par debe ser false.
-- "silent" significa: ninguna noticia relevante encontrada O las que hay no aportan señal direccional.
-- "confirms" significa: la mayoría de titulares apoya el desenlace de la tesis (lado YES si la tesis es "Will X happen").
-- "contradicts" significa: la mayoría apunta al desenlace opuesto.
-- "score": confianza en el veredicto (0=débil, 1=fuerte).
-- "summary": máximo 120 caracteres, sin punto final, en español.
-- No inventes. Si la pregunta es sobre un evento futuro lejano y los titulares no la mencionan → silent.`
+Reglas DURAS (cualquier desviacion -> tu salida sera rechazada y se forzara silent):
+1. Solo UNO de confirms/contradicts/silent puede ser true. Los otros dos son false.
+2. SOLO considera titulares cuya "published_date" este dentro de los ultimos 7 dias desde hoy. Si todos son mas antiguos o sin fecha -> devuelve silent.
+3. cited_dates DEBE incluir 1-3 titulares en los que basas tu veredicto, copiando su "published_date" tal cual. Si no hay headlines con fecha reciente, devuelve cited_dates: [] y silent: true.
+4. "confirms" = la mayoria de titulares recientes apoya el desenlace YES de la tesis.
+5. "contradicts" = la mayoria apunta al desenlace NO.
+6. "silent" = sin cobertura mediatica reciente relevante.
+7. score: 0=debil, 1=fuerte. Si solo hay 1 fuente, max 0.6.
+8. summary: <= 120 chars, sin punto final, en espaniol, citando la fuente mas decisiva.
+9. NO inventes hechos ni fechas. Si dudas -> silent.`
 )
 
 // NewClient builds a research client. Reads Tavily key from connector JSON.
@@ -146,11 +164,14 @@ func (c *Client) Evaluate(question, side string) Verdict {
 
 func (c *Client) tavilySearch(query string) ([]Headline, error) {
 	body := map[string]interface{}{
-		"api_key":      c.TavilyAPIKey,
-		"query":        query,
-		"max_results":  maxHeadlines,
-		"search_depth": "basic",
-		"include_answer": false,
+		"api_key":        c.TavilyAPIKey,
+		"query":          query,
+		"max_results":    maxHeadlines,
+		"search_depth":   "advanced",
+		"include_answer": true,
+		"days":           recencyDays,
+		"topic":          "news",
+		"include_domains": c.buildIncludeDomains(),
 	}
 	raw, _ := json.Marshal(body)
 	req, err := http.NewRequest("POST", tavilyURL, bytes.NewReader(raw))
@@ -174,17 +195,39 @@ func (c *Client) tavilySearch(query string) ([]Headline, error) {
 	if err := json.NewDecoder(resp.Body).Decode(&out); err != nil {
 		return nil, fmt.Errorf("decode tavily: %w", err)
 	}
+	for i := range out.Results {
+		out.Results[i].Source = extractHost(out.Results[i].URL)
+	}
 	return out.Results, nil
 }
 
-func (c *Client) synthesize(question, side string, headlines []Headline) (Verdict, error) {
-	userContent := fmt.Sprintf("Tesis: %s\nLado: %s\n\nTitulares (top %d):\n",
-		question, side, len(headlines))
-	for i, h := range headlines {
-		userContent += fmt.Sprintf("%d. %s — %s\n",
-			i+1, truncate(h.Title, 120), truncate(h.Content, 200))
+func extractHost(u string) string {
+	u = strings.TrimPrefix(u, "https://")
+	u = strings.TrimPrefix(u, "http://")
+	u = strings.TrimPrefix(u, "www.")
+	if i := strings.IndexByte(u, '/'); i >= 0 {
+		u = u[:i]
 	}
-	userContent += "\nDevuelve el JSON con el veredicto."
+	return u
+}
+
+func (c *Client) synthesize(question, side string, headlines []Headline) (Verdict, error) {
+	today := time.Now().UTC().Format("2006-01-02")
+	userContent := fmt.Sprintf("Hoy es %s. Tesis: %s\nLado: %s\n\nTitulares (top %d, solo ultimos %d dias):\n",
+		today, question, side, len(headlines), recencyDays)
+	for i, h := range headlines {
+		dateLbl := h.PublishedDate
+		if dateLbl == "" {
+			dateLbl = "sin fecha"
+		}
+		srcLbl := h.Source
+		if srcLbl == "" {
+			srcLbl = "sin fuente"
+		}
+		userContent += fmt.Sprintf("%d. [%s | %s] %s — %s\n",
+			i+1, dateLbl, srcLbl, truncate(h.Title, 140), truncate(h.Content, 220))
+	}
+	userContent += "\nDevuelve el JSON con el veredicto. Recuerda: cited_dates obligatorio si no es silent."
 
 	body := map[string]interface{}{
 		"model":      llmModel,
@@ -366,4 +409,100 @@ func truncate(s string, n int) string {
 		return s
 	}
 	return s[:n-3] + "..."
+}
+
+
+// baseDomains is the canonical premier news set used for prediction-market research.
+var baseDomains = []string{
+	"reuters.com", "apnews.com", "bloomberg.com", "ft.com", "wsj.com",
+	"x.com", "twitter.com", "nytimes.com", "bbc.com", "aljazeera.com",
+	"theguardian.com", "cnn.com", "washingtonpost.com", "axios.com", "politico.com",
+}
+
+// buildIncludeDomains subtracts blacklisted sources from baseDomains.
+// If all are blacklisted (pathological), returns baseDomains unchanged so research
+// degrades gracefully instead of returning zero results.
+func (c *Client) buildIncludeDomains() []string {
+	if len(c.BlacklistedDomains) == 0 {
+		return baseDomains
+	}
+	bl := map[string]bool{}
+	for _, d := range c.BlacklistedDomains {
+		bl[strings.ToLower(strings.TrimSpace(d))] = true
+	}
+	out := make([]string, 0, len(baseDomains))
+	for _, d := range baseDomains {
+		if !bl[d] {
+			out = append(out, d)
+		}
+	}
+	if len(out) == 0 {
+		return baseDomains
+	}
+	return out
+}
+
+
+// EvaluateFull is like Evaluate but also returns the headlines used (for source attribution).
+// Returns at most 3 SourceCite entries derived from verdict.CitedDates ∩ headlines (by title prefix match).
+// If verdict is silent or has no cited_dates, returns an empty []SourceCite.
+func (c *Client) EvaluateFull(question, side string) (Verdict, []Headline, []commontypes.SourceCite) {
+	if c == nil {
+		return Verdict{Silent: true, Summary: "research client nil"}, nil, nil
+	}
+	query := question
+	hash := hashQuery(query)
+
+	if cached, ok := c.lookupCache(hash); ok {
+		return cached.Verdict, cached.Headlines, citesFromVerdict(cached.Verdict, cached.Headlines)
+	}
+
+	headlines, err := c.tavilySearch(query)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "[research] tavily error for %q: %v\n", query, err)
+		return Verdict{Silent: true, Score: 0, Summary: "tavily error"}, nil, nil
+	}
+	if len(headlines) == 0 {
+		v := Verdict{Silent: true, Score: 0.5, Summary: "sin resultados Tavily"}
+		c.appendCache(CacheEntry{Hash: hash, Query: query, Timestamp: time.Now().UTC().Format(time.RFC3339),
+			Headlines: headlines, Verdict: v, Model: "none"})
+		return v, headlines, nil
+	}
+
+	verdict, err := c.synthesize(question, side, headlines)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "[research] synthesize error for %q: %v\n", query, err)
+		verdict = Verdict{Silent: true, Score: 0, Summary: "synthesize error"}
+	}
+	c.appendCache(CacheEntry{Hash: hash, Query: query, Timestamp: time.Now().UTC().Format(time.RFC3339),
+		Headlines: headlines, Verdict: verdict, Model: llmModel})
+	return verdict, headlines, citesFromVerdict(verdict, headlines)
+}
+
+// citesFromVerdict turns the LLM's cited_dates into SourceCite by matching headline titles.
+// If the verdict is silent or has no cited_dates, returns nil (no attribution).
+func citesFromVerdict(v Verdict, headlines []Headline) []commontypes.SourceCite {
+	if v.Silent || len(v.CitedDates) == 0 {
+		return nil
+	}
+	titleIdx := map[string]Headline{}
+	for _, h := range headlines {
+		titleIdx[strings.ToLower(strings.TrimSpace(h.Title))] = h
+	}
+	out := make([]commontypes.SourceCite, 0, len(v.CitedDates))
+	for _, cd := range v.CitedDates {
+		key := strings.ToLower(strings.TrimSpace(cd.HeadlineTitle))
+		if h, ok := titleIdx[key]; ok {
+			out = append(out, commontypes.SourceCite{
+				Domain:        h.Source,
+				URL:           h.URL,
+				HeadlineTitle: h.Title,
+				PublishedDate: h.PublishedDate,
+			})
+			if len(out) >= 3 {
+				break
+			}
+		}
+	}
+	return out
 }

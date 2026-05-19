@@ -1,5 +1,7 @@
 package types
 
+import commontypes "github.com/davidgn/polymarket-veto-loop-bot/bot/common/types"
+
 // Approved is a candidate that passed all veto rules, ready for execution.
 type Approved struct {
 	CandidateID      string  `json:"candidate_id"`
@@ -11,9 +13,10 @@ type Approved struct {
 	EndDate          string  `json:"end_date"`
 	ScannedAt        string  `json:"scanned_at"`
 	ApprovedAt       string  `json:"approved_at"`
-	ApprovedPriceYes float64 `json:"approved_price_yes"`
-	DaysToResolution int     `json:"days_to_resolution"`
-	Horizon          string  `json:"horizon"`
+	ApprovedPriceYes float64                  `json:"approved_price_yes"`
+	DaysToResolution int                      `json:"days_to_resolution"`
+	Horizon          string                   `json:"horizon"`
+	SourcesUsed      []commontypes.SourceCite `json:"sources_used,omitempty"`
 }
 
 // ActiveTrade stored in active.jsonl after successful entry.
@@ -28,8 +31,10 @@ type ActiveTrade struct {
 	EntryTimestamp  string  `json:"entry_timestamp"`
 	ApprovedPrice   float64 `json:"approved_price"`
 	DaysToResolution int    `json:"days_to_resolution"`
-	Horizon         string  `json:"horizon"`
-	EndDate         string  `json:"end_date,omitempty"`
+	Horizon          string                   `json:"horizon"`
+	EndDate          string                   `json:"end_date,omitempty"`
+	SizeUSD          float64                  `json:"size_usd"`
+	SourcesUsed      []commontypes.SourceCite `json:"sources_used,omitempty"`
 }
 
 // Portfolio state, single JSON object.

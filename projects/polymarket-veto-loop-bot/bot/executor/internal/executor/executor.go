@@ -31,8 +31,9 @@ func Run() {
 	if cfg.Mode != "simulation" {
 		panic("live trading not authorized — set mode=simulation in bot/config.json")
 	}
-	log.Printf("executor v3: config loaded mode=%s tradeSize=%.0f maxExposure=%.0f maxSameCat=%d maxPerDay=%d quota=%.0f/%.0f/%.0f",
-		cfg.Mode, cfg.TradeSizeUSD, cfg.MaxExposureUSD, cfg.MaxSameCategory, cfg.MaxNewTradesPerDay,
+	log.Printf("executor v4: mode=%s sizeMode=%s sizeFrac=%.3f sizeMin=%.0f sizeMax=%.0f maxExposure=%.0f maxOpen=%d maxSameCat=%d maxPerDay=%d quota=%.0f/%.0f/%.0f",
+		cfg.Mode, cfg.SizeMode, cfg.SizeFraction, cfg.SizeMin, cfg.SizeMax,
+		cfg.MaxExposureUSD, cfg.MaxOpenPositions, cfg.MaxSameCategory, cfg.MaxNewTradesPerDay,
 		cfg.HorizonQuotaShort*100, cfg.HorizonQuotaMedium*100, cfg.HorizonQuotaLong*100)
 
 	portfolio := loadOrCreatePortfolio(cfg)
@@ -69,7 +70,15 @@ func Run() {
 	for _, p := range portfolio.Positions {
 		activeIDs[p.MarketID] = true
 	}
+	openCount := len(portfolio.Positions)
 	for _, a := range approved {
+		if openCount >= cfg.MaxOpenPositions {
+			rejects = append(rejects, types.Rejection{
+				Timestamp: nowStr, MarketID: a.CandidateID,
+				Question: a.Question, Reason: fmt.Sprintf("max_open_positions_cap_reached_%d", cfg.MaxOpenPositions),
+			})
+			continue
+		}
 		if activeIDs[a.CandidateID] {
 			rejects = append(rejects, types.Rejection{Timestamp: nowStr, MarketID: a.CandidateID, Question: a.Question, Reason: "already_active"})
 			continue
@@ -104,7 +113,8 @@ func Run() {
 			continue
 		}
 
-		if portfolio.UsedExposure+cfg.TradeSizeUSD > cfg.MaxExposureUSD {
+		tradeSize := cfg.ComputeTradeSize(portfolio.Bankroll)
+		if portfolio.UsedExposure+tradeSize > cfg.MaxExposureUSD {
 			rejects = append(rejects, types.Rejection{
 				Timestamp: nowStr, MarketID: a.CandidateID,
 				Question: a.Question, Reason: "exposure_cap_reached",
@@ -147,20 +157,23 @@ func Run() {
 			Question:         a.Question,
 			Side:             "yes",
 			EntryPrice:       a.CurrentPriceYes,
-			Size:             cfg.TradeSizeUSD,
+			Size:             tradeSize,
+			SizeUSD:          tradeSize,
 			Category:         a.Category,
 			EntryTimestamp:   nowStr,
 			ApprovedPrice:    a.ApprovedPriceYes,
 			DaysToResolution: a.DaysToResolution,
 			Horizon:          a.Horizon,
 			EndDate:          a.EndDate,
+			SourcesUsed:      a.SourcesUsed,
 		}
 
 		appendActive(trade)
 		portfolio.Positions = append(portfolio.Positions, trade)
-		portfolio.UsedExposure += cfg.TradeSizeUSD
-		portfolio.Bankroll -= cfg.TradeSizeUSD
+		portfolio.UsedExposure += tradeSize
+		portfolio.Bankroll -= tradeSize
 		todayCount++
+		openCount++
 
 		switch a.Horizon {
 		case "short":
@@ -170,7 +183,7 @@ func Run() {
 		case "long":
 			slotLong--
 		}
-		log.Printf("executor: entered [%s] %s (%.4f, $%.0f)", a.Horizon, a.Question, trade.EntryPrice, trade.Size)
+		log.Printf("executor: entered [%s] %s @ %.4f size=$%.2f (open=%d/%d, bankroll=$%.0f)", a.Horizon, a.Question, trade.EntryPrice, tradeSize, openCount, cfg.MaxOpenPositions, portfolio.Bankroll)
 	}
 
 	savePortfolio(portfolio)
@@ -180,10 +193,10 @@ func Run() {
 
 func loadOrCreatePortfolio(cfg *config.BotConfig) types.Portfolio {
 	p := types.Portfolio{
-		Bankroll:     10000.0,
+		Bankroll:     5000.0,
 		UsedExposure: 0.0,
 		MaxExposure:  cfg.MaxExposureUSD,
-		MaxPerTrade:  cfg.TradeSizeUSD,
+		MaxPerTrade:  cfg.SizeMax,
 		MaxSameCat:   cfg.MaxSameCategory,
 		Positions:    []types.ActiveTrade{},
 	}
@@ -196,8 +209,8 @@ func loadOrCreatePortfolio(cfg *config.BotConfig) types.Portfolio {
 	if err := json.Unmarshal(data, &p); err != nil {
 		log.Printf("executor: corrupt portfolio.json, resetting: %v", err)
 		reset := types.Portfolio{
-			Bankroll: 10000.0, UsedExposure: 0.0,
-			MaxExposure: cfg.MaxExposureUSD, MaxPerTrade: cfg.TradeSizeUSD,
+			Bankroll: 5000.0, UsedExposure: 0.0,
+			MaxExposure: cfg.MaxExposureUSD, MaxPerTrade: cfg.SizeMax,
 			MaxSameCat: cfg.MaxSameCategory, Positions: []types.ActiveTrade{},
 		}
 		saveJSON(path, reset)
@@ -205,7 +218,7 @@ func loadOrCreatePortfolio(cfg *config.BotConfig) types.Portfolio {
 	}
 	// Always reflect current config limits in portfolio metadata
 	p.MaxExposure = cfg.MaxExposureUSD
-	p.MaxPerTrade = cfg.TradeSizeUSD
+	p.MaxPerTrade = cfg.SizeMax
 	p.MaxSameCat = cfg.MaxSameCategory
 	return p
 }

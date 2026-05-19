@@ -28,7 +28,16 @@ type BotConfig struct {
 	MaxNewTradesPerDay int     `json:"max_new_trades_per_day"`
 	TradeSizeUSD       float64 `json:"trade_size_usd"`
 	StopLossUSD        float64 `json:"stop_loss_usd"`
+	StopLossPct        float64 `json:"stop_loss_pct"`
 	TakeProfitPct      float64 `json:"take_profit_pct"`
+
+	// v4: dynamic position sizing + max open positions cap.
+	MaxOpenPositions int     `json:"max_open_positions"`
+	SizeMode         string  `json:"size_mode"`     // "dynamic_equal" | "fixed"
+	SizeFraction     float64 `json:"size_fraction"` // fraction of bankroll per trade in dynamic_equal mode
+	SizeMin          float64 `json:"size_min_usd"`
+	SizeMax          float64 `json:"size_max_usd"`
+
 	Mode               string  `json:"mode"`
 }
 
@@ -61,6 +70,41 @@ func (c *BotConfig) applyDefaults() {
 		c.HorizonQuotaMedium = 0.15
 		c.HorizonQuotaLong = 0.15
 	}
+	if c.MaxOpenPositions == 0 {
+		c.MaxOpenPositions = 50
+	}
+	if c.SizeMode == "" {
+		c.SizeMode = "dynamic_equal"
+	}
+	if c.SizeFraction == 0 {
+		c.SizeFraction = 1.0 / 50.0
+	}
+	if c.SizeMin == 0 {
+		c.SizeMin = 25
+	}
+	if c.SizeMax == 0 {
+		c.SizeMax = 500
+	}
+	if c.StopLossPct == 0 {
+		c.StopLossPct = 80
+	}
+}
+
+// ComputeTradeSize returns the size in USD for the next trade given current bankroll.
+// In dynamic_equal mode: bankroll * SizeFraction, clamped to [SizeMin, SizeMax].
+// In fixed mode: TradeSizeUSD.
+func (c *BotConfig) ComputeTradeSize(bankroll float64) float64 {
+	if c.SizeMode == "fixed" {
+		return c.TradeSizeUSD
+	}
+	s := bankroll * c.SizeFraction
+	if s < c.SizeMin {
+		s = c.SizeMin
+	}
+	if s > c.SizeMax {
+		s = c.SizeMax
+	}
+	return s
 }
 
 // Classify returns "short", "medium" or "long" based on days-to-resolution.

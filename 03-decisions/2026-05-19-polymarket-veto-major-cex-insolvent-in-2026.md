@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `major-cex-insolvent-in-2026`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.0800
+- **Precio YES**: 0.0750
 - **Volumen 24h**: 125442.63 USD
 - **End date**: 2027-01-01T05:00:00Z
 

@@ -1,6 +1,10 @@
 package types
 
-import "time"
+import (
+	"time"
+
+	commontypes "github.com/davidgn/polymarket-veto-loop-bot/bot/common/types"
+)
 
 // Candidate from scanner output (candidates.jsonl)
 type Candidate struct {
@@ -34,9 +38,10 @@ type Approved struct {
 	EndDate          string  `json:"end_date"`
 	ScannedAt        string  `json:"scanned_at"`
 	ApprovedAt        string  `json:"approved_at"`
-	ApprovedPriceYes  float64 `json:"approved_price_yes"`
-	DaysToResolution  int     `json:"days_to_resolution"`
-	Horizon           string  `json:"horizon"` // short | medium | long
+	ApprovedPriceYes float64                  `json:"approved_price_yes"`
+	DaysToResolution int                      `json:"days_to_resolution"`
+	Horizon          string                   `json:"horizon"` // short | medium | long
+	SourcesUsed      []commontypes.SourceCite `json:"sources_used,omitempty"`
 }
 
 // LLMRequest payload to the JARVIS dashboard LLM bridge.

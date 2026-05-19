@@ -568,3 +568,65 @@
 2026/05/19 15:55:01 main.go:13: exit_monitor: done
 2026/05/19 16:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/19 16:00:01 monitor.go:33: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 16:00:01 monitor.go:49: exit_monitor: price fetch error for 2237150: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 16:00:01 monitor.go:49: exit_monitor: price fetch error for 789542: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 16:00:01 monitor.go:49: exit_monitor: price fetch error for 789540: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 16:00:01 monitor.go:49: exit_monitor: price fetch error for 2242092: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 16:00:01 monitor.go:49: exit_monitor: price fetch error for 2170973: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 16:00:01 monitor.go:49: exit_monitor: price fetch error for 2170982: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 16:00:01 monitor.go:49: exit_monitor: price fetch error for 2170978: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 16:00:01 monitor.go:49: exit_monitor: price fetch error for 2241872: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 16:00:01 monitor.go:49: exit_monitor: price fetch error for 2119227: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 16:00:01 monitor.go:49: exit_monitor: price fetch error for 2237157: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 16:00:01 monitor.go:49: exit_monitor: price fetch error for 2237156: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 16:00:01 monitor.go:49: exit_monitor: price fetch error for 2237155: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 16:00:01 monitor.go:49: exit_monitor: price fetch error for 648378: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 16:00:01 monitor.go:108: exit_monitor: 0 closed, 13 remaining
+2026/05/19 16:00:01 main.go:13: exit_monitor: done
+2026/05/19 16:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 16:05:01 monitor.go:33: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 16:05:01 monitor.go:108: exit_monitor: 0 closed, 13 remaining
+2026/05/19 16:05:01 main.go:13: exit_monitor: done
+2026/05/19 16:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 16:10:01 monitor.go:33: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 16:10:01 monitor.go:108: exit_monitor: 0 closed, 13 remaining
+2026/05/19 16:10:01 main.go:13: exit_monitor: done
+2026/05/19 16:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 16:15:01 monitor.go:33: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 16:15:02 monitor.go:108: exit_monitor: 0 closed, 13 remaining
+2026/05/19 16:15:02 main.go:13: exit_monitor: done
+2026/05/19 16:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 16:20:01 monitor.go:33: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 16:20:01 monitor.go:108: exit_monitor: 0 closed, 13 remaining
+2026/05/19 16:20:01 main.go:13: exit_monitor: done
+2026/05/19 16:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 16:25:01 monitor.go:33: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 16:25:01 monitor.go:108: exit_monitor: 0 closed, 13 remaining
+2026/05/19 16:25:01 main.go:13: exit_monitor: done
+2026/05/19 16:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 16:30:01 monitor.go:33: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 16:30:02 monitor.go:108: exit_monitor: 0 closed, 13 remaining
+2026/05/19 16:30:02 main.go:13: exit_monitor: done
+2026/05/19 16:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 16:35:01 monitor.go:33: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 16:35:02 monitor.go:108: exit_monitor: 0 closed, 13 remaining
+2026/05/19 16:35:02 main.go:13: exit_monitor: done
+2026/05/19 16:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 16:40:01 monitor.go:33: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 16:40:01 monitor.go:91: exit_monitor: closed Iran closes its airspace by May 21? (take_profit): PnL $110.00 (73.33%)
+2026/05/19 16:40:01 monitor.go:108: exit_monitor: 1 closed, 12 remaining
+2026/05/19 16:40:01 main.go:13: exit_monitor: done
+2026/05/19 16:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 16:45:01 monitor.go:33: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 16:45:01 monitor.go:108: exit_monitor: 0 closed, 12 remaining
+2026/05/19 16:45:01 main.go:13: exit_monitor: done
+2026/05/19 16:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 16:50:01 monitor.go:33: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 16:50:02 monitor.go:108: exit_monitor: 0 closed, 12 remaining
+2026/05/19 16:50:02 main.go:13: exit_monitor: done
+2026/05/19 16:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 16:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 16:55:01 monitor.go:123: exit_monitor: 0 closed, 12 remaining
+2026/05/19 16:55:01 main.go:13: exit_monitor: done
+2026/05/19 17:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 17:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%

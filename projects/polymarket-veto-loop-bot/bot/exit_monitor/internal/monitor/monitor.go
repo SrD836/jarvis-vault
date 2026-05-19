@@ -3,10 +3,12 @@ package monitor
 import (
 	"bufio"
 	"encoding/json"
+	"fmt"
 	"log"
 	"math"
 	"os"
 	"path/filepath"
+	"strings"
 	"time"
 
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/config"
@@ -21,8 +23,9 @@ const (
 	closedFile    = "closed.jsonl"
 	portfolioFile = "portfolio.json"
 
-	memoryPath   = "vault/agents/polymarket-bot/memory.md"
-	decisionsDir = "vault/03-decisions"
+	memoryPath      = "vault/agents/polymarket-bot/memory.md"
+	decisionsDir    = "vault/03-decisions"
+	sourceStatsPath = "vault/agents/polymarket-bot/source-stats.jsonl"
 )
 
 func Run() {
@@ -70,22 +73,25 @@ func Run() {
 
 		pnlR := math.Round(pnlUSD*100) / 100
 		exitTs := now.Format(time.RFC3339)
+		daysOpen := computeDaysOpen(a.EntryTimestamp, now)
 		ct := types.ClosedTrade{
-			ID:         a.ID,
-			MarketID:   a.MarketID,
-			Slug:       a.Slug,
-			Question:   a.Question,
-			Category:   a.Category,
-			Side:       a.Side,
-			Size:       a.Size,
-			EntryPrice: entryPrice,
-			ExitPrice:  price,
-			EntryTime:  a.EntryTimestamp,
-			ExitTime:   exitTs,
-			Pnl:        pnlR,
-			PnlUSD:     pnlR,
-			PnlPct:     math.Round(pnlPct*100) / 100,
-			Reason:     reason,
+			ID:          a.ID,
+			MarketID:    a.MarketID,
+			Slug:        a.Slug,
+			Question:    a.Question,
+			Category:    a.Category,
+			Side:        a.Side,
+			Size:        a.Size,
+			EntryPrice:  entryPrice,
+			ExitPrice:   price,
+			EntryTime:   a.EntryTimestamp,
+			ExitTime:    exitTs,
+			Pnl:         pnlR,
+			PnlUSD:      pnlR,
+			PnlPct:      math.Round(pnlPct*100) / 100,
+			Reason:      reason,
+			SourcesUsed: a.SourcesUsed,
+			DaysOpen:    daysOpen,
 		}
 		closed = append(closed, ct)
 		log.Printf("exit_monitor: closed %s (%s): PnL $%.2f (%.2f%%)", a.Question, reason, ct.Pnl, ct.PnlPct)
@@ -97,6 +103,15 @@ func Run() {
 				ct.EntryPrice, ct.ExitPrice, ct.Size, ct.Pnl,
 				ct.EntryTime, ct.ExitTime, ct.Reason,
 			)
+		}
+
+		// v4: attribute outcome to every source that informed the decision.
+		if err := appendSourceStats(ct); err != nil {
+			log.Printf("exit_monitor: source-stats append failed: %v", err)
+		}
+		// v4: sync Obsidian decision .md (frontmatter outcome/pnl/closed_at).
+		if err := patchDecisionMD(ct); err != nil {
+			log.Printf("exit_monitor: decision .md patch failed for %s: %v", ct.Slug, err)
 		}
 	}
 
@@ -172,7 +187,9 @@ func updatePortfolio(closed []types.ClosedTrade) {
 	bankroll, _ := p["bankroll"].(float64)
 	used, _ := p["used_exposure"].(float64)
 	for _, c := range closed {
-		bankroll += c.Pnl
+		// v4: return the principal (Size) plus realized PnL to bankroll.
+		// Previously only c.Pnl was added, which caused bankroll to bleed by ~Size every cycle.
+		bankroll += c.Size + c.Pnl
 		used -= c.Size
 		if used < 0 {
 			used = 0
@@ -198,4 +215,122 @@ func updatePortfolio(closed []types.ClosedTrade) {
 	}
 	out, _ := json.MarshalIndent(p, "", "  ")
 	_ = os.WriteFile(path, out, 0644)
+}
+
+
+func computeDaysOpen(entryTS string, now time.Time) float64 {
+	t, err := time.Parse(time.RFC3339, entryTS)
+	if err != nil {
+		return 0
+	}
+	return math.Round(now.Sub(t).Hours()/24*100) / 100
+}
+
+func appendSourceStats(ct types.ClosedTrade) error {
+	if len(ct.SourcesUsed) == 0 {
+		return nil
+	}
+	outcome := "breakeven"
+	if ct.Pnl > 0 {
+		outcome = "win"
+	} else if ct.Pnl < 0 {
+		outcome = "loss"
+	}
+	if err := os.MkdirAll(filepath.Dir(sourceStatsPath), 0755); err != nil {
+		return err
+	}
+	f, err := os.OpenFile(sourceStatsPath, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	enc := json.NewEncoder(f)
+	for _, s := range ct.SourcesUsed {
+		dom := strings.ToLower(strings.TrimSpace(s.Domain))
+		if dom == "" || dom == "legacy" {
+			continue
+		}
+		_ = enc.Encode(map[string]interface{}{
+			"ts":        ct.ExitTime,
+			"trade_id":  ct.ID,
+			"domain":    dom,
+			"outcome":   outcome,
+			"pnl_usd":   ct.Pnl,
+			"days_open": ct.DaysOpen,
+		})
+	}
+	return nil
+}
+
+// patchDecisionMD looks for vault/03-decisions/<date>-polymarket-trade-<slug>.md
+// (created by brain.go at approve time) and rewrites its frontmatter outcome/pnl/closed_at.
+// Silently skips if the file is not found (legacy trades).
+func patchDecisionMD(ct types.ClosedTrade) error {
+	if ct.Slug == "" {
+		return nil
+	}
+	// Search across all decisions to handle date mismatch.
+	entries, err := os.ReadDir(decisionsDir)
+	if err != nil {
+		return err
+	}
+	var found string
+	suffix := "-polymarket-trade-" + ct.Slug + ".md"
+	for _, e := range entries {
+		if strings.HasSuffix(e.Name(), suffix) {
+			found = filepath.Join(decisionsDir, e.Name())
+			break
+		}
+	}
+	if found == "" {
+		return nil // brain didn't create one (older approve), silent skip
+	}
+	raw, err := os.ReadFile(found)
+	if err != nil {
+		return err
+	}
+	text := string(raw)
+	if !strings.HasPrefix(text, "---\n") {
+		return nil
+	}
+	end := strings.Index(text[4:], "\n---\n")
+	if end < 0 {
+		return nil
+	}
+	fm := text[4 : 4+end]
+	rest := text[4+end+5:]
+
+	outcome := "breakeven"
+	if ct.Pnl > 0 {
+		outcome = "win"
+	} else if ct.Pnl < 0 {
+		outcome = "loss"
+	}
+	patched := patchYAMLLine(fm, "outcome", outcome)
+	patched = ensureYAMLLine(patched, "pnl_usd", fmt.Sprintf("%.2f", ct.Pnl))
+	patched = ensureYAMLLine(patched, "closed_at", ct.ExitTime)
+	patched = ensureYAMLLine(patched, "exit_reason", ct.Reason)
+	patched = ensureYAMLLine(patched, "days_open", fmt.Sprintf("%.2f", ct.DaysOpen))
+	out := "---\n" + patched + "\n---\n" + rest
+	tmp := found + ".tmp"
+	if err := os.WriteFile(tmp, []byte(out), 0644); err != nil {
+		return err
+	}
+	return os.Rename(tmp, found)
+}
+
+func patchYAMLLine(fm, key, value string) string {
+	lines := strings.Split(fm, "\n")
+	prefix := key + ":"
+	for i, l := range lines {
+		if strings.HasPrefix(strings.TrimLeft(l, " \t"), prefix) {
+			lines[i] = key + ": " + value
+			return strings.Join(lines, "\n")
+		}
+	}
+	return strings.Join(append(lines, key+": "+value), "\n")
+}
+
+func ensureYAMLLine(fm, key, value string) string {
+	return patchYAMLLine(fm, key, value)
 }

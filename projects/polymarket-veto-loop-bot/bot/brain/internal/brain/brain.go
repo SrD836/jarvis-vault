@@ -11,6 +11,7 @@ import (
 	"time"
 
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/config"
+	commontypes "github.com/davidgn/polymarket-veto-loop-bot/bot/common/types"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/decisionlog"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/llmclient"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/memory"
@@ -28,6 +29,7 @@ var (
 	researchCachePath = envOr("BRAIN_RESEARCH_CACHE", "vault/inbox/trading/research-cache.jsonl")
 	tavilyConnPath    = envOr("BRAIN_TAVILY_CONNECTOR", "/openclaw-workspace/connectors/tavily.json")
 	dashboardURL      = envOr("DASHBOARD_URL", "http://jarvis-dashboard:3000")
+	sourceStatsPath   = envOr("BRAIN_SOURCE_STATS", "vault/agents/polymarket-bot/source-stats.jsonl")
 	disableResearch   = envOr("BRAIN_DISABLE_RESEARCH", "") != ""
 )
 
@@ -75,9 +77,24 @@ func Run() error {
 		if err != nil {
 			log.Printf("WARN: research client failed (%v) — news vetoes disabled", err)
 			researcher = nil
-		} else {
-			log.Printf("Research client ready (Tavily + %s)", dashboardURL)
 		}
+
+	// v4: load per-source quality stats and feed the blacklist to the researcher.
+	if researcher != nil {
+		stats, sErr := memory.LoadSourceStats(sourceStatsPath, 30*24*time.Hour)
+		if sErr != nil {
+			log.Printf("WARN: load source stats: %v (continuing without blacklist)", sErr)
+		} else {
+			bl := memory.Blacklisted(stats, 5, 0.30)
+			researcher.BlacklistedDomains = bl
+			if len(bl) > 0 {
+				log.Printf("research: blacklisted domains this cycle: %s", strings.Join(bl, ", "))
+			}
+			if wErr := memory.WriteSourceStatsSection(memoryPath, stats, bl); wErr != nil {
+				log.Printf("WARN: write source stats section: %v", wErr)
+			}
+		}
+	}
 	}
 
 	approved := make([]types.Approved, 0)
@@ -162,8 +179,10 @@ func Run() error {
 
 		// N1/N2: news research
 		var researchSummary string
+		var sourceCites []commontypes.SourceCite
 		if researcher != nil {
-			verdict := researcher.Evaluate(c.Question, "yes")
+			verdict, _, cites := researcher.EvaluateFull(c.Question, "yes")
+			sourceCites = cites
 			researchSummary = fmt.Sprintf("Tavily+DeepSeek: confirms=%v contradicts=%v silent=%v score=%.2f — %s",
 				verdict.Confirms, verdict.Contradicts, verdict.Silent, verdict.Score, verdict.Summary)
 			daysToEnd := daysUntil(c.EndDate)
@@ -228,7 +247,25 @@ func Run() error {
 			ApprovedPriceYes: c.CurrentPriceYes,
 			DaysToResolution: d,
 			Horizon:          horizon,
+			SourcesUsed:      sourceCites,
 		})
+
+		// v4: persist as Obsidian decision .md so exit_monitor can patch outcome on close.
+		var tradeSources []decisionlog.TradeSource
+		for _, sc := range sourceCites {
+			tradeSources = append(tradeSources, decisionlog.TradeSource{
+				Domain: sc.Domain, URL: sc.URL,
+				HeadlineTitle: sc.HeadlineTitle, PublishedDate: sc.PublishedDate,
+			})
+		}
+		if _, wErr := decisionlog.WriteTrade(decisionsDir, decisionlog.TradeDecision{
+			Slug: c.Slug, MarketID: c.ID, Question: c.Question, Category: c.Category,
+			EntryPrice: c.CurrentPriceYes, SizeUSD: 0, // size unknown at approve time (executor decides)
+			Horizon: horizon, DaysToResolution: d,
+			SourcesUsed: tradeSources,
+		}); wErr != nil {
+			log.Printf("WARN: decisionlog WriteTrade failed for %s: %v", c.Slug, wErr)
+		}
 		if i%50 == 0 {
 			log.Printf("Brain progress: %d/%d processed, %d approved, %d blocked",
 				i+1, len(candidates), len(approved), len(blocked))

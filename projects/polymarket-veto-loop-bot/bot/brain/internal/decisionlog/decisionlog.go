@@ -223,3 +223,130 @@ func truncate(s string, n int) string {
 	}
 	return s[:n-3] + "..."
 }
+
+
+// TradeDecision describes an approved trade ready to be persisted as an Obsidian note.
+type TradeDecision struct {
+	Slug             string
+	MarketID         string
+	Question         string
+	Category         string
+	EntryPrice       float64
+	SizeUSD          float64
+	Horizon          string
+	DaysToResolution int
+	SourcesUsed      []TradeSource // domain + URL + headline + date
+}
+
+// TradeSource mirrors common/types.SourceCite but stays local to avoid the brain
+// decisionlog importing the executor types package.
+type TradeSource struct {
+	Domain        string
+	URL           string
+	HeadlineTitle string
+	PublishedDate string
+}
+
+// WriteTrade creates 03-decisions/<date>-polymarket-trade-<slug>.md with outcome: pending.
+// exit_monitor later patches the frontmatter on close.
+func WriteTrade(baseDir string, d TradeDecision) (string, error) {
+	if d.Slug == "" {
+		return "", fmt.Errorf("slug required")
+	}
+	date := time.Now().UTC().Format("2006-01-02")
+	slug := sanitize(d.Slug)
+	if len(slug) > 80 {
+		slug = slug[:80]
+	}
+	name := fmt.Sprintf("%s-polymarket-trade-%s.md", date, slug)
+	path := filepath.Join(baseDir, name)
+
+	// Don't clobber an existing decision .md for the same slug+day; brain may
+	// re-approve the same candidate on consecutive ciclos.
+	if _, err := os.Stat(path); err == nil {
+		return path, nil
+	}
+
+	fm := buildTradeFrontmatter(d, date)
+	body := buildTradeBody(d)
+	full := fm + "\n" + body
+	if err := os.MkdirAll(baseDir, 0755); err != nil {
+		return "", err
+	}
+	if err := os.WriteFile(path, []byte(full), 0644); err != nil {
+		return "", err
+	}
+	return path, nil
+}
+
+func buildTradeFrontmatter(d TradeDecision, date string) string {
+	var sources []string
+	for _, s := range d.SourcesUsed {
+		if s.Domain != "" {
+			sources = append(sources, s.Domain)
+		}
+	}
+	sourcesYAML := "[]"
+	if len(sources) > 0 {
+		sourcesYAML = "[" + strings.Join(sources, ", ") + "]"
+	}
+	var cited []string
+	for _, s := range d.SourcesUsed {
+		if s.HeadlineTitle != "" {
+			cited = append(cited, fmt.Sprintf("    - title: %s\n      date: %s\n      url: %s",
+				yamlEscape(truncate(s.HeadlineTitle, 140)), yamlEscape(s.PublishedDate), yamlEscape(s.URL)))
+		}
+	}
+	citedBlock := ""
+	if len(cited) > 0 {
+		citedBlock = "\ncited_dates:\n" + strings.Join(cited, "\n")
+	}
+	observeDays := d.DaysToResolution
+	if observeDays <= 0 {
+		observeDays = 30
+	}
+	return fmt.Sprintf(`---
+title: "Polymarket trade — %s"
+type: decision
+decision_type: trade-approved
+date: %s
+slug: %s
+market_id: %s
+entry_price: %.4f
+size_usd: %.2f
+horizon: %s
+days_to_resolution: %d
+sources_used: %s%s
+outcome: pending
+outcome_observed_after_days: %d
+tags: [decision, polymarket, bot, trade, approved]
+related:
+  - "[[agents/polymarket-bot]]"
+  - "[[agents/polymarket-bot/memory]]"
+  - "[[projects/polymarket-veto-loop-bot]]"
+---`,
+		yamlEscape(truncate(d.Question, 120)), date, d.Slug, d.MarketID,
+		d.EntryPrice, d.SizeUSD, d.Horizon, d.DaysToResolution,
+		sourcesYAML, citedBlock, observeDays)
+}
+
+func buildTradeBody(d TradeDecision) string {
+	var sb strings.Builder
+	sb.WriteString(fmt.Sprintf("\n# Trade aprobado: %s\n\n", d.Question))
+	sb.WriteString("## Mercado\n\n")
+	sb.WriteString(fmt.Sprintf("- **Slug**: `%s`\n", d.Slug))
+	sb.WriteString(fmt.Sprintf("- **Categoría**: %s\n", d.Category))
+	sb.WriteString(fmt.Sprintf("- **Precio entrada**: %.4f\n", d.EntryPrice))
+	sb.WriteString(fmt.Sprintf("- **Tamaño**: $%.2f\n", d.SizeUSD))
+	sb.WriteString(fmt.Sprintf("- **Horizon**: %s (%d d hasta resolución)\n", d.Horizon, d.DaysToResolution))
+	sb.WriteString("\n## Fuentes consultadas\n\n")
+	if len(d.SourcesUsed) == 0 {
+		sb.WriteString("_(ninguna — verdict silent o memoria pura)_\n")
+	} else {
+		for _, s := range d.SourcesUsed {
+			sb.WriteString(fmt.Sprintf("- **%s** (%s): [%s](%s)\n", s.Domain, s.PublishedDate, truncate(s.HeadlineTitle, 100), s.URL))
+		}
+	}
+	sb.WriteString("\n## Human notes\n\n_(no se toca por automatización)_\n")
+	return sb.String()
+}
