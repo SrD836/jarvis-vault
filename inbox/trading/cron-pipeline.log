@@ -83,3 +83,18 @@
 2026/05/19 18:30:03 executor.go:197: executor: entered [long] Starmer out by June 30, 2026? @ 0.3000 size=$45.48 (open=48/50, bankroll=$2228)
 2026/05/19 18:30:03 executor.go:202: executor: 3 entered, 79 rejected
 2026/05/19 18:30:03 main.go:13: executor: done
+2026/05/19 19:00:03 main.go:11: executor: starting one-shot pass
+2026/05/19 19:00:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/19 19:00:03 executor.go:62: executor: quota slots this run: short=2 medium=1 long=1 (of 2 remaining today)
+2026/05/19 19:00:03 executor.go:197: executor: entered [short] Will AFC Bournemouth vs. Manchester City FC end in a draw? @ 0.2400 size=$44.57 (open=49/50, bankroll=$2184)
+2026/05/19 19:00:03 executor.go:197: executor: entered [medium] US x Iran permanent peace deal by June 30, 2026? @ 0.2800 size=$43.68 (open=50/50, bankroll=$2140)
+2026/05/19 19:00:03 executor.go:202: executor: 2 entered, 86 rejected
+2026/05/19 19:00:03 main.go:13: executor: done
+2026/05/19 19:30:03 main.go:11: executor: starting one-shot pass
+2026/05/19 19:30:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/19 19:30:03 executor.go:62: executor: quota slots this run: short=3 medium=1 long=1 (of 3 remaining today)
+2026/05/19 19:30:03 executor.go:197: executor: entered [short] Will AFC Bournemouth win on 2026-05-19? @ 0.4100 size=$51.21 (open=48/50, bankroll=$2510)
+2026/05/19 19:30:03 executor.go:197: executor: entered [short] Chelsea FC vs. Tottenham Hotspur FC: Both Teams to Score @ 0.5400 size=$50.19 (open=49/50, bankroll=$2459)
+2026/05/19 19:30:03 executor.go:197: executor: entered [short] Iran closes its airspace by May 21? @ 0.2100 size=$49.19 (open=50/50, bankroll=$2410)
+2026/05/19 19:30:03 executor.go:202: executor: 3 entered, 84 rejected
+2026/05/19 19:30:03 main.go:13: executor: done

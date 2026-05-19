@@ -728,3 +728,57 @@
 2026/05/19 18:55:03 main.go:13: exit_monitor: done
 2026/05/19 19:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/19 19:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 19:00:02 monitor.go:166: exit_monitor: 0 closed, 48 remaining
+2026/05/19 19:00:02 main.go:13: exit_monitor: done
+2026/05/19 19:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 19:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 19:05:02 monitor.go:166: exit_monitor: 0 closed, 50 remaining
+2026/05/19 19:05:02 main.go:13: exit_monitor: done
+2026/05/19 19:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 19:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 19:10:01 monitor.go:140: exit_monitor: closed Iran closes its airspace by May 24? (take_profit EARLY) @ 0.4000 src=bestBid liq=$86880: PnL $32.83 (40.35%)
+2026/05/19 19:10:02 monitor.go:166: exit_monitor: 1 closed, 49 remaining
+2026/05/19 19:10:02 main.go:13: exit_monitor: done
+2026/05/19 19:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 19:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 19:15:01 monitor.go:140: exit_monitor: closed Will AFC Bournemouth win on 2026-05-19? (take_profit) @ 0.3800 src=bestBid liq=$45810: PnL $92.97 (105.41%)
+2026/05/19 19:15:01 monitor.go:140: exit_monitor: closed Iran closes its airspace by May 21? (take_profit EARLY) @ 0.2100 src=bestBid liq=$70148: PnL $38.75 (44.83%)
+2026/05/19 19:15:02 monitor.go:166: exit_monitor: 2 closed, 47 remaining
+2026/05/19 19:15:02 main.go:13: exit_monitor: done
+2026/05/19 19:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 19:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 19:20:02 monitor.go:166: exit_monitor: 0 closed, 47 remaining
+2026/05/19 19:20:02 main.go:13: exit_monitor: done
+2026/05/19 19:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 19:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 19:25:03 monitor.go:166: exit_monitor: 0 closed, 47 remaining
+2026/05/19 19:25:03 main.go:13: exit_monitor: done
+2026/05/19 19:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 19:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 19:30:02 monitor.go:166: exit_monitor: 0 closed, 47 remaining
+2026/05/19 19:30:02 main.go:13: exit_monitor: done
+2026/05/19 19:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 19:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 19:35:02 monitor.go:166: exit_monitor: 0 closed, 50 remaining
+2026/05/19 19:35:02 main.go:13: exit_monitor: done
+2026/05/19 19:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 19:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 19:40:03 monitor.go:166: exit_monitor: 0 closed, 50 remaining
+2026/05/19 19:40:03 main.go:13: exit_monitor: done
+2026/05/19 19:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 19:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 19:45:02 monitor.go:166: exit_monitor: 0 closed, 50 remaining
+2026/05/19 19:45:02 main.go:13: exit_monitor: done
+2026/05/19 19:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 19:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 19:50:01 monitor.go:140: exit_monitor: closed Will Chelsea FC win on 2026-05-19? (take_profit) @ 0.6600 src=bestBid liq=$114238: PnL $62.90 (41.94%)
+2026/05/19 19:50:02 monitor.go:140: exit_monitor: closed Will AC Monza win on 2026-05-19? (take_profit) @ 0.8500 src=bestBid liq=$46049: PnL $33.47 (70.00%)
+2026/05/19 19:50:02 monitor.go:166: exit_monitor: 2 closed, 48 remaining
+2026/05/19 19:50:02 main.go:13: exit_monitor: done
+2026/05/19 19:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 19:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 19:55:02 monitor.go:140: exit_monitor: closed Will Manchester City win the 2025–26 English Premier League? (stop_loss EARLY) @ 0.0200 src=bestBid liq=$37748: PnL $-63.92 (-85.19%)
+2026/05/19 19:55:02 monitor.go:166: exit_monitor: 1 closed, 47 remaining
+2026/05/19 19:55:02 main.go:13: exit_monitor: done
+2026/05/19 20:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 20:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
