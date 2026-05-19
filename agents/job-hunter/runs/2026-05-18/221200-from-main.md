@@ -3,8 +3,16 @@ title: "Run — job-hunter — 2026-05-18T22:12:00"
 type: agent-run-log
 agent: job-hunter
 date: 2026-05-18
+related:
+  - "[[agents/job-hunter]]"
+  - "[[agents/job-hunter/memory]]"
+  - "[[agents/runs-today]]"
+  - "[[inbox/job-hunting/2026-05-18-trabajo-page-linkedin]]"
+  - "[[inbox/job-hunting/index]]"
 tags: [job-hunter, run, linkedin]
+# auto-linked 2026-05-19
 ---
+
 
 # Run Log — 2026-05-18T22:12:00
 

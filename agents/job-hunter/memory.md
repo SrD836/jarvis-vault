@@ -3,8 +3,16 @@ title: "Job Hunter — Memory Snapshot"
 type: agent-memory
 agent: job-hunter
 date: 2026-05-18
+related:
+  - "[[USER]]"
+  - "[[agents/job-hunter]]"
+  - "[[inbox/job-hunting/2026-05-18-trabajo-page-linkedin]]"
+  - "[[inbox/job-hunting/index]]"
+  - "[[projects/job-hunt/2026-05-16-search]]"
 tags: [job-hunter, memory, profile, career]
+# auto-linked 2026-05-19
 ---
+
 
 # Job Hunter — Perfil estable de David
 

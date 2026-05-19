@@ -2,10 +2,18 @@
 title: "Job Hunt Report — LinkedIn — 2026-05-18"
 type: job-hunt-report
 date: 2026-05-18
+related:
+  - "[[agents/job-hunter/memory]]"
+  - "[[agents/job-hunter/runs/2026-05-18/221200-from-main]]"
+  - "[[inbox/job-hunting/2026-05-17-david-multi]]"
+  - "[[inbox/job-hunting/index]]"
+  - "[[projects/job-hunt/2026-05-16-search]]"
 tags: [jobs, linkedin, job-hunter]
 source: linkedin.com/jobs
 buckets_searched: [AI training/annotation, IT support remote, customer support tech, AI ops junior, virtual assistant]
+# auto-linked 2026-05-19
 ---
+
 
 # LinkedIn Job Hunt — 2026-05-18
 
