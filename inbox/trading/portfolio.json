@@ -1,5 +1,5 @@
 {
-  "bankroll": 2845.7580336656124,
+  "bankroll": 2767.613265974843,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -168,21 +168,6 @@
       "side": "yes",
       "size": 76.56867203236072,
       "size_usd": 76.56867203236072
-    },
-    {
-      "approved_price": 0.915,
-      "category": "uncategorized",
-      "days_to_resolution": 11,
-      "end_date": "2026-05-30T23:55:00Z",
-      "entry_price": 0.915,
-      "entry_timestamp": "2026-05-19T17:00:04Z",
-      "horizon": "medium",
-      "id": "T-1193498-1779210004342",
-      "market_id": "1193498",
-      "question": "Will Arsenal win a trophy this season?",
-      "side": "yes",
-      "size": 73.53655261987925,
-      "size_usd": 73.53655261987925
     },
     {
       "approved_price": 0.0545,
@@ -737,7 +722,23 @@
       "side": "yes",
       "size": 58.43710482167478,
       "size_usd": 58.43710482167478
+    },
+    {
+      "approved_price": 0.16,
+      "category": "uncategorized",
+      "days_to_resolution": 41,
+      "end_date": "2026-06-30T00:00:00Z",
+      "entry_price": 0.16,
+      "entry_timestamp": "2026-05-19T23:00:04Z",
+      "horizon": "long",
+      "id": "T-1708133-1779231604302",
+      "liquidity_usd": 27115.3883,
+      "market_id": "1708133",
+      "question": "Iran leadership change by June 30?",
+      "side": "yes",
+      "size": 54.66132031064909,
+      "size_usd": 54.66132031064909
     }
   ],
-  "used_exposure": 3351.3740185214806
+  "used_exposure": 3332.4987862122503
 }

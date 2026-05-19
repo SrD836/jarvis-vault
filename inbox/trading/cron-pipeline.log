@@ -147,3 +147,11 @@
 2026/05/19 22:30:04 executor.go:197: executor: entered [long] Will the UK designate the IRGC a terrorist organization by June 30?  @ 0.1080 size=$57.27 (open=50/50, bankroll=$2806)
 2026/05/19 22:30:04 executor.go:202: executor: 4 entered, 75 rejected
 2026/05/19 22:30:04 main.go:13: executor: done
+2026/05/19 23:00:04 main.go:11: executor: starting one-shot pass
+2026/05/19 23:00:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/19 23:00:04 executor.go:62: executor: quota slots this run: short=3 medium=1 long=1 (of 3 remaining today)
+2026/05/19 23:00:04 executor.go:197: executor: entered [short] Will Thomas Massie be the Republican nominee for KY-04? @ 0.1700 size=$56.92 (open=48/50, bankroll=$2789)
+2026/05/19 23:00:04 executor.go:197: executor: entered [medium] Gaza flotilla enters Israeli waters by May 31? @ 0.2000 size=$55.78 (open=49/50, bankroll=$2733)
+2026/05/19 23:00:04 executor.go:197: executor: entered [long] Iran leadership change by June 30? @ 0.1600 size=$54.66 (open=50/50, bankroll=$2678)
+2026/05/19 23:00:04 executor.go:202: executor: 3 entered, 77 rejected
+2026/05/19 23:00:04 main.go:13: executor: done

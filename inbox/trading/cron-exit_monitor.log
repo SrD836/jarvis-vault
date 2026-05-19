@@ -945,3 +945,28 @@
 2026/05/19 22:55:02 main.go:13: exit_monitor: done
 2026/05/19 23:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/19 23:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 23:00:02 monitor.go:166: exit_monitor: 0 closed, 47 remaining
+2026/05/19 23:00:02 main.go:13: exit_monitor: done
+2026/05/19 23:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 23:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 23:05:02 monitor.go:140: exit_monitor: closed Gaza flotilla enters Israeli waters by May 31? (stop_loss EARLY) @ 0.0200 src=bestBid liq=$26602: PnL $-50.20 (-90.00%)
+2026/05/19 23:05:02 monitor.go:166: exit_monitor: 1 closed, 49 remaining
+2026/05/19 23:05:02 main.go:13: exit_monitor: done
+2026/05/19 23:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 23:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 23:10:02 monitor.go:166: exit_monitor: 0 closed, 49 remaining
+2026/05/19 23:10:02 main.go:13: exit_monitor: done
+2026/05/19 23:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 23:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 23:15:02 monitor.go:140: exit_monitor: closed Will Thomas Massie be the Republican nominee for KY-04? (stop_loss) @ 0.0100 src=lastTradePrice_fallback liq=$98843: PnL $-53.57 (-94.12%)
+2026/05/19 23:15:02 monitor.go:166: exit_monitor: 1 closed, 48 remaining
+2026/05/19 23:15:02 main.go:13: exit_monitor: done
+2026/05/19 23:20:02 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 23:20:02 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 23:20:02 monitor.go:140: exit_monitor: closed Will Arsenal win a trophy this season? (market_closed) @ 0.9990 src=bestBid liq=$0: PnL $6.75 (9.18%)
+2026/05/19 23:20:02 monitor.go:166: exit_monitor: 1 closed, 47 remaining
+2026/05/19 23:20:02 main.go:13: exit_monitor: done
+2026/05/19 23:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 23:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 23:25:03 monitor.go:166: exit_monitor: 0 closed, 47 remaining
+2026/05/19 23:25:03 main.go:13: exit_monitor: done
