@@ -86,6 +86,16 @@ X API directa NO está integrada. Si hace falta tweets en tiempo real (no indexa
 - **Polymarket URL en audit**: ahora usa `/market/<slug>` (con fallback `/event/<eventSlug>` si existe) en vez de `/event/<slug>` que devolvía 404 para mercados individuales.
 - **Bankroll fix**: exit_monitor v4 devuelve el principal (`Size`) además del PnL al bankroll al cerrar (antes solo añadía el delta, lo que sangraba bankroll progresivamente).
 
+### v5 (2026-05-19): pricing bid/ask correcto + early-exit etiquetado + Q3 liquidez
+
+- **Pricing realista**: entry usa `bestAsk` (lo que pagaríamos al comprar YES), exit usa `bestBid` (lo que recibimos al vender YES). Antes ambos usaban mid/lastTradePrice y sobrestimaban PnL por ~spread/2 en cada lado.
+- **Q3 liquidity gate** en executor: rechaza entry si `liquidity_usd < tradeSize × 4`. Threshold configurable vía `liquidity_min_ratio` (default 4 = nuestra posición ≤25% del orderbook visible).
+- **Exit liquidity gate** en exit_monitor: si liquidity < Size×4 o `acceptingOrders=false`, deferir cierre al próximo ciclo (evita slippage al vender lote completo).
+- **EarlyExit flag**: si el mercado sigue abierto al cerrar (take_profit/stop_loss antes de endDate) → `early_exit: true` + badge naranja "Anticipado · resuelve en N d" en UI. Diferencia clara entre cierre por trigger vs cierre por resolución del mercado.
+- **stop_loss_pct** añadido (default 80%): segundo cap relativo al tamaño del trade, complementa stop_loss_usd (relevante con sizing dinámico que va desde $25).
+- **Audit retro 2026-05-19**: trade Iran +$110 (exit 0.13) recalculado a bestBid=0.12 → PnL real $90, bankroll corregido -$20. Registro en `vault/agents/polymarket-bot/audit-log.jsonl`.
+- **Dashboard**: tabla "Trades cerrados" añade columnas Tipo (Anticipado/Resuelto), Fuente precio (bestBid / fallback / audit), Liquidez al cierre (warning si <Size×4).
+
 ### Limitaciones conocidas
 - Tavily quota: search_depth=advanced consume ~2× créditos. Free tier (1000/mes) se agota en horas con cron */30 sobre ~50 candidates/ciclo. Cache TTL 6h mitiga parcialmente. Considerar plan pagado o NewsAPI/RSS scraping como alternativas.
 - gamma-api: `currentPrice` viene vacío frecuentemente. Fallback chain instalado: lastTradePrice → outcomePrices[0] → mid(bestBid, bestAsk).

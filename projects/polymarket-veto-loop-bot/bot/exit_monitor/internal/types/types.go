@@ -37,22 +37,30 @@ type ClosedTrade struct {
 	ExitTime   string  `json:"exit_timestamp"`
 	Pnl        float64 `json:"pnl"`
 	PnlUSD     float64 `json:"pnl_usd"`
-	PnlPct      float64                  `json:"pnl_pct"`
-	Reason      string                   `json:"exit_reason"`
-	SourcesUsed []commontypes.SourceCite `json:"sources_used,omitempty"`
-	DaysOpen    float64                  `json:"days_open,omitempty"`
+	PnlPct          float64                  `json:"pnl_pct"`
+	Reason          string                   `json:"exit_reason"`
+	SourcesUsed     []commontypes.SourceCite `json:"sources_used,omitempty"`
+	DaysOpen        float64                  `json:"days_open,omitempty"`
+	EarlyExit       bool                     `json:"early_exit,omitempty"`
+	EndDate         string                   `json:"end_date,omitempty"`
+	ExitPriceSource string                   `json:"exit_price_source,omitempty"`
+	LiquidityUSD    float64                  `json:"liquidity_usd,omitempty"`
 }
 
 // MarketPrice from Gamma API GET /markets/{id}. Gamma a veces deja currentPrice vacío,
 // hay que caer a lastTradePrice → outcomePrices[0] → mid(bestBid,bestAsk).
 type MarketPrice struct {
-	ID             string  `json:"id"`
-	OutcomeType    string  `json:"outcomeType"`
-	Closed         bool    `json:"closed"`
-	CurrentPrice   string  `json:"currentPrice"`
-	LastTradePrice float64 `json:"lastTradePrice"`
-	BestBid        float64 `json:"bestBid"`
-	BestAsk        float64 `json:"bestAsk"`
-	OutcomePrices  string  `json:"outcomePrices"`
-	Volume24h      string  `json:"volume24h"`
+	ID              string  `json:"id"`
+	OutcomeType     string  `json:"outcomeType"`
+	Closed          bool    `json:"closed"`
+	Active          bool    `json:"active"`
+	AcceptingOrders bool    `json:"acceptingOrders"`
+	EndDate         string  `json:"endDate"`
+	CurrentPrice    string  `json:"currentPrice"`
+	LastTradePrice  float64 `json:"lastTradePrice"`
+	BestBid         float64 `json:"bestBid"`
+	BestAsk         float64 `json:"bestAsk"`
+	OutcomePrices   string  `json:"outcomePrices"`
+	Volume24h       string  `json:"volume24h"`
+	LiquidityNum    float64 `json:"liquidityNum"`
 }

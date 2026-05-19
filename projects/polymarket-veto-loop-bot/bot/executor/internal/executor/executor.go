@@ -122,6 +122,16 @@ func Run() {
 			continue
 		}
 
+		// v5 Q3: liquidity gate. Reject if our trade would be >25% of visible orderbook.
+		// Threshold: liquidity_usd >= tradeSize * cfg.LiquidityMinRatio (default 4 → ≤25% depth).
+		if cfg.LiquidityMinRatio > 0 && a.LiquidityUSD > 0 && a.LiquidityUSD < tradeSize*cfg.LiquidityMinRatio {
+			rejects = append(rejects, types.Rejection{
+				Timestamp: nowStr, MarketID: a.CandidateID,
+				Question: a.Question, Reason: fmt.Sprintf("Q3_low_liquidity: $%.0f < $%.0f (size $%.0f × %.0f)", a.LiquidityUSD, tradeSize*cfg.LiquidityMinRatio, tradeSize, cfg.LiquidityMinRatio),
+			})
+			continue
+		}
+
 		// max_same_category: skip when category is "uncategorized" (scanner cannot classify;
 		// applying the cap there would otherwise cluster all markets into one bucket and
 		// kill diversity. Real categorical correlation will be enforced later by a smarter
@@ -165,6 +175,7 @@ func Run() {
 			DaysToResolution: a.DaysToResolution,
 			Horizon:          a.Horizon,
 			EndDate:          a.EndDate,
+			LiquidityUSD:     a.LiquidityUSD,
 			SourcesUsed:      a.SourcesUsed,
 		}
 

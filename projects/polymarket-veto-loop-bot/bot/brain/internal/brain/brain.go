@@ -241,6 +241,7 @@ func Run() error {
 			Category:         c.Category,
 			CurrentPriceYes:  c.CurrentPriceYes,
 			Volume24h:        c.Volume24h,
+			LiquidityUSD:     c.LiquidityUSD,
 			EndDate:          c.EndDate,
 			ScannedAt:        c.ScannedAt,
 			ApprovedAt:       time.Now().UTC().Format(time.RFC3339),

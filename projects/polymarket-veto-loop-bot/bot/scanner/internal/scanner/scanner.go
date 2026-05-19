@@ -132,12 +132,22 @@ func convert(m types.Market, now string) (types.Candidate, bool) {
 		return types.Candidate{}, false
 	}
 
+	// v5: realistic entry pricing — use bestAsk (what we'd actually pay to buy YES).
+	// Fallback: outcomePrices[0] if bestAsk missing. Reject if both unavailable.
 	var prices []string
-	if err := json.Unmarshal([]byte(m.OutcomePrices), &prices); err != nil || len(prices) < 1 {
+	_ = json.Unmarshal([]byte(m.OutcomePrices), &prices)
+	priceYes := m.BestAsk
+	if priceYes <= 0 && len(prices) >= 1 {
+		priceYes = parseFloat(prices[0])
+	}
+	if priceYes <= 0 || priceYes >= 1 {
 		return types.Candidate{}, false
 	}
-	priceYes := parseFloat(prices[0])
-	if priceYes <= 0 || priceYes >= 1 {
+	// v5: drop markets paused or with zero liquidity (cannot trade).
+	if !m.AcceptingOrders {
+		return types.Candidate{}, false
+	}
+	if m.LiquidityNum <= 0 {
 		return types.Candidate{}, false
 	}
 
@@ -153,6 +163,7 @@ func convert(m types.Market, now string) (types.Candidate, bool) {
 		Category:        category,
 		Volume24h:       volume,
 		CurrentPriceYes: priceYes,
+		LiquidityUSD:    m.LiquidityNum,
 		EndDate:         m.EndDate,
 		ScannedAt:       now,
 	}, true

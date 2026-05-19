@@ -16,6 +16,7 @@ type Approved struct {
 	ApprovedPriceYes float64                  `json:"approved_price_yes"`
 	DaysToResolution int                      `json:"days_to_resolution"`
 	Horizon          string                   `json:"horizon"`
+	LiquidityUSD     float64                  `json:"liquidity_usd,omitempty"`
 	SourcesUsed      []commontypes.SourceCite `json:"sources_used,omitempty"`
 }
 
@@ -34,6 +35,7 @@ type ActiveTrade struct {
 	Horizon          string                   `json:"horizon"`
 	EndDate          string                   `json:"end_date,omitempty"`
 	SizeUSD          float64                  `json:"size_usd"`
+	LiquidityUSD     float64                  `json:"liquidity_usd,omitempty"`
 	SourcesUsed      []commontypes.SourceCite `json:"sources_used,omitempty"`
 }
 

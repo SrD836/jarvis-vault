@@ -38,6 +38,9 @@ type BotConfig struct {
 	SizeMin          float64 `json:"size_min_usd"`
 	SizeMax          float64 `json:"size_max_usd"`
 
+	// v5: liquidity gating — reject trade if visible orderbook < tradeSize × this ratio.
+	LiquidityMinRatio float64 `json:"liquidity_min_ratio"`
+
 	Mode               string  `json:"mode"`
 }
 
@@ -87,6 +90,9 @@ func (c *BotConfig) applyDefaults() {
 	}
 	if c.StopLossPct == 0 {
 		c.StopLossPct = 80
+	}
+	if c.LiquidityMinRatio == 0 {
+		c.LiquidityMinRatio = 4
 	}
 }
 

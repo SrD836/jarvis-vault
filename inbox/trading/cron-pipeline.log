@@ -33,3 +33,35 @@
 2026/05/19 16:30:04 executor.go:61: executor: quota slots this run: short=5 medium=2 long=2 (of 7 remaining today)
 2026/05/19 16:30:04 executor.go:178: executor: 0 entered, 140 rejected
 2026/05/19 16:30:04 main.go:13: executor: done
+2026/05/19 17:00:04 main.go:11: executor: starting one-shot pass
+2026/05/19 17:00:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/19 17:00:04 executor.go:62: executor: quota slots this run: short=27 medium=6 long=6 (of 38 remaining today)
+2026/05/19 17:00:04 executor.go:186: executor: entered [short] Will AFC Bournemouth win on 2026-05-19? @ 0.1850 size=$88.20 (open=13/50, bankroll=$4322)
+2026/05/19 17:00:04 executor.go:186: executor: entered [short] Iran closes its airspace by May 21? @ 0.1450 size=$86.44 (open=14/50, bankroll=$4235)
+2026/05/19 17:00:04 executor.go:186: executor: entered [short] Will Elon Musk post 220-239 tweets from May 15 to May 22, 2026? @ 0.2815 size=$84.71 (open=15/50, bankroll=$4151)
+2026/05/19 17:00:04 executor.go:186: executor: entered [short] Will Elon Musk post 200-219 tweets from May 15 to May 22, 2026? @ 0.1255 size=$83.01 (open=16/50, bankroll=$4068)
+2026/05/19 17:00:04 executor.go:186: executor: entered [medium] Iran closes its airspace by May 24? @ 0.2850 size=$81.35 (open=17/50, bankroll=$3986)
+2026/05/19 17:00:04 executor.go:186: executor: entered [medium] Will Ken Paxton win the 2026 Texas Republican Primary? @ 0.9250 size=$79.73 (open=18/50, bankroll=$3907)
+2026/05/19 17:00:04 executor.go:186: executor: entered [medium] Will John Cornyn win the 2026 Texas Republican Primary? @ 0.0650 size=$78.13 (open=19/50, bankroll=$3828)
+2026/05/19 17:00:04 executor.go:186: executor: entered [medium] Will Arsenal win the 2025–26 English Premier League? @ 0.8650 size=$76.57 (open=20/50, bankroll=$3752)
+2026/05/19 17:00:04 executor.go:186: executor: entered [medium] Will Manchester City win the 2025–26 English Premier League? @ 0.1350 size=$75.04 (open=21/50, bankroll=$3677)
+2026/05/19 17:00:04 executor.go:186: executor: entered [medium] Will Arsenal win a trophy this season? @ 0.9150 size=$73.54 (open=22/50, bankroll=$3603)
+2026/05/19 17:00:04 executor.go:186: executor: entered [long] Will South Africa win Group A in the 2026 FIFA World Cup? @ 0.0545 size=$72.07 (open=23/50, bankroll=$3531)
+2026/05/19 17:00:04 executor.go:186: executor: entered [long] Will the next diplomatic US-Iran meeting be in Pakistan? @ 0.4050 size=$70.62 (open=24/50, bankroll=$3461)
+2026/05/19 17:00:04 executor.go:186: executor: entered [long] Ebola case in the US by June 30? @ 0.2250 size=$69.21 (open=25/50, bankroll=$3391)
+2026/05/19 17:00:04 executor.go:186: executor: entered [long] Strait of Hormuz traffic returns to normal by end of June? @ 0.2950 size=$67.83 (open=26/50, bankroll=$3324)
+2026/05/19 17:00:04 executor.go:186: executor: entered [long] US obtains Iranian enriched uranium by June 30? @ 0.1350 size=$66.47 (open=27/50, bankroll=$3257)
+2026/05/19 17:00:04 executor.go:186: executor: entered [long] Iran closes its airspace by June 30? @ 0.6200 size=$65.14 (open=28/50, bankroll=$3192)
+2026/05/19 17:00:04 executor.go:191: executor: 16 entered, 128 rejected
+2026/05/19 17:00:04 main.go:13: executor: done
+2026/05/19 17:30:03 main.go:11: executor: starting one-shot pass
+2026/05/19 17:30:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/19 17:30:03 executor.go:62: executor: quota slots this run: short=10 medium=3 long=3 (of 14 remaining today)
+2026/05/19 17:30:03 executor.go:197: executor: entered [medium] Will PSG win the 2025–26 Champions League? @ 0.5900 size=$53.97 (open=37/50, bankroll=$2645)
+2026/05/19 17:30:03 executor.go:197: executor: entered [medium] Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 31, 2026? @ 0.2100 size=$52.89 (open=38/50, bankroll=$2592)
+2026/05/19 17:30:03 executor.go:197: executor: entered [medium] US obtains Iranian enriched uranium by May 31? @ 0.0530 size=$51.83 (open=39/50, bankroll=$2540)
+2026/05/19 17:30:03 executor.go:197: executor: entered [long] Tulsi Gabbard out by June 30? @ 0.2000 size=$50.80 (open=40/50, bankroll=$2489)
+2026/05/19 17:30:03 executor.go:197: executor: entered [long] Will France, UK, or Germany strike Iran by June 30? @ 0.0570 size=$49.78 (open=41/50, bankroll=$2439)
+2026/05/19 17:30:03 executor.go:197: executor: entered [long] Kurds declare independence from Iran? @ 0.0530 size=$48.79 (open=42/50, bankroll=$2391)
+2026/05/19 17:30:03 executor.go:202: executor: 6 entered, 149 rejected
+2026/05/19 17:30:03 main.go:13: executor: done

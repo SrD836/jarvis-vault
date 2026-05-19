@@ -8,14 +8,15 @@ import (
 
 // Candidate from scanner output (candidates.jsonl)
 type Candidate struct {
-	ID             string  `json:"id"`
-	Slug           string  `json:"slug"`
-	Question       string  `json:"question"`
-	Category       string  `json:"category"`
-	Volume24h      float64 `json:"volume_24h"`
+	ID              string  `json:"id"`
+	Slug            string  `json:"slug"`
+	Question        string  `json:"question"`
+	Category        string  `json:"category"`
+	Volume24h       float64 `json:"volume_24h"`
 	CurrentPriceYes float64 `json:"current_price_yes"`
-	EndDate        string  `json:"end_date"`
-	ScannedAt      string  `json:"scanned_at"`
+	LiquidityUSD    float64 `json:"liquidity_usd,omitempty"`
+	EndDate         string  `json:"end_date"`
+	ScannedAt       string  `json:"scanned_at"`
 }
 
 // VetoResult stores the outcome of evaluating a candidate against V1–V6.
@@ -41,6 +42,7 @@ type Approved struct {
 	ApprovedPriceYes float64                  `json:"approved_price_yes"`
 	DaysToResolution int                      `json:"days_to_resolution"`
 	Horizon          string                   `json:"horizon"` // short | medium | long
+	LiquidityUSD     float64                  `json:"liquidity_usd,omitempty"`
 	SourcesUsed      []commontypes.SourceCite `json:"sources_used,omitempty"`
 }
 
