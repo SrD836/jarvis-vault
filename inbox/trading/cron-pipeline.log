@@ -114,3 +114,18 @@
 2026/05/19 20:30:04 executor.go:197: executor: entered [short] Will the price of Bitcoin be above $76,000 on May 20? @ 0.8000 size=$51.18 (open=50/50, bankroll=$2508)
 2026/05/19 20:30:04 executor.go:202: executor: 3 entered, 83 rejected
 2026/05/19 20:30:04 main.go:13: executor: done
+2026/05/19 21:00:04 main.go:11: executor: starting one-shot pass
+2026/05/19 21:00:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/19 21:00:04 executor.go:62: executor: quota slots this run: short=5 medium=1 long=1 (of 6 remaining today)
+2026/05/19 21:00:04 executor.go:197: executor: entered [short] Will Chelsea FC vs. Tottenham Hotspur FC end in a draw? @ 0.1600 size=$62.89 (open=45/50, bankroll=$3082)
+2026/05/19 21:00:04 executor.go:197: executor: entered [medium] Will Manchester United FC win on 2026-05-24? @ 0.2900 size=$61.63 (open=46/50, bankroll=$3020)
+2026/05/19 21:00:04 executor.go:197: executor: entered [long] Will the UK designate the IRGC a terrorist organization by June 30?  @ 0.1080 size=$60.40 (open=47/50, bankroll=$2960)
+2026/05/19 21:00:04 executor.go:202: executor: 3 entered, 79 rejected
+2026/05/19 21:00:04 main.go:13: executor: done
+2026/05/19 21:30:04 main.go:11: executor: starting one-shot pass
+2026/05/19 21:30:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/19 21:30:04 executor.go:62: executor: quota slots this run: short=5 medium=1 long=1 (of 6 remaining today)
+2026/05/19 21:30:04 executor.go:197: executor: entered [medium] Will Arsenal FC win on 2026-05-24? @ 0.5300 size=$60.99 (open=45/50, bankroll=$2988)
+2026/05/19 21:30:04 executor.go:197: executor: entered [long] Will the UK designate the IRGC a terrorist organization by June 30?  @ 0.1080 size=$59.77 (open=46/50, bankroll=$2929)
+2026/05/19 21:30:04 executor.go:202: executor: 2 entered, 81 rejected
+2026/05/19 21:30:04 main.go:13: executor: done

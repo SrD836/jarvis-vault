@@ -1,0 +1,96 @@
+{
+  "adapted": {
+    "headline": "Técnico de Soporte IT en Formación · Google IT Support Certified · Perfil Financiero-Tecnológico",
+    "summary": "Estudiante de Administración y Finanzas con certificación Google IT Support y formación en Microsoft Azure, orientado al soporte técnico y la resolución de incidencias. Aporto base conceptual en sistemas financieros y herramientas empresariales (Microsoft 365, Google Workspace), junto con experiencia práctica en atención al cliente y gestión de solicitudes en entornos de alta presión. Busco consolidar mi trayectoria en soporte de plataformas bancarias como posición de entrada.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow",
+        "period": "Jun 2021 · Jul 2021 (Irlanda)",
+        "bullets": [
+          "Atendí solicitudes de usuarios en entorno dinámico, resolviendo incidencias en tiempo real con comunicación en inglés.",
+          "Gestioné múltiples tareas simultáneas (cobro, recepción, sala) priorizando según urgencia, habilidad directamente aplicable a la gestión de tickets.",
+          "Colaboré en equipo bajo presión, garantizando la continuidad del servicio al cliente."
+        ]
+      },
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "Hostelería (España)",
+        "period": "Anterior a 2021",
+        "bullets": [
+          "Resolución de incidencias con clientes en sala, barra y caja, adaptando la comunicación a distintos perfiles de usuario.",
+          "Gestión de pedidos y procesos de cobro, desarrollando atención al detalle y control de procedimientos."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Resolución de problemas / Troubleshooting",
+      "Google IT Support (certificación)",
+      "Soporte a usuarios internos",
+      "Microsoft 365",
+      "Microsoft Azure",
+      "Atención al cliente y comunicación"
+    ],
+    "skills_secondary": [
+      "Excel avanzado",
+      "Google Workspace",
+      "Herramientas de IA y chatbots empresariales",
+      "Gestión de incidencias y tickets",
+      "Ofimática",
+      "Trabajo en equipo",
+      "Inglés técnico (B2)",
+      "Mejora de procesos digitales"
+    ],
+    "education": [
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online (Google)",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas (en curso)",
+        "institution": "ULPGC",
+        "period": null
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B2"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reorientado desde 'Estudiante de Administración y Finanzas' a perfil de Soporte IT para alinear con el rol target.",
+      "Certificación Google IT Support promovida a skills_primary (era secondary en el perfil) por ser el credencial más relevante a la oferta.",
+      "Microsoft Azure promovido a skills_primary por alineación con entornos tecnológicos bancarios.",
+      "'Gestión de incidencias y tickets' añadido a skills_secondary como keyword explícita de la JD, derivado del curso Google IT Support.",
+      "Bullets de experiencia en hostelería reformulados en clave de soporte: 'resolución de incidencias', 'gestión de solicitudes', 'continuidad del servicio', extrayendo transferibilidad real sin inventar experiencia.",
+      "Educación reordenada: cursos técnicos (Google IT Support, Azure) colocados primero para maximizar visibilidad ante ATS de perfil tech.",
+      "Añadido summary de perfil específico para el rol de soporte Murex, destacando la base financiera como diferencial de dominio.",
+      "AVISO: No existe experiencia previa con Murex ni con ningún software bancario. La confianza es baja. El candidato solo puede optar si la empresa acepta perfiles junior sin conocimiento previo de la plataforma y con voluntad de formación interna."
+    ],
+    "confidence": 0.42,
+    "target_role": "Técnico de Soporte Murex (Junior)",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-19T21:11:12.121Z"
+  },
+  "offer_id": "linkedin-4401927167-murex",
+  "offer_title": "Técnico soporte Murex",
+  "company": "Full On Net",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

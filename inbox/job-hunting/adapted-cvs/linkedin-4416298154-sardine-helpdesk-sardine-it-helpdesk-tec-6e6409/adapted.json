@@ -1,0 +1,86 @@
+{
+  "adapted": {
+    "headline": "IT Support Technician · Google IT Support Certified · Microsoft 365 & Google Workspace",
+    "summary": "Estudiante de CFGS con certificación Google IT Support y formación en Microsoft Azure AI, orientado a entornos helpdesk de usuario final. Dominio demostrado de Microsoft 365 y Google Workspace, capacidad de troubleshooting y comunicación fluida en inglés con usuarios internacionales. Perfil junior con alta motivación técnica y experiencia real de atención al cliente en inglés.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda) y otros establecimientos",
+        "period": "2021 · verano",
+        "bullets": [
+          "Atención al cliente íntegramente en inglés en entorno internacional, resolviendo incidencias y peticiones en tiempo real.",
+          "Gestión de caja y cobros con software TPV, familiarizándose con flujos de trabajo digitales en entorno de alta carga.",
+          "Coordinación con equipo multicultural para distribución eficiente de tareas, garantizando continuidad del servicio.",
+          "Finalización anticipada por motivos de salud (documentado)."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Google IT Support (certificación)",
+      "Microsoft 365",
+      "Google Workspace",
+      "Resolución de problemas y troubleshooting",
+      "Atención al usuario final en inglés",
+      "Microsoft Azure AI (formación)",
+      "Herramientas de IA y chatbots empresariales"
+    ],
+    "skills_secondary": [
+      "Excel avanzado",
+      "Automatización de procesos con hojas de cálculo",
+      "Ofimática general",
+      "Gestión de pedidos y flujos de trabajo",
+      "Liderazgo y trabajo en equipo",
+      "Interés en mejora de procesos digitales"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "ULPGC – Universidad de Las Palmas de Gran Canaria",
+        "period": "En curso"
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información – Google IT Support",
+        "institution": "Curso Online (Google / Coursera)",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B2"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reescrito para reflejar el rol IT Helpdesk y destacar la certificación Google IT Support, principal punto de entrada al perfil.",
+      "Google IT Support promovido a primera posición en skills_primary por ser la credencial más directamente alineada con la oferta.",
+      "Microsoft Azure AI añadida a skills_primary (era secondary) por la relevancia del stack cloud moderno mencionado en la JD.",
+      "Experiencia en hostelería reformulada con lenguaje orientado a helpdesk: se enfatiza resolución de incidencias en tiempo real, uso de software de caja (TPV), coordinación de equipo y comunicación en inglés.",
+      "Summary reescrito en clave IT Support, suprimiendo el foco en finanzas/economía para no desviar la lectura del reclutador.",
+      "Excel avanzado y automatización movidos a skills_secondary al no ser prioritarios en la JD; skills_primary concentradas en soporte, herramientas de productividad y certificaciones técnicas.",
+      "Se mantiene la nota de finalización anticipada del empleo por honestidad; redactada de forma neutra."
+    ],
+    "confidence": 0.72,
+    "target_role": "IT Helpdesk Technician – Sardine (Spain Remote)",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-19T21:04:34.355Z"
+  },
+  "offer_id": "linkedin-4416298154-sardine-helpdesk",
+  "offer_title": "IT Helpdesk Technician",
+  "company": "Sardine",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-19T20:41:22.395Z",
+  "updated_at": "2026-05-19T21:49:22.682Z",
   "personal": {
     "full_name": "David González Nuez",
     "email": "b04h13112c@canariaseducacion.es",
@@ -9,21 +9,26 @@
     "linkedin_url": null,
     "github_url": null,
     "portfolio_url": null,
-    "work_auth": null
+    "work_auth": "EU citizen"
   },
   "preferences": {
-    "salary_min_eur_year": null,
-    "salary_max_eur_year": null,
-    "modality": [],
-    "willing_to_relocate": null,
+    "salary_min_eur_year": 24000,
+    "salary_max_eur_year": 32000,
+    "modality": [
+      "remote",
+      "hybrid"
+    ],
+    "willing_to_relocate": false,
     "relocate_cities": [],
-    "notice_period_days": null,
+    "notice_period_days": 15,
     "earliest_start_date": null,
     "industries_preferred": [],
     "industries_excluded": [],
     "company_size_min": null,
     "company_size_max": null,
-    "contract_types": [],
+    "contract_types": [
+      "full_time"
+    ],
     "languages_required": []
   },
   "skills": {
@@ -51,7 +56,7 @@
     },
     {
       "name": "Inglés",
-      "level": "unknown"
+      "level": "B2"
     }
   ],
   "education": [
@@ -78,7 +83,32 @@
   ],
   "experience_years_total": null,
   "experience_summary": "Estudiante de Administración y Finanzas con experiencia breve en hostelería (camarero, cajero, host), incluyendo 1 mes documentado en The Fallow (Irlanda, 2021). Perfil orientado a la digitalización, automatización de procesos y uso de inteligencia artificial en entornos empresariales.",
-  "questions_answered": {},
+  "questions_answered": {
+    "3e9ca40bc8": {
+      "label": "Código del país",
+      "kind": "select",
+      "answer": "España (+34)",
+      "saved_at": "2026-05-19T21:33:48.149Z"
+    },
+    "d5425faf4f": {
+      "label": "Código del país *",
+      "kind": "select",
+      "answer": "España (+34)",
+      "saved_at": "2026-05-19T21:39:29.785Z"
+    },
+    "a973eebfa8": {
+      "label": "Código del país",
+      "kind": "select",
+      "answer": "España (+34)",
+      "saved_at": "2026-05-19T21:43:20.286Z"
+    },
+    "d89f390f7a": {
+      "label": "Código del país",
+      "kind": "select",
+      "answer": "España (+34)",
+      "saved_at": "2026-05-19T21:49:22.682Z"
+    }
+  },
   "extraction_history": [
     {
       "at": "2026-05-19T20:05:33.697Z",
