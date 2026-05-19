@@ -9,17 +9,21 @@ import (
 	"path/filepath"
 	"time"
 
+	"github.com/davidgn/polymarket-veto-loop-bot/bot/exit_monitor/internal/loglosses"
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/exit_monitor/internal/polyclient"
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/exit_monitor/internal/types"
 )
 
 const (
-	dataDir      = "vault/inbox/trading"
-	activeFile   = "active.jsonl"
-	closedFile   = "closed.jsonl"
+	dataDir       = "vault/inbox/trading"
+	activeFile    = "active.jsonl"
+	closedFile    = "closed.jsonl"
 	portfolioFile = "portfolio.json"
 
-	stopLossUSD = 150.0
+	memoryPath   = "vault/agents/polymarket-bot/memory.md"
+	decisionsDir = "vault/03-decisions"
+
+	stopLossUSD   = 150.0
 	takeProfitPct = 60.0
 )
 
@@ -43,10 +47,9 @@ func Run() {
 			continue
 		}
 
-		// Determine entry price (yes side)
 		entryPrice := a.EntryPrice
 		pnlPct := (price - entryPrice) / entryPrice * 100
-		pnlUSD := (price - entryPrice) / entryPrice * a.Size // proportional P&L
+		pnlUSD := (price - entryPrice) / entryPrice * a.Size
 
 		reason := ""
 		switch {
@@ -61,22 +64,39 @@ func Run() {
 			continue
 		}
 
+		pnlR := math.Round(pnlUSD*100) / 100
+		exitTs := now.Format(time.RFC3339)
 		ct := types.ClosedTrade{
 			ID:         a.ID,
 			MarketID:   a.MarketID,
+			Slug:       a.Slug,
+			Question:   a.Question,
+			Category:   a.Category,
+			Side:       a.Side,
+			Size:       a.Size,
 			EntryPrice: entryPrice,
 			ExitPrice:  price,
 			EntryTime:  a.EntryTimestamp,
-			ExitTime:   now.Format(time.RFC3339),
-			PnlUSD:     math.Round(pnlUSD*100) / 100,
+			ExitTime:   exitTs,
+			Pnl:        pnlR,
+			PnlUSD:     pnlR,
 			PnlPct:     math.Round(pnlPct*100) / 100,
 			Reason:     reason,
 		}
 		closed = append(closed, ct)
-		log.Printf("exit_monitor: closed %s (%s): PnL $%.2f (%.2f%%)", a.Question, reason, ct.PnlUSD, ct.PnlPct)
+		log.Printf("exit_monitor: closed %s (%s): PnL $%.2f (%.2f%%)", a.Question, reason, ct.Pnl, ct.PnlPct)
+
+		// On loss → write decision log + memory append (best-effort)
+		if pnlR < 0 {
+			loglosses.LogLoss(
+				decisionsDir, memoryPath,
+				ct.ID, ct.Slug, ct.Question, ct.Category,
+				ct.EntryPrice, ct.ExitPrice, ct.Size, ct.Pnl,
+				ct.EntryTime, ct.ExitTime, ct.Reason,
+			)
+		}
 	}
 
-	// Update files
 	if len(closed) > 0 {
 		appendClosed(closed)
 		updatePortfolio(closed)
@@ -140,51 +160,40 @@ func updatePortfolio(closed []types.ClosedTrade) {
 	path := filepath.Join(dataDir, portfolioFile)
 	data, err := os.ReadFile(path)
 	if err != nil {
-		log.Printf("exit_monitor: cannot read portfolio for update: %v", err)
 		return
 	}
-
-	var pf struct {
-		Bankroll     float64            `json:"bankroll"`
-		UsedExposure float64            `json:"used_exposure"`
-		MaxExposure  float64            `json:"max_exposure"`
-		MaxPerTrade  float64            `json:"max_per_trade"`
-		MaxSameCat   int                `json:"max_same_category"`
-		Positions    []types.ActiveTrade `json:"positions"`
-	}
-	if err := json.Unmarshal(data, &pf); err != nil {
-		log.Printf("exit_monitor: corrupt portfolio.json: %v", err)
+	var p map[string]interface{}
+	if err := json.Unmarshal(data, &p); err != nil {
 		return
 	}
-
-	// Build set of closed IDs
-	closedIDs := make(map[string]bool)
+	bankroll, _ := p["bankroll"].(float64)
+	used, _ := p["used_exposure"].(float64)
 	for _, c := range closed {
-		closedIDs[c.ID] = true
-	}
-
-	// Filter out closed positions
-	var newPositions []types.ActiveTrade
-	for _, p := range pf.Positions {
-		if !closedIDs[p.ID] {
-			newPositions = append(newPositions, p)
+		bankroll += c.Pnl
+		used -= c.Size
+		if used < 0 {
+			used = 0
 		}
 	}
-
-	// Update bankroll and exposure
-	for _, c := range closed {
-		pf.Bankroll += c.PnlUSD
-		// Find the original size for this trade
-		for _, p := range pf.Positions {
-			if p.ID == c.ID {
-				pf.Bankroll += p.Size // return size capital
-				pf.UsedExposure -= p.Size
-				break
+	p["bankroll"] = bankroll
+	p["used_exposure"] = used
+	// rebuild positions: keep only those still in active
+	if positions, ok := p["positions"].([]interface{}); ok {
+		closedIDs := map[string]bool{}
+		for _, c := range closed {
+			closedIDs[c.ID] = true
+		}
+		filtered := []interface{}{}
+		for _, pos := range positions {
+			if m, ok := pos.(map[string]interface{}); ok {
+				if id, ok := m["id"].(string); ok && closedIDs[id] {
+					continue
+				}
 			}
+			filtered = append(filtered, pos)
 		}
+		p["positions"] = filtered
 	}
-	pf.Positions = newPositions
-
-	out, _ := json.MarshalIndent(pf, "", "  ")
+	out, _ := json.MarshalIndent(p, "", "  ")
 	_ = os.WriteFile(path, out, 0644)
 }

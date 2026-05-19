@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
-	"strconv"
+	"strings"
 	"time"
 
 	"github.com/davidgnuez/polymarket-veto-bot/scanner/internal/types"
@@ -20,82 +20,135 @@ const (
 	httpTimeout  = 30 * time.Second
 	userAgent    = "polymarket-veto-bot/1.0"
 	maxMarkets   = 500
+	pageSize     = 100
 )
+
+// Keywords that disqualify a market as "Pop Culture noise" (drama, memes, celebrities).
+// Filter applied to lowercase question text. Conservative — only obvious cases.
+var popCultureBlacklist = []string{
+	"kardashian", "kanye", "drake", "taylor swift", "rihanna", "beyonce",
+	"elon musk's", "trump tweet", "celebrity", "oscar", "grammy", "met gala",
+	"jesus christ", "second coming", "alien", "bigfoot", "loch ness",
+	"hot dog", "pizza", "emoji", "meme",
+}
 
 func Run() error {
 	fmt.Println("[scanner] starting scan")
 
-	var allCandidates []types.Candidate
-	var cursor *string
+	allCandidates := []types.Candidate{}
+	now := time.Now().UTC().Format(time.RFC3339)
+	offset := 0
 	page := 0
 
 	for {
-		resp, err := fetchMarkets(cursor)
+		markets, err := fetchMarkets(offset)
 		if err != nil {
 			return fmt.Errorf("fetch page %d: %w", page, err)
 		}
-
-		for _, m := range resp.Data {
-			if !filterMarket(m) {
-				continue
-			}
-			volume, _ := parseVolume(m.Volume24h)
-			price, _ := parseVolume(m.CurrentPrice)
-
-			c := types.Candidate{
-				ID:              m.ID,
-				Slug:            m.Slug,
-				Question:        m.Question,
-				Category:        m.Tag,
-				Volume24h:       volume,
-				CurrentPriceYes: price,
-				EndDate:         m.EndDate,
-				ScannedAt:       time.Now().UTC().Format(time.RFC3339),
-			}
-			allCandidates = append(allCandidates, c)
-		}
-
-		fmt.Printf("[scanner] page %d: %d raw, %d candidates so far\n",
-			page, len(resp.Data), len(allCandidates))
-
-		// Stop if no more pages or cap reached
-		if resp.Next == nil || *resp.Next == "" || len(allCandidates) >= maxMarkets {
+		if len(markets) == 0 {
 			break
 		}
-		cursor = resp.Next
+
+		for _, m := range markets {
+			c, ok := convert(m, now)
+			if !ok {
+				continue
+			}
+			allCandidates = append(allCandidates, c)
+			if len(allCandidates) >= maxMarkets {
+				break
+			}
+		}
+
+		fmt.Printf("[scanner] page %d (offset %d): %d raw, %d candidates so far\n",
+			page, offset, len(markets), len(allCandidates))
+
+		if len(markets) < pageSize || len(allCandidates) >= maxMarkets {
+			break
+		}
+		offset += pageSize
 		page++
 	}
 
-	fmt.Printf("[scanner] scan complete: %d total candidates\n", len(allCandidates))
+	fmt.Printf("[scanner] scan complete: %d candidates\n", len(allCandidates))
 	if len(allCandidates) == 0 {
-		fmt.Println("[scanner] no candidates found, skipping write")
-		return nil
+		fmt.Println("[scanner] no candidates; clearing output file")
 	}
 	return writeCandidates(allCandidates)
 }
 
-// filterMarket returns true if the market passes all filters.
-func filterMarket(m types.Market) bool {
-	// Only binary (Yes/No) markets
-	if m.OutcomeType != "UNARY" {
-		return false
+// convert turns a Market into a Candidate, applying client-side filters.
+// Returns (Candidate, true) if it passes; (_, false) if it should be dropped.
+func convert(m types.Market, now string) (types.Candidate, bool) {
+	// Active + not closed (defensive — query param should already do this)
+	if m.Closed || !m.Active {
+		return types.Candidate{}, false
 	}
 
-	// Volume check: parse error or below threshold → reject
-	volume, err := parseVolume(m.Volume24h)
-	if err != nil || volume < minVolume {
-		return false
+	// Binary Yes/No only
+	var outcomes []string
+	if err := json.Unmarshal([]byte(m.Outcomes), &outcomes); err != nil {
+		return types.Candidate{}, false
+	}
+	if len(outcomes) != 2 {
+		return types.Candidate{}, false
+	}
+	if !(strings.EqualFold(outcomes[0], "Yes") && strings.EqualFold(outcomes[1], "No")) {
+		return types.Candidate{}, false
 	}
 
-	// Closed check (redundant with API param but defensive)
-	if m.Closed {
-		return false
+	// Pop Culture noise filter on question text
+	ql := strings.ToLower(m.Question)
+	for _, kw := range popCultureBlacklist {
+		if strings.Contains(ql, kw) {
+			return types.Candidate{}, false
+		}
 	}
 
-	return true
+	// Volume proxy: prefer 24h if present, else cumulative VolumeNum (loose but available)
+	volume := m.VolumeNum
+	if m.Volume24Hr != nil {
+		volume = *m.Volume24Hr
+	}
+	if volume < minVolume {
+		return types.Candidate{}, false
+	}
+
+	// Current price of YES from outcomePrices
+	var prices []string
+	if err := json.Unmarshal([]byte(m.OutcomePrices), &prices); err != nil || len(prices) < 1 {
+		return types.Candidate{}, false
+	}
+	priceYes := parseFloat(prices[0])
+	if priceYes <= 0 || priceYes >= 1 {
+		return types.Candidate{}, false
+	}
+
+	// Category fallback: prefer events[0].category, else "uncategorized"
+	category := "uncategorized"
+	if len(m.Events) > 0 && m.Events[0].Category != "" {
+		category = m.Events[0].Category
+	}
+
+	return types.Candidate{
+		ID:              m.ID,
+		Slug:            m.Slug,
+		Question:        m.Question,
+		Category:        category,
+		Volume24h:       volume,
+		CurrentPriceYes: priceYes,
+		EndDate:         m.EndDate,
+		ScannedAt:       now,
+	}, true
 }
 
-func fetchMarkets(cursor *string) (*types.GammaAPIResponse, error) {
+func parseFloat(s string) float64 {
+	var v float64
+	fmt.Sscanf(s, "%f", &v)
+	return v
+}
+
+func fetchMarkets(offset int) ([]types.Market, error) {
 	client := &http.Client{Timeout: httpTimeout}
 
 	req, err := http.NewRequest("GET", gammaBaseURL, nil)
@@ -104,22 +157,17 @@ func fetchMarkets(cursor *string) (*types.GammaAPIResponse, error) {
 	}
 
 	q := req.URL.Query()
-	q.Set("closed", "no")
-	q.Set("tag", "Politics")
-	q.Add("tag", "Crypto")
-	q.Add("tag", "Sports")
-	q.Add("tag", "Tech")
-	q.Set("volume_24h_gt", "50000")
-	q.Set("sort", "volume_24h")
-	q.Set("order", "desc")
-	q.Set("limit", "100")
-	if cursor != nil && *cursor != "" {
-		q.Set("next", *cursor)
-	}
+	q.Set("closed", "false")
+	q.Set("active", "true")
+	q.Set("volume_num_min", fmt.Sprintf("%.0f", minVolume))
+	q.Set("order", "volumeNum")
+	q.Set("ascending", "false")
+	q.Set("limit", fmt.Sprintf("%d", pageSize))
+	q.Set("offset", fmt.Sprintf("%d", offset))
 	req.URL.RawQuery = q.Encode()
 	req.Header.Set("User-Agent", userAgent)
 
-	fmt.Printf("[scanner] fetching %s\n", req.URL.String())
+	fmt.Printf("[scanner] GET %s\n", req.URL.String())
 
 	resp, err := client.Do(req)
 	if err != nil {
@@ -132,15 +180,11 @@ func fetchMarkets(cursor *string) (*types.GammaAPIResponse, error) {
 		return nil, fmt.Errorf("unexpected status %d: %s", resp.StatusCode, string(body))
 	}
 
-	var apiResp types.GammaAPIResponse
-	if err := json.NewDecoder(resp.Body).Decode(&apiResp); err != nil {
+	var markets []types.Market
+	if err := json.NewDecoder(resp.Body).Decode(&markets); err != nil {
 		return nil, fmt.Errorf("decode response: %w", err)
 	}
-	return &apiResp, nil
-}
-
-func parseVolume(raw string) (float64, error) {
-	return strconv.ParseFloat(raw, 64)
+	return markets, nil
 }
 
 func writeCandidates(candidates []types.Candidate) error {

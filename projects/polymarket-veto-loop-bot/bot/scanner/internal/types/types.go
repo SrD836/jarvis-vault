@@ -1,25 +1,27 @@
 package types
 
-// Market from the Gamma API.
+// Market mirrors the relevant fields of the Polymarket gamma-api response.
+// API: https://gamma-api.polymarket.com/markets
 type Market struct {
-	ID           string `json:"id"`
-	Slug         string `json:"slug"`
-	Question     string `json:"question"`
-	OutcomeType  string `json:"outcomeType"`
-	Tag          string `json:"tag"`
-	Volume24h    string `json:"volume24h"`
-	CurrentPrice string `json:"currentPrice"`
-	EndDate      string `json:"endDate"`
-	Closed       bool   `json:"closed"`
+	ID             string  `json:"id"`
+	Slug           string  `json:"slug"`
+	Question       string  `json:"question"`
+	VolumeNum      float64 `json:"volumeNum"`      // total cumulative volume (USD)
+	Volume24Hr     *float64 `json:"volume24Hr"`    // 24h volume (often null — use VolumeNum + age as proxy)
+	LastTradePrice float64 `json:"lastTradePrice"` // current price of YES outcome
+	OutcomePrices  string  `json:"outcomePrices"`  // JSON-encoded array string: "[\"0.54\", \"0.46\"]"
+	Outcomes       string  `json:"outcomes"`       // JSON-encoded array string: "[\"Yes\", \"No\"]"
+	EndDate        string  `json:"endDate"`
+	StartDate      string  `json:"startDate"`
+	Closed         bool    `json:"closed"`
+	Active         bool    `json:"active"`
+	Events         []struct {
+		Title    string `json:"title"`
+		Category string `json:"category"`
+	} `json:"events"`
 }
 
-// GammaAPIResponse with cursor-based pagination.
-type GammaAPIResponse struct {
-	Data []Market `json:"data"`
-	Next *string  `json:"next"`
-}
-
-// Candidate written as JSONL.
+// Candidate written as JSONL to vault/inbox/trading/candidates.jsonl.
 type Candidate struct {
 	ID              string  `json:"id"`
 	Slug            string  `json:"slug"`
