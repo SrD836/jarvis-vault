@@ -1,74 +1,103 @@
----
-name: Polymarket Veto-Loop Bot — Design Consolidado
-version: 2.0
-date: 2026-05-19
-status: approved (discusión David + main)
-supersedes: project.md (v1)
----
+# Polymarket Veto-Loop Bot — Design v3.1
 
-# Polymarket Veto-Loop Bot — Diseño Definitivo
+> Contrato de referencia del sistema. Alcance cerrado. Sin prosa.
 
-## Arquitectura (4 procesos secuenciales)
+## Stack
+- **Backend**: Go (bot CLI+loop), JSONL logging rotado diario
+- **Frontend**: página Bot en sidebar del dashboard React (JARVIS)
+- **DB**: solo JSONL (sin SQLite ni Redis)
+- **Deploy**: mismo VPS Hetzner, container Docker en red JARVIS
 
-1. **Scanner** — Sondea mercados del universo permitido, genera tesis candidatas con precio actual y catalizador.
-2. **Brain (veto-loop)** — Auditor LLM que aplica reglas duras (abajo). **Filtro binario terminal**: veta o pasa. No itera.
-3. **Executor virtual** — Aplica sizing y cola FIFO. No mueve dinero real.
-4. **Exit monitor** — Observa posiciones abiertas y dispara stop/take cuando corresponde.
+## Universo de mercados
+- **Solo Polymarket**, solo mercados **binarios** (Sí/No)
+- **Volumen 24h ≥ 50,000 USD**
+- Categorías explícitas: **Politics, Crypto, Sports, Tech**
+- **Excluye Pop Culture** (memecoins, celebrities, eventos virales no replicables)
+- Cobertura: solo las 4 categorías arriba, con filtros adicionales de liquidez
 
-## Reglas duras del Brain (veto si alguna falla)
+## Cola FIFO (única)
+- **Input**: mercados vivos que pasan scanner
+- **Orden**: timestamp de aprobación (no de creación del mercado)
+- **Descarte terminal** si falla exposure/correlación/trigger — **no reencola**
+- Máximo 3 mercados activos simultáneos (por size + colchón)
 
-- **Volumen** < 50,000 USD → veto
-- **Catalyst 72h**: si hay catalizador previsto en las próximas 72h previas a resolución → veto. Ventana: 72h-0h antes de resolución.
-- **Triggers vagos**: "cuando suba el sentimiento", "si el mercado reacciona", etc. no medibles → veto
-- **Chasing**: precio ya se movió ≥ 8% en últimas 4h → veto
-- **Patrones**: respaldados por < 3 casos → veto
-- **Sin triggers claros**: no hay evento/catalizador concreto que mueva el precio → veto
+## Sizing & stops (Kelly + caps duros)
+- **Kelly fraccional 1.5%** = 150 USD/trade sobre bankroll 10,000 USD
+- **Exposure cap 10%** = 5,000 USD total en riesgo simultáneo
+- **Stop-loss**: USD-at-risk = 150 USD (salir si esa posición pierde 150)
+- **Take-profit**: +60% sobre precio de entrada (no +60% USDC)
+- **No trailing stop**
 
-## Sizing y stops (Executor)
+## Las 8 críticas cerradas (errores que no cometer)
 
-- **Bankroll virtual**: 10,000 USD
-- **Kelly**: 1.5% del bankroll por trade (= 150 USD)
-- **Stop-loss**: USD-at-risk = Kelly = 150 USD. Se dispara cuando la pérdida en USD alcanza 150 USD. NO es % del precio del activo.
-- **Take-profit**: +60% del precio de entrada (en % sobre precio, este sí va sobre precio)
-- **Trigger entrada**: precio actual debe estar dentro de ±2% del precio al que se aprobó la tesis. Si no, descarte.
+1. **Front-running mal implementado**: no se ejecuta contra taker — se pide límite a +2% del mid (slippage + protección)
+2. **Cola sin fuerza**: orden FIFO por timestamp de aprobación, sin reencolado, sin prioridades
+3. **Sin correlación**: máximo 2 mercados de la misma categoría, y solo si correlación <0.3 por precio histórico 7d
+4. **Trigger único**: solo 1 trigger = movimiento de mid-price ±2% en zona de ejecución. No hay triggers combinados ni scoring compuesto
+5. **Kelly agresivo**: Kelly 1.5% fijo. Ni 2.5% ni variable. Esto se controla en dashboard, no en código duro
+6. **Ventana catalyst 72h**: si catalyst expira (fecha de resolución conocida), el mercado se descarta aunque cumpliera antes
+7. **Sin chasing de momentum ni reversión a media**: solo trigger ±2%, fin
+8. **Sin cobertura forex/acciones/cripto**: solo Polymarket, solo binarios
 
-## Reglas de portfolio
+## Veto-loop: 6 reglas duras (filtro terminal, sin iteración)
 
-- **Correlación dura**: máx 3 posiciones simultáneas en misma categoría + misma temática
-- **Exposure cap**: 10% del bankroll total en posiciones abiertas (= 1,000 USD)
-- **Universo**: Politics, Crypto, Sports, Tech
-- **Excluye**: Pop Culture
+Aplica en Brain, antes de sizing. Si alguna TRUE → mercado descartado sin appellatio.
 
-## Cola de ejecución
+| # | Regla | Significado |
+|---|---|---|
+| V1 | **Volumen insuficiente** | Vol 24h < 50,000 USD en el momento de evaluación |
+| V2 | **Catalyst dentro de 72h de cierre del mercado** | Catalyst con resolución del MERCADO <72h en el futuro: ventana 72h-0h pre-resolución del mercado activa el veto |
+| V3 | **Triggers vagos** | Trigger textual sin fecha concreta o sin referéndum asociado |
+| V4 | **Chasing de momentum** | Precio se movió ≥8% en las últimas 4h previas al trigger formal |
+| V5 | **Patrón débil** | Evento con <3 fuentes independientes o sin precedente análogo |
+| V6 | **Sin trigger claro** | No hay un catalyst identificable en los próximos 7d con fecha de resolución |
 
-- **FIFO** por timestamp de aprobación del Brain
-- Si al llegar el turno el cap de correlación o exposure bloquea → se descarta (no se reencola)
-- Trigger precio ±2% también se evalúa en este momento; si no está en rango → descarte
+## 4 procesos secuenciales
 
-## Logging
+```
+Scanner → Brain (veto) → Executor → Exit monitor
+```
 
-- JSONL estructurado en `vault/inbox/trading/`
-- Cada evento: scaneo, veto/aprobación, entrada, salida (stop/tp/manual)
+### 1. Scanner
+- Poll 15 min a API Polymarket: `/markets?tag=...&volume_24h_gt=50000&closed=no`
+- Filtro estático: binarios, volumen, solo categorías acordadas (Politics, Crypto, Sports, Tech)
+- Sin filtro de edad de creación
+- Escribe a cola FIFO (archivo JSONL)
 
-## Dashboard
+### 2. Brain (veto-loop)
+- Lee cola FIFO
+- Aplica 6 reglas duras V1–V6 (determinista, datos on-chain + calendario)
+- Si pasa: calcula Kelly 1.5%, verifica exposure cap + correlación + trigger ±2%
+- Trigger ±2%: precio actual dentro del ±2% del precio en el momento de aprobación de la tesis (zona de ejecución)
+- Si todo OK: escribe orden a pending (cola de ejecución)
+- Si falla: descarta, log con razón
 
-- Nueva página **Bot** en el sidebar del dashboard React
-- Muestra: P&L acumulado, lista de trades simulados (estado, entry, current, stop, tp, P&L)
+### 3. Executor
+- Lee pending orders
+- Envía límite a Polymarket a +2% del mid-price
+- Si se llena: escribe posición activa a JSONL activo
+- Timeout 30 min por orden
 
-## Stack conocido del dashboard
+### 4. Exit monitor
+- Lee posiciones activas cada 5 min
+- Evalúa take-profit (+60%) y stop-loss (150 USD at risk)
+- Si cualquiera se alcanza → envía orden de mercado para salir
+- Log completo de cada salida
 
-- React (dashboard existente en jarvis-dashboard)
-- Sidebar ya tiene páginas existentes
-- La página Bot se añade al mismo routing
+## Triggers y caps (resumen)
 
-## Cron
+| Parámetro | Valor |
+|---|---|
+| Trigger único | Precio actual dentro del ±2% del momento de aprobación de tesis |
+| Kelly | 1.5% fijo (150 USD/trade) |
+| Exposure cap | 10% (5,000 USD) |
+| Stop por posición | 150 USD at risk |
+| Take-profit | +60% sobre precio entrada |
+| Máx activos simultáneos | 3 |
+| Máx misma categoría | 2, correlación <0.3 |
+| Poll scanner | 15 min |
+| Poll exit monitor | 5 min |
+| Timeout executor | 30 min |
 
-- Ejecución periódica (cada N minutos/horas) para correr Scanner + Brain + Executor + Exit monitor
-
-## Fuera de alcance
-
-- Dinero real
-- Wallets reales
-- Estrategias fuera del universo
-- Sharpe ranking (descartado en discusión)
-- Stop como % del precio (descartado)
+## Future work (fuera del alcance v1)
+- **Max drawdown automático**: pausar el bot si drawdown alcanza 30% del bankroll inicial. No implementado en v1.
