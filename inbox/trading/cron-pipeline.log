@@ -3,3 +3,13 @@
 2026/05/19 13:30:03 executor.go:61: executor: quota slots this run: short=5 medium=2 long=2 (of 7 remaining today)
 2026/05/19 13:30:03 executor.go:178: executor: 0 entered, 111 rejected
 2026/05/19 13:30:03 main.go:13: executor: done
+2026/05/19 14:00:04 main.go:11: executor: starting one-shot pass
+2026/05/19 14:00:04 executor.go:34: executor v3: config loaded mode=simulation tradeSize=150 maxExposure=2000 maxSameCat=10 maxPerDay=20 quota=70/15/15
+2026/05/19 14:00:04 executor.go:61: executor: quota slots this run: short=5 medium=2 long=2 (of 7 remaining today)
+2026/05/19 14:00:04 executor.go:178: executor: 0 entered, 117 rejected
+2026/05/19 14:00:04 main.go:13: executor: done
+2026/05/19 14:30:03 main.go:11: executor: starting one-shot pass
+2026/05/19 14:30:03 executor.go:34: executor v3: config loaded mode=simulation tradeSize=150 maxExposure=2000 maxSameCat=10 maxPerDay=20 quota=70/15/15
+2026/05/19 14:30:03 executor.go:61: executor: quota slots this run: short=5 medium=2 long=2 (of 7 remaining today)
+2026/05/19 14:30:03 executor.go:178: executor: 0 entered, 114 rejected
+2026/05/19 14:30:03 main.go:13: executor: done

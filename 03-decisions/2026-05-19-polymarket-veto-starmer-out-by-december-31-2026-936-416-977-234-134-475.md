@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `starmer-out-by-december-31-2026-936-416-977-234-134-475`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.7450
-- **Volumen 24h**: 68970.83 USD
+- **Precio YES**: 0.7350
+- **Volumen 24h**: 55906.24 USD
 - **End date**: 2026-12-31T12:00:00Z
 
 ## Razón del veto

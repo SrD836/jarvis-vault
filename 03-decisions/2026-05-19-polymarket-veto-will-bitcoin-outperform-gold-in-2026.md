@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `will-bitcoin-outperform-gold-in-2026`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.3500
+- **Precio YES**: 0.3450
 - **Volumen 24h**: 403016.06 USD
 - **End date**: 2027-01-01T05:00:00Z
 

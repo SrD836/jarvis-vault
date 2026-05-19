@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-kamala-harris-win-the-2028-us-presidential-election`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.0825
-- **Volumen 24h**: 80187.28 USD
+- **Precio YES**: 0.0770
+- **Volumen 24h**: 81916.64 USD
 - **End date**: 2028-11-07T00:00:00Z
 
 ## Razón del veto
