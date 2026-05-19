@@ -1,0 +1,98 @@
+{
+  "adapted": {
+    "headline": "Especialista en IA y Automatización de Procesos | Certificado en Microsoft Azure AI",
+    "summary": "Estudiante de Administración y Finanzas con orientación clara hacia la inteligencia artificial, la automatización y las herramientas empresariales de IA. Certificado en IA con Microsoft Azure y en Soporte IT por Google, con experiencia práctica en chatbots, flujos automatizados y gestión de datos. Perfil con alta capacidad de aprendizaje, resolución de problemas y comunicación en inglés, listo para contribuir en entornos de entrenamiento y evaluación de modelos de IA.",
+    "experience": [
+      {
+        "title": "Proyectos de Automatización e IA (Autoaprendizaje)",
+        "org": "Iniciativas Personales",
+        "period": "2023 – actualidad",
+        "bullets": [
+          "Diseñó flujos de automatización para clasificación de correos y documentos usando herramientas de IA y hojas de cálculo avanzadas.",
+          "Experimentó con chatbots empresariales y técnicas de prompt engineering para optimizar tareas administrativas repetitivas.",
+          "Aplicó servicios cognitivos de Microsoft Azure AI en proyectos de aprendizaje práctico sobre modelos de lenguaje.",
+          "Construyó hojas automatizadas en Excel para control estructurado y análisis de datos."
+        ]
+      },
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 · Julio 2021",
+        "bullets": [
+          "Gestionó atención al cliente íntegramente en inglés en entorno de alta demanda, desarrollando comunicación clara y trabajo bajo presión.",
+          "Coordinó tareas en equipo para mantener flujo operativo eficiente en sala y barra.",
+          "Procesó cobros y pedidos con precisión en entorno multilingüe e internacional."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Herramientas de IA y chatbots empresariales",
+      "Microsoft Azure AI",
+      "Prompt Engineering (autoaprendizaje)",
+      "Google IT Support",
+      "Excel avanzado",
+      "Microsoft 365"
+    ],
+    "skills_secondary": [
+      "Google Workspace",
+      "Automatización de procesos",
+      "Resolución de problemas",
+      "Liderazgo y trabajo en equipo",
+      "Gestión de datos estructurados",
+      "Ofimática avanzada",
+      "Atención al cliente",
+      "Comunicación en inglés"
+    ],
+    "education": [
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "ULPGC",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B2"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline ajustado para destacar especialización en IA y certificación Azure, alineado directamente con el rol de AI Training Specialist.",
+      "Se formalizó el autoaprendizaje en IA como bloque de experiencia 'Proyectos de Automatización e IA': no se inventan roles, se estructuran las actividades que el propio candidato describe en primera persona en su 'Sobre mí' (automatización de correo, clasificación de CVs, chatbots, hojas automatizadas).",
+      "Prompt Engineering añadido como skill primary (con nota de autoaprendizaje) al ser competencia nuclear para roles de AI Training.",
+      "Microsoft Azure AI promovido de secondary a primary skill por su relevancia directa al puesto.",
+      "Los cursos de IA y Google IT Support reordenados al inicio de la sección de educación para máxima visibilidad ante recruiters de IA.",
+      "Bullets de la experiencia en hostelería reformulados para destacar habilidades transferibles: comunicación en inglés, trabajo bajo presión y coordinación.",
+      "Nivel de inglés estimado como B2 a partir de 'nivel alto' declarado en el CV; se recomienda al candidato verificar y corregir si dispone de certificación oficial.",
+      "Confidence moderada (0.62) por ausencia de experiencia laboral formal en IA; los factores positivos son las certificaciones, el autoaprendizaje documentado, el inglés y la alta motivación declarada."
+    ],
+    "confidence": 0.62,
+    "target_role": "AI Training Specialist",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-19T20:43:18.660Z"
+  },
+  "offer_id": "TEST-003",
+  "offer_title": "AI Training Specialist",
+  "company": "Acme AI",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

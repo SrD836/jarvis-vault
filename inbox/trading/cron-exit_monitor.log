@@ -782,3 +782,60 @@
 2026/05/19 19:55:02 main.go:13: exit_monitor: done
 2026/05/19 20:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/19 20:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 20:00:03 monitor.go:166: exit_monitor: 0 closed, 47 remaining
+2026/05/19 20:00:03 main.go:13: exit_monitor: done
+2026/05/19 20:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 20:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 20:05:02 monitor.go:166: exit_monitor: 0 closed, 50 remaining
+2026/05/19 20:05:02 main.go:13: exit_monitor: done
+2026/05/19 20:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 20:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 20:10:01 monitor.go:140: exit_monitor: closed Will Manchester City FC win on 2026-05-19? (stop_loss) @ 0.1200 src=bestBid liq=$97033: PnL $-120.25 (-80.17%)
+2026/05/19 20:10:02 monitor.go:140: exit_monitor: closed Will AFC Bournemouth win on 2026-05-19? (take_profit) @ 0.5900 src=bestBid liq=$107643: PnL $22.48 (43.90%)
+2026/05/19 20:10:02 monitor.go:166: exit_monitor: 2 closed, 48 remaining
+2026/05/19 20:10:02 main.go:13: exit_monitor: done
+2026/05/19 20:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 20:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 20:15:02 monitor.go:166: exit_monitor: 0 closed, 48 remaining
+2026/05/19 20:15:02 main.go:13: exit_monitor: done
+2026/05/19 20:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 20:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 20:20:03 monitor.go:166: exit_monitor: 0 closed, 48 remaining
+2026/05/19 20:20:03 main.go:13: exit_monitor: done
+2026/05/19 20:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 20:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 20:25:02 monitor.go:140: exit_monitor: closed AFC Bournemouth vs. Manchester City FC: Both Teams to Score (stop_loss) @ 0.0600 src=bestBid liq=$6728: PnL $-49.14 (-90.48%)
+2026/05/19 20:25:02 monitor.go:166: exit_monitor: 1 closed, 47 remaining
+2026/05/19 20:25:02 main.go:13: exit_monitor: done
+2026/05/19 20:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 20:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 20:30:02 monitor.go:166: exit_monitor: 0 closed, 47 remaining
+2026/05/19 20:30:02 main.go:13: exit_monitor: done
+2026/05/19 20:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 20:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 20:35:02 monitor.go:140: exit_monitor: closed Will AFC Bournemouth vs. Manchester City FC end in a draw? (take_profit) @ 0.9900 src=bestBid liq=$95756: PnL $139.28 (312.50%)
+2026/05/19 20:35:02 monitor.go:140: exit_monitor: closed Will AFC Bournemouth win on 2026-05-19? (stop_loss) @ 0.0010 src=lastTradePrice_fallback liq=$814081: PnL $-53.23 (-99.89%)
+2026/05/19 20:35:02 monitor.go:140: exit_monitor: closed AFC Bournemouth vs. Manchester City FC: Both Teams to Score (take_profit) @ 0.9990 src=bestBid liq=$493463: PnL $273.84 (524.38%)
+2026/05/19 20:35:02 monitor.go:166: exit_monitor: 3 closed, 47 remaining
+2026/05/19 20:35:02 main.go:13: exit_monitor: done
+2026/05/19 20:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 20:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 20:40:02 monitor.go:166: exit_monitor: 0 closed, 47 remaining
+2026/05/19 20:40:02 main.go:13: exit_monitor: done
+2026/05/19 20:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 20:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 20:45:01 monitor.go:140: exit_monitor: closed Will Tottenham Hotspur FC win on 2026-05-19? (stop_loss) @ 0.0500 src=bestBid liq=$151783: PnL $-121.70 (-81.13%)
+2026/05/19 20:45:02 monitor.go:140: exit_monitor: closed Will Chelsea FC vs. Tottenham Hotspur FC end in a draw? (stop_loss) @ 0.0400 src=bestBid liq=$83997: PnL $-40.82 (-86.21%)
+2026/05/19 20:45:02 monitor.go:166: exit_monitor: 2 closed, 45 remaining
+2026/05/19 20:45:02 main.go:13: exit_monitor: done
+2026/05/19 20:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 20:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 20:50:03 monitor.go:166: exit_monitor: 0 closed, 45 remaining
+2026/05/19 20:50:03 main.go:13: exit_monitor: done
+2026/05/19 20:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 20:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 20:55:01 monitor.go:140: exit_monitor: closed Chelsea FC vs. Tottenham Hotspur FC: Both Teams to Score (take_profit) @ 0.9900 src=bestBid liq=$106207: PnL $41.83 (83.33%)
+2026/05/19 20:55:01 monitor.go:166: exit_monitor: 1 closed, 44 remaining
+2026/05/19 20:55:01 main.go:13: exit_monitor: done
+2026/05/19 21:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 21:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%

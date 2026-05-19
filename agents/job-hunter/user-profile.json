@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "updated_at": "2026-05-19T20:41:22.395Z",
+  "personal": {
+    "full_name": "David González Nuez",
+    "email": "b04h13112c@canariaseducacion.es",
+    "phone": "611-411-804",
+    "location": "Teror, España",
+    "linkedin_url": null,
+    "github_url": null,
+    "portfolio_url": null,
+    "work_auth": null
+  },
+  "preferences": {
+    "salary_min_eur_year": null,
+    "salary_max_eur_year": null,
+    "modality": [],
+    "willing_to_relocate": null,
+    "relocate_cities": [],
+    "notice_period_days": null,
+    "earliest_start_date": null,
+    "industries_preferred": [],
+    "industries_excluded": [],
+    "company_size_min": null,
+    "company_size_max": null,
+    "contract_types": [],
+    "languages_required": []
+  },
+  "skills": {
+    "primary": [
+      "Excel avanzado",
+      "Herramientas de IA y chatbots empresariales",
+      "Microsoft 365",
+      "Google Workspace",
+      "Resolución de problemas",
+      "Liderazgo y trabajo en equipo"
+    ],
+    "secondary": [
+      "Atención al cliente",
+      "Gestión de pedidos",
+      "Ofimática",
+      "Google IT Support",
+      "Microsoft Azure AI"
+    ],
+    "years_by_skill": {}
+  },
+  "languages": [
+    {
+      "name": "Castellano",
+      "level": "native"
+    },
+    {
+      "name": "Inglés",
+      "level": "unknown"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+      "institution": "ULPGC",
+      "year": null
+    },
+    {
+      "degree": "Grado en Economía (2 años cursados, sin completar)",
+      "institution": "Universidad de Las Palmas de Gran Canaria",
+      "year": null
+    },
+    {
+      "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+      "institution": "Curso Online",
+      "year": null
+    },
+    {
+      "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+      "institution": "Curso Online",
+      "year": null
+    }
+  ],
+  "experience_years_total": null,
+  "experience_summary": "Estudiante de Administración y Finanzas con experiencia breve en hostelería (camarero, cajero, host), incluyendo 1 mes documentado en The Fallow (Irlanda, 2021). Perfil orientado a la digitalización, automatización de procesos y uso de inteligencia artificial en entornos empresariales.",
+  "questions_answered": {},
+  "extraction_history": [
+    {
+      "at": "2026-05-19T20:05:33.697Z",
+      "source_file": "cv.pdf",
+      "raw_chars": 1701
+    },
+    {
+      "at": "2026-05-19T20:41:22.332Z",
+      "source_file": "cv.pdf",
+      "raw_chars": 1701
+    }
+  ]
+}

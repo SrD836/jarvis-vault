@@ -1,0 +1,88 @@
+{
+  "adapted": {
+    "headline": "Especialista en IA y Automatización de Procesos | Candidato AI Training Specialist",
+    "summary": "Estudiante de Administración y Finanzas con conocimientos sólidos en herramientas de inteligencia artificial, Microsoft Azure y automatización de procesos con Microsoft 365. Apasionado por mejorar flujos de trabajo digitales mediante chatbots empresariales, hojas automatizadas y clasificación inteligente de datos. Perfil analítico, resolutivo y orientado al detalle, con capacidad demostrada de trabajar en inglés.",
+    "experience": [
+      {
+        "title": "Camarero / Host / Cajero",
+        "org": "The Fallow (Irlanda)",
+        "period": "Jun 2021 · Jul 2021",
+        "bullets": [
+          "Gestioné operaciones de caja y pedidos simultáneos con atención al detalle en entorno de alto ritmo, garantizando precisión en cada registro.",
+          "Atendí a clientes internacionales íntegramente en inglés, demostrando comunicación efectiva en contextos multiculturales.",
+          "Coordiné tareas en equipo para mantener la fluidez del servicio, desarrollando capacidad organizativa y distribución eficiente del trabajo."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft Azure (IA)",
+      "Herramientas de IA y chatbots empresariales",
+      "Microsoft 365 / Office 365",
+      "Automatización de procesos ofimáticos",
+      "Excel avanzado",
+      "Google IT Support",
+      "Análisis y resolución de problemas"
+    ],
+    "skills_secondary": [
+      "Google Workspace",
+      "Gestión de datos y hojas automatizadas",
+      "Mejora de procesos digitales",
+      "Clasificación y organización de información",
+      "Gestión automatizada del correo electrónico",
+      "Trabajo en equipo y liderazgo operativo",
+      "Atención al cliente",
+      "Gestión de programas administrativos"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "ULPGC",
+        "period": "En curso"
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Google IT Support Professional Certificate",
+        "institution": "Curso Online (Google)",
+        "period": null
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B2"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reorientado de 'Estudiante de Administración y Finanzas' a perfil de IA y automatización, alineado directamente con el rol de AI Training Specialist.",
+      "Promovidos 'Microsoft Azure (IA)', 'Herramientas de IA y chatbots' y 'Automatización de procesos ofimáticos' a skills primarias por ser requisitos explícitos de la oferta.",
+      "El Curso de IA con Microsoft Azure se posiciona como segunda entrada educativa para maximizar su visibilidad, dado que es match directo con el requisito Azure de la JD.",
+      "Summary redactado como pitch orientado a IA/automatización en lugar del perfil generalista original.",
+      "Bullets de la experiencia en hostelería reformulados para destacar atención al detalle, precisión en registros y trabajo en equipo — soft skills clave para la evaluación y mejora de LLMs.",
+      "Inglés clasificado como B2 ('nivel alto' en el CV original); la oferta solo requiere inglés intermedio, por lo que el candidato supera el umbral con margen.",
+      "Google IT Support elevado a skill primaria por su relevancia directa con automatización IT, requerimiento explícito en la JD.",
+      "Escasa experiencia laboral formal (1 mes en hostelería) compensada con cursos técnicos relevantes y el perfil de la oferta, que acepta explícitamente candidatos junior sin experiencia formal."
+    ],
+    "confidence": 0.76,
+    "target_role": "AI Training Specialist — Acme AI",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-19T20:40:04.083Z"
+  },
+  "offer_id": "TEST-001",
+  "offer_title": "AI Training Specialist",
+  "company": "Acme AI",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

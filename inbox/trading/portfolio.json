@@ -1,5 +1,5 @@
 {
-  "bankroll": 2715.4523289059653,
+  "bankroll": 3144.5123001063794,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -45,36 +45,6 @@
       "id": "T-789540-1779206389814",
       "market_id": "789540",
       "question": "Will Thomas Massie be the Republican nominee for KY-04?",
-      "side": "yes",
-      "size": 150,
-      "size_usd": 0
-    },
-    {
-      "approved_price": 0.605,
-      "category": "uncategorized",
-      "days_to_resolution": 0,
-      "end_date": "2026-05-19T18:30:00Z",
-      "entry_price": 0.605,
-      "entry_timestamp": "2026-05-19T15:59:49Z",
-      "horizon": "short",
-      "id": "T-2170973-1779206389814",
-      "market_id": "2170973",
-      "question": "Will Manchester City FC win on 2026-05-19?",
-      "side": "yes",
-      "size": 150,
-      "size_usd": 0
-    },
-    {
-      "approved_price": 0.265,
-      "category": "uncategorized",
-      "days_to_resolution": 0,
-      "end_date": "2026-05-19T19:15:00Z",
-      "entry_price": 0.265,
-      "entry_timestamp": "2026-05-19T15:59:49Z",
-      "horizon": "short",
-      "id": "T-2170982-1779206389814",
-      "market_id": "2170982",
-      "question": "Will Tottenham Hotspur FC win on 2026-05-19?",
       "side": "yes",
       "size": 150,
       "size_usd": 0
@@ -607,22 +577,6 @@
       "size_usd": 44.09869025423931
     },
     {
-      "approved_price": 0.29,
-      "category": "uncategorized",
-      "days_to_resolution": 0,
-      "end_date": "2026-05-19T19:15:00Z",
-      "entry_price": 0.29,
-      "entry_timestamp": "2026-05-19T18:30:03Z",
-      "horizon": "short",
-      "id": "T-2170981-1779215403605",
-      "liquidity_usd": 336102.4377,
-      "market_id": "2170981",
-      "question": "Will Chelsea FC vs. Tottenham Hotspur FC end in a draw?",
-      "side": "yes",
-      "size": 47.3538897196492,
-      "size_usd": 47.3538897196492
-    },
-    {
       "approved_price": 0.23,
       "category": "uncategorized",
       "days_to_resolution": 12,
@@ -655,22 +609,6 @@
       "size_usd": 45.4786756867511
     },
     {
-      "approved_price": 0.24,
-      "category": "uncategorized",
-      "days_to_resolution": 0,
-      "end_date": "2026-05-19T18:30:00Z",
-      "entry_price": 0.24,
-      "entry_timestamp": "2026-05-19T19:00:03Z",
-      "horizon": "short",
-      "id": "T-2170970-1779217203920",
-      "liquidity_usd": 106824.7256,
-      "market_id": "2170970",
-      "question": "Will AFC Bournemouth vs. Manchester City FC end in a draw?",
-      "side": "yes",
-      "size": 44.569102173016084,
-      "size_usd": 44.569102173016084
-    },
-    {
       "approved_price": 0.28,
       "category": "uncategorized",
       "days_to_resolution": 11,
@@ -687,38 +625,6 @@
       "size_usd": 43.67772012955576
     },
     {
-      "approved_price": 0.41,
-      "category": "uncategorized",
-      "days_to_resolution": 0,
-      "end_date": "2026-05-19T18:30:00Z",
-      "entry_price": 0.41,
-      "entry_timestamp": "2026-05-19T19:30:03Z",
-      "horizon": "short",
-      "id": "T-2170967-1779219003841",
-      "liquidity_usd": 150745.8721,
-      "market_id": "2170967",
-      "question": "Will AFC Bournemouth win on 2026-05-19?",
-      "side": "yes",
-      "size": 51.214943161204644,
-      "size_usd": 51.214943161204644
-    },
-    {
-      "approved_price": 0.54,
-      "category": "uncategorized",
-      "days_to_resolution": 0,
-      "end_date": "2026-05-19T19:15:00Z",
-      "entry_price": 0.54,
-      "entry_timestamp": "2026-05-19T19:30:03Z",
-      "horizon": "short",
-      "id": "T-2171995-1779219003841",
-      "liquidity_usd": 57030.9772,
-      "market_id": "2171995",
-      "question": "Chelsea FC vs. Tottenham Hotspur FC: Both Teams to Score",
-      "side": "yes",
-      "size": 50.190644297980555,
-      "size_usd": 50.190644297980555
-    },
-    {
       "approved_price": 0.21,
       "category": "uncategorized",
       "days_to_resolution": 1,
@@ -733,7 +639,55 @@
       "side": "yes",
       "size": 49.186831412020936,
       "size_usd": 49.186831412020936
+    },
+    {
+      "approved_price": 0.68,
+      "category": "uncategorized",
+      "days_to_resolution": 0,
+      "end_date": "2026-05-19T19:15:00Z",
+      "entry_price": 0.68,
+      "entry_timestamp": "2026-05-19T20:00:04Z",
+      "horizon": "short",
+      "id": "T-2170978-1779220804587",
+      "liquidity_usd": 100998.2466,
+      "market_id": "2170978",
+      "question": "Will Chelsea FC win on 2026-05-19?",
+      "side": "yes",
+      "size": 53.22286564655692,
+      "size_usd": 53.22286564655692
+    },
+    {
+      "approved_price": 0.38,
+      "category": "uncategorized",
+      "days_to_resolution": 4,
+      "end_date": "2026-05-24T00:00:00Z",
+      "entry_price": 0.38,
+      "entry_timestamp": "2026-05-19T20:00:04Z",
+      "horizon": "medium",
+      "id": "T-2241873-1779220804587",
+      "liquidity_usd": 102184.022,
+      "market_id": "2241873",
+      "question": "Iran closes its airspace by May 24?",
+      "side": "yes",
+      "size": 52.158408333625786,
+      "size_usd": 52.158408333625786
+    },
+    {
+      "approved_price": 0.8,
+      "category": "uncategorized",
+      "days_to_resolution": 0,
+      "end_date": "2026-05-20T16:00:00Z",
+      "entry_price": 0.8,
+      "entry_timestamp": "2026-05-19T20:30:04Z",
+      "horizon": "short",
+      "id": "T-2251416-1779222604158",
+      "liquidity_usd": 27345.1574,
+      "market_id": "2251416",
+      "question": "Will the price of Bitcoin be above $76,000 on May 20?",
+      "side": "yes",
+      "size": 51.17733417125486,
+      "size_usd": 51.17733417125486
     }
   ],
-  "used_exposure": 3683.409723281128
+  "used_exposure": 3346.6397520807145
 }

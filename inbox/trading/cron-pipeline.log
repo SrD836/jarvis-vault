@@ -98,3 +98,19 @@
 2026/05/19 19:30:03 executor.go:197: executor: entered [short] Iran closes its airspace by May 21? @ 0.2100 size=$49.19 (open=50/50, bankroll=$2410)
 2026/05/19 19:30:03 executor.go:202: executor: 3 entered, 84 rejected
 2026/05/19 19:30:03 main.go:13: executor: done
+2026/05/19 20:00:04 main.go:11: executor: starting one-shot pass
+2026/05/19 20:00:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/19 20:00:04 executor.go:62: executor: quota slots this run: short=3 medium=1 long=1 (of 3 remaining today)
+2026/05/19 20:00:04 executor.go:197: executor: entered [short] AFC Bournemouth vs. Manchester City FC: Both Teams to Score @ 0.6300 size=$54.31 (open=48/50, bankroll=$2661)
+2026/05/19 20:00:04 executor.go:197: executor: entered [short] Will Chelsea FC win on 2026-05-19? @ 0.6800 size=$53.22 (open=49/50, bankroll=$2608)
+2026/05/19 20:00:04 executor.go:197: executor: entered [medium] Iran closes its airspace by May 24? @ 0.3800 size=$52.16 (open=50/50, bankroll=$2556)
+2026/05/19 20:00:04 executor.go:202: executor: 3 entered, 83 rejected
+2026/05/19 20:00:04 main.go:13: executor: done
+2026/05/19 20:30:04 main.go:11: executor: starting one-shot pass
+2026/05/19 20:30:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/19 20:30:04 executor.go:62: executor: quota slots this run: short=3 medium=1 long=1 (of 3 remaining today)
+2026/05/19 20:30:04 executor.go:197: executor: entered [short] Will AFC Bournemouth win on 2026-05-19? @ 0.9300 size=$53.29 (open=48/50, bankroll=$2611)
+2026/05/19 20:30:04 executor.go:197: executor: entered [short] AFC Bournemouth vs. Manchester City FC: Both Teams to Score @ 0.1600 size=$52.22 (open=49/50, bankroll=$2559)
+2026/05/19 20:30:04 executor.go:197: executor: entered [short] Will the price of Bitcoin be above $76,000 on May 20? @ 0.8000 size=$51.18 (open=50/50, bankroll=$2508)
+2026/05/19 20:30:04 executor.go:202: executor: 3 entered, 83 rejected
+2026/05/19 20:30:04 main.go:13: executor: done

@@ -1,0 +1,88 @@
+{
+  "adapted": {
+    "headline": "Especialista en IA y Automatización · Microsoft Azure AI · Microsoft 365",
+    "summary": "Estudiante de Administración y Finanzas con formación específica en Inteligencia Artificial con Microsoft Azure y sólido dominio de Microsoft 365, orientado a la digitalización y automatización de procesos empresariales. Experiencia práctica con chatbots empresariales, hojas de cálculo automatizadas y herramientas de IA aplicadas a tareas operativas. Perfil metódico, resolutivo y con capacidad para trabajar en entornos remotos con alto nivel de autonomía.",
+    "experience": [
+      {
+        "title": "Camarero · Cajero · Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "2021 · verano",
+        "bullets": [
+          "Gestionó atención al cliente en inglés en entorno de alta exigencia, desarrollando capacidad de atención al detalle y seguimiento de protocolos de calidad.",
+          "Coordinó gestión de pedidos y cobro en caja aplicando precisión numérica y control de errores en procesos repetitivos.",
+          "Colaboró en equipos multidisciplinares bajo presión, asumiendo responsabilidades de recepción y organización del flujo de trabajo."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft Azure AI",
+      "Microsoft 365",
+      "Herramientas de IA y chatbots empresariales",
+      "Automatización de procesos",
+      "Excel avanzado",
+      "Atención al detalle",
+      "Google IT Support"
+    ],
+    "skills_secondary": [
+      "Google Workspace",
+      "Ofimática",
+      "Resolución de problemas",
+      "Liderazgo y trabajo en equipo",
+      "Atención al cliente",
+      "Gestión de correo electrónico automatizada",
+      "Clasificación y control de datos"
+    ],
+    "education": [
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "ULPGC",
+        "period": "En curso"
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B2"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reformulado para reflejar el perfil de IA y Azure directamente alineado con el puesto target.",
+      "Curso de Inteligencia Artificial con Microsoft Azure promovido a primer lugar en educación y a primary skill, por ser el requisito técnico más directo de la oferta.",
+      "Microsoft Azure AI añadido como primera skill primaria (extraído del curso certificado, presente en el perfil).",
+      "Automatización de procesos añadida a primary skills, destacada en el summary, por ser competencia clave de la oferta mencionada explícitamente en el CV original.",
+      "Atención al detalle incorporada como primary skill explícita, requerida en la JD y demostrable en los roles de hostelería (gestión de caja, protocolos).",
+      "Bullets de experiencia en hostelería reenmarcados para resaltar atención al detalle, seguimiento de protocolos e inglés operativo — transferibles al rol de AI Training Specialist.",
+      "Google IT Support promovido a primary skills por su relevancia técnica frente a la oferta.",
+      "Inglés mapeado a B2 (inferido de 'nivel alto' declarado en CV y experiencia laboral en Irlanda en inglés).",
+      "Summary redactado desde cero enfocado en IA, Azure y automatización para esta oferta específica."
+    ],
+    "confidence": 0.62,
+    "target_role": "AI Training Specialist · Acme AI",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-19T20:42:17.835Z"
+  },
+  "offer_id": "TEST-002",
+  "offer_title": "AI Training Specialist",
+  "company": "Acme AI",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}
