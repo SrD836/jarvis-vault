@@ -4,8 +4,16 @@ description: Bot de trading simulado en Polymarket con auditor LLM de reglas dur
 status: active
 created: "2026-05-19T09:33:02.685Z"
 updated: "2026-05-19T09:33:02.685Z"
+related:
+  - "[[03-decisions/2026-05-19-polymarket-v1-baseline-failure]]"
+  - "[[agents/auditor]]"
+  - "[[agents/polymarket-bot]]"
+  - "[[agents/polymarket-bot/memory]]"
+  - "[[projects/polymarket-veto-loop-bot/design]]"
 tags: []
+# auto-linked 2026-05-19
 ---
+
 
 # Polymarket Veto-Loop Bot
 

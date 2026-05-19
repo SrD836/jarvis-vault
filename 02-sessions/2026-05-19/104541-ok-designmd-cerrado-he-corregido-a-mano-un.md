@@ -14,12 +14,19 @@ aborted: false
 spawned_children:
   - "agents/planner"
 related:
-  - "vault/projects/polymarket-veto-loop-bot/bot/scanner/go.mod"
-  - "vault/projects/polymarket-veto-loop-bot/bot/scanner/internal/types/types.go"
-  - "vault/projects/polymarket-veto-loop-bot/bot/scanner/internal/scanner/scanner.go"
-  - "vault/projects/polymarket-veto-loop-bot/bot/scanner/cmd/scanner/main.go"
+  - "[[02-sessions/2026-05-19/104659-scanner-ok-revisare-la-query-a-la-api]]"
+  - "[[03-decisions/2026-05-19-polymarket-v1-baseline-failure]]"
+  - "[[agents/polymarket-bot/memory]]"
+  - "[[projects/polymarket-veto-loop-bot/design]]"
+  - "[[projects/polymarket-veto-loop-bot/project]]"
+  - "[[vault/projects/polymarket-veto-loop-bot/bot/scanner/cmd/scanner/main.go]]"
+  - "[[vault/projects/polymarket-veto-loop-bot/bot/scanner/go.mod]]"
+  - "[[vault/projects/polymarket-veto-loop-bot/bot/scanner/internal/scanner/scanner.go]]"
+  - "[[vault/projects/polymarket-veto-loop-bot/bot/scanner/internal/types/types.go]]"
 tags: ["sesion", "main", "vault"]
+# auto-linked 2026-05-19
 ---
+
 ## TL;DR
 OK design.md cerrado (he corregido a mano un drift de bankroll que se te coló). Lee la versión actual una sola vez, es el contrato. Chunk 2 … → **Scanner escrito. Reporte:** | Archivo | Path | Bytes | |---|---|---| | go.mod | `vault/.../bot/scanner/go.mod` | 68 | | types | `vault/...…
 ## Prompt usuario

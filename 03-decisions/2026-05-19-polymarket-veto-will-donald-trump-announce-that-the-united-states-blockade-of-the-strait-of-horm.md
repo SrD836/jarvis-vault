@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-22-2026"
 type: decision
 date: 2026-05-19
-decision: "Veto de tesis 'Will Donald Trump announce that the United States blockade of the Strait of H...' (rule V2): catalyst dentro de ventana 72h pre-resolución: resolución en 60 horas"
+decision: "Veto de tesis 'Will Donald Trump announce that the United States blockade of the Strait of H...' (rule V2): catalyst dentro de ventana 72h pre-resolución: resolución en 59 horas"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-22-2026`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.0650
-- **Volumen 24h**: 177837.82 USD
+- **Precio YES**: 0.0750
+- **Volumen 24h**: 167389.72 USD
 - **End date**: 2026-05-22T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `V2`
 
-catalyst dentro de ventana 72h pre-resolución: resolución en 60 horas
+catalyst dentro de ventana 72h pre-resolución: resolución en 59 horas
 
 ## Human notes
 

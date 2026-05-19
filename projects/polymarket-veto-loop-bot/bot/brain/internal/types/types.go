@@ -33,8 +33,10 @@ type Approved struct {
 	Volume24h        float64 `json:"volume_24h"`
 	EndDate          string  `json:"end_date"`
 	ScannedAt        string  `json:"scanned_at"`
-	ApprovedAt       string  `json:"approved_at"`
-	ApprovedPriceYes float64 `json:"approved_price_yes"`
+	ApprovedAt        string  `json:"approved_at"`
+	ApprovedPriceYes  float64 `json:"approved_price_yes"`
+	DaysToResolution  int     `json:"days_to_resolution"`
+	Horizon           string  `json:"horizon"` // short | medium | long
 }
 
 // LLMRequest payload to the JARVIS dashboard LLM bridge.

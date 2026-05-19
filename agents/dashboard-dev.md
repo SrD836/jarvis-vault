@@ -4,7 +4,15 @@ role: worker
 model_primary: anthropic/claude-sonnet-4-6
 allow_agents: []
 updated: 2026-05-21T16:00:00
+related:
+  - "[[agents/apier]]"
+  - "[[agents/code-reviewer]]"
+  - "[[agents/debugger]]"
+  - "[[agents/documenter]]"
+  - "[[agents/tester]]"
+# auto-linked 2026-05-19
 ---
+
 
 # dashboard-dev — Standing Orders
 

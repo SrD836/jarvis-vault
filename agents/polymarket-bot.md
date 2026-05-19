@@ -56,4 +56,8 @@ SORT date DESC LIMIT 10
 ```
 
 ## Human notes
-_(no se toca por automatización)_
+- Modo: simulation
+- Operación: autónoma 24/7 vía cron del host (usuario agent)
+- Ventana: 2-30 días (corto plazo) — gate P1 en brain
+- Config: `bot/config.json` (BOT_CONFIG_PATH env var)
+- Fecha activación: 2026-05-19

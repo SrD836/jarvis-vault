@@ -13,9 +13,16 @@ iterations: 2
 aborted: false
 spawned_children:[]
 related:
-  - "vault/projects/polymarket-veto-loop-bot/design.md"
+  - "[[02-sessions/2026-05-19/104541-ok-designmd-cerrado-he-corregido-a-mano-un]]"
+  - "[[03-decisions/2026-05-19-polymarket-v1-baseline-failure]]"
+  - "[[agents/polymarket-bot/memory]]"
+  - "[[projects/polymarket-veto-loop-bot/design]]"
+  - "[[projects/polymarket-veto-loop-bot/project]]"
+  - "[[vault/projects/polymarket-veto-loop-bot/design.md]]"
 tags: ["sesion", "main", "vault"]
+# auto-linked 2026-05-19
 ---
+
 ## TL;DR
 Listo, he movido el design.md anterior a design.md.bak-v2. Ahora puedes escribir el nuevo con mode=create sin gate. Nota sobre el gate: el s… → Escrito en `vault/projects/polymarket-veto-loop-bot/design.md` (4,395 bytes). Tres líneas de resumen: - **Stack**: Go backend, React dashboa…
 ## Prompt usuario

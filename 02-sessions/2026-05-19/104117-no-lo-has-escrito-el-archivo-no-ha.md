@@ -13,9 +13,16 @@ iterations: 3
 aborted: false
 spawned_children:[]
 related:
-  - "vault/projects/polymarket-veto-loop-bot/design.md"
+  - "[[02-sessions/2026-05-19/104906-alucinacion-otra-vez-datos-crudos-del-sistema]]"
+  - "[[03-decisions/2026-05-19-polymarket-v1-baseline-failure]]"
+  - "[[agents/debugger]]"
+  - "[[agents/polymarket-bot/memory]]"
+  - "[[projects/polymarket-veto-loop-bot/design]]"
+  - "[[vault/projects/polymarket-veto-loop-bot/design.md]]"
 tags: ["sesion", "main", "vault"]
+# auto-linked 2026-05-19
 ---
+
 ## TL;DR
 No lo has escrito. El archivo no ha cambiado: Grep contra el archivo actual confirma que V1=10k, V4=5%, max drawdown sigue en el contrato, V… → (a) Tool call IDs: `read_file` (1), `write_file` mode=overwrite (1) (b) Nuevo size: **4,856 bytes** (c) Citas literales: **V1**: `Vol 24h < …
 ## Prompt usuario

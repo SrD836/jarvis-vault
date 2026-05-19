@@ -4,12 +4,15 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"log"
 	"net/http"
 	"os"
 	"path/filepath"
+	"sort"
 	"strings"
 	"time"
 
+	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/config"
 	"github.com/davidgnuez/polymarket-veto-bot/scanner/internal/types"
 )
 
@@ -23,8 +26,6 @@ const (
 	pageSize     = 100
 )
 
-// Keywords that disqualify a market as "Pop Culture noise" (drama, memes, celebrities).
-// Filter applied to lowercase question text. Conservative — only obvious cases.
 var popCultureBlacklist = []string{
 	"kardashian", "kanye", "drake", "taylor swift", "rihanna", "beyonce",
 	"elon musk's", "trump tweet", "celebrity", "oscar", "grammy", "met gala",
@@ -33,6 +34,13 @@ var popCultureBlacklist = []string{
 }
 
 func Run() error {
+	cfg, err := config.Load()
+	if err != nil {
+		return fmt.Errorf("load config: %w", err)
+	}
+	log.Printf("[scanner] config loaded: mode=%s sort=%s window=[%d,%d]d",
+		cfg.Mode, "end_date_asc", cfg.HorizonShortMaxDays, cfg.HorizonMediumMaxDays)
+
 	fmt.Println("[scanner] starting scan")
 
 	allCandidates := []types.Candidate{}
@@ -70,22 +78,34 @@ func Run() error {
 		page++
 	}
 
-	fmt.Printf("[scanner] scan complete: %d candidates\n", len(allCandidates))
+	// Sort by endDate ascending so brain sees short-term markets first
+	sort.Slice(allCandidates, func(i, j int) bool {
+		return parseEndDate(allCandidates[i].EndDate).Before(parseEndDate(allCandidates[j].EndDate))
+	})
+
+	fmt.Printf("[scanner] scan complete: %d candidates (sorted by endDate asc)\n", len(allCandidates))
 	if len(allCandidates) == 0 {
 		fmt.Println("[scanner] no candidates; clearing output file")
 	}
 	return writeCandidates(allCandidates)
 }
 
-// convert turns a Market into a Candidate, applying client-side filters.
-// Returns (Candidate, true) if it passes; (_, false) if it should be dropped.
+func parseEndDate(s string) time.Time {
+	if s == "" {
+		return time.Date(2099, 1, 1, 0, 0, 0, 0, time.UTC)
+	}
+	t, err := time.Parse(time.RFC3339, s)
+	if err != nil {
+		t, _ = time.Parse("2006-01-02T15:04:05Z", s)
+	}
+	return t
+}
+
 func convert(m types.Market, now string) (types.Candidate, bool) {
-	// Active + not closed (defensive — query param should already do this)
 	if m.Closed || !m.Active {
 		return types.Candidate{}, false
 	}
 
-	// Binary Yes/No only
 	var outcomes []string
 	if err := json.Unmarshal([]byte(m.Outcomes), &outcomes); err != nil {
 		return types.Candidate{}, false
@@ -97,7 +117,6 @@ func convert(m types.Market, now string) (types.Candidate, bool) {
 		return types.Candidate{}, false
 	}
 
-	// Pop Culture noise filter on question text
 	ql := strings.ToLower(m.Question)
 	for _, kw := range popCultureBlacklist {
 		if strings.Contains(ql, kw) {
@@ -105,7 +124,6 @@ func convert(m types.Market, now string) (types.Candidate, bool) {
 		}
 	}
 
-	// Volume proxy: prefer 24h if present, else cumulative VolumeNum (loose but available)
 	volume := m.VolumeNum
 	if m.Volume24Hr != nil {
 		volume = *m.Volume24Hr
@@ -114,7 +132,6 @@ func convert(m types.Market, now string) (types.Candidate, bool) {
 		return types.Candidate{}, false
 	}
 
-	// Current price of YES from outcomePrices
 	var prices []string
 	if err := json.Unmarshal([]byte(m.OutcomePrices), &prices); err != nil || len(prices) < 1 {
 		return types.Candidate{}, false
@@ -124,7 +141,6 @@ func convert(m types.Market, now string) (types.Candidate, bool) {
 		return types.Candidate{}, false
 	}
 
-	// Category fallback: prefer events[0].category, else "uncategorized"
 	category := "uncategorized"
 	if len(m.Events) > 0 && m.Events[0].Category != "" {
 		category = m.Events[0].Category

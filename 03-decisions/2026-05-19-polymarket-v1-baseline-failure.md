@@ -8,11 +8,17 @@ alternatives:
   - "v2: añadir news research (Tavily + DeepSeek) + memoria de errores antes de aprobar"
 outcome: confirmed_bad
 outcome_observed_after_days: 0
-tags: [decision, polymarket, bot, baseline-failure, post-mortem]
 related:
+  - "[[02-sessions/2026-05-19/121118-configura-el-bot-polymarket-para-operacion-autonoma-247]]"
+  - "[[03-decisions/2026-05-19-polymarket-veto-us-x-iran-permanent-peace-deal-by-may-31-2026-333-871-241-192-799-449]]"
   - "[[agents/polymarket-bot]]"
+  - "[[agents/polymarket-bot/memory]]"
   - "[[projects/polymarket-veto-loop-bot]]"
+  - "[[projects/polymarket-veto-loop-bot/design]]"
+tags: [decision, polymarket, bot, baseline-failure, post-mortem]
+# auto-linked 2026-05-19
 ---
+
 
 ## Contexto
 

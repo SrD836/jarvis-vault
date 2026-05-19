@@ -13,8 +13,16 @@ aborted: true
 abort_reason: "global MAX_TOKENS_PER_USER_TURN (500000) excedido"
 spawned_children:[]
 tools_used: ["grep_search", "list_dir", "run_bash", "read_file"]
+related:
+  - "[[02-sessions/2026-05-19/101326-el-intento-anterior-aborto-por-cap-de-iteraciones]]"
+  - "[[agents/dashboard-dev]]"
+  - "[[agents/planner/runs/2026-05-19/101236-from-main]]"
+  - "[[agents/researcher]]"
+  - "[[agents/runs-today]]"
 tags: ["agent-run", "researcher", "aborted"]
+# auto-linked 2026-05-19
 ---
+
 ## TL;DR
 researcher: Contexto del padre: El proyecto usa React Vite SPA en Docker container dashboard:3000. No tengo acceso para correr bash ni leer el filesyste… → [ABORTED: global MAX_TOKENS_PER_USER_TURN (500000) excedido] Esa sesión del 19-May hizo curl al dashboard en vivo y extrajo el JS compilado.…
 ## Task recibida

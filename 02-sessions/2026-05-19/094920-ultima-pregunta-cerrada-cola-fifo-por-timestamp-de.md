@@ -12,9 +12,16 @@ duration_ms: 2188
 iterations: 1
 aborted: false
 spawned_children:[]
-related:[]
+related:
+  - "[[02-sessions/2026-05-19/095239-modo-discusion-desactivado-ahora-planifica-e-implementa-el]]"
+  - "[[03-decisions/2026-05-19-polymarket-v1-baseline-failure]]"
+  - "[[agents/polymarket-bot/memory]]"
+  - "[[projects/polymarket-veto-loop-bot/design]]"
+  - "[[projects/polymarket-veto-loop-bot/project]]"
 tags: ["sesion", "main"]
+# auto-linked 2026-05-19
 ---
+
 ## TL;DR
 Última pregunta cerrada: cola FIFO por timestamp de aprobación. Sin Sharpe ranking — en sim no tenemos baseline para estimar Sharpe esperado… → Tomado. Confirmo que lo único que he anotado es el párrafo anterior. Espero tu orden.
 ## Prompt usuario

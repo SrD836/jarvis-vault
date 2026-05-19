@@ -13,8 +13,16 @@ aborted: true
 abort_reason: "global MAX_TOKENS_PER_USER_TURN (500000) excedido"
 spawned_children:[]
 tools_used: []
+related:
+  - "[[02-sessions/2026-05-19/101326-el-intento-anterior-aborto-por-cap-de-iteraciones]]"
+  - "[[agents/planner/runs/2026-05-19/101236-from-main]]"
+  - "[[agents/polymarket-bot/memory]]"
+  - "[[projects/polymarket-veto-loop-bot/design]]"
+  - "[[projects/polymarket-veto-loop-bot/project]]"
 tags: ["agent-run", "planner", "aborted"]
+# auto-linked 2026-05-19
 ---
+
 ## TL;DR
 planner: Contexto del padre: David es el operador. Prefiere decisiones sobre opciones. El bot es nuevo, no hay código base. El sandbox no tiene acces… → [ABORTED: global MAX_TOKENS_PER_USER_TURN (500000) excedido] Voy a empezar leyendo el diseño consolidado y el perfil del usuario para entend…
 ## Task recibida

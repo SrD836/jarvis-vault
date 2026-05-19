@@ -12,9 +12,16 @@ duration_ms: 10954
 iterations: 1
 aborted: false
 spawned_children:[]
-related:[]
+related:
+  - "[[03-decisions/2026-05-19-polymarket-veto-bitcoin-above-78k-on-may-19]]"
+  - "[[03-decisions/2026-05-19-polymarket-veto-us-x-iran-permanent-peace-deal-by-may-31-2026-333-871-241-192-799-449]]"
+  - "[[agents/polymarket-bot/memory]]"
+  - "[[projects/polymarket-veto-loop-bot/design]]"
+  - "[[projects/polymarket-veto-loop-bot/project]]"
 tags: ["sesion", "main"]
+# auto-linked 2026-05-19
 ---
+
 ## TL;DR
 Tienes razón en 5 de las 8. Voy por partes: **(5) Stop vs Kelly inconsistente** — esto es matemáticamente correcto y crítico. Olvídate del -… → Cierro los huecos. Queda esto: **1. (2) Veto-loop como filtro binario — acepto**, con cita del artículo que apoya. El nombre no me molesta, …
 ## Prompt usuario

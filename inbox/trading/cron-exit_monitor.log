@@ -1,0 +1,163 @@
+2026/05/19 12:49:45 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 12:49:45 monitor.go:33: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 12:49:45 monitor.go:49: exit_monitor: price fetch error for 665374: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 12:49:45 monitor.go:49: exit_monitor: price fetch error for 553866: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 12:49:45 monitor.go:49: exit_monitor: price fetch error for 2237150: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 12:49:45 monitor.go:108: exit_monitor: 0 closed, 3 remaining
+2026/05/19 12:49:45 main.go:13: exit_monitor: done
+2026/05/19 13:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 13:15:02 monitor.go:33: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 13:15:02 monitor.go:49: exit_monitor: price fetch error for 2237150: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:15:02 monitor.go:49: exit_monitor: price fetch error for 789540: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:15:02 monitor.go:49: exit_monitor: price fetch error for 789542: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:15:02 monitor.go:49: exit_monitor: price fetch error for 2046958: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:15:02 monitor.go:49: exit_monitor: price fetch error for 2242165: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:15:02 monitor.go:49: exit_monitor: price fetch error for 2242161: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:15:02 monitor.go:49: exit_monitor: price fetch error for 2205022: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:15:02 monitor.go:49: exit_monitor: price fetch error for 2205062: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:15:02 monitor.go:49: exit_monitor: price fetch error for 2170973: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:15:02 monitor.go:49: exit_monitor: price fetch error for 2170978: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:15:02 monitor.go:49: exit_monitor: price fetch error for 2241872: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:15:02 monitor.go:49: exit_monitor: price fetch error for 2119227: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:15:02 monitor.go:49: exit_monitor: price fetch error for 2237154: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:15:02 monitor.go:108: exit_monitor: 0 closed, 13 remaining
+2026/05/19 13:15:02 main.go:13: exit_monitor: done
+2026/05/19 13:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 13:20:01 monitor.go:33: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 13:20:01 monitor.go:49: exit_monitor: price fetch error for 2237150: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:20:01 monitor.go:49: exit_monitor: price fetch error for 789540: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:20:01 monitor.go:49: exit_monitor: price fetch error for 789542: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:20:01 monitor.go:49: exit_monitor: price fetch error for 2046958: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:20:01 monitor.go:49: exit_monitor: price fetch error for 2242165: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:20:01 monitor.go:49: exit_monitor: price fetch error for 2242161: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:20:01 monitor.go:49: exit_monitor: price fetch error for 2205022: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:20:01 monitor.go:49: exit_monitor: price fetch error for 2205062: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:20:01 monitor.go:49: exit_monitor: price fetch error for 2170973: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:20:01 monitor.go:49: exit_monitor: price fetch error for 2170978: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:20:01 monitor.go:49: exit_monitor: price fetch error for 2241872: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:20:01 monitor.go:49: exit_monitor: price fetch error for 2119227: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:20:01 monitor.go:49: exit_monitor: price fetch error for 2237154: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:20:01 monitor.go:108: exit_monitor: 0 closed, 13 remaining
+2026/05/19 13:20:01 main.go:13: exit_monitor: done
+2026/05/19 13:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 13:25:01 monitor.go:33: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 13:25:01 monitor.go:49: exit_monitor: price fetch error for 2237150: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:25:01 monitor.go:49: exit_monitor: price fetch error for 789540: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:25:01 monitor.go:49: exit_monitor: price fetch error for 789542: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:25:01 monitor.go:49: exit_monitor: price fetch error for 2046958: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:25:02 monitor.go:49: exit_monitor: price fetch error for 2242165: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:25:02 monitor.go:49: exit_monitor: price fetch error for 2242161: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:25:02 monitor.go:49: exit_monitor: price fetch error for 2205022: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:25:02 monitor.go:49: exit_monitor: price fetch error for 2205062: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:25:02 monitor.go:49: exit_monitor: price fetch error for 2170973: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:25:02 monitor.go:49: exit_monitor: price fetch error for 2170978: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:25:02 monitor.go:49: exit_monitor: price fetch error for 2241872: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:25:02 monitor.go:49: exit_monitor: price fetch error for 2119227: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:25:02 monitor.go:49: exit_monitor: price fetch error for 2237154: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:25:02 monitor.go:108: exit_monitor: 0 closed, 13 remaining
+2026/05/19 13:25:02 main.go:13: exit_monitor: done
+2026/05/19 13:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 13:30:01 monitor.go:33: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 13:30:01 monitor.go:49: exit_monitor: price fetch error for 2237150: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:30:01 monitor.go:49: exit_monitor: price fetch error for 789540: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:30:01 monitor.go:49: exit_monitor: price fetch error for 789542: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:30:01 monitor.go:49: exit_monitor: price fetch error for 2046958: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:30:01 monitor.go:49: exit_monitor: price fetch error for 2242165: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:30:01 monitor.go:49: exit_monitor: price fetch error for 2242161: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:30:01 monitor.go:49: exit_monitor: price fetch error for 2205022: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:30:01 monitor.go:49: exit_monitor: price fetch error for 2205062: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:30:01 monitor.go:49: exit_monitor: price fetch error for 2170973: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:30:01 monitor.go:49: exit_monitor: price fetch error for 2170978: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:30:01 monitor.go:49: exit_monitor: price fetch error for 2241872: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:30:01 monitor.go:49: exit_monitor: price fetch error for 2119227: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:30:01 monitor.go:49: exit_monitor: price fetch error for 2237154: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:30:01 monitor.go:108: exit_monitor: 0 closed, 13 remaining
+2026/05/19 13:30:01 main.go:13: exit_monitor: done
+2026/05/19 13:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 13:35:01 monitor.go:33: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 13:35:02 monitor.go:49: exit_monitor: price fetch error for 2237150: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:35:02 monitor.go:49: exit_monitor: price fetch error for 789540: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:35:02 monitor.go:49: exit_monitor: price fetch error for 789542: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:35:02 monitor.go:49: exit_monitor: price fetch error for 2046958: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:35:02 monitor.go:49: exit_monitor: price fetch error for 2242165: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:35:02 monitor.go:49: exit_monitor: price fetch error for 2242161: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:35:02 monitor.go:49: exit_monitor: price fetch error for 2205022: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:35:02 monitor.go:49: exit_monitor: price fetch error for 2205062: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:35:02 monitor.go:49: exit_monitor: price fetch error for 2170973: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:35:02 monitor.go:49: exit_monitor: price fetch error for 2170978: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:35:02 monitor.go:49: exit_monitor: price fetch error for 2241872: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:35:02 monitor.go:49: exit_monitor: price fetch error for 2119227: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:35:02 monitor.go:49: exit_monitor: price fetch error for 2237154: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:35:02 monitor.go:108: exit_monitor: 0 closed, 13 remaining
+2026/05/19 13:35:02 main.go:13: exit_monitor: done
+2026/05/19 13:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 13:40:01 monitor.go:33: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 13:40:01 monitor.go:49: exit_monitor: price fetch error for 2237150: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:40:01 monitor.go:49: exit_monitor: price fetch error for 789540: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:40:01 monitor.go:49: exit_monitor: price fetch error for 789542: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:40:01 monitor.go:49: exit_monitor: price fetch error for 2046958: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:40:01 monitor.go:49: exit_monitor: price fetch error for 2242165: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:40:01 monitor.go:49: exit_monitor: price fetch error for 2242161: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:40:01 monitor.go:49: exit_monitor: price fetch error for 2205022: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:40:01 monitor.go:49: exit_monitor: price fetch error for 2205062: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:40:01 monitor.go:49: exit_monitor: price fetch error for 2170973: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:40:01 monitor.go:49: exit_monitor: price fetch error for 2170978: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:40:01 monitor.go:49: exit_monitor: price fetch error for 2241872: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:40:01 monitor.go:49: exit_monitor: price fetch error for 2119227: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:40:01 monitor.go:49: exit_monitor: price fetch error for 2237154: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:40:01 monitor.go:108: exit_monitor: 0 closed, 13 remaining
+2026/05/19 13:40:01 main.go:13: exit_monitor: done
+2026/05/19 13:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 13:45:01 monitor.go:33: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 13:45:01 monitor.go:49: exit_monitor: price fetch error for 2237150: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:45:01 monitor.go:49: exit_monitor: price fetch error for 789540: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:45:01 monitor.go:49: exit_monitor: price fetch error for 789542: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:45:01 monitor.go:49: exit_monitor: price fetch error for 2046958: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:45:01 monitor.go:49: exit_monitor: price fetch error for 2242165: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:45:01 monitor.go:49: exit_monitor: price fetch error for 2242161: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:45:01 monitor.go:49: exit_monitor: price fetch error for 2205022: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:45:01 monitor.go:49: exit_monitor: price fetch error for 2205062: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:45:01 monitor.go:49: exit_monitor: price fetch error for 2170973: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:45:01 monitor.go:49: exit_monitor: price fetch error for 2170978: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:45:01 monitor.go:49: exit_monitor: price fetch error for 2241872: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:45:01 monitor.go:49: exit_monitor: price fetch error for 2119227: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:45:01 monitor.go:49: exit_monitor: price fetch error for 2237154: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:45:01 monitor.go:108: exit_monitor: 0 closed, 13 remaining
+2026/05/19 13:45:01 main.go:13: exit_monitor: done
+2026/05/19 13:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 13:50:01 monitor.go:33: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 13:50:01 monitor.go:49: exit_monitor: price fetch error for 2237150: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:50:01 monitor.go:49: exit_monitor: price fetch error for 789540: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:50:01 monitor.go:49: exit_monitor: price fetch error for 789542: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:50:02 monitor.go:49: exit_monitor: price fetch error for 2046958: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:50:02 monitor.go:49: exit_monitor: price fetch error for 2242165: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:50:02 monitor.go:49: exit_monitor: price fetch error for 2242161: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:50:02 monitor.go:49: exit_monitor: price fetch error for 2205022: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:50:02 monitor.go:49: exit_monitor: price fetch error for 2205062: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:50:02 monitor.go:49: exit_monitor: price fetch error for 2170973: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:50:02 monitor.go:49: exit_monitor: price fetch error for 2170978: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:50:02 monitor.go:49: exit_monitor: price fetch error for 2241872: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:50:02 monitor.go:49: exit_monitor: price fetch error for 2119227: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:50:02 monitor.go:49: exit_monitor: price fetch error for 2237154: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:50:02 monitor.go:108: exit_monitor: 0 closed, 13 remaining
+2026/05/19 13:50:02 main.go:13: exit_monitor: done
+2026/05/19 13:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 13:55:01 monitor.go:33: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 13:55:01 monitor.go:49: exit_monitor: price fetch error for 2237150: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:55:01 monitor.go:49: exit_monitor: price fetch error for 789540: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:55:01 monitor.go:49: exit_monitor: price fetch error for 789542: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:55:01 monitor.go:49: exit_monitor: price fetch error for 2046958: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:55:01 monitor.go:49: exit_monitor: price fetch error for 2242165: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:55:01 monitor.go:49: exit_monitor: price fetch error for 2242161: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:55:01 monitor.go:49: exit_monitor: price fetch error for 2205022: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:55:01 monitor.go:49: exit_monitor: price fetch error for 2205062: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:55:01 monitor.go:49: exit_monitor: price fetch error for 2170973: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:55:01 monitor.go:49: exit_monitor: price fetch error for 2170978: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:55:01 monitor.go:49: exit_monitor: price fetch error for 2241872: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:55:01 monitor.go:49: exit_monitor: price fetch error for 2119227: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:55:01 monitor.go:49: exit_monitor: price fetch error for 2237154: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax
+2026/05/19 13:55:01 monitor.go:108: exit_monitor: 0 closed, 13 remaining
+2026/05/19 13:55:01 main.go:13: exit_monitor: done
+2026/05/19 14:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 14:00:01 monitor.go:33: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 14:00:01 monitor.go:49: exit_monitor: price fetch error for 2237150: gamma parse price : strconv.ParseFloat: parsing "": invalid syntax

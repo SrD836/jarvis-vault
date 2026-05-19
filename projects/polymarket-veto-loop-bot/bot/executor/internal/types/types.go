@@ -12,6 +12,8 @@ type Approved struct {
 	ScannedAt        string  `json:"scanned_at"`
 	ApprovedAt       string  `json:"approved_at"`
 	ApprovedPriceYes float64 `json:"approved_price_yes"`
+	DaysToResolution int     `json:"days_to_resolution"`
+	Horizon          string  `json:"horizon"`
 }
 
 // ActiveTrade stored in active.jsonl after successful entry.
@@ -25,6 +27,9 @@ type ActiveTrade struct {
 	Category       string  `json:"category"`
 	EntryTimestamp  string  `json:"entry_timestamp"`
 	ApprovedPrice   float64 `json:"approved_price"`
+	DaysToResolution int    `json:"days_to_resolution"`
+	Horizon         string  `json:"horizon"`
+	EndDate         string  `json:"end_date,omitempty"`
 }
 
 // Portfolio state, single JSON object.

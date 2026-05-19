@@ -12,9 +12,16 @@ duration_ms: 33321
 iterations: 5
 aborted: false
 spawned_children:[]
-related:[]
+related:
+  - "[[03-decisions/2026-05-19-polymarket-v1-baseline-failure]]"
+  - "[[agents/polymarket-bot]]"
+  - "[[agents/polymarket-bot/memory]]"
+  - "[[projects/polymarket-veto-loop-bot/design]]"
+  - "[[projects/polymarket-veto-loop-bot/project]]"
 tags: ["sesion", "main"]
+# auto-linked 2026-05-19
 ---
+
 ## TL;DR
 Hola main. Acabo de crear el proyecto polymarket-veto-loop-bot. Sus instrucciones están en vault/projects/polymarket-veto-loop-bot/instructi… → Ok, ya está. Esto es lo que veo que falla o falta: --- **1. Tu tesis central está al revés del artículo que dices seguir.** El artículo de r…
 ## Prompt usuario

@@ -12,9 +12,16 @@ duration_ms: 5925
 iterations: 1
 aborted: false
 spawned_children:[]
-related:[]
+related:
+  - "[[02-sessions/2026-05-19/105443-brain-compilo-limpio-verificado-con-go-build-dentro]]"
+  - "[[03-decisions/2026-05-19-polymarket-v1-baseline-failure]]"
+  - "[[agents/polymarket-bot/memory]]"
+  - "[[projects/polymarket-veto-loop-bot/design]]"
+  - "[[projects/polymarket-veto-loop-bot/project]]"
 tags: ["sesion", "main"]
+# auto-linked 2026-05-19
 ---
+
 ## TL;DR
 Scanner OK, revisaré la query a la API más tarde. Paso a Brain (chunk 3). Chunk 3 — implementa el Brain (veto-loop). Reglas: - Lenguaje: Go.… → **Brain escrito y autocorregido tras compilación fallida (import circular, falta marshal). Reporte final:** | Archivo | Path | Bytes | |---|…
 ## Prompt usuario

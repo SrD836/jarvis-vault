@@ -13,8 +13,16 @@ aborted: true
 abort_reason: "duplicate tool loop (same tool+args 3x)"
 spawned_children:[]
 tools_used: ["read_file", "list_dir", "delegate", "list_agents", "get_agent_briefing"]
+related:
+  - "[[02-sessions/2026-05-19/105443-brain-compilo-limpio-verificado-con-go-build-dentro]]"
+  - "[[03-decisions/2026-05-19-polymarket-v1-baseline-failure]]"
+  - "[[agents/planner/runs/2026-05-19/105919-from-main]]"
+  - "[[agents/polymarket-bot/memory]]"
+  - "[[projects/polymarket-veto-loop-bot/design]]"
 tags: ["agent-run", "planner", "aborted"]
+# auto-linked 2026-05-19
 ---
+
 ## TL;DR
 planner: Contexto del padre: El workspace es vault/projects/polymarket-veto-loop-bot/. David ha verificado que brain y scanner existen y compilan. El… → [ABORTED: duplicate tool loop (same tool+args 3x)] El formato correcto del delegate:
 ## Task recibida

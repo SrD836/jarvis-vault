@@ -13,9 +13,16 @@ iterations: 7
 aborted: false
 spawned_children:[]
 related:
-  - "vault/projects/polymarket-veto-loop-bot/design.md"
+  - "[[02-sessions/2026-05-19/103800-releido-hay-drifts-del-acuerdo-que-tenemos-que]]"
+  - "[[agents/polymarket-bot/memory]]"
+  - "[[agents/runs-today]]"
+  - "[[projects/polymarket-veto-loop-bot/design]]"
+  - "[[projects/polymarket-veto-loop-bot/project]]"
+  - "[[vault/projects/polymarket-veto-loop-bot/design.md]]"
 tags: ["sesion", "main", "vault"]
+# auto-linked 2026-05-19
 ---
+
 ## TL;DR
 Reenvío. Reinicié el dashboard porque el chat-processor se quedó colgado tras tu última respuesta. Tarea repetida: Reescribe vault/projects/… → La escritura se quedó esperando confirmación porque `overwrite` requiere approval. El archivo existe (design.md v2.0). Cambio a `create` con…
 ## Prompt usuario

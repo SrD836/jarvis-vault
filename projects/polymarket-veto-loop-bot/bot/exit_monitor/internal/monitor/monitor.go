@@ -9,6 +9,7 @@ import (
 	"path/filepath"
 	"time"
 
+	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/config"
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/exit_monitor/internal/loglosses"
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/exit_monitor/internal/polyclient"
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/exit_monitor/internal/types"
@@ -22,13 +23,16 @@ const (
 
 	memoryPath   = "vault/agents/polymarket-bot/memory.md"
 	decisionsDir = "vault/03-decisions"
-
-	stopLossUSD   = 150.0
-	takeProfitPct = 60.0
 )
 
-// Run executes one pass of the exit monitor.
 func Run() {
+	cfg, err := config.Load()
+	if err != nil {
+		log.Fatalf("exit_monitor: load config: %v", err)
+	}
+	log.Printf("exit_monitor: config loaded stopLoss=%.0f takeProfitPct=%.0f%%",
+		cfg.StopLossUSD, cfg.TakeProfitPct)
+
 	actives := readActive()
 	if len(actives) == 0 {
 		log.Println("exit_monitor: no active positions")
@@ -55,9 +59,9 @@ func Run() {
 		switch {
 		case mktClosed:
 			reason = "market_closed"
-		case pnlPct >= takeProfitPct:
+		case pnlPct >= cfg.TakeProfitPct:
 			reason = "take_profit"
-		case pnlUSD <= -stopLossUSD:
+		case pnlUSD <= -cfg.StopLossUSD:
 			reason = "stop_loss"
 		default:
 			remaining = append(remaining, a)
@@ -86,7 +90,6 @@ func Run() {
 		closed = append(closed, ct)
 		log.Printf("exit_monitor: closed %s (%s): PnL $%.2f (%.2f%%)", a.Question, reason, ct.Pnl, ct.PnlPct)
 
-		// On loss → write decision log + memory append (best-effort)
 		if pnlR < 0 {
 			loglosses.LogLoss(
 				decisionsDir, memoryPath,
@@ -177,7 +180,6 @@ func updatePortfolio(closed []types.ClosedTrade) {
 	}
 	p["bankroll"] = bankroll
 	p["used_exposure"] = used
-	// rebuild positions: keep only those still in active
 	if positions, ok := p["positions"].([]interface{}); ok {
 		closedIDs := map[string]bool{}
 		for _, c := range closed {

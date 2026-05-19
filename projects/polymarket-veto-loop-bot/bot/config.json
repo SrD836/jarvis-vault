@@ -1,0 +1,17 @@
+{
+  "scanner_interval_min": 30,
+  "exit_monitor_interval_min": 5,
+  "horizon_short_max_days": 2,
+  "horizon_medium_max_days": 30,
+  "horizon_quota_short": 0.7,
+  "horizon_quota_medium": 0.15,
+  "horizon_quota_long": 0.15,
+  "v2_veto_under_hours": 0,
+  "max_exposure_usd": 2000,
+  "max_same_category": 10,
+  "max_new_trades_per_day": 20,
+  "trade_size_usd": 150,
+  "stop_loss_usd": 150,
+  "take_profit_pct": 40,
+  "mode": "simulation"
+}

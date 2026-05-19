@@ -12,8 +12,16 @@ duration_ms: 57196
 aborted: false
 spawned_children:[]
 tools_used: ["run_bash", "mcp_list_connectors"]
+related:
+  - "[[03-decisions/2026-05-19-polymarket-v1-baseline-failure]]"
+  - "[[agents/planner/runs/2026-05-19/104519-from-main]]"
+  - "[[agents/polymarket-bot/memory]]"
+  - "[[agents/researcher/runs/2026-05-19/101232-from-planner]]"
+  - "[[projects/polymarket-veto-loop-bot/design]]"
 tags: ["agent-run", "researcher"]
+# auto-linked 2026-05-19
 ---
+
 ## TL;DR
 researcher: Contexto del padre: El usuario pide crear el scanner del Polymarket Veto-Loop Bot. Es proceso 1 de 4. Go standalone, solo stdlib. Output a v… → Los archivos no persisten entre llamadas (sandbox efímero). Pero la creación funcionó — lo vi en el output anterior. Como no tengo `write_fi…
 ## Task recibida

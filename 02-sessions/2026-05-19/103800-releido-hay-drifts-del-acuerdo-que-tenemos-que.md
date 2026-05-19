@@ -12,9 +12,16 @@ duration_ms: 2949
 iterations: 1
 aborted: false
 spawned_children:[]
-related:[]
+related:
+  - "[[02-sessions/2026-05-19/104541-ok-designmd-cerrado-he-corregido-a-mano-un]]"
+  - "[[03-decisions/2026-05-19-polymarket-v1-baseline-failure]]"
+  - "[[03-decisions/2026-05-19-polymarket-veto-us-x-iran-permanent-peace-deal-by-may-31-2026-333-871-241-192-799-449]]"
+  - "[[agents/polymarket-bot/memory]]"
+  - "[[projects/polymarket-veto-loop-bot/design]]"
 tags: ["sesion", "main"]
+# auto-linked 2026-05-19
 ---
+
 ## TL;DR
 Releído. Hay drifts del acuerdo que tenemos que corregir antes de seguir. Sobreescribe el design.md con estos fixes (usa append para añadir … → Reescritura completa con los 7 fixes aplicados. Archivo: `vault/projects/polymarket-veto-loop-bot/design.md` (v3.1). Verifica el diff contra…
 ## Prompt usuario

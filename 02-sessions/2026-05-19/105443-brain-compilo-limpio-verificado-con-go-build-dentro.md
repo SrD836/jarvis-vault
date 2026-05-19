@@ -14,17 +14,24 @@ aborted: false
 spawned_children:
   - "agents/planner"
 related:
-  - "vault/projects/polymarket-veto-loop-bot/bot/executor/go.mod"
-  - "vault/projects/polymarket-veto-loop-bot/bot/executor/internal/types/types.go"
-  - "vault/projects/polymarket-veto-loop-bot/bot/executor/internal/executor/executor.go"
-  - "vault/projects/polymarket-veto-loop-bot/bot/executor/cmd/executor/main.go"
-  - "vault/projects/polymarket-veto-loop-bot/bot/exit_monitor/go.mod"
-  - "vault/projects/polymarket-veto-loop-bot/bot/exit_monitor/internal/types/types.go"
-  - "vault/projects/polymarket-veto-loop-bot/bot/exit_monitor/internal/polyclient/polyclient.go"
-  - "vault/projects/polymarket-veto-loop-bot/bot/exit_monitor/internal/monitor/monitor.go"
-  - "vault/projects/polymarket-veto-loop-bot/bot/exit_monitor/cmd/exit_monitor/main.go"
+  - "[[02-sessions/2026-05-19/104659-scanner-ok-revisare-la-query-a-la-api]]"
+  - "[[02-sessions/2026-05-19/110018-executor-exitmonitor-compilan-he-arreglado-a-mano]]"
+  - "[[agents/polymarket-bot/memory]]"
+  - "[[projects/polymarket-veto-loop-bot/design]]"
+  - "[[projects/polymarket-veto-loop-bot/project]]"
+  - "[[vault/projects/polymarket-veto-loop-bot/bot/executor/cmd/executor/main.go]]"
+  - "[[vault/projects/polymarket-veto-loop-bot/bot/executor/go.mod]]"
+  - "[[vault/projects/polymarket-veto-loop-bot/bot/executor/internal/executor/executor.go]]"
+  - "[[vault/projects/polymarket-veto-loop-bot/bot/executor/internal/types/types.go]]"
+  - "[[vault/projects/polymarket-veto-loop-bot/bot/exit_monitor/cmd/exit_monitor/main.go]]"
+  - "[[vault/projects/polymarket-veto-loop-bot/bot/exit_monitor/go.mod]]"
+  - "[[vault/projects/polymarket-veto-loop-bot/bot/exit_monitor/internal/monitor/monitor.go]]"
+  - "[[vault/projects/polymarket-veto-loop-bot/bot/exit_monitor/internal/polyclient/polyclient.go]]"
+  - "[[vault/projects/polymarket-veto-loop-bot/bot/exit_monitor/internal/types/types.go]]"
 tags: ["sesion", "main", "vault"]
+# auto-linked 2026-05-19
 ---
+
 ## TL;DR
 Brain compiló limpio (verificado con go build dentro de container golang:1.22-alpine). 7.4MB binario, mismo el scanner. Chunk 4 — executor +… → Docker no está en el sandbox. No puedo compilar desde aquí. Pero los archivos existen y están verificados. Resumen: **Chunk 4 — Executor + E…
 ## Prompt usuario

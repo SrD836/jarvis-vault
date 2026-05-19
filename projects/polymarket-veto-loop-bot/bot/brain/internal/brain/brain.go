@@ -10,6 +10,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/config"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/decisionlog"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/llmclient"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/memory"
@@ -18,32 +19,37 @@ import (
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/types"
 )
 
-// Paths are resolved relative to working directory (typically /home/agent/agent-stack).
-// All vault paths are relative — caller sets cwd accordingly.
 var (
-	candidatesPath     = envOr("BRAIN_CANDIDATES", "vault/inbox/trading/candidates.jsonl")
-	approvedPath       = envOr("BRAIN_APPROVED", "vault/inbox/trading/approved.jsonl")
-	blockedPath        = envOr("BRAIN_BLOCKED", "vault/inbox/trading/blocked.jsonl")
-	memoryPath         = envOr("BRAIN_MEMORY", "vault/agents/polymarket-bot/memory.md")
-	decisionsDir       = envOr("BRAIN_DECISIONS_DIR", "vault/03-decisions")
-	researchCachePath  = envOr("BRAIN_RESEARCH_CACHE", "vault/inbox/trading/research-cache.jsonl")
-	tavilyConnPath     = envOr("BRAIN_TAVILY_CONNECTOR", "/openclaw-workspace/connectors/tavily.json")
-	dashboardURL       = envOr("DASHBOARD_URL", "http://jarvis-dashboard:3000")
-	disableResearch    = envOr("BRAIN_DISABLE_RESEARCH", "") != ""
+	candidatesPath    = envOr("BRAIN_CANDIDATES", "vault/inbox/trading/candidates.jsonl")
+	approvedPath      = envOr("BRAIN_APPROVED", "vault/inbox/trading/approved.jsonl")
+	blockedPath       = envOr("BRAIN_BLOCKED", "vault/inbox/trading/blocked.jsonl")
+	memoryPath        = envOr("BRAIN_MEMORY", "vault/agents/polymarket-bot/memory.md")
+	decisionsDir      = envOr("BRAIN_DECISIONS_DIR", "vault/03-decisions")
+	researchCachePath = envOr("BRAIN_RESEARCH_CACHE", "vault/inbox/trading/research-cache.jsonl")
+	tavilyConnPath    = envOr("BRAIN_TAVILY_CONNECTOR", "/openclaw-workspace/connectors/tavily.json")
+	dashboardURL      = envOr("DASHBOARD_URL", "http://jarvis-dashboard:3000")
+	disableResearch   = envOr("BRAIN_DISABLE_RESEARCH", "") != ""
 )
 
-// Veto rule constants for the new v2 stages.
 const (
-	rulePrice = "P0" // price out of [0.05, 0.95]
-	ruleMem   = "M1" // memory pattern match
-	ruleNews1 = "N1" // news contradicts
-	ruleNews2 = "N2" // news silent on imminent catalyst
+	rulePrice          = "P0"
+	rulePastEnd        = "P2"
+	ruleWindow         = "P1"
+	ruleMem            = "M1"
+	ruleNews1          = "N1"
+	ruleNews2          = "N2"
 	memoryHitThreshold = 0.7
 )
 
-// Run reads candidates from JSONL, vets them, writes approved/blocked, and side-effects
-// to vault: memory.md (append) + 03-decisions/ (one note per significant veto).
 func Run() error {
+	cfg, err := config.Load()
+	if err != nil {
+		return fmt.Errorf("load config: %w", err)
+	}
+	log.Printf("Brain v3: config loaded mode=%s v2_under=%dh horizon=[short<=%dd, medium<=%dd, long>%dd] quota=%.0f/%.0f/%.0f",
+		cfg.Mode, cfg.V2VetoUnderHours, cfg.HorizonShortMaxDays, cfg.HorizonMediumMaxDays, cfg.HorizonMediumMaxDays,
+		cfg.HorizonQuotaShort*100, cfg.HorizonQuotaMedium*100, cfg.HorizonQuotaLong*100)
+
 	if err := ensureDir(approvedPath); err != nil {
 		return fmt.Errorf("ensure output dir: %w", err)
 	}
@@ -54,7 +60,6 @@ func Run() error {
 	}
 	log.Printf("Brain v2: processing %d candidates", len(candidates))
 
-	// Load memory (best-effort: missing file means no patterns yet)
 	mem, err := memory.Load(memoryPath)
 	if err != nil {
 		log.Printf("WARN: memory load failed: %v (continuing without)", err)
@@ -64,7 +69,6 @@ func Run() error {
 		log.Printf("Memory loaded: %d vetos, %d losses", vetos, losses)
 	}
 
-	// Load research client (best-effort: missing connector means no news veto)
 	var researcher *research.Client
 	if !disableResearch {
 		researcher, err = research.NewClient(tavilyConnPath, dashboardURL, researchCachePath)
@@ -82,23 +86,39 @@ func Run() error {
 	_ = now
 
 	stats := struct {
-		P0, V1, V2, V4, M1, N1, N2, LLM int
+		P0, P1, P2, V1, V2, V4, M1, N1, N2, LLM int
 	}{}
 
 	for i, c := range candidates {
-		// stage 0: price band sanity (long-tail extremo) — trivial veto, NO decision log
+		// P0: price band sanity
 		if vr := evalPriceBand(&c); vr != nil {
 			blocked = append(blocked, *vr)
-			recordVeto(mem, &c, *vr, decisionsDir, false) // memory yes, decision no
+			recordVeto(mem, &c, *vr, decisionsDir, false)
 			stats.P0++
 			continue
 		}
 
-		// stage 1: numeric V1/V2/V4
-		if vr := rules.EvaluateNumeric(&c); vr != nil {
+		// P2: market already resolved (endDate in the past)
+		if d := daysUntil(c.EndDate); d >= 0 && d <= 0 && c.EndDate != "" {
+			// daysUntil returns -1 for empty/unknown — keep those; only veto when we KNOW endDate is past
+		}
+		if d := daysUntil(c.EndDate); d < 0 && c.EndDate != "" {
+			vr := &types.VetoResult{
+				CandidateID: c.ID,
+				Slug:        c.Slug,
+				Blocked:     true,
+				Reason:      fmt.Sprintf("mercado ya expiró (endDate=%s, hace %d días)", c.EndDate, -d),
+				VetoedBy:    rulePastEnd,
+			}
 			blocked = append(blocked, *vr)
-			// V1 (volumen) y V4 (chasing 8%) son triviales — no decision log
-			// V2 (catalyst inminente) sí es significativo
+			recordVeto(mem, &c, *vr, decisionsDir, false)
+			stats.P2++
+			continue
+		}
+
+		// V1/V2/V4: numeric rules
+		if vr := rules.EvaluateNumeric(&c, cfg.V2VetoUnderHours); vr != nil {
+			blocked = append(blocked, *vr)
 			significant := vr.VetoedBy == "V2"
 			recordVeto(mem, &c, *vr, decisionsDir, significant)
 			switch vr.VetoedBy {
@@ -112,7 +132,7 @@ func Run() error {
 			continue
 		}
 
-		// stage 2: memory pattern match
+		// M1: memory pattern match
 		if mem != nil {
 			cl := memory.CandidateLike{
 				Slug:            c.Slug,
@@ -130,7 +150,6 @@ func Run() error {
 					VetoedBy:    ruleMem,
 				}
 				blocked = append(blocked, vr)
-				// build memHits strings for decision log
 				memHits := make([]string, 0, len(hits))
 				for _, h := range hits {
 					memHits = append(memHits, fmt.Sprintf("%s `%s` score=%.2f (%s)", h.Pattern.Source, h.Pattern.Slug, h.Score, h.Why))
@@ -141,7 +160,7 @@ func Run() error {
 			}
 		}
 
-		// stage 3: news research
+		// N1/N2: news research
 		var researchSummary string
 		if researcher != nil {
 			verdict := researcher.Evaluate(c.Question, "yes")
@@ -176,7 +195,7 @@ func Run() error {
 			}
 		}
 
-		// stage 4: LLM semantic V3/V5/V6 with research context
+		// LLM: semantic V3/V5/V6
 		llmResult := llmclient.EvaluateV3V5V6(&c)
 		if llmResult == nil {
 			log.Printf("WARN: LLM returned nil for %s, passing", c.Slug)
@@ -194,7 +213,8 @@ func Run() error {
 			continue
 		}
 
-		// passed all
+		d := daysUntil(c.EndDate)
+		horizon := cfg.Classify(d)
 		approved = append(approved, types.Approved{
 			CandidateID:      c.ID,
 			Slug:             c.Slug,
@@ -206,6 +226,8 @@ func Run() error {
 			ScannedAt:        c.ScannedAt,
 			ApprovedAt:       time.Now().UTC().Format(time.RFC3339),
 			ApprovedPriceYes: c.CurrentPriceYes,
+			DaysToResolution: d,
+			Horizon:          horizon,
 		})
 		if i%50 == 0 {
 			log.Printf("Brain progress: %d/%d processed, %d approved, %d blocked",
@@ -220,9 +242,10 @@ func Run() error {
 		return fmt.Errorf("write blocked: %w", err)
 	}
 
-	log.Printf("Brain v2 done: %d approved, %d blocked (P0=%d V1=%d V2=%d V4=%d M1=%d N1=%d N2=%d LLM=%d)",
+	log.Printf("Brain v3 done: %d approved, %d blocked (P0=%d P2=%d V1=%d V2=%d V4=%d M1=%d N1=%d N2=%d LLM=%d) horizons in approved: short=%d medium=%d long=%d",
 		len(approved), len(blocked),
-		stats.P0, stats.V1, stats.V2, stats.V4, stats.M1, stats.N1, stats.N2, stats.LLM)
+		stats.P0, stats.P2, stats.V1, stats.V2, stats.V4, stats.M1, stats.N1, stats.N2, stats.LLM,
+		countHorizon(approved, "short"), countHorizon(approved, "medium"), countHorizon(approved, "long"))
 	return nil
 }
 
@@ -239,7 +262,20 @@ func evalPriceBand(c *types.Candidate) *types.VetoResult {
 	return nil
 }
 
-// recordVeto appends to memory.md (always if mem!=nil) and writes 03-decisions only if significant.
+func evalWindowGate(c *types.Candidate, minDays, maxDays int) *types.VetoResult {
+	days := daysUntil(c.EndDate)
+	if days < minDays || days > maxDays {
+		return &types.VetoResult{
+			CandidateID: c.ID,
+			Slug:        c.Slug,
+			Blocked:     true,
+			Reason:      fmt.Sprintf("P1: fuera de ventana sim corto plazo (%d días, ventana [%d, %d])", days, minDays, maxDays),
+			VetoedBy:    ruleWindow,
+		}
+	}
+	return nil
+}
+
 func recordVeto(mem *memory.Memory, c *types.Candidate, vr types.VetoResult, decisionsDir string, significant bool) {
 	recordVetoWithExtras(mem, c, vr, decisionsDir, significant, "", nil)
 }
@@ -281,7 +317,6 @@ func daysUntil(endDate string) int {
 	}
 	t, err := time.Parse(time.RFC3339, endDate)
 	if err != nil {
-		// try other formats
 		t, err = time.Parse("2006-01-02T15:04:05Z", endDate)
 		if err != nil {
 			return -1
@@ -297,10 +332,10 @@ func readCandidates(path string) ([]types.Candidate, error) {
 	}
 	defer f.Close()
 	var out []types.Candidate
-	scanner := bufio.NewScanner(f)
-	scanner.Buffer(make([]byte, 1024*1024), 1024*1024)
-	for scanner.Scan() {
-		line := scanner.Text()
+	sc := bufio.NewScanner(f)
+	sc.Buffer(make([]byte, 1024*1024), 1024*1024)
+	for sc.Scan() {
+		line := sc.Text()
 		if line == "" {
 			continue
 		}
@@ -311,7 +346,7 @@ func readCandidates(path string) ([]types.Candidate, error) {
 		}
 		out = append(out, c)
 	}
-	return out, scanner.Err()
+	return out, sc.Err()
 }
 
 func writeJSONL(path string, data interface{}) error {
@@ -340,6 +375,16 @@ func writeJSONL(path string, data interface{}) error {
 
 func ensureDir(p string) error {
 	return os.MkdirAll(filepath.Dir(p), 0755)
+}
+
+func countHorizon(approved []types.Approved, h string) int {
+	n := 0
+	for _, a := range approved {
+		if a.Horizon == h {
+			n++
+		}
+	}
+	return n
 }
 
 func envOr(key, def string) string {

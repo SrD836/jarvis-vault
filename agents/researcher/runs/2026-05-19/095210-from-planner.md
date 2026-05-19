@@ -13,8 +13,16 @@ aborted: true
 abort_reason: "cap iterations (8) sin respuesta final"
 spawned_children:[]
 tools_used: ["read_file", "grep_search", "list_dir", "run_bash"]
+related:
+  - "[[02-sessions/2026-05-19/095239-modo-discusion-desactivado-ahora-planifica-e-implementa-el]]"
+  - "[[agents/dashboard-dev]]"
+  - "[[agents/planner/runs/2026-05-19/095210-from-main]]"
+  - "[[agents/researcher]]"
+  - "[[projects/polymarket-veto-loop-bot/design]]"
 tags: ["agent-run", "researcher", "aborted"]
+# auto-linked 2026-05-19
 ---
+
 ## TL;DR
 researcher: Investigar cómo está montado el dashboard JARVIS en producción (jarvss.duckdns.org) y determinar qué opciones hay para añadir una página /bo… → [ABORTED: cap iterations (8) sin respuesta final] (researcher no produjo respuesta final tras 8 iter)
 ## Task recibida
