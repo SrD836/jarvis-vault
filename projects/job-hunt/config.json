@@ -5,8 +5,10 @@
   },
   "filters": {
     "ubicacion": "Spain",
-    "modalidad": ["remoto"],
-    "fuentes": ["linkedin"],
+    "modalidad": [
+      "remoto"
+    ],
+    "fuentes": [],
     "keywords": "AI training, annotation, RLHF, IT support remote, customer success tech, AI ops, virtual assistant, prompt engineer, Excel automation",
     "exclusiones": "presencial, senior, requiere visa US, requiere alemán, requiere holandés",
     "posted_within_days": 30,
