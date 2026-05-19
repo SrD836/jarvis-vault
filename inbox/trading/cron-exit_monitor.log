@@ -890,3 +890,58 @@
 2026/05/19 21:55:08 main.go:13: exit_monitor: done
 2026/05/19 22:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/19 22:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 22:00:02 monitor.go:140: exit_monitor: closed Will the UK designate the IRGC a terrorist organization by June 30?  (stop_loss EARLY) @ 0.0160 src=bestBid liq=$5202: PnL $-50.91 (-85.19%)
+2026/05/19 22:00:02 monitor.go:166: exit_monitor: 1 closed, 45 remaining
+2026/05/19 22:00:02 main.go:13: exit_monitor: done
+2026/05/19 22:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 22:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 22:05:02 monitor.go:140: exit_monitor: closed Will the UK designate the IRGC a terrorist organization by June 30?  (stop_loss EARLY) @ 0.0190 src=bestBid liq=$3411: PnL $-45.48 (-82.24%)
+2026/05/19 22:05:02 monitor.go:166: exit_monitor: 1 closed, 48 remaining
+2026/05/19 22:05:02 main.go:13: exit_monitor: done
+2026/05/19 22:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 22:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 22:10:02 monitor.go:166: exit_monitor: 0 closed, 48 remaining
+2026/05/19 22:10:02 main.go:13: exit_monitor: done
+2026/05/19 22:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 22:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 22:15:01 monitor.go:140: exit_monitor: closed Will Montevideo City Torque win on 2026-05-19? (take_profit) @ 0.6200 src=bestBid liq=$38394: PnL $41.58 (72.22%)
+2026/05/19 22:15:02 monitor.go:166: exit_monitor: 1 closed, 47 remaining
+2026/05/19 22:15:02 main.go:13: exit_monitor: done
+2026/05/19 22:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 22:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 22:20:01 monitor.go:166: exit_monitor: 0 closed, 47 remaining
+2026/05/19 22:20:01 main.go:13: exit_monitor: done
+2026/05/19 22:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 22:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 22:25:02 monitor.go:166: exit_monitor: 0 closed, 47 remaining
+2026/05/19 22:25:02 main.go:13: exit_monitor: done
+2026/05/19 22:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 22:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 22:30:01 monitor.go:140: exit_monitor: closed Will Ed Gallrein be the Republican nominee for KY-04? (take_profit) @ 0.8710 src=bestBid liq=$57880: PnL $73.91 (49.27%)
+2026/05/19 22:30:02 monitor.go:166: exit_monitor: 1 closed, 46 remaining
+2026/05/19 22:30:02 main.go:13: exit_monitor: done
+2026/05/19 22:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 22:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 22:35:01 monitor.go:140: exit_monitor: closed Will Thomas Massie be the Republican nominee for KY-04? (stop_loss) @ 0.0800 src=bestBid liq=$62863: PnL $-121.08 (-80.72%)
+2026/05/19 22:35:02 monitor.go:140: exit_monitor: closed Will CD Riestra win on 2026-05-19? (stop_loss) @ 0.0120 src=bestBid liq=$8121: PnL $-56.55 (-96.25%)
+2026/05/19 22:35:02 monitor.go:166: exit_monitor: 2 closed, 48 remaining
+2026/05/19 22:35:02 main.go:13: exit_monitor: done
+2026/05/19 22:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 22:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 22:40:02 monitor.go:166: exit_monitor: 0 closed, 48 remaining
+2026/05/19 22:40:02 main.go:13: exit_monitor: done
+2026/05/19 22:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 22:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 22:45:02 monitor.go:166: exit_monitor: 0 closed, 48 remaining
+2026/05/19 22:45:02 main.go:13: exit_monitor: done
+2026/05/19 22:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 22:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 22:50:02 monitor.go:166: exit_monitor: 0 closed, 48 remaining
+2026/05/19 22:50:02 main.go:13: exit_monitor: done
+2026/05/19 22:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 22:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/19 22:55:02 monitor.go:140: exit_monitor: closed Will the UK designate the IRGC a terrorist organization by June 30?  (stop_loss EARLY) @ 0.0160 src=bestBid liq=$5310: PnL $-48.78 (-85.19%)
+2026/05/19 22:55:02 monitor.go:166: exit_monitor: 1 closed, 47 remaining
+2026/05/19 22:55:02 main.go:13: exit_monitor: done
+2026/05/19 23:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/19 23:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%

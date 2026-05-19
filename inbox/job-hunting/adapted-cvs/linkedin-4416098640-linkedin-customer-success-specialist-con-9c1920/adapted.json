@@ -1,0 +1,90 @@
+{
+  "adapted": {
+    "headline": "Especialista en Atención al Cliente B2B | Microsoft 365 · Google Workspace · Google IT Support",
+    "summary": "Estudiante de Administración y Finanzas con alta afinidad digital y experiencia directa en atención al cliente. Manejo avanzado de Microsoft 365, Google Workspace y herramientas de IA empresarial, con capacidad demostrada para aprender software nuevo de forma autónoma (certificado Google IT Support, curso IA con Microsoft Azure). Comunicación fluida en español e inglés, orientado a resolver incidencias con rapidez y garantizar una experiencia positiva al usuario.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "2021 · verano",
+        "bullets": [
+          "Atención directa a clientes en entorno de alto volumen, resolviendo incidencias y solicitudes en tiempo real tanto en español como en inglés.",
+          "Gestión de cobros y pedidos con precisión, garantizando la satisfacción del cliente en cada interacción.",
+          "Coordinación con el equipo para asegurar un servicio fluido, priorizando la comunicación clara y la resolución rápida de problemas.",
+          "Recepción de clientes internacionales, adaptando el tono y el mensaje según el perfil de cada usuario."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft 365",
+      "Google Workspace",
+      "Atención al cliente",
+      "Resolución de problemas",
+      "Google IT Support",
+      "Excel avanzado",
+      "Comunicación en inglés (nivel alto)"
+    ],
+    "skills_secondary": [
+      "Herramientas de IA y chatbots empresariales",
+      "Microsoft Azure AI",
+      "Gestión de pedidos",
+      "Ofimática",
+      "Liderazgo y trabajo en equipo",
+      "Análisis de datos básico",
+      "Mejora de procesos digitales",
+      "Automatización de tareas"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "ULPGC",
+        "period": "En curso"
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online (Google)",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B2"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline ajustado al rol de Customer Success Specialist, incorporando las herramientas clave de la oferta (Microsoft 365, Google Workspace) y la certificación Google IT Support.",
+      "Añadido summary orientado a la oferta: se enfatiza afinidad digital, capacidad de aprendizaje rápido y comunicación bilingüe, que son requisitos explícitos del JD.",
+      "Experiencia en hostelería reformulada en clave de atención al cliente: se destacan resolución de incidencias, comunicación en inglés y adaptación al perfil del usuario, evitando el enfoque puramente gastronómico.",
+      "Microsoft 365 y Google Workspace promovidos a skills_primary por ser requisitos directos de la oferta.",
+      "Google IT Support y Atención al cliente promovidos a skills_primary por su relevancia directa para soporte y Customer Success.",
+      "Herramientas de IA y Microsoft Azure AI mantenidas en secondary: no son requisito explícito pero refuerzan el perfil tech y la capacidad de aprendizaje rápido.",
+      "Zendesk y HubSpot NO añadidos: no figuran en el CV ni en el perfil estructurado; no se puede acreditar su manejo sin inventar experiencia.",
+      "Análisis de datos básico añadido a secondary como reflejo de Excel avanzado, cubriendo el requisito de análisis básico mencionado en el JD.",
+      "Educación reordenada: CFGS en curso al frente, seguido de certificaciones técnicas que demuestran aprendizaje autónomo y afinidad con herramientas digitales."
+    ],
+    "confidence": 0.63,
+    "target_role": "Customer Success Specialist con conocimientos de software empresarial",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-19T22:37:58.225Z"
+  },
+  "offer_id": "linkedin-4416098640",
+  "offer_title": "Customer Success Specialist con conocimientos de software empresarial",
+  "company": "(LinkedIn)",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

@@ -1,0 +1,88 @@
+{
+  "adapted": {
+    "headline": "Customer Success & Onboarding — Comunicación digital y atención al cliente en español",
+    "summary": "Estudiante de Administración y Finanzas con experiencia directa en atención al cliente y sólido dominio de herramientas digitales (Microsoft 365, Google Workspace). Perfil orientado a la adopción tecnológica y la explicación clara de procesos, con capacidad pedagógica demostrada en entornos multiculturales. Castellano nativo y nivel alto de inglés.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow",
+        "period": "Junio 2021 – Julio 2021 · Irlanda",
+        "bullets": [
+          "Atendió a clientes internacionales en inglés, gestionando expectativas y resolviendo incidencias en tiempo real con orientación al cliente.",
+          "Coordinó la recepción y asignación de clientes, garantizando una experiencia de incorporación fluida desde el primer contacto.",
+          "Colaboró en equipo multicultural de alta demanda, desarrollando comunicación clara, empatía y capacidad de adaptación al perfil del cliente."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Comunicación clara y pedagógica",
+      "Atención al cliente",
+      "Microsoft 365 (Teams, Outlook, Word)",
+      "Google Workspace",
+      "Resolución de problemas",
+      "Herramientas digitales de colaboración"
+    ],
+    "skills_secondary": [
+      "Excel avanzado",
+      "Herramientas de IA y chatbots empresariales",
+      "Microsoft Azure AI",
+      "Google IT Support",
+      "Liderazgo y trabajo en equipo",
+      "Gestión de pedidos y multitarea",
+      "Ofimática",
+      "Automatización de procesos digitales",
+      "Conocimiento de entornos SaaS",
+      "Trabajo en equipo intercultural"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "ULPGC",
+        "period": "En curso"
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Google / Coursera (Online)",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Microsoft (Online)",
+        "period": null
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B2"
+      }
+    ],
+    "summary_of_changes": [
+      "ALERTA CRÍTICA: La oferta exige francés alto (rol ES&FR). El CV y el perfil estructurado no contienen ninguna mención al francés. Si el candidato tiene nivel de francés, debe añadirlo al perfil antes de aplicar; de lo contrario, este requisito es excluyente y la candidatura será descartada en criba.",
+      "Headline reorientado de 'Estudiante de Administración y Finanzas' a Customer Success & Onboarding para alinear con el rol target.",
+      "Bullets de la experiencia en hostelería reformulados para enfatizar atención al cliente, incorporación de clientes y resolución de incidencias — competencias análogas al onboarding de Booksy.",
+      "Microsoft 365 y Google Workspace promovidos a skills_primary por su relevancia directa con las herramientas formativas (Teams/Meet equivalentes a Zoom, Outlook equivalente a comunicación de seguimiento).",
+      "'Comunicación clara y pedagógica' incluida como skill_primary, extraída del texto libre del CV original ('gran soltura con la tecnología', 'explicar productos digitales de forma clara').",
+      "Certificaciones Google IT Support y Azure AI retenidas en educación como evidencia de adopción tecnológica autónoma, señal positiva para un rol de trainer de app SaaS.",
+      "Confianza reducida a 0.36 por: (1) ausencia total de francés — requisito excluyente, (2) sin experiencia formal en formación, onboarding o customer success, (3) experiencia laboral muy breve (1 mes documentado)."
+    ],
+    "confidence": 0.36,
+    "target_role": "Customer Success Trainer (ES&FR) — Booksy",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-19T22:49:11.407Z"
+  },
+  "offer_id": "booksy-4412896845",
+  "offer_title": "Customer Success Trainer (ES&FR)",
+  "company": "Booksy",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

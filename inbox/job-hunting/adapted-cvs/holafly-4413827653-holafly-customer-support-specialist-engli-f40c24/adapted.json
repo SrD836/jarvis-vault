@@ -1,0 +1,86 @@
+{
+  "adapted": {
+    "headline": "Agente de Atención al Cliente con inglés fluido y orientación tecnológica",
+    "summary": "Perfil orientado al cliente con experiencia directa en atención al público en inglés en entorno internacional. Formado en soporte IT (Google IT Support) y herramientas digitales, con alta capacidad de aprendizaje y resolución de incidencias. Aporto empatía, claridad comunicativa y agilidad tecnológica para un equipo de soporte remoto en startup tech.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 · Julio 2021",
+        "bullets": [
+          "Atención al cliente en inglés en entorno internacional, gestionando consultas e incidencias de forma fluida y profesional.",
+          "Resolución de problemas en tiempo real en sala y caja, manteniendo la satisfacción del cliente bajo presión.",
+          "Coordinación con equipo multidisciplinar para garantizar una experiencia de servicio eficiente y sin fricciones."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Atención al cliente en inglés",
+      "Resolución de incidencias",
+      "Soporte IT (Google IT Support)",
+      "Microsoft 365 y Google Workspace",
+      "Aprendizaje rápido y orientación al detalle",
+      "Comunicación clara con clientes internacionales"
+    ],
+    "skills_secondary": [
+      "Herramientas de IA y chatbots empresariales",
+      "Microsoft Azure AI",
+      "Excel avanzado",
+      "Ofimática",
+      "Gestión de pedidos",
+      "Trabajo en equipo",
+      "Mejora de procesos digitales"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "ULPGC",
+        "period": "En curso"
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B2"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline cambiado de 'Estudiante de Administración y Finanzas' a 'Agente de Atención al Cliente con inglés fluido y orientación tecnológica' para alinear con el rol target.",
+      "Summary reescrito enfocando la experiencia en atención al cliente en inglés y el soporte IT, desplazando el foco en automatización/Excel que era central en el CV original.",
+      "Atención al cliente e Inglés promovidos a skills_primary (estaban en secondary) por ser requisitos explícitos y prioritarios de la oferta.",
+      "Google IT Support promovido a skills_primary como señal de formación técnica directamente relevante para soporte de producto.",
+      "Resolución de problemas reformulada como 'Resolución de incidencias' para incorporar terminología del job description.",
+      "Bullets de experiencia hostelera reenfocados en comunicación en inglés, resolución de incidencias y orientación al cliente, en lugar de gestión de pedidos genérica.",
+      "Excel avanzado, IA y chatbots movidos a skills_secondary por ser menos prioritarios que soporte técnico e inglés para este rol.",
+      "No se incluyen Zendesk/Intercom en skills porque el candidato no las tiene documentadas en su perfil — no se inventan competencias."
+    ],
+    "confidence": 0.63,
+    "target_role": "Customer Support Specialist (English Speaking) — Holafly",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-19T22:24:54.597Z"
+  },
+  "offer_id": "holafly-4413827653",
+  "offer_title": "Customer Support Specialist (English Speaking)",
+  "company": "Holafly",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

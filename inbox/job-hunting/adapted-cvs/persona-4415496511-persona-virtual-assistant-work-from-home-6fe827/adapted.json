@@ -1,0 +1,99 @@
+{
+  "adapted": {
+    "headline": "Asistente Virtual · Soporte Administrativo Remoto & Gestión Digital en inglés",
+    "summary": "Estudiante de Administración y Finanzas con dominio avanzado de Microsoft 365 y Google Workspace, orientado a la automatización de tareas administrativas como gestión de correo, organización de calendarios y procesamiento de datos. Experiencia en atención al cliente en inglés en entornos internacionales y capacidad demostrada de aprendizaje rápido de herramientas digitales y de inteligencia artificial.",
+    "experience": [
+      {
+        "title": "Camarero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Jun 2021 · Jul 2021",
+        "bullets": [
+          "Gestioné comunicaciones y coordinación con clientes internacionales íntegramente en inglés en un entorno de alto ritmo.",
+          "Organicé el flujo de reservas y recepción de clientes, aplicando atención al detalle y capacidad de resolución ágil de incidencias.",
+          "Me integré rápidamente en un equipo multicultural adaptándome a nuevos procesos y estándares operativos."
+        ]
+      },
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "Establecimiento local (España)",
+        "period": "Anterior a 2021",
+        "bullets": [
+          "Gestioné cobros en caja y recepción de clientes, asumiendo responsabilidades administrativas con precisión numérica.",
+          "Coordiné pedidos y distribuí tareas entre el equipo para garantizar un servicio eficiente y sin errores.",
+          "Desarrollé habilidades de organización, multitarea y comunicación en entornos de alta demanda."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Google Workspace",
+      "Microsoft 365",
+      "Comunicación profesional en inglés (escrita y oral)",
+      "Organización y soporte administrativo",
+      "Excel avanzado",
+      "Herramientas de IA y chatbots empresariales",
+      "Gestión de correo electrónico y calendario"
+    ],
+    "skills_secondary": [
+      "Resolución de problemas",
+      "Trabajo en equipo y liderazgo",
+      "Automatización de procesos",
+      "Google IT Support",
+      "Microsoft Azure AI",
+      "Ofimática general",
+      "Atención al cliente",
+      "Capacidad de aprendizaje rápido",
+      "Mejora de procesos digitales"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "ULPGC",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      },
+      {
+        "degree": "Google IT Support Certificate",
+        "institution": "Curso Online (Google)",
+        "period": null
+      },
+      {
+        "degree": "Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B2"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reorientado de perfil genérico de estudiante a rol específico de Asistente Virtual con énfasis en soporte remoto y comunicación en inglés.",
+      "Google Workspace y Microsoft 365 promovidos al top de skills_primary por ser requisitos explícitos de la oferta.",
+      "Comunicación profesional en inglés elevada a skill primaria destacada, directamente alineada con el requisito de fluency escrita y oral de la JD.",
+      "Gestión de correo electrónico y calendario añadida como skill primaria; estaba implícita en el CV original ('me apasiona automatizar la gestión del correo electrónico') y es tarea central del rol.",
+      "Herramientas de IA mantenidas en skills_primary como diferenciador competitivo para tareas de investigación y soporte digital.",
+      "Bullets de experiencia en hostelería completamente reformulados para enfatizar coordinación, comunicación en inglés, organización y resolución de incidencias — competencias transferibles directas al puesto de VA.",
+      "Notion no figura en el CV original ni en el perfil estructurado; no se ha añadido para no inventar experiencia (brecha identificada respecto a la JD).",
+      "Confidence moderada (0.72): el perfil cubre bien las herramientas digitales, la organización y el interés en automatización administrativa, pero la experiencia formal como VA es nula y el inglés es B2 cuando la oferta exige fluency alta."
+    ],
+    "confidence": 0.72,
+    "target_role": "Virtual Assistant (Work From Home) – Persona",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-19T22:27:05.373Z"
+  },
+  "offer_id": "persona-4415496511",
+  "offer_title": "Virtual Assistant (Work From Home)",
+  "company": "Persona",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

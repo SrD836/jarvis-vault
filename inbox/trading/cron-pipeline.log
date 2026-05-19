@@ -129,3 +129,21 @@
 2026/05/19 21:30:04 executor.go:197: executor: entered [long] Will the UK designate the IRGC a terrorist organization by June 30?  @ 0.1080 size=$59.77 (open=46/50, bankroll=$2929)
 2026/05/19 21:30:04 executor.go:202: executor: 2 entered, 81 rejected
 2026/05/19 21:30:04 main.go:13: executor: done
+2026/05/19 22:00:07 main.go:11: executor: starting one-shot pass
+2026/05/19 22:00:07 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/19 22:00:07 executor.go:62: executor: quota slots this run: short=4 medium=1 long=1 (of 5 remaining today)
+2026/05/19 22:00:07 executor.go:197: executor: entered [short] Will CD Riestra win on 2026-05-19? @ 0.3200 size=$58.75 (open=46/50, bankroll=$2879)
+2026/05/19 22:00:07 executor.go:197: executor: entered [short] Will Montevideo City Torque win on 2026-05-19? @ 0.3600 size=$57.57 (open=47/50, bankroll=$2821)
+2026/05/19 22:00:07 executor.go:197: executor: entered [medium] Will WTI Crude Oil (WTI) hit (HIGH) $130 in May? @ 0.1100 size=$56.42 (open=48/50, bankroll=$2765)
+2026/05/19 22:00:07 executor.go:197: executor: entered [long] Will the UK designate the IRGC a terrorist organization by June 30?  @ 0.1070 size=$55.29 (open=49/50, bankroll=$2709)
+2026/05/19 22:00:07 executor.go:202: executor: 4 entered, 80 rejected
+2026/05/19 22:00:07 main.go:13: executor: done
+2026/05/19 22:30:04 main.go:11: executor: starting one-shot pass
+2026/05/19 22:30:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/19 22:30:04 executor.go:62: executor: quota slots this run: short=3 medium=1 long=1 (of 4 remaining today)
+2026/05/19 22:30:04 executor.go:197: executor: entered [short] Will Ed Gallrein be the Republican nominee for KY-04? @ 0.8770 size=$60.85 (open=47/50, bankroll=$2981)
+2026/05/19 22:30:04 executor.go:197: executor: entered [short] Will Montevideo City Torque win on 2026-05-19? @ 0.9000 size=$59.63 (open=48/50, bankroll=$2922)
+2026/05/19 22:30:04 executor.go:197: executor: entered [medium] Will WTI Crude Oil (WTI) hit (HIGH) $110 in May? @ 0.6200 size=$58.44 (open=49/50, bankroll=$2863)
+2026/05/19 22:30:04 executor.go:197: executor: entered [long] Will the UK designate the IRGC a terrorist organization by June 30?  @ 0.1080 size=$57.27 (open=50/50, bankroll=$2806)
+2026/05/19 22:30:04 executor.go:202: executor: 4 entered, 75 rejected
+2026/05/19 22:30:04 main.go:13: executor: done

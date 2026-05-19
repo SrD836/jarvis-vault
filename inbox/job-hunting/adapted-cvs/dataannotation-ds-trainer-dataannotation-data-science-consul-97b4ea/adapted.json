@@ -1,0 +1,87 @@
+{
+  "adapted": {
+    "headline": "AI Trainer & Data Annotation Consultant — Bilingüe ES/EN | Conocimientos en IA y Machine Learning",
+    "summary": "Estudiante con sólida base analítica (Economía, Administración y Finanzas) y formación específica en Inteligencia Artificial con Microsoft Azure, orientado a la evaluación y mejora de modelos de IA. Manejo fluido del inglés y el castellano, con capacidad demostrada para analizar información, detectar patrones y comunicar resultados con precisión. Perfil entry-level con alta motivación para contribuir al entrenamiento de modelos de lenguaje en entornos remotos.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 – Julio 2021",
+        "bullets": [
+          "Atención al cliente íntegramente en inglés en entorno multicultural, desarrollando comunicación precisa y adaptada al interlocutor.",
+          "Gestión simultánea de pedidos y cobros bajo presión, reforzando capacidad de atención al detalle y organización.",
+          "Coordinación con equipo diverso para mantener flujo de servicio eficiente, aplicando liderazgo distribuido de tareas."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Herramientas de IA y chatbots empresariales",
+      "Inteligencia Artificial con Microsoft Azure (ML basics)",
+      "Análisis y evaluación de outputs de modelos de IA",
+      "Bilingüe Castellano / Inglés",
+      "Pensamiento analítico y resolución de problemas",
+      "Atención al detalle",
+      "Microsoft 365 y Google Workspace"
+    ],
+    "skills_secondary": [
+      "Excel avanzado",
+      "Google IT Support",
+      "Automatización de procesos digitales",
+      "Gestión y clasificación de datos",
+      "Trabajo en equipo remoto",
+      "Ofimática avanzada",
+      "Liderazgo y distribución de tareas",
+      "Mejora de procesos empresariales"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "ULPGC",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Formación Online",
+        "period": null
+      },
+      {
+        "degree": "Google IT Support Certificate",
+        "institution": "Formación Online (Google)",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B2"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reorientado hacia AI Trainer y Data Annotation, incorporando el requisito de bilingüismo de la oferta.",
+      "Summary redactado desde cero destacando base analítica (Economía/Finanzas) y el curso de IA con Azure como señal de conocimiento en ML, que son los vectores más relevantes para la oferta.",
+      "Promovido 'Herramientas de IA y chatbots empresariales' y 'IA con Microsoft Azure' a skills_primary, ya que cubren parcialmente los requisitos de ML basics y evaluación de modelos.",
+      "Añadido 'Análisis y evaluación de outputs de modelos de IA' como skill primaria inferida del curso de Azure AI y del interés documentado en IA; no se inventa experiencia laboral.",
+      "Bullets de la experiencia en hostelería reformulados para resaltar comunicación en inglés, atención al detalle y gestión bajo presión —competencias transferibles a la revisión de prompts y outputs.",
+      "Curso de IA con Microsoft Azure y Google IT Support elevados en visibilidad dentro de educación, dado que son las credenciales más relevantes para la oferta.",
+      "NOTA DE GAP: Python y estadística formal no figuran explícitamente en el CV ni en el perfil. Se asume exposición parcial vía curso Azure AI y estudios de Economía, pero no se afirma competencia directa. Confidence reducida por este motivo."
+    ],
+    "confidence": 0.64,
+    "target_role": "Data Science Consultant - AI Trainer (DataAnnotation)",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-19T22:29:12.061Z"
+  },
+  "offer_id": "dataannotation-ds-trainer",
+  "offer_title": "Data Science Consultant - AI Trainer",
+  "company": "DataAnnotation",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}
