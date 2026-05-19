@@ -8,7 +8,7 @@ model_primary: anthropic/claude-sonnet-4-6
 delegation_mode: suggest
 allow_agents: []
 runtime_children: []
-updated: 2026-05-18T22:30:01
+updated: 2026-05-18T23:30:01
 tags: [agent, jarvis, worker]
 related:
   - "[[../00-MOC]]"
@@ -56,6 +56,8 @@ Al cerrar cada turn, escribir run file a:
 con el mismo frontmatter+secciones que planner (ver [[agents/planner/runs/2026-05-16/225903-from-main]] como referencia). Incluir: task recibida íntegra, output enviado, tool_calls, spawned_children, duration_ms, tokens, aborted.
 
 **Directiva de búsqueda:** Basa tus investigaciones en documentación oficial y fuentes recientes. Verifica meticulosamente la información antes de integrarla o sugerirla para el vault.
+
+
 
 
 

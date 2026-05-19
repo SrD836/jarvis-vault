@@ -1,0 +1,19 @@
+{
+  "profile": {
+    "sobre_mi": "David González Nuez, 21 años, Teror (Gran Canaria, España). Bilingüe español/inglés (nivel alto). Operador de sistemas multi-agente IA (proyecto JARVIS sobre VPS Hetzner). Certificaciones: Google IT Support Professional (May 2025) + Microsoft Azure AI-900 Specialization (Oct 2025). En curso: CFGS Administración y Finanzas (ULPGC). Stack: Excel avanzado, Microsoft 365, Google Workspace, Docker básico, scripting bash, configs JSON/YAML, APIs IA (OpenAI, Anthropic, DeepSeek), Obsidian, prompt engineering. Sin experiencia laboral formal extensa pero capacidad demostrada de asumir tareas técnicas complejas usando IA como copiloto.",
+    "que_busco": "Prioridades por bucket:\n1. AI training / annotation / RLHF (Outlier, Mercor, Scale AI, DataAnnotation, Invisible, Toloka, Surge, Remotasks)\n2. Freelance técnico (Upwork, Malt, Workana): Excel automation, prompt engineering, asistente virtual técnico\n3. Contrato remoto junior: IT Support tier 1/2, customer success técnico, cloud support Azure, AI ops junior\n4. B2B PYMEs España (especial Canarias) para automatización IA / chatbots / agentes\n\nNO aplicar automáticamente — solo investigar y reportar. David decide."
+  },
+  "filters": {
+    "ubicacion": "Spain",
+    "modalidad": ["remoto"],
+    "fuentes": ["linkedin"],
+    "keywords": "AI training, annotation, RLHF, IT support remote, customer success tech, AI ops, virtual assistant, prompt engineer, Excel automation",
+    "exclusiones": "presencial, senior, requiere visa US, requiere alemán, requiere holandés",
+    "posted_within_days": 30,
+    "num_results": 10
+  },
+  "attachments": {
+    "cv": "cv.pdf",
+    "certifications": []
+  }
+}

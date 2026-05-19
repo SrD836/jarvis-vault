@@ -1,7 +1,7 @@
 ---
 title: "🤖 Agentes JARVIS"
 type: moc
-updated: 2026-05-18T22:30:01
+updated: 2026-05-18T23:30:01
 tags: [moc, agent, jarvis]
 related:
   - "[[../00-MOC]]"
@@ -15,7 +15,7 @@ related:
 
 | Agente | Rol | Modelo | allowAgents | Children runtime |
 |---|---|---|---|---|
-| [[main]] | main | `anthropic/claude-sonnet-4-6` | planner | — |
+| [[main]] | main | `anthropic/claude-sonnet-4-6` | planner, documenter, job-hunter | — |
 | [[planner]] | orchestrator | `anthropic/claude-sonnet-4-6` | code-reviewer, researcher, documenter, apier, skill-reviewer, debugger, tester, auditor, archivist, monitor, job-hunter | — |
 | [[code-reviewer]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
 | [[researcher]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
@@ -33,6 +33,8 @@ related:
 ```mermaid
 graph TD
   main -.allowed.-> planner
+  main -.allowed.-> documenter
+  main -.allowed.-> job-hunter
   planner -.allowed.-> code-reviewer
   planner -.allowed.-> researcher
   planner -.allowed.-> documenter

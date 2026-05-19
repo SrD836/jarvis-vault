@@ -65,4 +65,40 @@ Al cerrar cada turn, escribir run file a:
 
 con el mismo frontmatter+secciones que planner (ver [[agents/planner/runs/2026-05-16/225903-from-main]] como referencia). Incluir: task recibida íntegra, output enviado, tool_calls, spawned_children, duration_ms, tokens, aborted.
 
+### Trigger via /api/trabajo/search (estructurado)
+
+Cuando el brief incluya el header `## Filtros estructurados`, significa que viene del UI Trabajo (form del dashboard), NO de Telegram free-form. Estructura:
+
+- **Profile**: textos `sobre_mi` + `que_busco`
+- **Filters**: `ubicacion`, `modalidad[]`, `fuentes[]`, `keywords`, `exclusiones`, `posted_within_days`, `num_results`
+- **Attachments**: paths absolutos a CV + certs en `/home/agent/agent-stack/vault/attachments/trabajo/`
+
+Reglas obligatorias en este flujo:
+
+1. USA los filtros literalmente — NO derives queries propios de USER.md (el `profile` ya es la fuente de verdad para esta búsqueda).
+2. Respeta `fuentes` ESTRICTAMENTE — si dice `["linkedin"]`, NO uses Indeed, InfoJobs ni Tecnoempleo.
+3. Filtra por `posted_within_days` ANTES de devolver — descarta cualquier oferta más antigua.
+4. Devuelve EXACTAMENTE `num_results` ofertas o reporta shortfall claramente al final (NO rellenar con otras fuentes para llegar al N).
+5. Persiste output en `/home/agent/agent-stack/vault/inbox/job-hunting/<YYYY-MM-DD>-trabajo-<unix_ts>.md` con frontmatter:
+   ```yaml
+   ---
+   source: ui_trabajo
+   run_id: trabajo-<ts>
+   filters_snapshot: {...}
+   date: YYYY-MM-DD
+   ---
+   ```
+6. NO escribas `memory.md` en este flujo — el config persistente ya vive en `projects/job-hunt/config.json` y se actualiza por el UI.
+7. Formato por oferta (anchor estable para parser dashboard):
+   ```
+   ## <N>. <Título> @ <Empresa>
+
+   - **Modalidad:** <Remoto|Híbrido|Onsite>
+   - **Ubicación:** <ciudad/país>
+   - **Publicado:** <hace X días | fecha>
+   - **Descripción:** <2 líneas>
+   - **Match:** <por qué encaja con David>
+   - **Link:** [Aplicar](<url linkedin>)
+   ```
+
 _(Espacio para notas manuales de David. Cron NO sobreescribe este bloque.)_
