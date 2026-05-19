@@ -41,6 +41,14 @@ type BotConfig struct {
 	// v5: liquidity gating — reject trade if visible orderbook < tradeSize × this ratio.
 	LiquidityMinRatio float64 `json:"liquidity_min_ratio"`
 
+	// v6 (2026-05-19): hardening post-mortem Discord trade.
+	// Hard-coded brain rules with config defaults so policy is source-of-truth in code,
+	// not in memory.md prompt context.
+	PriceFloor              float64 `json:"price_floor"`                 // default 0.10
+	PriceCeiling            float64 `json:"price_ceiling"`               // default 0.95
+	MinAbsoluteLiquidityUSD float64 `json:"min_absolute_liquidity_usd"`  // default 5000
+	PreEventVetoMinDays     int     `json:"pre_event_veto_min_days"`     // default 7
+
 	Mode               string  `json:"mode"`
 }
 
@@ -93,6 +101,19 @@ func (c *BotConfig) applyDefaults() {
 	}
 	if c.LiquidityMinRatio == 0 {
 		c.LiquidityMinRatio = 4
+	}
+	// v6 defaults.
+	if c.PriceFloor == 0 {
+		c.PriceFloor = 0.10
+	}
+	if c.PriceCeiling == 0 {
+		c.PriceCeiling = 0.95
+	}
+	if c.MinAbsoluteLiquidityUSD == 0 {
+		c.MinAbsoluteLiquidityUSD = 5000
+	}
+	if c.PreEventVetoMinDays == 0 {
+		c.PreEventVetoMinDays = 7
 	}
 }
 

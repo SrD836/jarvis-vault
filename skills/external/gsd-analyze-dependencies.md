@@ -6,11 +6,18 @@ category: general
 date: 2026-05-19T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-analyze-dependencies
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/auditor]]"
+  - "[[agents/documenter]]"
+  - "[[agents/planner]]"
+  - "[[agents/skill-reviewer]]"
+  - "[[skills/external/gsd-analyze-dependencies]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-19
 ---
+
 
 # `gsd-analyze-dependencies` (external skill)
 

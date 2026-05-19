@@ -10,7 +10,14 @@ size_usd: 0.00
 horizon: long
 days_to_resolution: 41
 sources_used: []
-outcome: pending
+outcome: loss
+pnl_usd: -40.23
+pnl_pct: -89.39
+closed_at: 2026-05-19T18:10:02Z
+exit_reason: stop_loss
+exit_price: 0.007
+exit_price_source: bestBid
+liquidity_usd_at_close: 2916.39
 outcome_observed_after_days: 41
 tags: [decision, polymarket, bot, trade, approved]
 related:

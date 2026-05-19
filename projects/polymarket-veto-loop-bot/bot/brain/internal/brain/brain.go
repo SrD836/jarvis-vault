@@ -103,15 +103,31 @@ func Run() error {
 	_ = now
 
 	stats := struct {
-		P0, P1, P2, V1, V2, V4, M1, N1, N2, LLM int
+		P0, P1, P2, P3, P4, V1, V2, V4, M1, N1, N2, LLM int
 	}{}
 
 	for i, c := range candidates {
-		// P0: price band sanity
-		if vr := evalPriceBand(&c); vr != nil {
+		// P0: price band sanity (v6 — floor 0.10 default, relaxed to 0.05 if days_to_end <= 7)
+		if vr := rules.EvalPriceBand(&c, cfg.PriceFloor, cfg.PriceCeiling); vr != nil {
 			blocked = append(blocked, *vr)
 			recordVeto(mem, &c, *vr, decisionsDir, false)
 			stats.P0++
+			continue
+		}
+
+		// P3: absolute liquidity floor (v6 — orderbook depth in USD, independent of trade size)
+		if vr := rules.EvalAbsoluteLiquidity(&c, cfg.MinAbsoluteLiquidityUSD); vr != nil {
+			blocked = append(blocked, *vr)
+			recordVeto(mem, &c, *vr, decisionsDir, false)
+			stats.P3++
+			continue
+		}
+
+		// P4: pre-event veto (v6 — pre-IPO / pre-launch markets with >= N days to resolution)
+		if vr := rules.EvalPreEventVeto(&c, cfg.PreEventVetoMinDays); vr != nil {
+			blocked = append(blocked, *vr)
+			recordVeto(mem, &c, *vr, decisionsDir, true)
+			stats.P4++
 			continue
 		}
 
@@ -280,23 +296,10 @@ func Run() error {
 		return fmt.Errorf("write blocked: %w", err)
 	}
 
-	log.Printf("Brain v3 done: %d approved, %d blocked (P0=%d P2=%d V1=%d V2=%d V4=%d M1=%d N1=%d N2=%d LLM=%d) horizons in approved: short=%d medium=%d long=%d",
+	log.Printf("Brain v3 done: %d approved, %d blocked (P0=%d P2=%d P3=%d P4=%d V1=%d V2=%d V4=%d M1=%d N1=%d N2=%d LLM=%d) horizons in approved: short=%d medium=%d long=%d",
 		len(approved), len(blocked),
-		stats.P0, stats.P2, stats.V1, stats.V2, stats.V4, stats.M1, stats.N1, stats.N2, stats.LLM,
+		stats.P0, stats.P2, stats.P3, stats.P4, stats.V1, stats.V2, stats.V4, stats.M1, stats.N1, stats.N2, stats.LLM,
 		countHorizon(approved, "short"), countHorizon(approved, "medium"), countHorizon(approved, "long"))
-	return nil
-}
-
-func evalPriceBand(c *types.Candidate) *types.VetoResult {
-	if c.CurrentPriceYes < 0.05 || c.CurrentPriceYes > 0.95 {
-		return &types.VetoResult{
-			CandidateID: c.ID,
-			Slug:        c.Slug,
-			Blocked:     true,
-			Reason:      fmt.Sprintf("precio fuera de [0.05, 0.95]: %.4f (long-tail no rentable en sim)", c.CurrentPriceYes),
-			VetoedBy:    rulePrice,
-		}
-	}
 	return nil
 }
 

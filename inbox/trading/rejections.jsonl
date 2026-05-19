@@ -1819,3 +1819,230 @@
 {"timestamp":"2026-05-19T17:30:03Z","market_id":"1097730","question":"Maduro guilty of all counts?","reason":"Q1_horizon_quota_full_long"}
 {"timestamp":"2026-05-19T17:30:03Z","market_id":"561239","question":"Will Kamala Harris win the 2028 US Presidential Election?","reason":"Q1_horizon_quota_full_long"}
 {"timestamp":"2026-05-19T17:30:03Z","market_id":"629465","question":"Will the Republicans win the Michigan governor race in 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"789540","question":"Will Thomas Massie be the Republican nominee for KY-04?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"789542","question":"Will Ed Gallrein be the Republican nominee for KY-04?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2170973","question":"Will Manchester City FC win on 2026-05-19?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2170967","question":"Will AFC Bournemouth win on 2026-05-19?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2170982","question":"Will Tottenham Hotspur FC win on 2026-05-19?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2170978","question":"Will Chelsea FC win on 2026-05-19?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2241872","question":"Iran closes its airspace by May 21?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2119227","question":"Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 22, 2026?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2237156","question":"Will Elon Musk post 260-279 tweets from May 15 to May 22, 2026?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2237154","question":"Will Elon Musk post 220-239 tweets from May 15 to May 22, 2026?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2237155","question":"Will Elon Musk post 240-259 tweets from May 15 to May 22, 2026?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2237153","question":"Will Elon Musk post 200-219 tweets from May 15 to May 22, 2026?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2237157","question":"Will Elon Musk post 280-299 tweets from May 15 to May 22, 2026?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2241873","question":"Iran closes its airspace by May 24?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"562187","question":"Will John Cornyn win the 2026 Texas Republican Primary?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"562186","question":"Will Ken Paxton win the 2026 Texas Republican Primary?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"566188","question":"Will Manchester City win the 2025–26 English Premier League?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"566187","question":"Will Arsenal win the 2025–26 English Premier League?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1193498","question":"Will Arsenal win a trophy this season?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"566136","question":"Will PSG win the 2025–26 Champions League?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1808970","question":"US obtains Iranian enriched uranium by May 31?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2159726","question":"Israel closes its airspace by May 31?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1972137","question":"Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 31, 2026?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1708132","question":"Iran leadership change by May 31?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2133405","question":"Iran closes its airspace by May 31?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2111640","question":"US-Iran nuclear deal by May 31?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2126542","question":"Iran agrees to surrender enriched uranium stockpile by May 31, 2026?","reason":"Q1_horizon_quota_full_medium"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2111561","question":"Will Trump agree to Iranian enrichment of uranium by May 31?","reason":"Q1_horizon_quota_full_medium"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2074235","question":"Will WTI Crude Oil (WTI) hit (HIGH) $130 in May?","reason":"Q1_horizon_quota_full_medium"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2074236","question":"Will WTI Crude Oil (WTI) hit (HIGH) $120 in May?","reason":"Q1_horizon_quota_full_medium"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2074237","question":"Will WTI Crude Oil (WTI) hit (HIGH) $110 in May?","reason":"Q1_horizon_quota_full_medium"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2230535","question":"Will WTI Crude Oil (WTI) hit (LOW) $95 in May?","reason":"Q1_horizon_quota_full_medium"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2132776","question":"Will Bitcoin reach $85,000 in May?","reason":"Q1_horizon_quota_full_medium"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2132778","question":"Will Bitcoin dip to $75,000 in May?","reason":"Q1_horizon_quota_full_medium"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2132779","question":"Will Bitcoin dip to $70,000 in May?","reason":"Q1_horizon_quota_full_medium"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2132780","question":"Will Bitcoin dip to $65,000 in May?","reason":"Q1_horizon_quota_full_medium"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"564194","question":"Will the Cleveland Cavaliers win the NBA Eastern Conference Finals?","reason":"Q1_horizon_quota_full_medium"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"564218","question":"Will the San Antonio Spurs win the NBA Western Conference Finals?","reason":"Q1_horizon_quota_full_medium"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"564210","question":"Will the Oklahoma City Thunder win the NBA Western Conference Finals?","reason":"Q1_horizon_quota_full_medium"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"648378","question":"Billionaire one-time wealth tax on California ballot?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"839358","question":"Will South Africa win Group A in the 2026 FIFA World Cup?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1900410","question":"Pete Hegseth impeached by June 30?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1961536","question":"Will the next diplomatic US-Iran meeting be in Pakistan?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1493511","question":"Kurds declare independence from Iran?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1971905","question":"Strait of Hormuz traffic returns to normal by end of June?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"553849","question":"Will the Montreal Canadiens win the 2026 NHL Stanley Cup?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1385754","question":"Will France, UK, or Germany strike Iran by June 30?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"957019","question":"US-Iran nuclear deal by June 30?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2183424","question":"US obtains Iranian enriched uranium by June 30?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1691780","question":"Tulsi Gabbard out by June 30?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"958443","question":"Will the Iranian regime fall by June 30?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2241742","question":"Iran closes its airspace by June 30?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2231205","question":"Starmer out by May 31, 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"597967","question":"Starmer out by June 30, 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"553858","question":"Will the New York Knicks win the 2026 NBA Finals?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"553866","question":"Will the San Antonio Spurs win the 2026 NBA Finals?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"553856","question":"Will the Oklahoma City Thunder win the 2026 NBA Finals?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2169995","question":"MicroStrategy sells any Bitcoin by May 31, 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"692258","question":"MicroStrategy sells any Bitcoin by June 30, 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1088105","question":"Will Iga Świątek be the 2026 Women’s Wimbledon Winner?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1088108","question":"Will Coco Gauff be the 2026 Women’s Wimbledon Winner?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1630444","question":"Will Neymar play in the 2026 FIFA World Cup?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"558939","question":"Will Germany win the 2026 FIFA World Cup?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"558936","question":"Will France win the 2026 FIFA World Cup?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"558935","question":"Will England win the 2026 FIFA World Cup?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"558937","question":"Will Brazil win the 2026 FIFA World Cup?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"558938","question":"Will Argentina win the 2026 FIFA World Cup?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"558940","question":"Will Portugal win the 2026 FIFA World Cup?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"558934","question":"Will Spain win the 2026 FIFA World Cup?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1122570","question":"Will Jack Thorne win the 2026 Fields Medal?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2176262","question":"Strait of Hormuz traffic returns to normal by July 31?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"664884","question":"Will Consensys IPO by September 30 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"601819","question":"Will Luiz Inácio Lula da Silva win the 2026 Brazilian presidential election?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"601828","question":"Will Romeu Zema win the 2026 Brazilian presidential election?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"601826","question":"Will Flávio Bolsonaro win the 2026 Brazilian presidential election?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"601825","question":"Will Renan Santos win the 2026 Brazilian presidential election?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1395733","question":"Will San Diego Padres win the 2026 National League Championship Series?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1395704","question":"Will Toronto Blue Jays win the 2026 American League Championship Series?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1395707","question":"Will Detroit Tigers win the 2026 American League Championship Series?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1395727","question":"Will Milwaukee Brewers win the 2026 National League Championship Series?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"907690","question":"Will the Republican Party hold exactly 28 or 29 governorships after the 2026 midterm elections?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1281037","question":"Will the Democratic Party win the CA-15 House seat?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"562802","question":"Will the Democratic Party control the House after the 2026 Midterm elections?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1168141","question":"Will the upper bound of the target federal funds rate be 4.25% at the end of 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1168140","question":"Will the upper bound of the target federal funds rate be 4.0% at the end of 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1193650","question":"Will the 2026 Midterm Elections happen as scheduled?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"665472","question":"Will Syria join the Abraham Accords before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"700397","question":"Will Anthropic be acquired before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1397832","question":"Prince Andrew sentenced to prison?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"676787","question":"Rippling IPO before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"694932","question":"Will Snapchat be acquired before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"700396","question":"Will Perplexity AI be acquired before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"676799","question":"Freddie Mac IPO before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"664045","question":"Will Mamdani freeze NYC rents before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"676812","question":"SpaceX Starship fully reusable before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"678777","question":"Will the US strike 8 countries in 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"665474","question":"Will Saudi Arabia join the Abraham Accords before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1329554","question":"H.R. 22 (SAVE Act) signed into law in 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"676798","question":"Fannie Mae IPO before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1131458","question":"Will SpaceX have between 160-179 launches in 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"920210","question":"Will Apple release a new product line before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"690215","question":"Will the Fed’s lower bound reach 2.75% or lower before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1117222","question":"Miguel Díaz-Canel out as leader of Cuba by December 31?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"665374","question":"Will the U.S. invade Iran before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1796138","question":" Iran agrees to end enrichment of uranium by December 31?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1073747","question":"5kt meteor strike in 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2038080","question":"Will Macky Sall be the next Secretary-General of the United Nations?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"676782","question":"Celonis IPO before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"567621","question":"Will China invade Taiwan by end of 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"676788","question":"Anysphere (Cursor) IPO before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"694938","question":"Will Viking Therapeutics be acquired before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1397291","question":"Will Russia capture all of Lyman by December 31, 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"663583","question":"Will the Iranian regime fall before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"665470","question":"Will Oman join the Abraham Accords before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"676842","question":"U.S. enacts AI safety bill before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"676781","question":"Ramp IPO before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1116981","question":"Will the U.S. invade Mexico in 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1321868","question":"Ledger IPO before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"676783","question":"Vanta IPO before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"678747","question":"Will Israel strike 4 countries in 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"694939","question":"Will Ubisoft be acquired before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1138909","question":"Masoud Pezeshkian out by December 31?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"678749","question":"Will Israel strike 6 countries in 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1117275","question":"Insurrection Act invoked by December 31?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"2155000","question":"Hantavirus pandemic in 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"677147","question":"Fed emergency rate cut before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1131150","question":"Will the Doge-1 Lunar Mission launch before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1807912","question":"Will any country leave NATO by December 31, 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"664885","question":"Will Consensys IPO by December 31 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"704138","question":"Will Tempo launch a token by December 31 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1068346","question":"Will Bitcoin outperform Gold in 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1038880","question":"Will Exponent launch a token by December 31, 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1068733","question":"Will stablecoins hit $500B before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1343533","question":"Major CEX insolvent in 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1106059","question":"Over $1B raised on Coinbase in 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"665531","question":"Metamask FDV above $700M one day after launch?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"701543","question":"Will Ethereum reach $6,500 by December 31, 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1121971","question":"Hyperliquid listed on Binance in 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"704137","question":"Will Tempo launch a token by September 30 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"690631","question":"Will Ostium launch a token by December 31, 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1361088","question":"Will Houston Texans win the 2027 NFL AFC Championship?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1361054","question":"Will Dallas Cowboys win the 2027 NFL NFC Championship?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1098288","question":"Will Nicolás Maduro be sentenced to no prison time?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1097730","question":"Maduro guilty of all counts?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1115936","question":"Will Perplexity not IPO by December 31, 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"1298657","question":"OpenAI IPO closing market cap above $1.2T?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"561239","question":"Will Kamala Harris win the 2028 US Presidential Election?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:00:03Z","market_id":"629465","question":"Will the Republicans win the Michigan governor race in 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"789540","question":"Will Thomas Massie be the Republican nominee for KY-04?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"789542","question":"Will Ed Gallrein be the Republican nominee for KY-04?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"2248662","question":"Will AC Monza win on 2026-05-19?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"2170967","question":"Will AFC Bournemouth win on 2026-05-19?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"2170973","question":"Will Manchester City FC win on 2026-05-19?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"2170978","question":"Will Chelsea FC win on 2026-05-19?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"2170982","question":"Will Tottenham Hotspur FC win on 2026-05-19?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"2241872","question":"Iran closes its airspace by May 21?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"2119227","question":"Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 22, 2026?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"2237154","question":"Will Elon Musk post 220-239 tweets from May 15 to May 22, 2026?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"2237153","question":"Will Elon Musk post 200-219 tweets from May 15 to May 22, 2026?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"2237156","question":"Will Elon Musk post 260-279 tweets from May 15 to May 22, 2026?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"2237157","question":"Will Elon Musk post 280-299 tweets from May 15 to May 22, 2026?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"2237155","question":"Will Elon Musk post 240-259 tweets from May 15 to May 22, 2026?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"2241873","question":"Iran closes its airspace by May 24?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"562187","question":"Will John Cornyn win the 2026 Texas Republican Primary?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"562186","question":"Will Ken Paxton win the 2026 Texas Republican Primary?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"566188","question":"Will Manchester City win the 2025–26 English Premier League?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"566187","question":"Will Arsenal win the 2025–26 English Premier League?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"1193498","question":"Will Arsenal win a trophy this season?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"2159726","question":"Israel closes its airspace by May 31?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"1919425","question":"US x Iran permanent peace deal by May 31, 2026?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"2111564","question":"Will Trump agree to unfreeze Iranian assets by May 31?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"566136","question":"Will PSG win the 2025–26 Champions League?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"2133405","question":"Iran closes its airspace by May 31?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"2111640","question":"US-Iran nuclear deal by May 31?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"1972137","question":"Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 31, 2026?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"2074237","question":"Will WTI Crude Oil (WTI) hit (HIGH) $110 in May?","reason":"Q1_horizon_quota_full_medium"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"2132776","question":"Will Bitcoin reach $85,000 in May?","reason":"Q1_horizon_quota_full_medium"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"2132778","question":"Will Bitcoin dip to $75,000 in May?","reason":"Q1_horizon_quota_full_medium"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"2132779","question":"Will Bitcoin dip to $70,000 in May?","reason":"Q1_horizon_quota_full_medium"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"564194","question":"Will the Cleveland Cavaliers win the NBA Eastern Conference Finals?","reason":"Q1_horizon_quota_full_medium"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"564218","question":"Will the San Antonio Spurs win the NBA Western Conference Finals?","reason":"Q1_horizon_quota_full_medium"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"564210","question":"Will the Oklahoma City Thunder win the NBA Western Conference Finals?","reason":"Q1_horizon_quota_full_medium"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"648378","question":"Billionaire one-time wealth tax on California ballot?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"1961536","question":"Will the next diplomatic US-Iran meeting be in Pakistan?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"1691780","question":"Tulsi Gabbard out by June 30?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"553849","question":"Will the Montreal Canadiens win the 2026 NHL Stanley Cup?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"2241742","question":"Iran closes its airspace by June 30?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"1971905","question":"Strait of Hormuz traffic returns to normal by end of June?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"957019","question":"US-Iran nuclear deal by June 30?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"2183424","question":"US obtains Iranian enriched uranium by June 30?","reason":"already_active"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"553858","question":"Will the New York Knicks win the 2026 NBA Finals?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"553856","question":"Will the Oklahoma City Thunder win the 2026 NBA Finals?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"553866","question":"Will the San Antonio Spurs win the 2026 NBA Finals?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"2169995","question":"MicroStrategy sells any Bitcoin by May 31, 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"692258","question":"MicroStrategy sells any Bitcoin by June 30, 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"1630444","question":"Will Neymar play in the 2026 FIFA World Cup?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"558936","question":"Will France win the 2026 FIFA World Cup?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"558935","question":"Will England win the 2026 FIFA World Cup?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"558934","question":"Will Spain win the 2026 FIFA World Cup?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"2176262","question":"Strait of Hormuz traffic returns to normal by July 31?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"601825","question":"Will Renan Santos win the 2026 Brazilian presidential election?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"601826","question":"Will Flávio Bolsonaro win the 2026 Brazilian presidential election?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"1281037","question":"Will the Democratic Party win the CA-15 House seat?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"1282952","question":"Will the Republican Party win the FL-01 House seat?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"562802","question":"Will the Democratic Party control the House after the 2026 Midterm elections?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"1168140","question":"Will the upper bound of the target federal funds rate be 4.0% at the end of 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"663583","question":"Will the Iranian regime fall before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"665374","question":"Will the U.S. invade Iran before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"1193650","question":"Will the 2026 Midterm Elections happen as scheduled?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"694938","question":"Will Viking Therapeutics be acquired before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"678749","question":"Will Israel strike 6 countries in 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"1796138","question":" Iran agrees to end enrichment of uranium by December 31?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"1397291","question":"Will Russia capture all of Lyman by December 31, 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"665472","question":"Will Syria join the Abraham Accords before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"665470","question":"Will Oman join the Abraham Accords before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"665474","question":"Will Saudi Arabia join the Abraham Accords before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"1117222","question":"Miguel Díaz-Canel out as leader of Cuba by December 31?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"678747","question":"Will Israel strike 4 countries in 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"1138909","question":"Masoud Pezeshkian out by December 31?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"1117275","question":"Insurrection Act invoked by December 31?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"664045","question":"Will Mamdani freeze NYC rents before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"690215","question":"Will the Fed’s lower bound reach 2.75% or lower before 2027?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"678777","question":"Will the US strike 8 countries in 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"1068346","question":"Will Bitcoin outperform Gold in 2026?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"1097730","question":"Maduro guilty of all counts?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"1098288","question":"Will Nicolás Maduro be sentenced to no prison time?","reason":"Q1_horizon_quota_full_long"}
+{"timestamp":"2026-05-19T18:30:03Z","market_id":"629465","question":"Will the Republicans win the Michigan governor race in 2026?","reason":"Q1_horizon_quota_full_long"}

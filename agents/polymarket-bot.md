@@ -96,6 +96,19 @@ X API directa NO está integrada. Si hace falta tweets en tiempo real (no indexa
 - **Audit retro 2026-05-19**: trade Iran +$110 (exit 0.13) recalculado a bestBid=0.12 → PnL real $90, bankroll corregido -$20. Registro en `vault/agents/polymarket-bot/audit-log.jsonl`.
 - **Dashboard**: tabla "Trades cerrados" añade columnas Tipo (Anticipado/Resuelto), Fuente precio (bestBid / fallback / audit), Liquidez al cierre (warning si <Size×4).
 
+### v6 (2026-05-19): brain rules hardened code-side (post-mortem Discord)
+
+- **Disparador**: trade Discord T-608399 perdio -$40.23 (-89.4%) en 10 min, entry 0.066, exit 0.007. Causa: cerca del floor, stop_loss_pct 80% se dispara con el spread bid/ask normal sin ningun catalyst.
+- **Cambio**: las 3 reglas que vivian en memory.md (prompt-side, frias y dependientes de la fidelidad del LLM) se hardcodean en brain v6:
+  - **P0_floor**: precio YES debe ser >= cfg.PriceFloor (default 0.10). Floor relajado a 0.05 si horizon <= 7d (binary events imminentes son OK a precios bajos).
+  - **P0_ceiling**: precio YES <= cfg.PriceCeiling (default 0.95).
+  - **P3_low_absolute_liquidity**: liquidity_usd >= cfg.MinAbsoluteLiquidityUSD (default $5000). Complementa el Q3 del executor (Size x ratio).
+  - **P4_pre_event**: regex `(ipo-day|ipo|tge|mainnet|listing|release-date|launch|launches|launching)` con horizon >= cfg.PreEventVetoMinDays (default 7d) -> veto.
+- **Politica grandfather**: las 12 posiciones activas con entry<0.10 o liquidity<$5k siguen vivas hasta su cierre natural (TP/SL/resolucion). Las reglas v6 son veto de **entrada**, no de **mantenimiento**.
+- **Files**: bot/brain/internal/rules/rules.go (+3 funcs), bot/brain/internal/brain/brain.go (drop inline evalPriceBand, wire 3 calls + stats), bot/common/config/config.go (+4 fields with defaults).
+- **Smoke test**: 3 candidatos sinteticos (Discord-like 0.066, thin book $2.9k, slug 'ipo-day' 29d) -> los 3 bloqueados con el VetoedBy correcto.
+- **Binarios reconstruidos**: 2026-05-19 18:26 UTC (golang:1.23-alpine container). Cron `*/30` y `*/5` apuntan a bot/<m>/bin/<m> -> pick up automatico siguiente ciclo.
+
 ### Limitaciones conocidas
 - Tavily quota: search_depth=advanced consume ~2× créditos. Free tier (1000/mes) se agota en horas con cron */30 sobre ~50 candidates/ciclo. Cache TTL 6h mitiga parcialmente. Considerar plan pagado o NewsAPI/RSS scraping como alternativas.
 - gamma-api: `currentPrice` viene vacío frecuentemente. Fallback chain instalado: lastTradePrice → outcomePrices[0] → mid(bestBid, bestAsk).

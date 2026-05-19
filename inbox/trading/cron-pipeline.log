@@ -65,3 +65,21 @@
 2026/05/19 17:30:03 executor.go:197: executor: entered [long] Kurds declare independence from Iran? @ 0.0530 size=$48.79 (open=42/50, bankroll=$2391)
 2026/05/19 17:30:03 executor.go:202: executor: 6 entered, 149 rejected
 2026/05/19 17:30:03 main.go:13: executor: done
+2026/05/19 18:00:03 main.go:11: executor: starting one-shot pass
+2026/05/19 18:00:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/19 18:00:03 executor.go:62: executor: quota slots this run: short=6 medium=2 long=2 (of 8 remaining today)
+2026/05/19 18:00:03 executor.go:197: executor: entered [short] Will AC Monza win on 2026-05-19? @ 0.5000 size=$47.81 (open=43/50, bankroll=$2343)
+2026/05/19 18:00:03 executor.go:197: executor: entered [medium] US x Iran permanent peace deal by May 31, 2026? @ 0.1300 size=$46.85 (open=44/50, bankroll=$2296)
+2026/05/19 18:00:03 executor.go:197: executor: entered [medium] Will Trump agree to unfreeze Iranian assets by May 31? @ 0.1500 size=$45.92 (open=45/50, bankroll=$2250)
+2026/05/19 18:00:03 executor.go:197: executor: entered [long] Will Discord’s market cap be between $15B and $20B at market close on IPO day? @ 0.0660 size=$45.00 (open=46/50, bankroll=$2205)
+2026/05/19 18:00:03 executor.go:197: executor: entered [long] NATO x Russia military clash by June 30, 2026? @ 0.0550 size=$44.10 (open=47/50, bankroll=$2161)
+2026/05/19 18:00:03 executor.go:202: executor: 5 entered, 148 rejected
+2026/05/19 18:00:03 main.go:13: executor: done
+2026/05/19 18:30:03 main.go:11: executor: starting one-shot pass
+2026/05/19 18:30:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/19 18:30:03 executor.go:62: executor: quota slots this run: short=4 medium=1 long=1 (of 5 remaining today)
+2026/05/19 18:30:03 executor.go:197: executor: entered [short] Will Chelsea FC vs. Tottenham Hotspur FC end in a draw? @ 0.2900 size=$47.35 (open=46/50, bankroll=$2320)
+2026/05/19 18:30:03 executor.go:197: executor: entered [medium] Will WTI Crude Oil (WTI) hit (HIGH) $120 in May? @ 0.2300 size=$46.41 (open=47/50, bankroll=$2274)
+2026/05/19 18:30:03 executor.go:197: executor: entered [long] Starmer out by June 30, 2026? @ 0.3000 size=$45.48 (open=48/50, bankroll=$2228)
+2026/05/19 18:30:03 executor.go:202: executor: 3 entered, 79 rejected
+2026/05/19 18:30:03 main.go:13: executor: done
