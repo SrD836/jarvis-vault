@@ -8,7 +8,7 @@ model_primary: anthropic/claude-sonnet-4-6
 delegation_mode: prefer
 allow_agents: [code-reviewer, researcher, documenter, apier, skill-reviewer, debugger, tester, auditor, archivist, monitor, job-hunter]
 runtime_children: []
-updated: 2026-05-19T03:30:01
+updated: 2026-05-19T04:30:02
 tags: [agent, jarvis, orchestrator]
 related:
   - "[[../00-MOC]]"
@@ -55,6 +55,8 @@ _(Si no tienes plugin Dataview, mira `02-sessions/` y filtra por frontmatter `ag
 - Si dudas a qué worker delegar → elige el más afín y delega. No te quedes haciéndolo tú.
 
 **Directiva operativa:** Maximiza el paralelismo y delega tareas a los agentes especializados siempre que la complejidad lo justifique. Mantén una estricta trazabilidad de las decisiones en `03-decisions`.
+
+
 
 
 
