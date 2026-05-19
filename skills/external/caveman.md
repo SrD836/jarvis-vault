@@ -6,11 +6,18 @@ category: general
 date: 2026-05-19T03:15:01+00:00
 source_path: ~/.claude/skills/caveman
 source_file: README.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/gsd-autonomous]]"
+  - "[[skills/external/gsd-fast]]"
+  - "[[skills/external/gsd-quick]]"
+  - "[[skills/external/gsd-scan]]"
+  - "[[skills/external/superpowers]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-19
 ---
+
 
 # `caveman` (external skill)
 

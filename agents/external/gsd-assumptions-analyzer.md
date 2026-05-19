@@ -4,11 +4,18 @@ type: agent-mirror
 external: true
 date: 2026-05-19T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-assumptions-analyzer.md
-tags: [agent, external, mirror]
 related:
-  - "[[agents/external/index]]"
   - "[[00-MOC]]"
+  - "[[agents/external/gsd-codebase-mapper]]"
+  - "[[agents/external/gsd-eval-planner]]"
+  - "[[agents/external/gsd-phase-researcher]]"
+  - "[[agents/external/gsd-plan-checker]]"
+  - "[[agents/external/index]]"
+  - "[[skills/external/gsd-list-phase-assumptions]]"
+tags: [agent, external, mirror]
+# auto-linked 2026-05-19
 ---
+
 
 # `gsd-assumptions-analyzer` (external Claude Code agent)
 

@@ -4,11 +4,18 @@ type: agent-mirror
 external: true
 date: 2026-05-19T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-roadmapper.md
-tags: [agent, external, mirror]
 related:
-  - "[[agents/external/index]]"
   - "[[00-MOC]]"
+  - "[[agents/external/index]]"
+  - "[[agents/planner]]"
+  - "[[skills/external/gsd-milestone-summary]]"
+  - "[[skills/external/gsd-new-project]]"
+  - "[[skills/external/gsd-plan-phase]]"
+  - "[[skills/external/gsd-plan-review-convergence]]"
+tags: [agent, external, mirror]
+# auto-linked 2026-05-19
 ---
+
 
 # `gsd-roadmapper` (external Claude Code agent)
 

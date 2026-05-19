@@ -4,11 +4,18 @@ type: agent-mirror
 external: true
 date: 2026-05-19T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-advisor-researcher.md
-tags: [agent, external, mirror]
 related:
-  - "[[agents/external/index]]"
   - "[[00-MOC]]"
+  - "[[03-decisions/2026-05-18-agent-roster-expansion]]"
+  - "[[agents/external/gsd-phase-researcher]]"
+  - "[[agents/external/gsd-research-synthesizer]]"
+  - "[[agents/external/index]]"
+  - "[[agents/researcher]]"
+  - "[[skills/external/gsd-research-phase]]"
+tags: [agent, external, mirror]
+# auto-linked 2026-05-19
 ---
+
 
 # `gsd-advisor-researcher` (external Claude Code agent)
 
