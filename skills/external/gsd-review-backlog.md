@@ -3,27 +3,20 @@ title: "gsd-review-backlog (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-18T03:15:01+00:00
+date: 2026-05-19T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-review-backlog
 source_file: SKILL.md
-related:
-  - "[[00-MOC]]"
-  - "[[skills/external/gsd-add-backlog]]"
-  - "[[skills/external/gsd-audit-milestone]]"
-  - "[[skills/external/gsd-milestone-summary]]"
-  - "[[skills/external/gsd-new-milestone]]"
-  - "[[skills/external/gsd-plan-milestone-gaps]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-18
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `gsd-review-backlog` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/gsd-review-backlog/`  
-**Mirrored at**: 2026-05-18T03:15:01+00:00
+**Mirrored at**: 2026-05-19T03:15:01+00:00
 
 ## Descripción
 

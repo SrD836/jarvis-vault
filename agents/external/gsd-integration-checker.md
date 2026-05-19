@@ -2,25 +2,18 @@
 title: "gsd-integration-checker (external agent)"
 type: agent-mirror
 external: true
-date: 2026-05-18T03:15:01+00:00
+date: 2026-05-19T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-integration-checker.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/external/gsd-eval-auditor]]"
-  - "[[agents/external/gsd-ui-checker]]"
-  - "[[agents/external/gsd-verifier]]"
-  - "[[agents/external/index]]"
-  - "[[agents/tester]]"
-  - "[[skills/external/gsd-validate-phase]]"
 tags: [agent, external, mirror]
-# auto-linked 2026-05-18
+related:
+  - "[[agents/external/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `gsd-integration-checker` (external Claude Code agent)
 
 **Source**: `~/.claude/agents/gsd-integration-checker.md`  
-**Mirrored at**: 2026-05-18T03:15:01+00:00
+**Mirrored at**: 2026-05-19T03:15:01+00:00
 
 ## Descripción
 

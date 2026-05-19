@@ -3,27 +3,20 @@ title: "claude-mem (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-18T03:15:01+00:00
+date: 2026-05-19T03:15:01+00:00
 source_path: ~/.claude/skills/claude-mem
 source_file: README.md
-related:
-  - "[[00-MOC]]"
-  - "[[skills/external/gstack]]"
-  - "[[skills/external/llm-council]]"
-  - "[[skills/external/superpowers]]"
-  - "[[skills/external/voltagent-best-practices]]"
-  - "[[skills/external/voltagent-core-reference]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-18
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `claude-mem` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/claude-mem/`  
-**Mirrored at**: 2026-05-18T03:15:01+00:00
+**Mirrored at**: 2026-05-19T03:15:01+00:00
 
 ## Descripción
 

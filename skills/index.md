@@ -1,7 +1,7 @@
 ---
 title: "Skills externos — índice"
 type: index
-date: 2026-05-18T03:15:01+00:00
+date: 2026-05-19T03:15:01+00:00
 tags: [index, skills, external]
 related:
   - "[[00-MOC]]"
@@ -9,7 +9,7 @@ related:
 
 # Skills externos (`~/.claude/skills/`)
 
-_Mirror generado por `hermes/mirror_external.py` el 2026-05-18T03:15:01+00:00._
+_Mirror generado por `hermes/mirror_external.py` el 2026-05-19T03:15:01+00:00._
 
 ### general
 

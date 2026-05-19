@@ -3,27 +3,20 @@ title: "llm-council (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-18T03:15:01+00:00
+date: 2026-05-19T03:15:01+00:00
 source_path: ~/.claude/skills/llm-council
 source_file: SKILL.md
-related:
-  - "[[00-MOC]]"
-  - "[[03-decisions/2026-05-14-plan-v6-evolucion-jarvis]]"
-  - "[[agents/external/gsd-advisor-researcher]]"
-  - "[[skills/external/claude-mem]]"
-  - "[[skills/external/grill-me]]"
-  - "[[skills/external/superpowers]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-18
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `llm-council` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/llm-council/`  
-**Mirrored at**: 2026-05-18T03:15:01+00:00
+**Mirrored at**: 2026-05-19T03:15:01+00:00
 
 ## Descripción
 

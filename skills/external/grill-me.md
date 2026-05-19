@@ -3,27 +3,20 @@ title: "grill-me (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-18T03:15:01+00:00
+date: 2026-05-19T03:15:01+00:00
 source_path: ~/.claude/skills/grill-me
 source_file: SKILL.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/planner]]"
-  - "[[agents/skill-reviewer]]"
-  - "[[decisions/2026-05-18-curator-lifecycle]]"
-  - "[[skills/external/caveman]]"
-  - "[[skills/external/gsd-plan-review-convergence]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-18
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `grill-me` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/grill-me/`  
-**Mirrored at**: 2026-05-18T03:15:01+00:00
+**Mirrored at**: 2026-05-19T03:15:01+00:00
 
 ## Descripción
 
