@@ -1045,3 +1045,53 @@
 2026/05/20 00:55:02 main.go:13: exit_monitor: done
 2026/05/20 01:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/20 01:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 01:00:02 monitor.go:166: exit_monitor: 0 closed, 50 remaining
+2026/05/20 01:00:02 main.go:13: exit_monitor: done
+2026/05/20 01:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 01:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 01:05:02 monitor.go:166: exit_monitor: 0 closed, 50 remaining
+2026/05/20 01:05:02 main.go:13: exit_monitor: done
+2026/05/20 01:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 01:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 01:10:02 monitor.go:166: exit_monitor: 0 closed, 50 remaining
+2026/05/20 01:10:02 main.go:13: exit_monitor: done
+2026/05/20 01:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 01:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 01:15:02 monitor.go:166: exit_monitor: 0 closed, 50 remaining
+2026/05/20 01:15:02 main.go:13: exit_monitor: done
+2026/05/20 01:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 01:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 01:20:02 monitor.go:166: exit_monitor: 0 closed, 50 remaining
+2026/05/20 01:20:02 main.go:13: exit_monitor: done
+2026/05/20 01:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 01:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 01:25:02 monitor.go:166: exit_monitor: 0 closed, 50 remaining
+2026/05/20 01:25:02 main.go:13: exit_monitor: done
+2026/05/20 01:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 01:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 01:30:02 monitor.go:140: exit_monitor: closed Will Bitcoin dip to $76,000 on May 19? (stop_loss EARLY) @ 0.0300 src=bestBid liq=$14196: PnL $-45.36 (-84.21%)
+2026/05/20 01:30:02 monitor.go:166: exit_monitor: 1 closed, 49 remaining
+2026/05/20 01:30:02 main.go:13: exit_monitor: done
+2026/05/20 01:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 01:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 01:35:02 monitor.go:166: exit_monitor: 0 closed, 50 remaining
+2026/05/20 01:35:02 main.go:13: exit_monitor: done
+2026/05/20 01:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 01:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 01:40:02 monitor.go:166: exit_monitor: 0 closed, 50 remaining
+2026/05/20 01:40:02 main.go:13: exit_monitor: done
+2026/05/20 01:45:02 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 01:45:02 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 01:45:03 monitor.go:166: exit_monitor: 0 closed, 50 remaining
+2026/05/20 01:45:03 main.go:13: exit_monitor: done
+2026/05/20 01:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 01:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 01:50:02 monitor.go:166: exit_monitor: 0 closed, 50 remaining
+2026/05/20 01:50:02 main.go:13: exit_monitor: done
+2026/05/20 01:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 01:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 01:55:01 monitor.go:140: exit_monitor: closed Will Elon Musk post 200-219 tweets from May 15 to May 22, 2026? (take_profit EARLY) @ 0.1830 src=bestBid liq=$31108: PnL $38.03 (45.82%)
+2026/05/20 01:55:02 monitor.go:166: exit_monitor: 1 closed, 49 remaining
+2026/05/20 01:55:02 main.go:13: exit_monitor: done
+2026/05/20 02:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 02:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
