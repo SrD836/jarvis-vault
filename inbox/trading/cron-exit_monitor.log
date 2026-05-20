@@ -1840,3 +1840,52 @@
 2026/05/20 16:55:02 main.go:13: exit_monitor: done
 2026/05/20 17:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/20 17:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 17:00:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 17:00:02 main.go:13: exit_monitor: done
+2026/05/20 17:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 17:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 17:05:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 17:05:02 main.go:13: exit_monitor: done
+2026/05/20 17:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 17:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 17:10:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 17:10:02 main.go:13: exit_monitor: done
+2026/05/20 17:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 17:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 17:15:03 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 17:15:03 main.go:13: exit_monitor: done
+2026/05/20 17:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 17:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 17:20:03 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 17:20:03 main.go:13: exit_monitor: done
+2026/05/20 17:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 17:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 17:25:01 monitor.go:141: exit_monitor: closed Will Trump agree to unfreeze Iranian assets by May 31? (take_profit EARLY) @ 0.2200 src=bestBid liq=$21280: PnL $21.43 (46.67%)
+2026/05/20 17:25:02 monitor.go:160: exit_monitor: 1 closed, 49 remaining
+2026/05/20 17:25:02 main.go:13: exit_monitor: done
+2026/05/20 17:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 17:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 17:30:02 monitor.go:160: exit_monitor: 0 closed, 49 remaining
+2026/05/20 17:30:02 main.go:13: exit_monitor: done
+2026/05/20 17:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 17:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 17:35:03 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 17:35:03 main.go:13: exit_monitor: done
+2026/05/20 17:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 17:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 17:40:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 17:40:02 main.go:13: exit_monitor: done
+2026/05/20 17:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 17:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 17:45:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 17:45:02 main.go:13: exit_monitor: done
+2026/05/20 17:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 17:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 17:50:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 17:50:02 main.go:13: exit_monitor: done
+2026/05/20 17:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 17:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 17:55:03 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 17:55:03 main.go:13: exit_monitor: done
+2026/05/20 18:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 18:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%

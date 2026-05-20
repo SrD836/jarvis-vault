@@ -1,0 +1,88 @@
+{
+  "adapted": {
+    "headline": "Técnico de Soporte IT Entry-Level | Google IT Support Certified | Microsoft 365 & Google Workspace",
+    "summary": "Estudiante con formación específica en soporte IT (Google IT Support) y conocimientos de Microsoft Azure AI, orientado a la resolución de incidencias técnicas en entornos de usuario final. Experiencia práctica en atención al cliente en entornos exigentes y en inglés, con sólido dominio de Microsoft 365 y Google Workspace. Perfil proactivo en la adopción de herramientas digitales y automatización de procesos, alineado con el stack moderno de un entorno fintech distribuido.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda) & Establecimientos locales",
+        "period": "2021 – actualidad (estacional)",
+        "bullets": [
+          "Resolución de incidencias y reclamaciones de clientes en tiempo real, en castellano e inglés, manteniendo calidad de servicio bajo presión.",
+          "Gestión simultánea de múltiples solicitudes de usuarios (pedidos, cobros, recepción), priorizando según urgencia — habilidad directamente transferible al triaje de tickets helpdesk.",
+          "Coordinación con equipo de sala para distribución eficiente de tareas, reduciendo tiempos de espera.",
+          "Comunicación fluida con clientes anglófonos durante la etapa en Irlanda, demostrando capacidad de soporte en entorno internacional."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Google IT Support (certificación)",
+      "Microsoft 365 (administración y soporte de usuario)",
+      "Google Workspace",
+      "Resolución de problemas técnicos",
+      "Atención y soporte al usuario final",
+      "Microsoft Azure (AI fundamentals)",
+      "Herramientas de IA y chatbots empresariales"
+    ],
+    "skills_secondary": [
+      "Excel avanzado",
+      "Ofimática general",
+      "Automatización de procesos digitales",
+      "Liderazgo y coordinación de equipo",
+      "Gestión de correo electrónico y flujos de trabajo",
+      "Capacidad de aprendizaje autónomo (cursos online)",
+      "Organización y priorización de tareas"
+    ],
+    "education": [
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información — Google IT Support",
+        "institution": "Coursera / Google (Online)",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas (ULPGC)",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline completamente reescrito: de 'Estudiante de Administración y Finanzas' a perfil IT Helpdesk con certificación Google IT Support al frente.",
+      "Google IT Support promovido a primera posición en skills_primary: es la credencial más relevante para la oferta y estaba enterrada en educación.",
+      "Microsoft Azure AI añadido a skills_primary (era secondary en perfil original) por relevancia al stack moderno de Sardine.",
+      "Experiencia en hostelería reformulada con bullets orientados a helpdesk: triaje de solicitudes, resolución de incidencias de usuarios, soporte en inglés.",
+      "Summary reescrito para pitch directo a rol IT entry-level en fintech, mencionando explícitamente soporte de usuario final y entorno distribuido.",
+      "Educación reordenada: Google IT Support y Azure AI al inicio, antes que el CFGS, para que el reclutador vea primero las credenciales IT.",
+      "Skills_secondary limpiada de items no relevantes para helpdesk (gestión de pedidos eliminada) y reforzada con 'automatización de procesos digitales'.",
+      "Nivel de inglés conservado como B1 (dato del perfil) — no inflado, aunque el CV original decía 'nivel alto'. Se menciona el uso práctico en Irlanda."
+    ],
+    "confidence": 0.68,
+    "target_role": "IT Helpdesk Technician — Sardine",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-20T17:24:32.004Z"
+  },
+  "offer_id": "offer-1-sardine",
+  "offer_title": "IT Helpdesk Technician",
+  "company": "Sardine",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

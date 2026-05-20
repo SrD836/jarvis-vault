@@ -1,0 +1,87 @@
+{
+  "adapted": {
+    "headline": "Técnico de Soporte IT Junior · Google IT Support Certified",
+    "summary": "Estudiante de Administración y Finanzas con certificación Google IT Support y sólido dominio de entornos Microsoft 365 y Google Workspace. Perfil orientado a la resolución de problemas técnicos y la atención al usuario, con experiencia real en entornos de alta demanda y capacidad demostrada para gestionar incidencias bajo presión.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda) y otros centros",
+        "period": "2021 · verano",
+        "bullets": [
+          "Gestionó incidencias y solicitudes de clientes en tiempo real, priorizando y resolviendo problemas con rapidez en entorno de alta demanda.",
+          "Operó sistemas de punto de venta (TPV) y herramientas de gestión de pedidos, manteniendo precisión en el registro de datos.",
+          "Coordinó con el equipo para distribuir tareas y garantizar un flujo de trabajo eficiente, incluyendo comunicación en inglés con clientes internacionales.",
+          "Finalizó el contrato anticipadamente por motivos de salud."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Soporte de Tecnologías de la Información (Google IT Support)",
+      "Resolución de problemas y troubleshooting",
+      "Microsoft 365 (Word, Excel, Outlook, Teams)",
+      "Google Workspace",
+      "Atención al cliente y soporte al usuario",
+      "Herramientas de IA y chatbots empresariales",
+      "Microsoft Azure AI"
+    ],
+    "skills_secondary": [
+      "Excel avanzado",
+      "Ofimática",
+      "Automatización de procesos",
+      "Gestión de correo electrónico",
+      "Liderazgo y trabajo en equipo",
+      "Mejora de procesos digitales",
+      "Gestión de pedidos y registro de datos"
+    ],
+    "education": [
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online (Google)",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online (Microsoft)",
+        "period": null
+      },
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reenfocado de 'Estudiante de Administración y Finanzas' a 'Técnico de Soporte IT Junior' para alinear con el rol target.",
+      "Certificación Google IT Support promovida al primer puesto de skills_primary por ser directamente relevante para un puesto de helpdesk.",
+      "Microsoft Azure AI y herramientas de IA promovidos a primary skills por su relevancia en soporte técnico moderno.",
+      "Bullets de la experiencia en hostelería reformulados para destacar gestión de incidencias, uso de sistemas digitales (TPV) y coordinación bajo presión, transferibles al contexto helpdesk.",
+      "Google IT Support reposicionado como primera entrada en educación para que el reclutador lo vea antes de la formación académica.",
+      "Excel avanzado movido a skills_secondary al no ser el skill más diferenciador para este rol específico.",
+      "Sumario escrito para conectar la certificación IT con la experiencia de atención al usuario real."
+    ],
+    "confidence": 0.68,
+    "target_role": "IT Helpdesk Technician — TestCo",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-20T17:49:59.351Z"
+  },
+  "offer_id": "smoke-executive",
+  "offer_title": "IT Helpdesk Technician",
+  "company": "TestCo",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

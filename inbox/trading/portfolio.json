@@ -1,6 +1,6 @@
 {
-  "bankroll": 3023.4224816892233,
-  "used_exposure": 3137.5295704978694,
+  "bankroll": 3028.954095580173,
+  "used_exposure": 3153.42795660692,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -377,22 +377,6 @@
       "end_date": "2026-06-30T00:00:00Z",
       "size_usd": 48.78601135227173,
       "liquidity_usd": 19158.61492
-    },
-    {
-      "id": "T-2111564-1779213603965",
-      "market_id": "2111564",
-      "question": "Will Trump agree to unfreeze Iranian assets by May 31?",
-      "side": "yes",
-      "entry_price": 0.15,
-      "size": 45.917003596667335,
-      "category": "uncategorized",
-      "entry_timestamp": "2026-05-19T18:00:03Z",
-      "approved_price": 0.15,
-      "days_to_resolution": 11,
-      "horizon": "medium",
-      "end_date": "2026-05-31T00:00:00Z",
-      "size_usd": 45.917003596667335,
-      "liquidity_usd": 19428.764
     },
     {
       "id": "T-1171858-1779213603965",
@@ -793,6 +777,22 @@
       "end_date": "2026-05-23T14:00:00Z",
       "size_usd": 61.70249962631068,
       "liquidity_usd": 8312.02967
+    },
+    {
+      "id": "T-2273931-1779298204126",
+      "market_id": "2273931",
+      "question": "Will Hull City AFC vs. Southampton FC end in a draw?",
+      "side": "yes",
+      "entry_price": 0.86,
+      "size": 61.81538970571782,
+      "category": "uncategorized",
+      "entry_timestamp": "2026-05-20T17:30:04Z",
+      "approved_price": 0.86,
+      "days_to_resolution": 2,
+      "horizon": "short",
+      "end_date": "2026-05-23T14:00:00Z",
+      "size_usd": 61.81538970571782,
+      "liquidity_usd": 13962.69751
     }
   ]
 }

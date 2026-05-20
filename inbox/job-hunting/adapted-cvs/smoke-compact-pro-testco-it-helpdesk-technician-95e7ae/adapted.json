@@ -1,0 +1,84 @@
+{
+  "adapted": {
+    "headline": "Técnico de Soporte TI Junior · Certificado en Google IT Support",
+    "summary": "Candidato con formación específica en soporte TI (Google IT Support) y manejo solvente de Microsoft 365 y Google Workspace. Orientado a la resolución de incidencias y gestión de solicitudes de usuarios, con capacidad para priorizar tickets y comunicarse con claridad en entornos de trabajo digitales. Busca incorporarse como Helpdesk Technician para aplicar sus habilidades técnicas y su perfil resolutivo.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "2021 · verano",
+        "bullets": [
+          "Gestioné solicitudes simultáneas de clientes en entorno de alto volumen, priorizando incidencias y ofreciendo resolución inmediata.",
+          "Operé sistemas de punto de venta y gestión de pedidos, diagnosticando y corrigiendo discrepancias en tiempo real.",
+          "Colaboré en equipo multicultural con comunicación en inglés, garantizando una experiencia de usuario fluida y sin errores."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Google IT Support",
+      "Resolución de problemas y troubleshooting",
+      "Microsoft 365",
+      "Google Workspace",
+      "Atención al usuario",
+      "Microsoft Azure (IA)"
+    ],
+    "skills_secondary": [
+      "Excel avanzado",
+      "Herramientas de IA y chatbots empresariales",
+      "Ofimática",
+      "Liderazgo y trabajo en equipo",
+      "Gestión de procesos digitales",
+      "Automatización de tareas rutinarias"
+    ],
+    "education": [
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online (Google)",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline cambiado de 'Estudiante de Administración y Finanzas' a 'Técnico de Soporte TI Junior · Certificado en Google IT Support' para alinearlo con el rol target.",
+      "Google IT Support promovido a primera posición en skills_primary por ser la certificación directamente relevante para un puesto de Helpdesk.",
+      "Educación reordenada para situar las certificaciones TI en primer lugar, por encima de la formación académica general.",
+      "Bullets de la experiencia en hostelería reformulados para enfatizar gestión de solicitudes, diagnóstico de incidencias y uso de sistemas digitales, en lugar del enfoque gastronómico original.",
+      "Summary reescrito con pitch explícito para soporte técnico y gestión de tickets.",
+      "Excel avanzado y herramientas de IA desplazados a skills_secondary al no ser el foco principal de esta oferta.",
+      "Microsoft 365 y Google Workspace mantenidos en primary por su relevancia directa en entornos de soporte técnico a usuarios."
+    ],
+    "confidence": 0.57,
+    "target_role": "IT Helpdesk Technician",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-20T17:51:16.117Z"
+  },
+  "offer_id": "smoke-compact-pro",
+  "offer_title": "IT Helpdesk Technician",
+  "company": "TestCo",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

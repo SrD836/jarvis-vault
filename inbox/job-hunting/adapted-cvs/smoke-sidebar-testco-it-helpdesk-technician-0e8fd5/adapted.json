@@ -1,0 +1,88 @@
+{
+  "adapted": {
+    "headline": "Técnico de Soporte IT · Google IT Support Certified · Especialista en resolución de incidencias",
+    "summary": "Candidato con formación certificada en Soporte de Tecnologías de la Información (Google IT Support) y conocimientos sólidos en Microsoft 365 y Google Workspace. Perfil orientado a la resolución ágil de problemas técnicos y a la atención al usuario, con experiencia acreditada en entornos de cara al público que exigen rapidez, empatía y trabajo bajo presión. Complementado con formación en IA aplicada (Microsoft Azure) e interés activo en la automatización y mejora de procesos digitales.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda) & otros establecimientos",
+        "period": "2021 · verano",
+        "bullets": [
+          "Atendió y resolvió incidencias de clientes en tiempo real, priorizando solicitudes múltiples simultáneas en entorno de alta demanda.",
+          "Gestionó cobros y sistemas de punto de venta (TPV), demostrando capacidad para trabajar con herramientas digitales bajo presión.",
+          "Coordinó con el equipo para garantizar flujo eficiente de servicio, aplicando habilidades de comunicación en inglés con clientes internacionales.",
+          "Finalizó el contrato anticipadamente por motivos de salud."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Google IT Support (certificación)",
+      "Resolución de problemas y troubleshooting",
+      "Microsoft 365 (Outlook, Teams, Word, Excel)",
+      "Google Workspace",
+      "Atención al usuario y soporte técnico",
+      "Herramientas de IA y chatbots empresariales",
+      "Microsoft Azure AI"
+    ],
+    "skills_secondary": [
+      "Excel avanzado",
+      "Ofimática",
+      "Gestión de incidencias",
+      "Trabajo en equipo",
+      "Capacidad de liderazgo",
+      "Automatización de procesos",
+      "Atención al cliente",
+      "Mejora de procesos digitales"
+    ],
+    "education": [
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información — Google IT Support",
+        "institution": "Coursera / Google (Online)",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas (ULPGC)",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reorientado de 'Estudiante de Administración y Finanzas' a perfil IT Helpdesk/Support, destacando la certificación Google IT Support.",
+      "Google IT Support promovido a primera posición en skills_primary por ser la credencial más directamente relevante al rol.",
+      "Microsoft Azure AI y herramientas de IA ascendidas a primary (en CV original eran secondary) dado que los conocimientos de software son clave en helpdesk.",
+      "Summary reformulado para enfatizar resolución de incidencias, soporte al usuario y capacidad de trabajar bajo presión, alineado con 'troubleshooting tickets'.",
+      "Bullets de experiencia hostelera reformulados en clave helpdesk: se destacan la gestión de TPV, la atención a múltiples solicitudes simultáneas y la comunicación bajo presión, competencias transferibles al soporte técnico.",
+      "Educación reordenada: los cursos IT aparecen primero por relevancia directa al puesto, antes que los estudios de Administración.",
+      "No se inventó ninguna experiencia ni certificación — todos los datos provienen del CV original y el perfil estructurado."
+    ],
+    "confidence": 0.68,
+    "target_role": "IT Helpdesk Technician — TestCo",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-20T17:50:33.774Z"
+  },
+  "offer_id": "smoke-sidebar",
+  "offer_title": "IT Helpdesk Technician",
+  "company": "TestCo",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}
