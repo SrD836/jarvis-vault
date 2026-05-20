@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-the-feds-lower-bound-reach-2pt75-or-lower-before-2027-448-727-854"
+title: "Polymarket veto — will-kristi-noem-leave-the-trump-administration-before-2027"
 type: decision
 date: 2026-05-20
-decision: "Veto de tesis 'Will the Fed’s lower bound reach 2.75% or lower before 2027?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Will Kristi Noem leave the Trump administration before 2027?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,14 +15,14 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will the Fed’s lower bound reach 2.75% or lower before 2027?
+# Veto: Will Kristi Noem leave the Trump administration before 2027?
 
 ## Mercado
 
-- **Slug**: `will-the-feds-lower-bound-reach-2pt75-or-lower-before-2027-448-727-854`
+- **Slug**: `will-kristi-noem-leave-the-trump-administration-before-2027`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.1000
-- **Volumen 24h**: 278688.95 USD
+- **Precio YES**: 0.5000
+- **Volumen 24h**: 89304.84 USD
 - **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto
@@ -33,7 +33,7 @@ memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
-- veto `will-the-feds-lower-bound-reach-2pt75-or-lower-before-2027-448-727-854` score=1.00 (exact slug match)
+- veto `will-kristi-noem-leave-the-trump-administration-before-2027` score=1.00 (exact slug match)
 
 ## Human notes
 
