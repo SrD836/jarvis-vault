@@ -25,8 +25,8 @@ related:
 - [x] Crear TASKS.md (este archivo)
 - [x] Crear AGENT_RULES.md
 - [x] Crear LOOP_STATE.json
-- [x] Crear .antigravity/config.json
-- [x] Crear .antigravity/memory.md
+- [x] Crear memories/.legacy-config.json
+- [x] Crear memories/system-memory.md
 - [x] Configurar Ralph Loop
 - [x] Configurar Supersmooth
 - [x] Validar configuración completa (smoke test)

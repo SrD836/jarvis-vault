@@ -73,7 +73,7 @@ Asistente personal autónomo de David. Opera 24/7 en un VPS Hetzner, orquestado 
 
 - **Sesión actual:** Contexto volátil (1M tokens Opus, 200K Sonnet)
 - **Persistente cercana:** memory-core embeddings (nomic-embed-text)
-- **Persistente lejana:** Este vault + [[.antigravity/memory|Antigravity memory]]
+- **Persistente lejana:** Este vault + [[memories/system-memory|System memory]]
 - **Framework:** Ralph Loop + Supersmooth para ejecución iterativa autónoma
 
 ---

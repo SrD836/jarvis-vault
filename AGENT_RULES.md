@@ -68,7 +68,7 @@ related:
 
 **Archivos protegidos:** `seeds/**`, `templates/**`, `.agent/Rules.md`, `00-MOC.md`.
 
-**Zonas de escritura segura:** `01-briefs/`, `02-sessions/`, `03-decisions/`, `04-skills-log/`, `wiki/`, `projects/`, `agents/`, `skills/`, `memories/`, `.antigravity/`.
+**Zonas de escritura segura:** `01-briefs/`, `02-sessions/`, `03-decisions/`, `04-skills-log/`, `wiki/`, `projects/`, `agents/`, `skills/`, `memories/`, ``.
 
 ## 6. Comunicación
 
