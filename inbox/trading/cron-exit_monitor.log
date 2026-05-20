@@ -1441,3 +1441,5 @@
 2026/05/20 08:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
 2026/05/20 08:55:02 monitor.go:160: exit_monitor: 0 closed, 49 remaining
 2026/05/20 08:55:02 main.go:13: exit_monitor: done
+2026/05/20 09:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 09:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
