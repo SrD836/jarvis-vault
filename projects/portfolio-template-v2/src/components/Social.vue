@@ -7,6 +7,7 @@ import X from "./icons/X.vue";
 import Link from "./Link.vue";
 import { t } from "../i18n/utils/translate";
 import ButtonRound from "./ButtonRound.vue";
+import { copyEmail } from "../composables/useCopyEmail";
 
 import { social } from "../content/social";
 
@@ -14,7 +15,6 @@ const props = defineProps<{
   variant?: "theme" | "background";
 }>();
 
-// map icon names to components
 const icons = {
   mail: Mail,
   github: Github,
@@ -28,24 +28,43 @@ const getAriaLabel = (name: string) => `${t("go-to")} ${name.charAt(0).toUpperCa
 
 <template>
   <div class="social">
-    <Link
-      v-for="item in social"
-      :key="item.name"
-      external
-      :href="item.url"
-      :aria-label="getAriaLabel(item.name)"
-      class="social-link"
-      data-cursor="circle-white"
-    >
-      <ButtonRound
-        renderAs="div"
-        :variant="props.variant ?? 'theme'"
-        class="children-unclickable"
-        data-hoversound="hover"
+    <template v-for="item in social" :key="item.name">
+      <button
+        v-if="item.name === 'mail'"
+        type="button"
+        :aria-label="t('get-in-touch')"
+        class="social-link social-link--button"
+        data-cursor="circle-white"
+        data-sound="click"
+        @click="copyEmail"
       >
-        <component :is="icons[item.name]" :aria-label="getAriaLabel(item.name)" external />
-      </ButtonRound>
-    </Link>
+        <ButtonRound
+          renderAs="div"
+          :variant="props.variant ?? 'theme'"
+          class="children-unclickable"
+          data-hoversound="hover"
+        >
+          <component :is="icons[item.name]" :aria-label="t('get-in-touch')" />
+        </ButtonRound>
+      </button>
+      <Link
+        v-else
+        external
+        :href="item.url"
+        :aria-label="getAriaLabel(item.name)"
+        class="social-link"
+        data-cursor="circle-white"
+      >
+        <ButtonRound
+          renderAs="div"
+          :variant="props.variant ?? 'theme'"
+          class="children-unclickable"
+          data-hoversound="hover"
+        >
+          <component :is="icons[item.name]" :aria-label="getAriaLabel(item.name)" external />
+        </ButtonRound>
+      </Link>
+    </template>
   </div>
 </template>
 
@@ -53,5 +72,14 @@ const getAriaLabel = (name: string) => `${t("go-to")} ${name.charAt(0).toUpperCa
 .social {
   display: flex;
   gap: var(--space-md);
+}
+
+.social-link--button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
 }
 </style>

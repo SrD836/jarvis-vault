@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Header from "./components/Header.vue";
+import EmailToast from "./components/EmailToast.vue";
 import { useTranslations } from "./i18n/composables/useTranslations";
 import { usePreloader } from "./composables/usePreloader";
 import Cursor from "./components/Cursor.vue";
@@ -52,6 +53,7 @@ const { isTouch } = useAgent();
   </div>
 
   <Cursor v-if="!isTouch" />
+  <EmailToast />
 </template>
 
 <style lang="scss">

@@ -41,30 +41,6 @@ const { withSocial = true } = defineProps<Props>();
       <div class="footer-top">
         <Social v-if="withSocial" />
         <div class="footer-top-links">
-          <div class="footer-top-links-legal">
-            <Clickable renderAs="div">
-              <Link
-                :href="locale === 'de' ? '/de/privacy' : '/privacy'"
-                class="footer-link"
-                :external="true"
-                data-cursor="circle-white"
-                data-sound="click"
-                data-hoversound="hover"
-                >{{ t("privacy") }}</Link
-              >
-            </Clickable>
-            <Clickable renderAs="div">
-              <Link
-                :href="locale === 'de' ? '/de/legal' : '/legal'"
-                class="footer-link children-unclickable"
-                :external="true"
-                data-cursor="circle-white"
-                data-sound="click"
-                data-hoversound="hover"
-                >{{ t("legal") }}</Link
-              >
-            </Clickable>
-          </div>
           <LangSwitch />
         </div>
       </div>
@@ -84,7 +60,7 @@ const { withSocial = true } = defineProps<Props>();
             >
           </Clickable>
         </div>
-        <p>© {{ new Date().getFullYear() }} David Heckhoff</p>
+        <p>© {{ new Date().getFullYear() }} David González</p>
       </div>
     </div>
   </footer>

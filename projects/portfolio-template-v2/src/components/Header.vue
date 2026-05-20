@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { copyEmail } from "../composables/useCopyEmail";
 import Button from "./Button.vue";
 import Logo from "./Logo.vue";
 import { computed, ref } from "vue";
@@ -97,13 +98,12 @@ const getInTouchClassNames = computed(() => {
     </div>
     <div class="header-right">
       <Button
-        renderAs="a"
         variant="accent"
         :aria-label="t('get-in-touch')"
-        :href="social.find((item) => item.name === 'mail')?.url ?? ''"
-        external
+        @click="copyEmail"
         :class="getInTouchClassNames"
         data-cursor="circle-white"
+        data-sound="click"
         data-hoversound="hover"
         >{{ t("get-in-touch") }}</Button
       >
