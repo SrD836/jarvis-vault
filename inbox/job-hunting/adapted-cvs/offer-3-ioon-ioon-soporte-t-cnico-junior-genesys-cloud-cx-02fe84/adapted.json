@@ -1,0 +1,88 @@
+{
+  "adapted": {
+    "headline": "Técnico de Soporte Junior orientado a plataformas de contact center y herramientas digitales empresariales",
+    "summary": "Estudiante de Administración y Finanzas con formación acreditada en soporte IT (Google IT Support) e inteligencia artificial aplicada (Microsoft Azure AI). Combino habilidades técnicas de resolución de problemas con experiencia real en atención al cliente en entornos de alta demanda. Motivado para crecer en soporte técnico de plataformas CCaaS como Genesys Cloud CX.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Jun 2021 · Jul 2021",
+        "bullets": [
+          "Atención al cliente en inglés en entorno de alta demanda, gestionando incidencias y solicitudes en tiempo real.",
+          "Gestión de cobros y recepción con foco en precisión y satisfacción del usuario final.",
+          "Coordinación con el equipo para mantener un flujo de trabajo eficiente durante picos de carga."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Soporte de Tecnologías de la Información (Google IT Support)",
+      "Resolución de problemas técnicos",
+      "Herramientas de IA y chatbots empresariales",
+      "Microsoft 365",
+      "Atención al cliente",
+      "Inglés nivel alto"
+    ],
+    "skills_secondary": [
+      "Microsoft Azure AI",
+      "Google Workspace",
+      "Excel avanzado",
+      "Ofimática",
+      "Trabajo en equipo",
+      "Gestión de incidencias",
+      "Mejora de procesos digitales",
+      "Automatización de tareas"
+    ],
+    "education": [
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online (Google)",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B2"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reorientado de 'Estudiante de Administración y Finanzas' a 'Técnico de Soporte Junior' para alinear con el rol target.",
+      "Sumario reescrito con referencias explícitas a soporte IT, CCaaS y Genesys Cloud CX para activar palabras clave del JD.",
+      "Google IT Support promovido al primer lugar de skills_primary por ser la credencial más directamente relevante para soporte técnico.",
+      "Herramientas de IA y chatbots empresariales mantenido en skills_primary dado que Genesys Cloud CX integra bots conversacionales e IA.",
+      "Cursos técnicos (Google IT Support, Azure AI) reordenados al inicio de educación para dar mayor visibilidad a la formación diferenciadora.",
+      "Experiencia en hostelería reformulada con foco en resolución de incidencias, trabajo bajo presión y atención en inglés como habilidades transferibles a soporte.",
+      "Nivel de inglés ajustado a B2 (el CV original indica 'nivel alto'; el perfil estructurado registraba B1, se prioriza la autodeclaración del candidato).",
+      "Excel avanzado movido a skills_secondary al no ser diferenciador clave para este rol de soporte técnico.",
+      "AVISO DE GAP: el candidato no tiene experiencia directa con Genesys Cloud CX ni con plataformas de contact center; la adaptación maximiza las credenciales técnicas existentes pero el gap tecnológico es significativo."
+    ],
+    "confidence": 0.45,
+    "target_role": "Soporte Técnico Junior Genesys Cloud CX — IOON",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-20T20:19:59.386Z"
+  },
+  "offer_id": "offer-3-ioon",
+  "offer_title": "Soporte Técnico Junior Genesys Cloud CX",
+  "company": "IOON",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

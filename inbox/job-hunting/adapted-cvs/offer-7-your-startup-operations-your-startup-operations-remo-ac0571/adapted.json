@@ -1,0 +1,89 @@
+{
+  "adapted": {
+    "headline": "Asistente de Operaciones Remoto · Administración Digital, Coordinación y Herramientas de Productividad",
+    "summary": "Estudiante de Administración y Finanzas con dominio avanzado de Microsoft 365, Google Workspace y herramientas de IA empresarial, orientado a la automatización y la coordinación eficiente de tareas en remoto. Experiencia práctica en entornos de alta demanda, comunicación en inglés y gestión de operaciones bajo presión. Proactivo, organizado y con disponibilidad inmediata para dar soporte operativo en la coordinación de eventos.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 · Julio 2021",
+        "bullets": [
+          "Coordinó la recepción y distribución de clientes gestionando el flujo operativo del turno en un entorno internacional de ritmo elevado.",
+          "Atendió a clientes en inglés, garantizando una comunicación clara y una experiencia satisfactoria.",
+          "Gestionó cobros en caja y pedidos simultáneos manteniendo precisión y orden bajo presión.",
+          "Colaboró con el equipo para asegurar la correcta ejecución del servicio de principio a fin."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft 365 (Word, Excel, Outlook, Teams)",
+      "Google Workspace (Docs, Sheets, Calendar, Meet)",
+      "Excel avanzado",
+      "Herramientas de IA y chatbots empresariales",
+      "Organización y coordinación de tareas remotas",
+      "Resolución de problemas",
+      "Comunicación en inglés"
+    ],
+    "skills_secondary": [
+      "Automatización de procesos digitales",
+      "Gestión de correo electrónico",
+      "Control y clasificación de datos",
+      "Atención al cliente",
+      "Google IT Support",
+      "Microsoft Azure AI",
+      "Gestión documental y ofimática",
+      "Trabajo en equipo",
+      "Liderazgo y distribución de tareas"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados, sin completar)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline adaptado al rol 'Remote Event Operations Assistant', incorporando los conceptos de coordinación remota y operaciones digitales presentes en el perfil.",
+      "Summary reescrito para destacar disponibilidad remota, herramientas digitales y orientación operativa a eventos, usando solo información ya presente en el CV original.",
+      "Experiencia de hostelería reenmarcada con bullets de coordinación de flujo operativo, gestión bajo presión y comunicación multilingüe para alinearla con operaciones de eventos.",
+      "Microsoft 365, Google Workspace y herramientas de IA promovidas al bloque skills_primary por ser las más relevantes para un puesto de operaciones remoto en startup.",
+      "Automatización de procesos, gestión de correo y control de datos añadidos a skills_secondary extrayendo literalmente del apartado 'Sobre mí' del CV original.",
+      "Cursos de IA (Microsoft Azure) y Google IT Support destacados en educación por su relevancia en un entorno de operaciones digitales y startups.",
+      "Confianza moderada (0.62): el candidato es estudiante con experiencia laboral mínima (1 mes); el rol es de nivel asistente, lo que cuadra bien, pero la ausencia de experiencia formal en eventos o coordinación de proyectos limita el ajuste."
+    ],
+    "confidence": 0.62,
+    "target_role": "Remote Event Operations Assistant",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-20T20:07:24.418Z"
+  },
+  "offer_id": "offer-7-your-startup-operations",
+  "offer_title": "Remote Event Operations Assistant",
+  "company": "Your Startup Operations",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

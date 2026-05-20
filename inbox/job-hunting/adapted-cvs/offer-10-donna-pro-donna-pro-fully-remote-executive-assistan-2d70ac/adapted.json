@@ -1,0 +1,89 @@
+{
+  "adapted": {
+    "headline": "Asistente Ejecutivo en Formación | Administración Digital · IA · Microsoft 365 | 100% Remoto",
+    "summary": "Estudiante de Administración y Finanzas con sólido dominio de herramientas digitales, IA empresarial y automatización de procesos. Apasionado por la gestión eficiente del correo electrónico, la organización de tareas y el soporte ejecutivo remoto. Combina capacidad analítica con habilidades interpersonales demostradas en entornos de alta presión y atención al cliente internacional.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow",
+        "period": "Junio 2021 · Julio 2021 (Irlanda)",
+        "bullets": [
+          "Coordiné la recepción y flujo de clientes en entorno de alta demanda, garantizando una experiencia fluida y profesional.",
+          "Procesé cobros y gestioné caja con precisión, reduciendo errores en transacciones en turnos de máxima afluencia.",
+          "Atendí al público íntegramente en inglés dentro de un equipo multicultural, reforzando la comunicación internacional.",
+          "Redistribuí tareas en tiempo real para mantener la eficiencia operativa bajo presión, actuando como punto de coordinación entre sala y cocina."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft 365 (Outlook, Teams, Calendar, OneDrive)",
+      "Google Workspace (Gmail, Calendar, Drive, Docs)",
+      "Excel avanzado (automatización, hojas de control de datos)",
+      "Herramientas de IA y chatbots empresariales",
+      "Organización y gestión de tareas remotas",
+      "Resolución de problemas y toma de decisiones",
+      "Comunicación profesional en inglés"
+    ],
+    "skills_secondary": [
+      "Microsoft Azure AI",
+      "Google IT Support",
+      "Automatización de procesos administrativos",
+      "Gestión y clasificación de correo electrónico",
+      "Atención al cliente",
+      "Liderazgo y coordinación de equipos",
+      "Ofimática avanzada",
+      "Mejora continua de procesos digitales"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados, sin completar)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reenfocado de 'Estudiante de Administración y Finanzas' a perfil de Asistente Ejecutivo remoto para alinearse con el rol target.",
+      "Summary reformulado para destacar soporte ejecutivo, gestión de correo, automatización y modalidad remota como ejes centrales del pitch.",
+      "Microsoft 365 y Google Workspace promovidos a skills primarias con desglose de aplicaciones específicas (Outlook, Calendar, Teams) por su alta relevancia en roles EA.",
+      "Añadidos 'Organización y gestión de tareas remotas' y 'Comunicación profesional en inglés' como skills primarias por ser competencias clave del puesto.",
+      "Bullets de la experiencia en The Fallow reformulados para resaltar coordinación, comunicación en inglés, gestión bajo presión y redistribución de tareas, competencias directamente transferibles al rol EA.",
+      "Cursos de Microsoft Azure AI y Google IT Support elevados en visibilidad educativa por su relevancia tecnológica frente al perfil digital requerido.",
+      "Grado en Economía desplazado al final de la sección de educación por menor relevancia directa frente al CFGS en Administración.",
+      "Confianza moderada (0.62): el perfil tiene buena alineación en herramientas digitales e IA, pero carece de experiencia formal en asistencia ejecutiva o gestión de agendas de alto nivel."
+    ],
+    "confidence": 0.62,
+    "target_role": "Fully Remote Executive Assistant to Elite CEOs",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-20T20:09:35.959Z"
+  },
+  "offer_id": "offer-10-donna-pro",
+  "offer_title": "Fully Remote Executive Assistant to Elite CEOs",
+  "company": "Donna Pro",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

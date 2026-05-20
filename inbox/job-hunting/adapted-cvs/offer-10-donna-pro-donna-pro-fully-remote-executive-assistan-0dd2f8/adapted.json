@@ -1,0 +1,88 @@
+{
+  "adapted": {
+    "headline": "Asistente Ejecutivo Remoto · Administración, IA y Automatización de Procesos",
+    "summary": "Estudiante de Administración y Finanzas con dominio avanzado de Microsoft 365, Google Workspace y herramientas de IA aplicadas a la gestión ejecutiva. Especializado en automatización de tareas administrativas —gestión de correo, organización de datos y uso de chatbots empresariales—, aportando eficiencia y orden al día a día de líderes. Perfil proactivo, resolutivo y con alta capacidad de organización en entornos 100% remotos.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 · Julio 2021",
+        "bullets": [
+          "Gestionó la recepción y atención al cliente en inglés en entorno de alta rotación, demostrando comunicación clara y profesional.",
+          "Coordinó cobros en caja y gestión de pedidos simultáneos, desarrollando habilidades de multitarea y priorización bajo presión.",
+          "Colaboró en equipo para garantizar una experiencia fluida al cliente, aplicando criterio propio y resolución rápida de incidencias."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft 365 (Outlook, Teams, Calendar, Excel)",
+      "Google Workspace (Gmail, Calendar, Drive, Docs)",
+      "Excel avanzado y hojas automatizadas",
+      "Herramientas de IA y chatbots empresariales",
+      "Gestión y organización administrativa",
+      "Resolución de problemas y toma de decisiones",
+      "Comunicación profesional en español e inglés"
+    ],
+    "skills_secondary": [
+      "Automatización de tareas rutinarias",
+      "Gestión de correo electrónico",
+      "Clasificación y procesamiento de datos",
+      "Microsoft Azure AI",
+      "Google IT Support",
+      "Atención al cliente",
+      "Trabajo en equipo y liderazgo",
+      "Ofimática"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Online",
+        "period": null
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reorientado de 'Estudiante de Administración y Finanzas' a perfil de Asistente Ejecutivo Remoto, destacando IA y automatización como diferenciador.",
+      "Summary redactado con foco en tareas propias de un EA (gestión de correo, datos, chatbots, organización) en lugar del perfil académico genérico del CV original.",
+      "Microsoft 365 y Google Workspace promovidos a primary skills y expandidos con aplicaciones concretas (Outlook, Calendar, Teams, Drive) relevantes para la oferta.",
+      "Herramientas de IA y automatización situadas como ventaja competitiva frente a candidatos sin formación tecnológica.",
+      "Bullets de la experiencia en hostelería reformulados para subrayar comunicación en inglés, multitarea y resolución de incidencias, transferibles al rol de EA.",
+      "Cursos de IA (Microsoft Azure) y Google IT Support reordenados por delante del Grado en Economía para enfatizar el perfil tech.",
+      "Grado en Economía (incompleto) mantenido al final de educación para no restar confianza al perfil.",
+      "Confidence moderada (0.62): el candidato tiene las herramientas y la actitud para el rol, pero la experiencia formal es mínima y el nivel de inglés B1 puede ser una barrera significativa para una posición de soporte directo a CEOs internacionales."
+    ],
+    "confidence": 0.62,
+    "target_role": "Fully Remote Executive Assistant to Elite CEOs",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-20T20:14:36.252Z"
+  },
+  "offer_id": "offer-10-donna-pro",
+  "offer_title": "Fully Remote Executive Assistant to Elite CEOs",
+  "company": "Donna Pro",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

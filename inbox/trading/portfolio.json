@@ -1,5 +1,5 @@
 {
-  "bankroll": 3280.2456654133166,
+  "bankroll": 3152.3623544096854,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -283,22 +283,6 @@
       "size_usd": 53.97155538956589
     },
     {
-      "approved_price": 0.21,
-      "category": "uncategorized",
-      "days_to_resolution": 11,
-      "end_date": "2026-05-31T00:00:00Z",
-      "entry_price": 0.21,
-      "entry_timestamp": "2026-05-19T17:30:03Z",
-      "horizon": "medium",
-      "id": "T-1972137-1779211803817",
-      "liquidity_usd": 71386.2344,
-      "market_id": "1972137",
-      "question": "Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 31, 2026?",
-      "side": "yes",
-      "size": 52.89212428177458,
-      "size_usd": 52.89212428177458
-    },
-    {
       "approved_price": 0.053,
       "category": "uncategorized",
       "days_to_resolution": 11,
@@ -539,22 +523,6 @@
       "size_usd": 53.16031561284479
     },
     {
-      "approved_price": 0.59,
-      "category": "uncategorized",
-      "days_to_resolution": 0,
-      "end_date": "2026-05-20T19:00:00Z",
-      "entry_price": 0.59,
-      "entry_timestamp": "2026-05-20T03:30:03Z",
-      "horizon": "short",
-      "id": "T-2192106-1779247803922",
-      "liquidity_usd": 580540.768,
-      "market_id": "2192106",
-      "question": "Will Aston Villa FC win on 2026-05-20?",
-      "side": "yes",
-      "size": 55.008285899861356,
-      "size_usd": 55.008285899861356
-    },
-    {
       "approved_price": 0.764,
       "category": "uncategorized",
       "days_to_resolution": 10,
@@ -601,38 +569,6 @@
       "side": "yes",
       "size": 53.22252311012192,
       "size_usd": 53.22252311012192
-    },
-    {
-      "approved_price": 0.17,
-      "category": "uncategorized",
-      "days_to_resolution": 0,
-      "end_date": "2026-05-20T19:00:00Z",
-      "entry_price": 0.17,
-      "entry_timestamp": "2026-05-20T15:00:05Z",
-      "horizon": "short",
-      "id": "T-2192104-1779289205006",
-      "liquidity_usd": 669818.0806,
-      "market_id": "2192104",
-      "question": "Will SC Freiburg win on 2026-05-20?",
-      "side": "yes",
-      "size": 64.08695290554662,
-      "size_usd": 64.08695290554662
-    },
-    {
-      "approved_price": 0.5,
-      "category": "uncategorized",
-      "days_to_resolution": 0,
-      "end_date": "2026-05-20T19:00:00Z",
-      "entry_price": 0.5,
-      "entry_timestamp": "2026-05-20T15:00:05Z",
-      "horizon": "short",
-      "id": "T-2216585-1779289205006",
-      "liquidity_usd": 87972.1187,
-      "market_id": "2216585",
-      "question": "SC Freiburg vs. Aston Villa FC: Both Teams to Score",
-      "side": "yes",
-      "size": 62.80521384743569,
-      "size_usd": 62.80521384743569
     },
     {
       "approved_price": 0.069,
@@ -699,22 +635,6 @@
       "size_usd": 62.96173431256192
     },
     {
-      "approved_price": 0.077,
-      "category": "uncategorized",
-      "days_to_resolution": 2,
-      "end_date": "2026-05-23T14:00:00Z",
-      "entry_price": 0.077,
-      "entry_timestamp": "2026-05-20T16:00:04Z",
-      "horizon": "short",
-      "id": "T-2273938-1779292804136",
-      "liquidity_usd": 8312.02967,
-      "market_id": "2273938",
-      "question": "Will Southampton FC win on 2026-05-23?",
-      "side": "yes",
-      "size": 61.70249962631068,
-      "size_usd": 61.70249962631068
-    },
-    {
       "approved_price": 0.86,
       "category": "uncategorized",
       "days_to_resolution": 2,
@@ -729,22 +649,6 @@
       "side": "yes",
       "size": 61.81538970571782,
       "size_usd": 61.81538970571782
-    },
-    {
-      "approved_price": 0.086,
-      "category": "uncategorized",
-      "days_to_resolution": 2,
-      "end_date": "2026-05-23T14:00:00Z",
-      "entry_price": 0.086,
-      "entry_timestamp": "2026-05-20T18:30:04Z",
-      "horizon": "short",
-      "id": "T-2273922-1779301804949",
-      "liquidity_usd": 13993.05836,
-      "market_id": "2273922",
-      "question": "Will Hull City AFC win on 2026-05-23?",
-      "side": "yes",
-      "size": 63.09730825669587,
-      "size_usd": 63.09730825669587
     },
     {
       "approved_price": 0.16,
@@ -777,7 +681,55 @@
       "side": "yes",
       "size": 62.387462559455436,
       "size_usd": 62.387462559455436
+    },
+    {
+      "approved_price": 0.092,
+      "category": "uncategorized",
+      "days_to_resolution": 1,
+      "end_date": "2026-05-22T16:00:00Z",
+      "entry_price": 0.092,
+      "entry_timestamp": "2026-05-20T20:30:04Z",
+      "horizon": "short",
+      "id": "T-2237157-1779309004485",
+      "liquidity_usd": 33027.44304,
+      "market_id": "2237157",
+      "question": "Will Elon Musk post 280-299 tweets from May 15 to May 22, 2026?",
+      "side": "yes",
+      "size": 66.40446735860978,
+      "size_usd": 66.40446735860978
+    },
+    {
+      "approved_price": 0.324,
+      "category": "uncategorized",
+      "days_to_resolution": 1,
+      "end_date": "2026-05-22T16:00:00Z",
+      "entry_price": 0.324,
+      "entry_timestamp": "2026-05-20T20:30:04Z",
+      "horizon": "short",
+      "id": "T-2237156-1779309004485",
+      "liquidity_usd": 31105.71654,
+      "market_id": "2237156",
+      "question": "Will Elon Musk post 260-279 tweets from May 15 to May 22, 2026?",
+      "side": "yes",
+      "size": 65.07637801143758,
+      "size_usd": 65.07637801143758
+    },
+    {
+      "approved_price": 0.51,
+      "category": "uncategorized",
+      "days_to_resolution": 3,
+      "end_date": "2026-05-24T15:00:00Z",
+      "entry_price": 0.51,
+      "entry_timestamp": "2026-05-20T20:30:04Z",
+      "horizon": "medium",
+      "id": "T-2227126-1779309004485",
+      "liquidity_usd": 529425.301,
+      "market_id": "2227126",
+      "question": "Will Brighton \u0026 Hove Albion FC win on 2026-05-24?",
+      "side": "yes",
+      "size": 63.774850451208835,
+      "size_usd": 63.774850451208835
     }
   ],
-  "used_exposure": 3016.9363867737766
+  "used_exposure": 2852.599697777408
 }

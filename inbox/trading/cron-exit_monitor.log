@@ -1989,3 +1989,59 @@
 2026/05/20 19:55:02 main.go:13: exit_monitor: done
 2026/05/20 20:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/20 20:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 20:00:02 monitor.go:160: exit_monitor: 0 closed, 49 remaining
+2026/05/20 20:00:02 main.go:13: exit_monitor: done
+2026/05/20 20:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 20:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 20:05:02 monitor.go:141: exit_monitor: closed Will Aston Villa FC win on 2026-05-20? (take_profit) @ 0.9400 src=bestBid liq=$145495: PnL $32.63 (59.32%)
+2026/05/20 20:05:02 monitor.go:141: exit_monitor: closed Will SC Freiburg win on 2026-05-20? (stop_loss) @ 0.0100 src=bestBid liq=$121615: PnL $-60.32 (-94.12%)
+2026/05/20 20:05:02 monitor.go:160: exit_monitor: 2 closed, 48 remaining
+2026/05/20 20:05:02 main.go:13: exit_monitor: done
+2026/05/20 20:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 20:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 20:10:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/20 20:10:02 main.go:13: exit_monitor: done
+2026/05/20 20:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 20:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 20:15:03 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/20 20:15:03 main.go:13: exit_monitor: done
+2026/05/20 20:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 20:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 20:20:01 monitor.go:141: exit_monitor: closed Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 31, 2026? (take_profit EARLY) @ 0.3100 src=bestBid liq=$41812: PnL $25.19 (47.62%)
+2026/05/20 20:20:02 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/20 20:20:02 main.go:13: exit_monitor: done
+2026/05/20 20:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 20:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 20:25:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/20 20:25:02 main.go:13: exit_monitor: done
+2026/05/20 20:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 20:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 20:30:02 monitor.go:141: exit_monitor: closed Will SC Freiburg vs. Aston Villa FC end in a draw? (stop_loss) @ 0.0100 src=lastTradePrice_fallback liq=$66782: PnL $-61.75 (-94.12%)
+2026/05/20 20:30:02 monitor.go:160: exit_monitor: 1 closed, 46 remaining
+2026/05/20 20:30:02 main.go:13: exit_monitor: done
+2026/05/20 20:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 20:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 20:35:02 monitor.go:141: exit_monitor: closed Will SC Freiburg vs. Aston Villa FC end in a draw? (stop_loss) @ 0.0100 src=lastTradePrice_fallback liq=$66782: PnL $-54.21 (-80.00%)
+2026/05/20 20:35:02 monitor.go:160: exit_monitor: 1 closed, 49 remaining
+2026/05/20 20:35:02 main.go:13: exit_monitor: done
+2026/05/20 20:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 20:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 20:40:02 monitor.go:141: exit_monitor: closed Will Hull City AFC win on 2026-05-23? (stop_loss EARLY) @ 0.0030 src=bestBid liq=$7266: PnL $-60.90 (-96.51%)
+2026/05/20 20:40:02 monitor.go:160: exit_monitor: 1 closed, 48 remaining
+2026/05/20 20:40:02 main.go:13: exit_monitor: done
+2026/05/20 20:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 20:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 20:45:02 monitor.go:141: exit_monitor: closed Will Southampton FC win on 2026-05-23? (stop_loss EARLY) @ 0.0020 src=bestBid liq=$15724: PnL $-60.10 (-97.40%)
+2026/05/20 20:45:03 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/20 20:45:03 main.go:13: exit_monitor: done
+2026/05/20 20:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 20:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 20:50:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/20 20:50:02 main.go:13: exit_monitor: done
+2026/05/20 20:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 20:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 20:55:02 monitor.go:141: exit_monitor: closed SC Freiburg vs. Aston Villa FC: Both Teams to Score (stop_loss) @ 0.0800 src=bestBid liq=$39047: PnL $-52.76 (-84.00%)
+2026/05/20 20:55:02 monitor.go:160: exit_monitor: 1 closed, 46 remaining
+2026/05/20 20:55:02 main.go:13: exit_monitor: done
+2026/05/20 21:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 21:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%

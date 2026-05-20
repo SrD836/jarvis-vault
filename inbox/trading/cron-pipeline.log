@@ -395,3 +395,18 @@
 2026/05/20 19:30:04 executor.go:197: executor: entered [short] Will Al Ahli Saudi Club win on 2026-05-21? @ 0.9500 size=$62.39 (open=50/50, bankroll=$3057)
 2026/05/20 19:30:04 executor.go:202: executor: 1 entered, 89 rejected
 2026/05/20 19:30:04 main.go:13: executor: done
+2026/05/20 20:00:03 main.go:11: executor: starting one-shot pass
+2026/05/20 20:00:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/20 20:00:03 executor.go:62: executor: quota slots this run: short=25 medium=6 long=6 (of 35 remaining today)
+2026/05/20 20:00:03 executor.go:197: executor: entered [short] Will SC Freiburg vs. Aston Villa FC end in a draw? @ 0.1700 size=$65.60 (open=50/50, bankroll=$3215)
+2026/05/20 20:00:03 executor.go:202: executor: 1 entered, 84 rejected
+2026/05/20 20:00:03 main.go:13: executor: done
+2026/05/20 20:30:04 main.go:11: executor: starting one-shot pass
+2026/05/20 20:30:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/20 20:30:04 executor.go:62: executor: quota slots this run: short=26 medium=6 long=6 (of 37 remaining today)
+2026/05/20 20:30:04 executor.go:197: executor: entered [short] Will SC Freiburg vs. Aston Villa FC end in a draw? @ 0.0500 size=$67.76 (open=47/50, bankroll=$3320)
+2026/05/20 20:30:04 executor.go:197: executor: entered [short] Will Elon Musk post 280-299 tweets from May 15 to May 22, 2026? @ 0.0920 size=$66.40 (open=48/50, bankroll=$3254)
+2026/05/20 20:30:04 executor.go:197: executor: entered [short] Will Elon Musk post 260-279 tweets from May 15 to May 22, 2026? @ 0.3240 size=$65.08 (open=49/50, bankroll=$3189)
+2026/05/20 20:30:04 executor.go:197: executor: entered [medium] Will Brighton & Hove Albion FC win on 2026-05-24? @ 0.5100 size=$63.77 (open=50/50, bankroll=$3125)
+2026/05/20 20:30:04 executor.go:202: executor: 4 entered, 79 rejected
+2026/05/20 20:30:04 main.go:13: executor: done
