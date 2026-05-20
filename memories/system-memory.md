@@ -2,8 +2,16 @@
 title: "Antigravity Memory — JARVIS"
 type: memory
 date: 2026-05-14
+related:
+  - "[[AGENT_RULES]]"
+  - "[[IDENTITY]]"
+  - "[[agents/index]]"
+  - "[[agents/main]]"
+  - "[[memories/temporal-log]]"
 tags: [memory, antigravity, context]
+# auto-linked 2026-05-20
 ---
+
 
 # 🧠 Antigravity Memory — JARVIS
 
