@@ -2,7 +2,10 @@
   "userIgnoreFilters": [
     "node_modules",
     "dist",
-    ".git",
-    ".vite"
+    "\\.git",
+    "\\.vite",
+    "03-decisions/\\.archive-polymarket-md",
+    "03-decisions/polymarket/",
+    "^03-decisions/\\d{4}-\\d{2}-\\d{2}-polymarket-"
   ]
 }

@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `base-fdv-above-12b-one-day-after-launch`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.3200
+- **Precio YES**: 0.3100
 - **Volumen 24h**: 78659.61 USD
 - **End date**: 2028-01-01T05:00:00Z
 
