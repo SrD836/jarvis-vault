@@ -1,0 +1,71 @@
+{
+  "projects": [
+    {
+      "slug": "jarvis-multi-agent",
+      "title": "JARVIS — Sistema multi-agente",
+      "tech": [
+        "typescript",
+        "go",
+        "docker",
+        "claude-api",
+        "telegram"
+      ],
+      "summary_es": "Asistente personal autónomo en VPS Hetzner operando 24/7. Pipeline multi-agente con orquestador OpenClaw, brain de decisiones automáticas, interfaces Telegram y dashboard web. ~10 agentes especializados orquestados.",
+      "summary_en": "Autonomous personal assistant on Hetzner VPS running 24/7. Multi-agent pipeline with OpenClaw orchestrator, automated decision brain, Telegram and web dashboard. ~10 specialized agents orchestrated.",
+      "live": "https://jarvss.duckdns.org",
+      "source": null,
+      "thumbnail": "jarvis-thumb.webp",
+      "media": []
+    },
+    {
+      "slug": "polymarket-veto-loop-bot",
+      "title": "Polymarket Veto-Loop Bot",
+      "tech": [
+        "go",
+        "gamma-api",
+        "tavily",
+        "ollama",
+        "trading"
+      ],
+      "summary_es": "Bot de trading 24/7 sobre Polymarket. Pipeline scanner→brain→executor→exit_monitor. Memoria persistente de losses/wins con auto-reglas blandas generadas por clustering. Cap 50 posiciones, sizing dinámico.",
+      "summary_en": "24/7 trading bot on Polymarket. Pipeline scanner→brain→executor→exit_monitor. Persistent loss/win memory with auto-generated soft rules from pattern clustering. Cap 50 positions, dynamic sizing.",
+      "live": null,
+      "source": null,
+      "thumbnail": "poly-thumb.webp",
+      "media": []
+    },
+    {
+      "slug": "trabajo-auto-apply",
+      "title": "Trabajo · LinkedIn Easy Apply",
+      "tech": [
+        "typescript",
+        "playwright-mcp",
+        "claude-api",
+        "express"
+      ],
+      "summary_es": "Pipeline de búsqueda + adaptación CV + auto-apply LinkedIn con dos gates de aprobación. CV y portfolio adaptados por oferta vía claudemax. Dedup persistente de ofertas vistas, cuota 10/día.",
+      "summary_en": "Job search + CV adaptation + LinkedIn auto-apply pipeline with two approval gates. CV and portfolio adapted per offer via claudemax. Persistent seen-offers dedup, 10/day quota.",
+      "live": null,
+      "source": null,
+      "thumbnail": "trabajo-thumb.webp",
+      "media": []
+    },
+    {
+      "slug": "jarvis-dashboard",
+      "title": "Dashboard JARVIS",
+      "tech": [
+        "react",
+        "vite",
+        "express",
+        "node",
+        "tailwind"
+      ],
+      "summary_es": "Panel de control web del sistema JARVIS. Chat embebido por proyecto, gestión de agentes/skills, panel del bot de trading, sección Trabajo con job-hunter. Streaming SSE de eventos.",
+      "summary_en": "Web control panel for JARVIS. Per-project embedded chat, agent/skill management, trading bot panel, Trabajo section with job-hunter. SSE event streaming.",
+      "live": null,
+      "source": null,
+      "thumbnail": "dashboard-thumb.webp",
+      "media": []
+    }
+  ]
+}

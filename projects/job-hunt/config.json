@@ -8,7 +8,12 @@
     "modalidad": [
       "remoto"
     ],
-    "fuentes": [],
+    "fuentes": [
+      "linkedin",
+      "indeed",
+      "infojobs",
+      "tecnoempleo"
+    ],
     "keywords": "AI training, annotation, RLHF, IT support remote, customer success tech, AI ops, virtual assistant, prompt engineer, Excel automation, entrenamiento IA, anotación de datos, etiquetado de datos, anotador, soporte IT remoto, soporte técnico, helpdesk, técnico de sistemas, mesa de ayuda, atención al cliente, customer support, soporte al cliente, asistente virtual, ingeniero de prompts, automatización Excel, macros VBA, Power Query, automatización de procesos, RPA junior, becario IT, prácticas IT, junior tech remoto",
     "exclusiones": "presencial, senior, requiere visa US, requiere alemán, requiere holandés",
     "posted_within_days": 30,

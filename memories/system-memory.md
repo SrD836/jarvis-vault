@@ -57,6 +57,10 @@ tags: [memory, antigravity, context]
 ---
 
 ## Patrones aprendidos
+- [Auto-Consolidated 2026-05-20] Stop vs Kelly inconsistente: -30% -> USD: pérdida máxima del trade en USD
+- [Auto-Consolidated 2026-05-20] Veto-loop como filtro binario: itera -> terminal
+- [Auto-Consolidated 2026-05-20] Catalyst 72h: solaparse con 72h antes de AHORA -> se activa solo en la ventana 72h-0h previas a resolución
+- [Auto-Consolidated 2026-05-20] Stop en USD: % del precio del activo -> perdida máxima del trade en USD
 - [Auto-Consolidated] Se han consolidado los catálogos de habilidades: changed from 6 skills activas to 2 skills activas (meta/crear-skills, meta/curator)
 - [Auto-Consolidated] David ha estado inactivo durante 4 días consecutivos: changed from None to 4 días consecutivos de inactividad
 

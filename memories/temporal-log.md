@@ -23,3 +23,7 @@ related:
 
 | 2026-05-16 | Se han consolidado los catálogos de habilidades | 6 skills activas | 2 skills activas (meta/crear-skills, meta/curator) | Daily Brief |
 | 2026-05-16 | David ha estado inactivo durante 4 días consecutivos | None | 4 días consecutivos de inactividad | Daily Brief |
+| 2026-05-20 | Stop vs Kelly inconsistente | -30% | USD: pérdida máxima del trade en USD | Prompt usuario |
+| 2026-05-20 | Veto-loop como filtro binario | itera | terminal | Respuesta main |
+| 2026-05-20 | Catalyst 72h | solaparse con 72h antes de AHORA | se activa solo en la ventana 72h-0h previas a resolución | Respuesta main |
+| 2026-05-20 | Stop en USD | % del precio del activo | perdida máxima del trade en USD | Respuesta main |
