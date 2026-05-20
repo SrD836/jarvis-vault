@@ -1,7 +1,7 @@
 ---
 title: "🤖 Agentes JARVIS"
 type: moc
-updated: 2026-05-20T14:30:01
+updated: 2026-05-20T15:30:01
 tags: [moc, agent, jarvis]
 related:
   - "[[../00-MOC]]"
@@ -27,6 +27,7 @@ related:
 | [[auditor]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
 | [[archivist]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
 | [[monitor]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
+| [[designer]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
 
 ## Org chart (Mermaid)
 

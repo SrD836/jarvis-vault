@@ -1,0 +1,106 @@
+{
+  "adapted": {
+    "headline": "Técnico de Soporte IT en formación · Google IT Support Certified · Microsoft 365 & Google Workspace",
+    "summary": "Candidato entry-level con certificación Google IT Support y formación en Microsoft Azure AI, orientado al soporte de usuarios finales y la resolución eficiente de incidencias técnicas. Dominio de Microsoft 365 y Google Workspace en entornos profesionales, con mentalidad analítica y alto interés por la automatización de procesos digitales. Disponible para incorporación inmediata en entorno fintech con equipo distribuido.",
+    "experience": [
+      {
+        "title": "Formación en Soporte de Tecnologías de la Información",
+        "org": "Google – Curso Online",
+        "period": "Completado",
+        "bullets": [
+          "Adquirió competencias en troubleshooting de hardware y software, administración de sistemas operativos y fundamentos de redes.",
+          "Estudió protocolos de soporte técnico de nivel 1, seguridad informática básica y gestión de tickets de incidencias.",
+          "Aplicó metodologías estructuradas de resolución de problemas orientadas al soporte de usuarios finales."
+        ]
+      },
+      {
+        "title": "Formación en Inteligencia Artificial con Microsoft Azure",
+        "org": "Curso Online",
+        "period": "Completado",
+        "bullets": [
+          "Familiarización con servicios cloud de Microsoft Azure aplicados a entornos empresariales.",
+          "Configuración y uso de chatbots y asistentes virtuales para automatización de flujos de trabajo internos."
+        ]
+      },
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 – Julio 2021",
+        "bullets": [
+          "Atendió y resolvió solicitudes de clientes en tiempo real, en entorno de alta demanda y en inglés.",
+          "Gestionó sistemas digitales de cobro y pedidos, garantizando la continuidad operativa del servicio.",
+          "Colaboró con equipos multifuncionales bajo presión, asegurando una experiencia de usuario fluida."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Google IT Support (certificado)",
+      "Microsoft 365",
+      "Google Workspace",
+      "Troubleshooting y resolución de incidencias",
+      "Soporte a usuarios finales",
+      "Herramientas de IA y chatbots empresariales"
+    ],
+    "skills_secondary": [
+      "Microsoft Azure AI",
+      "Excel avanzado",
+      "Ofimática",
+      "Atención al cliente",
+      "Trabajo en equipo",
+      "Gestión y organización",
+      "Mejora de procesos digitales",
+      "Liderazgo",
+      "Inglés profesional (B2)"
+    ],
+    "education": [
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Google – Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "ULPGC",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B2"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reorientado de 'Estudiante de Administración y Finanzas' a perfil IT Helpdesk, priorizando la certificación Google IT Support como credencial más relevante.",
+      "Google IT Support elevado al primer puesto de experiencia como entrada formativa independiente con bullets técnicos específicos (troubleshooting, tickets, sistemas operativos, redes).",
+      "Curso de Microsoft Azure AI añadido como segunda entrada de experiencia formativa para reforzar el stack cloud/IT.",
+      "Experiencia hostelera reformulada con vocabulario de soporte: 'solicitudes', 'resolución', 'sistemas digitales', 'continuidad operativa', en lugar de terminología de restauración.",
+      "'Google IT Support', 'Troubleshooting' y 'Soporte a usuarios finales' promovidos a skills_primary por alineación directa con la oferta.",
+      "Educación reordenada con certificaciones técnicas al inicio para maximizar visibilidad frente a un evaluador de perfil IT.",
+      "Summary redactado con foco en helpdesk entry-level, usuarios finales y entorno fintech distribuido."
+    ],
+    "confidence": 0.67,
+    "target_role": "IT Helpdesk Technician – Sardine",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-20T15:24:02.794Z"
+  },
+  "offer_id": "offer-1-sardine",
+  "offer_title": "IT Helpdesk Technician",
+  "company": "Sardine",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

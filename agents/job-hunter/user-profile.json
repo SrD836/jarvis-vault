@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "updated_at": "2026-05-19T21:49:22.682Z",
+  "updated_at": "2026-05-20T15:39:02.591520+00:00",
   "personal": {
     "full_name": "David González Nuez",
-    "email": "b04h13112c@canariaseducacion.es",
+    "email": "davidgnjunior@gmail.com",
     "phone": "611-411-804",
     "location": "Teror, España",
     "linkedin_url": null,
@@ -56,13 +56,13 @@
     },
     {
       "name": "Inglés",
-      "level": "B2"
+      "level": "B1"
     }
   ],
   "education": [
     {
       "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
-      "institution": "ULPGC",
+      "institution": "IES Felo Monzón Grau-Bassas",
       "year": null
     },
     {

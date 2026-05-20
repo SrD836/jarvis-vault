@@ -1738,3 +1738,57 @@
 2026/05/20 14:55:02 main.go:13: exit_monitor: done
 2026/05/20 15:00:02 main.go:11: exit_monitor: starting one-shot pass
 2026/05/20 15:00:02 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 15:00:03 monitor.go:160: exit_monitor: 0 closed, 46 remaining
+2026/05/20 15:00:03 main.go:13: exit_monitor: done
+2026/05/20 15:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 15:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 15:05:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 15:05:02 main.go:13: exit_monitor: done
+2026/05/20 15:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 15:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 15:10:01 monitor.go:141: exit_monitor: closed Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 22, 2026? (take_profit EARLY) @ 0.0770 src=bestBid liq=$52533: PnL $60.00 (40.00%)
+2026/05/20 15:10:02 monitor.go:160: exit_monitor: 1 closed, 49 remaining
+2026/05/20 15:10:02 main.go:13: exit_monitor: done
+2026/05/20 15:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 15:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 15:15:02 monitor.go:141: exit_monitor: closed Will the price of Bitcoin be above $78,000 on May 20? (stop_loss EARLY) @ 0.0300 src=bestBid liq=$9673: PnL $-46.67 (-80.77%)
+2026/05/20 15:15:02 monitor.go:160: exit_monitor: 1 closed, 48 remaining
+2026/05/20 15:15:02 main.go:13: exit_monitor: done
+2026/05/20 15:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 15:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 15:20:03 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/20 15:20:03 main.go:13: exit_monitor: done
+2026/05/20 15:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 15:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 15:25:01 monitor.go:141: exit_monitor: closed US x Iran permanent peace deal by May 31, 2026? (take_profit EARLY) @ 0.2100 src=bestBid liq=$197541: PnL $28.83 (61.54%)
+2026/05/20 15:25:02 monitor.go:141: exit_monitor: closed US x Iran permanent peace deal by June 30, 2026? (take_profit EARLY) @ 0.4000 src=bestBid liq=$202143: PnL $18.72 (42.86%)
+2026/05/20 15:25:02 monitor.go:160: exit_monitor: 2 closed, 46 remaining
+2026/05/20 15:25:02 main.go:13: exit_monitor: done
+2026/05/20 15:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 15:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 15:30:02 monitor.go:160: exit_monitor: 0 closed, 46 remaining
+2026/05/20 15:30:02 main.go:13: exit_monitor: done
+2026/05/20 15:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 15:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 15:35:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 15:35:02 main.go:13: exit_monitor: done
+2026/05/20 15:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 15:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 15:40:03 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 15:40:03 main.go:13: exit_monitor: done
+2026/05/20 15:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 15:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 15:45:02 monitor.go:141: exit_monitor: closed Will the price of Bitcoin be above $78,000 on May 20? (stop_loss EARLY) @ 0.0070 src=bestBid liq=$21442: PnL $-61.83 (-93.27%)
+2026/05/20 15:45:02 monitor.go:160: exit_monitor: 1 closed, 49 remaining
+2026/05/20 15:45:02 main.go:13: exit_monitor: done
+2026/05/20 15:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 15:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 15:50:03 monitor.go:141: exit_monitor: closed Iran closes its airspace by May 21? (take_profit EARLY) @ 0.0700 src=bestBid liq=$184356: PnL $24.62 (40.00%)
+2026/05/20 15:50:03 monitor.go:160: exit_monitor: 1 closed, 48 remaining
+2026/05/20 15:50:03 main.go:13: exit_monitor: done
+2026/05/20 15:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 15:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 15:55:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/20 15:55:02 main.go:13: exit_monitor: done
+2026/05/20 16:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 16:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%

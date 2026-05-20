@@ -331,3 +331,21 @@
 2026/05/20 14:30:04 executor.go:197: executor: entered [short] Will the price of Bitcoin be above $78,000 on May 20? @ 0.1560 size=$57.78 (open=50/50, bankroll=$2831)
 2026/05/20 14:30:04 executor.go:202: executor: 2 entered, 81 rejected
 2026/05/20 14:30:04 main.go:13: executor: done
+2026/05/20 15:00:05 main.go:11: executor: starting one-shot pass
+2026/05/20 15:00:05 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/20 15:00:05 executor.go:62: executor: quota slots this run: short=31 medium=7 long=7 (of 44 remaining today)
+2026/05/20 15:00:05 executor.go:197: executor: entered [short] Will SC Freiburg win on 2026-05-20? @ 0.1700 size=$64.09 (open=47/50, bankroll=$3140)
+2026/05/20 15:00:05 executor.go:197: executor: entered [short] SC Freiburg vs. Aston Villa FC: Both Teams to Score @ 0.5000 size=$62.81 (open=48/50, bankroll=$3077)
+2026/05/20 15:00:05 executor.go:197: executor: entered [short] Iran closes its airspace by May 21? @ 0.0500 size=$61.55 (open=49/50, bankroll=$3016)
+2026/05/20 15:00:05 executor.go:197: executor: entered [short] US x Iran permanent peace deal by May 22, 2026? @ 0.0690 size=$60.32 (open=50/50, bankroll=$2956)
+2026/05/20 15:00:05 executor.go:202: executor: 4 entered, 79 rejected
+2026/05/20 15:00:05 main.go:13: executor: done
+2026/05/20 15:30:05 main.go:11: executor: starting one-shot pass
+2026/05/20 15:30:05 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/20 15:30:05 executor.go:62: executor: quota slots this run: short=29 medium=7 long=7 (of 41 remaining today)
+2026/05/20 15:30:05 executor.go:197: executor: entered [short] Will the price of Bitcoin be above $78,000 on May 20? @ 0.1040 size=$66.30 (open=47/50, bankroll=$3248)
+2026/05/20 15:30:05 executor.go:197: executor: entered [short] Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 22, 2026? @ 0.0690 size=$64.97 (open=48/50, bankroll=$3184)
+2026/05/20 15:30:05 executor.go:197: executor: entered [short] Will Elon Musk post 260-279 tweets from May 15 to May 22, 2026? @ 0.2100 size=$63.67 (open=49/50, bankroll=$3120)
+2026/05/20 15:30:05 executor.go:197: executor: entered [short] Will Elon Musk post 240-259 tweets from May 15 to May 22, 2026? @ 0.3600 size=$62.40 (open=50/50, bankroll=$3057)
+2026/05/20 15:30:05 executor.go:202: executor: 4 entered, 80 rejected
+2026/05/20 15:30:05 main.go:13: executor: done
