@@ -1,0 +1,86 @@
+{
+  "adapted": {
+    "headline": "Candidato a Entrenador de Modelos IA · Formación en Azure AI & IT Support · Enfoque en Sistemas y Automatización",
+    "summary": "Perfil tecnológico con formación activa en Inteligencia Artificial con Microsoft Azure y Soporte de Tecnologías de la Información (Google IT Support), combinado con un interés demostrado en la automatización de procesos y el uso de herramientas de IA empresariales. Capacidad para evaluar, estructurar y mejorar salidas de sistemas digitales con criterio analítico y atención al detalle. Disponibilidad inmediata para rol remoto de entrenamiento y evaluación de modelos IA.",
+    "experience": [
+      {
+        "title": "Camarero · Cajero · Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 · Julio 2021",
+        "bullets": [
+          "Operó en entorno de alta demanda comunicándose íntegramente en inglés, evaluando y priorizando solicitudes en tiempo real.",
+          "Aplicó criterios de calidad de servicio y resolución ágil de incidencias, garantizando estándares operativos del establecimiento.",
+          "Coordinó con equipo multicultural la gestión de pedidos y recepción, desarrollando habilidades de trabajo estructurado bajo presión."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Inteligencia Artificial con Microsoft Azure",
+      "Herramientas de IA y chatbots empresariales",
+      "Google IT Support (soporte y sistemas TI)",
+      "Evaluación y control de calidad de procesos digitales",
+      "Resolución de problemas",
+      "Automatización de tareas y flujos de trabajo"
+    ],
+    "skills_secondary": [
+      "Excel avanzado",
+      "Microsoft 365",
+      "Google Workspace",
+      "Gestión de datos y hojas automatizadas",
+      "Ofimática avanzada",
+      "Atención al cliente",
+      "Liderazgo y trabajo en equipo",
+      "Gestión de correo y clasificación de información"
+    ],
+    "education": [
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reenfocado al rol 'Entrenador de Modelos IA', eliminando el foco en Administración y Finanzas como identidad principal.",
+      "Curso de IA con Microsoft Azure ascendido al primer lugar en educación para maximizar visibilidad frente al evaluador.",
+      "Google IT Support promovido a skill primaria por su relevancia directa en conocimiento de sistemas e infraestructura TI.",
+      "Skills_primary reordenados: IA, chatbots y IT Support pasan al frente; Excel y ofimática bajan a secondary.",
+      "Bullets de experiencia reformulados para enfatizar evaluación de calidad, criterio operativo e inglés funcional en lugar de tareas específicas de hostelería.",
+      "Summary añadido para conectar el perfil con tareas típicas de AI Model Trainer: evaluación de outputs, feedback estructurado y atención al detalle.",
+      "ADVERTENCIA DE GAP: El componente 'Backend Systems' del rol (APIs, bases de datos, arquitectura de servidores, código) no está cubierto en el CV original. El candidato cubre el componente 'IA' pero carece de experiencia en desarrollo backend. Confidence reducida en consecuencia; se recomienda que el candidato destaque disposición de aprendizaje y su base en IT Support/Azure AI en carta de motivación."
+    ],
+    "confidence": 0.41,
+    "target_role": "Backend Systems AI Model Trainer",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-20T19:11:48.932Z"
+  },
+  "offer_id": "offer-9-chatgpt-jobs",
+  "offer_title": "Backend Systems AI Model Trainer (Remote)",
+  "company": "ChatGPT Jobs",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

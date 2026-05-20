@@ -1,7 +1,7 @@
 ---
 title: "🤖 Agentes JARVIS"
 type: moc
-updated: 2026-05-20T18:30:02
+updated: 2026-05-20T19:30:01
 tags: [moc, agent, jarvis]
 related:
   - "[[../00-MOC]]"
@@ -28,6 +28,7 @@ related:
 | [[archivist]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
 | [[monitor]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
 | [[designer]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
+| [[job-hunter]] | orchestrator | `anthropic/claude-sonnet-4-6` | researcher, documenter, archivist | — |
 
 ## Org chart (Mermaid)
 
@@ -47,6 +48,9 @@ graph TD
   planner -.allowed.-> archivist
   planner -.allowed.-> monitor
   planner -.allowed.-> job-hunter
+  job-hunter -.allowed.-> researcher
+  job-hunter -.allowed.-> documenter
+  job-hunter -.allowed.-> archivist
 ```
 
 Leyenda:

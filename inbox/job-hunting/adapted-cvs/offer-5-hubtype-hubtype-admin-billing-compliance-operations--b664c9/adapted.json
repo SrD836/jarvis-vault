@@ -1,0 +1,86 @@
+{
+  "adapted": {
+    "headline": "Estudiante de Administración y Finanzas | Operaciones Admin & Billing con IA | Microsoft Azure AI",
+    "summary": "Estudiante de CFGS en Administración y Finanzas con dominio de Excel avanzado, Microsoft 365 y Google Workspace, y formación específica en Inteligencia Artificial con Microsoft Azure. Apasionado por la automatización de procesos administrativos y la integración de flujos de trabajo con chatbots empresariales y hojas automatizadas. Perfil organizado y resolutivo, orientado a hacer las operaciones más eficientes mediante herramientas digitales e IA.",
+    "experience": [
+      {
+        "title": "Cajero / Host / Camarero",
+        "org": "The Fallow (Irlanda)",
+        "period": "2021 · verano",
+        "bullets": [
+          "Gestionó cobros y cuadre de caja en entorno de alta rotación, garantizando exactitud en facturación y registro de pagos.",
+          "Atendió clientes íntegramente en inglés, resolviendo incidencias de servicio de forma autónoma y diligente.",
+          "Coordinó tareas con el equipo durante turnos de alta demanda, manteniendo fluidez operativa y distribución eficiente del trabajo."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Excel avanzado",
+      "Microsoft 365",
+      "Google Workspace",
+      "Herramientas de IA y chatbots empresariales",
+      "Microsoft Azure AI",
+      "Resolución de problemas",
+      "Administración y Finanzas"
+    ],
+    "skills_secondary": [
+      "Google IT Support",
+      "Automatización de procesos administrativos",
+      "Control de datos con hojas automatizadas",
+      "Atención al cliente",
+      "Gestión de pedidos",
+      "Liderazgo y trabajo en equipo",
+      "Ofimática avanzada"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados, sin completar)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline ajustado para centrar el perfil en Operaciones Admin & Billing y el diferencial de IA, alineado con la naturaleza AI-native de Hubtype.",
+      "Resumen profesional redactado desde cero orientado a operaciones administrativas, facturación y automatización con IA, incorporando palabras clave del JD.",
+      "Microsoft Azure AI promovido de educación a skills_primary por ser diferencial directo en una empresa AI-native.",
+      "Bullet de experiencia como cajero reformulado para enfatizar gestión de cobros y cuadre de facturación, directamente relevante para la función de Billing.",
+      "'Automatización de procesos administrativos' y 'Control de datos con hojas automatizadas' añadidos a skills_secondary como reformulación directa del texto del CV original ('automatizar tareas rutinarias', 'control de datos mediante hojas automatizadas'), sin inventar habilidades.",
+      "Grado en Economía reposicionado al final de educación por ser incompleto y menor relevancia frente al CFGS en curso.",
+      "Confidence moderada (0.60): el CFGS en Administración y Finanzas y el interés/formación en IA son afines a la oferta; el gap principal es la ausencia de experiencia formal en billing/compliance y el nivel 'Manager' del rol, que implica seniority que el candidato aún no tiene."
+    ],
+    "confidence": 0.6,
+    "target_role": "Admin, Billing & Compliance Operations Manager (AI-Native)",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-20T19:09:24.101Z"
+  },
+  "offer_id": "offer-5-hubtype",
+  "offer_title": "Admin, Billing & Compliance Operations Manager (AI-Native)",
+  "company": "Hubtype",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

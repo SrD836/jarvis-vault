@@ -1,43 +1,31 @@
 ---
 title: "job-hunter"
 type: agent
-role: worker
+role: orchestrator
 agent_id: job-hunter
 workspace: /home/node/.openclaw/workspace/agents/job-hunter
-model_primary: deepseek/deepseek-chat
+model_primary: anthropic/claude-sonnet-4-6
 delegation_mode: suggest
 allow_agents: [researcher, documenter, archivist]
 runtime_children: []
-updated: 2026-05-16T19:15:07
-tags: [agent, jarvis, worker, career]
+updated: 2026-05-20T19:30:01
+tags: [agent, jarvis, orchestrator]
 related:
   - "[[../00-MOC]]"
   - "[[index]]"
 ---
 
-# 🎯 job-hunter
+# 🤖 job-hunter
 
-**Rol:** worker
+**Rol:** orchestrator
 **Modelo:** `anthropic/claude-sonnet-4-6`
 **Workspace:** `/home/node/.openclaw/workspace/agents/job-hunter`
-
-## Misión
-
-Encontrar y filtrar ofertas de empleo alineadas con el perfil de David (ver `workspace/USER.md`). Primero intenta vía Indeed MCP; si falla, cae a WebFetch sobre listings públicos (LinkedIn jobs URL público, Indeed web, InfoJobs, Tecnoempleo). Persiste resultados en `vault/inbox/job-hunting/<fecha>-<query>.md` con metadata estructurada.
 
 ## Política de delegación
 
 - **delegationMode:** `suggest`
-- **allowAgents:** `researcher` (enriquecer empresa), `documenter` (drafting CV/cover letter), `archivist` (persistir tracking en memoria)
-- **Hijos runtime:** _(ninguno aún)_
-
-## Workflow LOOP
-
-1. **ANALIZAR** — leer USER.md, identificar señales del perfil (stack, ubicación, salario objetivo si existe)
-2. **PENSAR** — derivar 3-5 queries diferenciados (e.g., "AI Engineer Madrid", "Backend Go remote", "DevOps Spain")
-3. **EJECUTAR** — Indeed MCP en paralelo; si retorna <5 resultados o falla, fallback WebFetch
-4. **REVISAR** — filtrar por match con perfil (stack overlap, ubicación, fecha publicación <30 días)
-5. **DECIDIR** — presentar top 5-10 con URLs aplicación + razón del match. Nunca aplicar automáticamente — David decide.
+- **allowAgents (config):** [[researcher]] [[documenter]] [[archivist]]
+- **Hijos runtime (subagent-registry):** _(ninguno aún)_
 
 ## Sesiones recientes
 
@@ -46,6 +34,8 @@ TABLE date, topic, duration_minutes FROM "02-sessions"
 WHERE agent = "[[agents/job-hunter]]"
 SORT date DESC LIMIT 10
 ```
+
+_(Si no tienes plugin Dataview, mira `02-sessions/` y filtra por frontmatter `agent: "[[agents/job-hunter]]"`.)_
 
 ## Human notes
 
@@ -102,3 +92,23 @@ Reglas obligatorias en este flujo:
    ```
 
 _(Espacio para notas manuales de David. Cron NO sobreescribe este bloque.)_
+
+### Directiva permanente: excluir ATS externos (2026-05-20)
+Cuando el resultado de un scrape devuelve una URL LinkedIn cuya descripción
+indica que la solicitud se hace en un portal externo (Workable, Greenhouse,
+Lever, Ashby, BambooHR, SmartRecruiters, Jobvite, iCIMS, Recruitee, Personio,
+Teamtailor) DESCARTAR la oferta del listado final. Estos jobs no tienen Easy
+Apply nativo y consumen tiempo del usuario sin posibilidad de auto-apply.
+
+La lista canónica vive en `vault/projects/job-hunt/config.json` bajo
+`filters.excluded_ats`. Honorar siempre esa lista; si añado entradas, leerlas
+en la siguiente ejecución sin pedir confirmación.
+
+Señales para detectar redirección ATS:
+- URL del botón "Solicitar" apunta a uno de los dominios listados
+- Descripción de la oferta menciona "apply via [ATS]" o "complete application on [ATS]"
+- Hay un disclaimer "Solicitud con [ATS]" en el modal de LinkedIn
+
+Si dudas, marcar la oferta y dejarla — el dashboard tiene un filtro
+secundario que la atrapará. Pero priorizar la exclusión en origen.
+

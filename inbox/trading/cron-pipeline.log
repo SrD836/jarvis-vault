@@ -384,3 +384,14 @@
 2026/05/20 18:30:04 executor.go:197: executor: entered [medium] Israel closes its airspace by May 24? @ 0.1600 size=$61.84 (open=50/50, bankroll=$3030)
 2026/05/20 18:30:04 executor.go:202: executor: 2 entered, 88 rejected
 2026/05/20 18:30:04 main.go:13: executor: done
+2026/05/20 19:00:03 main.go:11: executor: starting one-shot pass
+2026/05/20 19:00:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/20 19:00:03 executor.go:62: executor: quota slots this run: short=25 medium=6 long=6 (of 35 remaining today)
+2026/05/20 19:00:03 executor.go:202: executor: 0 entered, 93 rejected
+2026/05/20 19:00:03 main.go:13: executor: done
+2026/05/20 19:30:04 main.go:11: executor: starting one-shot pass
+2026/05/20 19:30:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/20 19:30:04 executor.go:62: executor: quota slots this run: short=26 medium=6 long=6 (of 36 remaining today)
+2026/05/20 19:30:04 executor.go:197: executor: entered [short] Will Al Ahli Saudi Club win on 2026-05-21? @ 0.9500 size=$62.39 (open=50/50, bankroll=$3057)
+2026/05/20 19:30:04 executor.go:202: executor: 1 entered, 89 rejected
+2026/05/20 19:30:04 main.go:13: executor: done

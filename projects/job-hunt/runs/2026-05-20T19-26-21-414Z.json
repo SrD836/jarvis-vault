@@ -1,0 +1,60 @@
+{
+  "run_id": "trabajo-1779305181414",
+  "started_at": "2026-05-20T19:26:21.414Z",
+  "config": {
+    "profile": {
+      "sobre_mi": "David González Nuez, 21 años, Teror (Gran Canaria, España). Bilingüe español/inglés (nivel alto). Operador de sistemas multi-agente IA (proyecto JARVIS sobre VPS Hetzner). Certificaciones: Google IT Support Professional (May 2025) + Microsoft Azure AI-900 Specialization (Oct 2025). En curso: CFGS Administración y Finanzas (ULPGC). Stack: Excel avanzado, Microsoft 365, Google Workspace, Docker básico, scripting bash, configs JSON/YAML, APIs IA (OpenAI, Anthropic, DeepSeek), Obsidian, prompt engineering. Sin experiencia laboral formal extensa pero capacidad demostrada de asumir tareas técnicas complejas usando IA como copiloto.",
+      "que_busco": "Prioridades por bucket:\n1. AI training / annotation / RLHF (Outlier, Mercor, Scale AI, DataAnnotation, Invisible, Toloka, Surge, Remotasks)\n2. Freelance técnico (Upwork, Malt, Workana): Excel automation, prompt engineering, asistente virtual técnico\n3. Contrato remoto junior: IT Support tier 1/2, customer success técnico, cloud support Azure, AI ops junior\n4. B2B PYMEs España (especial Canarias) para automatización IA / chatbots / agentes\n\nNO aplicar automáticamente — solo investigar y reportar. David decide."
+    },
+    "filters": {
+      "ubicacion": "Spain",
+      "modalidad": [
+        "remoto",
+        "hibrido"
+      ],
+      "fuentes": [
+        "linkedin",
+        "indeed",
+        "infojobs",
+        "tecnoempleo"
+      ],
+      "keywords": "auxiliar administrativo, asistente administrativo, becario administrativo, prácticas administración, helpdesk junior, técnico soporte usuario, soporte IT nivel 1, mesa de ayuda, atención al cliente call center, back office, gestor administrativo junior, recepción y administración, data entry, captura de datos, operador administrativo, contable junior, auxiliar contable, soporte ofimático, becario IT helpdesk",
+      "exclusiones": "presencial, senior, requiere visa US, requiere alemán, requiere holandés, workable, greenhouse, lever, ashby, bamboohr, smartrecruiters, jobvite, icims, recruitee, personio, teamtailor, redirect to external portal, outlier, mercor, scale ai, dataannotation, invisible, toloka, surge, remotasks, ai trainer, ai annotator, rlhf trainer",
+      "posted_within_days": 30,
+      "num_results": 10,
+      "excluded_ats": [
+        "workable.com",
+        "greenhouse.io",
+        "lever.co",
+        "ashbyhq.com",
+        "bamboohr.com",
+        "smartrecruiters.com",
+        "jobvite.com",
+        "icims.com",
+        "recruitee.com",
+        "personio.com",
+        "teamtailor.com",
+        "wellfound.com",
+        "remoterocketship.com"
+      ]
+    },
+    "attachments": {
+      "cv": "cv.pdf",
+      "certifications": [
+        "Certificado_Santander.pdf",
+        "certificate-elements-of-ai-es.png",
+        "Coursera_5CVZJ3TSGW7G.pdf",
+        "Coursera_5K1ICKCKI57G.pdf",
+        "Coursera_8849WECF2DP7.pdf",
+        "Coursera_AFM8G220SV0T.pdf",
+        "Coursera_F1A8C8ZVZ3GA.pdf",
+        "Coursera_GUNPUCG5I2CZ.pdf",
+        "Coursera_O3C1CO6A1IWO.pdf",
+        "Coursera_ZA3DQ4339R30.pdf",
+        "Coursera_ZUHG5GID0ERO.pdf",
+        "Evaluaci__n_final.pdf"
+      ]
+    }
+  },
+  "brief": "## Filtros estructurados\n\nEsta búsqueda viene del UI Trabajo del dashboard. USA los filtros literalmente, NO derives queries propios del USER.md.\n\n### Profile\n\n**Sobre mí:**\nDavid González Nuez, 21 años, Teror (Gran Canaria, España). Bilingüe español/inglés (nivel alto). Operador de sistemas multi-agente IA (proyecto JARVIS sobre VPS Hetzner). Certificaciones: Google IT Support Professional (May 2025) + Microsoft Azure AI-900 Specialization (Oct 2025). En curso: CFGS Administración y Finanzas (ULPGC). Stack: Excel avanzado, Microsoft 365, Google Workspace, Docker básico, scripting bash, configs JSON/YAML, APIs IA (OpenAI, Anthropic, DeepSeek), Obsidian, prompt engineering. Sin experiencia laboral formal extensa pero capacidad demostrada de asumir tareas técnicas complejas usando IA como copiloto.\n\n**Qué busco:**\nPrioridades por bucket:\n1. AI training / annotation / RLHF (Outlier, Mercor, Scale AI, DataAnnotation, Invisible, Toloka, Surge, Remotasks)\n2. Freelance técnico (Upwork, Malt, Workana): Excel automation, prompt engineering, asistente virtual técnico\n3. Contrato remoto junior: IT Support tier 1/2, customer success técnico, cloud support Azure, AI ops junior\n4. B2B PYMEs España (especial Canarias) para automatización IA / chatbots / agentes\n\nNO aplicar automáticamente — solo investigar y reportar. David decide.\n\n### Filters\n\n- Ubicación: Spain\n- Modalidad: remoto, hibrido\n- Fuentes (OBLIGATORIO solo estas, NO usar otras): linkedin, indeed, infojobs, tecnoempleo\n- Keywords: auxiliar administrativo, asistente administrativo, becario administrativo, prácticas administración, helpdesk junior, técnico soporte usuario, soporte IT nivel 1, mesa de ayuda, atención al cliente call center, back office, gestor administrativo junior, recepción y administración, data entry, captura de datos, operador administrativo, contable junior, auxiliar contable, soporte ofimático, becario IT helpdesk\n- Exclusiones: presencial, senior, requiere visa US, requiere alemán, requiere holandés, workable, greenhouse, lever, ashby, bamboohr, smartrecruiters, jobvite, icims, recruitee, personio, teamtailor, redirect to external portal, outlier, mercor, scale ai, dataannotation, invisible, toloka, surge, remotasks, ai trainer, ai annotator, rlhf trainer\n- Publicadas en últimos N días: 30\n- Número de ofertas objetivo: 10\n\n### EXCLUYE estas ofertas (ya analizadas en runs previos)\n\nNO devuelvas ninguna oferta que coincida con estas URLs o títulos. Si encuentras alguna repetida, sáltala y busca otra hasta cumplir el número objetivo.\n\n- https://www.linkedin.com/jobs/view/it-helpdesk-technician-at-sardine-4416298154\n- https://es.linkedin.com/jobs/view/virtual-assistant-work-from-home-at-persona-4415496511\n- https://es.linkedin.com/jobs/view/customer-support-specialist-english-speaking-at-holafly-4413827653\n- https://www.linkedin.com/jobs/view/technical-customer-success-manager-at-hubtype-4413940402\n- https://es.linkedin.com/jobs/view/admin-billing-compliance-operations-manager-ai-native-at-hubtype-4414512090\n- https://www.linkedin.com/jobs/view/data-science-consultant-ai-trainer-at-dataannotation-4391915440\n- https://www.linkedin.com/jobs/view/technical-consultant-ai-trainer-at-dataannotation-4397407179\n- https://www.linkedin.com/jobs/view/english-u-s-native-ai-trainer-evaluator-remote-hourly-contractor-at-cntxt-ai-4410479195\n- https://www.linkedin.com/jobs/view/backend-systems-ai-model-trainer-remote-at-chatgpt-jobs-4401928748\n- https://www.linkedin.com/jobs/view/junior-account-executive-%E2%80%93-ai-agents-remote-at-process-street-4403795965\n\n### Attachments\n- CV: /home/agent/agent-stack/vault/attachments/trabajo/cv.pdf\n- Certificación: /home/agent/agent-stack/vault/attachments/trabajo/Certificado_Santander.pdf\n- Certificación: /home/agent/agent-stack/vault/attachments/trabajo/certificate-elements-of-ai-es.png\n- Certificación: /home/agent/agent-stack/vault/attachments/trabajo/Coursera_5CVZJ3TSGW7G.pdf\n- Certificación: /home/agent/agent-stack/vault/attachments/trabajo/Coursera_5K1ICKCKI57G.pdf\n- Certificación: /home/agent/agent-stack/vault/attachments/trabajo/Coursera_8849WECF2DP7.pdf\n- Certificación: /home/agent/agent-stack/vault/attachments/trabajo/Coursera_AFM8G220SV0T.pdf\n- Certificación: /home/agent/agent-stack/vault/attachments/trabajo/Coursera_F1A8C8ZVZ3GA.pdf\n- Certificación: /home/agent/agent-stack/vault/attachments/trabajo/Coursera_GUNPUCG5I2CZ.pdf\n- Certificación: /home/agent/agent-stack/vault/attachments/trabajo/Coursera_O3C1CO6A1IWO.pdf\n- Certificación: /home/agent/agent-stack/vault/attachments/trabajo/Coursera_ZA3DQ4339R30.pdf\n- Certificación: /home/agent/agent-stack/vault/attachments/trabajo/Coursera_ZUHG5GID0ERO.pdf\n- Certificación: /home/agent/agent-stack/vault/attachments/trabajo/Evaluaci__n_final.pdf\n\n### Output esperado\n\n1. Busca en LAS fuentes listadas (estrictamente, ignora otras).\n2. Filtra por publicación ≤ 30 días.\n3. Devuelve EXACTAMENTE 10 ofertas con formato `## N. Título @ Empresa` + bullets Modalidad/Ubicación/Publicado/Descripción/Match/Link.\n4. Persiste en `/home/agent/agent-stack/vault/inbox/job-hunting/<YYYY-MM-DD>-trabajo-<unix_ts>.md` con frontmatter `source: ui_trabajo`, `run_id: trabajo-<ts>`.\n5. Si <10 resultados disponibles, reporta shortfall claramente — NO rellenar con otras fuentes.\n\nNO escribas memory.md en este flujo. Config completo ya vive en projects/job-hunt/config.json."
+}

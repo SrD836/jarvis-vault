@@ -1939,3 +1939,53 @@
 2026/05/20 18:55:03 main.go:13: exit_monitor: done
 2026/05/20 19:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/20 19:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 19:00:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 19:00:02 main.go:13: exit_monitor: done
+2026/05/20 19:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 19:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 19:05:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 19:05:02 main.go:13: exit_monitor: done
+2026/05/20 19:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 19:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 19:10:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 19:10:02 main.go:13: exit_monitor: done
+2026/05/20 19:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 19:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 19:15:02 monitor.go:141: exit_monitor: closed Will Elon Musk post 260-279 tweets from May 15 to May 22, 2026? (take_profit EARLY) @ 0.2950 src=bestBid liq=$33866: PnL $25.77 (40.48%)
+2026/05/20 19:15:02 monitor.go:160: exit_monitor: 1 closed, 49 remaining
+2026/05/20 19:15:02 main.go:13: exit_monitor: done
+2026/05/20 19:20:02 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 19:20:02 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 19:20:03 monitor.go:160: exit_monitor: 0 closed, 49 remaining
+2026/05/20 19:20:03 main.go:13: exit_monitor: done
+2026/05/20 19:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 19:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 19:25:02 monitor.go:160: exit_monitor: 0 closed, 49 remaining
+2026/05/20 19:25:02 main.go:13: exit_monitor: done
+2026/05/20 19:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 19:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 19:30:03 monitor.go:160: exit_monitor: 0 closed, 49 remaining
+2026/05/20 19:30:03 main.go:13: exit_monitor: done
+2026/05/20 19:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 19:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 19:35:01 monitor.go:141: exit_monitor: closed Will Elon Musk post 280-299 tweets from May 15 to May 22, 2026? (take_profit EARLY) @ 0.0960 src=bestBid liq=$31844: PnL $73.26 (48.84%)
+2026/05/20 19:35:02 monitor.go:160: exit_monitor: 1 closed, 49 remaining
+2026/05/20 19:35:02 main.go:13: exit_monitor: done
+2026/05/20 19:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 19:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 19:40:02 monitor.go:160: exit_monitor: 0 closed, 49 remaining
+2026/05/20 19:40:02 main.go:13: exit_monitor: done
+2026/05/20 19:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 19:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 19:45:02 monitor.go:160: exit_monitor: 0 closed, 49 remaining
+2026/05/20 19:45:02 main.go:13: exit_monitor: done
+2026/05/20 19:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 19:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 19:50:02 monitor.go:160: exit_monitor: 0 closed, 49 remaining
+2026/05/20 19:50:02 main.go:13: exit_monitor: done
+2026/05/20 19:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 19:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 19:55:02 monitor.go:160: exit_monitor: 0 closed, 49 remaining
+2026/05/20 19:55:02 main.go:13: exit_monitor: done
+2026/05/20 20:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 20:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
