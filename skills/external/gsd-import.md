@@ -3,27 +3,20 @@ title: "gsd-import (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-19T03:15:01+00:00
+date: 2026-05-20T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-import
 source_file: SKILL.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/archivist]]"
-  - "[[agents/auditor]]"
-  - "[[agents/main]]"
-  - "[[agents/planner]]"
-  - "[[agents/skill-reviewer]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-19
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `gsd-import` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/gsd-import/`  
-**Mirrored at**: 2026-05-19T03:15:01+00:00
+**Mirrored at**: 2026-05-20T03:15:01+00:00
 
 ## Descripción
 
