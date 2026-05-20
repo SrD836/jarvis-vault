@@ -6,11 +6,18 @@ category: general
 date: 2026-05-20T03:15:01+00:00
 source_path: ~/.claude/skills/llm-council
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/external/gsd-advisor-researcher]]"
+  - "[[agents/researcher]]"
+  - "[[skills/external/caveman]]"
+  - "[[skills/external/grill-me]]"
+  - "[[skills/external/gsd-discuss-phase]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-20
 ---
+
 
 # `llm-council` (external skill)
 
