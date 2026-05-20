@@ -1,5 +1,5 @@
 {
-  "bankroll": 2654.4191541682794,
+  "bankroll": 3204.347645277331,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -30,36 +30,6 @@
       "id": "T-2237157-1779206389814",
       "market_id": "2237157",
       "question": "Will Elon Musk post 280-299 tweets from May 15 to May 22, 2026?",
-      "side": "yes",
-      "size": 150,
-      "size_usd": 0
-    },
-    {
-      "approved_price": 0.169,
-      "category": "uncategorized",
-      "days_to_resolution": 2,
-      "end_date": "2026-05-22T16:00:00Z",
-      "entry_price": 0.169,
-      "entry_timestamp": "2026-05-19T15:59:49Z",
-      "horizon": "short",
-      "id": "T-2237156-1779206389814",
-      "market_id": "2237156",
-      "question": "Will Elon Musk post 260-279 tweets from May 15 to May 22, 2026?",
-      "side": "yes",
-      "size": 150,
-      "size_usd": 0
-    },
-    {
-      "approved_price": 0.2585,
-      "category": "uncategorized",
-      "days_to_resolution": 2,
-      "end_date": "2026-05-22T16:00:00Z",
-      "entry_price": 0.2585,
-      "entry_timestamp": "2026-05-19T15:59:49Z",
-      "horizon": "short",
-      "id": "T-2237155-1779206389814",
-      "market_id": "2237155",
-      "question": "Will Elon Musk post 240-259 tweets from May 15 to May 22, 2026?",
       "side": "yes",
       "size": 150,
       "size_usd": 0
@@ -261,22 +231,6 @@
       "side": "yes",
       "size": 60.9268156,
       "size_usd": 60.9268156
-    },
-    {
-      "approved_price": 0.1,
-      "category": "uncategorized",
-      "days_to_resolution": 11,
-      "end_date": "2026-05-31T00:00:00Z",
-      "entry_price": 0.1,
-      "entry_timestamp": "2026-05-19T17:25:29Z",
-      "horizon": "medium",
-      "id": "T-2111640-1779211529037",
-      "liquidity_usd": 38291.7824,
-      "market_id": "2111640",
-      "question": "US-Iran nuclear deal by May 31?",
-      "side": "yes",
-      "size": 59.70827928800001,
-      "size_usd": 59.70827928800001
     },
     {
       "approved_price": 0.05,
@@ -535,22 +489,6 @@
       "size_usd": 43.67772012955576
     },
     {
-      "approved_price": 0.21,
-      "category": "uncategorized",
-      "days_to_resolution": 1,
-      "end_date": "2026-05-21T00:00:00Z",
-      "entry_price": 0.21,
-      "entry_timestamp": "2026-05-19T19:30:03Z",
-      "horizon": "short",
-      "id": "T-2241872-1779219003841",
-      "liquidity_usd": 70492.5854,
-      "market_id": "2241872",
-      "question": "Iran closes its airspace by May 21?",
-      "side": "yes",
-      "size": 49.186831412020936,
-      "size_usd": 49.186831412020936
-    },
-    {
       "approved_price": 0.38,
       "category": "uncategorized",
       "days_to_resolution": 4,
@@ -711,22 +649,6 @@
       "size_usd": 55.008285899861356
     },
     {
-      "approved_price": 0.219,
-      "category": "uncategorized",
-      "days_to_resolution": 2,
-      "end_date": "2026-05-22T16:00:00Z",
-      "entry_price": 0.219,
-      "entry_timestamp": "2026-05-20T04:30:03Z",
-      "horizon": "short",
-      "id": "T-2237153-1779251403658",
-      "liquidity_usd": 24491.25388,
-      "market_id": "2237153",
-      "question": "Will Elon Musk post 200-219 tweets from May 15 to May 22, 2026?",
-      "side": "yes",
-      "size": 54.132066914094985,
-      "size_usd": 54.132066914094985
-    },
-    {
       "approved_price": 0.764,
       "category": "uncategorized",
       "days_to_resolution": 10,
@@ -773,7 +695,39 @@
       "side": "yes",
       "size": 53.22252311012192,
       "size_usd": 53.22252311012192
+    },
+    {
+      "approved_price": 0.95,
+      "category": "uncategorized",
+      "days_to_resolution": 0,
+      "end_date": "2026-05-20T16:00:00Z",
+      "entry_price": 0.95,
+      "entry_timestamp": "2026-05-20T14:30:04Z",
+      "horizon": "short",
+      "id": "T-2251366-1779287404273",
+      "liquidity_usd": 6676.6402,
+      "market_id": "2251366",
+      "question": "Will the price of Ethereum be above $2,100 on May 20?",
+      "side": "yes",
+      "size": 58.96398308336559,
+      "size_usd": 58.96398308336559
+    },
+    {
+      "approved_price": 0.156,
+      "category": "uncategorized",
+      "days_to_resolution": 0,
+      "end_date": "2026-05-20T16:00:00Z",
+      "entry_price": 0.156,
+      "entry_timestamp": "2026-05-20T14:30:04Z",
+      "horizon": "short",
+      "id": "T-2251419-1779287404273",
+      "liquidity_usd": 66092.1817,
+      "market_id": "2251419",
+      "question": "Will the price of Bitcoin be above $78,000 on May 20?",
+      "side": "yes",
+      "size": 57.78470342169828,
+      "size_usd": 57.78470342169828
     }
   ],
-  "used_exposure": 3279.212898018814
+  "used_exposure": 2932.934406909762
 }

@@ -1,0 +1,86 @@
+{
+  "adapted": {
+    "headline": "Técnico de Soporte IT en formación | Google IT Support Certified | Microsoft 365 & Google Workspace",
+    "summary": "Estudiante de Administración y Finanzas con certificación Google IT Support y formación activa en infraestructura cloud (Microsoft Azure). Experiencia práctica en entornos Microsoft 365 y Google Workspace, con fuerte orientación a la resolución de incidencias y al soporte de usuarios finales. Perfil entry-level orientado a helpdesk en equipos distribuidos y entornos fintech.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow & otros establecimientos",
+        "period": "2021 · verano",
+        "bullets": [
+          "Atendió y resolvió incidencias de clientes en tiempo real, incluyendo comunicación íntegra en inglés en entorno internacional (Irlanda).",
+          "Gestionó sistemas de cobro y gestión de pedidos, garantizando exactitud de datos y continuidad del servicio.",
+          "Colaboró en equipos multidisciplinares bajo presión, distribuyendo tareas y manteniendo tiempos de respuesta."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Soporte IT y resolución de incidencias (Google IT Support)",
+      "Microsoft 365 (administración y soporte de usuario final)",
+      "Google Workspace",
+      "Resolución de problemas técnicos",
+      "Atención al usuario / Customer Support",
+      "Herramientas de IA y chatbots empresariales",
+      "Microsoft Azure (fundamentos cloud)"
+    ],
+    "skills_secondary": [
+      "Excel avanzado",
+      "Ofimática avanzada",
+      "Automatización de procesos",
+      "Gestión de correo electrónico y flujos digitales",
+      "Liderazgo y trabajo en equipo",
+      "Mejora de procesos digitales",
+      "Gestión de datos en hojas automatizadas"
+    ],
+    "education": [
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Google · Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Microsoft · Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "ULPGC",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B2"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reenfocado de 'Estudiante de Administración y Finanzas' a perfil de Soporte IT, destacando la certificación Google IT Support como credencial principal.",
+      "Google IT Support promovido a primer lugar en skills_primary por ser la credencial más directamente alineada con el rol de helpdesk.",
+      "Microsoft Azure reposicionado en skills_primary (antes en secondary) por relevancia en stack moderno de fintech.",
+      "Experiencia en hostelería refrasada para subrayar resolución de incidencias de usuario, comunicación en inglés y gestión de sistemas de cobro en lugar del componente de restauración.",
+      "Summary nuevo construido con palabras clave de la JD: 'infraestructura', 'usuario final', 'helpdesk', 'equipo distribuido', 'fintech'.",
+      "Educación reordenada: certificaciones técnicas (Google IT Support, Azure) aparecen antes que la formación académica formal para priorizar lo más relevante al hiring manager.",
+      "Skills de automatización y chatbots mantenidas en secondary como diferencial para entorno fintech moderno."
+    ],
+    "confidence": 0.62,
+    "target_role": "IT Helpdesk Technician — Sardine",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-20T14:48:34.629Z"
+  },
+  "offer_id": "offer-1-sardine",
+  "offer_title": "IT Helpdesk Technician",
+  "company": "Sardine",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

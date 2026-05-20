@@ -1,0 +1,86 @@
+{
+  "adapted": {
+    "headline": "Técnico de Soporte IT en formación · Google IT Support · Microsoft 365 · Google Workspace",
+    "summary": "Estudiante con certificación en soporte de tecnologías de la información (Google IT Support) y manejo sólido de los entornos corporativos más comunes: Microsoft 365 y Google Workspace. Experiencia en atención directa al usuario, resolución ágil de incidencias y uso de herramientas de IA aplicadas a la gestión. Orientado a entornos remotos y equipos distribuidos, con disponibilidad inmediata.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 · 1 mes",
+        "bullets": [
+          "Atención directa a usuarios (clientes) en entorno de alto ritmo, resolviendo incidencias en tiempo real y gestionando solicitudes en inglés.",
+          "Coordinación con el equipo para garantizar fluidez operativa, priorizando múltiples tareas simultáneas bajo presión.",
+          "Gestión de cobros y pedidos mediante herramientas digitales de punto de venta."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Google IT Support",
+      "Microsoft 365",
+      "Google Workspace",
+      "Resolución de problemas",
+      "Soporte a usuarios finales",
+      "Microsoft Azure (IA aplicada)",
+      "Herramientas de IA y chatbots empresariales"
+    ],
+    "skills_secondary": [
+      "Excel avanzado",
+      "Atención al cliente",
+      "Ofimática",
+      "Automatización de procesos",
+      "Trabajo en equipo",
+      "Gestión documental",
+      "Inglés B2"
+    ],
+    "education": [
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Google · Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Online",
+        "period": null
+      },
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "ULPGC",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B2"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reformulado de 'Estudiante de Administración y Finanzas' a 'Técnico de Soporte IT en formación' para alinear con el rol target.",
+      "Google IT Support y Microsoft Azure promovidos de skills_secondary a skills_primary por ser las credenciales técnicas más relevantes para un rol helpdesk.",
+      "Microsoft 365 y Google Workspace priorizados en primary skills como herramientas centrales de soporte a usuarios finales, término presente en la JD.",
+      "Educación reordenada: los cursos de IT aparecen primero para enfatizar formación técnica directamente relevante al puesto.",
+      "Experiencia en hostelería reenmarcada con énfasis en resolución de incidencias, atención directa y trabajo bajo presión — habilidades transferibles al helpdesk.",
+      "Añadida skill explícita 'Soporte a usuarios finales' derivada del contenido del Google IT Support y del lenguaje de la oferta.",
+      "Summary reescrito con pitch de entry-level IT helpdesk en entorno fintech distribuido y mención a disponibilidad remota."
+    ],
+    "confidence": 0.66,
+    "target_role": "IT Helpdesk Technician · Sardine",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-20T14:49:55.765Z"
+  },
+  "offer_id": "offer-1-sardine",
+  "offer_title": "IT Helpdesk Technician",
+  "company": "Sardine",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

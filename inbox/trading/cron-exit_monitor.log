@@ -1684,3 +1684,57 @@
 2026/05/20 13:55:03 main.go:13: exit_monitor: done
 2026/05/20 14:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/20 14:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 14:00:02 monitor.go:160: exit_monitor: 0 closed, 49 remaining
+2026/05/20 14:00:02 main.go:13: exit_monitor: done
+2026/05/20 14:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 14:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 14:05:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 14:05:02 main.go:13: exit_monitor: done
+2026/05/20 14:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 14:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 14:10:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 14:10:02 main.go:13: exit_monitor: done
+2026/05/20 14:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 14:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 14:15:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 14:15:02 main.go:13: exit_monitor: done
+2026/05/20 14:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 14:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 14:20:03 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 14:20:03 main.go:13: exit_monitor: done
+2026/05/20 14:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 14:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 14:25:01 monitor.go:141: exit_monitor: closed Will Elon Musk post 240-259 tweets from May 15 to May 22, 2026? (take_profit EARLY) @ 0.3660 src=bestBid liq=$41616: PnL $62.38 (41.59%)
+2026/05/20 14:25:02 monitor.go:141: exit_monitor: closed Will the price of Bitcoin be above $78,000 on May 20? (take_profit EARLY) @ 0.1520 src=bestBid liq=$66092: PnL $81.40 (153.33%)
+2026/05/20 14:25:02 monitor.go:160: exit_monitor: 2 closed, 48 remaining
+2026/05/20 14:25:02 main.go:13: exit_monitor: done
+2026/05/20 14:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 14:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 14:30:03 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/20 14:30:03 main.go:13: exit_monitor: done
+2026/05/20 14:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 14:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 14:35:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 14:35:02 main.go:13: exit_monitor: done
+2026/05/20 14:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 14:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 14:40:01 monitor.go:141: exit_monitor: closed Will Elon Musk post 260-279 tweets from May 15 to May 22, 2026? (take_profit EARLY) @ 0.3090 src=bestBid liq=$36778: PnL $124.26 (82.84%)
+2026/05/20 14:40:02 monitor.go:141: exit_monitor: closed US-Iran nuclear deal by May 31? (take_profit EARLY) @ 0.1400 src=bestBid liq=$30683: PnL $23.88 (40.00%)
+2026/05/20 14:40:02 monitor.go:141: exit_monitor: closed Will Elon Musk post 200-219 tweets from May 15 to May 22, 2026? (stop_loss EARLY) @ 0.0230 src=bestBid liq=$33328: PnL $-48.45 (-89.50%)
+2026/05/20 14:40:03 monitor.go:160: exit_monitor: 3 closed, 47 remaining
+2026/05/20 14:40:03 main.go:13: exit_monitor: done
+2026/05/20 14:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 14:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 14:45:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/20 14:45:02 main.go:13: exit_monitor: done
+2026/05/20 14:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 14:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 14:50:02 monitor.go:141: exit_monitor: closed Iran closes its airspace by May 21? (stop_loss EARLY) @ 0.0400 src=bestBid liq=$220948: PnL $-39.82 (-80.95%)
+2026/05/20 14:50:02 monitor.go:160: exit_monitor: 1 closed, 46 remaining
+2026/05/20 14:50:02 main.go:13: exit_monitor: done
+2026/05/20 14:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 14:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 14:55:02 monitor.go:160: exit_monitor: 0 closed, 46 remaining
+2026/05/20 14:55:02 main.go:13: exit_monitor: done
+2026/05/20 15:00:02 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 15:00:02 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
