@@ -1412,3 +1412,32 @@
 2026/05/20 08:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
 2026/05/20 08:20:02 monitor.go:166: exit_monitor: 0 closed, 50 remaining
 2026/05/20 08:20:02 main.go:13: exit_monitor: done
+2026/05/20 08:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 08:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 08:25:02 monitor.go:166: exit_monitor: 0 closed, 50 remaining
+2026/05/20 08:25:02 main.go:13: exit_monitor: done
+2026/05/20 08:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 08:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 08:30:03 monitor.go:166: exit_monitor: 0 closed, 50 remaining
+2026/05/20 08:30:03 main.go:13: exit_monitor: done
+2026/05/20 08:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 08:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 08:35:02 monitor.go:166: exit_monitor: 0 closed, 50 remaining
+2026/05/20 08:35:02 main.go:13: exit_monitor: done
+2026/05/20 08:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 08:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 08:40:02 monitor.go:166: exit_monitor: 0 closed, 50 remaining
+2026/05/20 08:40:02 main.go:13: exit_monitor: done
+2026/05/20 08:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 08:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 08:45:02 monitor.go:140: exit_monitor: closed Will the price of Bitcoin be above $78,000 on May 20? (take_profit EARLY) @ 0.2800 src=bestBid liq=$30412: PnL $35.62 (64.71%)
+2026/05/20 08:45:03 monitor.go:166: exit_monitor: 1 closed, 49 remaining
+2026/05/20 08:45:03 main.go:13: exit_monitor: done
+2026/05/20 08:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 08:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 08:50:02 monitor.go:166: exit_monitor: 0 closed, 49 remaining
+2026/05/20 08:50:02 main.go:13: exit_monitor: done
+2026/05/20 08:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 08:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 08:55:02 monitor.go:160: exit_monitor: 0 closed, 49 remaining
+2026/05/20 08:55:02 main.go:13: exit_monitor: done

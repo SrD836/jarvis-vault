@@ -45,6 +45,7 @@ type ClosedTrade struct {
 	EndDate         string                   `json:"end_date,omitempty"`
 	ExitPriceSource string                   `json:"exit_price_source,omitempty"`
 	LiquidityUSD    float64                  `json:"liquidity_usd,omitempty"`
+	Horizon         string                   `json:"horizon,omitempty"`
 }
 
 // MarketPrice from Gamma API GET /markets/{id}. Gamma a veces deja currentPrice vacío,

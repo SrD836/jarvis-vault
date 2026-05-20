@@ -15,6 +15,7 @@ import (
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/decisionlog"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/llmclient"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/memory"
+	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/softrules"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/research"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/rules"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/types"
@@ -296,6 +297,7 @@ func Run() error {
 		return fmt.Errorf("write blocked: %w", err)
 	}
 
+	softrules.GenerateAndAppend(memoryPath)
 	log.Printf("Brain v3 done: %d approved, %d blocked (P0=%d P2=%d P3=%d P4=%d V1=%d V2=%d V4=%d M1=%d N1=%d N2=%d LLM=%d) horizons in approved: short=%d medium=%d long=%d",
 		len(approved), len(blocked),
 		stats.P0, stats.P2, stats.P3, stats.P4, stats.V1, stats.V2, stats.V4, stats.M1, stats.N1, stats.N2, stats.LLM,

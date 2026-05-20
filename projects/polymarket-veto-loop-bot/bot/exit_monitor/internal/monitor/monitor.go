@@ -131,6 +131,7 @@ func Run() {
 			EndDate:         a.EndDate,
 			ExitPriceSource: priceSrc,
 			LiquidityUSD:    quote.LiquidityUSD,
+			Horizon:         a.Horizon,
 		}
 		closed = append(closed, ct)
 		earlyTag := ""
@@ -139,14 +140,7 @@ func Run() {
 		}
 		log.Printf("exit_monitor: closed %s (%s%s) @ %.4f src=%s liq=$%.0f: PnL $%.2f (%.2f%%)", a.Question, reason, earlyTag, price, priceSrc, quote.LiquidityUSD, ct.Pnl, ct.PnlPct)
 
-		if pnlR < 0 {
-			loglosses.LogLoss(
-				decisionsDir, memoryPath,
-				ct.ID, ct.Slug, ct.Question, ct.Category,
-				ct.EntryPrice, ct.ExitPrice, ct.Size, ct.Pnl,
-				ct.EntryTime, ct.ExitTime, ct.Reason,
-			)
-		}
+		loglosses.LogClose(decisionsDir, memoryPath, ct)
 
 		// v4: attribute outcome to every source that informed the decision.
 		if err := appendSourceStats(ct); err != nil {
