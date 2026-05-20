@@ -12,9 +12,16 @@ duration_ms: 8968
 iterations: 1
 aborted: false
 spawned_children:[]
-related:[]
+related:
+  - "[[02-sessions/2026-05-19/203049-hola-job-hunter-prueba-inicial-del-chat-embebido]]"
+  - "[[agents/job-hunter]]"
+  - "[[agents/main]]"
+  - "[[agents/polymarket-bot]]"
+  - "[[projects/trabajo/project]]"
 tags: ["sesion", "main"]
+# auto-linked 2026-05-20
 ---
+
 ## TL;DR
 Hola job-hunter, prueba inicial del chat embebido → Hola David. Chat embebido funcionando — te recibo. Soy `main` (orquestador), no `job-hunter` directamente. Si quieres activar el worker `job…
 ## Prompt usuario

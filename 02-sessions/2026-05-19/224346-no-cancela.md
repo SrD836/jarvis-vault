@@ -12,9 +12,16 @@ duration_ms: 7594
 iterations: 1
 aborted: false
 spawned_children:[]
-related:[]
+related:
+  - "[[02-sessions/2026-05-19/225406-no-cancela]]"
+  - "[[02-sessions/2026-05-19/232620-no-cancela]]"
+  - "[[03-decisions/2026-05-19-polymarket-loss-t-789540-1779231604302]]"
+  - "[[agents/archivist]]"
+  - "[[agents/main]]"
 tags: ["sesion", "main"]
+# auto-linked 2026-05-20
 ---
+
 ## TL;DR
 no, cancela → Entendido.
 ## Prompt usuario

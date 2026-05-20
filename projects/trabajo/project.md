@@ -5,11 +5,17 @@ description: Búsqueda de empleo, adaptación de CV por oferta y aplicación aut
 status: active
 type: project
 created: 2026-05-19
-tags: [trabajo, job-hunt, cv-adapter, linkedin]
 related:
   - "[[agents/job-hunter]]"
   - "[[agents/job-hunter/user-profile]]"
+  - "[[agents/main]]"
+  - "[[projects/trabajo/inbox/cv-adapter]]"
+  - "[[projects/trabajo/inbox/linkedin-questions]]"
+  - "[[projects/trabajo/inbox/user-profile.json]]"
+tags: [trabajo, job-hunt, cv-adapter, linkedin]
+# auto-linked 2026-05-20
 ---
+
 
 # Trabajo
 

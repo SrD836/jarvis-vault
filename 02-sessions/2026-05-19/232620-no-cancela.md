@@ -12,9 +12,16 @@ duration_ms: 16273
 iterations: 1
 aborted: false
 spawned_children:[]
-related:[]
+related:
+  - "[[02-sessions/2026-05-19/224346-no-cancela]]"
+  - "[[02-sessions/2026-05-19/225406-no-cancela]]"
+  - "[[agents/archivist]]"
+  - "[[agents/main]]"
+  - "[[projects/trabajo/inbox/chat-2026-05-19T23-26-03-767Z-177923]]"
 tags: ["sesion", "main"]
+# auto-linked 2026-05-20
 ---
+
 ## TL;DR
 no, cancela → Cancelado. ¿Qué necesitas?
 ## Prompt usuario

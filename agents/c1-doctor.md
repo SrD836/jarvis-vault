@@ -2,10 +2,17 @@
 title: "C1 Tunnel Doctor"
 type: runbook
 related:
+  - "[[agents/apier]]"
   - "[[agents/c1-doctor]]"
+  - "[[agents/debugger]]"
+  - "[[agents/monitor]]"
   - "[[projects/trabajo-v2]]"
+  - "[[projects/trabajo/project]]"
+  - "[[skills/external/gsd-debug]]"
 tags: [runbook, c1, browser-automation, infra]
+# auto-linked 2026-05-20
 ---
+
 
 # C1 Tunnel — Runbook
 
