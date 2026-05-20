@@ -1539,3 +1539,51 @@
 2026/05/20 10:55:02 main.go:13: exit_monitor: done
 2026/05/20 11:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/20 11:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 11:00:03 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 11:00:03 main.go:13: exit_monitor: done
+2026/05/20 11:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 11:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 11:05:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 11:05:02 main.go:13: exit_monitor: done
+2026/05/20 11:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 11:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 11:10:03 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 11:10:03 main.go:13: exit_monitor: done
+2026/05/20 11:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 11:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 11:15:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 11:15:02 main.go:13: exit_monitor: done
+2026/05/20 11:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 11:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 11:20:03 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 11:20:03 main.go:13: exit_monitor: done
+2026/05/20 11:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 11:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 11:25:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 11:25:02 main.go:13: exit_monitor: done
+2026/05/20 11:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 11:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 11:30:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 11:30:02 main.go:13: exit_monitor: done
+2026/05/20 11:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 11:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 11:35:03 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 11:35:03 main.go:13: exit_monitor: done
+2026/05/20 11:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 11:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 11:40:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 11:40:02 main.go:13: exit_monitor: done
+2026/05/20 11:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 11:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 11:45:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 11:45:02 main.go:13: exit_monitor: done
+2026/05/20 11:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 11:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 11:50:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 11:50:02 main.go:13: exit_monitor: done
+2026/05/20 11:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 11:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 11:55:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 11:55:02 main.go:13: exit_monitor: done
+2026/05/20 12:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 12:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
