@@ -1,0 +1,86 @@
+{
+  "adapted": {
+    "headline": "Estudiante de Administración y Finanzas con enfoque en IA conversacional y soporte técnico al cliente",
+    "summary": "Perfil orientado a la digitalización empresarial y al uso de herramientas de inteligencia artificial y chatbots, con formación activa en Google IT Support y Azure AI. Experiencia directa en atención al cliente en entornos exigentes y en inglés, con capacidad para resolver problemas de forma autónoma y organizada. Busco desarrollarme en un rol técnico de cara al cliente dentro del ecosistema de IA conversacional.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "2021 · verano",
+        "bullets": [
+          "Atendí a clientes en inglés en entorno de alta demanda, gestionando pedidos, incidencias y cobros de forma eficiente.",
+          "Coordiné con el equipo para mantener el flujo de servicio, priorizando la satisfacción del cliente en todo momento.",
+          "Resolví reclamaciones y situaciones imprevistas de forma autónoma, aplicando criterio propio bajo presión."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Herramientas de IA y chatbots empresariales",
+      "Inteligencia Artificial con Microsoft Azure",
+      "Soporte de Tecnologías de la Información (Google IT Support)",
+      "Atención y soporte al cliente",
+      "Resolución de problemas técnicos",
+      "Comunicación en inglés",
+      "Microsoft 365 y Google Workspace"
+    ],
+    "skills_secondary": [
+      "Excel avanzado",
+      "Automatización de procesos",
+      "Gestión de correo electrónico y flujos de trabajo",
+      "Ofimática avanzada",
+      "Liderazgo y trabajo en equipo",
+      "Gestión de pedidos e incidencias",
+      "Mejora de procesos digitales",
+      "Capacidad organizativa"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Formación online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Formación online",
+        "period": null
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reorientado de 'Estudiante de Administración y Finanzas' a perfil con énfasis en IA conversacional y soporte técnico al cliente, alineado con la oferta de Hubtype.",
+      "Promovidos 'Herramientas de IA y chatbots empresariales', 'Microsoft Azure AI' y 'Google IT Support' a skills_primary por ser directamente relevantes al producto y rol de la oferta.",
+      "La experiencia en hostelería se reformuló con foco en resolución de incidencias, comunicación en inglés y satisfacción del cliente, mapeando los requisitos soft del rol CSM.",
+      "Se añadió un summary narrativo que conecta la formación técnica en IA con el contexto de plataforma conversacional de Hubtype.",
+      "Los cursos de Azure AI y Google IT Support se reordenaron primeros en educación para maximizar visibilidad ante un perfil técnico.",
+      "Confidence moderada-baja: el candidato no tiene experiencia formal en roles tech o SaaS. El nivel de inglés (B1) puede ser limitante para un CSM internacional. La adaptación maximiza lo disponible pero el gap real es significativo."
+    ],
+    "confidence": 0.52,
+    "target_role": "Technical Customer Success Manager — Hubtype",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-20T18:06:07.311Z"
+  },
+  "offer_id": "offer-4-hubtype",
+  "offer_title": "Technical Customer Success Manager",
+  "company": "Hubtype",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

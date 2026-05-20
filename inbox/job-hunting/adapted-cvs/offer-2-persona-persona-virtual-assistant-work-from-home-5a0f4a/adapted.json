@@ -1,0 +1,98 @@
+{
+  "adapted": {
+    "headline": "Asistente Virtual Remoto · Microsoft 365 & Google Workspace · Automatización con IA",
+    "summary": "Estudiante de Administración y Finanzas con dominio avanzado de Microsoft 365, Google Workspace y herramientas de IA, orientado a la gestión eficiente de tareas administrativas en entornos 100% remotos. Capacidad demostrada para organizar información, automatizar flujos de trabajo y atender clientes en inglés. Disponibilidad inmediata y configuración de trabajo remoto desde España.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow",
+        "period": "Junio 2021 · Julio 2021 — Irlanda",
+        "bullets": [
+          "Gestionó solicitudes de clientes internacionales en inglés, priorizando múltiples peticiones simultáneas en entorno de alta demanda.",
+          "Coordinó la recepción y registro de clientes (host), manteniendo organización y fluidez del servicio.",
+          "Realizó cobros en caja y cuadre de cuentas, asegurando precisión en el control de datos al cierre de turno."
+        ]
+      },
+      {
+        "title": "Automatización de Procesos Administrativos (Proyectos Personales)",
+        "org": "Iniciativa propia",
+        "period": "2023 – actualidad",
+        "bullets": [
+          "Diseñó hojas de cálculo automatizadas en Excel para clasificación y control de datos (currículums, registros).",
+          "Exploró y aplicó flujos de automatización de correo electrónico y uso de chatbots empresariales para reducir tareas repetitivas.",
+          "Completó formación en IA con Microsoft Azure, orientando los conocimientos a casos de uso administrativo y de soporte."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft 365 (Word, Excel, Outlook, Teams)",
+      "Google Workspace (Docs, Sheets, Gmail, Meet)",
+      "Excel avanzado y hojas automatizadas",
+      "Herramientas de IA y chatbots empresariales",
+      "Gestión de correo electrónico y calendarios",
+      "Organización y gestión de tareas remotas",
+      "Atención al cliente en inglés"
+    ],
+    "skills_secondary": [
+      "Resolución de problemas",
+      "Mejora de procesos digitales",
+      "Microsoft Azure AI",
+      "Google IT Support",
+      "Ofimática general",
+      "Liderazgo y distribución de tareas",
+      "Trabajo en equipo multicultural",
+      "Gestión de pedidos y registros"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Inteligencia Artificial con Microsoft Azure",
+        "institution": "Formación online",
+        "period": null
+      },
+      {
+        "degree": "Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Formación online",
+        "period": null
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reemplazado de 'Estudiante de Administración y Finanzas' por perfil de Asistente Virtual remoto, incorporando las herramientas más demandadas en la oferta.",
+      "Añadida sección 'Automatización de Procesos Administrativos (Proyectos Personales)' para compensar la escasa experiencia formal; los bullets se basan íntegramente en habilidades e intereses declarados en la sección 'Sobre mí' del CV original, sin inventar roles.",
+      "Skills primarias reordenadas para priorizar herramientas de productividad remota (Microsoft 365, Google Workspace, gestión de correo/calendarios), directamente relevantes para el rol VA.",
+      "'Gestión de correo electrónico y calendarios' y 'Organización y gestión de tareas remotas' promovidas a skills primarias, derivadas del texto 'sobre mí' del CV original.",
+      "Bullets de la experiencia en hostelería reformulados para destacar competencias transferibles al rol VA: atención al cliente en inglés, gestión de múltiples solicitudes simultáneas y control de datos.",
+      "Curso de IA con Microsoft Azure ascendido a segunda posición en educación por su mayor relevancia para la oferta frente a Google IT Support.",
+      "Grado en Economía (incompleto) mantenido pero desplazado al último lugar de educación para no restar foco al CFGS en curso.",
+      "Nivel de inglés indicado como B1 según el perfil estructurado canónico, en lugar de 'nivel alto' del CV original. NOTA: si el candidato tiene acreditación oficial superior a B1, se recomienda incluirla para mejorar la candidatura en clientes globales."
+    ],
+    "confidence": 0.74,
+    "target_role": "Virtual Assistant (Work From Home) — Persona",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-20T18:51:22.888Z"
+  },
+  "offer_id": "offer-2-persona",
+  "offer_title": "Virtual Assistant (Work From Home)",
+  "company": "Persona",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

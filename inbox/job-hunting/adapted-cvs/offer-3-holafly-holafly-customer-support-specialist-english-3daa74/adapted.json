@@ -1,0 +1,89 @@
+{
+  "adapted": {
+    "headline": "Agente de Soporte al Cliente en inglés | Formación en IT Support y herramientas digitales",
+    "summary": "Estudiante de Administración y Finanzas con experiencia directa en atención al cliente en inglés y formación certificada en soporte IT (Google IT Support). Perfil resolutivo, con dominio de herramientas digitales y capacidad para gestionar incidencias con agilidad y empatía. Orientado a entornos digitales y startups tecnológicas.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Jun 2021 – Jul 2021",
+        "bullets": [
+          "Atendí a clientes internacionales en inglés, resolviendo dudas y gestionando pedidos en entorno de alto volumen.",
+          "Coordiné la recepción y distribución de clientes (host), priorizando en todo momento la satisfacción del cliente.",
+          "Operé en caja gestionando cobros con precisión y cuadrando cierres diarios.",
+          "Colaboré con un equipo multicultural, adaptándome con rapidez a protocolos y estándares del establecimiento."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Atención al cliente en inglés",
+      "Resolución de incidencias",
+      "Google IT Support (certificado)",
+      "Resolución de problemas",
+      "Microsoft 365 / Google Workspace",
+      "Herramientas de IA y chatbots empresariales"
+    ],
+    "skills_secondary": [
+      "Excel avanzado",
+      "Microsoft Azure AI",
+      "Ofimática",
+      "Gestión de pedidos",
+      "Trabajo en equipo",
+      "Liderazgo",
+      "Automatización de procesos",
+      "Mejora de procesos digitales"
+    ],
+    "education": [
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Google / Coursera (Online)",
+        "period": null
+      },
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Online",
+        "period": null
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B2"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline ajustado a 'Agente de Soporte al Cliente en inglés' para alinearse directamente con el rol de Customer Support Specialist en Holafly.",
+      "Añadido summary de 3 frases centrado en atención al cliente en inglés y certificación IT, los dos activos más relevantes para la oferta.",
+      "'Atención al cliente en inglés' y 'Resolución de incidencias' promovidas a skills_primary por ser los requisitos centrales del puesto.",
+      "'Google IT Support (certificado)' promovido a skills_primary por su relevancia directa al soporte técnico básico de producto.",
+      "La experiencia en The Fallow (Irlanda) se reformuló con bullets orientados a la atención en inglés, gestión de incidencias y entorno multicultural, en lugar del enfoque genérico de hostelería.",
+      "Educación reordenada: Google IT Support aparece primero por su mayor relevancia al puesto frente al CFGS.",
+      "'Excel avanzado' y 'Liderazgo' movidos a skills_secondary al no ser prioritarios para un rol de soporte al cliente.",
+      "Nivel de inglés asignado como B2: el CV original indica 'nivel alto' (equivalente estándar B2) aunque el perfil estructurado registra B1 — se recomienda verificar y acreditar el nivel antes de enviar.",
+      "Confianza moderada (0.72): la experiencia laboral es breve (1 mes documentado), pero la certificación Google IT Support, el trabajo previo en inglés en Irlanda y el manejo de herramientas digitales compensan el gap."
+    ],
+    "confidence": 0.72,
+    "target_role": "Customer Support Specialist (English) — Holafly",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-20T18:57:13.945Z"
+  },
+  "offer_id": "offer-3-holafly",
+  "offer_title": "Customer Support Specialist (English)",
+  "company": "Holafly",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

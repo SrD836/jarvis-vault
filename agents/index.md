@@ -1,7 +1,7 @@
 ---
 title: "🤖 Agentes JARVIS"
 type: moc
-updated: 2026-05-20T17:30:01
+updated: 2026-05-20T18:30:02
 tags: [moc, agent, jarvis]
 related:
   - "[[../00-MOC]]"

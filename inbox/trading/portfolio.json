@@ -1,6 +1,6 @@
 {
-  "bankroll": 3028.954095580173,
-  "used_exposure": 3153.42795660692,
+  "bankroll": 3029.932742486536,
+  "used_exposure": 3168.219309700557,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -443,22 +443,6 @@
       "liquidity_usd": 102184.022
     },
     {
-      "id": "T-2251416-1779222604158",
-      "market_id": "2251416",
-      "question": "Will the price of Bitcoin be above $76,000 on May 20?",
-      "side": "yes",
-      "entry_price": 0.8,
-      "size": 51.17733417125486,
-      "category": "uncategorized",
-      "entry_timestamp": "2026-05-19T20:30:04Z",
-      "approved_price": 0.8,
-      "days_to_resolution": 0,
-      "horizon": "short",
-      "end_date": "2026-05-20T16:00:00Z",
-      "size_usd": 51.17733417125486,
-      "liquidity_usd": 27345.1574
-    },
-    {
       "id": "T-2227129-1779224404592",
       "market_id": "2227129",
       "question": "Will Manchester United FC win on 2026-05-24?",
@@ -635,22 +619,6 @@
       "liquidity_usd": 90945.681
     },
     {
-      "id": "T-2251366-1779287404273",
-      "market_id": "2251366",
-      "question": "Will the price of Ethereum be above $2,100 on May 20?",
-      "side": "yes",
-      "entry_price": 0.95,
-      "size": 58.96398308336559,
-      "category": "uncategorized",
-      "entry_timestamp": "2026-05-20T14:30:04Z",
-      "approved_price": 0.95,
-      "days_to_resolution": 0,
-      "horizon": "short",
-      "end_date": "2026-05-20T16:00:00Z",
-      "size_usd": 58.96398308336559,
-      "liquidity_usd": 6676.6402
-    },
-    {
       "id": "T-2192104-1779289205006",
       "market_id": "2192104",
       "question": "Will SC Freiburg win on 2026-05-20?",
@@ -793,6 +761,38 @@
       "end_date": "2026-05-23T14:00:00Z",
       "size_usd": 61.81538970571782,
       "liquidity_usd": 13962.69751
+    },
+    {
+      "id": "T-2273922-1779301804949",
+      "market_id": "2273922",
+      "question": "Will Hull City AFC win on 2026-05-23?",
+      "side": "yes",
+      "entry_price": 0.086,
+      "size": 63.09730825669587,
+      "category": "uncategorized",
+      "entry_timestamp": "2026-05-20T18:30:04Z",
+      "approved_price": 0.086,
+      "days_to_resolution": 2,
+      "horizon": "short",
+      "end_date": "2026-05-23T14:00:00Z",
+      "size_usd": 63.09730825669587,
+      "liquidity_usd": 13993.05836
+    },
+    {
+      "id": "T-2296151-1779301804949",
+      "market_id": "2296151",
+      "question": "Israel closes its airspace by May 24?",
+      "side": "yes",
+      "entry_price": 0.16,
+      "size": 61.835362091561954,
+      "category": "uncategorized",
+      "entry_timestamp": "2026-05-20T18:30:04Z",
+      "approved_price": 0.16,
+      "days_to_resolution": 3,
+      "horizon": "medium",
+      "end_date": "2026-05-24T00:00:00Z",
+      "size_usd": 61.835362091561954,
+      "liquidity_usd": 26647.4824
     }
   ]
 }
