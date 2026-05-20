@@ -224,3 +224,15 @@
 2026/05/20 04:30:03 executor.go:197: executor: entered [medium] Trump kiss by May 31? @ 0.7640 size=$53.05 (open=50/50, bankroll=$2599)
 2026/05/20 04:30:03 executor.go:202: executor: 2 entered, 74 rejected
 2026/05/20 04:30:03 main.go:13: executor: done
+2026/05/20 05:00:04 main.go:11: executor: starting one-shot pass
+2026/05/20 05:00:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/20 05:00:04 executor.go:62: executor: quota slots this run: short=32 medium=7 long=7 (of 45 remaining today)
+2026/05/20 05:00:04 executor.go:202: executor: 0 entered, 77 rejected
+2026/05/20 05:00:04 main.go:13: executor: done
+2026/05/20 05:30:03 main.go:11: executor: starting one-shot pass
+2026/05/20 05:30:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/20 05:30:03 executor.go:62: executor: quota slots this run: short=33 medium=8 long=8 (of 47 remaining today)
+2026/05/20 05:30:03 executor.go:197: executor: entered [short] Will the price of Bitcoin be above $78,000 on May 20? @ 0.1700 size=$55.06 (open=49/50, bankroll=$2698)
+2026/05/20 05:30:03 executor.go:197: executor: entered [medium] Will Bitcoin dip to $75,000 in May? @ 0.6300 size=$53.95 (open=50/50, bankroll=$2644)
+2026/05/20 05:30:03 executor.go:202: executor: 2 entered, 75 rejected
+2026/05/20 05:30:03 main.go:13: executor: done

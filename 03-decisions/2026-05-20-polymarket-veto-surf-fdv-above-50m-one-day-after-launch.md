@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — base-fdv-above-12b-one-day-after-launch"
+title: "Polymarket veto — surf-fdv-above-50m-one-day-after-launch"
 type: decision
 date: 2026-05-20
-decision: "Veto de tesis 'Base FDV above $12B one day after launch?' (rule P4_pre_event): pre-event slug + 590 d to resolution (>=7 threshold)"
+decision: "Veto de tesis 'Surf FDV above $50M one day after launch?' (rule P4_pre_event): pre-event slug + 590 d to resolution (>=7 threshold)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,14 +15,14 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Base FDV above $12B one day after launch?
+# Veto: Surf FDV above $50M one day after launch?
 
 ## Mercado
 
-- **Slug**: `base-fdv-above-12b-one-day-after-launch`
+- **Slug**: `surf-fdv-above-50m-one-day-after-launch`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.3200
-- **Volumen 24h**: 78659.61 USD
+- **Precio YES**: 0.7200
+- **Volumen 24h**: 84457.54 USD
 - **End date**: 2028-01-01T05:00:00Z
 
 ## Razón del veto
