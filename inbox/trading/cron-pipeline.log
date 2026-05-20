@@ -185,3 +185,16 @@
 2026/05/20 01:30:03 executor.go:197: executor: entered [short] Will Mirassol FC win on 2026-05-19? @ 0.8300 size=$52.96 (open=50/50, bankroll=$2595)
 2026/05/20 01:30:03 executor.go:202: executor: 1 entered, 80 rejected
 2026/05/20 01:30:03 main.go:13: executor: done
+2026/05/20 02:00:03 main.go:11: executor: starting one-shot pass
+2026/05/20 02:00:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/20 02:00:03 executor.go:62: executor: quota slots this run: short=35 medium=8 long=8 (of 49 remaining today)
+2026/05/20 02:00:03 executor.go:197: executor: entered [short] Will CA Boca Juniors win on 2026-05-19? @ 0.3600 size=$54.32 (open=50/50, bankroll=$2662)
+2026/05/20 02:00:03 executor.go:202: executor: 1 entered, 80 rejected
+2026/05/20 02:00:03 main.go:13: executor: done
+2026/05/20 02:30:03 main.go:11: executor: starting one-shot pass
+2026/05/20 02:30:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/20 02:30:03 executor.go:62: executor: quota slots this run: short=35 medium=8 long=8 (of 49 remaining today)
+2026/05/20 02:30:03 executor.go:197: executor: entered [short] Will CA Boca Juniors win on 2026-05-19? @ 0.1700 size=$55.88 (open=49/50, bankroll=$2738)
+2026/05/20 02:30:03 executor.go:197: executor: entered [short] Will the price of Bitcoin be above $78,000 on May 20? @ 0.1100 size=$54.77 (open=50/50, bankroll=$2684)
+2026/05/20 02:30:03 executor.go:202: executor: 2 entered, 73 rejected
+2026/05/20 02:30:03 main.go:13: executor: done

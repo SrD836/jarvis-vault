@@ -1095,3 +1095,54 @@
 2026/05/20 01:55:02 main.go:13: exit_monitor: done
 2026/05/20 02:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/20 02:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 02:00:02 monitor.go:166: exit_monitor: 0 closed, 49 remaining
+2026/05/20 02:00:02 main.go:13: exit_monitor: done
+2026/05/20 02:05:02 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 02:05:02 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 02:05:03 monitor.go:166: exit_monitor: 0 closed, 50 remaining
+2026/05/20 02:05:03 main.go:13: exit_monitor: done
+2026/05/20 02:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 02:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 02:10:02 monitor.go:166: exit_monitor: 0 closed, 50 remaining
+2026/05/20 02:10:02 main.go:13: exit_monitor: done
+2026/05/20 02:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 02:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 02:15:02 monitor.go:166: exit_monitor: 0 closed, 50 remaining
+2026/05/20 02:15:02 main.go:13: exit_monitor: done
+2026/05/20 02:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 02:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 02:20:02 monitor.go:166: exit_monitor: 0 closed, 50 remaining
+2026/05/20 02:20:02 main.go:13: exit_monitor: done
+2026/05/20 02:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 02:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 02:25:02 monitor.go:140: exit_monitor: closed Will CA Boca Juniors win on 2026-05-19? (take_profit) @ 0.8600 src=bestBid liq=$9186: PnL $75.44 (138.89%)
+2026/05/20 02:25:02 monitor.go:166: exit_monitor: 1 closed, 49 remaining
+2026/05/20 02:25:02 main.go:13: exit_monitor: done
+2026/05/20 02:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 02:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 02:30:03 monitor.go:140: exit_monitor: closed Will São Paulo FC win on 2026-05-19? (stop_loss) @ 0.0300 src=bestBid liq=$12023: PnL $-52.63 (-95.08%)
+2026/05/20 02:30:03 monitor.go:166: exit_monitor: 1 closed, 48 remaining
+2026/05/20 02:30:03 main.go:13: exit_monitor: done
+2026/05/20 02:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 02:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 02:35:02 monitor.go:166: exit_monitor: 0 closed, 50 remaining
+2026/05/20 02:35:02 main.go:13: exit_monitor: done
+2026/05/20 02:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 02:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 02:40:02 monitor.go:166: exit_monitor: 0 closed, 50 remaining
+2026/05/20 02:40:02 main.go:13: exit_monitor: done
+2026/05/20 02:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 02:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 02:45:02 monitor.go:140: exit_monitor: closed Will CA Boca Juniors win on 2026-05-19? (stop_loss) @ 0.0100 src=lastTradePrice_fallback liq=$199740: PnL $-52.60 (-94.12%)
+2026/05/20 02:45:02 monitor.go:166: exit_monitor: 1 closed, 49 remaining
+2026/05/20 02:45:02 main.go:13: exit_monitor: done
+2026/05/20 02:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 02:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 02:50:02 monitor.go:166: exit_monitor: 0 closed, 49 remaining
+2026/05/20 02:50:02 main.go:13: exit_monitor: done
+2026/05/20 02:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 02:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 02:55:02 monitor.go:166: exit_monitor: 0 closed, 49 remaining
+2026/05/20 02:55:02 main.go:13: exit_monitor: done
+2026/05/20 03:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 03:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
