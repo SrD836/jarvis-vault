@@ -410,3 +410,17 @@
 2026/05/20 20:30:04 executor.go:197: executor: entered [medium] Will Brighton & Hove Albion FC win on 2026-05-24? @ 0.5100 size=$63.77 (open=50/50, bankroll=$3125)
 2026/05/20 20:30:04 executor.go:202: executor: 4 entered, 79 rejected
 2026/05/20 20:30:04 main.go:13: executor: done
+2026/05/20 21:00:03 main.go:11: executor: starting one-shot pass
+2026/05/20 21:00:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/20 21:00:03 executor.go:62: executor: quota slots this run: short=26 medium=6 long=6 (of 37 remaining today)
+2026/05/20 21:00:03 executor.go:197: executor: entered [short] Will the price of Bitcoin be above $76,000 on May 21? @ 0.9500 size=$63.05 (open=47/50, bankroll=$3089)
+2026/05/20 21:00:03 executor.go:197: executor: entered [medium] Will West Ham United FC win on 2026-05-24? @ 0.5300 size=$61.79 (open=48/50, bankroll=$3028)
+2026/05/20 21:00:03 executor.go:197: executor: entered [medium] Iran closes its airspace by May 27? @ 0.2400 size=$60.55 (open=49/50, bankroll=$2967)
+2026/05/20 21:00:03 executor.go:197: executor: entered [medium] US-Iran nuclear deal by May 31? @ 0.1500 size=$59.34 (open=50/50, bankroll=$2908)
+2026/05/20 21:00:03 executor.go:202: executor: 4 entered, 76 rejected
+2026/05/20 21:00:03 main.go:13: executor: done
+2026/05/20 21:30:04 main.go:11: executor: starting one-shot pass
+2026/05/20 21:30:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/20 21:30:04 executor.go:62: executor: quota slots this run: short=24 medium=5 long=5 (of 33 remaining today)
+2026/05/20 21:30:04 executor.go:202: executor: 0 entered, 80 rejected
+2026/05/20 21:30:04 main.go:13: executor: done

@@ -2045,3 +2045,52 @@
 2026/05/20 20:55:02 main.go:13: exit_monitor: done
 2026/05/20 21:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/20 21:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 21:00:02 monitor.go:160: exit_monitor: 0 closed, 46 remaining
+2026/05/20 21:00:02 main.go:13: exit_monitor: done
+2026/05/20 21:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 21:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 21:05:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 21:05:02 main.go:13: exit_monitor: done
+2026/05/20 21:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 21:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 21:10:03 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 21:10:03 main.go:13: exit_monitor: done
+2026/05/20 21:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 21:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 21:15:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 21:15:02 main.go:13: exit_monitor: done
+2026/05/20 21:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 21:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 21:20:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 21:20:02 main.go:13: exit_monitor: done
+2026/05/20 21:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 21:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 21:25:03 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 21:25:03 main.go:13: exit_monitor: done
+2026/05/20 21:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 21:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 21:30:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 21:30:02 main.go:13: exit_monitor: done
+2026/05/20 21:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 21:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 21:35:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/20 21:35:02 main.go:13: exit_monitor: done
+2026/05/20 21:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 21:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 21:40:02 monitor.go:141: exit_monitor: closed Will Hull City AFC vs. Southampton FC end in a draw? (market_closed) @ 0.9990 src=bestBid liq=$0: PnL $9.99 (16.16%)
+2026/05/20 21:40:02 monitor.go:160: exit_monitor: 1 closed, 49 remaining
+2026/05/20 21:40:02 main.go:13: exit_monitor: done
+2026/05/20 21:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 21:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 21:45:03 monitor.go:160: exit_monitor: 0 closed, 49 remaining
+2026/05/20 21:45:03 main.go:13: exit_monitor: done
+2026/05/20 21:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 21:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 21:50:02 monitor.go:160: exit_monitor: 0 closed, 49 remaining
+2026/05/20 21:50:02 main.go:13: exit_monitor: done
+2026/05/20 21:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 21:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/20 21:55:01 monitor.go:160: exit_monitor: 0 closed, 49 remaining
+2026/05/20 21:55:01 main.go:13: exit_monitor: done
+2026/05/20 22:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/20 22:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
