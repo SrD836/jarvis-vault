@@ -2441,3 +2441,53 @@
 2026/05/21 04:55:02 main.go:13: exit_monitor: done
 2026/05/21 05:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/21 05:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/21 05:00:03 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/21 05:00:03 main.go:13: exit_monitor: done
+2026/05/21 05:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/21 05:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/21 05:05:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/21 05:05:02 main.go:13: exit_monitor: done
+2026/05/21 05:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/21 05:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/21 05:10:03 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/21 05:10:03 main.go:13: exit_monitor: done
+2026/05/21 05:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/21 05:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/21 05:15:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/21 05:15:02 main.go:13: exit_monitor: done
+2026/05/21 05:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/21 05:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/21 05:20:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/21 05:20:02 main.go:13: exit_monitor: done
+2026/05/21 05:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/21 05:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/21 05:25:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/21 05:25:02 main.go:13: exit_monitor: done
+2026/05/21 05:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/21 05:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/21 05:30:02 monitor.go:141: exit_monitor: closed Will CR Flamengo win on 2026-05-20? (market_closed) @ 0.9990 src=bestBid liq=$0: PnL $3.07 (5.16%)
+2026/05/21 05:30:02 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/21 05:30:02 main.go:13: exit_monitor: done
+2026/05/21 05:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/21 05:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/21 05:35:03 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/21 05:35:03 main.go:13: exit_monitor: done
+2026/05/21 05:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/21 05:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/21 05:40:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/21 05:40:02 main.go:13: exit_monitor: done
+2026/05/21 05:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/21 05:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/21 05:45:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/21 05:45:02 main.go:13: exit_monitor: done
+2026/05/21 05:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/21 05:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/21 05:50:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/21 05:50:02 main.go:13: exit_monitor: done
+2026/05/21 05:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/21 05:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/21 05:55:01 monitor.go:141: exit_monitor: closed Will Elon Musk post 260-279 tweets from May 15 to May 22, 2026? (take_profit EARLY) @ 0.4560 src=bestBid liq=$41849: PnL $26.51 (40.74%)
+2026/05/21 05:55:01 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/21 05:55:01 main.go:13: exit_monitor: done
+2026/05/21 06:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/21 06:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
