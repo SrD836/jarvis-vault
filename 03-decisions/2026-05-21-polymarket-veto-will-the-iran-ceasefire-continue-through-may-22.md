@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-the-iran-ceasefire-continue-through-may-22`
 - **Categoría**: uncategorized
 - **Precio YES**: 0.9400
-- **Volumen 24h**: 314791.38 USD
+- **Volumen 24h**: 318698.24 USD
 - **End date**: 
 
 ## Razón del veto
@@ -34,9 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-the-iran-ceasefire-continue-through-may-22` score=1.00 (exact slug match)
-- veto `will-the-iran-ceasefire-continue-through-may-24` score=0.70 (slug prefix match; same price bucket high)
+- veto `will-the-iran-ceasefire-continue-through-may-31` score=0.50 (slug prefix match)
 - veto `will-the-iran-ceasefire-continue-through-may-21` score=0.50 (slug prefix match)
-- veto `will-the-iran-ceasefire-continue-through-may-20` score=0.50 (slug prefix match)
+- veto `will-the-iran-ceasefire-continue-through-may-24` score=0.50 (slug prefix match)
+- veto `will-the-iran-ceasefire-continue-through-may-27` score=0.50 (slug prefix match)
 
 ## Human notes
 
