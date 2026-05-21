@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — anduril-ipo-before-2027"
+title: "Polymarket veto — surf-fdv-above-50m-one-day-after-launch"
 type: decision
 date: 2026-05-21
-decision: "Veto de tesis 'Anduril IPO before 2027?' (rule P4_pre_event): pre-event slug + 223 d to resolution (>=7 threshold)"
+decision: "Veto de tesis 'Surf FDV above $50M one day after launch?' (rule P4_pre_event): pre-event slug + 589 d to resolution (>=7 threshold)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,21 +15,21 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Anduril IPO before 2027?
+# Veto: Surf FDV above $50M one day after launch?
 
 ## Mercado
 
-- **Slug**: `anduril-ipo-before-2027`
+- **Slug**: `surf-fdv-above-50m-one-day-after-launch`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.1100
-- **Volumen 24h**: 352144.78 USD
-- **End date**: 2026-12-31T00:00:00Z
+- **Precio YES**: 0.7200
+- **Volumen 24h**: 84472.54 USD
+- **End date**: 2028-01-01T05:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `P4_pre_event`
 
-pre-event slug + 223 d to resolution (>=7 threshold)
+pre-event slug + 589 d to resolution (>=7 threshold)
 
 ## Human notes
 
