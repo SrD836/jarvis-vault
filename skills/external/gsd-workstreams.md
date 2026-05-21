@@ -6,11 +6,18 @@ category: general
 date: 2026-05-21T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-workstreams
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/gsd-do]]"
+  - "[[skills/external/gsd-inbox]]"
+  - "[[skills/external/gsd-manager]]"
+  - "[[skills/external/gsd-progress]]"
+  - "[[skills/external/gsd-thread]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-21
 ---
+
 
 # `gsd-workstreams` (external skill)
 

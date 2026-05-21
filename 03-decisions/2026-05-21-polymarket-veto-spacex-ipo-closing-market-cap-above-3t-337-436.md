@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — spacex-ipo-closing-market-cap-above-2t-649-783"
+title: "Polymarket veto — spacex-ipo-closing-market-cap-above-3t-337-436"
 type: decision
 date: 2026-05-21
-decision: "Veto de tesis 'SpaceX IPO closing market cap above $2T?' (rule P4_pre_event): pre-event slug + 588 d to resolution (>=7 threshold)"
+decision: "Veto de tesis 'SpaceX IPO closing market cap above $3T?' (rule P4_pre_event): pre-event slug + 588 d to resolution (>=7 threshold)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,14 +15,14 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: SpaceX IPO closing market cap above $2T?
+# Veto: SpaceX IPO closing market cap above $3T?
 
 ## Mercado
 
-- **Slug**: `spacex-ipo-closing-market-cap-above-2t-649-783`
+- **Slug**: `spacex-ipo-closing-market-cap-above-3t-337-436`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.7100
-- **Volumen 24h**: 59495.76 USD
+- **Precio YES**: 0.2000
+- **Volumen 24h**: 77147.63 USD
 - **End date**: 2027-12-31T00:00:00Z
 
 ## Razón del veto

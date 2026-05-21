@@ -6,11 +6,18 @@ category: general
 date: 2026-05-21T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-list-phase-assumptions
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/external/gsd-assumptions-analyzer]]"
+  - "[[agents/planner]]"
+  - "[[skills/external/gsd-analyze-dependencies]]"
+  - "[[skills/external/gsd-plan-milestone-gaps]]"
+  - "[[skills/external/gsd-validate-phase]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-21
 ---
+
 
 # `gsd-list-phase-assumptions` (external skill)
 
