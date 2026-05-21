@@ -1,15 +1,16 @@
 {
   "version": 1,
-  "updated_at": "2026-05-21T08:43:55.641Z",
+  "updated_at": "2026-05-21T09:31:37.200Z",
   "personal": {
     "full_name": "David González Nuez",
     "email": "davidgnjunior@gmail.com",
-    "phone": "611-411-804",
+    "phone": "611411804",
     "location": "Teror, España",
     "linkedin_url": null,
     "github_url": null,
     "portfolio_url": null,
-    "work_auth": "EU citizen"
+    "work_auth": "EU citizen",
+    "country_code": "España (+34)"
   },
   "preferences": {
     "salary_min_eur_year": 24000,
@@ -143,6 +144,24 @@
       "kind": "select",
       "answer": "no",
       "saved_at": "2026-05-21T08:43:55.641Z"
+    },
+    "35d0c9aa2c": {
+      "label": "Email",
+      "kind": "select",
+      "answer": "davidgnjunior@gmail.com",
+      "saved_at": "2026-05-21T09:31:33.921Z"
+    },
+    "f4aeb94c92": {
+      "label": "Código del país",
+      "kind": "select",
+      "answer": "España (+34)",
+      "saved_at": "2026-05-21T09:11:11.853Z"
+    },
+    "56a06054e5": {
+      "label": "Código del país",
+      "kind": "select",
+      "answer": "España (+34)",
+      "saved_at": "2026-05-21T09:31:37.200Z"
     }
   },
   "extraction_history": [

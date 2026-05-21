@@ -1,0 +1,85 @@
+{
+  "adapted": {
+    "headline": "Técnico de Soporte TI Junior | IA, Chatbots y Atención al Cliente",
+    "summary": "Estudiante de Administración y Finanzas con formación certificada en Soporte de Tecnologías de la Información (Google IT Support) e Inteligencia Artificial con Microsoft Azure. Experiencia práctica en atención al cliente en entornos internacionales y conocimiento de herramientas cloud, chatbots empresariales y Microsoft 365. Perfil orientado a la resolución de problemas técnicos y la mejora de procesos digitales.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "2021 · verano",
+        "bullets": [
+          "Atendió solicitudes e incidencias de clientes en inglés en entorno de alta demanda, resolviendo situaciones en tiempo real.",
+          "Gestionó caja y coordinó pedidos en turnos simultáneos, desarrollando capacidad de priorización y resolución rápida de problemas.",
+          "Trabajó en equipo multidisciplinar bajo presión, demostrando comunicación eficaz y adaptabilidad operativa."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Google IT Support (certificación)",
+      "Resolución de problemas técnicos",
+      "Herramientas de IA y chatbots empresariales",
+      "Microsoft Azure AI",
+      "Atención al cliente",
+      "Microsoft 365 / Google Workspace"
+    ],
+    "skills_secondary": [
+      "Excel avanzado",
+      "Ofimática",
+      "Gestión de incidencias",
+      "Digitalización de procesos",
+      "Automatización de tareas",
+      "Liderazgo y trabajo en equipo",
+      "Google Workspace",
+      "Inglés técnico"
+    ],
+    "education": [
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online (Google)",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline cambiado de 'Estudiante de Administración y Finanzas' a 'Técnico de Soporte TI Junior' para alinearse con el rol target.",
+      "Educación reordenada: Google IT Support y Azure AI aparecen primero para maximizar visibilidad como credenciales técnicas relevantes.",
+      "Google IT Support y Microsoft Azure AI promovidos a skills_primary por ser las certificaciones más directamente aplicables a un puesto de soporte técnico.",
+      "Bullets de experiencia hostelera reformulados para enfatizar resolución de incidencias, atención en inglés y trabajo bajo presión — competencias transferibles al soporte en contact center.",
+      "'Gestión de incidencias' añadido a skills_secondary como keyword del dominio IT Support, inferido del contenido certificado de Google IT Support.",
+      "Confidence reducida a 0.58: el candidato no tiene experiencia directa en Genesys Cloud CX ni en soporte técnico formal; el gap en la plataforma específica es significativo para un rol nombrado explícitamente sobre ella."
+    ],
+    "confidence": 0.58,
+    "target_role": "Soporte Técnico Junior Genesys Cloud CX",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-21T09:09:02.491Z"
+  },
+  "offer_id": "offer-3-ioon",
+  "offer_title": "Soporte Técnico Junior Genesys Cloud CX",
+  "company": "IOON",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}
