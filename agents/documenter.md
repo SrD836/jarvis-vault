@@ -8,7 +8,7 @@ model_primary: anthropic/claude-sonnet-4-6
 delegation_mode: suggest
 allow_agents: []
 runtime_children: []
-updated: 2026-05-20T22:30:01
+updated: 2026-05-20T23:30:01
 tags: [agent, jarvis, worker]
 related:
   - "[[../00-MOC]]"
@@ -79,6 +79,8 @@ Cuando recibas brief "crea página <título>" (o variante: "nueva página", "pá
 5. Si el brief incluye contenido producido por otros agentes (e.g. tabla de ofertas de job-hunter desde `inbox/job-hunting/...`), léelo del path indicado e intégralo en la sección correspondiente.
 6. NO delegues a su vez. Si necesitas datos que aún no existen, devuelve a main con nota `"Página creada, falta integrar output de <agente>. Path destino: vault/pages/<slug>.md, sección <X>"`. Main hará la segunda delegación.
 7. Reporta al main: `"Página <slug> creada en vault/pages/<slug>.md (N secciones, M attachments)"`.
+
+
 
 
 
