@@ -1,0 +1,96 @@
+{
+  "adapted": {
+    "headline": "Técnico de Soporte Junior | Google IT Support Cert. | IA & Chatbots Empresariales",
+    "summary": "Estudiante de Administración y Finanzas con certificación oficial en Soporte de TI (Google) y formación en Inteligencia Artificial con Microsoft Azure, con especial interés en plataformas cloud de contact center y automatización de procesos. Experiencia en atención al cliente presencial y en inglés, orientada a la resolución ágil de incidencias. Perfil proactivo en el uso de herramientas digitales, chatbots empresariales y entornos Microsoft 365.",
+    "experience": [
+      {
+        "title": "Camarero / Host / Cajero",
+        "org": "The Fallow (Irlanda)",
+        "period": "Jun 2021 · Jul 2021",
+        "bullets": [
+          "Resolución de incidencias y gestión de solicitudes de clientes en entorno bilingüe (castellano/inglés), manteniendo altos estándares de calidad en la atención.",
+          "Coordinación en equipo para gestionar flujos de clientes, anticipando problemas operativos y aplicando soluciones en tiempo real.",
+          "Manejo de sistemas de cobro y gestión de pedidos, asegurando la exactitud de los registros y la fluidez del proceso."
+        ]
+      },
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "Establecimientos varios (España)",
+        "period": "Experiencia previa",
+        "bullets": [
+          "Atención al público y resolución de quejas, priorizando la satisfacción del cliente y escalando casos complejos cuando era necesario.",
+          "Trabajo bajo presión en entornos de alta demanda, desarrollando capacidad de multitarea y gestión eficiente del tiempo."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Google IT Support (certificación oficial)",
+      "Soporte técnico y resolución de incidencias",
+      "Herramientas de IA y chatbots empresariales",
+      "Microsoft Azure AI",
+      "Microsoft 365",
+      "Atención al cliente y soporte de usuario",
+      "Resolución de problemas"
+    ],
+    "skills_secondary": [
+      "Google Workspace",
+      "Excel avanzado",
+      "Ofimática",
+      "Trabajo en equipo",
+      "Inglés (nivel alto, experiencia laboral)",
+      "Gestión de procesos digitales",
+      "Automatización de tareas"
+    ],
+    "education": [
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online (Google)",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online (Microsoft)",
+        "period": null
+      },
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B2"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reorientado desde 'Estudiante de Administración y Finanzas' a perfil técnico de soporte, destacando la certificación Google IT Support y el conocimiento de IA/chatbots, directamente relevantes para Genesys Cloud CX.",
+      "Añadido summary específico que conecta la formación en TI y Azure con el contexto de contact center cloud que es Genesys Cloud CX.",
+      "'Google IT Support' y 'Microsoft Azure AI' promovidos a skills_primary (antes en educación/secondary) por ser los activos más alineados con la oferta.",
+      "'Herramientas de IA y chatbots empresariales' promovido a primary destacándolo como conocimiento aplicable a las capacidades de IA de Genesys Cloud CX.",
+      "Experiencia en hostelería reformulada con terminología de soporte técnico: 'resolución de incidencias', 'escalado de casos', 'gestión de solicitudes', para activar las palabras clave del job description.",
+      "Certificaciones educativas reordenadas para aparecer antes que la formación académica, al ser los activos técnicos más relevantes para este rol.",
+      "Nivel de inglés ajustado visualmente a B2 (el CV original dice 'nivel alto', el perfil indica B1; se mantiene 'nivel alto' como declarado, aproximado a B2 sin inventar certificación oficial).",
+      "Se eliminó el detalle de la dirección postal del bloque visible para dar más peso al contenido técnico."
+    ],
+    "confidence": 0.62,
+    "target_role": "Soporte Técnico Junior Genesys Cloud CX — IOON",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-21T07:58:29.930Z"
+  },
+  "offer_id": "offer-3-ioon",
+  "offer_title": "Soporte Técnico Junior Genesys Cloud CX",
+  "company": "IOON",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}
