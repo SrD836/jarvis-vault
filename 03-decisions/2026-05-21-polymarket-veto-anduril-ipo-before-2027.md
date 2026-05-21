@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `anduril-ipo-before-2027`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.1100
+- **Precio YES**: 0.1300
 - **Volumen 24h**: 352144.78 USD
 - **End date**: 2026-12-31T00:00:00Z
 
