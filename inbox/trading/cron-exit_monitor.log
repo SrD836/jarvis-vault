@@ -2290,3 +2290,55 @@
 2026/05/21 01:55:02 main.go:13: exit_monitor: done
 2026/05/21 02:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/21 02:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/21 02:00:03 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/21 02:00:03 main.go:13: exit_monitor: done
+2026/05/21 02:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/21 02:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/21 02:05:02 monitor.go:160: exit_monitor: 0 closed, 50 remaining
+2026/05/21 02:05:02 main.go:13: exit_monitor: done
+2026/05/21 02:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/21 02:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/21 02:10:02 monitor.go:141: exit_monitor: closed Will LDU de Quito win on 2026-05-20? (take_profit) @ 0.8800 src=bestBid liq=$28268: PnL $41.34 (69.23%)
+2026/05/21 02:10:02 monitor.go:160: exit_monitor: 1 closed, 49 remaining
+2026/05/21 02:10:02 main.go:13: exit_monitor: done
+2026/05/21 02:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/21 02:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/21 02:15:02 monitor.go:160: exit_monitor: 0 closed, 49 remaining
+2026/05/21 02:15:02 main.go:13: exit_monitor: done
+2026/05/21 02:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/21 02:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/21 02:20:02 monitor.go:160: exit_monitor: 0 closed, 49 remaining
+2026/05/21 02:20:02 main.go:13: exit_monitor: done
+2026/05/21 02:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/21 02:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/21 02:25:02 monitor.go:160: exit_monitor: 0 closed, 49 remaining
+2026/05/21 02:25:02 main.go:13: exit_monitor: done
+2026/05/21 02:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/21 02:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/21 02:30:02 monitor.go:141: exit_monitor: closed Will SE Palmeiras win on 2026-05-20? (stop_loss) @ 0.0200 src=bestBid liq=$56645: PnL $-54.54 (-91.30%)
+2026/05/21 02:30:02 monitor.go:141: exit_monitor: closed Will CA River Plate win on 2026-05-20? (stop_loss) @ 0.0010 src=lastTradePrice_fallback liq=$34777: PnL $-57.37 (-98.00%)
+2026/05/21 02:30:02 monitor.go:160: exit_monitor: 2 closed, 47 remaining
+2026/05/21 02:30:02 main.go:13: exit_monitor: done
+2026/05/21 02:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/21 02:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/21 02:35:01 monitor.go:141: exit_monitor: closed Iran closes its airspace by May 21? (stop_loss) @ 0.0140 src=bestBid liq=$91181: PnL $-50.37 (-80.00%)
+2026/05/21 02:35:02 monitor.go:160: exit_monitor: 1 closed, 49 remaining
+2026/05/21 02:35:02 main.go:13: exit_monitor: done
+2026/05/21 02:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/21 02:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/21 02:40:02 monitor.go:160: exit_monitor: 0 closed, 49 remaining
+2026/05/21 02:40:02 main.go:13: exit_monitor: done
+2026/05/21 02:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/21 02:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/21 02:45:02 monitor.go:160: exit_monitor: 0 closed, 49 remaining
+2026/05/21 02:45:02 main.go:13: exit_monitor: done
+2026/05/21 02:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/21 02:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/21 02:50:02 monitor.go:160: exit_monitor: 0 closed, 49 remaining
+2026/05/21 02:50:02 main.go:13: exit_monitor: done
+2026/05/21 02:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/21 02:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/21 02:55:02 monitor.go:160: exit_monitor: 0 closed, 49 remaining
+2026/05/21 02:55:02 main.go:13: exit_monitor: done
+2026/05/21 03:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/21 03:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
