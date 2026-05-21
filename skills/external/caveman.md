@@ -3,27 +3,20 @@ title: "caveman (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-20T03:15:01+00:00
+date: 2026-05-21T03:15:01+00:00
 source_path: ~/.claude/skills/caveman
 source_file: README.md
-related:
-  - "[[00-MOC]]"
-  - "[[skills/external/gsd-autonomous]]"
-  - "[[skills/external/gsd-do]]"
-  - "[[skills/external/gsd-fast]]"
-  - "[[skills/external/gsd-manager]]"
-  - "[[skills/external/gsd-quick]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-20
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `caveman` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/caveman/`  
-**Mirrored at**: 2026-05-20T03:15:01+00:00
+**Mirrored at**: 2026-05-21T03:15:01+00:00
 
 ## Descripción
 

@@ -3,27 +3,20 @@ title: "gsd-execute-phase (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-20T03:15:01+00:00
+date: 2026-05-21T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-execute-phase
 source_file: SKILL.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/external/gsd-executor]]"
-  - "[[skills/external/gsd-plan-phase]]"
-  - "[[skills/external/gsd-research-phase]]"
-  - "[[skills/external/gsd-ultraplan-phase]]"
-  - "[[skills/external/gsd-validate-phase]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-20
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `gsd-execute-phase` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/gsd-execute-phase/`  
-**Mirrored at**: 2026-05-20T03:15:01+00:00
+**Mirrored at**: 2026-05-21T03:15:01+00:00
 
 ## Descripción
 

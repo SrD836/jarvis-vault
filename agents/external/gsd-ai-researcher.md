@@ -2,25 +2,18 @@
 title: "gsd-ai-researcher (external agent)"
 type: agent-mirror
 external: true
-date: 2026-05-20T03:15:01+00:00
+date: 2026-05-21T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-ai-researcher.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/external/gsd-framework-selector]]"
-  - "[[agents/external/gsd-phase-researcher]]"
-  - "[[agents/external/gsd-research-synthesizer]]"
-  - "[[agents/external/index]]"
-  - "[[skills/external/gsd-ai-integration-phase]]"
-  - "[[wiki/agent-evolution/researcher]]"
 tags: [agent, external, mirror]
-# auto-linked 2026-05-20
+related:
+  - "[[agents/external/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `gsd-ai-researcher` (external Claude Code agent)
 
 **Source**: `~/.claude/agents/gsd-ai-researcher.md`  
-**Mirrored at**: 2026-05-20T03:15:01+00:00
+**Mirrored at**: 2026-05-21T03:15:01+00:00
 
 ## Descripción
 

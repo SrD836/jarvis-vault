@@ -3,27 +3,20 @@ title: "gsd-code-review-fix (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-20T03:15:01+00:00
+date: 2026-05-21T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-code-review-fix
 source_file: SKILL.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/external/gsd-code-fixer]]"
-  - "[[agents/external/gsd-code-reviewer]]"
-  - "[[agents/external/gsd-verifier]]"
-  - "[[skills/external/gsd-audit-fix]]"
-  - "[[skills/external/gsd-code-review]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-20
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `gsd-code-review-fix` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/gsd-code-review-fix/`  
-**Mirrored at**: 2026-05-20T03:15:01+00:00
+**Mirrored at**: 2026-05-21T03:15:01+00:00
 
 ## Descripción
 

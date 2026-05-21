@@ -2,25 +2,18 @@
 title: "gsd-intel-updater (external agent)"
 type: agent-mirror
 external: true
-date: 2026-05-20T03:15:01+00:00
+date: 2026-05-21T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-intel-updater.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/archivist]]"
-  - "[[agents/documenter]]"
-  - "[[agents/external/gsd-research-synthesizer]]"
-  - "[[agents/external/index]]"
-  - "[[agents/researcher]]"
-  - "[[skills/external/gsd-intel]]"
 tags: [agent, external, mirror]
-# auto-linked 2026-05-20
+related:
+  - "[[agents/external/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `gsd-intel-updater` (external Claude Code agent)
 
 **Source**: `~/.claude/agents/gsd-intel-updater.md`  
-**Mirrored at**: 2026-05-20T03:15:01+00:00
+**Mirrored at**: 2026-05-21T03:15:01+00:00
 
 ## Descripción
 

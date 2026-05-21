@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `will-macky-sall-be-the-next-secretary-general-of-the-united-nations`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.1040
+- **Precio YES**: 0.1010
 - **Volumen 24h**: 109557.02 USD
 - **End date**: 2026-12-31T00:00:00Z
 

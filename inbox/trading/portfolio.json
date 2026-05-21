@@ -1,5 +1,5 @@
 {
-  "bankroll": 2813.3103059053296,
+  "bankroll": 2935.1678277745696,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -762,23 +762,7 @@
       "side": "yes",
       "size": 58.32400190738791,
       "size_usd": 58.32400190738791
-    },
-    {
-      "approved_price": 0.23,
-      "category": "uncategorized",
-      "days_to_resolution": 1,
-      "end_date": "2026-05-22T16:00:00Z",
-      "entry_price": 0.23,
-      "entry_timestamp": "2026-05-21T02:30:04Z",
-      "horizon": "short",
-      "id": "T-2237157-1779330604178",
-      "liquidity_usd": 29780.00611,
-      "market_id": "2237157",
-      "question": "Will Elon Musk post 280-299 tweets from May 15 to May 22, 2026?",
-      "side": "yes",
-      "size": 57.157521869240156,
-      "size_usd": 57.157521869240156
     }
   ],
-  "used_exposure": 2993.6317462817638
+  "used_exposure": 2936.4742244125237
 }
