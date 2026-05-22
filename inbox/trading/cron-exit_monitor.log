@@ -4205,3 +4205,53 @@
 2026/05/22 16:55:02 main.go:13: exit_monitor: done
 2026/05/22 17:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/22 17:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 17:00:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/22 17:00:02 main.go:13: exit_monitor: done
+2026/05/22 17:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 17:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 17:05:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/22 17:05:02 main.go:13: exit_monitor: done
+2026/05/22 17:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 17:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 17:10:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/22 17:10:02 main.go:13: exit_monitor: done
+2026/05/22 17:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 17:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 17:15:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/22 17:15:02 main.go:13: exit_monitor: done
+2026/05/22 17:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 17:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 17:20:02 monitor.go:141: exit_monitor: closed Tulsi Gabbard out by June 30? (take_profit EARLY) @ 0.9800 src=bestBid liq=$15446: PnL $198.11 (390.00%)
+2026/05/22 17:20:02 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/22 17:20:02 main.go:13: exit_monitor: done
+2026/05/22 17:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 17:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 17:25:03 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/22 17:25:03 main.go:13: exit_monitor: done
+2026/05/22 17:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 17:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 17:30:02 monitor.go:141: exit_monitor: closed Will Trump announce a tariff reduction on China? (stop_loss) @ 0.0160 src=bestBid liq=$21134: PnL $-50.27 (-96.51%)
+2026/05/22 17:30:02 monitor.go:160: exit_monitor: 1 closed, 46 remaining
+2026/05/22 17:30:02 main.go:13: exit_monitor: done
+2026/05/22 17:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 17:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 17:35:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/22 17:35:02 main.go:13: exit_monitor: done
+2026/05/22 17:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 17:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 17:40:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/22 17:40:02 main.go:13: exit_monitor: done
+2026/05/22 17:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 17:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 17:45:03 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/22 17:45:03 main.go:13: exit_monitor: done
+2026/05/22 17:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 17:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 17:50:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/22 17:50:02 main.go:13: exit_monitor: done
+2026/05/22 17:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 17:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 17:55:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/22 17:55:02 main.go:13: exit_monitor: done
+2026/05/22 18:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 18:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%

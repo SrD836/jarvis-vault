@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — insurrection-act-invoked-by-december-31-184-556"
+title: "Polymarket veto — will-dallas-cowboys-win-the-2027-nfl-nfc-championship-584"
 type: decision
 date: 2026-05-22
-decision: "Veto de tesis 'Insurrection Act invoked by December 31?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Will Dallas Cowboys win the 2027 NFL NFC Championship?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Insurrection Act invoked by December 31?
+# Veto: Will Dallas Cowboys win the 2027 NFL NFC Championship?
 
 ## Mercado
 
-- **Slug**: `insurrection-act-invoked-by-december-31-184-556`
+- **Slug**: `will-dallas-cowboys-win-the-2027-nfl-nfc-championship-584`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.2900
-- **Volumen 24h**: 133016.02 USD
-- **End date**: 2026-12-31T00:00:00Z
+- **Precio YES**: 0.1100
+- **Volumen 24h**: 779046.36 USD
+- **End date**: 2027-01-25T00:00:00Z
 
 ## Razón del veto
 
@@ -33,7 +33,7 @@ memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
-- veto `insurrection-act-invoked-by-december-31-184-556` score=1.00 (exact slug match)
+- veto `will-dallas-cowboys-win-the-2027-nfl-nfc-championship-584` score=1.00 (exact slug match)
 
 ## Human notes
 

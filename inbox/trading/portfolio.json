@@ -1,6 +1,6 @@
 {
-  "bankroll": 2455.724106128877,
-  "used_exposure": 2975.847946058216,
+  "bankroll": 2599.276884479977,
+  "used_exposure": 2980.1351677071157,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -252,22 +252,6 @@
       "end_date": "2026-05-31T00:00:00Z",
       "size_usd": 51.83428179613909,
       "liquidity_usd": 440425.94038
-    },
-    {
-      "id": "T-1691780-1779211803817",
-      "market_id": "1691780",
-      "question": "Tulsi Gabbard out by June 30?",
-      "side": "yes",
-      "entry_price": 0.2,
-      "size": 50.7975961602163,
-      "category": "uncategorized",
-      "entry_timestamp": "2026-05-19T17:30:03Z",
-      "approved_price": 0.2,
-      "days_to_resolution": 41,
-      "horizon": "long",
-      "end_date": "2026-06-30T00:00:00Z",
-      "size_usd": 50.7975961602163,
-      "liquidity_usd": 6955.2887
     },
     {
       "id": "T-1385754-1779211803817",
@@ -718,22 +702,6 @@
       "liquidity_usd": 266081.9977
     },
     {
-      "id": "T-2169751-1779435004151",
-      "market_id": "2169751",
-      "question": "Will Trump announce a tariff reduction on China?",
-      "side": "yes",
-      "entry_price": 0.459,
-      "size": 52.09069721109118,
-      "category": "uncategorized",
-      "entry_timestamp": "2026-05-22T07:30:04Z",
-      "approved_price": 0.459,
-      "days_to_resolution": 0,
-      "horizon": "short",
-      "end_date": "2026-05-22T00:00:00Z",
-      "size_usd": 52.09069721109118,
-      "liquidity_usd": 25899.07907
-    },
-    {
       "id": "T-2241873-1779445803654",
       "market_id": "2241873",
       "question": "Iran closes its airspace by May 24?",
@@ -796,6 +764,38 @@
       "end_date": "2026-05-22T00:00:00Z",
       "size_usd": 50.116818492426056,
       "liquidity_usd": 148240.07991
+    },
+    {
+      "id": "T-2078702-1779471003629",
+      "market_id": "2078702",
+      "question": "Will Racing Club de Lens win on 2026-05-22?",
+      "side": "yes",
+      "entry_price": 0.65,
+      "size": 54.129047990003684,
+      "category": "uncategorized",
+      "entry_timestamp": "2026-05-22T17:30:03Z",
+      "approved_price": 0.65,
+      "days_to_resolution": 0,
+      "horizon": "short",
+      "end_date": "2026-05-22T19:00:00Z",
+      "size_usd": 54.129047990003684,
+      "liquidity_usd": 166630.1242
+    },
+    {
+      "id": "T-2324252-1779471003629",
+      "market_id": "2324252",
+      "question": "US x Iran permanent peace deal by May 26, 2026?",
+      "side": "yes",
+      "entry_price": 0.19,
+      "size": 53.046467030203615,
+      "category": "uncategorized",
+      "entry_timestamp": "2026-05-22T17:30:03Z",
+      "approved_price": 0.19,
+      "days_to_resolution": 3,
+      "horizon": "medium",
+      "end_date": "2026-05-26T00:00:00Z",
+      "size_usd": 53.046467030203615,
+      "liquidity_usd": 64799.5133
     }
   ]
 }
