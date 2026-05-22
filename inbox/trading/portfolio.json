@@ -1,5 +1,5 @@
 {
-  "bankroll": 2611.584655447005,
+  "bankroll": 2578.6539418821944,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -653,22 +653,6 @@
       "size_usd": 57.91225462729491
     },
     {
-      "approved_price": 0.39,
-      "category": "uncategorized",
-      "days_to_resolution": 0,
-      "end_date": "2026-05-22T16:00:00Z",
-      "entry_price": 0.39,
-      "entry_timestamp": "2026-05-21T20:30:04Z",
-      "horizon": "short",
-      "id": "T-2269345-1779395404150",
-      "liquidity_usd": 24452.5841,
-      "market_id": "2269345",
-      "question": "Will the price of Bitcoin be above $78,000 on May 22?",
-      "side": "yes",
-      "size": 57.291270229255964,
-      "size_usd": 57.291270229255964
-    },
-    {
       "approved_price": 0.95,
       "category": "uncategorized",
       "days_to_resolution": 0,
@@ -717,22 +701,6 @@
       "size_usd": 54.21711497461122
     },
     {
-      "approved_price": 0.728,
-      "category": "uncategorized",
-      "days_to_resolution": 0,
-      "end_date": "2026-05-22T16:00:00Z",
-      "entry_price": 0.728,
-      "entry_timestamp": "2026-05-22T04:30:03Z",
-      "horizon": "short",
-      "id": "T-2237156-1779424203950",
-      "liquidity_usd": 21646.56086,
-      "market_id": "2237156",
-      "question": "Will Elon Musk post 260-279 tweets from May 15 to May 22, 2026?",
-      "side": "yes",
-      "size": 53.77970931487325,
-      "size_usd": 53.77970931487325
-    },
-    {
       "approved_price": 0.36,
       "category": "uncategorized",
       "days_to_resolution": 2,
@@ -779,7 +747,23 @@
       "side": "yes",
       "size": 52.7698909274899,
       "size_usd": 52.7698909274899
+    },
+    {
+      "approved_price": 0.094,
+      "category": "uncategorized",
+      "days_to_resolution": 0,
+      "end_date": "2026-05-22T00:00:00Z",
+      "entry_price": 0.094,
+      "entry_timestamp": "2026-05-22T13:00:03Z",
+      "horizon": "short",
+      "id": "T-2119227-1779454803784",
+      "liquidity_usd": 11319.47624,
+      "market_id": "2119227",
+      "question": "Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 22, 2026?",
+      "side": "yes",
+      "size": 52.2316931089401,
+      "size_usd": 52.2316931089401
     }
   ],
-  "used_exposure": 2934.9673967400886
+  "used_exposure": 2876.128110304899
 }
