@@ -8,7 +8,7 @@ model_primary: anthropic/claude-sonnet-4-6
 delegation_mode: suggest
 allow_agents: [researcher, documenter, archivist]
 runtime_children: []
-updated: 2026-05-22T02:30:01
+updated: 2026-05-22T03:30:01
 tags: [agent, jarvis, orchestrator]
 related:
   - "[[../00-MOC]]"
@@ -111,6 +111,8 @@ Señales para detectar redirección ATS:
 
 Si dudas, marcar la oferta y dejarla — el dashboard tiene un filtro
 secundario que la atrapará. Pero priorizar la exclusión en origen.
+
+
 
 
 

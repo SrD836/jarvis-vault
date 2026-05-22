@@ -3,27 +3,20 @@ title: "gsd-undo (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-21T03:15:01+00:00
+date: 2026-05-22T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-undo
 source_file: SKILL.md
-related:
-  - "[[00-MOC]]"
-  - "[[skills/external/gsd-analyze-dependencies]]"
-  - "[[skills/external/gsd-check-todos]]"
-  - "[[skills/external/gsd-do]]"
-  - "[[skills/external/gsd-execute-phase]]"
-  - "[[skills/external/gsd-fast]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-22
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `gsd-undo` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/gsd-undo/`  
-**Mirrored at**: 2026-05-21T03:15:01+00:00
+**Mirrored at**: 2026-05-22T03:15:01+00:00
 
 ## Descripción
 

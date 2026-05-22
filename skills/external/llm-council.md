@@ -3,27 +3,20 @@ title: "llm-council (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-21T03:15:01+00:00
+date: 2026-05-22T03:15:01+00:00
 source_path: ~/.claude/skills/llm-council
 source_file: SKILL.md
-related:
-  - "[[00-MOC]]"
-  - "[[03-decisions/2026-05-21-polymarket-trade-will-anthropic-have-the-best-ai-model-at-the-end-of-june-2026]]"
-  - "[[agents/auditor]]"
-  - "[[agents/skill-reviewer]]"
-  - "[[skills/external/grill-me]]"
-  - "[[skills/external/gsd-forensics]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-21
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `llm-council` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/llm-council/`  
-**Mirrored at**: 2026-05-21T03:15:01+00:00
+**Mirrored at**: 2026-05-22T03:15:01+00:00
 
 ## Descripción
 
