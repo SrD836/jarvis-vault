@@ -32,3 +32,4 @@
 {"ts":"2026-05-21T10:43:31.827Z","session_id":"apply-1779359278396-512914","stage":"rescue-attempt","field":{"label":"Teléfono móvil","tag":"input","type":"text","id":"single-line-text-form-component-formElement-urn-li-jobs-applyformcommon-easyApplyFormElement-4410180721-20686556353-phoneNumber-nationalNumber","name":""},"matchedVal":"611411804"}
 {"ts":"2026-05-21T10:43:39.422Z","session_id":"apply-1779359278396-512914","stage":"jsFillById-result","id":"single-line-text-form-component-formElement-urn-li-jobs-applyformcommon-easyApplyFormElement-4410180721-20686556353-phoneNumber-nationalNumber","result":{"ok":true,"actualValue":"611411804"}}
 {"ts":"2026-05-21T11:19:22.985Z","session_id":"apply-1779362179602-7e651b","stage":"scan","domEmpty":[]}
+{"ts":"2026-05-22T08:02:18.114Z","session_id":"apply-1779436619328-ee4dde","stage":"scan","domEmpty":[]}

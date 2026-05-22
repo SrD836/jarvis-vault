@@ -1,0 +1,86 @@
+{
+  "adapted": {
+    "headline": "Técnico de Soporte Junior | Google IT Support · IA y Chatbots Empresariales · Atención al Cliente",
+    "summary": "Estudiante de Administración y Finanzas con certificación en Soporte de TI (Google IT Support) y formación en Inteligencia Artificial con Microsoft Azure. Experiencia práctica en atención al cliente en entornos exigentes y multilingües. Orientado a la resolución de incidencias técnicas con interés activo en plataformas de contact center y automatización con IA.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda) y otros establecimientos",
+        "period": "2021 · verano",
+        "bullets": [
+          "Resolví incidencias con clientes en tiempo real en inglés y castellano, manteniendo la calidad del servicio bajo alta demanda.",
+          "Coordiné tareas en equipo en entornos de ritmo elevado, asegurando la continuidad operativa del servicio.",
+          "Operé sistemas de cobro y gestión de pedidos, desarrollando precisión y atención al detalle en procesos repetitivos."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Soporte de TI (Google IT Support)",
+      "Resolución de incidencias técnicas",
+      "Herramientas de IA y chatbots empresariales",
+      "Atención al cliente",
+      "Microsoft 365",
+      "Google Workspace"
+    ],
+    "skills_secondary": [
+      "Microsoft Azure AI",
+      "Excel avanzado",
+      "Automatización de procesos",
+      "Ofimática",
+      "Trabajo en equipo",
+      "Liderazgo y distribución de tareas",
+      "Gestión de correo electrónico",
+      "Resolución de problemas"
+    ],
+    "education": [
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Coursera / Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Online",
+        "period": null
+      },
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reorientado al perfil de Soporte Técnico Junior, poniendo en primer plano la certificación Google IT Support y el conocimiento de IA.",
+      "Google IT Support promovido a primera posición en skills_primary por ser la credencial técnica más directamente relevante para el rol.",
+      "Herramientas de IA y chatbots empresariales mantenidas en skills_primary por alineación con plataformas de contact center modernas como Genesys Cloud CX.",
+      "Microsoft Azure AI reubicado en skills_secondary para visibilidad complementaria sin desplazar competencias core de soporte.",
+      "Educación reordenada: certificaciones técnicas al frente por ser las credenciales más relevantes para la oferta.",
+      "Bullets de experiencia hostelera reformulados para enfatizar resolución de incidencias, atención multilingüe y trabajo bajo presión, transferibles a soporte técnico.",
+      "Confidence reducida a 0.50 por ausencia de experiencia directa con Genesys Cloud CX y escaso historial técnico formal; el perfil encaja como candidato junior en formación, sin garantías de superar filtros técnicos específicos de plataforma."
+    ],
+    "confidence": 0.5,
+    "target_role": "Soporte Técnico Junior Genesys Cloud CX – IOON",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-22T08:05:05.134Z"
+  },
+  "offer_id": "offer-3-ioon",
+  "offer_title": "Soporte Técnico Junior Genesys Cloud CX",
+  "company": "IOON",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}
