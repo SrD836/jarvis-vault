@@ -6,11 +6,18 @@ category: general
 date: 2026-05-21T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-set-profile
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/gsd-do]]"
+  - "[[skills/external/gsd-fast]]"
+  - "[[skills/external/gsd-next]]"
+  - "[[skills/external/gsd-settings]]"
+  - "[[skills/external/gsd-stats]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-22
 ---
+
 
 # `gsd-set-profile` (external skill)
 

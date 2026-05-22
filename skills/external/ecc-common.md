@@ -6,11 +6,18 @@ category: general
 date: 2026-05-21T03:15:01+00:00
 source_path: ~/.claude/skills/ecc-common
 source_file: ?
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/gsd-do]]"
+  - "[[skills/external/gsd-fast]]"
+  - "[[skills/external/gsd-intel]]"
+  - "[[skills/external/llm-council]]"
+  - "[[skills/external/voltagent-core-reference]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-22
 ---
+
 
 # `ecc-common` (external skill)
 

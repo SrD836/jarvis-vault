@@ -3371,3 +3371,53 @@
 2026/05/21 23:55:02 main.go:13: exit_monitor: done
 2026/05/22 00:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/22 00:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 00:00:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/22 00:00:02 main.go:13: exit_monitor: done
+2026/05/22 00:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 00:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 00:05:03 monitor.go:141: exit_monitor: closed Will Academia Puerto Cabello win on 2026-05-21? (stop_loss) @ 0.0300 src=lastTradePrice_fallback liq=$63333: PnL $-53.51 (-90.91%)
+2026/05/22 00:05:03 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/22 00:05:03 main.go:13: exit_monitor: done
+2026/05/22 00:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 00:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 00:10:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/22 00:10:02 main.go:13: exit_monitor: done
+2026/05/22 00:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 00:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 00:15:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/22 00:15:02 main.go:13: exit_monitor: done
+2026/05/22 00:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 00:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 00:20:01 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/22 00:20:01 main.go:13: exit_monitor: done
+2026/05/22 00:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 00:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 00:25:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/22 00:25:02 main.go:13: exit_monitor: done
+2026/05/22 00:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 00:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 00:30:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/22 00:30:02 main.go:13: exit_monitor: done
+2026/05/22 00:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 00:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 00:35:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/22 00:35:02 main.go:13: exit_monitor: done
+2026/05/22 00:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 00:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 00:40:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/22 00:40:02 main.go:13: exit_monitor: done
+2026/05/22 00:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 00:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 00:45:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/22 00:45:02 main.go:13: exit_monitor: done
+2026/05/22 00:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 00:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 00:50:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/22 00:50:02 main.go:13: exit_monitor: done
+2026/05/22 00:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 00:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 00:55:01 monitor.go:141: exit_monitor: closed Will the Montreal Canadiens win the 2026 NHL Stanley Cup? (take_profit EARLY) @ 0.1590 src=bestBid liq=$50776: PnL $26.01 (47.22%)
+2026/05/22 00:55:02 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/22 00:55:02 main.go:13: exit_monitor: done
+2026/05/22 01:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 01:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%

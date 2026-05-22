@@ -6,11 +6,18 @@ category: general
 date: 2026-05-21T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-new-project
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/gsd-discuss-phase]]"
+  - "[[skills/external/gsd-do]]"
+  - "[[skills/external/gsd-execute-phase]]"
+  - "[[skills/external/gsd-new-workspace]]"
+  - "[[skills/external/gsd-research-phase]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-22
 ---
+
 
 # `gsd-new-project` (external skill)
 
