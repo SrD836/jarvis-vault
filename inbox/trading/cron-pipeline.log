@@ -951,3 +951,20 @@
 2026/05/22 20:30:05 executor.go:197: executor: entered [short] ACF Fiorentina vs. Atalanta BC: Both Teams to Score @ 0.4000 size=$53.07 (open=50/50, bankroll=$2600)
 2026/05/22 20:30:05 executor.go:202: executor: 3 entered, 69 rejected
 2026/05/22 20:30:05 main.go:13: executor: done
+2026/05/22 21:00:03 main.go:11: executor: starting one-shot pass
+2026/05/22 21:00:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/22 21:00:03 executor.go:62: executor: quota slots this run: short=31 medium=7 long=7 (of 44 remaining today)
+2026/05/22 21:00:03 executor.go:197: executor: entered [short] Will SS Lazio win on 2026-05-24? @ 0.6000 size=$59.96 (open=47/50, bankroll=$2938)
+2026/05/22 21:00:03 executor.go:197: executor: entered [medium] Will Elon Musk post 240-259 tweets from May 19 to May 26, 2026? @ 0.0900 size=$58.76 (open=48/50, bankroll=$2879)
+2026/05/22 21:00:03 executor.go:197: executor: entered [medium] Will Elon Musk post 260-279 tweets from May 19 to May 26, 2026? @ 0.1500 size=$57.59 (open=49/50, bankroll=$2822)
+2026/05/22 21:00:03 executor.go:197: executor: entered [medium] US x Iran permanent peace deal by May 31, 2026? @ 0.2000 size=$56.43 (open=50/50, bankroll=$2765)
+2026/05/22 21:00:03 executor.go:202: executor: 4 entered, 66 rejected
+2026/05/22 21:00:03 main.go:13: executor: done
+2026/05/22 21:30:04 main.go:11: executor: starting one-shot pass
+2026/05/22 21:30:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/22 21:30:04 executor.go:62: executor: quota slots this run: short=30 medium=7 long=7 (of 42 remaining today)
+2026/05/22 21:30:04 executor.go:197: executor: entered [short] Iran closes its airspace by May 24? @ 0.2100 size=$59.08 (open=48/50, bankroll=$2895)
+2026/05/22 21:30:04 executor.go:197: executor: entered [medium] Iran closes its airspace by May 27? @ 0.2700 size=$57.89 (open=49/50, bankroll=$2837)
+2026/05/22 21:30:04 executor.go:197: executor: entered [medium] Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 31, 2026? @ 0.2500 size=$56.74 (open=50/50, bankroll=$2780)
+2026/05/22 21:30:04 executor.go:202: executor: 3 entered, 65 rejected
+2026/05/22 21:30:04 main.go:13: executor: done

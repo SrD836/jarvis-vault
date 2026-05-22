@@ -4410,3 +4410,58 @@
 2026/05/22 20:55:02 main.go:13: exit_monitor: done
 2026/05/22 21:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/22 21:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 21:00:02 monitor.go:160: exit_monitor: 0 closed, 44 remaining
+2026/05/22 21:00:02 main.go:13: exit_monitor: done
+2026/05/22 21:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 21:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 21:05:01 monitor.go:141: exit_monitor: closed Iran closes its airspace by May 24? (take_profit EARLY) @ 0.2000 src=bestBid liq=$71760: PnL $23.01 (42.86%)
+2026/05/22 21:05:02 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/22 21:05:02 main.go:13: exit_monitor: done
+2026/05/22 21:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 21:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 21:10:02 monitor.go:141: exit_monitor: closed US x Iran permanent peace deal by May 22, 2026? (stop_loss) @ 0.0120 src=bestBid liq=$179112: PnL $-41.76 (-83.33%)
+2026/05/22 21:10:02 monitor.go:160: exit_monitor: 1 closed, 46 remaining
+2026/05/22 21:10:02 main.go:13: exit_monitor: done
+2026/05/22 21:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 21:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 21:15:02 monitor.go:160: exit_monitor: 0 closed, 46 remaining
+2026/05/22 21:15:02 main.go:13: exit_monitor: done
+2026/05/22 21:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 21:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 21:20:02 monitor.go:160: exit_monitor: 0 closed, 46 remaining
+2026/05/22 21:20:02 main.go:13: exit_monitor: done
+2026/05/22 21:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 21:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 21:25:02 monitor.go:160: exit_monitor: 0 closed, 46 remaining
+2026/05/22 21:25:02 main.go:13: exit_monitor: done
+2026/05/22 21:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 21:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 21:30:02 monitor.go:141: exit_monitor: closed Iran closes its airspace by May 27? (take_profit EARLY) @ 0.4100 src=bestBid liq=$44050: PnL $42.89 (70.83%)
+2026/05/22 21:30:02 monitor.go:160: exit_monitor: 1 closed, 45 remaining
+2026/05/22 21:30:02 main.go:13: exit_monitor: done
+2026/05/22 21:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 21:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 21:35:02 monitor.go:141: exit_monitor: closed Iran closes its airspace by May 24? (take_profit EARLY) @ 0.3100 src=bestBid liq=$61993: PnL $28.13 (47.62%)
+2026/05/22 21:35:02 monitor.go:141: exit_monitor: closed Iran closes its airspace by May 27? (take_profit EARLY) @ 0.4100 src=bestBid liq=$44050: PnL $30.02 (51.85%)
+2026/05/22 21:35:02 monitor.go:160: exit_monitor: 2 closed, 46 remaining
+2026/05/22 21:35:02 main.go:13: exit_monitor: done
+2026/05/22 21:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 21:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 21:40:02 monitor.go:160: exit_monitor: 0 closed, 46 remaining
+2026/05/22 21:40:02 main.go:13: exit_monitor: done
+2026/05/22 21:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 21:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 21:45:02 monitor.go:160: exit_monitor: 0 closed, 46 remaining
+2026/05/22 21:45:02 main.go:13: exit_monitor: done
+2026/05/22 21:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 21:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 21:50:01 monitor.go:141: exit_monitor: closed Iran closes its airspace by May 31? (take_profit EARLY) @ 0.8200 src=bestBid liq=$33385: PnL $48.65 (78.26%)
+2026/05/22 21:50:02 monitor.go:160: exit_monitor: 1 closed, 45 remaining
+2026/05/22 21:50:02 main.go:13: exit_monitor: done
+2026/05/22 21:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 21:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 21:55:02 monitor.go:141: exit_monitor: closed Israel closes its airspace by May 24? (take_profit EARLY) @ 0.2900 src=bestBid liq=$31742: PnL $54.05 (93.33%)
+2026/05/22 21:55:02 monitor.go:160: exit_monitor: 1 closed, 44 remaining
+2026/05/22 21:55:02 main.go:13: exit_monitor: done
+2026/05/22 22:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 22:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%

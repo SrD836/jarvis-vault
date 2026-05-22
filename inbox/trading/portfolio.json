@@ -1,5 +1,5 @@
 {
-  "bankroll": 2998.0368126731933,
+  "bankroll": 3177.997481566444,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -139,22 +139,6 @@
       "side": "yes",
       "size": 63.439,
       "size_usd": 63.439
-    },
-    {
-      "approved_price": 0.46,
-      "category": "uncategorized",
-      "days_to_resolution": 11,
-      "end_date": "2026-05-31T00:00:00Z",
-      "entry_price": 0.46,
-      "entry_timestamp": "2026-05-19T17:25:29Z",
-      "horizon": "medium",
-      "id": "T-2133405-1779211529037",
-      "liquidity_usd": 86719.8327,
-      "market_id": "2133405",
-      "question": "Iran closes its airspace by May 31?",
-      "side": "yes",
-      "size": 62.17022,
-      "size_usd": 62.17022
     },
     {
       "approved_price": 0.06,
@@ -525,22 +509,6 @@
       "size_usd": 61.78630214642983
     },
     {
-      "approved_price": 0.24,
-      "category": "uncategorized",
-      "days_to_resolution": 6,
-      "end_date": "2026-05-27T00:00:00Z",
-      "entry_price": 0.24,
-      "entry_timestamp": "2026-05-20T21:00:03Z",
-      "horizon": "medium",
-      "id": "T-2296135-1779310803840",
-      "liquidity_usd": 32949.5779,
-      "market_id": "2296135",
-      "question": "Iran closes its airspace by May 27?",
-      "side": "yes",
-      "size": 60.550576103501236,
-      "size_usd": 60.550576103501236
-    },
-    {
       "approved_price": 0.15,
       "category": "uncategorized",
       "days_to_resolution": 10,
@@ -621,22 +589,6 @@
       "size_usd": 58.04338367404169
     },
     {
-      "approved_price": 0.15,
-      "category": "uncategorized",
-      "days_to_resolution": 2,
-      "end_date": "2026-05-24T00:00:00Z",
-      "entry_price": 0.15,
-      "entry_timestamp": "2026-05-21T11:30:04Z",
-      "horizon": "short",
-      "id": "T-2296151-1779363004639",
-      "liquidity_usd": 53352.3898,
-      "market_id": "2296151",
-      "question": "Israel closes its airspace by May 24?",
-      "side": "yes",
-      "size": 57.91225462729491,
-      "size_usd": 57.91225462729491
-    },
-    {
       "approved_price": 0.72,
       "category": "uncategorized",
       "days_to_resolution": 0,
@@ -653,22 +605,6 @@
       "size_usd": 49.603017260891
     },
     {
-      "approved_price": 0.072,
-      "category": "uncategorized",
-      "days_to_resolution": 0,
-      "end_date": "2026-05-22T00:00:00Z",
-      "entry_price": 0.072,
-      "entry_timestamp": "2026-05-22T16:00:03Z",
-      "horizon": "short",
-      "id": "T-2297854-1779465603905",
-      "liquidity_usd": 148240.07991,
-      "market_id": "2297854",
-      "question": "US x Iran permanent peace deal by May 22, 2026?",
-      "side": "yes",
-      "size": 50.116818492426056,
-      "size_usd": 50.116818492426056
-    },
-    {
       "approved_price": 0.19,
       "category": "uncategorized",
       "days_to_resolution": 3,
@@ -683,22 +619,6 @@
       "side": "yes",
       "size": 53.046467030203615,
       "size_usd": 53.046467030203615
-    },
-    {
-      "approved_price": 0.14,
-      "category": "uncategorized",
-      "days_to_resolution": 1,
-      "end_date": "2026-05-24T00:00:00Z",
-      "entry_price": 0.14,
-      "entry_timestamp": "2026-05-22T19:00:04Z",
-      "horizon": "short",
-      "id": "T-2241873-1779476404632",
-      "liquidity_usd": 81311.2482,
-      "market_id": "2241873",
-      "question": "Iran closes its airspace by May 24?",
-      "side": "yes",
-      "size": 53.70053550814934,
-      "size_usd": 53.70053550814934
     },
     {
       "approved_price": 0.68,
@@ -731,7 +651,87 @@
       "side": "yes",
       "size": 54.470856642832416,
       "size_usd": 54.470856642832416
+    },
+    {
+      "approved_price": 0.6,
+      "category": "uncategorized",
+      "days_to_resolution": 1,
+      "end_date": "2026-05-24T13:00:00Z",
+      "entry_price": 0.6,
+      "entry_timestamp": "2026-05-22T21:00:03Z",
+      "horizon": "short",
+      "id": "T-2287602-1779483603887",
+      "liquidity_usd": 112463.3605,
+      "market_id": "2287602",
+      "question": "Will SS Lazio win on 2026-05-24?",
+      "side": "yes",
+      "size": 59.960736253463864,
+      "size_usd": 59.960736253463864
+    },
+    {
+      "approved_price": 0.09,
+      "category": "uncategorized",
+      "days_to_resolution": 3,
+      "end_date": "2026-05-26T16:00:00Z",
+      "entry_price": 0.09,
+      "entry_timestamp": "2026-05-22T21:00:03Z",
+      "horizon": "medium",
+      "id": "T-2313547-1779483603887",
+      "liquidity_usd": 45748.4724,
+      "market_id": "2313547",
+      "question": "Will Elon Musk post 240-259 tweets from May 19 to May 26, 2026?",
+      "side": "yes",
+      "size": 58.76152152839459,
+      "size_usd": 58.76152152839459
+    },
+    {
+      "approved_price": 0.15,
+      "category": "uncategorized",
+      "days_to_resolution": 3,
+      "end_date": "2026-05-26T16:00:00Z",
+      "entry_price": 0.15,
+      "entry_timestamp": "2026-05-22T21:00:03Z",
+      "horizon": "medium",
+      "id": "T-2313548-1779483603887",
+      "liquidity_usd": 37601.1252,
+      "market_id": "2313548",
+      "question": "Will Elon Musk post 260-279 tweets from May 19 to May 26, 2026?",
+      "side": "yes",
+      "size": 57.586291097826695,
+      "size_usd": 57.586291097826695
+    },
+    {
+      "approved_price": 0.2,
+      "category": "uncategorized",
+      "days_to_resolution": 8,
+      "end_date": "2026-05-31T00:00:00Z",
+      "entry_price": 0.2,
+      "entry_timestamp": "2026-05-22T21:00:03Z",
+      "horizon": "medium",
+      "id": "T-1919425-1779483603887",
+      "liquidity_usd": 237827.5945,
+      "market_id": "1919425",
+      "question": "US x Iran permanent peace deal by May 31, 2026?",
+      "side": "yes",
+      "size": 56.43456527587016,
+      "size_usd": 56.43456527587016
+    },
+    {
+      "approved_price": 0.25,
+      "category": "uncategorized",
+      "days_to_resolution": 8,
+      "end_date": "2026-05-31T00:00:00Z",
+      "entry_price": 0.25,
+      "entry_timestamp": "2026-05-22T21:30:04Z",
+      "horizon": "medium",
+      "id": "T-1972137-1779485404133",
+      "liquidity_usd": 44666.9097,
+      "market_id": "1972137",
+      "question": "Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 31, 2026?",
+      "side": "yes",
+      "size": 56.736621682565904,
+      "size_usd": 56.736621682565904
     }
   ],
-  "used_exposure": 2763.3652395138997
+  "used_exposure": 2768.39457062065
 }
