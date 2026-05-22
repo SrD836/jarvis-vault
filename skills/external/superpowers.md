@@ -6,11 +6,18 @@ category: general
 date: 2026-05-22T03:15:01+00:00
 source_path: ~/.claude/skills/superpowers
 source_file: README.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/external/gsd-executor]]"
+  - "[[skills/external/gsd-autonomous]]"
+  - "[[skills/external/gsd-manager]]"
+  - "[[skills/external/llm-council]]"
+  - "[[skills/external/voltagent-core-reference]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-22
 ---
+
 
 # `superpowers` (external skill)
 

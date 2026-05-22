@@ -6,11 +6,18 @@ category: general
 date: 2026-05-22T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-check-todos
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/gsd-add-todo]]"
+  - "[[skills/external/gsd-inbox]]"
+  - "[[skills/external/gsd-next]]"
+  - "[[skills/external/gsd-progress]]"
+  - "[[skills/external/gsd-review-backlog]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-22
 ---
+
 
 # `gsd-check-todos` (external skill)
 
