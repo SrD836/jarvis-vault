@@ -1,7 +1,7 @@
 ---
 title: "Evolution proposal — planner"
 type: agent-evolution
-date: 2026-05-21T04:00:15+00:00
+date: 2026-05-22T04:00:17+00:00
 agent: "[[agents/planner]]"
 pattern: iter-cap-saturated
 confidence: medium
@@ -15,7 +15,7 @@ related:
 
 # Evolución propuesta — `planner`
 
-_Generado por `hermes/learnings.py` el 2026-05-21T04:00:15+00:00. Ventana: 7 días._
+_Generado por `hermes/learnings.py` el 2026-05-22T04:00:17+00:00. Ventana: 7 días._
 
 ## Patrón: `iter-cap-saturated`
 
@@ -34,9 +34,9 @@ _Generado por `hermes/learnings.py` el 2026-05-21T04:00:15+00:00. Ventana: 7 dí
 
 ## Cambios propuestos
 
-### Cambio 1: Limitar `allow_agents` en `openclaw.json`
+### Cambio 1: Reducir `allow_agents` para evitar saturación de contexto
 
-**Archivo:** `openclaw.json` (config raíz del agente planner)
+**Archivo:** `openclaw.json` (config global del agente planner)
 
 **Snippet:**
 ```json
@@ -48,44 +48,47 @@ _Generado por `hermes/learnings.py` el 2026-05-21T04:00:15+00:00. Ventana: 7 dí
     "documenter",
     "debugger",
     "tester",
-    "auditor"
+    "archivist"
   ]
 }
 ```
 
-**Razón:** Eliminar `apier`, `skill-reviewer`, `archivist`, `monitor`, `job-hunter` reduce opciones de delegación que causan loops de decisión. 11 agentes permitidos → 6. El planner se satura iterando sobre qué worker elegir.
+**Razón:** Eliminar `apier`, `skill-reviewer`, `auditor`, `monitor`, `job-hunter` reduce el espacio de decisión del planner, evitando loops de `list_agents`/`get_agent_briefing` que consumen iteraciones sin delegar.
 
 ---
 
-### Cambio 2: Añadir límite de iteraciones por tool call
+### Cambio 2: Añadir límite de herramientas por run en briefing
 
-**Archivo:** Briefing del agente `planner.md` (sección "Política de delegación")
+**Archivo:** `briefing.md` del agente planner (sección "Política de delegación")
+
+**Snippet a añadir al final:**
+```markdown
+## Límite operativo
+
+- **Máximo de tool_calls por run:** 15
+- Si alcanzas 15 tool_calls sin haber delegado → fuerza delegación inmediata al agente más afín.
+- Si alcanzas 15 tool_calls y ya delegaste → finaliza con resumen.
+- **Prohibido:** llamar a `list_agents` o `get_agent_briefing` más de 2 veces por run.
+```
+
+**Razón:** Los runs abortados muestran 20-27 tool_calls con loops de herramientas de descubrimiento; un límite duro fuerza cierre antes de saturar el cap de iteraciones.
+
+---
+
+### Cambio 3: Añadir directiva anti-loop en briefing
+
+**Archivo:** `briefing.md` del agente planner (sección "Delegación real obligatoria")
 
 **Snippet a añadir:**
 ```markdown
-## Límite de iteraciones
+### Anti-loop
 
-- Si tras 3 tool_calls consecutivas con `delegate` no has recibido respuesta del worker → aborta y reporta error.
-- Si `iter > 6` y no has producido output final → fuerza respuesta con `"ERROR: iter-cap-saturated, abortando"`.
-- Prohibido llamar `list_agents` o `get_agent_briefing` más de 2 veces por run.
+- Si detectas que estás leyendo el mismo archivo o llamando a la misma herramienta con los mismos argumentos por segunda vez → **detente inmediatamente** y delega o finaliza.
+- Patrón prohibido: `read_file` del mismo path >1 vez en同一 run.
+- Si no sabes qué hacer tras 3 tool_calls distintas → delega a `researcher` o `code-reviewer` según la task.
 ```
 
-**Razón:** Los runs abortados muestran `iter: 9-17` con loops de `list_agents`/`get_agent_briefing`. Cortocircuito evita saturación.
-
----
-
-### Cambio 3: Añadir `runtime_children` predefinidos y cap en caps.env
-
-**Archivo:** `caps.env` (o equivalente de configuración de capacidades)
-
-**Snippet:**
-```env
-PLANNER_MAX_ITER=6
-PLANNER_MAX_DELEGATE_CALLS=3
-PLANNER_FORCE_CHILDREN=researcher,code-reviewer,documenter
-```
-
-**Razón:** Forzar hijos runtime predefinidos elimina la fase de descubrimiento de agentes que causa loops. El cap `8` actual se excede porque el planner gasta iteraciones decidiendo a quién delegar.
+**Razón:** El run abortado por "duplicate tool loop (same tool+args 3x)" muestra que el agente entra en ciclos de lectura sin progreso; esta regla corta el patrón de raíz.
 
 ## Patrón: `tokens-budget-tight`
 
@@ -104,52 +107,45 @@ PLANNER_FORCE_CHILDREN=researcher,code-reviewer,documenter
 
 ## Cambios propuestos
 
-### Cambio 1: Limitar `allow_agents` en `openclaw.json` para reducir carga cognitiva
+### Cambio 1: Limitar `allow_agents` para reducir contexto de planificación
 
 **Archivo:** `openclaw.json` (config del agente planner)
 
 **Snippet:**
 ```json
-{
-  "agent_id": "planner",
-  "allow_agents": ["researcher", "code-reviewer", "debugger", "tester", "auditor"],
-  "max_input_tokens": 80000,
-  "max_iterations": 12
-}
+"allow_agents": ["code-reviewer", "researcher", "documenter", "debugger", "tester", "auditor"]
 ```
 
-**Razón:** Tiene 11 workers permitidos. Cada uno añade contexto de briefing en cada run. Reducir a 5 esenciales baja el input tokens ~40% y evita saturación.
+**Razón:** Eliminar 5 agentes poco usados (apier, skill-reviewer, archivist, monitor, job-hunter) reduce el árbol de decisión y el contexto que el planner carga en cada run, evitando que el input_token se dispare >200k.
 
 ---
 
-### Cambio 2: Añadir directiva de resumen temprano en el briefing
+### Cambio 2: Añadir límite de contexto en briefing del planner
 
-**Archivo:** `briefing/planner.md` (sección de política de delegación)
+**Archivo:** `briefing.md` del planner (sección de política de delegación)
 
-**Snippet:**
-```markdown
-## Control de tokens
-
-- Si tras 3 iteraciones el input acumulado supera 100k tokens → ejecuta `compress_context()` o genera un resumen de lo hecho hasta ahora y continúa.
-- Prohibido leer más de 3 archivos de briefing de workers por run. Si necesitas más info, usa `delegate` con instrucción explícita de resumen.
+**Diff:**
+```diff
++ ## Límite de contexto
++ - Si input_tokens > 100k en el primer tool_call, aborta y delega directamente al agente más específico sin leer más archivos.
++ - No cargues más de 3 archivos de contexto por run. Si necesitas más, delega a researcher para que los resuma.
 ```
 
-**Razón:** Los runs abortados muestran input tokens de 120k-299k. Un checkpoint de compresión a las 3 iteraciones evita el loop de lectura excesiva.
+**Razón:** El patrón muestra runs con 120k-299k input_tokens. Forzar aborto temprano y delegación evita el bucle de tool calls y el agotamiento de tokens.
 
 ---
 
-### Cambio 3: Configurar `caps.env` con límite de tokens por tool call
+### Cambio 3: Añadir cap de tool_calls en `caps.env`
 
-**Archivo:** `caps.env` (o `openclaw.json` si soporta caps)
+**Archivo:** `caps.env` (o `openclaw.json` si es donde se definen caps)
 
 **Snippet:**
 ```env
-MAX_INPUT_TOKENS_PER_RUN=100000
 MAX_TOOL_CALLS_PER_RUN=15
-COMPRESS_AFTER_ITERATIONS=3
+MAX_INPUT_TOKENS=150000
 ```
 
-**Razón:** El run de 299k tokens con 20 tool calls y loop duplicado se evita con límites duros. El aborto por iteraciones (8) llega tarde; comprimir en iteración 3 corta antes.
+**Razón:** Los runs abortados muestran 16-27 tool_calls. Un cap duro de 15 tool_calls fuerza al planner a delegar antes o abortar rápido, evitando loops duplicados (como el del run 105317 con mismo tool+args 3x).
 
 ## Apply
 

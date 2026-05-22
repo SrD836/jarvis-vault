@@ -1,6 +1,6 @@
 {
-  "bankroll": 2684.5942414541782,
-  "used_exposure": 2999.597810732915,
+  "bankroll": 2582.5016413002136,
+  "used_exposure": 2995.9704108868796,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -750,22 +750,6 @@
       "liquidity_usd": 20758.4033
     },
     {
-      "id": "T-2293987-1779418803725",
-      "market_id": "2293987",
-      "question": "Will Pumas de la UNAM win on 2026-05-21?",
-      "side": "yes",
-      "entry_price": 0.17,
-      "size": 55.32358670878696,
-      "category": "uncategorized",
-      "entry_timestamp": "2026-05-22T03:00:03Z",
-      "approved_price": 0.17,
-      "days_to_resolution": 0,
-      "horizon": "short",
-      "end_date": "2026-05-21T20:00:00Z",
-      "size_usd": 55.32358670878696,
-      "liquidity_usd": 28886.0057
-    },
-    {
       "id": "T-2287744-1779418803725",
       "market_id": "2287744",
       "question": "Will Atalanta BC win on 2026-05-24?",
@@ -782,20 +766,36 @@
       "liquidity_usd": 147184.1612
     },
     {
-      "id": "T-2293985-1779420604199",
-      "market_id": "2293985",
-      "question": "Will CF Cruz Azul win on 2026-05-21?",
+      "id": "T-2237156-1779424203950",
+      "market_id": "2237156",
+      "question": "Will Elon Musk post 260-279 tweets from May 15 to May 22, 2026?",
       "side": "yes",
-      "entry_price": 0.48,
-      "size": 54.78763758069752,
+      "entry_price": 0.728,
+      "size": 53.77970931487325,
       "category": "uncategorized",
-      "entry_timestamp": "2026-05-22T03:30:04Z",
-      "approved_price": 0.48,
+      "entry_timestamp": "2026-05-22T04:30:03Z",
+      "approved_price": 0.728,
       "days_to_resolution": 0,
       "horizon": "short",
-      "end_date": "2026-05-21T20:00:00Z",
-      "size_usd": 54.78763758069752,
-      "liquidity_usd": 37345.0844
+      "end_date": "2026-05-22T16:00:00Z",
+      "size_usd": 53.77970931487325,
+      "liquidity_usd": 21646.56086
+    },
+    {
+      "id": "T-2287742-1779424203950",
+      "market_id": "2287742",
+      "question": "Will ACF Fiorentina win on 2026-05-24?",
+      "side": "yes",
+      "entry_price": 0.36,
+      "size": 52.704115128575786,
+      "category": "uncategorized",
+      "entry_timestamp": "2026-05-22T04:30:03Z",
+      "approved_price": 0.36,
+      "days_to_resolution": 2,
+      "horizon": "short",
+      "end_date": "2026-05-24T13:00:00Z",
+      "size_usd": 52.704115128575786,
+      "liquidity_usd": 266081.9977
     }
   ]
 }

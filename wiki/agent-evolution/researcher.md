@@ -1,7 +1,7 @@
 ---
 title: "Evolution proposal — researcher"
 type: agent-evolution
-date: 2026-05-21T04:00:30+00:00
+date: 2026-05-22T04:00:35+00:00
 agent: "[[agents/researcher]]"
 pattern: iter-cap-saturated
 confidence: medium
@@ -15,7 +15,7 @@ related:
 
 # Evolución propuesta — `researcher`
 
-_Generado por `hermes/learnings.py` el 2026-05-21T04:00:30+00:00. Ventana: 7 días._
+_Generado por `hermes/learnings.py` el 2026-05-22T04:00:35+00:00. Ventana: 7 días._
 
 ## Patrón: `iter-cap-saturated`
 
@@ -33,63 +33,62 @@ _Generado por `hermes/learnings.py` el 2026-05-21T04:00:30+00:00. Ventana: 7 dí
 
 ## Cambios propuestos
 
-### Cambio 1: Limitar iteraciones por tarea en el briefing
+### 1. Añadir `max_iterations` en el frontmatter del agente
 
-**Archivo:** `briefing del agente researcher` (sección de política de delegación)
+**Archivo:** `agents/researcher/README.md` (o el archivo que contenga el frontmatter YAML)
 
-**Snippet a añadir:**
-
-```markdown
-## Límites operativos
-
-- **MAX_ITERATIONS_PER_TASK:** 6
-- Si alcanzas 6 iteraciones sin respuesta final → ejecuta `run_bash` con `echo "ITER_LIMIT:researcher:$(date -Iseconds)" >> /tmp/iter_overflow.log` y devuelve el mejor resultado parcial con nota explícita de límite alcanzado.
-- **Prohibido:** seguir iterando tras el límite aunque queden herramientas por probar.
+**Snippet:**
+```yaml
+---
+title: "researcher"
+type: agent
+role: worker
+agent_id: researcher
+workspace: /home/node/.openclaw/workspace/agents/researcher
+model_primary: anthropic/claude-sonnet-4-6
+delegation_mode: suggest
+allow_agents: []
+runtime_children: []
+max_iterations: 6  # ← NUEVO: límite duro antes de abortar y reportar
+updated: 2026-05-22T04:00:01
+tags: [agent, jarvis, worker]
+---
 ```
 
-**Razón:** El patrón `iter-cap-saturated` (cap=8) se activa porque el agente no tiene un límite interno y consume todas las iteraciones permitidas. Un límite de 6 deja margen para el overhead del sistema.
+**Razón:** El patrón `iter-cap-saturated` (cap=8) muestra que el agente llega a 8 iteraciones sin respuesta. Fijar `max_iterations: 6` fuerza un aborto temprano con `abort_reason: "max_iterations (6) excedido sin respuesta final"`, evitando consumir tokens hasta el límite global de 500K.
 
----
+### 2. Añadir directiva de "auto-aborto por iteraciones" en el briefing
 
-### Cambio 2: Reducir `max_iterations` en la configuración del agente
+**Archivo:** `agents/researcher/README.md` (sección de política de delegación o human notes)
+
+**Snippet:**
+```markdown
+### Auto-aborto por iteraciones
+
+- Si tras 6 iteraciones de tool_calls no has producido una respuesta final → **ABORTA** automáticamente.
+- Escribe run file con `aborted: true` y `abort_reason: "max_iterations (6) sin respuesta final"`.
+- NO continúes iterando. NO intentes "una última búsqueda".
+- Reporta al llamante: `"Abortado tras 6 iteraciones. Resumen parcial: ..."`
+```
+
+**Razón:** El agente no tiene instrucción explícita de abortar por iteraciones; al llegar a 8 (cap) aborta el sistema, pero ya consumió ~435K tokens. Con 6 iteraciones forzadas se aborta antes, ahorrando ~150K tokens por ocurrencia.
+
+### 3. Reducir `allow_agents` a `[]` y añadir `delegation_mode: force`
 
 **Archivo:** `openclaw.json` (config del agente researcher)
 
-**Diff:**
-
+**Snippet:**
 ```json
 {
   "agent_id": "researcher",
+  "allow_agents": [],
+  "delegation_mode": "force",
   "max_iterations": 6,
-  "max_tokens_per_turn": 300000
+  "max_tokens_per_turn": 150000
 }
 ```
 
-**Razón:** El valor actual (implícito 8) permite que el agente consuma el tope del sistema. Bajarlo a 6 fuerza al agente a ser más directo o delegar subtareas.
-
----
-
-### Cambio 3: Añadir tool de auto-límite con abort temprano
-
-**Archivo:** `caps/env` o configuración de herramientas del agente
-
-**Snippet:**
-
-```yaml
-tools:
-  - name: check_iteration_budget
-    command: |
-      if [ -f /tmp/researcher_iter_count ]; then
-        COUNT=$(cat /tmp/researcher_iter_count)
-        if [ "$COUNT" -ge 5 ]; then
-          echo "ABORT: iteration budget exhausted"
-          exit 1
-        fi
-      fi
-    run_on_every_turn: true
-```
-
-**Razón:** El agente no tiene conciencia de cuántas iteraciones lleva. Un contador externo que aborta en la iteración 5 (dejando 1 de margen) evita llegar al cap del sistema.
+**Razón:** El agente no delega (allow_agents vacío), pero `delegation_mode: suggest` le permite sugerir delegaciones que nunca se ejecutan, perdiendo iteraciones. Forzar `force` con `allow_agents: []` elimina ese gasto de tokens en sugerencias de delegación imposibles.
 
 ## Patrón: `tokens-budget-tight`
 
@@ -107,25 +106,24 @@ tools:
 
 ## Cambios propuestos
 
-### Cambio 1: Limitar iteraciones máximas en briefing
+### 1. Limitar `max_iterations` en briefing del agente
 
-**Archivo:** `briefing researcher` (sección de configuración)
+**Archivo:** briefing del agente `researcher` (sección de configuración)
 
-**Snippet a añadir (al inicio, tras el frontmatter):**
+**Snippet a añadir (al inicio del briefing, tras el frontmatter):**
 
 ```markdown
 ## Límites operativos
 
-- **Máximo de iteraciones por turno:** 6 (actual: 8-9, causa abortos por cap)
-- **Si alcanzas 6 iteraciones sin respuesta final:** ejecuta `run_bash` con `echo "RESULT: <resumen>"` y finaliza.
-- **No uses tool_calls para exploración excesiva:** prioriza `grep_search` sobre `read_file` para archivos >50KB.
+- **max_iterations:** 6 (si no hay respuesta final tras 6 tool calls, abortar y reportar resumen parcial)
+- **max_input_tokens_per_run:** 250000 (evitar que el contexto crezca hasta el límite global de 500k)
 ```
 
-**Razón:** Los abortos por `cap iterations (8)` y `MAX_TOKENS_PER_USER_TURN` ocurren porque el agente explora demasiado. Fijar un límite inferior y una salida forzada evita el timeout.
+**Razón:** Los runs abortados muestran 9, 12 y 19 iteraciones. Fijar un tope de 6 evita que el agente consuma tokens en loops de búsqueda sin progreso.
 
 ---
 
-### Cambio 2: Reducir tokens de entrada con poda de contexto
+### 2. Configurar `allow_agents` para delegar subtareas
 
 **Archivo:** `openclaw.json` (config del agente researcher)
 
@@ -134,31 +132,32 @@ tools:
 ```json
 {
   "agent_id": "researcher",
-  "model_primary": "anthropic/claude-sonnet-4-6",
-  "max_input_tokens": 250000,
-  "max_output_tokens": 4000,
-  "max_iterations": 6,
-  "context_window": 300000,
-  "prune_strategy": "aggressive"
+  "allow_agents": [
+    "web-scraper",
+    "code-executor",
+    "data-analyzer"
+  ]
 }
 ```
 
-**Razón:** El run abortado por `MAX_TOKENS_PER_USER_TURN (500000)` tenía 434K input tokens. Reducir el límite a 250K fuerza al modelo a ser más conciso y evita el hard cap global.
+**Razón:** El researcher actualmente no delega (allow_agents vacío). Al permitir agentes especializados, puede partir tareas grandes en subtareas más pequeñas, reduciendo el contexto por turno y evitando el límite de 500k tokens.
 
 ---
 
-### Cambio 3: Añadir directiva de salida temprana en briefing
+### 3. Añadir `max_tokens_per_tool_call` en caps env
 
-**Archivo:** `briefing researcher` (sección "Directiva de búsqueda")
+**Archivo:** `caps.env` o configuración de entorno del agente
 
-**Snippet a añadir al final de esa sección:**
+**Snippet:**
 
-```markdown
-- **Si tras 4 tool_calls no has encontrado respuesta clara:** ejecuta `run_bash echo "RESULT: No encontrado - <razón>"` y finaliza.
-- **No acumules contexto:** cada tool_call debe tener un propósito único. Si un `read_file` devuelve >100 líneas, usa `grep_search` en su lugar.
+```bash
+# Límite de tokens por tool_call para evitar acumulación
+MAX_TOKENS_PER_TOOL_CALL=50000
+# Si una tool_call devuelve más de 50k tokens, truncar automáticamente
+TOOL_CALL_TRUNCATE=true
 ```
 
-**Razón:** Los runs fallidos muestran 21-37 tool_calls antes del aborto. Forzar una salida temprana reduce drásticamente el consumo de tokens y evita el patrón `tokens-budget-tight`.
+**Razón:** Los runs muestran 37 y 21 tool_calls con inputs de 434k y 143k tokens. Limitar cada tool_call a 50k tokens evita que una sola llamada (ej. `read_file` de un archivo grande) dispare el límite global.
 
 ## Apply
 
