@@ -4354,3 +4354,59 @@
 2026/05/22 19:55:02 main.go:13: exit_monitor: done
 2026/05/22 20:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/22 20:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 20:00:02 monitor.go:141: exit_monitor: closed Will Racing Club de Lens win on 2026-05-22? (take_profit) @ 0.9300 src=bestBid liq=$86528: PnL $23.32 (43.08%)
+2026/05/22 20:00:02 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/22 20:00:02 main.go:13: exit_monitor: done
+2026/05/22 20:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 20:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 20:05:02 monitor.go:141: exit_monitor: closed Will ACF Fiorentina win on 2026-05-24? (take_profit EARLY) @ 0.5300 src=bestBid liq=$44144: PnL $24.89 (47.22%)
+2026/05/22 20:05:03 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/22 20:05:03 main.go:13: exit_monitor: done
+2026/05/22 20:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 20:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 20:10:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/22 20:10:02 main.go:13: exit_monitor: done
+2026/05/22 20:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 20:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 20:15:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/22 20:15:02 main.go:13: exit_monitor: done
+2026/05/22 20:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 20:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 20:20:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/22 20:20:02 main.go:13: exit_monitor: done
+2026/05/22 20:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 20:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 20:25:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/22 20:25:02 main.go:13: exit_monitor: done
+2026/05/22 20:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 20:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 20:30:03 monitor.go:141: exit_monitor: closed Will Atalanta BC win on 2026-05-24? (stop_loss EARLY) @ 0.0600 src=bestBid liq=$85247: PnL $-45.43 (-83.78%)
+2026/05/22 20:30:03 monitor.go:141: exit_monitor: closed Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 22, 2026? (stop_loss) @ 0.0130 src=bestBid liq=$76384: PnL $-45.01 (-86.17%)
+2026/05/22 20:30:03 monitor.go:160: exit_monitor: 2 closed, 45 remaining
+2026/05/22 20:30:03 main.go:13: exit_monitor: done
+2026/05/22 20:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 20:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 20:35:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/22 20:35:02 main.go:13: exit_monitor: done
+2026/05/22 20:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 20:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 20:40:02 monitor.go:141: exit_monitor: closed Will ACF Fiorentina vs. Atalanta BC end in a draw? (take_profit EARLY) @ 0.7100 src=bestBid liq=$80699: PnL $69.68 (129.03%)
+2026/05/22 20:40:02 monitor.go:141: exit_monitor: closed Will Atalanta BC win on 2026-05-24? (take_profit EARLY) @ 0.1700 src=bestBid liq=$50577: PnL $78.93 (142.86%)
+2026/05/22 20:40:02 monitor.go:141: exit_monitor: closed Will ACF Fiorentina win on 2026-05-24? (stop_loss EARLY) @ 0.1100 src=bestBid liq=$57804: PnL $-45.52 (-84.06%)
+2026/05/22 20:40:02 monitor.go:141: exit_monitor: closed ACF Fiorentina vs. Atalanta BC: Both Teams to Score (take_profit EARLY) @ 0.9900 src=bestBid liq=$32587: PnL $78.27 (147.50%)
+2026/05/22 20:40:02 monitor.go:160: exit_monitor: 4 closed, 44 remaining
+2026/05/22 20:40:02 main.go:13: exit_monitor: done
+2026/05/22 20:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 20:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 20:45:02 monitor.go:160: exit_monitor: 0 closed, 44 remaining
+2026/05/22 20:45:02 main.go:13: exit_monitor: done
+2026/05/22 20:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 20:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 20:50:02 monitor.go:160: exit_monitor: 0 closed, 44 remaining
+2026/05/22 20:50:02 main.go:13: exit_monitor: done
+2026/05/22 20:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 20:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 20:55:02 monitor.go:160: exit_monitor: 0 closed, 44 remaining
+2026/05/22 20:55:02 main.go:13: exit_monitor: done
+2026/05/22 21:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 21:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
