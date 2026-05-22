@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `puffpaw-fdv-above-400m-one-day-after-launch`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.3850
+- **Precio YES**: 0.3530
 - **Volumen 24h**: 892300.89 USD
 - **End date**: 2027-01-01T05:00:00Z
 

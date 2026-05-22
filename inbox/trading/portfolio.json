@@ -1,6 +1,6 @@
 {
-  "bankroll": 2813.429740610809,
-  "used_exposure": 3008.2623115762844,
+  "bankroll": 2826.3158659105156,
+  "used_exposure": 3009.1061862765782,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -718,22 +718,6 @@
       "liquidity_usd": 22706.3976
     },
     {
-      "id": "T-2068137-1779384603953",
-      "market_id": "2068137",
-      "question": "Will Al Nassr Saudi Club win on 2026-05-21?",
-      "side": "yes",
-      "entry_price": 0.86,
-      "size": 58.86540855298156,
-      "category": "uncategorized",
-      "entry_timestamp": "2026-05-21T17:30:03Z",
-      "approved_price": 0.86,
-      "days_to_resolution": 0,
-      "horizon": "short",
-      "end_date": "2026-05-21T18:00:00Z",
-      "size_usd": 58.86540855298156,
-      "liquidity_usd": 82032.9371
-    },
-    {
       "id": "T-2297854-1779384603953",
       "market_id": "2297854",
       "question": "US x Iran permanent peace deal by May 22, 2026?",
@@ -748,22 +732,6 @@
       "end_date": "2026-05-22T00:00:00Z",
       "size_usd": 57.688100381921934,
       "liquidity_usd": 46070.76488
-    },
-    {
-      "id": "T-2068134-1779393603920",
-      "market_id": "2068134",
-      "question": "Will Al Riyadh Saudi Club win on 2026-05-21?",
-      "side": "yes",
-      "entry_price": 0.93,
-      "size": 56.827689143701804,
-      "category": "uncategorized",
-      "entry_timestamp": "2026-05-21T20:00:03Z",
-      "approved_price": 0.93,
-      "days_to_resolution": 0,
-      "horizon": "short",
-      "end_date": "2026-05-21T18:00:00Z",
-      "size_usd": 56.827689143701804,
-      "liquidity_usd": 57386.4412
     },
     {
       "id": "T-2269345-1779395404150",
@@ -796,6 +764,38 @@
       "end_date": "2026-05-21T22:00:00Z",
       "size_usd": 57.41693348185325,
       "liquidity_usd": 22897.5793
+    },
+    {
+      "id": "T-2069862-1779406203931",
+      "market_id": "2069862",
+      "question": "Will Academia Puerto Cabello win on 2026-05-21?",
+      "side": "yes",
+      "entry_price": 0.33,
+      "size": 58.85705676614985,
+      "category": "uncategorized",
+      "entry_timestamp": "2026-05-21T23:30:03Z",
+      "approved_price": 0.33,
+      "days_to_resolution": 0,
+      "horizon": "short",
+      "end_date": "2026-05-21T22:00:00Z",
+      "size_usd": 58.85705676614985,
+      "liquidity_usd": 16374.8193
+    },
+    {
+      "id": "T-2269343-1779406203931",
+      "market_id": "2269343",
+      "question": "Will the price of Bitcoin be above $76,000 on May 22?",
+      "side": "yes",
+      "entry_price": 0.95,
+      "size": 57.679915630826855,
+      "category": "uncategorized",
+      "entry_timestamp": "2026-05-21T23:30:03Z",
+      "approved_price": 0.95,
+      "days_to_resolution": 0,
+      "horizon": "short",
+      "end_date": "2026-05-22T16:00:00Z",
+      "size_usd": 57.679915630826855,
+      "liquidity_usd": 30816.5733
     }
   ]
 }
