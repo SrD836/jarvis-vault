@@ -880,3 +880,25 @@
 2026/05/22 14:30:04 executor.go:62: executor: quota slots this run: short=30 medium=7 long=7 (of 42 remaining today)
 2026/05/22 14:30:04 executor.go:202: executor: 0 entered, 81 rejected
 2026/05/22 14:30:04 main.go:13: executor: done
+2026/05/22 15:00:03 main.go:11: executor: starting one-shot pass
+2026/05/22 15:00:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/22 15:00:03 executor.go:62: executor: quota slots this run: short=31 medium=7 long=7 (of 43 remaining today)
+2026/05/22 15:00:03 executor.go:197: executor: entered [short] Will SpaceX Starship Flight Test 12 launch by May 22? @ 0.7200 size=$49.60 (open=50/50, bankroll=$2431)
+2026/05/22 15:00:03 executor.go:202: executor: 1 entered, 78 rejected
+2026/05/22 15:00:03 main.go:13: executor: done
+2026/05/22 15:30:03 main.go:11: executor: starting one-shot pass
+2026/05/22 15:30:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/22 15:30:03 executor.go:62: executor: quota slots this run: short=30 medium=7 long=7 (of 42 remaining today)
+2026/05/22 15:30:03 executor.go:202: executor: 0 entered, 80 rejected
+2026/05/22 15:30:03 main.go:13: executor: done
+2026/05/22 16:00:03 main.go:11: executor: starting one-shot pass
+2026/05/22 16:00:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/22 16:00:03 executor.go:62: executor: quota slots this run: short=31 medium=7 long=7 (of 43 remaining today)
+2026/05/22 16:00:03 executor.go:197: executor: entered [short] US x Iran permanent peace deal by May 22, 2026? @ 0.0720 size=$50.12 (open=50/50, bankroll=$2456)
+2026/05/22 16:00:03 executor.go:202: executor: 1 entered, 77 rejected
+2026/05/22 16:00:03 main.go:13: executor: done
+2026/05/22 16:30:03 main.go:11: executor: starting one-shot pass
+2026/05/22 16:30:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/22 16:30:03 executor.go:62: executor: quota slots this run: short=30 medium=7 long=7 (of 42 remaining today)
+2026/05/22 16:30:03 executor.go:202: executor: 0 entered, 79 rejected
+2026/05/22 16:30:03 main.go:13: executor: done
