@@ -1,417 +1,419 @@
-{"candidate_id":"677273","slug":"israel-and-syria-normalize-relations-by-december-31-2026-166","blocked":true,"reason":"liquidity $4850 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
+{"candidate_id":"677273","slug":"israel-and-syria-normalize-relations-by-december-31-2026-166","blocked":true,"reason":"mercado ya expiró (endDate=2025-12-31T00:00:00Z, hace 142 días)","vetoed_by":"P2"}
+{"candidate_id":"610379","slug":"ukraine-recognizes-russian-sovereignty-over-its-territory-by-june-30-2026","blocked":true,"reason":"price floor: 0.0140 \u003c 0.100 (horizon -142 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1068762","slug":"will-usdc-hit-50-of-usdt-market-cap-by-december-31-2026","blocked":true,"reason":"liquidity $164 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
 {"candidate_id":"1192826","slug":"will-chinas-2026-annual-gdp-growth-yy-be-9-or-higher","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon -111 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1006487","slug":"will-grigor-dimitrov-win-the-2026-australian-open","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon -110 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1272554","slug":"will-the-pheu-thai-party-pt-win-110-or-more-seats-in-the-2026-thai-legislative-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon -103 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1395244","slug":"will-how-to-make-a-killing-score-at-least-56-on-the-rotten-tomatoes-tomatometer","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon -88 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1395248","slug":"will-how-to-make-a-killing-score-at-least-60-on-the-rotten-tomatoes-tomatometer","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon -88 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1395244","slug":"will-how-to-make-a-killing-score-at-least-56-on-the-rotten-tomatoes-tomatometer","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon -88 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1395540","slug":"will-jasmine-crockett-and-ken-paxton-be-the-candidates-for-the-texas-senate-election-897","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon -80 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1451234","slug":"will-mona-juul-be-the-next-prime-minister-of-denmark-after-the-2026-parliamentary-elections","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon -59 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1451228","slug":"will-pia-olsen-dyhr-be-the-next-prime-minister-of-denmark-after-the-2026-parliamentary-elections","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon -59 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1451234","slug":"will-mona-juul-be-the-next-prime-minister-of-denmark-after-the-2026-parliamentary-elections","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon -59 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1107737","slug":"will-the-us-invade-venezuela-by-december-31-2026","blocked":true,"reason":"mercado ya expiró (endDate=2026-03-31T00:00:00Z, hace 52 días)","vetoed_by":"P2"}
 {"candidate_id":"947271","slug":"will-carlos-lvarez-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon -40 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1553248","slug":"save-act-becomes-law-by-december-31-2026-347","blocked":true,"reason":"mercado ya expiró (endDate=2026-04-30T00:00:00Z, hace 22 días)","vetoed_by":"P2"}
-{"candidate_id":"2109450","slug":"us-x-iran-diplomatic-meeting-by-june-30-2026-983-259","blocked":true,"reason":"mercado ya expiró (endDate=2026-05-15T00:00:00Z, hace 7 días)","vetoed_by":"P2"}
-{"candidate_id":"2159882","slug":"will-trump-say-nuclear-during-events-with-xi-jinping","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon -7 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2297890","slug":"us-x-iran-diplomatic-meeting-by-june-15-2026","blocked":true,"reason":"mercado ya expiró (endDate=2026-05-15T00:00:00Z, hace 7 días)","vetoed_by":"P2"}
-{"candidate_id":"2109449","slug":"us-x-iran-diplomatic-meeting-by-may-31-2026-283-616","blocked":true,"reason":"mercado ya expiró (endDate=2026-05-15T00:00:00Z, hace 7 días)","vetoed_by":"P2"}
 {"candidate_id":"2159870","slug":"will-trump-say-strait-or-hormuz-during-events-with-xi-jinping","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon -7 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2159882","slug":"will-trump-say-nuclear-during-events-with-xi-jinping","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon -7 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"2159863","slug":"will-trump-say-iran-during-events-with-xi-jinping","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon -7 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2297874","slug":"us-x-iran-diplomatic-meeting-by-may-22-2026-516","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon -7 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2109450","slug":"us-x-iran-diplomatic-meeting-by-june-30-2026-983-259","blocked":true,"reason":"mercado ya expiró (endDate=2026-05-15T00:00:00Z, hace 7 días)","vetoed_by":"P2"}
+{"candidate_id":"2297874","slug":"us-x-iran-diplomatic-meeting-by-may-22-2026-516","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon -7 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2109449","slug":"us-x-iran-diplomatic-meeting-by-may-31-2026-283-616","blocked":true,"reason":"mercado ya expiró (endDate=2026-05-15T00:00:00Z, hace 7 días)","vetoed_by":"P2"}
+{"candidate_id":"2297890","slug":"us-x-iran-diplomatic-meeting-by-june-15-2026","blocked":true,"reason":"mercado ya expiró (endDate=2026-05-15T00:00:00Z, hace 7 días)","vetoed_by":"P2"}
 {"candidate_id":"679651","slug":"will-earl-carter-be-the-republican-nominee-for-senate-in-georgia","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon -3 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"837731","slug":"will-gregg-kirkpatrick-win-the-2026-georgia-governor-republican-primary-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon -3 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2269303","slug":"ethereum-above-2000-on-may-22-2026","blocked":true,"reason":"price ceiling: 0.9990 \u003e 0.950","vetoed_by":"P0_ceiling"}
-{"candidate_id":"2237160","slug":"elon-musk-of-tweets-may-15-may-22-340-359","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 0 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2237162","slug":"elon-musk-of-tweets-may-15-may-22-360-379","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 0 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2269308","slug":"ethereum-above-2100-on-may-22-2026","blocked":true,"reason":"price ceiling: 0.9780 \u003e 0.950","vetoed_by":"P0_ceiling"}
-{"candidate_id":"2269343","slug":"bitcoin-above-76k-on-may-22-2026","blocked":true,"reason":"price ceiling: 0.9930 \u003e 0.950","vetoed_by":"P0_ceiling"}
-{"candidate_id":"2269351","slug":"bitcoin-above-84k-on-may-22-2026","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 0 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2269347","slug":"bitcoin-above-80k-on-may-22-2026","blocked":true,"reason":"price floor: 0.0040 \u003c 0.050 (horizon 0 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2237158","slug":"elon-musk-of-tweets-may-15-may-22-300-319","blocked":true,"reason":"price floor: 0.0460 \u003c 0.050 (horizon 0 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2237159","slug":"elon-musk-of-tweets-may-15-may-22-320-339","blocked":true,"reason":"price floor: 0.0020 \u003c 0.050 (horizon 0 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2269311","slug":"ethereum-above-2200-on-may-22-2026","blocked":true,"reason":"price floor: 0.0100 \u003c 0.050 (horizon 0 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2237156","slug":"elon-musk-of-tweets-may-15-may-22-260-279","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 0 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2237159","slug":"elon-musk-of-tweets-may-15-may-22-320-339","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 0 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"2269315","slug":"ethereum-above-2300-on-may-22-2026","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 0 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2269293","slug":"will-the-price-of-bitcoin-be-between-72000-74000-on-may-22-2026","blocked":true,"reason":"price floor: 0.0060 \u003c 0.050 (horizon 0 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2237162","slug":"elon-musk-of-tweets-may-15-may-22-360-379","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 0 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2237160","slug":"elon-musk-of-tweets-may-15-may-22-340-359","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 0 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2269311","slug":"ethereum-above-2200-on-may-22-2026","blocked":true,"reason":"price floor: 0.0080 \u003c 0.050 (horizon 0 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2237169","slug":"elon-musk-of-tweets-may-15-may-22-500plus","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 0 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2269341","slug":"bitcoin-above-74k-on-may-22-2026","blocked":true,"reason":"price ceiling: 0.9980 \u003e 0.950","vetoed_by":"P0_ceiling"}
+{"candidate_id":"2269343","slug":"bitcoin-above-76k-on-may-22-2026","blocked":true,"reason":"price ceiling: 0.9880 \u003e 0.950","vetoed_by":"P0_ceiling"}
+{"candidate_id":"2237157","slug":"elon-musk-of-tweets-may-15-may-22-280-299","blocked":true,"reason":"price ceiling: 0.9860 \u003e 0.950","vetoed_by":"P0_ceiling"}
 {"candidate_id":"2269349","slug":"bitcoin-above-82k-on-may-22-2026","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 0 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2277974","slug":"bitcoin-above-70k-on-may-23-2026","blocked":true,"reason":"price ceiling: 0.9990 \u003e 0.950","vetoed_by":"P0_ceiling"}
+{"candidate_id":"2269347","slug":"bitcoin-above-80k-on-may-22-2026","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 0 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2269345","slug":"bitcoin-above-78k-on-may-22-2026","blocked":true,"reason":"price floor: 0.0160 \u003c 0.050 (horizon 0 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2269351","slug":"bitcoin-above-84k-on-may-22-2026","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 0 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2237158","slug":"elon-musk-of-tweets-may-15-may-22-300-319","blocked":true,"reason":"price floor: 0.0140 \u003c 0.050 (horizon 0 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"562190","slug":"will-wesley-hunt-win-the-2026-republican-primary","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 3 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"562188","slug":"will-dawn-buckingham-win-the-2026-republican-primary","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 3 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"2313542","slug":"elon-musk-of-tweets-may-19-may-26-140-159","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 4 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2313543","slug":"elon-musk-of-tweets-may-19-may-26-160-179","blocked":true,"reason":"price floor: 0.0030 \u003c 0.050 (horizon 4 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2313560","slug":"elon-musk-of-tweets-may-19-may-26-500plus","blocked":true,"reason":"price floor: 0.0030 \u003c 0.050 (horizon 4 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"577184","slug":"will-thierno-barry-be-the-top-goal-scorer-in-the-202526-english-premier-league-season","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 4 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2313543","slug":"elon-musk-of-tweets-may-19-may-26-160-179","blocked":true,"reason":"price floor: 0.0020 \u003c 0.050 (horizon 4 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2313559","slug":"elon-musk-of-tweets-may-19-may-26-480-499","blocked":true,"reason":"price floor: 0.0020 \u003c 0.050 (horizon 4 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2313560","slug":"elon-musk-of-tweets-may-19-may-26-500plus","blocked":true,"reason":"price floor: 0.0040 \u003c 0.050 (horizon 4 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"577189","slug":"will-kai-havertz-be-the-top-goal-scorer-in-the-202526-english-premier-league-season","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 4 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"577176","slug":"will-bukayo-saka-be-the-top-goal-scorer-in-the-202526-english-premier-league-season","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 4 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"577174","slug":"will-matheus-cunha-be-the-top-goal-scorer-in-the-202526-english-premier-league-season","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 4 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"577170","slug":"will-dominic-solanke-be-the-top-goal-scorer-in-the-202526-english-premier-league-season","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 4 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"577164","slug":"will-joao-pedro-be-the-top-goal-scorer-in-the-202526-english-premier-league-season","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 4 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"577168","slug":"will-ollie-watkins-be-the-top-goal-scorer-in-the-202526-english-premier-league-season","blocked":true,"reason":"price floor: 0.0020 \u003c 0.050 (horizon 4 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"577182","slug":"will-chris-wood-be-the-top-goal-scorer-in-the-202526-english-premier-league-season","blocked":true,"reason":"price floor: 0.0020 \u003c 0.050 (horizon 4 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"577184","slug":"will-thierno-barry-be-the-top-goal-scorer-in-the-202526-english-premier-league-season","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 4 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"577171","slug":"will-omar-marmoush-be-the-top-goal-scorer-in-the-202526-english-premier-league-season","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 4 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"577165","slug":"will-hugo-ekitike-be-the-top-goal-scorer-in-the-202526-english-premier-league-season","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 4 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"577174","slug":"will-matheus-cunha-be-the-top-goal-scorer-in-the-202526-english-premier-league-season","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 4 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"577164","slug":"will-joao-pedro-be-the-top-goal-scorer-in-the-202526-english-premier-league-season","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 4 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"577176","slug":"will-bukayo-saka-be-the-top-goal-scorer-in-the-202526-english-premier-league-season","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 4 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"601871","slug":"will-desire-doue-be-the-20252026-top-ucl-goal-scorer","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 7 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"577219","slug":"will-robert-lewandowski-be-the-top-goal-scorer-in-the-202526-la-liga-season","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 7 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"577227","slug":"will-lamine-yamal-be-the-top-goal-scorer-in-the-202526-la-liga-season","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 7 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"577245","slug":"will-alex-baena-be-the-top-goal-scorer-in-the-202526-la-liga-season","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 7 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"577225","slug":"will-oihan-sancet-be-the-top-goal-scorer-in-the-202526-la-liga-season","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 7 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"577219","slug":"will-robert-lewandowski-be-the-top-goal-scorer-in-the-202526-la-liga-season","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 7 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"577245","slug":"will-alex-baena-be-the-top-goal-scorer-in-the-202526-la-liga-season","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 7 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"601870","slug":"will-bradley-barcola-be-the-20252026-top-ucl-goal-scorer","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 7 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2159621","slug":"will-the-senate-pass-a-reconciliation-bill-by-may-22","blocked":true,"reason":"price floor: 0.0060 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1707943","slug":"will-reza-pahlavi-enter-iran-by-may-31","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2111563","slug":"will-trump-agree-to-iranian-transit-fees-in-the-strait-of-hormuz-by-may-31","blocked":true,"reason":"price floor: 0.0480 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1808970","slug":"us-obtains-iranian-enriched-uranium-by-may-31-396","blocked":true,"reason":"price floor: 0.0420 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2097472","slug":"trump-out-as-president-by-may-31","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"577227","slug":"will-lamine-yamal-be-the-top-goal-scorer-in-the-202526-la-liga-season","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 7 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"601871","slug":"will-desire-doue-be-the-20252026-top-ucl-goal-scorer","blocked":true,"reason":"price floor: 0.0010 \u003c 0.050 (horizon 7 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1707932","slug":"will-the-iranian-regime-fall-by-may-31","blocked":true,"reason":"price floor: 0.0060 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1809560","slug":"strait-of-hormuz-traffic-returns-to-normal-by-end-of-may","blocked":true,"reason":"price floor: 0.0820 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2002531","slug":"israel-x-hezbollah-permanent-peace-deal-by-may-31-2026","blocked":true,"reason":"price floor: 0.0630 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2111561","slug":"will-trump-agree-to-iranian-enrichment-of-uranium-by-may-31","blocked":true,"reason":"price floor: 0.0670 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2009635","slug":"trump-renames-straight-of-hormuz-to-strait-of-trump-by-may-31","blocked":true,"reason":"price floor: 0.0060 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1975544","slug":"will-mistral-have-the-best-ai-model-at-the-end-of-may-2026","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2226655","slug":"will-mrbeasts-next-video-get-between-80-and-90-million-views-on-week-1-156","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1975545","slug":"will-deepseek-have-the-best-ai-model-at-the-end-of-may-2026","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2126515","slug":"israel-x-iran-permanent-peace-deal-by-may-31-2026","blocked":true,"reason":"price floor: 0.0310 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2097472","slug":"trump-out-as-president-by-may-31","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1708132","slug":"iran-leadership-change-by-may-31-593-194-829","blocked":true,"reason":"price floor: 0.0370 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2226655","slug":"will-mrbeasts-next-video-get-between-80-and-90-million-views-on-week-1-156","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2002531","slug":"israel-x-hezbollah-permanent-peace-deal-by-may-31-2026","blocked":true,"reason":"price floor: 0.0260 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2111563","slug":"will-trump-agree-to-iranian-transit-fees-in-the-strait-of-hormuz-by-may-31","blocked":true,"reason":"price floor: 0.0470 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1808970","slug":"us-obtains-iranian-enriched-uranium-by-may-31-396","blocked":true,"reason":"price floor: 0.0420 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2111561","slug":"will-trump-agree-to-iranian-enrichment-of-uranium-by-may-31","blocked":true,"reason":"price floor: 0.0710 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1809560","slug":"strait-of-hormuz-traffic-returns-to-normal-by-end-of-may","blocked":true,"reason":"price floor: 0.0820 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1975540","slug":"will-baidu-have-the-best-ai-model-at-the-end-of-may-2026","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1707943","slug":"will-reza-pahlavi-enter-iran-by-may-31","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1975544","slug":"will-mistral-have-the-best-ai-model-at-the-end-of-may-2026","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1975545","slug":"will-deepseek-have-the-best-ai-model-at-the-end-of-may-2026","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1124641","slug":"will-lebanese-forces-win-the-most-seats-in-the-2026-lebanese-parliamentary-election","blocked":true,"reason":"price floor: 0.0750 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2126515","slug":"israel-x-iran-permanent-peace-deal-by-may-31-2026","blocked":true,"reason":"price floor: 0.0330 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2009635","slug":"trump-renames-straight-of-hormuz-to-strait-of-trump-by-may-31","blocked":true,"reason":"price floor: 0.0060 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2159621","slug":"will-the-senate-pass-a-reconciliation-bill-by-may-22","blocked":true,"reason":"price floor: 0.0170 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1999723","slug":"will-broadcom-be-the-largest-company-in-the-world-by-market-cap-on-may-31","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"540881","slug":"gta-vi-released-before-june-2026","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"569348","slug":"will-mauricio-crdenas-win-the-1st-round-of-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"569335","slug":"will-david-luna-snchez-win-the-1st-round-of-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"569333","slug":"will-luis-gilberto-murillo-win-the-1st-round-of-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"569339","slug":"will-sergio-fajardo-win-the-1st-round-of-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"569338","slug":"will-gustavo-bolvar-win-the-1st-round-of-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"540881","slug":"gta-vi-released-before-june-2026","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 8 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"569340","slug":"will-juan-manuel-galn-win-the-1st-round-of-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"569346","slug":"will-daniel-quintero-win-the-1st-round-of-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"569336","slug":"will-juan-daniel-oviedo-win-the-1st-round-of-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"569341","slug":"will-germn-vargas-lleras-win-the-1st-round-of-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"569333","slug":"will-luis-gilberto-murillo-win-the-1st-round-of-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"569347","slug":"will-juan-carlos-pinzn-win-the-1st-round-of-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"569345","slug":"will-roy-barreras-win-the-1st-round-of-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"569339","slug":"will-sergio-fajardo-win-the-1st-round-of-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"569349","slug":"will-candidate-h-win-the-1st-round-of-the-2026-colombian-presidential-election-146-339","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"569336","slug":"will-juan-daniel-oviedo-win-the-1st-round-of-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"569334","slug":"will-claudia-lpez-win-the-1st-round-of-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"569348","slug":"will-mauricio-crdenas-win-the-1st-round-of-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"569338","slug":"will-gustavo-bolvar-win-the-1st-round-of-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"569346","slug":"will-daniel-quintero-win-the-1st-round-of-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"569341","slug":"will-germn-vargas-lleras-win-the-1st-round-of-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"569345","slug":"will-roy-barreras-win-the-1st-round-of-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"569335","slug":"will-david-luna-snchez-win-the-1st-round-of-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1708109","slug":"kharg-island-no-longer-under-iranian-control-by-may-31-689","blocked":true,"reason":"price floor: 0.0300 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2074236","slug":"will-wti-reach-120-in-may-2026-592-217","blocked":true,"reason":"price floor: 0.0900 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"2074234","slug":"will-wti-reach-140-in-may-2026-916","blocked":true,"reason":"price floor: 0.0150 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2128304","slug":"will-wti-crude-oil-wti-hit-high-200-in-may","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2074233","slug":"will-wti-reach-150-in-may-2026-196-364","blocked":true,"reason":"price floor: 0.0120 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2074235","slug":"will-wti-reach-130-in-may-2026-733","blocked":true,"reason":"price floor: 0.0400 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2074241","slug":"will-wti-dip-to-70-in-may-2026-155-395-333-182-889-988-959-341-883-234-375-347","blocked":true,"reason":"price floor: 0.0310 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2132779","slug":"will-bitcoin-dip-to-70k-in-may-2026","blocked":true,"reason":"price floor: 0.0800 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1698964","slug":"elon-musk-of-tweets-may-2026-2000plus","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2132800","slug":"will-ethereum-dip-to-1800-in-may-2026","blocked":true,"reason":"price floor: 0.0440 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2132780","slug":"will-bitcoin-dip-to-65k-in-may-2026","blocked":true,"reason":"price floor: 0.0200 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2132776","slug":"will-bitcoin-reach-85k-in-may-2026","blocked":true,"reason":"price floor: 0.0600 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2132770","slug":"will-bitcoin-reach-115k-in-may-2026","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2074235","slug":"will-wti-reach-130-in-may-2026-733","blocked":true,"reason":"price floor: 0.0390 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2128304","slug":"will-wti-crude-oil-wti-hit-high-200-in-may","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2074236","slug":"will-wti-reach-120-in-may-2026-592-217","blocked":true,"reason":"price floor: 0.0900 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2074233","slug":"will-wti-reach-150-in-may-2026-196-364","blocked":true,"reason":"price floor: 0.0110 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2074241","slug":"will-wti-dip-to-70-in-may-2026-155-395-333-182-889-988-959-341-883-234-375-347","blocked":true,"reason":"price floor: 0.0330 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2132775","slug":"will-bitcoin-reach-90k-in-may-2026","blocked":true,"reason":"price floor: 0.0130 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2132800","slug":"will-ethereum-dip-to-1800-in-may-2026","blocked":true,"reason":"price floor: 0.0480 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"2132768","slug":"will-bitcoin-reach-150k-in-may-2026","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2132775","slug":"will-bitcoin-reach-90k-in-may-2026","blocked":true,"reason":"price floor: 0.0110 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1698964","slug":"elon-musk-of-tweets-may-2026-2000plus","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2132779","slug":"will-bitcoin-dip-to-70k-in-may-2026","blocked":true,"reason":"price floor: 0.0900 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2132780","slug":"will-bitcoin-dip-to-65k-in-may-2026","blocked":true,"reason":"price floor: 0.0200 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2088997","slug":"over-40m-committed-to-the-printr-public-sale","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"2132807","slug":"will-ethereum-dip-to-400-in-may-2026","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2132770","slug":"will-bitcoin-reach-115k-in-may-2026","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2132776","slug":"will-bitcoin-reach-85k-in-may-2026","blocked":true,"reason":"price floor: 0.0500 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"2132796","slug":"will-ethereum-reach-2600-in-may-2026","blocked":true,"reason":"price floor: 0.0140 \u003c 0.100 (horizon 9 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"703988","slug":"will-the-rebuilding-korea-party-rkp-win-the-2026-south-korean-local-elections","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 11 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"679491","slug":"will-kim-byeong-ju-win-the-2026-gyeonggi-province-gubernatorial-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 11 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"703991","slug":"will-reform-party-rp-win-the-2026-south-korean-local-elections","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 11 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"678931","slug":"will-cho-eun-hee-win-the-2026-seoul-mayoral-election","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 11 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1492423","slug":"will-robert-lebovics-be-the-republican-nominee-for-senate-in-new-jersey-744","blocked":true,"reason":"price floor: 0.0290 \u003c 0.100 (horizon 10 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"679490","slug":"will-kim-dong-yeon-win-the-2026-gyeonggi-province-gubernatorial-election","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 11 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"2062835","slug":"will-lee-jae-man-win-the-2026-daegu-mayoral-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 11 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"679491","slug":"will-kim-byeong-ju-win-the-2026-gyeonggi-province-gubernatorial-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 11 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"703991","slug":"will-reform-party-rp-win-the-2026-south-korean-local-elections","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 11 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"703988","slug":"will-the-rebuilding-korea-party-rkp-win-the-2026-south-korean-local-elections","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 11 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"678931","slug":"will-cho-eun-hee-win-the-2026-seoul-mayoral-election","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 11 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1087802","slug":"will-katie-boulter-win-the-2026-womens-french-open","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 14 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"947281","slug":"will-ricardo-belmont-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1087544","slug":"will-alex-michelsen-win-the-2026-mens-french-open","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1087529","slug":"will-hubert-hurkacz-win-the-2026-mens-french-open","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"947285","slug":"will-yonhy-lescano-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"947277","slug":"will-roberto-chiabra-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"947272","slug":"will-csar-acua-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1087535","slug":"will-grigor-dimitrov-win-the-2026-mens-french-open","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"947291","slug":"will-wolfgang-grozo-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1087528","slug":"will-sebastian-korda-win-the-2026-mens-french-open","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"947270","slug":"will-mario-vizcarra-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"947275","slug":"will-jos-luna-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1087536","slug":"will-reilly-opelka-win-the-2026-mens-french-open","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"947279","slug":"will-jos-williams-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"947274","slug":"will-vladimir-cerrn-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1087548","slug":"will-denis-shapovalov-win-the-2026-mens-french-open","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1087533","slug":"will-jan-lennard-struff-win-the-2026-mens-french-open","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"947286","slug":"will-mesas-guevara-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1087518","slug":"will-jack-draper-win-the-2026-mens-french-open","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"947287","slug":"will-marisol-prez-tello-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"947276","slug":"will-george-forsyth-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"947274","slug":"will-vladimir-cerrn-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"947284","slug":"will-rafael-belande-llosa-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"947280","slug":"will-fiorella-molinelli-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"947278","slug":"will-enrique-valderrama-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"947285","slug":"will-yonhy-lescano-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"947282","slug":"will-fernando-olivera-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"947279","slug":"will-jos-williams-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"947270","slug":"will-mario-vizcarra-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"947281","slug":"will-ricardo-belmont-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1087536","slug":"will-reilly-opelka-win-the-2026-mens-french-open","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1087544","slug":"will-alex-michelsen-win-the-2026-mens-french-open","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"947276","slug":"will-george-forsyth-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"947278","slug":"will-enrique-valderrama-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1087533","slug":"will-jan-lennard-struff-win-the-2026-mens-french-open","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1087518","slug":"will-jack-draper-win-the-2026-mens-french-open","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1087529","slug":"will-hubert-hurkacz-win-the-2026-mens-french-open","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1087548","slug":"will-denis-shapovalov-win-the-2026-mens-french-open","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"947287","slug":"will-marisol-prez-tello-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"947280","slug":"will-fiorella-molinelli-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"947277","slug":"will-roberto-chiabra-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"947275","slug":"will-jos-luna-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"947272","slug":"will-csar-acua-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"947291","slug":"will-wolfgang-grozo-win-the-2026-peruvian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1087535","slug":"will-grigor-dimitrov-win-the-2026-mens-french-open","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 15 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"708766","slug":"will-al-mina-be-the-republican-nominee-for-senate-in-virginia","blocked":true,"reason":"price floor: 0.0110 \u003c 0.100 (horizon 24 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"906973","slug":"will-the-fed-decrease-interest-rates-by-25-bps-after-the-june-2026-meeting","blocked":true,"reason":"price floor: 0.0100 \u003c 0.100 (horizon 25 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"906975","slug":"will-the-fed-increase-interest-rates-by-25-bps-after-the-june-2026-meeting","blocked":true,"reason":"price floor: 0.0090 \u003c 0.100 (horizon 25 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"906974","slug":"will-there-be-no-change-in-fed-interest-rates-after-the-june-2026-meeting","blocked":true,"reason":"price ceiling: 0.9780 \u003e 0.950","vetoed_by":"P0_ceiling"}
-{"candidate_id":"906972","slug":"will-the-fed-decrease-interest-rates-by-50-bps-after-the-june-2026-meeting","blocked":true,"reason":"price floor: 0.0050 \u003c 0.100 (horizon 25 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"906974","slug":"will-there-be-no-change-in-fed-interest-rates-after-the-june-2026-meeting","blocked":true,"reason":"price ceiling: 0.9770 \u003e 0.950","vetoed_by":"P0_ceiling"}
+{"candidate_id":"906973","slug":"will-the-fed-decrease-interest-rates-by-25-bps-after-the-june-2026-meeting","blocked":true,"reason":"price floor: 0.0110 \u003c 0.100 (horizon 25 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"906976","slug":"will-the-fed-increase-interest-rates-by-50-bps-after-the-june-2026-meeting","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 25 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"569364","slug":"will-juan-manuel-galn-win-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 30 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"569369","slug":"will-daniel-quintero-win-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 30 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"569359","slug":"will-david-luna-snchez-win-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 30 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"569371","slug":"will-enrique-pealosa-win-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 30 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"569367","slug":"will-mauricio-cardenas-win-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 30 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"569360","slug":"will-juan-daniel-oviedo-win-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 30 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"569362","slug":"will-gustavo-bolvar-win-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 30 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"906972","slug":"will-the-fed-decrease-interest-rates-by-50-bps-after-the-june-2026-meeting","blocked":true,"reason":"price floor: 0.0050 \u003c 0.100 (horizon 25 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"569360","slug":"will-juan-daniel-oviedo-win-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 29 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"569364","slug":"will-juan-manuel-galn-win-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 29 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"569362","slug":"will-gustavo-bolvar-win-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 29 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"569359","slug":"will-david-luna-snchez-win-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 29 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"569369","slug":"will-daniel-quintero-win-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 29 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"569371","slug":"will-enrique-pealosa-win-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 29 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"569367","slug":"will-mauricio-cardenas-win-the-2026-colombian-presidential-election","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 29 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1343591","slug":"will-nikita-shcherbakov-be-drafted-1st-overall-in-the-2026-nhl-draft","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 35 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1343559","slug":"will-tynan-lawrence-be-drafted-1st-overall-in-the-2026-nhl-draft","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 35 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"958443","slug":"will-the-iranian-regime-fall-by-june-30","blocked":true,"reason":"price floor: 0.0390 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1900410","slug":"pete-hegseth-impeached-by-june-30","blocked":true,"reason":"price floor: 0.0500 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1460857","slug":"anthropic-ceo-arrested","blocked":true,"reason":"price floor: 0.0140 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"618511","slug":"will-trump-and-putin-meet-next-in-ukraine-328-474","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"996326","slug":"will-xai-have-a-1-ai-model-by-june-30","blocked":true,"reason":"price floor: 0.0330 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1285586","slug":"will-an-anthropic-claude-model-score-at-least-45-on-humanitys-last-exam","blocked":true,"reason":"liquidity $4434 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
-{"candidate_id":"1007635","slug":"will-russia-enter-kherson-by-june-30-645","blocked":true,"reason":"price floor: 0.0180 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"956590","slug":"will-china-invade-taiwan-by-june-30-2026","blocked":true,"reason":"price floor: 0.0160 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"608399","slug":"will-discords-market-cap-be-between-15b-and-20b-at-market-close-on-ipo-day","blocked":true,"reason":"price floor: 0.0660 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"608390","slug":"will-databricks-market-cap-be-greater-than-250b-at-market-close-on-ipo-day","blocked":true,"reason":"price floor: 0.0400 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1090199","slug":"will-reza-pahlavi-enter-iran-by-june-30-555-947-362-379-213","blocked":true,"reason":"price floor: 0.0330 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"608401","slug":"will-discords-market-cap-be-between-25b-and-30b-at-market-close-on-ipo-day","blocked":true,"reason":"price floor: 0.0550 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"631123","slug":"will-alibaba-have-the-top-ai-model-at-the-end-of-june-2026-248","blocked":true,"reason":"price floor: 0.0110 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"608374","slug":"will-fannie-maes-market-cap-be-between-300b-and-350b-at-market-close-on-ipo-day","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"618504","slug":"will-trump-and-putin-meet-next-in-japan-711-288-527","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"704240","slug":"2k-container-ship-transits-of-suez-canal-in-h1-2026","blocked":true,"reason":"price floor: 0.0210 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"821114","slug":"mh370-underwater-wreckage-found-by-june-30-2026","blocked":true,"reason":"price floor: 0.0200 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1090199","slug":"will-reza-pahlavi-enter-iran-by-june-30-555-947-362-379-213","blocked":true,"reason":"price floor: 0.0300 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1007632","slug":"will-russia-enter-dopropillia-by-june-30-122-495","blocked":true,"reason":"price floor: 0.0600 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"631182","slug":"will-microsoft-be-the-largest-company-in-the-world-by-market-cap-on-june-30-612","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1494703","slug":"will-crude-oil-cl-hit-high-200-by-end-of-june-677","blocked":true,"reason":"price floor: 0.0180 \u003c 0.100 (horizon 39 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"608401","slug":"will-discords-market-cap-be-between-25b-and-30b-at-market-close-on-ipo-day","blocked":true,"reason":"price floor: 0.0500 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"608399","slug":"will-discords-market-cap-be-between-15b-and-20b-at-market-close-on-ipo-day","blocked":true,"reason":"price floor: 0.0660 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"821114","slug":"mh370-underwater-wreckage-found-by-june-30-2026","blocked":true,"reason":"price floor: 0.0200 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"608374","slug":"will-fannie-maes-market-cap-be-between-300b-and-350b-at-market-close-on-ipo-day","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"608390","slug":"will-databricks-market-cap-be-greater-than-250b-at-market-close-on-ipo-day","blocked":true,"reason":"price floor: 0.0400 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"956590","slug":"will-china-invade-taiwan-by-june-30-2026","blocked":true,"reason":"price floor: 0.0160 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"618504","slug":"will-trump-and-putin-meet-next-in-japan-711-288-527","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1285586","slug":"will-an-anthropic-claude-model-score-at-least-45-on-humanitys-last-exam","blocked":true,"reason":"liquidity $4463 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
+{"candidate_id":"1370737","slug":"will-michael-jackson-be-confirmed-to-have-visited-epsteins-island","blocked":true,"reason":"price floor: 0.0200 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1007635","slug":"will-russia-enter-kherson-by-june-30-645","blocked":true,"reason":"price floor: 0.0180 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"618511","slug":"will-trump-and-putin-meet-next-in-ukraine-328-474","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"631123","slug":"will-alibaba-have-the-top-ai-model-at-the-end-of-june-2026-248","blocked":true,"reason":"price floor: 0.0110 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1900410","slug":"pete-hegseth-impeached-by-june-30","blocked":true,"reason":"price floor: 0.0500 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"704240","slug":"2k-container-ship-transits-of-suez-canal-in-h1-2026","blocked":true,"reason":"price floor: 0.0210 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"996326","slug":"will-xai-have-a-1-ai-model-by-june-30","blocked":true,"reason":"price floor: 0.0330 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"958443","slug":"will-the-iranian-regime-fall-by-june-30","blocked":true,"reason":"price floor: 0.0390 \u003c 0.100 (horizon 38 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1494703","slug":"will-crude-oil-cl-hit-high-200-by-end-of-june-677","blocked":true,"reason":"price floor: 0.0190 \u003c 0.100 (horizon 39 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1708086","slug":"kharg-island-no-longer-under-iranian-control-by-june-30-561-854","blocked":true,"reason":"price floor: 0.0800 \u003c 0.100 (horizon 39 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"553857","slug":"will-the-cleveland-cavaliers-win-the-2026-nba-finals","blocked":true,"reason":"price floor: 0.0180 \u003c 0.100 (horizon 39 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"573655","slug":"will-bitcoin-hit-150k-by-june-30-2026","blocked":true,"reason":"price floor: 0.0140 \u003c 0.100 (horizon 39 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1088110","slug":"will-emma-raducanu-be-the-2026-womens-wimbledon-winner","blocked":true,"reason":"price floor: 0.0120 \u003c 0.100 (horizon 50 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1088126","slug":"will-karolna-muchov-be-the-2026-womens-wimbledon-winner","blocked":true,"reason":"price floor: 0.0140 \u003c 0.100 (horizon 50 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1088109","slug":"will-amanda-anisimova-be-the-2026-womens-wimbledon-winner","blocked":true,"reason":"price floor: 0.0520 \u003c 0.100 (horizon 50 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1087905","slug":"will-lorenzo-musetti-be-the-2026-mens-wimbledon-winner","blocked":true,"reason":"price floor: 0.0130 \u003c 0.100 (horizon 50 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1088113","slug":"will-jasmine-paolini-be-the-2026-womens-wimbledon-winner","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 50 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1088117","slug":"will-liudmila-samsonova-be-the-2026-womens-wimbledon-winner","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon 50 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1088132","slug":"will-clara-tauson-be-the-2026-womens-wimbledon-winner","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 50 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1087914","slug":"will-lorenzo-sonego-be-the-2026-mens-wimbledon-winner","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 50 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1088108","slug":"will-coco-gauff-be-the-2026-womens-wimbledon-winner","blocked":true,"reason":"price floor: 0.0500 \u003c 0.100 (horizon 50 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1087905","slug":"will-lorenzo-musetti-be-the-2026-mens-wimbledon-winner","blocked":true,"reason":"price floor: 0.0130 \u003c 0.100 (horizon 50 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1088132","slug":"will-clara-tauson-be-the-2026-womens-wimbledon-winner","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 50 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1088110","slug":"will-emma-raducanu-be-the-2026-womens-wimbledon-winner","blocked":true,"reason":"price floor: 0.0120 \u003c 0.100 (horizon 50 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1088117","slug":"will-liudmila-samsonova-be-the-2026-womens-wimbledon-winner","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon 50 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1088126","slug":"will-karolna-muchov-be-the-2026-womens-wimbledon-winner","blocked":true,"reason":"price floor: 0.0140 \u003c 0.100 (horizon 50 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1087923","slug":"will-alejandro-davidovich-fokina-be-the-2026-mens-wimbledon-winner","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 50 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1088108","slug":"will-coco-gauff-be-the-2026-womens-wimbledon-winner","blocked":true,"reason":"price floor: 0.0500 \u003c 0.100 (horizon 50 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1088109","slug":"will-amanda-anisimova-be-the-2026-womens-wimbledon-winner","blocked":true,"reason":"price floor: 0.0520 \u003c 0.100 (horizon 50 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"913600","slug":"claudio-tapia-out-as-afa-president-by-july-19-2026","blocked":true,"reason":"liquidity $363 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
-{"candidate_id":"558954","slug":"will-tunisia-win-the-2026-fifa-world-cup-165","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558964","slug":"will-south-africa-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558976","slug":"will-croatia-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0090 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558983","slug":"will-bosnia-herzegovina-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558963","slug":"will-morocco-win-the-2026-fifa-world-cup-464","blocked":true,"reason":"price floor: 0.0150 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558973","slug":"will-scotland-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558940","slug":"will-portugal-win-the-2026-fifa-world-cup-912","blocked":true,"reason":"price floor: 0.0890 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558984","slug":"will-czechia-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558985","slug":"will-turkiye-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0070 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558970","slug":"will-cape-verde-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558956","slug":"will-paraguay-win-the-2026-fifa-world-cup-967","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558980","slug":"will-sweden-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0060 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558945","slug":"will-mexico-win-the-2026-fifa-world-cup-529","blocked":true,"reason":"price floor: 0.0110 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558967","slug":"will-ghana-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558957","slug":"will-new-zealand-win-the-2026-fifa-world-cup-635","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558941","slug":"will-netherlands-win-the-2026-fifa-world-cup-739","blocked":true,"reason":"price floor: 0.0350 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558951","slug":"will-norway-win-the-2026-fifa-world-cup-893","blocked":true,"reason":"price floor: 0.0250 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558962","slug":"will-jordan-win-the-2026-fifa-world-cup-233","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558959","slug":"will-iran-win-the-2026-fifa-world-cup-788","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558958","slug":"will-australia-win-the-2026-fifa-world-cup-816","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558943","slug":"will-usa-win-the-2026-fifa-world-cup-467","blocked":true,"reason":"price floor: 0.0130 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558982","slug":"will-iraq-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558979","slug":"will-team-z-win-the-2026-fifa-world-cup-316","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"558938","slug":"will-argentina-win-the-2026-fifa-world-cup-245","blocked":true,"reason":"price floor: 0.0840 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558966","slug":"will-ivory-coast-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558939","slug":"will-germany-win-the-2026-fifa-world-cup-467","blocked":true,"reason":"price floor: 0.0520 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558957","slug":"will-new-zealand-win-the-2026-fifa-world-cup-635","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558943","slug":"will-usa-win-the-2026-fifa-world-cup-467","blocked":true,"reason":"price floor: 0.0130 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558947","slug":"will-colombia-win-the-2026-fifa-world-cup-734","blocked":true,"reason":"price floor: 0.0170 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558940","slug":"will-portugal-win-the-2026-fifa-world-cup-912","blocked":true,"reason":"price floor: 0.0890 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558978","slug":"will-curaao-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558963","slug":"will-morocco-win-the-2026-fifa-world-cup-464","blocked":true,"reason":"price floor: 0.0150 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558956","slug":"will-paraguay-win-the-2026-fifa-world-cup-967","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558972","slug":"will-saudi-arabia-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558945","slug":"will-mexico-win-the-2026-fifa-world-cup-529","blocked":true,"reason":"price floor: 0.0110 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558964","slug":"will-south-africa-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558962","slug":"will-jordan-win-the-2026-fifa-world-cup-233","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558977","slug":"will-haiti-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558959","slug":"will-iran-win-the-2026-fifa-world-cup-788","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558980","slug":"will-sweden-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0060 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558958","slug":"will-australia-win-the-2026-fifa-world-cup-816","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"558961","slug":"will-south-korea-win-the-2026-fifa-world-cup-485","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558974","slug":"will-switzerland-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0100 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"558975","slug":"will-austria-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0060 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"558968","slug":"will-egypt-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558937","slug":"will-brazil-win-the-2026-fifa-world-cup-183","blocked":true,"reason":"price floor: 0.0890 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558944","slug":"will-uruguay-win-the-2026-fifa-world-cup-932","blocked":true,"reason":"price floor: 0.0110 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558969","slug":"will-algeria-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558985","slug":"will-turkiye-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0070 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558967","slug":"will-ghana-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"558971","slug":"will-qatar-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"558952","slug":"will-canada-win-the-2026-fifa-world-cup-755","blocked":true,"reason":"price floor: 0.0050 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558978","slug":"will-curaao-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558966","slug":"will-ivory-coast-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558941","slug":"will-netherlands-win-the-2026-fifa-world-cup-739","blocked":true,"reason":"price floor: 0.0350 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558982","slug":"will-iraq-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558954","slug":"will-tunisia-win-the-2026-fifa-world-cup-165","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"558965","slug":"will-senegal-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558977","slug":"will-haiti-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558947","slug":"will-colombia-win-the-2026-fifa-world-cup-734","blocked":true,"reason":"price floor: 0.0170 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558955","slug":"will-ecuador-win-the-2026-fifa-world-cup-986","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558960","slug":"will-uzbekistan-win-the-2026-fifa-world-cup-773","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558949","slug":"will-japan-win-the-2026-fifa-world-cup-112","blocked":true,"reason":"price floor: 0.0180 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558972","slug":"will-saudi-arabia-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"558981","slug":"will-congo-dr-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558944","slug":"will-uruguay-win-the-2026-fifa-world-cup-932","blocked":true,"reason":"price floor: 0.0110 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558949","slug":"will-japan-win-the-2026-fifa-world-cup-112","blocked":true,"reason":"price floor: 0.0190 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558937","slug":"will-brazil-win-the-2026-fifa-world-cup-183","blocked":true,"reason":"price floor: 0.0890 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558970","slug":"will-cape-verde-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558960","slug":"will-uzbekistan-win-the-2026-fifa-world-cup-773","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558983","slug":"will-bosnia-herzegovina-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558973","slug":"will-scotland-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558955","slug":"will-ecuador-win-the-2026-fifa-world-cup-986","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558976","slug":"will-croatia-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0090 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558984","slug":"will-czechia-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558979","slug":"will-team-z-win-the-2026-fifa-world-cup-316","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558974","slug":"will-switzerland-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0100 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"558946","slug":"will-belgium-win-the-2026-fifa-world-cup-358","blocked":true,"reason":"price floor: 0.0190 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"558939","slug":"will-germany-win-the-2026-fifa-world-cup-467","blocked":true,"reason":"price floor: 0.0520 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1122570","slug":"will-jack-thorne-win-the-2026-fields-medal","blocked":true,"reason":"liquidity $716 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
-{"candidate_id":"1122569","slug":"will-yu-deng-win-the-2026-fields-medal","blocked":true,"reason":"liquidity $987 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
-{"candidate_id":"599326","slug":"will-chellie-pingree-be-the-democratic-nominee-for-senate-in-maine","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 69 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"599327","slug":"will-jordan-wood-be-the-democratic-nominee-for-senate-in-maine","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 69 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"599328","slug":"will-troy-jackson-be-the-democratic-nominee-for-senate-in-maine","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 69 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558951","slug":"will-norway-win-the-2026-fifa-world-cup-893","blocked":true,"reason":"price floor: 0.0250 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"558969","slug":"will-algeria-win-the-2026-fifa-world-cup","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 58 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1122569","slug":"will-yu-deng-win-the-2026-fields-medal","blocked":true,"reason":"liquidity $1137 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
+{"candidate_id":"1122570","slug":"will-jack-thorne-win-the-2026-fields-medal","blocked":true,"reason":"liquidity $931 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
 {"candidate_id":"599329","slug":"will-jared-golden-be-the-democratic-nominee-for-senate-in-maine","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 69 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"599326","slug":"will-chellie-pingree-be-the-democratic-nominee-for-senate-in-maine","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 69 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"599328","slug":"will-troy-jackson-be-the-democratic-nominee-for-senate-in-maine","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 69 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"599327","slug":"will-jordan-wood-be-the-democratic-nominee-for-senate-in-maine","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 69 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"599309","slug":"will-kristen-mcdonald-rivet-win-the-2026-michigan-democratic-primary","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 73 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"599311","slug":"will-matt-sahr-win-the-2026-michigan-democratic-primary","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 73 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"907984","slug":"will-scott-jensen-win-the-2026-minnesota-governor-republican-primary-election","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 80 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1485166","slug":"will-david-njoku-play-for-tennessee-titans-in-2026-27","blocked":true,"reason":"price floor: 0.0050 \u003c 0.100 (horizon 101 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1363965","slug":"will-spd-win-the-most-seats-in-the-2026-sachsen-anhalt-parliamentary-elections","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 106 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1363963","slug":"will-cdu-win-the-most-seats-in-the-2026-sachsen-anhalt-parliamentary-elections","blocked":true,"reason":"price floor: 0.0560 \u003c 0.100 (horizon 106 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1363965","slug":"will-spd-win-the-most-seats-in-the-2026-sachsen-anhalt-parliamentary-elections","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 106 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1193096","slug":"will-ebba-busch-be-the-next-prime-minister-of-sweden","blocked":true,"reason":"price floor: 0.0060 \u003c 0.100 (horizon 113 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"811720","slug":"will-the-sweden-democrats-sd-win-the-most-seats-in-the-2026-swedish-parliamentary-election","blocked":true,"reason":"price floor: 0.0490 \u003c 0.100 (horizon 113 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1088687","slug":"will-alexandra-eala-win-the-2026-womens-us-open","blocked":true,"reason":"price floor: 0.0130 \u003c 0.100 (horizon 113 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"811725","slug":"will-the-green-party-mp-win-the-most-seats-in-the-2026-swedish-parliamentary-election","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 113 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1193095","slug":"will-jimmie-kesson-be-the-next-prime-minister-of-sweden","blocked":true,"reason":"price floor: 0.0350 \u003c 0.100 (horizon 113 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"811720","slug":"will-the-sweden-democrats-sd-win-the-most-seats-in-the-2026-swedish-parliamentary-election","blocked":true,"reason":"price floor: 0.0490 \u003c 0.100 (horizon 113 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1193096","slug":"will-ebba-busch-be-the-next-prime-minister-of-sweden","blocked":true,"reason":"price floor: 0.0060 \u003c 0.100 (horizon 113 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"789955","slug":"will-spd-win-the-most-seats-in-the-2026-berlin-state-elections","blocked":true,"reason":"price floor: 0.0850 \u003c 0.100 (horizon 120 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"664884","slug":"will-consensys-ipo-by-september-30-2026","blocked":true,"reason":"liquidity $839 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
-{"candidate_id":"601824","slug":"will-carlos-roberto-massa-jnior-win-the-2026-brazilian-presidential-election","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 134 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"601833","slug":"will-tereza-cristina-win-the-2026-brazilian-presidential-election","blocked":true,"reason":"price floor: 0.0050 \u003c 0.100 (horizon 134 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"601827","slug":"will-ronaldo-caiado-win-the-2026-brazilian-presidential-election","blocked":true,"reason":"price floor: 0.0120 \u003c 0.100 (horizon 134 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"664884","slug":"will-consensys-ipo-by-september-30-2026","blocked":true,"reason":"liquidity $809 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
 {"candidate_id":"601831","slug":"will-eduardo-leite-win-the-2026-brazilian-presidential-election","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 134 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"601827","slug":"will-ronaldo-caiado-win-the-2026-brazilian-presidential-election","blocked":true,"reason":"price floor: 0.0120 \u003c 0.100 (horizon 134 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"601821","slug":"will-fernando-haddad-win-the-2026-brazilian-presidential-election","blocked":true,"reason":"price floor: 0.0470 \u003c 0.100 (horizon 134 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"601824","slug":"will-carlos-roberto-massa-jnior-win-the-2026-brazilian-presidential-election","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 134 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"601818","slug":"will-tarcisio-de-frietas-win-the-2026-brazilian-presidential-election","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 134 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"601821","slug":"will-fernando-haddad-win-the-2026-brazilian-presidential-election","blocked":true,"reason":"price floor: 0.0490 \u003c 0.100 (horizon 134 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"601822","slug":"will-michelle-bolsonaro-win-the-2026-brazilian-presidential-election","blocked":true,"reason":"price floor: 0.0330 \u003c 0.100 (horizon 134 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"601820","slug":"will-jair-bolsonaro-win-the-2026-brazilian-presidential-election","blocked":true,"reason":"price floor: 0.0060 \u003c 0.100 (horizon 134 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"601822","slug":"will-michelle-bolsonaro-win-the-2026-brazilian-presidential-election","blocked":true,"reason":"price floor: 0.0320 \u003c 0.100 (horizon 134 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"601833","slug":"will-tereza-cristina-win-the-2026-brazilian-presidential-election","blocked":true,"reason":"price floor: 0.0050 \u003c 0.100 (horizon 134 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"789410","slug":"will-parti-conservateur-du-qubec-win-the-most-seats-in-the-2026-quebec-general-election","blocked":true,"reason":"price floor: 0.0060 \u003c 0.100 (horizon 135 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1235553","slug":"will-the-chicago-white-sox-win-the-2026-world-series","blocked":true,"reason":"price floor: 0.0070 \u003c 0.100 (horizon 162 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1235554","slug":"will-the-minnesota-twins-win-the-2026-world-series","blocked":true,"reason":"price floor: 0.0070 \u003c 0.100 (horizon 162 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1395733","slug":"will-san-diego-padres-win-the-2026-national-league-championship-series","blocked":true,"reason":"price floor: 0.0650 \u003c 0.100 (horizon 162 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1395726","slug":"will-cincinnati-reds-win-the-2026-national-league-championship-series","blocked":true,"reason":"price floor: 0.0260 \u003c 0.100 (horizon 162 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1395731","slug":"will-colorado-rockies-win-the-2026-national-league-championship-series","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon 162 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1395704","slug":"will-toronto-blue-jays-win-the-2026-american-league-championship-series","blocked":true,"reason":"price floor: 0.0800 \u003c 0.100 (horizon 162 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1395709","slug":"will-minnesota-twins-win-the-2026-american-league-championship-series","blocked":true,"reason":"price floor: 0.0090 \u003c 0.100 (horizon 162 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1395734","slug":"will-san-francisco-giants-win-the-2026-national-league-championship-series","blocked":true,"reason":"price floor: 0.0060 \u003c 0.100 (horizon 162 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1395711","slug":"will-los-angeles-angels-win-the-2026-american-league-championship-series","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon 162 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1395728","slug":"will-pittsburgh-pirates-win-the-2026-national-league-championship-series","blocked":true,"reason":"price floor: 0.0410 \u003c 0.100 (horizon 162 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"635015","slug":"will-mary-peltola-win-the-2026-alaska-governor-election","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon 164 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1395734","slug":"will-san-francisco-giants-win-the-2026-national-league-championship-series","blocked":true,"reason":"price floor: 0.0060 \u003c 0.100 (horizon 162 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1395726","slug":"will-cincinnati-reds-win-the-2026-national-league-championship-series","blocked":true,"reason":"price floor: 0.0260 \u003c 0.100 (horizon 162 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1395733","slug":"will-san-diego-padres-win-the-2026-national-league-championship-series","blocked":true,"reason":"price floor: 0.0650 \u003c 0.100 (horizon 162 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1395709","slug":"will-minnesota-twins-win-the-2026-american-league-championship-series","blocked":true,"reason":"price floor: 0.0090 \u003c 0.100 (horizon 162 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1395731","slug":"will-colorado-rockies-win-the-2026-national-league-championship-series","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon 162 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1395711","slug":"will-los-angeles-angels-win-the-2026-american-league-championship-series","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon 162 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"635010","slug":"will-james-parkin-win-the-2026-alaska-governor-election","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon 164 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"635015","slug":"will-mary-peltola-win-the-2026-alaska-governor-election","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon 164 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"628952","slug":"will-leo-zacky-win-the-california-governor-election-in-2026","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 164 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1429058","slug":"will-richard-van-de-water-win-the-bachelorette-season-22","blocked":true,"reason":"price floor: 0.0130 \u003c 0.100 (horizon 191 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1429052","slug":"will-lew-evans-win-the-bachelorette-season-22","blocked":true,"reason":"price floor: 0.0190 \u003c 0.100 (horizon 191 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1429041","slug":"will-aaron-kahng-win-the-bachelorette-season-22","blocked":true,"reason":"price floor: 0.0120 \u003c 0.100 (horizon 191 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1429058","slug":"will-richard-van-de-water-win-the-bachelorette-season-22","blocked":true,"reason":"price floor: 0.0130 \u003c 0.100 (horizon 191 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"898425","slug":"will-liam-lawson-be-the-2026-f1-drivers-champion","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 197 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"898414","slug":"will-isack-hadjar-be-the-2026-f1-drivers-champion","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 197 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"898421","slug":"will-nico-hlkenberg-be-the-2026-f1-drivers-champion","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon 197 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"898425","slug":"will-liam-lawson-be-the-2026-f1-drivers-champion","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 197 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"667077","slug":"will-zelenskyy-and-putin-meet-next-in-russia","blocked":true,"reason":"price floor: 0.0160 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"676797","slug":"applied-intuition-ipo-before-2027","blocked":true,"reason":"liquidity $3334 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
-{"candidate_id":"897843","slug":"9pt0-or-above-earthquake-before-2027","blocked":true,"reason":"price floor: 0.0770 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"916716","slug":"will-5-6-spacex-starship-launches-successfully-reach-space-in-2026","blocked":true,"reason":"liquidity $1614 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
-{"candidate_id":"1469736","slug":"will-sadegh-larijani-be-head-of-state-in-iran-end-of-2026","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1250830","slug":"will-there-be-at-least-7500-measles-cases-in-the-us-in-2026-287-181","blocked":true,"reason":"liquidity $4194 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
 {"candidate_id":"676943","slug":"will-warren-buffett-be-richest-person-on-december-31-579","blocked":true,"reason":"price floor: 0.0140 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1250830","slug":"will-there-be-at-least-7500-measles-cases-in-the-us-in-2026-287-181","blocked":true,"reason":"liquidity $4148 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
-{"candidate_id":"1124797","slug":"nato-dissolves-before-2027","blocked":true,"reason":"price floor: 0.0450 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"676782","slug":"celonis-ipo-before-2027","blocked":true,"reason":"price floor: 0.0800 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"682714","slug":"will-gideon-saar-be-the-next-prime-minister-of-israel","blocked":true,"reason":"price floor: 0.0050 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"667076","slug":"will-zelenskyy-and-putin-meet-next-in-turkey","blocked":true,"reason":"price floor: 0.0630 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"665521","slug":"iran-nuclear-test-before-2027","blocked":true,"reason":"price floor: 0.0800 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"667089","slug":"will-zelenskyy-and-putin-meet-next-in-india-416-286","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"678753","slug":"will-israel-strike-10-countries-in-2026","blocked":true,"reason":"price floor: 0.0100 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"567621","slug":"will-china-invade-taiwan-before-2027","blocked":true,"reason":"price floor: 0.0750 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"678752","slug":"will-israel-strike-9-countries-in-2026","blocked":true,"reason":"price floor: 0.0160 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"995708","slug":"will-sabrina-carpenter-be-the-top-spotify-artist-for-2026","blocked":true,"reason":"price floor: 0.0050 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1329554","slug":"save-act-signed-into-law-in-2026","blocked":true,"reason":"price floor: 0.0900 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"676799","slug":"freddie-mac-ipo-before-2027","blocked":true,"reason":"price floor: 0.0800 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1089935","slug":"will-david-martinez-be-the-ufc-bantamweight-champion-on-december-31-2026","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"676798","slug":"fannie-mae-ipo-before-2027","blocked":true,"reason":"liquidity $2288 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
-{"candidate_id":"665322","slug":"will-trump-sell-10k-25k-gold-cards-in-2026","blocked":true,"reason":"price floor: 0.0120 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1469738","slug":"will-hassan-khomeini-be-head-of-state-in-iran-end-of-2026","blocked":true,"reason":"price floor: 0.0090 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"667085","slug":"will-zelenskyy-and-putin-meet-next-in-belarus","blocked":true,"reason":"price floor: 0.0200 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1400472","slug":"will-john-stephens-win-the-2026-dublin-central-by-election","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1131458","slug":"will-spacex-have-between-160-179-launches-in-2026","blocked":true,"reason":"liquidity $1971 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
+{"candidate_id":"1400473","slug":"will-mary-fitzpatrick-win-the-2026-dublin-central-by-election","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"667079","slug":"will-zelenskyy-and-putin-meet-next-in-ukraine","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1329554","slug":"save-act-signed-into-law-in-2026","blocked":true,"reason":"price floor: 0.0900 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"897843","slug":"9pt0-or-above-earthquake-before-2027","blocked":true,"reason":"price floor: 0.0770 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"676797","slug":"applied-intuition-ipo-before-2027","blocked":true,"reason":"liquidity $3539 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
+{"candidate_id":"676798","slug":"fannie-mae-ipo-before-2027","blocked":true,"reason":"liquidity $2462 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
+{"candidate_id":"693573","slug":"will-brion-win-the-lck-2026-season-playoffs","blocked":true,"reason":"price floor: 0.0100 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1089935","slug":"will-david-martinez-be-the-ufc-bantamweight-champion-on-december-31-2026","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"665521","slug":"iran-nuclear-test-before-2027","blocked":true,"reason":"price floor: 0.0800 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1131458","slug":"will-spacex-have-between-160-179-launches-in-2026","blocked":true,"reason":"liquidity $1912 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
+{"candidate_id":"676782","slug":"celonis-ipo-before-2027","blocked":true,"reason":"price floor: 0.0800 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1469750","slug":"will-sadegh-mahsouli-be-head-of-state-in-iran-end-of-2026","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"916715","slug":"will-less-than-5-spacex-starship-launches-successfully-reach-space-in-2026","blocked":true,"reason":"liquidity $2015 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
-{"candidate_id":"1469765","slug":"will-ali-asghar-hejazi-be-head-of-state-in-iran-end-of-2026","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"676779","slug":"ripple-labs-ipo-before-2027","blocked":true,"reason":"liquidity $2580 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
-{"candidate_id":"1400469","slug":"will-gillian-sherratt-win-the-2026-dublin-central-by-election","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"676941","slug":"will-jeff-bezos-be-richest-person-on-december-31-243","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1250957","slug":"will-there-be-at-least-12500-measles-cases-in-the-us-in-2026-512-499","blocked":true,"reason":"liquidity $2556 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
-{"candidate_id":"676784","slug":"anduril-ipo-before-2027","blocked":true,"reason":"liquidity $3044 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
+{"candidate_id":"2155000","slug":"hantavirus-pandemic-in-2026","blocked":true,"reason":"price floor: 0.0530 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"916715","slug":"will-less-than-5-spacex-starship-launches-successfully-reach-space-in-2026","blocked":true,"reason":"liquidity $2262 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
+{"candidate_id":"693574","slug":"will-dplus-win-the-lck-2026-season-playoffs","blocked":true,"reason":"price floor: 0.0500 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"693576","slug":"will-fearx-win-the-lck-2026-season-playoffs","blocked":true,"reason":"price floor: 0.0270 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1469747","slug":"will-ali-motahari-be-head-of-state-in-iran-end-of-2026","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"995709","slug":"will-kendrick-lamar-be-the-top-spotify-artist-for-2026","blocked":true,"reason":"price floor: 0.0050 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"676786","slug":"brex-ipo-before-2027","blocked":true,"reason":"price floor: 0.0140 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1472548","slug":"will-reza-pahlavi-lead-iran-in-2026","blocked":true,"reason":"price floor: 0.0480 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"676779","slug":"ripple-labs-ipo-before-2027","blocked":true,"reason":"liquidity $2756 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
+{"candidate_id":"1321868","slug":"ledger-ipo-before-2027","blocked":true,"reason":"liquidity $1950 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
+{"candidate_id":"676788","slug":"anysphere-cursor-ipo-before-2027","blocked":true,"reason":"price floor: 0.0560 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"678752","slug":"will-israel-strike-9-countries-in-2026","blocked":true,"reason":"price floor: 0.0160 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1131460","slug":"will-spacex-have-200-or-more-launches-in-2026","blocked":true,"reason":"price floor: 0.0500 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"995711","slug":"will-beyonc-be-the-top-spotify-artist-for-2026","blocked":true,"reason":"price floor: 0.0100 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1089953","slug":"will-aljamain-sterling-be-the-ufc-featherweight-champion-on-december-31-2026","blocked":true,"reason":"price floor: 0.0060 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1343464","slug":"will-ed-davey-be-the-next-prime-minister-of-the-united-kingdom-in-2026-255","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"676945","slug":"will-larry-page-be-richest-person-on-december-31","blocked":true,"reason":"price floor: 0.0060 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"676940","slug":"will-bernard-arnault-be-richest-person-on-december-31-747","blocked":true,"reason":"price floor: 0.0100 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1472548","slug":"will-reza-pahlavi-lead-iran-in-2026","blocked":true,"reason":"price floor: 0.0470 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1469747","slug":"will-ali-motahari-be-head-of-state-in-iran-end-of-2026","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"616911","slug":"will-9-fed-rate-cuts-happen-in-2026","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"667082","slug":"will-zelenskyy-and-putin-meet-next-in-saudi-arabia","blocked":true,"reason":"price floor: 0.0130 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"676786","slug":"brex-ipo-before-2027","blocked":true,"reason":"price floor: 0.0140 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"995709","slug":"will-kendrick-lamar-be-the-top-spotify-artist-for-2026","blocked":true,"reason":"price floor: 0.0050 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"995705","slug":"will-the-weeknd-be-the-top-spotify-artist-for-2026","blocked":true,"reason":"price floor: 0.0150 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"897251","slug":"will-petr-yan-fight-dominick-cruz-next","blocked":true,"reason":"price floor: 0.0090 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1469742","slug":"will-massoud-rajavi-be-head-of-state-in-iran-end-of-2026","blocked":true,"reason":"price floor: 0.0050 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"693576","slug":"will-fearx-win-the-lck-2026-season-playoffs","blocked":true,"reason":"price floor: 0.0270 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1117275","slug":"insurrection-act-invoked-by-december-31-184-556","blocked":true,"reason":"memoria: exact slug match (score 1.00)","vetoed_by":"M1"}
+{"candidate_id":"676945","slug":"will-larry-page-be-richest-person-on-december-31","blocked":true,"reason":"price floor: 0.0060 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"667077","slug":"will-zelenskyy-and-putin-meet-next-in-russia","blocked":true,"reason":"price floor: 0.0160 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"667082","slug":"will-zelenskyy-and-putin-meet-next-in-saudi-arabia","blocked":true,"reason":"price floor: 0.0130 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"676796","slug":"databricks-ipo-before-2027","blocked":true,"reason":"liquidity $3386 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
 {"candidate_id":"678691","slug":"will-2026-rank-as-the-sixth-hottest-year-on-record-or-lower","blocked":true,"reason":"price floor: 0.0230 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"676796","slug":"databricks-ipo-before-2027","blocked":true,"reason":"liquidity $3266 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
-{"candidate_id":"2155000","slug":"hantavirus-pandemic-in-2026","blocked":true,"reason":"price floor: 0.0530 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"676939","slug":"will-mark-zuckerberg-be-richest-person-on-december-31-366","blocked":true,"reason":"price floor: 0.0130 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"693573","slug":"will-brion-win-the-lck-2026-season-playoffs","blocked":true,"reason":"price floor: 0.0100 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1124797","slug":"nato-dissolves-before-2027","blocked":true,"reason":"price floor: 0.0450 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"567621","slug":"will-china-invade-taiwan-before-2027","blocked":true,"reason":"price floor: 0.0750 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"995705","slug":"will-the-weeknd-be-the-top-spotify-artist-for-2026","blocked":true,"reason":"price floor: 0.0150 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1469738","slug":"will-hassan-khomeini-be-head-of-state-in-iran-end-of-2026","blocked":true,"reason":"price floor: 0.0090 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"916716","slug":"will-5-6-spacex-starship-launches-successfully-reach-space-in-2026","blocked":true,"reason":"liquidity $1514 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
+{"candidate_id":"682714","slug":"will-gideon-saar-be-the-next-prime-minister-of-israel","blocked":true,"reason":"price floor: 0.0050 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"665322","slug":"will-trump-sell-10k-25k-gold-cards-in-2026","blocked":true,"reason":"price floor: 0.0120 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1117275","slug":"insurrection-act-invoked-by-december-31-184-556","blocked":true,"reason":"memoria: exact slug match (score 1.00)","vetoed_by":"M1"}
+{"candidate_id":"667085","slug":"will-zelenskyy-and-putin-meet-next-in-belarus","blocked":true,"reason":"price floor: 0.0200 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1469765","slug":"will-ali-asghar-hejazi-be-head-of-state-in-iran-end-of-2026","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"897251","slug":"will-petr-yan-fight-dominick-cruz-next","blocked":true,"reason":"price floor: 0.0090 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"678753","slug":"will-israel-strike-10-countries-in-2026","blocked":true,"reason":"price floor: 0.0100 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"676783","slug":"vanta-ipo-before-2027","blocked":true,"reason":"price floor: 0.0900 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1321868","slug":"ledger-ipo-before-2027","blocked":true,"reason":"liquidity $2037 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
+{"candidate_id":"676940","slug":"will-bernard-arnault-be-richest-person-on-december-31-747","blocked":true,"reason":"price floor: 0.0100 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"678754","slug":"will-israel-strike-11-countries-in-2026","blocked":true,"reason":"price floor: 0.0100 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"676788","slug":"anysphere-cursor-ipo-before-2027","blocked":true,"reason":"price floor: 0.0560 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1131460","slug":"will-spacex-have-200-or-more-launches-in-2026","blocked":true,"reason":"price floor: 0.0500 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"616911","slug":"will-9-fed-rate-cuts-happen-in-2026","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1343464","slug":"will-ed-davey-be-the-next-prime-minister-of-the-united-kingdom-in-2026-255","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"676784","slug":"anduril-ipo-before-2027","blocked":true,"reason":"liquidity $3129 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
+{"candidate_id":"676939","slug":"will-mark-zuckerberg-be-richest-person-on-december-31-366","blocked":true,"reason":"price floor: 0.0130 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"665330","slug":"will-germany-recognize-palestine-before-2027","blocked":true,"reason":"price floor: 0.0890 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1250957","slug":"will-there-be-at-least-12500-measles-cases-in-the-us-in-2026-512-499","blocked":true,"reason":"liquidity $2463 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
+{"candidate_id":"676941","slug":"will-jeff-bezos-be-richest-person-on-december-31-243","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1469748","slug":"will-gholam-ali-haddad-adel-be-head-of-state-in-iran-end-of-2026","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"665330","slug":"will-germany-recognize-palestine-before-2027","blocked":true,"reason":"price floor: 0.0880 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1400473","slug":"will-mary-fitzpatrick-win-the-2026-dublin-central-by-election","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"693574","slug":"will-dplus-win-the-lck-2026-season-playoffs","blocked":true,"reason":"price floor: 0.0500 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1400469","slug":"will-gillian-sherratt-win-the-2026-dublin-central-by-election","blocked":true,"reason":"price floor: 0.0030 \u003c 0.100 (horizon 222 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1116679","slug":"will-ole-gunnar-solskjr-be-appointed-as-manager-of-manchester-united","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 223 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1116673","slug":"will-darren-fletcher-be-appointed-as-manager-of-manchester-united","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 223 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1068623","slug":"altcoin-market-cap-dip-to-150b-before-2027","blocked":true,"reason":"liquidity $828 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
-{"candidate_id":"743438","slug":"will-fomo-launch-a-token-by-december-31-2026","blocked":true,"reason":"liquidity $912 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
-{"candidate_id":"704137","slug":"will-tempo-launch-a-token-by-september-30-2026","blocked":true,"reason":"price floor: 0.0940 \u003c 0.100 (horizon 223 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"701543","slug":"will-ethereum-reach-6500-by-december-31-2026","blocked":true,"reason":"price floor: 0.0600 \u003c 0.100 (horizon 223 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1005345","slug":"puffpaw-fdv-above-200m-one-day-after-launch","blocked":true,"reason":"pre-event slug + 223 d to resolution (\u003e=7 threshold)","vetoed_by":"P4_pre_event"}
-{"candidate_id":"690631","slug":"will-ostium-launch-a-token-by-december-31-2026","blocked":true,"reason":"liquidity $3275 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
-{"candidate_id":"1058192","slug":"usdc-depeg-by-december-31-968","blocked":true,"reason":"price floor: 0.0220 \u003c 0.100 (horizon 223 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"701544","slug":"will-ethereum-reach-6000-by-december-31-2026","blocked":true,"reason":"price floor: 0.0800 \u003c 0.100 (horizon 223 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1343533","slug":"major-cex-insolvent-in-2026","blocked":true,"reason":"price floor: 0.0900 \u003c 0.100 (horizon 223 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1106059","slug":"over-1b-raised-on-coinbase-in-2026","blocked":true,"reason":"liquidity $2055 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
-{"candidate_id":"665531","slug":"metamask-fdv-above-700m-one-day-after-launch-696-977-652-246-632","blocked":true,"reason":"pre-event slug + 223 d to resolution (\u003e=7 threshold)","vetoed_by":"P4_pre_event"}
-{"candidate_id":"1005346","slug":"puffpaw-fdv-above-300m-one-day-after-launch","blocked":true,"reason":"price floor: 0.0970 \u003c 0.100 (horizon 223 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"704137","slug":"will-tempo-launch-a-token-by-september-30-2026","blocked":true,"reason":"price floor: 0.0940 \u003c 0.100 (horizon 223 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"680664","slug":"standx-fdv-above-10b-one-day-after-launch-467-712-296","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 223 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1361087","slug":"will-pittsburgh-steelers-win-the-2027-nfl-afc-championship-898","blocked":true,"reason":"price floor: 0.0230 \u003c 0.100 (horizon 247 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1361081","slug":"will-miami-dolphins-win-the-2027-nfl-afc-championship-357","blocked":true,"reason":"price floor: 0.0170 \u003c 0.100 (horizon 247 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"701543","slug":"will-ethereum-reach-6500-by-december-31-2026","blocked":true,"reason":"price floor: 0.0600 \u003c 0.100 (horizon 223 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1068623","slug":"altcoin-market-cap-dip-to-150b-before-2027","blocked":true,"reason":"liquidity $828 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
+{"candidate_id":"1343220","slug":"will-bitcoin-dip-to-10000-by-december-31-2026-888-644-567-258-946-853","blocked":true,"reason":"price floor: 0.0400 \u003c 0.100 (horizon 223 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1343533","slug":"major-cex-insolvent-in-2026","blocked":true,"reason":"price floor: 0.0900 \u003c 0.100 (horizon 223 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"743438","slug":"will-fomo-launch-a-token-by-december-31-2026","blocked":true,"reason":"liquidity $885 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
+{"candidate_id":"1106059","slug":"over-1b-raised-on-coinbase-in-2026","blocked":true,"reason":"liquidity $2005 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
+{"candidate_id":"665531","slug":"metamask-fdv-above-700m-one-day-after-launch-696-977-652-246-632","blocked":true,"reason":"pre-event slug + 223 d to resolution (\u003e=7 threshold)","vetoed_by":"P4_pre_event"}
+{"candidate_id":"1058192","slug":"usdc-depeg-by-december-31-968","blocked":true,"reason":"price floor: 0.0220 \u003c 0.100 (horizon 223 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"690631","slug":"will-ostium-launch-a-token-by-december-31-2026","blocked":true,"reason":"liquidity $3223 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
+{"candidate_id":"1005345","slug":"puffpaw-fdv-above-200m-one-day-after-launch","blocked":true,"reason":"pre-event slug + 223 d to resolution (\u003e=7 threshold)","vetoed_by":"P4_pre_event"}
+{"candidate_id":"1005346","slug":"puffpaw-fdv-above-300m-one-day-after-launch","blocked":true,"reason":"price floor: 0.0990 \u003c 0.100 (horizon 223 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1361089","slug":"will-indianapolis-colts-win-the-2027-nfl-afc-championship-168","blocked":true,"reason":"price floor: 0.0280 \u003c 0.100 (horizon 247 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1361094","slug":"will-las-vegas-raiders-win-the-2027-nfl-afc-championship-699","blocked":true,"reason":"price floor: 0.0260 \u003c 0.100 (horizon 247 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1361066","slug":"will-arizona-cardinals-win-the-2027-nfl-nfc-championship-199","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 247 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1361086","slug":"will-cleveland-browns-win-the-2027-nfl-afc-championship-776","blocked":true,"reason":"price floor: 0.0230 \u003c 0.100 (horizon 247 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1361054","slug":"will-dallas-cowboys-win-the-2027-nfl-nfc-championship-584","blocked":true,"reason":"price floor: 0.0820 \u003c 0.100 (horizon 247 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1361057","slug":"will-washington-commanders-win-the-2027-nfl-nfc-championship-484","blocked":true,"reason":"price floor: 0.0240 \u003c 0.100 (horizon 247 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1361081","slug":"will-miami-dolphins-win-the-2027-nfl-afc-championship-357","blocked":true,"reason":"price floor: 0.0170 \u003c 0.100 (horizon 247 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1361088","slug":"will-houston-texans-win-the-2027-nfl-afc-championship-334","blocked":true,"reason":"price floor: 0.0940 \u003c 0.100 (horizon 247 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1508662","slug":"will-maurcio-ruffy-fight-charles-oliveira-next-853-769","blocked":true,"reason":"price floor: 0.0170 \u003c 0.100 (horizon 282 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"679033","slug":"will-olivier-faure-win-the-2027-french-presidential-election","blocked":true,"reason":"price floor: 0.0070 \u003c 0.100 (horizon 342 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1361087","slug":"will-pittsburgh-steelers-win-the-2027-nfl-afc-championship-898","blocked":true,"reason":"price floor: 0.0230 \u003c 0.100 (horizon 247 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1361094","slug":"will-las-vegas-raiders-win-the-2027-nfl-afc-championship-699","blocked":true,"reason":"price floor: 0.0260 \u003c 0.100 (horizon 247 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1361062","slug":"will-atlanta-falcons-win-the-2027-nfl-nfc-championship-312","blocked":true,"reason":"price floor: 0.0170 \u003c 0.100 (horizon 247 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1361086","slug":"will-cleveland-browns-win-the-2027-nfl-afc-championship-776","blocked":true,"reason":"price floor: 0.0230 \u003c 0.100 (horizon 247 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1361066","slug":"will-arizona-cardinals-win-the-2027-nfl-nfc-championship-199","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 247 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1361054","slug":"will-dallas-cowboys-win-the-2027-nfl-nfc-championship-584","blocked":true,"reason":"price floor: 0.0820 \u003c 0.100 (horizon 247 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1508662","slug":"will-maurcio-ruffy-fight-charles-oliveira-next-853-769","blocked":true,"reason":"price floor: 0.0160 \u003c 0.100 (horizon 282 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"679037","slug":"will-clmentine-autain-win-the-2027-french-presidential-election","blocked":true,"reason":"price floor: 0.0070 \u003c 0.100 (horizon 342 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"679033","slug":"will-olivier-faure-win-the-2027-french-presidential-election","blocked":true,"reason":"price floor: 0.0070 \u003c 0.100 (horizon 342 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"679049","slug":"will-mathilde-panot-win-the-2027-french-presidential-election","blocked":true,"reason":"price floor: 0.0070 \u003c 0.100 (horizon 342 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"2243323","slug":"will-sacramento-kings-win-the-2027-nba-finals","blocked":true,"reason":"price floor: 0.0070 \u003c 0.100 (horizon 404 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2243325","slug":"will-utah-jazz-win-the-2027-nba-finals","blocked":true,"reason":"price floor: 0.0090 \u003c 0.100 (horizon 404 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1115936","slug":"will-perplexity-not-ipo-by-december-31-2027","blocked":true,"reason":"liquidity $1323 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
-{"candidate_id":"1326787","slug":"spacex-ipo-closing-market-cap-above-3t-337-436","blocked":true,"reason":"pre-event slug + 587 d to resolution (\u003e=7 threshold)","vetoed_by":"P4_pre_event"}
-{"candidate_id":"1021159","slug":"will-deutsche-bank-or-any-of-its-underwriting-affiliates-serve-as-the-lead-underwriter-in-spacexs-initial-public-offering-824","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 587 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"842087","slug":"will-spacexs-market-cap-be-between-500b-and-600b-at-market-close-on-ipo-day","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 587 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2243325","slug":"will-utah-jazz-win-the-2027-nba-finals","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 404 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1328014","slug":"will-anthropics-market-cap-be-less-than-100b-at-market-close-on-ipo-day-by-december-31-2027","blocked":true,"reason":"price floor: 0.0090 \u003c 0.100 (horizon 587 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"1298648","slug":"openai-ipo-closing-market-cap-above-800b","blocked":true,"reason":"liquidity $3038 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
 {"candidate_id":"1021158","slug":"will-ubs-or-any-of-its-underwriting-affiliates-serve-as-the-lead-underwriter-in-spacexs-initial-public-offering-884","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 587 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"929496","slug":"will-spacexs-public-ticker-be-spc-937","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 587 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1326787","slug":"spacex-ipo-closing-market-cap-above-3t-337-436","blocked":true,"reason":"pre-event slug + 587 d to resolution (\u003e=7 threshold)","vetoed_by":"P4_pre_event"}
+{"candidate_id":"1115936","slug":"will-perplexity-not-ipo-by-december-31-2027","blocked":true,"reason":"liquidity $1882 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
+{"candidate_id":"1021159","slug":"will-deutsche-bank-or-any-of-its-underwriting-affiliates-serve-as-the-lead-underwriter-in-spacexs-initial-public-offering-824","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 587 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"1298648","slug":"openai-ipo-closing-market-cap-above-800b","blocked":true,"reason":"liquidity $2978 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
+{"candidate_id":"842087","slug":"will-spacexs-market-cap-be-between-500b-and-600b-at-market-close-on-ipo-day","blocked":true,"reason":"price floor: 0.0010 \u003c 0.100 (horizon 587 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1287622","slug":"abstract-fdv-above-3b-one-day-after-launch","blocked":true,"reason":"price floor: 0.0270 \u003c 0.100 (horizon 588 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"559673","slug":"will-john-fetterman-win-the-2028-democratic-presidential-nomination-941","blocked":true,"reason":"price floor: 0.0090 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"562005","slug":"will-thomas-massie-win-the-2028-republican-presidential-nomination","blocked":true,"reason":"price floor: 0.0240 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"561978","slug":"will-donald-trump-jr-win-the-2028-republican-presidential-nomination","blocked":true,"reason":"price floor: 0.0270 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"561994","slug":"will-kristi-noem-win-the-2028-republican-presidential-nomination","blocked":true,"reason":"price floor: 0.0070 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"559685","slug":"will-mrbeast-win-the-2028-democratic-presidential-nomination","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"559671","slug":"will-zohran-mamdani-win-the-2028-democratic-presidential-nomination-445","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"562007","slug":"will-joe-kent-win-the-2028-republican-presidential-nomination","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"561248","slug":"will-vivek-ramaswamy-win-the-2028-us-presidential-election","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"559676","slug":"will-barack-obama-win-the-2028-democratic-presidential-nomination-265","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"559696","slug":"will-graham-platner-win-the-2028-democratic-presidential-nomination","blocked":true,"reason":"price floor: 0.0090 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"561257","slug":"will-michelle-obama-win-the-2028-us-presidential-election","blocked":true,"reason":"price floor: 0.0100 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"559693","slug":"will-ruben-gallego-win-the-2028-democratic-presidential-nomination","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"559680","slug":"will-phil-murphy-win-the-2028-democratic-presidential-nomination-611","blocked":true,"reason":"price floor: 0.0070 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"559666","slug":"will-tim-walz-win-the-2028-democratic-presidential-nomination-475","blocked":true,"reason":"price floor: 0.0070 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"559669","slug":"will-rahm-emanuel-win-the-2028-democratic-presidential-nomination-299","blocked":true,"reason":"price floor: 0.0220 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"561264","slug":"will-pete-hegseth-win-the-2028-us-presidential-election","blocked":true,"reason":"price floor: 0.0070 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"561256","slug":"will-zohran-mamdani-win-the-2028-us-presidential-election","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"559670","slug":"will-gina-raimondo-win-the-2028-democratic-presidential-nomination-676","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"559676","slug":"will-barack-obama-win-the-2028-democratic-presidential-nomination-265","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"561260","slug":"will-thomas-massie-win-the-2028-us-presidential-election","blocked":true,"reason":"price floor: 0.0190 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"562005","slug":"will-thomas-massie-win-the-2028-republican-presidential-nomination","blocked":true,"reason":"price floor: 0.0240 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"559679","slug":"will-bernie-sanders-win-the-2028-democratic-presidential-nomination-879","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"559693","slug":"will-ruben-gallego-win-the-2028-democratic-presidential-nomination","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"559664","slug":"will-raphael-warnock-win-the-2028-democratic-presidential-nomination-914","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"561246","slug":"will-ron-desantis-win-the-2028-us-presidential-election","blocked":true,"reason":"price floor: 0.0270 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"561251","slug":"will-lebron-james-win-the-2028-us-presidential-election","blocked":true,"reason":"price floor: 0.0070 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"559696","slug":"will-graham-platner-win-the-2028-democratic-presidential-nomination","blocked":true,"reason":"price floor: 0.0090 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"559674","slug":"will-jared-polis-win-the-2028-democratic-presidential-nomination-837","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"561247","slug":"will-tim-walz-win-the-2028-us-presidential-election","blocked":true,"reason":"price floor: 0.0070 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"561248","slug":"will-vivek-ramaswamy-win-the-2028-us-presidential-election","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"561264","slug":"will-pete-hegseth-win-the-2028-us-presidential-election","blocked":true,"reason":"price floor: 0.0070 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"559677","slug":"will-hillary-clinton-win-the-2028-democratic-presidential-nomination","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"561978","slug":"will-donald-trump-jr-win-the-2028-republican-presidential-nomination","blocked":true,"reason":"price floor: 0.0270 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"559685","slug":"will-mrbeast-win-the-2028-democratic-presidential-nomination","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"561263","slug":"will-eric-trump-win-the-2028-us-presidential-election","blocked":true,"reason":"price floor: 0.0070 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"559680","slug":"will-phil-murphy-win-the-2028-democratic-presidential-nomination-611","blocked":true,"reason":"price floor: 0.0070 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"561260","slug":"will-thomas-massie-win-the-2028-us-presidential-election","blocked":true,"reason":"price floor: 0.0190 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"561251","slug":"will-lebron-james-win-the-2028-us-presidential-election","blocked":true,"reason":"price floor: 0.0070 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"561986","slug":"will-byron-donalds-win-the-2028-republican-presidential-nomination","blocked":true,"reason":"price floor: 0.0090 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"559688","slug":"will-andrew-yang-win-the-2028-democratic-presidential-nomination","blocked":true,"reason":"price floor: 0.0070 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"559671","slug":"will-zohran-mamdani-win-the-2028-democratic-presidential-nomination-445","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"561257","slug":"will-michelle-obama-win-the-2028-us-presidential-election","blocked":true,"reason":"price floor: 0.0100 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2308195","slug":"will-the-iran-ceasefire-continue-through-may-21","blocked":true,"reason":"price ceiling: 0.9990 \u003e 0.950","vetoed_by":"P0_ceiling"}
-{"candidate_id":"690683","slug":"will-variational-launch-a-token-by-december-31-2026-577-621","blocked":true,"reason":"liquidity $2016 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
-{"candidate_id":"2262267","slug":"will-rebecca-shepherd-win-the-2026-makerfield-by-election","blocked":true,"reason":"price floor: 0.0680 \u003c 0.100 (horizon -1 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2308197","slug":"will-the-iran-ceasefire-continue-through-may-24","blocked":true,"reason":"memoria: exact slug match (score 1.00)","vetoed_by":"M1"}
-{"candidate_id":"943827","slug":"will-the-republican-party-hold-exactly-55-senate-seats-after-the-2026-midterm-elections","blocked":true,"reason":"price floor: 0.0140 \u003c 0.100 (horizon -1 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"2308196","slug":"will-the-iran-ceasefire-continue-through-may-22","blocked":true,"reason":"price ceiling: 0.9870 \u003e 0.950","vetoed_by":"P0_ceiling"}
-{"candidate_id":"897017","slug":"will-netflix-close-warner-bros-acquisition","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon -1 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"561256","slug":"will-zohran-mamdani-win-the-2028-us-presidential-election","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"561246","slug":"will-ron-desantis-win-the-2028-us-presidential-election","blocked":true,"reason":"price floor: 0.0270 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"559679","slug":"will-bernie-sanders-win-the-2028-democratic-presidential-nomination-879","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"559664","slug":"will-raphael-warnock-win-the-2028-democratic-presidential-nomination-914","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"559673","slug":"will-john-fetterman-win-the-2028-democratic-presidential-nomination-941","blocked":true,"reason":"price floor: 0.0090 \u003c 0.100 (horizon 899 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"2308200","slug":"will-the-iran-ceasefire-continue-through-may-31","blocked":true,"reason":"memoria: exact slug match (score 1.00)","vetoed_by":"M1"}
-{"candidate_id":"693491","slug":"will-venezuela-recognize-israel-by-june-30-115","blocked":true,"reason":"price floor: 0.0050 \u003c 0.100 (horizon -1 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"2262267","slug":"will-rebecca-shepherd-win-the-2026-makerfield-by-election","blocked":true,"reason":"price floor: 0.0680 \u003c 0.100 (horizon -1 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"2308198","slug":"will-the-iran-ceasefire-continue-through-may-27","blocked":true,"reason":"memoria: exact slug match (score 1.00)","vetoed_by":"M1"}
+{"candidate_id":"2308195","slug":"will-the-iran-ceasefire-continue-through-may-21","blocked":true,"reason":"price ceiling: 0.9990 \u003e 0.950","vetoed_by":"P0_ceiling"}
+{"candidate_id":"2308196","slug":"will-the-iran-ceasefire-continue-through-may-22","blocked":true,"reason":"price ceiling: 0.9780 \u003e 0.950","vetoed_by":"P0_ceiling"}
+{"candidate_id":"943827","slug":"will-the-republican-party-hold-exactly-55-senate-seats-after-the-2026-midterm-elections","blocked":true,"reason":"price floor: 0.0140 \u003c 0.100 (horizon -1 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"693491","slug":"will-venezuela-recognize-israel-by-june-30-115","blocked":true,"reason":"price floor: 0.0050 \u003c 0.100 (horizon -1 d)","vetoed_by":"P0_floor"}
+{"candidate_id":"690683","slug":"will-variational-launch-a-token-by-december-31-2026-577-621","blocked":true,"reason":"liquidity $2016 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
+{"candidate_id":"2308197","slug":"will-the-iran-ceasefire-continue-through-may-24","blocked":true,"reason":"memoria: exact slug match (score 1.00)","vetoed_by":"M1"}
+{"candidate_id":"897017","slug":"will-netflix-close-warner-bros-acquisition","blocked":true,"reason":"price floor: 0.0040 \u003c 0.100 (horizon -1 d)","vetoed_by":"P0_floor"}

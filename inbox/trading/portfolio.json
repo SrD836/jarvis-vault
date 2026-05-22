@@ -1,5 +1,5 @@
 {
-  "bankroll": 2578.6539418821944,
+  "bankroll": 2480.15086304455,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -763,7 +763,23 @@
       "side": "yes",
       "size": 52.2316931089401,
       "size_usd": 52.2316931089401
+    },
+    {
+      "approved_price": 0.05,
+      "category": "uncategorized",
+      "days_to_resolution": 0,
+      "end_date": "2026-05-22T00:00:00Z",
+      "entry_price": 0.05,
+      "entry_timestamp": "2026-05-22T14:00:04Z",
+      "horizon": "short",
+      "id": "T-2297854-1779458404300",
+      "liquidity_usd": 92004.6425,
+      "market_id": "2297854",
+      "question": "US x Iran permanent peace deal by May 22, 2026?",
+      "side": "yes",
+      "size": 51.57307883764389,
+      "size_usd": 51.57307883764389
     }
   ],
-  "used_exposure": 2876.128110304899
+  "used_exposure": 2927.701189142543
 }
