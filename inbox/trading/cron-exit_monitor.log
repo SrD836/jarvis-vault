@@ -4255,3 +4255,52 @@
 2026/05/22 17:55:02 main.go:13: exit_monitor: done
 2026/05/22 18:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/22 18:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 18:00:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/22 18:00:02 main.go:13: exit_monitor: done
+2026/05/22 18:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 18:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 18:05:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/22 18:05:02 main.go:13: exit_monitor: done
+2026/05/22 18:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 18:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 18:10:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/22 18:10:02 main.go:13: exit_monitor: done
+2026/05/22 18:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 18:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 18:15:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/22 18:15:02 main.go:13: exit_monitor: done
+2026/05/22 18:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 18:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 18:20:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/22 18:20:02 main.go:13: exit_monitor: done
+2026/05/22 18:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 18:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 18:25:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/22 18:25:02 main.go:13: exit_monitor: done
+2026/05/22 18:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 18:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 18:30:03 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/22 18:30:03 main.go:13: exit_monitor: done
+2026/05/22 18:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 18:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 18:35:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/22 18:35:02 main.go:13: exit_monitor: done
+2026/05/22 18:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 18:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 18:40:02 monitor.go:141: exit_monitor: closed Iran closes its airspace by May 24? (take_profit EARLY) @ 0.1300 src=bestBid liq=$80798: PnL $32.98 (62.50%)
+2026/05/22 18:40:02 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/22 18:40:02 main.go:13: exit_monitor: done
+2026/05/22 18:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 18:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 18:45:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/22 18:45:02 main.go:13: exit_monitor: done
+2026/05/22 18:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 18:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 18:50:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/22 18:50:02 main.go:13: exit_monitor: done
+2026/05/22 18:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 18:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/22 18:55:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/22 18:55:02 main.go:13: exit_monitor: done
+2026/05/22 19:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/22 19:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%

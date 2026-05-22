@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `insurrection-act-invoked-by-december-31-184-556`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.2900
+- **Precio YES**: 0.3000
 - **Volumen 24h**: 133016.02 USD
 - **End date**: 2026-12-31T00:00:00Z
 
