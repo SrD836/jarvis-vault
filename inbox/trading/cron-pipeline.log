@@ -794,3 +794,14 @@
 2026/05/22 06:30:04 executor.go:62: executor: quota slots this run: short=32 medium=7 long=7 (of 45 remaining today)
 2026/05/22 06:30:04 executor.go:202: executor: 0 entered, 85 rejected
 2026/05/22 06:30:04 main.go:13: executor: done
+2026/05/22 07:00:04 main.go:11: executor: starting one-shot pass
+2026/05/22 07:00:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/22 07:00:04 executor.go:62: executor: quota slots this run: short=32 medium=7 long=7 (of 45 remaining today)
+2026/05/22 07:00:04 executor.go:202: executor: 0 entered, 85 rejected
+2026/05/22 07:00:04 main.go:13: executor: done
+2026/05/22 07:30:04 main.go:11: executor: starting one-shot pass
+2026/05/22 07:30:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/22 07:30:04 executor.go:62: executor: quota slots this run: short=32 medium=7 long=7 (of 45 remaining today)
+2026/05/22 07:30:04 executor.go:197: executor: entered [short] Will Trump announce a tariff reduction on China? @ 0.4590 size=$52.09 (open=50/50, bankroll=$2552)
+2026/05/22 07:30:04 executor.go:202: executor: 1 entered, 81 rejected
+2026/05/22 07:30:04 main.go:13: executor: done

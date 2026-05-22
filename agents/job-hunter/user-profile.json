@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-21T11:32:55.355Z",
+  "updated_at": "2026-05-22T07:58:49.077Z",
   "personal": {
     "full_name": "David González Nuez",
     "email": "davidgnjunior@gmail.com",
@@ -134,10 +134,10 @@
       "saved_at": "2026-05-20T22:10:16.475Z"
     },
     "dc0797fe75": {
-      "label": "Código del país *",
+      "label": "Código del país",
       "kind": "select",
       "answer": "España (+34)",
-      "saved_at": "2026-05-21T11:32:55.355Z"
+      "saved_at": "2026-05-22T07:58:49.077Z"
     },
     "4a531c07f1": {
       "label": "Código del país",
@@ -146,10 +146,10 @@
       "saved_at": "2026-05-21T08:43:55.641Z"
     },
     "35d0c9aa2c": {
-      "label": "Email *",
+      "label": "Email",
       "kind": "select",
       "answer": "davidgnjunior@gmail.com",
-      "saved_at": "2026-05-21T11:32:51.711Z"
+      "saved_at": "2026-05-22T07:58:45.668Z"
     },
     "f4aeb94c92": {
       "label": "Código del país",
