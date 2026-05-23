@@ -4861,3 +4861,52 @@
 2026/05/23 05:55:01 main.go:13: exit_monitor: done
 2026/05/23 06:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/23 06:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 06:00:03 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/23 06:00:03 main.go:13: exit_monitor: done
+2026/05/23 06:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 06:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 06:05:02 monitor.go:141: exit_monitor: closed Will Kataller Toyama win on 2026-05-23? (stop_loss) @ 0.0010 src=bestBid liq=$14363: PnL $-57.48 (-98.00%)
+2026/05/23 06:05:02 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/23 06:05:02 main.go:13: exit_monitor: done
+2026/05/23 06:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 06:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 06:10:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/23 06:10:02 main.go:13: exit_monitor: done
+2026/05/23 06:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 06:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 06:15:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/23 06:15:02 main.go:13: exit_monitor: done
+2026/05/23 06:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 06:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 06:20:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/23 06:20:02 main.go:13: exit_monitor: done
+2026/05/23 06:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 06:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 06:25:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/23 06:25:02 main.go:13: exit_monitor: done
+2026/05/23 06:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 06:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 06:30:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/23 06:30:02 main.go:13: exit_monitor: done
+2026/05/23 06:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 06:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 06:35:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 06:35:02 main.go:13: exit_monitor: done
+2026/05/23 06:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 06:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 06:40:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 06:40:02 main.go:13: exit_monitor: done
+2026/05/23 06:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 06:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 06:45:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 06:45:02 main.go:13: exit_monitor: done
+2026/05/23 06:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 06:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 06:50:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 06:50:02 main.go:13: exit_monitor: done
+2026/05/23 06:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 06:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 06:55:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 06:55:02 main.go:13: exit_monitor: done
+2026/05/23 07:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 07:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%

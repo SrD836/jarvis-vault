@@ -4,11 +4,18 @@ type: agent-mirror
 external: true
 date: 2026-05-23T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-planner.md
-tags: [agent, external, mirror]
 related:
-  - "[[agents/external/index]]"
   - "[[00-MOC]]"
+  - "[[agents/external/gsd-eval-planner]]"
+  - "[[agents/external/gsd-plan-checker]]"
+  - "[[agents/external/index]]"
+  - "[[agents/planner]]"
+  - "[[skills/external/gsd-plan-phase]]"
+  - "[[wiki/agent-evolution/planner]]"
+tags: [agent, external, mirror]
+# auto-linked 2026-05-23
 ---
+
 
 # `gsd-planner` (external Claude Code agent)
 
