@@ -5554,3 +5554,64 @@
 2026/05/23 19:55:02 main.go:13: exit_monitor: done
 2026/05/23 20:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/23 20:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 20:00:02 monitor.go:160: exit_monitor: 0 closed, 45 remaining
+2026/05/23 20:00:02 main.go:13: exit_monitor: done
+2026/05/23 20:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 20:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 20:05:02 monitor.go:141: exit_monitor: closed Will Real Betis Balompié vs. Levante UD end in a draw? (take_profit) @ 0.3700 src=bestBid liq=$38563: PnL $32.67 (54.17%)
+2026/05/23 20:05:02 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/23 20:05:02 main.go:13: exit_monitor: done
+2026/05/23 20:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 20:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 20:10:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/23 20:10:02 main.go:13: exit_monitor: done
+2026/05/23 20:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 20:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 20:15:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/23 20:15:02 main.go:13: exit_monitor: done
+2026/05/23 20:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 20:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 20:20:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/23 20:20:02 main.go:13: exit_monitor: done
+2026/05/23 20:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 20:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 20:25:02 monitor.go:141: exit_monitor: closed Will RC Celta de Vigo win on 2026-05-23? (take_profit) @ 0.7600 src=bestBid liq=$63992: PnL $32.14 (55.10%)
+2026/05/23 20:25:02 monitor.go:160: exit_monitor: 1 closed, 46 remaining
+2026/05/23 20:25:02 main.go:13: exit_monitor: done
+2026/05/23 20:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 20:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 20:30:02 monitor.go:141: exit_monitor: closed Will SS Lazio win on 2026-05-24? (take_profit EARLY) @ 0.8700 src=bestBid liq=$51005: PnL $26.98 (45.00%)
+2026/05/23 20:30:03 monitor.go:141: exit_monitor: closed Will CA Osasuna win on 2026-05-23? (stop_loss) @ 0.0500 src=bestBid liq=$71916: PnL $-51.59 (-83.87%)
+2026/05/23 20:30:03 monitor.go:160: exit_monitor: 2 closed, 44 remaining
+2026/05/23 20:30:03 main.go:13: exit_monitor: done
+2026/05/23 20:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 20:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 20:35:02 monitor.go:141: exit_monitor: closed Will FC Barcelona win on 2026-05-23? (take_profit) @ 0.7200 src=bestBid liq=$26264: PnL $25.77 (41.18%)
+2026/05/23 20:35:02 monitor.go:141: exit_monitor: closed Will Getafe CF win on 2026-05-23? (take_profit) @ 0.7000 src=bestBid liq=$71806: PnL $64.43 (105.88%)
+2026/05/23 20:35:02 monitor.go:141: exit_monitor: closed Will Rayo Vallecano de Madrid win on 2026-05-23? (stop_loss) @ 0.0400 src=bestBid liq=$61517: PnL $-51.91 (-85.19%)
+2026/05/23 20:35:02 monitor.go:160: exit_monitor: 3 closed, 45 remaining
+2026/05/23 20:35:02 main.go:13: exit_monitor: done
+2026/05/23 20:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 20:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 20:40:02 monitor.go:160: exit_monitor: 0 closed, 45 remaining
+2026/05/23 20:40:02 main.go:13: exit_monitor: done
+2026/05/23 20:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 20:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 20:45:02 monitor.go:141: exit_monitor: closed Will WTI Crude Oil (WTI) hit (HIGH) $110 in May? (stop_loss EARLY) @ 0.1200 src=bestBid liq=$48007: PnL $-47.13 (-80.65%)
+2026/05/23 20:45:02 monitor.go:141: exit_monitor: closed Will Valencia CF win on 2026-05-23? (take_profit) @ 0.6800 src=bestBid liq=$15683: PnL $84.22 (134.48%)
+2026/05/23 20:45:02 monitor.go:141: exit_monitor: closed Will Real Betis Balompié win on 2026-05-23? (take_profit) @ 0.7000 src=bestBid liq=$29893: PnL $68.07 (112.12%)
+2026/05/23 20:45:02 monitor.go:160: exit_monitor: 3 closed, 42 remaining
+2026/05/23 20:45:02 main.go:13: exit_monitor: done
+2026/05/23 20:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 20:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 20:50:02 monitor.go:160: exit_monitor: 0 closed, 42 remaining
+2026/05/23 20:50:02 main.go:13: exit_monitor: done
+2026/05/23 20:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 20:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 20:55:01 monitor.go:141: exit_monitor: closed Will the next diplomatic US-Iran meeting be in Pakistan? (take_profit EARLY) @ 0.6050 src=bestBid liq=$32199: PnL $34.88 (49.38%)
+2026/05/23 20:55:02 monitor.go:141: exit_monitor: closed Will RCD Mallorca win on 2026-05-23? (take_profit) @ 0.9900 src=bestBid liq=$44771: PnL $29.31 (47.76%)
+2026/05/23 20:55:02 monitor.go:141: exit_monitor: closed Will Elche CF win on 2026-05-23? (stop_loss) @ 0.1000 src=bestBid liq=$10655: PnL $-49.81 (-80.39%)
+2026/05/23 20:55:02 monitor.go:160: exit_monitor: 3 closed, 39 remaining
+2026/05/23 20:55:02 main.go:13: exit_monitor: done
+2026/05/23 21:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 21:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%

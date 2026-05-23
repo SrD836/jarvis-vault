@@ -1222,3 +1222,20 @@
 2026/05/23 19:30:03 executor.go:197: executor: entered [short] Will Real Betis Balompié vs. Levante UD end in a draw? @ 0.2400 size=$60.32 (open=50/50, bankroll=$2956)
 2026/05/23 19:30:03 executor.go:202: executor: 1 entered, 96 rejected
 2026/05/23 19:30:03 main.go:13: executor: done
+2026/05/23 20:00:03 main.go:11: executor: starting one-shot pass
+2026/05/23 20:00:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/23 20:00:03 executor.go:62: executor: quota slots this run: short=26 medium=6 long=6 (of 37 remaining today)
+2026/05/23 20:00:03 executor.go:197: executor: entered [short] Will Deportivo Alavés win on 2026-05-23? @ 0.7100 size=$63.22 (open=48/50, bankroll=$3098)
+2026/05/23 20:00:03 executor.go:197: executor: entered [short] Will Elche CF win on 2026-05-23? @ 0.5100 size=$61.95 (open=49/50, bankroll=$3036)
+2026/05/23 20:00:03 executor.go:197: executor: entered [short] Will Real Betis Balompié win on 2026-05-23? @ 0.3300 size=$60.72 (open=50/50, bankroll=$2975)
+2026/05/23 20:00:03 executor.go:202: executor: 3 entered, 92 rejected
+2026/05/23 20:00:03 main.go:13: executor: done
+2026/05/23 20:30:04 main.go:11: executor: starting one-shot pass
+2026/05/23 20:30:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/23 20:30:04 executor.go:62: executor: quota slots this run: short=26 medium=6 long=6 (of 37 remaining today)
+2026/05/23 20:30:04 executor.go:197: executor: entered [short] Will CA Osasuna win on 2026-05-23? @ 0.0600 size=$65.11 (open=47/50, bankroll=$3190)
+2026/05/23 20:30:04 executor.go:197: executor: entered [short] Will Real Betis Balompié vs. Levante UD end in a draw? @ 0.4600 size=$63.81 (open=48/50, bankroll=$3126)
+2026/05/23 20:30:04 executor.go:197: executor: entered [short] Will Real Sociedad de Fútbol win on 2026-05-23? @ 0.5700 size=$62.53 (open=49/50, bankroll=$3064)
+2026/05/23 20:30:04 executor.go:197: executor: entered [short] Will RC Celta de Vigo win on 2026-05-23? @ 0.7900 size=$61.28 (open=50/50, bankroll=$3003)
+2026/05/23 20:30:04 executor.go:202: executor: 4 entered, 90 rejected
+2026/05/23 20:30:04 main.go:13: executor: done
