@@ -6,11 +6,18 @@ category: general
 date: 2026-05-23T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-new-workspace
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/gsd-execute-phase]]"
+  - "[[skills/external/gsd-list-workspaces]]"
+  - "[[skills/external/gsd-new-project]]"
+  - "[[skills/external/gsd-plan-phase]]"
+  - "[[skills/external/gsd-remove-workspace]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-23
 ---
+
 
 # `gsd-new-workspace` (external skill)
 

@@ -22,7 +22,7 @@ related:
 - **Slug**: `spacex-ipo-closing-market-cap-above-3t-337-436`
 - **Categoría**: uncategorized
 - **Precio YES**: 0.1400
-- **Volumen 24h**: 58640.17 USD
+- **Volumen 24h**: 58991.97 USD
 - **End date**: 2027-12-31T00:00:00Z
 
 ## Razón del veto
