@@ -1,6 +1,6 @@
 {
-  "bankroll": 3005.7052609076804,
-  "used_exposure": 3047.526791279414,
+  "bankroll": 2954.136686110337,
+  "used_exposure": 3046.765366076757,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -752,22 +752,6 @@
       "liquidity_usd": 22997.2209
     },
     {
-      "id": "T-2327930-1779498003709",
-      "market_id": "2327930",
-      "question": "Will Bitcoin dip to $75,000 on May 22?",
-      "side": "yes",
-      "entry_price": 0.504,
-      "size": 61.049929000826815,
-      "category": "uncategorized",
-      "entry_timestamp": "2026-05-23T01:00:03Z",
-      "approved_price": 0.504,
-      "days_to_resolution": 0,
-      "horizon": "short",
-      "end_date": "2026-05-23T04:00:00Z",
-      "size_usd": 61.049929000826815,
-      "liquidity_usd": 11138.20197
-    },
-    {
       "id": "T-2238370-1779499803774",
       "market_id": "2238370",
       "question": "Will FC Barcelona win on 2026-05-23?",
@@ -798,6 +782,22 @@
       "end_date": "2026-05-26T16:00:00Z",
       "size_usd": 61.340923691993474,
       "liquidity_usd": 39057.31911
+    },
+    {
+      "id": "T-2313549-1779503403697",
+      "market_id": "2313549",
+      "question": "Will Elon Musk post 280-299 tweets from May 19 to May 26, 2026?",
+      "side": "yes",
+      "entry_price": 0.15,
+      "size": 60.28850379817014,
+      "category": "uncategorized",
+      "entry_timestamp": "2026-05-23T02:30:03Z",
+      "approved_price": 0.15,
+      "days_to_resolution": 3,
+      "horizon": "medium",
+      "end_date": "2026-05-26T16:00:00Z",
+      "size_usd": 60.28850379817014,
+      "liquidity_usd": 37356.4991
     }
   ]
 }

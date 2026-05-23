@@ -4665,3 +4665,52 @@
 2026/05/23 01:55:02 main.go:13: exit_monitor: done
 2026/05/23 02:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/23 02:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 02:00:01 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 02:00:01 main.go:13: exit_monitor: done
+2026/05/23 02:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 02:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 02:05:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 02:05:02 main.go:13: exit_monitor: done
+2026/05/23 02:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 02:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 02:10:02 monitor.go:141: exit_monitor: closed Will Bitcoin dip to $75,000 on May 22? (stop_loss EARLY) @ 0.0720 src=bestBid liq=$6590: PnL $-52.33 (-85.71%)
+2026/05/23 02:10:02 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/23 02:10:02 main.go:13: exit_monitor: done
+2026/05/23 02:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 02:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 02:15:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/23 02:15:02 main.go:13: exit_monitor: done
+2026/05/23 02:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 02:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 02:20:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/23 02:20:02 main.go:13: exit_monitor: done
+2026/05/23 02:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 02:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 02:25:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/23 02:25:02 main.go:13: exit_monitor: done
+2026/05/23 02:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 02:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 02:30:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/23 02:30:02 main.go:13: exit_monitor: done
+2026/05/23 02:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 02:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 02:35:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 02:35:02 main.go:13: exit_monitor: done
+2026/05/23 02:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 02:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 02:40:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 02:40:02 main.go:13: exit_monitor: done
+2026/05/23 02:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 02:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 02:45:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 02:45:02 main.go:13: exit_monitor: done
+2026/05/23 02:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 02:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 02:50:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 02:50:02 main.go:13: exit_monitor: done
+2026/05/23 02:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 02:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 02:55:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 02:55:02 main.go:13: exit_monitor: done
+2026/05/23 03:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 03:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
