@@ -1239,3 +1239,35 @@
 2026/05/23 20:30:04 executor.go:197: executor: entered [short] Will RC Celta de Vigo win on 2026-05-23? @ 0.7900 size=$61.28 (open=50/50, bankroll=$3003)
 2026/05/23 20:30:04 executor.go:202: executor: 4 entered, 90 rejected
 2026/05/23 20:30:04 main.go:13: executor: done
+2026/05/23 21:00:04 main.go:11: executor: starting one-shot pass
+2026/05/23 21:00:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/23 21:00:04 executor.go:62: executor: quota slots this run: short=29 medium=7 long=7 (of 41 remaining today)
+2026/05/23 21:00:04 executor.go:197: executor: entered [short] Will Getafe CF vs. CA Osasuna end in a draw? @ 0.1700 size=$76.49 (open=38/50, bankroll=$3748)
+2026/05/23 21:00:04 executor.go:197: executor: entered [short] Will Valencia CF win on 2026-05-23? @ 0.7600 size=$74.96 (open=39/50, bankroll=$3673)
+2026/05/23 21:00:04 executor.go:197: executor: entered [short] Will Elche CF win on 2026-05-23? @ 0.1100 size=$73.46 (open=40/50, bankroll=$3599)
+2026/05/23 21:00:04 executor.go:197: executor: entered [short] Will Getafe CF win on 2026-05-23? @ 0.8300 size=$71.99 (open=41/50, bankroll=$3527)
+2026/05/23 21:00:04 executor.go:197: executor: entered [short] Will Real Betis Balompié win on 2026-05-23? @ 0.8100 size=$70.55 (open=42/50, bankroll=$3457)
+2026/05/23 21:00:04 executor.go:197: executor: entered [short] Will Rayo Vallecano de Madrid win on 2026-05-23? @ 0.1400 size=$69.14 (open=43/50, bankroll=$3388)
+2026/05/23 21:00:04 executor.go:197: executor: entered [short] Israel closes its airspace by May 24? @ 0.0780 size=$67.75 (open=44/50, bankroll=$3320)
+2026/05/23 21:00:04 executor.go:197: executor: entered [short] Will New York Red Bulls win on 2026-05-23? @ 0.4700 size=$66.40 (open=45/50, bankroll=$3254)
+2026/05/23 21:00:04 executor.go:197: executor: entered [short] Will Liverpool FC win on 2026-05-24? @ 0.5200 size=$65.07 (open=46/50, bankroll=$3189)
+2026/05/23 21:00:04 executor.go:197: executor: entered [short] Will the price of Bitcoin be above $78,000 on May 24? @ 0.1280 size=$63.77 (open=47/50, bankroll=$3125)
+2026/05/23 21:00:04 executor.go:197: executor: entered [short] Will the Iran ceasefire continue through May 25? @ 0.9500 size=$62.49 (open=48/50, bankroll=$3062)
+2026/05/23 21:00:04 executor.go:197: executor: entered [short] Will Bitcoin dip to $74,000 May 18-24? @ 0.0760 size=$61.24 (open=49/50, bankroll=$3001)
+2026/05/23 21:00:04 executor.go:197: executor: entered [short] Will Bitcoin reach $80,000 May 18-24? @ 0.0710 size=$60.02 (open=50/50, bankroll=$2941)
+2026/05/23 21:00:04 executor.go:202: executor: 13 entered, 81 rejected
+2026/05/23 21:00:04 main.go:13: executor: done
+2026/05/23 21:30:04 main.go:11: executor: starting one-shot pass
+2026/05/23 21:30:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/23 21:30:04 executor.go:62: executor: quota slots this run: short=26 medium=6 long=6 (of 37 remaining today)
+2026/05/23 21:30:04 executor.go:197: executor: entered [short] Will Minnesota United FC win on 2026-05-23? @ 0.1900 size=$71.41 (open=42/50, bankroll=$3499)
+2026/05/23 21:30:04 executor.go:197: executor: entered [short] Will the price of Bitcoin be above $78,000 on May 24? @ 0.1800 size=$69.98 (open=43/50, bankroll=$3429)
+2026/05/23 21:30:04 executor.go:197: executor: entered [short] US x Iran permanent peace deal by May 26, 2026? @ 0.6200 size=$68.58 (open=44/50, bankroll=$3360)
+2026/05/23 21:30:04 executor.go:197: executor: entered [short] Will "The Mandalorian and Grogu" 4-day Opening Weekend Box Office be between 102m and 112m? @ 0.0970 size=$67.21 (open=45/50, bankroll=$3293)
+2026/05/23 21:30:04 executor.go:197: executor: entered [short] Will Elon Musk post 280-299 tweets from May 19 to May 26, 2026? @ 0.2300 size=$65.86 (open=46/50, bankroll=$3227)
+2026/05/23 21:30:04 executor.go:197: executor: entered [short] Will Elon Musk post 340-359 tweets from May 19 to May 26, 2026? @ 0.0920 size=$64.55 (open=47/50, bankroll=$3163)
+2026/05/23 21:30:04 executor.go:197: executor: entered [short] Will Elon Musk post 240-259 tweets from May 19 to May 26, 2026? @ 0.0800 size=$63.26 (open=48/50, bankroll=$3099)
+2026/05/23 21:30:04 executor.go:197: executor: entered [short] Will Elon Musk post 300-319 tweets from May 19 to May 26, 2026? @ 0.1960 size=$61.99 (open=49/50, bankroll=$3038)
+2026/05/23 21:30:04 executor.go:197: executor: entered [medium] Iran closes its airspace by May 27? @ 0.2260 size=$60.75 (open=50/50, bankroll=$2977)
+2026/05/23 21:30:04 executor.go:202: executor: 9 entered, 75 rejected
+2026/05/23 21:30:04 main.go:13: executor: done
