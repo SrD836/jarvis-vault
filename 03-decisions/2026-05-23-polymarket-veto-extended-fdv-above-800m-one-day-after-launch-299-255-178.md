@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-the-doge-1-lunar-mission-launch-before-2027"
+title: "Polymarket veto — extended-fdv-above-800m-one-day-after-launch-299-255-178"
 type: decision
 date: 2026-05-23
-decision: "Veto de tesis 'Will the Doge-1 Lunar Mission launch before 2027?' (rule P4_pre_event): pre-event slug + 221 d to resolution (>=7 threshold)"
+decision: "Veto de tesis 'Extended FDV above $800M one day after launch?' (rule P4_pre_event): pre-event slug + 222 d to resolution (>=7 threshold)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,21 +15,21 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will the Doge-1 Lunar Mission launch before 2027?
+# Veto: Extended FDV above $800M one day after launch?
 
 ## Mercado
 
-- **Slug**: `will-the-doge-1-lunar-mission-launch-before-2027`
+- **Slug**: `extended-fdv-above-800m-one-day-after-launch-299-255-178`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.1090
-- **Volumen 24h**: 801749.90 USD
-- **End date**: 2026-12-31T00:00:00Z
+- **Precio YES**: 0.1200
+- **Volumen 24h**: 175438.82 USD
+- **End date**: 2027-01-01T05:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `P4_pre_event`
 
-pre-event slug + 221 d to resolution (>=7 threshold)
+pre-event slug + 222 d to resolution (>=7 threshold)
 
 ## Human notes
 

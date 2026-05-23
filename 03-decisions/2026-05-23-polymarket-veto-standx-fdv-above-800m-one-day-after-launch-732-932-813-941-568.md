@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — metamask-fdv-above-700m-one-day-after-launch-696-977-652-246-632"
+title: "Polymarket veto — standx-fdv-above-800m-one-day-after-launch-732-932-813-941-568"
 type: decision
 date: 2026-05-23
-decision: "Veto de tesis 'Metamask FDV above $700M one day after launch?' (rule P4_pre_event): pre-event slug + 222 d to resolution (>=7 threshold)"
+decision: "Veto de tesis 'StandX FDV above $800M one day after launch?' (rule P4_pre_event): pre-event slug + 222 d to resolution (>=7 threshold)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,14 +15,14 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Metamask FDV above $700M one day after launch?
+# Veto: StandX FDV above $800M one day after launch?
 
 ## Mercado
 
-- **Slug**: `metamask-fdv-above-700m-one-day-after-launch-696-977-652-246-632`
+- **Slug**: `standx-fdv-above-800m-one-day-after-launch-732-932-813-941-568`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.3500
-- **Volumen 24h**: 1350960.54 USD
+- **Precio YES**: 0.1800
+- **Volumen 24h**: 329341.83 USD
 - **End date**: 2027-01-01T05:00:00Z
 
 ## Razón del veto
