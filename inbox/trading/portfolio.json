@@ -1,6 +1,6 @@
 {
-  "bankroll": 2954.136686110337,
-  "used_exposure": 3046.765366076757,
+  "bankroll": 2921.890729730814,
+  "used_exposure": 3055.3213224562796,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -384,22 +384,6 @@
       "liquidity_usd": 917656.4537
     },
     {
-      "id": "T-553856-1779233403338",
-      "market_id": "553856",
-      "question": "Will the Oklahoma City Thunder win the 2026 NBA Finals?",
-      "side": "yes",
-      "entry_price": 0.42,
-      "size": 53.16031561284479,
-      "category": "uncategorized",
-      "entry_timestamp": "2026-05-19T23:30:03Z",
-      "approved_price": 0.42,
-      "days_to_resolution": 42,
-      "horizon": "long",
-      "end_date": "2026-07-01T00:00:00Z",
-      "size_usd": 53.16031561284479,
-      "liquidity_usd": 245440.7497
-    },
-    {
       "id": "T-2132779-1779260404871",
       "market_id": "2132779",
       "question": "Will Bitcoin dip to $70,000 in May?",
@@ -558,22 +542,6 @@
       "end_date": "2026-05-24T13:00:00Z",
       "size_usd": 59.960736253463864,
       "liquidity_usd": 112463.3605
-    },
-    {
-      "id": "T-2313547-1779483603887",
-      "market_id": "2313547",
-      "question": "Will Elon Musk post 240-259 tweets from May 19 to May 26, 2026?",
-      "side": "yes",
-      "entry_price": 0.09,
-      "size": 58.76152152839459,
-      "category": "uncategorized",
-      "entry_timestamp": "2026-05-22T21:00:03Z",
-      "approved_price": 0.09,
-      "days_to_resolution": 3,
-      "horizon": "medium",
-      "end_date": "2026-05-26T16:00:00Z",
-      "size_usd": 58.76152152839459,
-      "liquidity_usd": 45748.4724
     },
     {
       "id": "T-2313548-1779483603887",
@@ -798,6 +766,38 @@
       "end_date": "2026-05-26T16:00:00Z",
       "size_usd": 60.28850379817014,
       "liquidity_usd": 37356.4991
+    },
+    {
+      "id": "T-2238507-1779507004281",
+      "market_id": "2238507",
+      "question": "Will Getafe CF win on 2026-05-23?",
+      "side": "yes",
+      "entry_price": 0.34,
+      "size": 60.84737046503153,
+      "category": "uncategorized",
+      "entry_timestamp": "2026-05-23T03:30:04Z",
+      "approved_price": 0.34,
+      "days_to_resolution": 0,
+      "horizon": "short",
+      "end_date": "2026-05-23T19:00:00Z",
+      "size_usd": 60.84737046503153,
+      "liquidity_usd": 870964.5164
+    },
+    {
+      "id": "T-2238602-1779507004281",
+      "market_id": "2238602",
+      "question": "Will Girona FC win on 2026-05-23?",
+      "side": "yes",
+      "entry_price": 0.57,
+      "size": 59.6304230557309,
+      "category": "uncategorized",
+      "entry_timestamp": "2026-05-23T03:30:04Z",
+      "approved_price": 0.57,
+      "days_to_resolution": 0,
+      "horizon": "short",
+      "end_date": "2026-05-23T19:00:00Z",
+      "size_usd": 59.6304230557309,
+      "liquidity_usd": 861595.1791
     }
   ]
 }

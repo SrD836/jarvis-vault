@@ -3,27 +3,20 @@ title: "superpowers (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-22T03:15:01+00:00
+date: 2026-05-23T03:15:01+00:00
 source_path: ~/.claude/skills/superpowers
 source_file: README.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/external/gsd-executor]]"
-  - "[[skills/external/gsd-autonomous]]"
-  - "[[skills/external/gsd-manager]]"
-  - "[[skills/external/llm-council]]"
-  - "[[skills/external/voltagent-core-reference]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-22
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `superpowers` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/superpowers/`  
-**Mirrored at**: 2026-05-22T03:15:01+00:00
+**Mirrored at**: 2026-05-23T03:15:01+00:00
 
 ## Descripción
 
