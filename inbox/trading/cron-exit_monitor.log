@@ -5448,3 +5448,56 @@
 2026/05/23 17:55:02 main.go:13: exit_monitor: done
 2026/05/23 18:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/23 18:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 18:00:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 18:00:02 main.go:13: exit_monitor: done
+2026/05/23 18:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 18:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 18:05:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 18:05:02 main.go:13: exit_monitor: done
+2026/05/23 18:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 18:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 18:10:02 monitor.go:141: exit_monitor: closed Will Elon Musk post 280-299 tweets from May 19 to May 26, 2026? (take_profit EARLY) @ 0.2100 src=bestBid liq=$36444: PnL $24.12 (40.00%)
+2026/05/23 18:10:02 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/23 18:10:02 main.go:13: exit_monitor: done
+2026/05/23 18:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 18:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 18:15:03 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/23 18:15:03 main.go:13: exit_monitor: done
+2026/05/23 18:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 18:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 18:20:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/23 18:20:02 main.go:13: exit_monitor: done
+2026/05/23 18:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 18:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 18:25:01 monitor.go:141: exit_monitor: closed US x Iran permanent peace deal by June 30, 2026? (take_profit EARLY) @ 0.6400 src=bestBid liq=$172494: PnL $29.10 (48.84%)
+2026/05/23 18:25:01 monitor.go:141: exit_monitor: closed Israel closes its airspace by May 24? (stop_loss EARLY) @ 0.0400 src=bestBid liq=$24720: PnL $-55.13 (-87.50%)
+2026/05/23 18:25:02 monitor.go:160: exit_monitor: 2 closed, 45 remaining
+2026/05/23 18:25:02 main.go:13: exit_monitor: done
+2026/05/23 18:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 18:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 18:30:02 monitor.go:160: exit_monitor: 0 closed, 45 remaining
+2026/05/23 18:30:02 main.go:13: exit_monitor: done
+2026/05/23 18:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 18:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 18:35:02 monitor.go:141: exit_monitor: closed Will WTI Crude Oil (WTI) hit (LOW) $85 in May? (take_profit EARLY) @ 0.3400 src=bestBid liq=$22535: PnL $25.06 (41.67%)
+2026/05/23 18:35:02 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/23 18:35:02 main.go:13: exit_monitor: done
+2026/05/23 18:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 18:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 18:40:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/23 18:40:02 main.go:13: exit_monitor: done
+2026/05/23 18:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 18:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 18:45:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/23 18:45:02 main.go:13: exit_monitor: done
+2026/05/23 18:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 18:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 18:50:02 monitor.go:141: exit_monitor: closed Iran closes its airspace by May 24? (stop_loss EARLY) @ 0.1390 src=bestBid liq=$78675: PnL $-53.39 (-83.05%)
+2026/05/23 18:50:02 monitor.go:160: exit_monitor: 1 closed, 46 remaining
+2026/05/23 18:50:02 main.go:13: exit_monitor: done
+2026/05/23 18:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 18:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 18:55:03 monitor.go:160: exit_monitor: 0 closed, 46 remaining
+2026/05/23 18:55:03 main.go:13: exit_monitor: done
+2026/05/23 19:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 19:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%

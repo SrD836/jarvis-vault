@@ -6,11 +6,18 @@ category: general
 date: 2026-05-23T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-import
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/gsd-analyze-dependencies]]"
+  - "[[skills/external/gsd-forensics]]"
+  - "[[skills/external/gsd-ingest-docs]]"
+  - "[[skills/external/gsd-intel]]"
+  - "[[skills/external/gsd-plan-review-convergence]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-23
 ---
+
 
 # `gsd-import` (external skill)
 

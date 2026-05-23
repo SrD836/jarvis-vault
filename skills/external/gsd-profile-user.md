@@ -6,11 +6,18 @@ category: general
 date: 2026-05-23T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-profile-user
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/external/gsd-intel-updater]]"
+  - "[[agents/external/gsd-user-profiler]]"
+  - "[[skills/external/gsd-forensics]]"
+  - "[[skills/external/gsd-intel]]"
+  - "[[skills/external/gsd-set-profile]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-23
 ---
+
 
 # `gsd-profile-user` (external skill)
 
