@@ -34,6 +34,7 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-paramount-close-warner-bros-acquisition` score=1.00 (exact slug match)
+- veto `will-paramount-close-warner-bros-acquisition-by-end-of-2026` score=0.70 (slug prefix match; same price bucket mid)
 
 ## Human notes
 
