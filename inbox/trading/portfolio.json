@@ -1,6 +1,6 @@
 {
-  "bankroll": 2917.1148157314105,
-  "used_exposure": 3018.5772364556838,
+  "bankroll": 2947.0420387044815,
+  "used_exposure": 3019.150013482613,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -94,21 +94,6 @@
       "horizon": "long",
       "end_date": "2026-06-30T00:00:00Z",
       "size_usd": 69.21201503340939
-    },
-    {
-      "id": "T-2183424-1779210004342",
-      "market_id": "2183424",
-      "question": "US obtains Iranian enriched uranium by June 30?",
-      "side": "yes",
-      "entry_price": 0.135,
-      "size": 66.47121923808638,
-      "category": "uncategorized",
-      "entry_timestamp": "2026-05-19T17:00:04Z",
-      "approved_price": 0.135,
-      "days_to_resolution": 41,
-      "horizon": "long",
-      "end_date": "2026-06-30T00:00:00Z",
-      "size_usd": 66.47121923808638
     },
     {
       "id": "T-2159726-1779211529037",
@@ -607,22 +592,6 @@
       "liquidity_usd": 28803.5332
     },
     {
-      "id": "T-2078702-1779480004213",
-      "market_id": "2078702",
-      "question": "Will Racing Club de Lens win on 2026-05-22?",
-      "side": "yes",
-      "entry_price": 0.94,
-      "size": 54.470856642832416,
-      "category": "uncategorized",
-      "entry_timestamp": "2026-05-22T20:00:04Z",
-      "approved_price": 0.94,
-      "days_to_resolution": 0,
-      "horizon": "short",
-      "end_date": "2026-05-22T19:00:00Z",
-      "size_usd": 54.470856642832416,
-      "liquidity_usd": 86527.9963
-    },
-    {
       "id": "T-2287602-1779483603887",
       "market_id": "2287602",
       "question": "Will SS Lazio win on 2026-05-24?",
@@ -797,6 +766,38 @@
       "end_date": "2026-05-24T16:00:00Z",
       "size_usd": 59.53295542309001,
       "liquidity_usd": 25648.75635
+    },
+    {
+      "id": "T-2324516-1779492603815",
+      "market_id": "2324516",
+      "question": "Will Trump attend his son's wedding?",
+      "side": "yes",
+      "entry_price": 0.055,
+      "size": 61.37113783224659,
+      "category": "uncategorized",
+      "entry_timestamp": "2026-05-22T23:30:03Z",
+      "approved_price": 0.055,
+      "days_to_resolution": 2,
+      "horizon": "short",
+      "end_date": "2026-05-25T00:00:00Z",
+      "size_usd": 61.37113783224659,
+      "liquidity_usd": 24709.40867
+    },
+    {
+      "id": "T-2132637-1779492603815",
+      "market_id": "2132637",
+      "question": "Will WTI Crude Oil (WTI) hit (LOW) $85 in May?",
+      "side": "yes",
+      "entry_price": 0.24,
+      "size": 60.14371507560166,
+      "category": "uncategorized",
+      "entry_timestamp": "2026-05-22T23:30:03Z",
+      "approved_price": 0.24,
+      "days_to_resolution": 9,
+      "horizon": "medium",
+      "end_date": "2026-06-01T03:59:59.999Z",
+      "size_usd": 60.14371507560166,
+      "liquidity_usd": 22997.2209
     }
   ]
 }

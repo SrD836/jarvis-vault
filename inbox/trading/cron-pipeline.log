@@ -984,3 +984,15 @@
 2026/05/22 22:30:03 executor.go:197: executor: entered [short] Will the price of Bitcoin be above $74,000 on May 24? @ 0.9380 size=$59.53 (open=50/50, bankroll=$2917)
 2026/05/22 22:30:03 executor.go:202: executor: 1 entered, 70 rejected
 2026/05/22 22:30:03 main.go:13: executor: done
+2026/05/22 23:00:03 main.go:11: executor: starting one-shot pass
+2026/05/22 23:00:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/22 23:00:03 executor.go:62: executor: quota slots this run: short=25 medium=6 long=6 (of 35 remaining today)
+2026/05/22 23:00:03 executor.go:202: executor: 0 entered, 68 rejected
+2026/05/22 23:00:03 main.go:13: executor: done
+2026/05/22 23:30:03 main.go:11: executor: starting one-shot pass
+2026/05/22 23:30:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/22 23:30:03 executor.go:62: executor: quota slots this run: short=26 medium=6 long=6 (of 36 remaining today)
+2026/05/22 23:30:03 executor.go:197: executor: entered [short] Will Trump attend his son's wedding? @ 0.0550 size=$61.37 (open=49/50, bankroll=$3007)
+2026/05/22 23:30:03 executor.go:197: executor: entered [medium] Will WTI Crude Oil (WTI) hit (LOW) $85 in May? @ 0.2400 size=$60.14 (open=50/50, bankroll=$2947)
+2026/05/22 23:30:03 executor.go:202: executor: 2 entered, 67 rejected
+2026/05/22 23:30:03 main.go:13: executor: done
