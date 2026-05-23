@@ -5501,3 +5501,56 @@
 2026/05/23 18:55:03 main.go:13: exit_monitor: done
 2026/05/23 19:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/23 19:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 19:00:01 monitor.go:141: exit_monitor: closed Israel closes its airspace by May 31? (stop_loss EARLY) @ 0.0400 src=bestBid liq=$33527: PnL $-57.54 (-90.70%)
+2026/05/23 19:00:02 monitor.go:160: exit_monitor: 1 closed, 45 remaining
+2026/05/23 19:00:02 main.go:13: exit_monitor: done
+2026/05/23 19:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 19:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 19:05:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 19:05:02 main.go:13: exit_monitor: done
+2026/05/23 19:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 19:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 19:10:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 19:10:02 main.go:13: exit_monitor: done
+2026/05/23 19:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 19:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 19:15:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 19:15:02 main.go:13: exit_monitor: done
+2026/05/23 19:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 19:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 19:20:03 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 19:20:03 main.go:13: exit_monitor: done
+2026/05/23 19:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 19:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 19:25:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 19:25:02 main.go:13: exit_monitor: done
+2026/05/23 19:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 19:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 19:30:02 monitor.go:141: exit_monitor: closed Will Real Betis Balompié win on 2026-05-23? (take_profit) @ 0.5900 src=bestBid liq=$18562: PnL $27.30 (43.90%)
+2026/05/23 19:30:02 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/23 19:30:02 main.go:13: exit_monitor: done
+2026/05/23 19:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 19:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 19:35:02 monitor.go:141: exit_monitor: closed Will Deportivo Alavés win on 2026-05-23? (take_profit) @ 0.6600 src=bestBid liq=$47743: PnL $44.19 (69.23%)
+2026/05/23 19:35:02 monitor.go:141: exit_monitor: closed Will VfB Stuttgart win on 2026-05-23? (stop_loss) @ 0.0300 src=bestBid liq=$29310: PnL $-51.92 (-81.25%)
+2026/05/23 19:35:02 monitor.go:160: exit_monitor: 2 closed, 46 remaining
+2026/05/23 19:35:02 main.go:13: exit_monitor: done
+2026/05/23 19:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 19:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 19:40:02 monitor.go:160: exit_monitor: 0 closed, 46 remaining
+2026/05/23 19:40:02 main.go:13: exit_monitor: done
+2026/05/23 19:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 19:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 19:45:02 monitor.go:160: exit_monitor: 0 closed, 46 remaining
+2026/05/23 19:45:02 main.go:13: exit_monitor: done
+2026/05/23 19:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 19:50:02 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 19:50:04 monitor.go:160: exit_monitor: 0 closed, 46 remaining
+2026/05/23 19:50:04 main.go:13: exit_monitor: done
+2026/05/23 19:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 19:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 19:55:02 monitor.go:141: exit_monitor: closed Will Real Madrid CF win on 2026-05-23? (take_profit) @ 0.9400 src=bestBid liq=$40889: PnL $26.32 (44.62%)
+2026/05/23 19:55:02 monitor.go:160: exit_monitor: 1 closed, 45 remaining
+2026/05/23 19:55:02 main.go:13: exit_monitor: done
+2026/05/23 20:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 20:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%

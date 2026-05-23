@@ -1,5 +1,5 @@
 {
-  "bankroll": 3103.4144000586434,
+  "bankroll": 3160.936039261394,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -93,22 +93,6 @@
       "side": "yes",
       "size": 69.21201503340939,
       "size_usd": 69.21201503340939
-    },
-    {
-      "approved_price": 0.43,
-      "category": "uncategorized",
-      "days_to_resolution": 11,
-      "end_date": "2026-05-31T00:00:00Z",
-      "entry_price": 0.43,
-      "entry_timestamp": "2026-05-19T17:25:29Z",
-      "horizon": "medium",
-      "id": "T-2159726-1779211529037",
-      "liquidity_usd": 36476.8018,
-      "market_id": "2159726",
-      "question": "Israel closes its airspace by May 31?",
-      "side": "yes",
-      "size": 63.439,
-      "size_usd": 63.439
     },
     {
       "approved_price": 0.06,
@@ -639,22 +623,6 @@
       "size_usd": 57.49889447139746
     },
     {
-      "approved_price": 0.65,
-      "category": "uncategorized",
-      "days_to_resolution": 0,
-      "end_date": "2026-05-23T19:00:00Z",
-      "entry_price": 0.65,
-      "entry_timestamp": "2026-05-23T16:00:04Z",
-      "horizon": "short",
-      "id": "T-2238258-1779552004213",
-      "liquidity_usd": 755112.0167,
-      "market_id": "2238258",
-      "question": "Will Real Madrid CF win on 2026-05-23?",
-      "side": "yes",
-      "size": 58.98892930228111,
-      "size_usd": 58.98892930228111
-    },
-    {
       "approved_price": 0.49,
       "category": "uncategorized",
       "days_to_resolution": 0,
@@ -669,22 +637,6 @@
       "side": "yes",
       "size": 58.33159076976854,
       "size_usd": 58.33159076976854
-    },
-    {
-      "approved_price": 0.39,
-      "category": "uncategorized",
-      "days_to_resolution": 0,
-      "end_date": "2026-05-23T19:00:00Z",
-      "entry_price": 0.39,
-      "entry_timestamp": "2026-05-23T17:00:03Z",
-      "horizon": "short",
-      "id": "T-2238414-1779555603718",
-      "liquidity_usd": 983428.6838,
-      "market_id": "2238414",
-      "question": "Will Deportivo Alavés win on 2026-05-23?",
-      "side": "yes",
-      "size": 63.82450972250375,
-      "size_usd": 63.82450972250375
     },
     {
       "approved_price": 0.45,
@@ -719,22 +671,6 @@
       "size_usd": 61.51532681097343
     },
     {
-      "approved_price": 0.16,
-      "category": "uncategorized",
-      "days_to_resolution": 0,
-      "end_date": "2026-05-23T18:00:00Z",
-      "entry_price": 0.16,
-      "entry_timestamp": "2026-05-23T18:30:03Z",
-      "horizon": "short",
-      "id": "T-2087618-1779561003587",
-      "liquidity_usd": 20966.0543,
-      "market_id": "2087618",
-      "question": "Will VfB Stuttgart win on 2026-05-23?",
-      "side": "yes",
-      "size": 63.90437792002512,
-      "size_usd": 63.90437792002512
-    },
-    {
       "approved_price": 0.29,
       "category": "uncategorized",
       "days_to_resolution": 0,
@@ -765,7 +701,55 @@
       "side": "yes",
       "size": 61.37376455439212,
       "size_usd": 61.37376455439212
+    },
+    {
+      "approved_price": 0.27,
+      "category": "uncategorized",
+      "days_to_resolution": 0,
+      "end_date": "2026-05-23T19:00:00Z",
+      "entry_price": 0.27,
+      "entry_timestamp": "2026-05-23T19:00:03Z",
+      "horizon": "short",
+      "id": "T-2238416-1779562803685",
+      "liquidity_usd": 341414.4017,
+      "market_id": "2238416",
+      "question": "Will Rayo Vallecano de Madrid win on 2026-05-23?",
+      "side": "yes",
+      "size": 60.942542641149416,
+      "size_usd": 60.942542641149416
+    },
+    {
+      "approved_price": 0.148,
+      "category": "uncategorized",
+      "days_to_resolution": 0,
+      "end_date": "2026-05-24T00:00:00Z",
+      "entry_price": 0.148,
+      "entry_timestamp": "2026-05-23T19:00:03Z",
+      "horizon": "short",
+      "id": "T-2241873-1779562803685",
+      "liquidity_usd": 82094.63951,
+      "market_id": "2241873",
+      "question": "Iran closes its airspace by May 24?",
+      "side": "yes",
+      "size": 59.72369178832643,
+      "size_usd": 59.72369178832643
+    },
+    {
+      "approved_price": 0.24,
+      "category": "uncategorized",
+      "days_to_resolution": 0,
+      "end_date": "2026-05-23T19:00:00Z",
+      "entry_price": 0.24,
+      "entry_timestamp": "2026-05-23T19:30:03Z",
+      "horizon": "short",
+      "id": "T-2238462-1779564603418",
+      "liquidity_usd": 50760.3414,
+      "market_id": "2238462",
+      "question": "Will Real Betis Balompié vs. Levante UD end in a draw?",
+      "side": "yes",
+      "size": 60.31894331258335,
+      "size_usd": 60.31894331258335
     }
   ],
-  "used_exposure": 2966.03765212845
+  "used_exposure": 2896.8660129257
 }
