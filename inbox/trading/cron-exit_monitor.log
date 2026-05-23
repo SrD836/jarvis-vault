@@ -4615,3 +4615,53 @@
 2026/05/23 00:55:02 main.go:13: exit_monitor: done
 2026/05/23 01:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/23 01:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 01:00:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/23 01:00:02 main.go:13: exit_monitor: done
+2026/05/23 01:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 01:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 01:05:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 01:05:02 main.go:13: exit_monitor: done
+2026/05/23 01:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 01:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 01:10:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 01:10:02 main.go:13: exit_monitor: done
+2026/05/23 01:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 01:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 01:15:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 01:15:02 main.go:13: exit_monitor: done
+2026/05/23 01:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 01:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 01:20:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 01:20:02 main.go:13: exit_monitor: done
+2026/05/23 01:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 01:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 01:25:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 01:25:02 main.go:13: exit_monitor: done
+2026/05/23 01:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 01:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 01:30:01 monitor.go:141: exit_monitor: closed Trump kiss by May 31? (market_closed) @ 0.9990 src=bestBid liq=$0: PnL $16.32 (30.76%)
+2026/05/23 01:30:01 monitor.go:141: exit_monitor: closed Will SpaceX Starship Flight Test 12 launch by May 22? (market_closed) @ 0.9990 src=bestBid liq=$0: PnL $19.22 (38.75%)
+2026/05/23 01:30:02 monitor.go:160: exit_monitor: 2 closed, 46 remaining
+2026/05/23 01:30:02 main.go:13: exit_monitor: done
+2026/05/23 01:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 01:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 01:35:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 01:35:02 main.go:13: exit_monitor: done
+2026/05/23 01:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 01:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 01:40:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 01:40:02 main.go:13: exit_monitor: done
+2026/05/23 01:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 01:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 01:45:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 01:45:02 main.go:13: exit_monitor: done
+2026/05/23 01:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 01:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 01:50:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 01:50:02 main.go:13: exit_monitor: done
+2026/05/23 01:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 01:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 01:55:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 01:55:02 main.go:13: exit_monitor: done
+2026/05/23 02:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 02:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%

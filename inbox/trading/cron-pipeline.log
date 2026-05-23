@@ -1007,3 +1007,16 @@
 2026/05/23 00:30:03 executor.go:197: executor: entered [short] Will Bitcoin dip to $75,000 on May 22? @ 0.2110 size=$60.48 (open=50/50, bankroll=$2964)
 2026/05/23 00:30:03 executor.go:202: executor: 1 entered, 72 rejected
 2026/05/23 00:30:03 main.go:13: executor: done
+2026/05/23 01:00:03 main.go:11: executor: starting one-shot pass
+2026/05/23 01:00:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/23 01:00:03 executor.go:62: executor: quota slots this run: short=35 medium=8 long=8 (of 50 remaining today)
+2026/05/23 01:00:03 executor.go:197: executor: entered [short] Will Bitcoin dip to $75,000 on May 22? @ 0.5040 size=$61.05 (open=50/50, bankroll=$2991)
+2026/05/23 01:00:03 executor.go:202: executor: 1 entered, 72 rejected
+2026/05/23 01:00:03 main.go:13: executor: done
+2026/05/23 01:30:03 main.go:11: executor: starting one-shot pass
+2026/05/23 01:30:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/23 01:30:03 executor.go:62: executor: quota slots this run: short=35 medium=8 long=8 (of 49 remaining today)
+2026/05/23 01:30:03 executor.go:197: executor: entered [short] Will FC Barcelona win on 2026-05-23? @ 0.5100 size=$62.59 (open=49/50, bankroll=$3067)
+2026/05/23 01:30:03 executor.go:197: executor: entered [medium] Will Elon Musk post 320-339 tweets from May 19 to May 26, 2026? @ 0.2040 size=$61.34 (open=50/50, bankroll=$3006)
+2026/05/23 01:30:03 executor.go:202: executor: 2 entered, 70 rejected
+2026/05/23 01:30:03 main.go:13: executor: done

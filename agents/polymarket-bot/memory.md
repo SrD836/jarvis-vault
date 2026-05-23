@@ -17,106 +17,106 @@ related:
 
 | timestamp | slug | category | price_yes | rule | reason |
 |---|---|---|---|---|---|
-| 2026-05-23T00:30:03Z | vanta-ipo-before-2027 | uncategorized | 0.0900 | P0_floor | price floor: 0.0900 < 0.100 (horizon 221 d) |
-| 2026-05-23T00:30:03Z | will-beyonc-be-the-top-spotify-artist-for-2026 | uncategorized | 0.0100 | P0_floor | price floor: 0.0100 < 0.100 (horizon 221 d) |
-| 2026-05-23T00:30:03Z | will-the-doge-1-lunar-mission-launch-before-2027 | uncategorized | 0.1120 | P4_pre_event | pre-event slug + 221 d to resolution (>=7 threshold) |
-| 2026-05-23T00:30:03Z | will-jeff-bezos-be-richest-person-on-december-31-243 | uncategorized | 0.0040 | P0_floor | price floor: 0.0040 < 0.100 (horizon 221 d) |
-| 2026-05-23T00:30:03Z | will-there-be-at-least-12500-measles-cases-in-the-us-in-2026-512-499 | uncategorized | 0.0900 | P0_floor | price floor: 0.0900 < 0.100 (horizon 221 d) |
-| 2026-05-23T00:30:03Z | will-bernard-arnault-be-richest-person-on-december-31-747 | uncategorized | 0.0100 | P0_floor | price floor: 0.0100 < 0.100 (horizon 221 d) |
-| 2026-05-23T00:30:03Z | will-there-be-exactly-0-confirmed-vei-4-or-higher-volcanic-eruptions-worldwide-in-2026 | uncategorized | 0.7000 | P3_low_absolute_liquidity | liquidity $1872 < absolute min $5000 |
-| 2026-05-23T00:30:03Z | spacex-starship-fully-reusable-before-2027 | uncategorized | 0.3400 | P3_low_absolute_liquidity | liquidity $2236 < absolute min $5000 |
-| 2026-05-23T00:30:03Z | will-brion-win-the-lck-2026-season-playoffs | uncategorized | 0.0100 | P0_floor | price floor: 0.0100 < 0.100 (horizon 221 d) |
-| 2026-05-23T00:30:03Z | 9pt0-or-above-earthquake-before-2027 | uncategorized | 0.0780 | P0_floor | price floor: 0.0780 < 0.100 (horizon 221 d) |
-| 2026-05-23T00:30:03Z | will-gillian-sherratt-win-the-2026-dublin-central-by-election | uncategorized | 0.0030 | P0_floor | price floor: 0.0030 < 0.100 (horizon 221 d) |
-| 2026-05-23T00:30:03Z | will-israel-strike-10-countries-in-2026 | uncategorized | 0.0100 | P0_floor | price floor: 0.0100 < 0.100 (horizon 221 d) |
-| 2026-05-23T00:30:03Z | will-petr-yan-fight-dominick-cruz-next | uncategorized | 0.0090 | P0_floor | price floor: 0.0090 < 0.100 (horizon 221 d) |
-| 2026-05-23T00:30:03Z | will-the-weeknd-be-the-top-spotify-artist-for-2026 | uncategorized | 0.0150 | P0_floor | price floor: 0.0150 < 0.100 (horizon 221 d) |
-| 2026-05-23T00:30:03Z | will-9-fed-rate-cuts-happen-in-2026 | uncategorized | 0.0030 | P0_floor | price floor: 0.0030 < 0.100 (horizon 221 d) |
-| 2026-05-23T00:30:03Z | applied-intuition-ipo-before-2027 | uncategorized | 0.1500 | P3_low_absolute_liquidity | liquidity $2847 < absolute min $5000 |
-| 2026-05-23T00:30:03Z | will-2026-rank-as-the-sixth-hottest-year-on-record-or-lower | uncategorized | 0.0230 | P0_floor | price floor: 0.0230 < 0.100 (horizon 221 d) |
-| 2026-05-23T00:30:03Z | will-macky-sall-be-the-next-secretary-general-of-the-united-nations | uncategorized | 0.0770 | P0_floor | price floor: 0.0770 < 0.100 (horizon 221 d) |
-| 2026-05-23T00:30:03Z | will-alexander-volkanovski-be-ranked-first-in-the-ufc-pound-for-pound-rankings-at-the-end-of-2026 | uncategorized | 0.0160 | P0_floor | price floor: 0.0160 < 0.100 (horizon 221 d) |
-| 2026-05-23T00:30:03Z | puffpaw-fdv-above-200m-one-day-after-launch | uncategorized | 0.2700 | P4_pre_event | pre-event slug + 223 d to resolution (>=7 threshold) |
-| 2026-05-23T00:30:03Z | consensys-ipo-closing-market-cap-above-1b | uncategorized | 0.4200 | P3_low_absolute_liquidity | liquidity $1326 < absolute min $5000 |
-| 2026-05-23T00:30:03Z | usdc-depeg-by-december-31-968 | uncategorized | 0.0220 | P0_floor | price floor: 0.0220 < 0.100 (horizon 223 d) |
-| 2026-05-23T00:30:03Z | will-fomo-launch-a-token-by-december-31-2026 | uncategorized | 0.3600 | P3_low_absolute_liquidity | liquidity $897 < absolute min $5000 |
-| 2026-05-23T00:30:03Z | metamask-fdv-above-700m-one-day-after-launch-696-977-652-246-632 | uncategorized | 0.3300 | P4_pre_event | pre-event slug + 223 d to resolution (>=7 threshold) |
-| 2026-05-23T00:30:03Z | will-usdc-hit-50-of-usdt-market-cap-by-december-31-2026 | uncategorized | 0.4500 | P3_low_absolute_liquidity | liquidity $178 < absolute min $5000 |
-| 2026-05-23T00:30:03Z | standx-fdv-above-10b-one-day-after-launch-467-712-296 | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 223 d) |
-| 2026-05-23T00:30:03Z | over-1b-raised-on-coinbase-in-2026 | uncategorized | 0.4000 | P3_low_absolute_liquidity | liquidity $964 < absolute min $5000 |
-| 2026-05-23T00:30:03Z | will-tempo-launch-a-token-by-june-30-2026 | uncategorized | 0.0100 | P0_floor | price floor: 0.0100 < 0.100 (horizon 223 d) |
-| 2026-05-23T00:30:03Z | major-cex-insolvent-in-2026 | uncategorized | 0.0900 | P0_floor | price floor: 0.0900 < 0.100 (horizon 223 d) |
-| 2026-05-23T00:30:03Z | will-ethereum-reach-8000-by-december-31-2026 | uncategorized | 0.0390 | P0_floor | price floor: 0.0390 < 0.100 (horizon 223 d) |
-| 2026-05-23T00:30:03Z | will-consensys-ipo-by-december-31-2026 | uncategorized | 0.2900 | P3_low_absolute_liquidity | liquidity $2116 < absolute min $5000 |
-| 2026-05-23T00:30:03Z | standx-fdv-above-2b-one-day-after-launch-143-135-174-596-974 | uncategorized | 0.0500 | P0_floor | price floor: 0.0500 < 0.100 (horizon 223 d) |
-| 2026-05-23T00:30:03Z | will-tempo-launch-a-token-by-september-30-2026 | uncategorized | 0.0940 | P0_floor | price floor: 0.0940 < 0.100 (horizon 223 d) |
-| 2026-05-23T00:30:03Z | will-new-orleans-saints-win-the-2027-nfl-nfc-championship-398 | uncategorized | 0.0130 | P0_floor | price floor: 0.0130 < 0.100 (horizon 246 d) |
-| 2026-05-23T00:30:03Z | will-cleveland-browns-win-the-2027-nfl-afc-championship-776 | uncategorized | 0.0230 | P0_floor | price floor: 0.0230 < 0.100 (horizon 246 d) |
-| 2026-05-23T00:30:03Z | will-indianapolis-colts-win-the-2027-nfl-afc-championship-168 | uncategorized | 0.0280 | P0_floor | price floor: 0.0280 < 0.100 (horizon 246 d) |
-| 2026-05-23T00:30:03Z | will-dallas-cowboys-win-the-2027-nfl-nfc-championship-584 | uncategorized | 0.1100 | M1 | memoria: exact slug match (score 1.00) |
-| 2026-05-23T00:30:03Z | will-tennessee-titans-win-the-2027-nfl-afc-championship-594 | uncategorized | 0.0130 | P0_floor | price floor: 0.0130 < 0.100 (horizon 246 d) |
-| 2026-05-23T00:30:03Z | will-las-vegas-raiders-win-the-2027-nfl-afc-championship-699 | uncategorized | 0.0260 | P0_floor | price floor: 0.0260 < 0.100 (horizon 246 d) |
-| 2026-05-23T00:30:03Z | will-atlanta-falcons-win-the-2027-nfl-nfc-championship-312 | uncategorized | 0.0170 | P0_floor | price floor: 0.0170 < 0.100 (horizon 246 d) |
-| 2026-05-23T00:30:03Z | will-houston-texans-win-the-2027-nfl-afc-championship-334 | uncategorized | 0.1100 | M1 | memoria: exact slug match (score 1.00) |
-| 2026-05-23T00:30:03Z | will-washington-commanders-win-the-2027-nfl-nfc-championship-484 | uncategorized | 0.0240 | P0_floor | price floor: 0.0240 < 0.100 (horizon 246 d) |
-| 2026-05-23T00:30:03Z | will-arizona-cardinals-win-the-2027-nfl-nfc-championship-199 | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 246 d) |
-| 2026-05-23T00:30:03Z | will-tampa-bay-buccaneers-win-the-2027-nfl-nfc-championship-312 | uncategorized | 0.0380 | P0_floor | price floor: 0.0380 < 0.100 (horizon 246 d) |
-| 2026-05-23T00:30:03Z | will-baker-mayfield-win-the-2026-nfl-mvp | uncategorized | 0.0630 | P0_floor | price floor: 0.0630 < 0.100 (horizon 267 d) |
-| 2026-05-23T00:30:03Z | will-saquon-barkley-win-the-2026-nfl-mvp | uncategorized | 0.0690 | P0_floor | price floor: 0.0690 < 0.100 (horizon 267 d) |
-| 2026-05-23T00:30:03Z | will-maurcio-ruffy-fight-charles-oliveira-next-853-769 | uncategorized | 0.0090 | P0_floor | price floor: 0.0090 < 0.100 (horizon 281 d) |
-| 2026-05-23T00:30:03Z | will-olivier-faure-win-the-2027-french-presidential-election | uncategorized | 0.0070 | P0_floor | price floor: 0.0070 < 0.100 (horizon 341 d) |
-| 2026-05-23T00:30:03Z | will-mathilde-panot-win-the-2027-french-presidential-election | uncategorized | 0.0070 | P0_floor | price floor: 0.0070 < 0.100 (horizon 341 d) |
-| 2026-05-23T00:30:03Z | will-utah-jazz-win-the-2027-nba-finals | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 403 d) |
-| 2026-05-23T00:30:03Z | will-sacramento-kings-win-the-2027-nba-finals | uncategorized | 0.0070 | P0_floor | price floor: 0.0070 < 0.100 (horizon 403 d) |
-| 2026-05-23T00:30:03Z | will-deutsche-bank-or-any-of-its-underwriting-affiliates-serve-as-the-lead-underwriter-in-spacexs-initial-public-offe... | uncategorized | 0.0010 | P0_floor | price floor: 0.0010 < 0.100 (horizon 586 d) |
-| 2026-05-23T00:30:03Z | will-perplexity-not-ipo-by-december-31-2027 | uncategorized | 0.4600 | P3_low_absolute_liquidity | liquidity $1478 < absolute min $5000 |
-| 2026-05-23T00:30:03Z | spacex-ipo-closing-market-cap-above-3t-337-436 | uncategorized | 0.1400 | P4_pre_event | pre-event slug + 586 d to resolution (>=7 threshold) |
-| 2026-05-23T00:30:03Z | will-spacexs-market-cap-be-between-500b-and-600b-at-market-close-on-ipo-day | uncategorized | 0.0010 | P0_floor | price floor: 0.0010 < 0.100 (horizon 586 d) |
-| 2026-05-23T00:30:03Z | will-ubs-or-any-of-its-underwriting-affiliates-serve-as-the-lead-underwriter-in-spacexs-initial-public-offering-884 | uncategorized | 0.0010 | P0_floor | price floor: 0.0010 < 0.100 (horizon 586 d) |
-| 2026-05-23T00:30:03Z | openai-ipo-closing-market-cap-above-800b | uncategorized | 0.8800 | P3_low_absolute_liquidity | liquidity $2910 < absolute min $5000 |
-| 2026-05-23T00:30:03Z | abstract-fdv-above-3b-one-day-after-launch | uncategorized | 0.0270 | P0_floor | price floor: 0.0270 < 0.100 (horizon 588 d) |
-| 2026-05-23T00:30:03Z | grvt-fdv-above-200m-one-day-after-launch | uncategorized | 0.5600 | P4_pre_event | pre-event slug + 588 d to resolution (>=7 threshold) |
-| 2026-05-23T00:30:03Z | will-vivek-ramaswamy-win-the-2028-republican-presidential-nomination | uncategorized | 0.0130 | P0_floor | price floor: 0.0130 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-kristi-noem-win-the-2028-republican-presidential-nomination | uncategorized | 0.0070 | P0_floor | price floor: 0.0070 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-mrbeast-win-the-2028-democratic-presidential-nomination | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-zohran-mamdani-win-the-2028-us-presidential-election | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-gina-raimondo-win-the-2028-democratic-presidential-nomination-676 | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-thomas-massie-win-the-2028-us-presidential-election | uncategorized | 0.0200 | P0_floor | price floor: 0.0200 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-pete-hegseth-win-the-2028-us-presidential-election | uncategorized | 0.0070 | P0_floor | price floor: 0.0070 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-ruben-gallego-win-the-2028-democratic-presidential-nomination | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-barack-obama-win-the-2028-democratic-presidential-nomination-265 | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-phil-murphy-win-the-2028-democratic-presidential-nomination-611 | uncategorized | 0.0070 | P0_floor | price floor: 0.0070 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-lebron-james-win-the-2028-us-presidential-election | uncategorized | 0.0070 | P0_floor | price floor: 0.0070 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-donald-trump-win-the-2028-us-presidential-election | uncategorized | 0.0230 | P0_floor | price floor: 0.0230 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-jared-polis-win-the-2028-democratic-presidential-nomination-837 | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-george-clooney-win-the-2028-democratic-presidential-nomination | uncategorized | 0.0070 | P0_floor | price floor: 0.0070 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-donald-trump-win-the-2028-republican-presidential-nomination | uncategorized | 0.0300 | P0_floor | price floor: 0.0300 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-bernie-sanders-win-the-2028-democratic-presidential-nomination-879 | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-tim-walz-win-the-2028-democratic-presidential-nomination-475 | uncategorized | 0.0070 | P0_floor | price floor: 0.0070 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-byron-donalds-win-the-2028-republican-presidential-nomination | uncategorized | 0.0090 | P0_floor | price floor: 0.0090 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-ron-desantis-win-the-2028-us-presidential-election | uncategorized | 0.0270 | P0_floor | price floor: 0.0270 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-robert-f-kennedy-jr-win-the-2028-republican-presidential-nomination | uncategorized | 0.0090 | P0_floor | price floor: 0.0090 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-liz-cheney-win-the-2028-democratic-presidential-nomination-551 | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-vivek-ramaswamy-win-the-2028-us-presidential-election | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-raphael-warnock-win-the-2028-democratic-presidential-nomination-914 | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-tim-walz-win-the-2028-us-presidential-election | uncategorized | 0.0070 | P0_floor | price floor: 0.0070 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-zohran-mamdani-win-the-2028-democratic-presidential-nomination-445 | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-michelle-obama-win-the-2028-democratic-presidential-nomination-777 | uncategorized | 0.0140 | P0_floor | price floor: 0.0140 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-donald-trump-jr-win-the-2028-us-presidential-election | uncategorized | 0.0120 | P0_floor | price floor: 0.0120 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-tulsi-gabbard-win-the-2028-republican-presidential-nomination | uncategorized | 0.0110 | P0_floor | price floor: 0.0110 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-eric-trump-win-the-2028-us-presidential-election | uncategorized | 0.0070 | P0_floor | price floor: 0.0070 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-glenn-youngkin-win-the-2028-us-presidential-election | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-hillary-clinton-win-the-2028-democratic-presidential-nomination | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-michelle-obama-win-the-2028-us-presidential-election | uncategorized | 0.0100 | P0_floor | price floor: 0.0100 < 0.100 (horizon 898 d) |
-| 2026-05-23T00:30:03Z | will-the-iran-ceasefire-continue-through-may-21 | uncategorized | 0.9990 | P0_ceiling | price ceiling: 0.9990 > 0.950 |
-| 2026-05-23T00:30:03Z | will-the-iran-ceasefire-continue-through-may-31-654-633 | uncategorized | 0.5500 | M1 | memoria: exact slug match (score 1.00) |
-| 2026-05-23T00:30:03Z | will-netflix-close-warner-bros-acquisition | uncategorized | 0.0040 | P0_floor | price floor: 0.0040 < 0.100 (horizon -1 d) |
-| 2026-05-23T00:30:03Z | will-variational-launch-a-token-by-december-31-2026-577-621 | uncategorized | 0.8200 | P3_low_absolute_liquidity | liquidity $2020 < absolute min $5000 |
-| 2026-05-23T00:30:03Z | will-the-iran-ceasefire-continue-through-may-24-733 | uncategorized | 0.6400 | M1 | memoria: exact slug match (score 1.00) |
-| 2026-05-23T00:30:03Z | will-comcast-close-warner-bros-acquisition | uncategorized | 0.0040 | P0_floor | price floor: 0.0040 < 0.100 (horizon -1 d) |
-| 2026-05-23T00:30:03Z | will-the-iran-ceasefire-continue-through-may-22 | uncategorized | 0.9400 | M1 | memoria: exact slug match (score 1.00) |
-| 2026-05-23T00:30:03Z | will-rebecca-shepherd-win-the-2026-makerfield-by-election | uncategorized | 0.0790 | P0_floor | price floor: 0.0790 < 0.100 (horizon -1 d) |
-| 2026-05-23T00:30:03Z | will-the-iran-ceasefire-continue-through-may-27-496 | uncategorized | 0.5500 | M1 | memoria: exact slug match (score 1.00) |
+| 2026-05-23T01:30:03Z | will-beyonc-be-the-top-spotify-artist-for-2026 | uncategorized | 0.0100 | P0_floor | price floor: 0.0100 < 0.100 (horizon 221 d) |
+| 2026-05-23T01:30:03Z | will-fearx-win-the-lck-2026-season-playoffs | uncategorized | 0.0270 | P0_floor | price floor: 0.0270 < 0.100 (horizon 221 d) |
+| 2026-05-23T01:30:03Z | will-aljamain-sterling-be-the-ufc-featherweight-champion-on-december-31-2026 | uncategorized | 0.0060 | P0_floor | price floor: 0.0060 < 0.100 (horizon 221 d) |
+| 2026-05-23T01:30:03Z | will-paramount-close-warner-bros-acquisition-by-end-of-2026 | uncategorized | 0.7500 | P3_low_absolute_liquidity | liquidity $3365 < absolute min $5000 |
+| 2026-05-23T01:30:03Z | will-petr-yan-fight-dominick-cruz-next | uncategorized | 0.0090 | P0_floor | price floor: 0.0090 < 0.100 (horizon 221 d) |
+| 2026-05-23T01:30:03Z | will-the-starship-for-spacex-starship-flight-test-12-achieve-a-successful-splashdown-497 | uncategorized | 0.9950 | P0_ceiling | price ceiling: 0.9950 > 0.950 |
+| 2026-05-23T01:30:03Z | will-zelenskyy-and-putin-meet-next-in-russia | uncategorized | 0.0160 | P0_floor | price floor: 0.0160 < 0.100 (horizon 221 d) |
+| 2026-05-23T01:30:03Z | vanta-ipo-before-2027 | uncategorized | 0.0900 | P0_floor | price floor: 0.0900 < 0.100 (horizon 221 d) |
+| 2026-05-23T01:30:03Z | will-jeff-bezos-be-richest-person-on-december-31-243 | uncategorized | 0.0040 | P0_floor | price floor: 0.0040 < 0.100 (horizon 221 d) |
+| 2026-05-23T01:30:03Z | will-there-be-at-least-12500-measles-cases-in-the-us-in-2026-512-499 | uncategorized | 0.0900 | P0_floor | price floor: 0.0900 < 0.100 (horizon 221 d) |
+| 2026-05-23T01:30:03Z | will-youssef-zalal-be-the-ufc-featherweight-champion-on-december-31-2026 | uncategorized | 0.0100 | P0_floor | price floor: 0.0100 < 0.100 (horizon 221 d) |
+| 2026-05-23T01:30:03Z | will-bernard-arnault-be-richest-person-on-december-31-747 | uncategorized | 0.0100 | P0_floor | price floor: 0.0100 < 0.100 (horizon 221 d) |
+| 2026-05-23T01:30:03Z | will-the-weeknd-be-the-top-spotify-artist-for-2026 | uncategorized | 0.0150 | P0_floor | price floor: 0.0150 < 0.100 (horizon 221 d) |
+| 2026-05-23T01:30:03Z | will-zoom-video-communications-be-acquired-before-2027-486-866 | uncategorized | 0.2110 | P3_low_absolute_liquidity | liquidity $2479 < absolute min $5000 |
+| 2026-05-23T01:30:03Z | spacex-starship-fully-reusable-before-2027 | uncategorized | 0.3400 | P3_low_absolute_liquidity | liquidity $2032 < absolute min $5000 |
+| 2026-05-23T01:30:03Z | will-brion-win-the-lck-2026-season-playoffs | uncategorized | 0.0100 | P0_floor | price floor: 0.0100 < 0.100 (horizon 221 d) |
+| 2026-05-23T01:30:03Z | 9pt0-or-above-earthquake-before-2027 | uncategorized | 0.0780 | P0_floor | price floor: 0.0780 < 0.100 (horizon 221 d) |
+| 2026-05-23T01:30:03Z | will-alexander-volkanovski-be-ranked-first-in-the-ufc-pound-for-pound-rankings-at-the-end-of-2026 | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 221 d) |
+| 2026-05-23T01:30:03Z | will-gillian-sherratt-win-the-2026-dublin-central-by-election | uncategorized | 0.0030 | P0_floor | price floor: 0.0030 < 0.100 (horizon 221 d) |
+| 2026-05-23T01:30:03Z | will-zelenskyy-and-putin-meet-next-in-ukraine | uncategorized | 0.0030 | P0_floor | price floor: 0.0030 < 0.100 (horizon 221 d) |
+| 2026-05-23T01:30:03Z | standx-fdv-above-10b-one-day-after-launch-467-712-296 | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 223 d) |
+| 2026-05-23T01:30:03Z | will-ethereum-reach-8000-by-december-31-2026 | uncategorized | 0.0390 | P0_floor | price floor: 0.0390 < 0.100 (horizon 223 d) |
+| 2026-05-23T01:30:03Z | metamask-fdv-above-700m-one-day-after-launch-696-977-652-246-632 | uncategorized | 0.3300 | P4_pre_event | pre-event slug + 223 d to resolution (>=7 threshold) |
+| 2026-05-23T01:30:03Z | will-tempo-launch-a-token-by-june-30-2026 | uncategorized | 0.0100 | P0_floor | price floor: 0.0100 < 0.100 (horizon 223 d) |
+| 2026-05-23T01:30:03Z | will-tempo-launch-a-token-by-september-30-2026 | uncategorized | 0.0940 | P0_floor | price floor: 0.0940 < 0.100 (horizon 223 d) |
+| 2026-05-23T01:30:03Z | consensys-ipo-closing-market-cap-above-1b | uncategorized | 0.3700 | P3_low_absolute_liquidity | liquidity $1231 < absolute min $5000 |
+| 2026-05-23T01:30:03Z | will-consensys-ipo-by-december-31-2026 | uncategorized | 0.2900 | P3_low_absolute_liquidity | liquidity $1996 < absolute min $5000 |
+| 2026-05-23T01:30:03Z | usdc-depeg-by-december-31-968 | uncategorized | 0.0220 | P0_floor | price floor: 0.0220 < 0.100 (horizon 223 d) |
+| 2026-05-23T01:30:03Z | puffpaw-fdv-above-200m-one-day-after-launch | uncategorized | 0.2700 | P4_pre_event | pre-event slug + 223 d to resolution (>=7 threshold) |
+| 2026-05-23T01:30:03Z | will-fomo-launch-a-token-by-december-31-2026 | uncategorized | 0.3700 | P3_low_absolute_liquidity | liquidity $811 < absolute min $5000 |
+| 2026-05-23T01:30:03Z | will-usdc-hit-50-of-usdt-market-cap-by-december-31-2026 | uncategorized | 0.4500 | P3_low_absolute_liquidity | liquidity $182 < absolute min $5000 |
+| 2026-05-23T01:30:03Z | major-cex-insolvent-in-2026 | uncategorized | 0.0900 | P0_floor | price floor: 0.0900 < 0.100 (horizon 223 d) |
+| 2026-05-23T01:30:03Z | standx-fdv-above-2b-one-day-after-launch-143-135-174-596-974 | uncategorized | 0.0500 | P0_floor | price floor: 0.0500 < 0.100 (horizon 223 d) |
+| 2026-05-23T01:30:03Z | over-1b-raised-on-coinbase-in-2026 | uncategorized | 0.4400 | P3_low_absolute_liquidity | liquidity $564 < absolute min $5000 |
+| 2026-05-23T01:30:03Z | will-tampa-bay-buccaneers-win-the-2027-nfl-nfc-championship-312 | uncategorized | 0.0380 | P0_floor | price floor: 0.0380 < 0.100 (horizon 246 d) |
+| 2026-05-23T01:30:03Z | will-cleveland-browns-win-the-2027-nfl-afc-championship-776 | uncategorized | 0.0230 | P0_floor | price floor: 0.0230 < 0.100 (horizon 246 d) |
+| 2026-05-23T01:30:03Z | will-dallas-cowboys-win-the-2027-nfl-nfc-championship-584 | uncategorized | 0.1100 | M1 | memoria: exact slug match (score 1.00) |
+| 2026-05-23T01:30:03Z | will-indianapolis-colts-win-the-2027-nfl-afc-championship-168 | uncategorized | 0.0280 | P0_floor | price floor: 0.0280 < 0.100 (horizon 246 d) |
+| 2026-05-23T01:30:03Z | will-tennessee-titans-win-the-2027-nfl-afc-championship-594 | uncategorized | 0.0130 | P0_floor | price floor: 0.0130 < 0.100 (horizon 246 d) |
+| 2026-05-23T01:30:03Z | will-new-orleans-saints-win-the-2027-nfl-nfc-championship-398 | uncategorized | 0.0130 | P0_floor | price floor: 0.0130 < 0.100 (horizon 246 d) |
+| 2026-05-23T01:30:03Z | will-washington-commanders-win-the-2027-nfl-nfc-championship-484 | uncategorized | 0.0240 | P0_floor | price floor: 0.0240 < 0.100 (horizon 246 d) |
+| 2026-05-23T01:30:03Z | will-las-vegas-raiders-win-the-2027-nfl-afc-championship-699 | uncategorized | 0.0260 | P0_floor | price floor: 0.0260 < 0.100 (horizon 246 d) |
+| 2026-05-23T01:30:03Z | will-arizona-cardinals-win-the-2027-nfl-nfc-championship-199 | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 246 d) |
+| 2026-05-23T01:30:03Z | will-miami-dolphins-win-the-2027-nfl-afc-championship-357 | uncategorized | 0.0170 | P0_floor | price floor: 0.0170 < 0.100 (horizon 246 d) |
+| 2026-05-23T01:30:03Z | will-houston-texans-win-the-2027-nfl-afc-championship-334 | uncategorized | 0.1100 | M1 | memoria: exact slug match (score 1.00) |
+| 2026-05-23T01:30:03Z | will-atlanta-falcons-win-the-2027-nfl-nfc-championship-312 | uncategorized | 0.0170 | P0_floor | price floor: 0.0170 < 0.100 (horizon 246 d) |
+| 2026-05-23T01:30:03Z | will-baker-mayfield-win-the-2026-nfl-mvp | uncategorized | 0.0590 | P0_floor | price floor: 0.0590 < 0.100 (horizon 267 d) |
+| 2026-05-23T01:30:03Z | will-saquon-barkley-win-the-2026-nfl-mvp | uncategorized | 0.0690 | P0_floor | price floor: 0.0690 < 0.100 (horizon 267 d) |
+| 2026-05-23T01:30:03Z | will-maurcio-ruffy-fight-charles-oliveira-next-853-769 | uncategorized | 0.0090 | P0_floor | price floor: 0.0090 < 0.100 (horizon 281 d) |
+| 2026-05-23T01:30:03Z | will-olivier-faure-win-the-2027-french-presidential-election | uncategorized | 0.0070 | P0_floor | price floor: 0.0070 < 0.100 (horizon 341 d) |
+| 2026-05-23T01:30:03Z | will-mathilde-panot-win-the-2027-french-presidential-election | uncategorized | 0.0070 | P0_floor | price floor: 0.0070 < 0.100 (horizon 341 d) |
+| 2026-05-23T01:30:03Z | will-ubs-or-any-of-its-underwriting-affiliates-serve-as-the-lead-underwriter-in-spacexs-initial-public-offering-884 | uncategorized | 0.0010 | P0_floor | price floor: 0.0010 < 0.100 (horizon 586 d) |
+| 2026-05-23T01:30:03Z | will-deutsche-bank-or-any-of-its-underwriting-affiliates-serve-as-the-lead-underwriter-in-spacexs-initial-public-offe... | uncategorized | 0.0010 | P0_floor | price floor: 0.0010 < 0.100 (horizon 586 d) |
+| 2026-05-23T01:30:03Z | openai-ipo-closing-market-cap-above-1t | uncategorized | 0.7700 | P3_low_absolute_liquidity | liquidity $3351 < absolute min $5000 |
+| 2026-05-23T01:30:03Z | openai-ipo-closing-market-cap-above-800b | uncategorized | 0.8800 | P3_low_absolute_liquidity | liquidity $2738 < absolute min $5000 |
+| 2026-05-23T01:30:03Z | spacex-ipo-closing-market-cap-above-3t-337-436 | uncategorized | 0.1400 | P4_pre_event | pre-event slug + 586 d to resolution (>=7 threshold) |
+| 2026-05-23T01:30:03Z | will-perplexity-not-ipo-by-december-31-2027 | uncategorized | 0.4700 | P3_low_absolute_liquidity | liquidity $1441 < absolute min $5000 |
+| 2026-05-23T01:30:03Z | abstract-fdv-above-3b-one-day-after-launch | uncategorized | 0.0270 | P0_floor | price floor: 0.0270 < 0.100 (horizon 588 d) |
+| 2026-05-23T01:30:03Z | will-phil-murphy-win-the-2028-democratic-presidential-nomination-611 | uncategorized | 0.0070 | P0_floor | price floor: 0.0070 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-michelle-obama-win-the-2028-democratic-presidential-nomination-777 | uncategorized | 0.0140 | P0_floor | price floor: 0.0140 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-raphael-warnock-win-the-2028-democratic-presidential-nomination-914 | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-pete-hegseth-win-the-2028-us-presidential-election | uncategorized | 0.0070 | P0_floor | price floor: 0.0070 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-zohran-mamdani-win-the-2028-us-presidential-election | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-ruben-gallego-win-the-2028-democratic-presidential-nomination | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-liz-cheney-win-the-2028-democratic-presidential-nomination-551 | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-bernie-sanders-win-the-2028-democratic-presidential-nomination-879 | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-zohran-mamdani-win-the-2028-democratic-presidential-nomination-445 | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-robert-f-kennedy-jr-win-the-2028-republican-presidential-nomination | uncategorized | 0.0090 | P0_floor | price floor: 0.0090 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-elise-stefanik-win-the-2028-republican-presidential-nomination | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-mrbeast-win-the-2028-democratic-presidential-nomination | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-donald-trump-win-the-2028-us-presidential-election | uncategorized | 0.0230 | P0_floor | price floor: 0.0230 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-donald-trump-win-the-2028-republican-presidential-nomination | uncategorized | 0.0300 | P0_floor | price floor: 0.0300 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-lebron-james-win-the-2028-us-presidential-election | uncategorized | 0.0070 | P0_floor | price floor: 0.0070 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-barack-obama-win-the-2028-democratic-presidential-nomination-265 | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-gina-raimondo-win-the-2028-democratic-presidential-nomination-676 | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-jared-polis-win-the-2028-democratic-presidential-nomination-837 | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-kristi-noem-win-the-2028-republican-presidential-nomination | uncategorized | 0.0070 | P0_floor | price floor: 0.0070 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-vivek-ramaswamy-win-the-2028-republican-presidential-nomination | uncategorized | 0.0130 | P0_floor | price floor: 0.0130 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-ron-desantis-win-the-2028-us-presidential-election | uncategorized | 0.0270 | P0_floor | price floor: 0.0270 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-thomas-massie-win-the-2028-us-presidential-election | uncategorized | 0.0200 | P0_floor | price floor: 0.0200 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-donald-trump-jr-win-the-2028-us-presidential-election | uncategorized | 0.0120 | P0_floor | price floor: 0.0120 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-tulsi-gabbard-win-the-2028-republican-presidential-nomination | uncategorized | 0.0110 | P0_floor | price floor: 0.0110 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-byron-donalds-win-the-2028-republican-presidential-nomination | uncategorized | 0.0090 | P0_floor | price floor: 0.0090 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-glenn-youngkin-win-the-2028-us-presidential-election | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-tim-walz-win-the-2028-democratic-presidential-nomination-475 | uncategorized | 0.0070 | P0_floor | price floor: 0.0070 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-tim-walz-win-the-2028-us-presidential-election | uncategorized | 0.0070 | P0_floor | price floor: 0.0070 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-tulsi-gabbard-win-the-2028-us-presidential-election | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-eric-trump-win-the-2028-us-presidential-election | uncategorized | 0.0070 | P0_floor | price floor: 0.0070 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-hillary-clinton-win-the-2028-democratic-presidential-nomination | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-vivek-ramaswamy-win-the-2028-us-presidential-election | uncategorized | 0.0080 | P0_floor | price floor: 0.0080 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-michelle-obama-win-the-2028-us-presidential-election | uncategorized | 0.0100 | P0_floor | price floor: 0.0100 < 0.100 (horizon 898 d) |
+| 2026-05-23T01:30:03Z | will-netflix-close-warner-bros-acquisition | uncategorized | 0.0040 | P0_floor | price floor: 0.0040 < 0.100 (horizon -1 d) |
+| 2026-05-23T01:30:03Z | will-the-iran-ceasefire-continue-through-may-22 | uncategorized | 0.9640 | P0_ceiling | price ceiling: 0.9640 > 0.950 |
+| 2026-05-23T01:30:03Z | will-the-iran-ceasefire-continue-through-may-27-496 | uncategorized | 0.6400 | M1 | memoria: exact slug match (score 1.00) |
+| 2026-05-23T01:30:03Z | will-the-iran-ceasefire-continue-through-may-31-654-633 | uncategorized | 0.5400 | M1 | memoria: exact slug match (score 1.00) |
+| 2026-05-23T01:30:03Z | will-variational-launch-a-token-by-december-31-2026-577-621 | uncategorized | 0.8200 | P3_low_absolute_liquidity | liquidity $1891 < absolute min $5000 |
+| 2026-05-23T01:30:03Z | will-comcast-close-warner-bros-acquisition | uncategorized | 0.0040 | P0_floor | price floor: 0.0040 < 0.100 (horizon -1 d) |
+| 2026-05-23T01:30:03Z | will-the-iran-ceasefire-continue-through-may-24-733 | uncategorized | 0.7400 | M1 | memoria: exact slug match (score 1.00) |
+| 2026-05-23T01:30:03Z | will-rebecca-shepherd-win-the-2026-makerfield-by-election | uncategorized | 0.0790 | P0_floor | price floor: 0.0790 < 0.100 (horizon -1 d) |
+| 2026-05-23T01:30:03Z | will-the-iran-ceasefire-continue-through-may-21 | uncategorized | 0.9990 | P0_ceiling | price ceiling: 0.9990 > 0.950 |
 ## Losses pattern (últimos 100, append-only, rotación a tail)
 
 | timestamp | slug | category | entry | exit | pnl | reason_thesis_failed |
@@ -229,6 +229,8 @@ related:
 | 2026-05-22T23:30:01Z | T-2183424-1779210004342 | uncategorized | 0.1350 | 0.1900 | 27.08 | take_profit |  | 66.47 | long | 3.27 |
 | 2026-05-23T00:30:01Z | T-2132778-1779255003919 | uncategorized | 0.6300 | 0.9000 | 23.12 | take_profit |  | 53.95 | medium | 2.79 |
 | 2026-05-23T00:45:02Z | T-2327930-1779496203488 | uncategorized | 0.2110 | 0.3100 | 28.38 | take_profit |  | 60.48 | short | 0.01 |
+| 2026-05-23T01:30:01Z | T-2261347-1779251403658 | uncategorized | 0.7640 | 0.9990 | 16.32 | market_closed |  | 53.05 | medium | 2.87 |
+| 2026-05-23T01:30:01Z | T-2159735-1779462003955 | uncategorized | 0.7200 | 0.9990 | 19.22 | market_closed |  | 49.60 | short | 0.44 |
 ## Reglas blandas aprendidas (autogenerada por brain cuando un pattern se repite 3+ veces)
 
 
@@ -347,6 +349,8 @@ related:
 - En categoría `uncategorized` · horizonte `short` · precio `<0.10`: 16 losses, 0 wins (win rate 0%). **Veto soft o reducir size 50%.**
 <!-- auto-generated 2026-05-22T23:30:03Z -->
 - En categoría `uncategorized` · horizonte `short` · precio `>0.70`: 15 losses, 1 wins (win rate 6%). **Veto soft o reducir size 50%.**
+<!-- auto-generated 2026-05-23T01:00:03Z -->
+- En categoría `uncategorized` · horizonte `short` · precio `0.10-0.30`: 11 losses, 1 wins (win rate 8%). **Veto soft o reducir size 50%.**
 
 
 ## Human notes
