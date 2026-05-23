@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-the-iran-ceasefire-continue-through-december-31-395-943"
 type: decision
 date: 2026-05-23
-decision: "Veto de tesis 'Will the Iran ceasefire continue through December 31?' (rule M1): memoria: slug prefix match; same price bucket mid (score 0.70)"
+decision: "Veto de tesis 'Will the Iran ceasefire continue through December 31?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,22 +21,23 @@ related:
 
 - **Slug**: `will-the-iran-ceasefire-continue-through-december-31-395-943`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.4200
-- **Volumen 24h**: 54268.74 USD
+- **Precio YES**: 0.4600
+- **Volumen 24h**: 61293.81 USD
 - **End date**: 
 
 ## Razón del veto
 
 **Regla aplicada**: `M1`
 
-memoria: slug prefix match; same price bucket mid (score 0.70)
+memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
+- veto `will-the-iran-ceasefire-continue-through-december-31-395-943` score=1.00 (exact slug match)
+- veto `will-the-iran-ceasefire-continue-through-june-15-136-565` score=0.70 (slug prefix match; same price bucket mid)
 - veto `will-the-iran-ceasefire-continue-through-may-27-496` score=0.70 (slug prefix match; same price bucket mid)
-- veto `will-the-iran-ceasefire-continue-through-may-24-733` score=0.70 (slug prefix match; same price bucket mid)
 - veto `will-the-iran-ceasefire-continue-through-may-31-654-633` score=0.70 (slug prefix match; same price bucket mid)
-- veto `will-the-iran-ceasefire-continue-through-may-22` score=0.50 (slug prefix match)
+- veto `will-the-iran-ceasefire-continue-through-may-24-733` score=0.50 (slug prefix match)
 
 ## Human notes
 
