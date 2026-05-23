@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-dallas-cowboys-win-the-2027-nfl-nfc-championship-584"
+title: "Polymarket veto — will-paramount-close-warner-bros-acquisition"
 type: decision
 date: 2026-05-23
-decision: "Veto de tesis 'Will Dallas Cowboys win the 2027 NFL NFC Championship?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Will Paramount close Warner Bros acquisition?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will Dallas Cowboys win the 2027 NFL NFC Championship?
+# Veto: Will Paramount close Warner Bros acquisition?
 
 ## Mercado
 
-- **Slug**: `will-dallas-cowboys-win-the-2027-nfl-nfc-championship-584`
+- **Slug**: `will-paramount-close-warner-bros-acquisition`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.1040
-- **Volumen 24h**: 779046.36 USD
-- **End date**: 2027-01-25T00:00:00Z
+- **Precio YES**: 0.7200
+- **Volumen 24h**: 456154.90 USD
+- **End date**: 
 
 ## Razón del veto
 
@@ -33,7 +33,7 @@ memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
-- veto `will-dallas-cowboys-win-the-2027-nfl-nfc-championship-584` score=1.00 (exact slug match)
+- veto `will-paramount-close-warner-bros-acquisition` score=1.00 (exact slug match)
 
 ## Human notes
 
