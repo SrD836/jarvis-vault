@@ -1,5 +1,5 @@
 {
-  "bankroll": 2949.446465114055,
+  "bankroll": 3191.225486125187,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -479,22 +479,6 @@
       "size_usd": 58.04338367404169
     },
     {
-      "approved_price": 0.19,
-      "category": "uncategorized",
-      "days_to_resolution": 3,
-      "end_date": "2026-05-26T00:00:00Z",
-      "entry_price": 0.19,
-      "entry_timestamp": "2026-05-22T17:30:03Z",
-      "horizon": "medium",
-      "id": "T-2324252-1779471003629",
-      "liquidity_usd": 64799.5133,
-      "market_id": "2324252",
-      "question": "US x Iran permanent peace deal by May 26, 2026?",
-      "side": "yes",
-      "size": 53.046467030203615,
-      "size_usd": 53.046467030203615
-    },
-    {
       "approved_price": 0.6,
       "category": "uncategorized",
       "days_to_resolution": 1,
@@ -751,37 +735,37 @@
       "size_usd": 57.49889447139746
     },
     {
-      "approved_price": 0.51,
+      "approved_price": 0.65,
       "category": "uncategorized",
       "days_to_resolution": 0,
-      "end_date": "2026-05-23T14:30:00Z",
-      "entry_price": 0.51,
-      "entry_timestamp": "2026-05-23T14:00:04Z",
+      "end_date": "2026-05-23T19:00:00Z",
+      "entry_price": 0.65,
+      "entry_timestamp": "2026-05-23T16:00:04Z",
       "horizon": "short",
-      "id": "T-2333646-1779544804084",
-      "liquidity_usd": 333021.4674,
-      "market_id": "2333646",
-      "question": "Will Middlesbrough FC win on 2026-05-23?",
+      "id": "T-2238258-1779552004213",
+      "liquidity_usd": 755112.0167,
+      "market_id": "2238258",
+      "question": "Will Real Madrid CF win on 2026-05-23?",
       "side": "yes",
-      "size": 58.10756704417195,
-      "size_usd": 58.10756704417195
+      "size": 58.98892930228111,
+      "size_usd": 58.98892930228111
     },
     {
-      "approved_price": 0.17,
+      "approved_price": 0.49,
       "category": "uncategorized",
       "days_to_resolution": 0,
-      "end_date": "2026-05-23T14:30:00Z",
-      "entry_price": 0.17,
-      "entry_timestamp": "2026-05-23T15:30:03Z",
+      "end_date": "2026-05-23T19:00:00Z",
+      "entry_price": 0.49,
+      "entry_timestamp": "2026-05-23T16:30:04Z",
       "horizon": "short",
-      "id": "T-2333644-1779550203541",
-      "liquidity_usd": 29959.2348,
-      "market_id": "2333644",
-      "question": "Will Hull City AFC win on 2026-05-23?",
+      "id": "T-2238307-1779553804069",
+      "liquidity_usd": 797563.3648,
+      "market_id": "2238307",
+      "question": "Will RC Celta de Vigo win on 2026-05-23?",
       "side": "yes",
-      "size": 58.52550700880591,
-      "size_usd": 58.52550700880591
+      "size": 58.33159076976854,
+      "size_usd": 58.33159076976854
     }
   ],
-  "used_exposure": 3007.955587073038
+  "used_exposure": 2955.596566061906
 }

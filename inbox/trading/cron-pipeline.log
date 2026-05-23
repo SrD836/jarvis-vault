@@ -1169,3 +1169,16 @@
 2026/05/23 15:30:03 executor.go:197: executor: entered [short] Will Hull City AFC win on 2026-05-23? @ 0.1700 size=$58.53 (open=50/50, bankroll=$2868)
 2026/05/23 15:30:03 executor.go:202: executor: 1 entered, 92 rejected
 2026/05/23 15:30:03 main.go:13: executor: done
+2026/05/23 16:00:04 main.go:11: executor: starting one-shot pass
+2026/05/23 16:00:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/23 16:00:04 executor.go:62: executor: quota slots this run: short=30 medium=7 long=7 (of 42 remaining today)
+2026/05/23 16:00:04 executor.go:197: executor: entered [short] Will Real Madrid CF win on 2026-05-23? @ 0.6500 size=$58.99 (open=50/50, bankroll=$2890)
+2026/05/23 16:00:04 executor.go:202: executor: 1 entered, 89 rejected
+2026/05/23 16:00:04 main.go:13: executor: done
+2026/05/23 16:30:04 main.go:11: executor: starting one-shot pass
+2026/05/23 16:30:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/23 16:30:04 executor.go:62: executor: quota slots this run: short=30 medium=7 long=7 (of 42 remaining today)
+2026/05/23 16:30:04 executor.go:197: executor: entered [short] Will Middlesbrough FC win on 2026-05-23? @ 0.2400 size=$59.52 (open=49/50, bankroll=$2917)
+2026/05/23 16:30:04 executor.go:197: executor: entered [short] Will RC Celta de Vigo win on 2026-05-23? @ 0.4900 size=$58.33 (open=50/50, bankroll=$2858)
+2026/05/23 16:30:04 executor.go:202: executor: 2 entered, 87 rejected
+2026/05/23 16:30:04 main.go:13: executor: done
