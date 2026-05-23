@@ -1271,3 +1271,15 @@
 2026/05/23 21:30:04 executor.go:197: executor: entered [medium] Iran closes its airspace by May 27? @ 0.2260 size=$60.75 (open=50/50, bankroll=$2977)
 2026/05/23 21:30:04 executor.go:202: executor: 9 entered, 75 rejected
 2026/05/23 21:30:04 main.go:13: executor: done
+2026/05/23 22:00:03 main.go:11: executor: starting one-shot pass
+2026/05/23 22:00:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/23 22:00:03 executor.go:62: executor: quota slots this run: short=21 medium=5 long=5 (of 29 remaining today)
+2026/05/23 22:00:03 executor.go:197: executor: entered [short] Will Real Salt Lake win on 2026-05-23? @ 0.5800 size=$61.27 (open=50/50, bankroll=$3002)
+2026/05/23 22:00:03 executor.go:202: executor: 1 entered, 87 rejected
+2026/05/23 22:00:03 main.go:13: executor: done
+2026/05/23 22:30:03 main.go:11: executor: starting one-shot pass
+2026/05/23 22:30:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/23 22:30:03 executor.go:62: executor: quota slots this run: short=21 medium=5 long=5 (of 29 remaining today)
+2026/05/23 22:30:03 executor.go:197: executor: entered [short] Will Minnesota United FC win on 2026-05-23? @ 0.0500 size=$60.27 (open=50/50, bankroll=$2953)
+2026/05/23 22:30:03 executor.go:202: executor: 1 entered, 87 rejected
+2026/05/23 22:30:03 main.go:13: executor: done

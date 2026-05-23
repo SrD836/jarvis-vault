@@ -5677,3 +5677,56 @@
 2026/05/23 21:55:02 main.go:13: exit_monitor: done
 2026/05/23 22:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/23 22:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 22:00:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/23 22:00:02 main.go:13: exit_monitor: done
+2026/05/23 22:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 22:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 22:05:03 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 22:05:03 main.go:13: exit_monitor: done
+2026/05/23 22:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 22:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 22:10:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 22:10:02 main.go:13: exit_monitor: done
+2026/05/23 22:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 22:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 22:15:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 22:15:02 main.go:13: exit_monitor: done
+2026/05/23 22:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 22:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 22:20:03 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 22:20:03 main.go:13: exit_monitor: done
+2026/05/23 22:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 22:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 22:25:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 22:25:02 main.go:13: exit_monitor: done
+2026/05/23 22:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 22:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 22:30:02 monitor.go:141: exit_monitor: closed Will Minnesota United FC win on 2026-05-23? (stop_loss) @ 0.0300 src=bestBid liq=$19962: PnL $-60.13 (-84.21%)
+2026/05/23 22:30:02 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/23 22:30:02 main.go:13: exit_monitor: done
+2026/05/23 22:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 22:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 22:35:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/23 22:35:02 main.go:13: exit_monitor: done
+2026/05/23 22:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 22:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 22:40:02 monitor.go:141: exit_monitor: closed Israel closes its airspace by May 24? (stop_loss EARLY) @ 0.0110 src=bestBid liq=$29802: PnL $-58.20 (-85.90%)
+2026/05/23 22:40:02 monitor.go:141: exit_monitor: closed Will Real Salt Lake win on 2026-05-23? (take_profit) @ 0.8200 src=bestBid liq=$18764: PnL $25.35 (41.38%)
+2026/05/23 22:40:02 monitor.go:160: exit_monitor: 2 closed, 46 remaining
+2026/05/23 22:40:02 main.go:13: exit_monitor: done
+2026/05/23 22:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 22:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 22:45:02 monitor.go:160: exit_monitor: 0 closed, 46 remaining
+2026/05/23 22:45:02 main.go:13: exit_monitor: done
+2026/05/23 22:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 22:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 22:50:02 monitor.go:141: exit_monitor: closed Will Real Betis Balompié win on 2026-05-23? (market_closed) @ 0.9990 src=bestBid liq=$0: PnL $16.46 (23.33%)
+2026/05/23 22:50:02 monitor.go:141: exit_monitor: closed Will Minnesota United FC win on 2026-05-23? (stop_loss) @ 0.0010 src=bestBid liq=$13488: PnL $-59.06 (-98.00%)
+2026/05/23 22:50:02 monitor.go:160: exit_monitor: 2 closed, 44 remaining
+2026/05/23 22:50:02 main.go:13: exit_monitor: done
+2026/05/23 22:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 22:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/23 22:55:02 monitor.go:160: exit_monitor: 0 closed, 44 remaining
+2026/05/23 22:55:02 main.go:13: exit_monitor: done
+2026/05/23 23:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/23 23:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
