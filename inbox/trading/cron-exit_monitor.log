@@ -5832,3 +5832,53 @@
 2026/05/24 00:55:02 main.go:13: exit_monitor: done
 2026/05/24 01:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/24 01:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 01:00:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/24 01:00:02 main.go:13: exit_monitor: done
+2026/05/24 01:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 01:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 01:05:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 01:05:02 main.go:13: exit_monitor: done
+2026/05/24 01:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 01:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 01:10:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 01:10:02 main.go:13: exit_monitor: done
+2026/05/24 01:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 01:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 01:15:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 01:15:02 main.go:13: exit_monitor: done
+2026/05/24 01:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 01:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 01:20:03 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 01:20:03 main.go:13: exit_monitor: done
+2026/05/24 01:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 01:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 01:25:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 01:25:02 main.go:13: exit_monitor: done
+2026/05/24 01:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 01:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 01:30:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 01:30:02 main.go:13: exit_monitor: done
+2026/05/24 01:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 01:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 01:35:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 01:35:02 main.go:13: exit_monitor: done
+2026/05/24 01:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 01:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 01:40:01 monitor.go:141: exit_monitor: closed Ebola case in the US by June 30? (take_profit EARLY) @ 0.3800 src=bestBid liq=$10600: PnL $47.68 (68.89%)
+2026/05/24 01:40:02 monitor.go:141: exit_monitor: closed Will New York Red Bulls win on 2026-05-23? (take_profit) @ 0.8300 src=bestBid liq=$22572: PnL $50.86 (76.60%)
+2026/05/24 01:40:02 monitor.go:160: exit_monitor: 2 closed, 46 remaining
+2026/05/24 01:40:02 main.go:13: exit_monitor: done
+2026/05/24 01:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 01:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 01:45:02 monitor.go:160: exit_monitor: 0 closed, 46 remaining
+2026/05/24 01:45:02 main.go:13: exit_monitor: done
+2026/05/24 01:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 01:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 01:50:02 monitor.go:160: exit_monitor: 0 closed, 46 remaining
+2026/05/24 01:50:02 main.go:13: exit_monitor: done
+2026/05/24 01:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 01:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 01:55:02 monitor.go:160: exit_monitor: 0 closed, 46 remaining
+2026/05/24 01:55:02 main.go:13: exit_monitor: done
+2026/05/24 02:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 02:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
