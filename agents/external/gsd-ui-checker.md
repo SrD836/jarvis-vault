@@ -2,25 +2,18 @@
 title: "gsd-ui-checker (external agent)"
 type: agent-mirror
 external: true
-date: 2026-05-23T03:15:01+00:00
+date: 2026-05-24T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-ui-checker.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/external/gsd-integration-checker]]"
-  - "[[agents/external/gsd-ui-auditor]]"
-  - "[[agents/external/gsd-ui-researcher]]"
-  - "[[agents/external/index]]"
-  - "[[skills/external/gsd-ui-phase]]"
-  - "[[skills/external/gsd-ui-review]]"
 tags: [agent, external, mirror]
-# auto-linked 2026-05-23
+related:
+  - "[[agents/external/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `gsd-ui-checker` (external Claude Code agent)
 
 **Source**: `~/.claude/agents/gsd-ui-checker.md`  
-**Mirrored at**: 2026-05-23T03:15:01+00:00
+**Mirrored at**: 2026-05-24T03:15:01+00:00
 
 ## Descripción
 

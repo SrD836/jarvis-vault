@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-the-doge-1-lunar-mission-launch-before-2027"
+title: "Polymarket veto — metamask-fdv-above-1b-one-day-after-launch-978-851-628-634"
 type: decision
 date: 2026-05-24
-decision: "Veto de tesis 'Will the Doge-1 Lunar Mission launch before 2027?' (rule P4_pre_event): pre-event slug + 220 d to resolution (>=7 threshold)"
+decision: "Veto de tesis 'Metamask FDV above $1B one day after launch?' (rule P4_pre_event): pre-event slug + 222 d to resolution (>=7 threshold)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,21 +15,21 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will the Doge-1 Lunar Mission launch before 2027?
+# Veto: Metamask FDV above $1B one day after launch?
 
 ## Mercado
 
-- **Slug**: `will-the-doge-1-lunar-mission-launch-before-2027`
+- **Slug**: `metamask-fdv-above-1b-one-day-after-launch-978-851-628-634`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.1110
-- **Volumen 24h**: 801749.90 USD
-- **End date**: 2026-12-31T00:00:00Z
+- **Precio YES**: 0.2300
+- **Volumen 24h**: 571412.12 USD
+- **End date**: 2027-01-01T05:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `P4_pre_event`
 
-pre-event slug + 220 d to resolution (>=7 threshold)
+pre-event slug + 222 d to resolution (>=7 threshold)
 
 ## Human notes
 

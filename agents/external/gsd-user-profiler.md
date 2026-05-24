@@ -2,25 +2,18 @@
 title: "gsd-user-profiler (external agent)"
 type: agent-mirror
 external: true
-date: 2026-05-23T03:15:01+00:00
+date: 2026-05-24T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-user-profiler.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/external/gsd-assumptions-analyzer]]"
-  - "[[agents/external/gsd-eval-planner]]"
-  - "[[agents/external/gsd-pattern-mapper]]"
-  - "[[agents/external/gsd-research-synthesizer]]"
-  - "[[agents/external/index]]"
-  - "[[skills/external/gsd-profile-user]]"
 tags: [agent, external, mirror]
-# auto-linked 2026-05-23
+related:
+  - "[[agents/external/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `gsd-user-profiler` (external Claude Code agent)
 
 **Source**: `~/.claude/agents/gsd-user-profiler.md`  
-**Mirrored at**: 2026-05-23T03:15:01+00:00
+**Mirrored at**: 2026-05-24T03:15:01+00:00
 
 ## Descripción
 

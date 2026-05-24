@@ -3,27 +3,20 @@ title: "gsd-plan-phase (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-23T03:15:01+00:00
+date: 2026-05-24T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-plan-phase
 source_file: SKILL.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/planner]]"
-  - "[[skills/external/gsd-plan-review-convergence]]"
-  - "[[skills/external/gsd-research-phase]]"
-  - "[[skills/external/gsd-spec-phase]]"
-  - "[[skills/external/gsd-ultraplan-phase]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-23
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `gsd-plan-phase` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/gsd-plan-phase/`  
-**Mirrored at**: 2026-05-23T03:15:01+00:00
+**Mirrored at**: 2026-05-24T03:15:01+00:00
 
 ## Descripción
 

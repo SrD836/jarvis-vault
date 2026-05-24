@@ -3,27 +3,20 @@ title: "gsd-set-profile (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-23T03:15:01+00:00
+date: 2026-05-24T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-set-profile
 source_file: SKILL.md
-related:
-  - "[[00-MOC]]"
-  - "[[skills/external/gsd-autonomous]]"
-  - "[[skills/external/gsd-manager]]"
-  - "[[skills/external/gsd-profile-user]]"
-  - "[[skills/external/gsd-settings]]"
-  - "[[skills/external/gsd-settings-advanced]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-23
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `gsd-set-profile` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/gsd-set-profile/`  
-**Mirrored at**: 2026-05-23T03:15:01+00:00
+**Mirrored at**: 2026-05-24T03:15:01+00:00
 
 ## Descripción
 
