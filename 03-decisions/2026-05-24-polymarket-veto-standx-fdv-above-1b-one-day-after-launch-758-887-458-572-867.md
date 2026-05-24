@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `standx-fdv-above-1b-one-day-after-launch-758-887-458-572-867`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.1500
+- **Precio YES**: 0.1400
 - **Volumen 24h**: 388017.58 USD
 - **End date**: 2027-01-01T05:00:00Z
 
