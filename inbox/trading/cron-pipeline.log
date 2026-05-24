@@ -1486,3 +1486,22 @@
 2026/05/24 15:30:03 executor.go:62: executor: quota slots this run: short=25 medium=6 long=6 (of 35 remaining today)
 2026/05/24 15:30:03 executor.go:202: executor: 0 entered, 105 rejected
 2026/05/24 15:30:03 main.go:13: executor: done
+2026/05/24 16:00:03 main.go:11: executor: starting one-shot pass
+2026/05/24 16:00:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/24 16:00:03 executor.go:62: executor: quota slots this run: short=26 medium=6 long=6 (of 37 remaining today)
+2026/05/24 16:00:03 executor.go:197: executor: entered [short] Will Wolverhampton Wanderers FC win on 2026-05-24? @ 0.6600 size=$64.43 (open=45/50, bankroll=$3157)
+2026/05/24 16:00:03 executor.go:197: executor: entered [short] Will Everton FC win on 2026-05-24? @ 0.0500 size=$63.14 (open=46/50, bankroll=$3094)
+2026/05/24 16:00:03 executor.go:197: executor: entered [short] Will Leeds United FC win on 2026-05-24? @ 0.2700 size=$61.88 (open=47/50, bankroll=$3032)
+2026/05/24 16:00:03 executor.go:197: executor: entered [short] Will Tottenham Hotspur FC vs. Everton FC end in a draw? @ 0.1900 size=$60.64 (open=48/50, bankroll=$2971)
+2026/05/24 16:00:03 executor.go:197: executor: entered [short] Will Tottenham Hotspur FC win on 2026-05-24? @ 0.7700 size=$59.43 (open=49/50, bankroll=$2912)
+2026/05/24 16:00:03 executor.go:197: executor: entered [short] Will Crystal Palace FC win on 2026-05-24? @ 0.0600 size=$58.24 (open=50/50, bankroll=$2854)
+2026/05/24 16:00:03 executor.go:202: executor: 6 entered, 96 rejected
+2026/05/24 16:00:03 main.go:13: executor: done
+2026/05/24 16:30:04 main.go:11: executor: starting one-shot pass
+2026/05/24 16:30:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/24 16:30:04 executor.go:62: executor: quota slots this run: short=24 medium=6 long=6 (of 34 remaining today)
+2026/05/24 16:30:04 executor.go:197: executor: entered [short] Will Sunderland AFC win on 2026-05-24? @ 0.8400 size=$62.63 (open=48/50, bankroll=$3069)
+2026/05/24 16:30:04 executor.go:197: executor: entered [short] Will Manchester City FC vs. Aston Villa FC end in a draw? @ 0.3100 size=$61.38 (open=49/50, bankroll=$3008)
+2026/05/24 16:30:04 executor.go:197: executor: entered [short] Will Aston Villa FC win on 2026-05-24? @ 0.4430 size=$60.15 (open=50/50, bankroll=$2947)
+2026/05/24 16:30:04 executor.go:202: executor: 3 entered, 94 rejected
+2026/05/24 16:30:04 main.go:13: executor: done

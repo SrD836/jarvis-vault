@@ -6578,3 +6578,64 @@
 2026/05/24 15:55:02 main.go:13: exit_monitor: done
 2026/05/24 16:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/24 16:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 16:00:01 monitor.go:141: exit_monitor: closed Will Arsenal FC win on 2026-05-24? (take_profit) @ 0.7600 src=bestBid liq=$74695: PnL $26.47 (43.40%)
+2026/05/24 16:00:01 monitor.go:141: exit_monitor: closed Will Brighton & Hove Albion FC win on 2026-05-24? (stop_loss) @ 0.0700 src=bestBid liq=$77515: PnL $-55.02 (-86.27%)
+2026/05/24 16:00:02 monitor.go:141: exit_monitor: closed Will Crystal Palace FC win on 2026-05-24? (stop_loss) @ 0.0500 src=bestBid liq=$38839: PnL $-51.61 (-80.00%)
+2026/05/24 16:00:02 monitor.go:160: exit_monitor: 3 closed, 42 remaining
+2026/05/24 16:00:02 main.go:13: exit_monitor: done
+2026/05/24 16:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 16:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 16:05:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 16:05:02 main.go:13: exit_monitor: done
+2026/05/24 16:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 16:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 16:10:03 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 16:10:03 main.go:13: exit_monitor: done
+2026/05/24 16:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 16:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 16:15:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 16:15:02 main.go:13: exit_monitor: done
+2026/05/24 16:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 16:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 16:20:02 monitor.go:141: exit_monitor: closed Will Chelsea FC win on 2026-05-24? (stop_loss) @ 0.0200 src=bestBid liq=$61971: PnL $-60.45 (-95.83%)
+2026/05/24 16:20:02 monitor.go:141: exit_monitor: closed Will Crystal Palace FC win on 2026-05-24? (stop_loss) @ 0.0100 src=lastTradePrice_fallback liq=$32362: PnL $-48.53 (-83.33%)
+2026/05/24 16:20:02 monitor.go:160: exit_monitor: 2 closed, 46 remaining
+2026/05/24 16:20:02 main.go:13: exit_monitor: done
+2026/05/24 16:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 16:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 16:25:02 monitor.go:160: exit_monitor: 0 closed, 46 remaining
+2026/05/24 16:25:02 main.go:13: exit_monitor: done
+2026/05/24 16:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 16:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 16:30:03 monitor.go:141: exit_monitor: closed Will Aston Villa FC win on 2026-05-24? (take_profit) @ 0.4370 src=bestBid liq=$46112: PnL $198.73 (297.27%)
+2026/05/24 16:30:03 monitor.go:160: exit_monitor: 1 closed, 45 remaining
+2026/05/24 16:30:03 main.go:13: exit_monitor: done
+2026/05/24 16:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 16:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 16:35:02 monitor.go:141: exit_monitor: closed Will Newcastle United FC win on 2026-05-24? (stop_loss) @ 0.0800 src=bestBid liq=$71529: PnL $-52.45 (-80.00%)
+2026/05/24 16:35:03 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/24 16:35:03 main.go:13: exit_monitor: done
+2026/05/24 16:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 16:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 16:40:01 monitor.go:141: exit_monitor: closed US x Iran permanent peace deal by May 26, 2026? (stop_loss EARLY) @ 0.1200 src=bestBid liq=$363148: PnL $-55.31 (-80.65%)
+2026/05/24 16:40:02 monitor.go:160: exit_monitor: 1 closed, 46 remaining
+2026/05/24 16:40:02 main.go:13: exit_monitor: done
+2026/05/24 16:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 16:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 16:45:01 monitor.go:141: exit_monitor: closed Will West Ham United FC win on 2026-05-24? (take_profit) @ 0.7600 src=bestBid liq=$84862: PnL $26.81 (43.40%)
+2026/05/24 16:45:02 monitor.go:141: exit_monitor: closed Will Manchester City FC win on 2026-05-24? (stop_loss) @ 0.1100 src=bestBid liq=$66653: PnL $-55.35 (-85.33%)
+2026/05/24 16:45:02 monitor.go:141: exit_monitor: closed Will Leeds United FC win on 2026-05-24? (stop_loss) @ 0.0400 src=bestBid liq=$57543: PnL $-52.71 (-85.19%)
+2026/05/24 16:45:02 monitor.go:160: exit_monitor: 3 closed, 43 remaining
+2026/05/24 16:45:02 main.go:13: exit_monitor: done
+2026/05/24 16:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 16:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 16:50:02 monitor.go:141: exit_monitor: closed Will Parma Calcio 1913 win on 2026-05-24? (market_closed) @ 0.9990 src=bestBid liq=$0: PnL $4.40 (7.42%)
+2026/05/24 16:50:02 monitor.go:141: exit_monitor: closed Will Aston Villa FC win on 2026-05-24? (take_profit) @ 0.7140 src=bestBid liq=$43729: PnL $36.80 (61.17%)
+2026/05/24 16:50:02 monitor.go:160: exit_monitor: 2 closed, 41 remaining
+2026/05/24 16:50:02 main.go:13: exit_monitor: done
+2026/05/24 16:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 16:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 16:55:03 monitor.go:160: exit_monitor: 0 closed, 41 remaining
+2026/05/24 16:55:03 main.go:13: exit_monitor: done
+2026/05/24 17:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 17:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
