@@ -6,11 +6,18 @@ category: general
 date: 2026-05-24T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-ui-review
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/code-reviewer]]"
+  - "[[agents/external/gsd-ui-auditor]]"
+  - "[[agents/external/gsd-ui-checker]]"
+  - "[[agents/external/gsd-ui-researcher]]"
+  - "[[skills/external/gsd-review]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-24
 ---
+
 
 # `gsd-ui-review` (external skill)
 

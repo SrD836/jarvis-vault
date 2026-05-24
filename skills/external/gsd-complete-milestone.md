@@ -6,11 +6,18 @@ category: general
 date: 2026-05-24T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-complete-milestone
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/gsd-milestone-summary]]"
+  - "[[skills/external/gsd-new-milestone]]"
+  - "[[skills/external/gsd-plan-review-convergence]]"
+  - "[[skills/external/gsd-progress]]"
+  - "[[skills/external/gsd-review]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-24
 ---
+
 
 # `gsd-complete-milestone` (external skill)
 

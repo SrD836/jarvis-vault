@@ -1531,3 +1531,16 @@
 2026/05/24 17:30:04 executor.go:197: executor: entered [long] Iran agrees to surrender enriched uranium stockpile by June 30, 2026? @ 0.2200 size=$48.59 (open=50/50, bankroll=$2381)
 2026/05/24 17:30:04 executor.go:202: executor: 9 entered, 73 rejected
 2026/05/24 17:30:04 main.go:13: executor: done
+2026/05/24 18:00:03 main.go:11: executor: starting one-shot pass
+2026/05/24 18:00:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/24 18:00:03 executor.go:62: executor: quota slots this run: short=21 medium=5 long=5 (of 29 remaining today)
+2026/05/24 18:00:03 executor.go:197: executor: entered [short] Will SSC Napoli win on 2026-05-24? @ 0.9300 size=$49.16 (open=50/50, bankroll=$2409)
+2026/05/24 18:00:03 executor.go:202: executor: 1 entered, 82 rejected
+2026/05/24 18:00:03 main.go:13: executor: done
+2026/05/24 18:30:03 main.go:11: executor: starting one-shot pass
+2026/05/24 18:30:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/24 18:30:03 executor.go:62: executor: quota slots this run: short=20 medium=5 long=5 (of 28 remaining today)
+2026/05/24 18:30:03 executor.go:197: executor: entered [medium] Iran agrees to unrestricted shipping through Hormuz by May 31? @ 0.1650 size=$51.03 (open=49/50, bankroll=$2500)
+2026/05/24 18:30:03 executor.go:197: executor: entered [medium] Israel x Iran permanent peace deal by May 31, 2026? @ 0.0810 size=$50.01 (open=50/50, bankroll=$2450)
+2026/05/24 18:30:03 executor.go:202: executor: 2 entered, 77 rejected
+2026/05/24 18:30:03 main.go:13: executor: done
