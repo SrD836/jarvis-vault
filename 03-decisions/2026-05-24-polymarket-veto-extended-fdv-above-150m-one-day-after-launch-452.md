@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `extended-fdv-above-150m-one-day-after-launch-452`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.6600
+- **Precio YES**: 0.6500
 - **Volumen 24h**: 266542.99 USD
 - **End date**: 2027-01-01T05:00:00Z
 

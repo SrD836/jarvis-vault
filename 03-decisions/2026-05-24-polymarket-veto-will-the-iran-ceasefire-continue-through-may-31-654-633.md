@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-the-iran-ceasefire-continue-through-may-31-654-633`
 - **Categoría**: uncategorized
 - **Precio YES**: 0.8600
-- **Volumen 24h**: 602813.05 USD
+- **Volumen 24h**: 597812.75 USD
 - **End date**: 
 
 ## Razón del veto

@@ -1,0 +1,41 @@
+---
+title: "Polymarket veto — us-announces-new-iran-agreementceasefire-extension-by-may-26"
+type: decision
+date: 2026-05-24
+decision: "Veto de tesis 'US announces new Iran agreement/ceasefire extension by May 26?' (rule M1): memoria: slug prefix match; same price bucket low (score 0.70)"
+alternatives:
+  - "Aprobar tesis y entrar trade simulado"
+  - "Vetar y mantener bankroll"
+outcome: pending
+outcome_observed_after_days: 30
+tags: [decision, polymarket, bot, veto, m1]
+related:
+  - "[[agents/polymarket-bot]]"
+  - "[[agents/polymarket-bot/memory]]"
+  - "[[projects/polymarket-veto-loop-bot]]"
+---
+
+# Veto: US announces new Iran agreement/ceasefire extension by May 26?
+
+## Mercado
+
+- **Slug**: `us-announces-new-iran-agreementceasefire-extension-by-may-26`
+- **Categoría**: uncategorized
+- **Precio YES**: 0.1900
+- **Volumen 24h**: 221297.19 USD
+- **End date**: 
+
+## Razón del veto
+
+**Regla aplicada**: `M1`
+
+memoria: slug prefix match; same price bucket low (score 0.70)
+
+## Patterns en memoria que contribuyeron
+
+- veto `us-announces-new-iran-agreementceasefire-extension-by-may-25` score=0.70 (slug prefix match; same price bucket low)
+- veto `us-announces-new-iran-agreementceasefire-extension-by-may-24` score=0.50 (slug prefix match)
+
+## Human notes
+
+_(no se toca por automatización)_
