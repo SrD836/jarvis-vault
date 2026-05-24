@@ -1283,3 +1283,19 @@
 2026/05/23 22:30:03 executor.go:197: executor: entered [short] Will Minnesota United FC win on 2026-05-23? @ 0.0500 size=$60.27 (open=50/50, bankroll=$2953)
 2026/05/23 22:30:03 executor.go:202: executor: 1 entered, 87 rejected
 2026/05/23 22:30:03 main.go:13: executor: done
+2026/05/23 23:00:04 main.go:11: executor: starting one-shot pass
+2026/05/23 23:00:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/23 23:00:04 executor.go:62: executor: quota slots this run: short=24 medium=5 long=5 (of 33 remaining today)
+2026/05/23 23:00:04 executor.go:197: executor: entered [medium] US-Iran nuclear deal by May 31? @ 0.1450 size=$64.30 (open=46/50, bankroll=$3151)
+2026/05/23 23:00:04 executor.go:197: executor: entered [medium] US x Iran permanent peace deal by May 31, 2026? @ 0.6000 size=$63.01 (open=47/50, bankroll=$3088)
+2026/05/23 23:00:04 executor.go:197: executor: entered [medium] US x Iran permanent peace deal by June 30, 2026? @ 0.6700 size=$61.75 (open=48/50, bankroll=$3026)
+2026/05/23 23:00:04 executor.go:197: executor: entered [medium] Will Trump agree to Iranian transit fees in the Strait of Hormuz by May 31? @ 0.0730 size=$60.52 (open=49/50, bankroll=$2965)
+2026/05/23 23:00:04 executor.go:197: executor: entered [medium] Strait of Hormuz traffic returns to normal by end of May? @ 0.1680 size=$59.31 (open=50/50, bankroll=$2906)
+2026/05/23 23:00:04 executor.go:202: executor: 5 entered, 81 rejected
+2026/05/23 23:00:04 main.go:13: executor: done
+2026/05/23 23:30:03 main.go:11: executor: starting one-shot pass
+2026/05/23 23:30:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/23 23:30:03 executor.go:62: executor: quota slots this run: short=21 medium=5 long=5 (of 29 remaining today)
+2026/05/23 23:30:03 executor.go:197: executor: entered [short] Will the price of Bitcoin be above $76,000 on May 24? @ 0.7600 size=$60.09 (open=50/50, bankroll=$2945)
+2026/05/23 23:30:03 executor.go:202: executor: 1 entered, 85 rejected
+2026/05/23 23:30:03 main.go:13: executor: done

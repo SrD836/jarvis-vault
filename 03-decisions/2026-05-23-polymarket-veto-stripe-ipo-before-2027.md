@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-the-doge-1-lunar-mission-launch-before-2027"
+title: "Polymarket veto — stripe-ipo-before-2027"
 type: decision
 date: 2026-05-23
-decision: "Veto de tesis 'Will the Doge-1 Lunar Mission launch before 2027?' (rule P4_pre_event): pre-event slug + 221 d to resolution (>=7 threshold)"
+decision: "Veto de tesis 'Stripe IPO before 2027?' (rule P4_pre_event): pre-event slug + 221 d to resolution (>=7 threshold)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,14 +15,14 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will the Doge-1 Lunar Mission launch before 2027?
+# Veto: Stripe IPO before 2027?
 
 ## Mercado
 
-- **Slug**: `will-the-doge-1-lunar-mission-launch-before-2027`
+- **Slug**: `stripe-ipo-before-2027`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.1090
-- **Volumen 24h**: 801749.90 USD
+- **Precio YES**: 0.1000
+- **Volumen 24h**: 251115.97 USD
 - **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto
