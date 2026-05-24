@@ -6800,3 +6800,57 @@
 2026/05/24 19:55:02 main.go:13: exit_monitor: done
 2026/05/24 20:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/24 20:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 20:00:02 monitor.go:160: exit_monitor: 0 closed, 45 remaining
+2026/05/24 20:00:02 main.go:13: exit_monitor: done
+2026/05/24 20:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 20:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 20:05:01 monitor.go:141: exit_monitor: closed Will US Lecce win on 2026-05-24? (take_profit) @ 0.7600 src=bestBid liq=$73645: PnL $26.87 (40.74%)
+2026/05/24 20:05:02 monitor.go:141: exit_monitor: closed Will Club Atlético de Madrid win on 2026-05-24? (stop_loss) @ 0.0100 src=bestBid liq=$79864: PnL $-45.00 (-83.33%)
+2026/05/24 20:05:02 monitor.go:160: exit_monitor: 2 closed, 46 remaining
+2026/05/24 20:05:02 main.go:13: exit_monitor: done
+2026/05/24 20:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 20:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 20:10:02 monitor.go:160: exit_monitor: 0 closed, 46 remaining
+2026/05/24 20:10:02 main.go:13: exit_monitor: done
+2026/05/24 20:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 20:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 20:15:02 monitor.go:141: exit_monitor: closed Will Como 1907 win on 2026-05-24? (take_profit) @ 0.8800 src=bestBid liq=$19159: PnL $24.56 (46.67%)
+2026/05/24 20:15:02 monitor.go:160: exit_monitor: 1 closed, 45 remaining
+2026/05/24 20:15:02 main.go:13: exit_monitor: done
+2026/05/24 20:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 20:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 20:20:02 monitor.go:160: exit_monitor: 0 closed, 45 remaining
+2026/05/24 20:20:02 main.go:13: exit_monitor: done
+2026/05/24 20:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 20:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 20:25:02 monitor.go:141: exit_monitor: closed Will 80 ships transit the Strait of Hormuz on any day by May 31? (take_profit EARLY) @ 0.1060 src=bestBid liq=$23564: PnL $22.22 (41.33%)
+2026/05/24 20:25:02 monitor.go:160: exit_monitor: 1 closed, 44 remaining
+2026/05/24 20:25:02 main.go:13: exit_monitor: done
+2026/05/24 20:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 20:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 20:30:02 monitor.go:160: exit_monitor: 0 closed, 44 remaining
+2026/05/24 20:30:02 main.go:13: exit_monitor: done
+2026/05/24 20:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 20:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 20:35:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 20:35:02 main.go:13: exit_monitor: done
+2026/05/24 20:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 20:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 20:40:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 20:40:02 main.go:13: exit_monitor: done
+2026/05/24 20:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 20:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 20:45:02 monitor.go:141: exit_monitor: closed Will AC Milan win on 2026-05-24? (stop_loss) @ 0.0600 src=bestBid liq=$25021: PnL $-46.95 (-91.04%)
+2026/05/24 20:45:02 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/24 20:45:02 main.go:13: exit_monitor: done
+2026/05/24 20:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 20:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 20:50:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/24 20:50:02 main.go:13: exit_monitor: done
+2026/05/24 20:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 20:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 20:55:02 monitor.go:141: exit_monitor: closed Will Cagliari Calcio win on 2026-05-24? (take_profit) @ 0.9150 src=bestBid liq=$47618: PnL $36.96 (68.82%)
+2026/05/24 20:55:02 monitor.go:160: exit_monitor: 1 closed, 46 remaining
+2026/05/24 20:55:02 main.go:13: exit_monitor: done
+2026/05/24 21:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 21:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%

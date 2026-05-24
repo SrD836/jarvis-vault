@@ -1,6 +1,18 @@
-# Índice — Job hunting log
+---
+title: "Job hunting — Índice"
+type: moc
+created: 2026-05-16
+updated: 2026-05-24
+tags: [moc, job-hunting, trabajo, career]
+related:
+  - "[[00-MOC]]"
+  - "[[projects/portfolio-offers]]"
+  - "[[USER]]"
+---
 
-Tracking de búsquedas realizadas, ofertas presentadas, estado de aplicación.
+# 💼 Job hunting log — Índice
+
+Tracking de búsquedas realizadas, ofertas presentadas, estado de aplicación. Dashboard live: jarvss.duckdns.org → sección /trabajo. Cuota auto-apply: 10/día (LinkedIn Easy Apply).
 
 ## Búsquedas
 
@@ -14,10 +26,11 @@ Tracking de búsquedas realizadas, ofertas presentadas, estado de aplicación.
 
 ## Empresas contactadas / aplicadas
 
-_(Vacío — David revisa picks y marca aquí cuando aplique)_
+Fuente de verdad: `inbox/job-hunting/applications.jsonl` + dashboard `/trabajo → Historial`. Sólo entries con `linkedin_confirmation:true` cuentan como envío real.
 
 | Empresa | Puesto | Aplicado | Estado | Notas |
 |---|---|---|---|---|
+| IOON | Soporte Técnico Junior Genesys Cloud CX | 2026-05-24 17:12 | ✅ Enviada (LinkedIn confirma) | [[projects/portfolio-offers]] → offer-3-ioon · primera Easy Apply real |
 
 ## Blacklist
 
@@ -26,5 +39,15 @@ _(Empresas/listings a excluir en futuras búsquedas. Una por línea o tabla.)_
 ## Notas de fuentes
 
 - **Indeed MCP**: funciona desde el harness de Claude Code. Ratio relevancia alto cuando query incluye stack específico ("AI Engineer Python LLM").
-- **LinkedIn**: solo URLs públicas via WebFetch (auth-gated content prohibido).
+- **LinkedIn**: solo URLs públicas via WebFetch (auth-gated content prohibido). Easy Apply usa Chrome CDP attach + Playwright MCP.
 - **Tecnoempleo / InfoJobs**: fallback España, no testeados aún.
+
+## Sistema (cómo se conectan las piezas)
+
+- **Pipeline**: `dashboard/api/trabajo/search` → job-hunter agent → `applications.jsonl` → `apply-batch.js` (portfolio → CV adapt → LinkedIn Easy Apply).
+- **Anti-fraude**: tras 2026-05-24 sólo se marca `applied/submitted` si `linkedin_confirmation:true` + `submitted_at` no-null.
+- **Cuota**: `applied-today.json` por día, cap 10.
+- **CV templates**: executive · sidebar · compact-pro · jglovier (auto-pick por título oferta).
+- **Memorias relevantes**:
+  - `jarvis_trabajo_turn8_complete` — template jglovier + LLM auto-answer.
+  - `jarvis_linkedin_apply_fase5c` — DOM scan, normalizeLabel, waitForSubmitConfirmation.

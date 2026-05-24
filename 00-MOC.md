@@ -34,6 +34,10 @@ related:
 | [[goals/index\|🎯 Goals]] | Metas a largo plazo y proyectos activos | Manual / agente |
 | [[templates/index\|🧩 Templates]] | Plantillas para briefs, sesiones, decisiones | Referencia |
 | [[Dashboard\|🎛️ Dashboard]] | Métricas del sistema auto-generadas | Auto (dashboard_generator.py) |
+| [[inbox/job-hunting/index\|💼 Job hunting]] | Búsquedas, aplicaciones, estado LinkedIn Easy Apply | Manual + cron |
+| [[projects/portfolio-offers\|🗂️ Portfolios por oferta]] | HTML sites adaptados generados por `apply-batch.js` | Auto (pipeline trabajo) |
+| [[Code-Audits/index\|🔍 Code audits]] | Auditorías overnight de repos (cron 01:00) | Diario |
+| [[audit/2026-05-24-vault-audit\|📋 Auditorías del vault]] | Auditorías de salud del propio vault (cognición vs almacén) | Manual / on-demand |
 
 ## Arquitectura del sistema
 
