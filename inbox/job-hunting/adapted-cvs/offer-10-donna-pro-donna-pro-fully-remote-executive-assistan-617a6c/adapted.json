@@ -1,0 +1,89 @@
+{
+  "adapted": {
+    "headline": "Asistente Ejecutivo Virtual | Administración & Automatización con IA | Microsoft 365 · Google Workspace",
+    "summary": "Estudiante avanzado de Administración y Finanzas con dominio práctico de Microsoft 365, Google Workspace e inteligencia artificial aplicada a la automatización de tareas administrativas. Con experiencia en gestión de correo electrónico, clasificación documental y hojas automatizadas, busca aportar eficiencia y orden en un entorno remoto de alta exigencia. Disponible de inmediato, orientado a la mejora continua de procesos y acostumbrado a trabajar con autonomía.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 – Julio 2021",
+        "bullets": [
+          "Gestioné la atención y coordinación de clientes en inglés en un entorno de alta demanda, priorizando múltiples tareas de forma simultánea.",
+          "Administré cobros en caja y recepción de clientes, garantizando precisión operativa y resolución rápida de incidencias.",
+          "Coordiné con el equipo la distribución de tareas para mantener un servicio fluido bajo presión."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft 365 (Outlook, Word, Excel, Teams)",
+      "Google Workspace (Gmail, Calendar, Drive, Docs)",
+      "Excel avanzado y hojas de cálculo automatizadas",
+      "Herramientas de IA y chatbots empresariales",
+      "Gestión y organización de correo electrónico",
+      "Resolución de problemas y organización administrativa",
+      "Comunicación en inglés (escrito y oral)"
+    ],
+    "skills_secondary": [
+      "Automatización de procesos rutinarios",
+      "Clasificación y gestión documental",
+      "Microsoft Azure AI",
+      "Google IT Support",
+      "Atención al cliente",
+      "Coordinación y distribución de tareas",
+      "Ofimática avanzada",
+      "Trabajo en equipo",
+      "Adaptabilidad a entornos 100% remotos"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados, sin completar)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reescrito para alinear directamente con el rol de Asistente Ejecutivo Virtual, destacando Microsoft 365, Google Workspace e IA como pilares.",
+      "Summary adaptado con pitch orientado al puesto: se explicitan gestión de email, automatización, trabajo remoto y disponibilidad inmediata.",
+      "Experiencia en hostelería reformulada con verbos de acción (gestioné, administré, coordiné) y énfasis en multitarea, resolución de incidencias y trabajo bajo presión, skills transferibles a un rol EA.",
+      "Skills reordenadas: Microsoft 365, Google Workspace, IA y gestión de email promovidos a primary por ser competencias centrales del puesto.",
+      "'Gestión y organización de correo electrónico' y 'Automatización de procesos rutinarios' añadidos explícitamente como skills, extraídos del propio texto del CV original del candidato.",
+      "Educación reordenada priorizando CFGS Administración y Finanzas y los cursos tecnológicos (Azure AI, Google IT) por relevancia directa al puesto.",
+      "Inglés mantenido en B1 (nivel real del perfil); la oferta para 'Elite CEOs' puede requerir nivel C1-C2, lo que representa el principal riesgo de candidatura y se refleja en la confidence.",
+      "Grado en Economía sin completar desplazado al final de la educación para no generar ruido respecto a su formación en curso más relevante."
+    ],
+    "confidence": 0.56,
+    "target_role": "Fully Remote Executive Assistant to Elite CEOs",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-24T14:52:25.455Z"
+  },
+  "offer_id": "offer-10-donna-pro",
+  "offer_title": "Fully Remote Executive Assistant to Elite CEOs",
+  "company": "Donna Pro",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

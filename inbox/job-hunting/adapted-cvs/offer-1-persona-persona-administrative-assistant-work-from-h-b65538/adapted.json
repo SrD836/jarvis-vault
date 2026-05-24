@@ -1,0 +1,88 @@
+{
+  "adapted": {
+    "headline": "Asistente Administrativo en Remoto · Gestión Digital & Microsoft 365",
+    "summary": "Estudiante de Administración y Finanzas con sólido dominio de herramientas ofimáticas (Microsoft 365, Google Workspace) y Excel avanzado. Apasionado por la automatización de tareas administrativas, el uso de IA empresarial y la organización eficiente de información. Disponible para trabajo remoto a tiempo completo, con capacidad de comunicación en inglés.",
+    "experience": [
+      {
+        "title": "Camarero · Cajero · Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 – Julio 2021",
+        "bullets": [
+          "Gestionó cobros en caja y cuadre de efectivo diario, garantizando precisión en el registro de transacciones.",
+          "Coordinó la recepción y asignación de clientes como host, organizando flujos de trabajo bajo presión.",
+          "Atendió pedidos y comunicaciones con clientes en inglés en entorno internacional.",
+          "Colaboró en equipo multifuncional (sala, barra, caja), distribuyendo tareas para mantener la operativa fluida."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft 365 (Word, Excel, Outlook, Teams)",
+      "Excel avanzado (hojas automatizadas, fórmulas, gestión de datos)",
+      "Google Workspace (Docs, Sheets, Gmail, Drive)",
+      "Herramientas de IA y chatbots empresariales",
+      "Organización y gestión de tareas",
+      "Atención al cliente y comunicación escrita",
+      "Resolución de problemas"
+    ],
+    "skills_secondary": [
+      "Automatización de procesos administrativos",
+      "Microsoft Azure AI",
+      "Google IT Support",
+      "Ofimática general",
+      "Gestión de correo electrónico",
+      "Trabajo en equipo remoto",
+      "Liderazgo y coordinación de tareas",
+      "Inglés profesional"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Google IT Support Certificate",
+        "institution": "Curso Online (Google)",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reenfocado a 'Asistente Administrativo en Remoto' para alinear con el puesto objetivo.",
+      "Microsoft 365 y Google Workspace promovidos a skills_primary por ser herramientas clave en roles admin.",
+      "Bullet de experiencia reformulado para destacar gestión de caja, recepción y coordinación, habilidades transferibles a tareas administrativas.",
+      "Añadido 'Gestión de correo electrónico' y 'Automatización de procesos administrativos' a secondary skills, ya mencionados en el 'Sobre mí' del CV original.",
+      "Summary reescrito con pitch orientado a asistente administrativo remoto, enfatizando ofimática y disponibilidad remota.",
+      "Skills de hostelería puras (gestión de pedidos en barra) depriorizadas; sustituidas por equivalentes admin.",
+      "Microsoft Azure AI mantenido en secondary por relevancia a herramientas digitales, aunque no es requisito explícito del JD."
+    ],
+    "confidence": 0.72,
+    "target_role": "Administrative Assistant (Work From Home) — Persona",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-24T14:50:07.770Z"
+  },
+  "offer_id": "offer-1-persona",
+  "offer_title": "Administrative Assistant (Work From Home)",
+  "company": "Persona",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

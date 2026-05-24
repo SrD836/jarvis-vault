@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-22T21:43:26.322Z",
+  "updated_at": "2026-05-24T14:59:49.914Z",
   "personal": {
     "full_name": "David González Nuez",
     "email": "davidgnjunior@gmail.com",
@@ -149,7 +149,7 @@
       "label": "Email",
       "kind": "select",
       "answer": "davidgnjunior@gmail.com",
-      "saved_at": "2026-05-22T21:43:22.943Z"
+      "saved_at": "2026-05-24T14:56:43.941Z"
     },
     "f4aeb94c92": {
       "label": "Código del país",
@@ -174,6 +174,24 @@
       "kind": "select",
       "answer": "España (+34)",
       "saved_at": "2026-05-21T11:02:39.935Z"
+    },
+    "8813e73d2c": {
+      "label": "Código del país",
+      "kind": "select",
+      "answer": "España (+34)",
+      "saved_at": "2026-05-24T14:56:47.106Z"
+    },
+    "45f138b382": {
+      "label": "¿Cuántos años de experiencia tienes con Genesys Cloud?",
+      "kind": "number",
+      "answer": "0",
+      "saved_at": "2026-05-24T14:59:30.162Z"
+    },
+    "3c2fc48cc7": {
+      "label": "¿Cuántos años de experiencia tienes en Contact Center?",
+      "kind": "number",
+      "answer": "0",
+      "saved_at": "2026-05-24T14:59:49.914Z"
     }
   },
   "extraction_history": [
