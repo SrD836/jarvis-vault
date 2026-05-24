@@ -6132,3 +6132,53 @@
 2026/05/24 06:55:02 main.go:13: exit_monitor: done
 2026/05/24 07:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/24 07:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 07:00:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 07:00:02 main.go:13: exit_monitor: done
+2026/05/24 07:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 07:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 07:05:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 07:05:02 main.go:13: exit_monitor: done
+2026/05/24 07:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 07:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 07:10:03 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 07:10:03 main.go:13: exit_monitor: done
+2026/05/24 07:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 07:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 07:15:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 07:15:02 main.go:13: exit_monitor: done
+2026/05/24 07:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 07:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 07:20:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 07:20:02 main.go:13: exit_monitor: done
+2026/05/24 07:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 07:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 07:25:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 07:25:02 main.go:13: exit_monitor: done
+2026/05/24 07:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 07:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 07:30:02 monitor.go:141: exit_monitor: closed Will Trump agree to Iranian transit fees in the Strait of Hormuz by May 31? (take_profit EARLY) @ 0.1050 src=bestBid liq=$27802: PnL $26.53 (43.84%)
+2026/05/24 07:30:02 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/24 07:30:02 main.go:13: exit_monitor: done
+2026/05/24 07:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 07:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 07:35:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 07:35:02 main.go:13: exit_monitor: done
+2026/05/24 07:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 07:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 07:40:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 07:40:02 main.go:13: exit_monitor: done
+2026/05/24 07:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 07:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 07:45:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 07:45:02 main.go:13: exit_monitor: done
+2026/05/24 07:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 07:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 07:50:02 monitor.go:141: exit_monitor: closed Will Bitcoin dip to $74,000 May 18-24? (stop_loss EARLY) @ 0.0150 src=bestBid liq=$21764: PnL $-49.16 (-80.26%)
+2026/05/24 07:50:02 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/24 07:50:02 main.go:13: exit_monitor: done
+2026/05/24 07:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 07:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 07:55:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/24 07:55:02 main.go:13: exit_monitor: done
+2026/05/24 08:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 08:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%

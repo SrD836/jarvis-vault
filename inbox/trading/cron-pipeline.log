@@ -1385,3 +1385,14 @@
 2026/05/24 06:30:04 executor.go:197: executor: entered [short] Will Elon Musk post 240-259 tweets from May 19 to May 26, 2026? @ 0.1640 size=$65.51 (open=50/50, bankroll=$3210)
 2026/05/24 06:30:04 executor.go:202: executor: 2 entered, 90 rejected
 2026/05/24 06:30:04 main.go:13: executor: done
+2026/05/24 07:00:03 main.go:11: executor: starting one-shot pass
+2026/05/24 07:00:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/24 07:00:03 executor.go:62: executor: quota slots this run: short=30 medium=7 long=7 (of 42 remaining today)
+2026/05/24 07:00:03 executor.go:202: executor: 0 entered, 91 rejected
+2026/05/24 07:00:03 main.go:13: executor: done
+2026/05/24 07:30:03 main.go:11: executor: starting one-shot pass
+2026/05/24 07:30:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/24 07:30:03 executor.go:62: executor: quota slots this run: short=30 medium=7 long=7 (of 42 remaining today)
+2026/05/24 07:30:03 executor.go:197: executor: entered [short] Will US Lecce win on 2026-05-24? @ 0.5400 size=$65.94 (open=50/50, bankroll=$3231)
+2026/05/24 07:30:03 executor.go:202: executor: 1 entered, 96 rejected
+2026/05/24 07:30:03 main.go:13: executor: done
