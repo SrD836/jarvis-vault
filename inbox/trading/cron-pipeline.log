@@ -1587,3 +1587,16 @@
 2026/05/24 21:30:03 executor.go:197: executor: entered [short] Will Juventus FC win on 2026-05-24? @ 0.8200 size=$53.15 (open=50/50, bankroll=$2604)
 2026/05/24 21:30:03 executor.go:202: executor: 1 entered, 74 rejected
 2026/05/24 21:30:03 main.go:13: executor: done
+2026/05/24 22:00:04 main.go:11: executor: starting one-shot pass
+2026/05/24 22:00:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/24 22:00:04 executor.go:62: executor: quota slots this run: short=20 medium=5 long=5 (of 28 remaining today)
+2026/05/24 22:00:04 executor.go:197: executor: entered [short] Will Columbus Crew win on 2026-05-24? @ 0.8000 size=$53.63 (open=48/50, bankroll=$2628)
+2026/05/24 22:00:04 executor.go:197: executor: entered [short] Will Inter Miami CF win on 2026-05-24? @ 0.7300 size=$52.56 (open=49/50, bankroll=$2575)
+2026/05/24 22:00:04 executor.go:197: executor: entered [short] Will the price of Bitcoin be above $74,000 on May 25? @ 0.9450 size=$51.51 (open=50/50, bankroll=$2524)
+2026/05/24 22:00:04 executor.go:202: executor: 3 entered, 77 rejected
+2026/05/24 22:00:04 main.go:13: executor: done
+2026/05/24 22:30:04 main.go:11: executor: starting one-shot pass
+2026/05/24 22:30:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/24 22:30:04 executor.go:62: executor: quota slots this run: short=18 medium=4 long=4 (of 25 remaining today)
+2026/05/24 22:30:04 executor.go:202: executor: 0 entered, 79 rejected
+2026/05/24 22:30:04 main.go:13: executor: done

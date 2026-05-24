@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — us-announces-new-iran-agreementceasefire-extension-by-may-31"
+title: "Polymarket veto — us-announces-new-iran-agreementceasefire-extension-by-june-7"
 type: decision
 date: 2026-05-24
-decision: "Veto de tesis 'US announces new Iran agreement/ceasefire extension by May 31?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'US announces new Iran agreement/ceasefire extension by June 7?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,14 +15,14 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: US announces new Iran agreement/ceasefire extension by May 31?
+# Veto: US announces new Iran agreement/ceasefire extension by June 7?
 
 ## Mercado
 
-- **Slug**: `us-announces-new-iran-agreementceasefire-extension-by-may-31`
+- **Slug**: `us-announces-new-iran-agreementceasefire-extension-by-june-7`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.4000
-- **Volumen 24h**: 289307.76 USD
+- **Precio YES**: 0.6300
+- **Volumen 24h**: 111992.30 USD
 - **End date**: 
 
 ## Razón del veto
@@ -33,8 +33,8 @@ memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
-- veto `us-announces-new-iran-agreementceasefire-extension-by-may-31` score=1.00 (exact slug match)
-- veto `us-announces-new-iran-agreementceasefire-extension-by-june-7` score=0.70 (slug prefix match; same price bucket mid)
+- veto `us-announces-new-iran-agreementceasefire-extension-by-june-7` score=1.00 (exact slug match)
+- veto `us-announces-new-iran-agreementceasefire-extension-by-may-31` score=0.70 (slug prefix match; same price bucket mid)
 - veto `us-announces-new-iran-agreementceasefire-extension-by-may-26` score=0.50 (slug prefix match)
 - veto `us-announces-new-iran-agreementceasefire-extension-by-may-25` score=0.50 (slug prefix match)
 - veto `us-announces-new-iran-agreementceasefire-extension-by-may-24` score=0.50 (slug prefix match)
