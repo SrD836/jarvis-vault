@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `metamask-fdv-above-3b-one-day-after-launch-363-663-664-569-222`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.1330
+- **Precio YES**: 0.1310
 - **Volumen 24h**: 290757.19 USD
 - **End date**: 2027-01-01T05:00:00Z
 

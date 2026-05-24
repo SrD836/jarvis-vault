@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — spacex-ipo-closing-market-cap-above-3t-337-436"
+title: "Polymarket veto — base-fdv-above-2b-one-day-after-launch"
 type: decision
 date: 2026-05-24
-decision: "Veto de tesis 'SpaceX IPO closing market cap above $3T?' (rule P4_pre_event): pre-event slug + 585 d to resolution (>=7 threshold)"
+decision: "Veto de tesis 'Base FDV above $2B one day after launch?' (rule P4_pre_event): pre-event slug + 586 d to resolution (>=7 threshold)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,21 +15,21 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: SpaceX IPO closing market cap above $3T?
+# Veto: Base FDV above $2B one day after launch?
 
 ## Mercado
 
-- **Slug**: `spacex-ipo-closing-market-cap-above-3t-337-436`
+- **Slug**: `base-fdv-above-2b-one-day-after-launch`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.1300
-- **Volumen 24h**: 105962.86 USD
-- **End date**: 2027-12-31T00:00:00Z
+- **Precio YES**: 0.8000
+- **Volumen 24h**: 221259.61 USD
+- **End date**: 2028-01-01T05:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `P4_pre_event`
 
-pre-event slug + 585 d to resolution (>=7 threshold)
+pre-event slug + 586 d to resolution (>=7 threshold)
 
 ## Human notes
 

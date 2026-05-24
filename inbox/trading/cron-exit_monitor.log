@@ -6281,3 +6281,54 @@
 2026/05/24 09:55:02 main.go:13: exit_monitor: done
 2026/05/24 10:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/24 10:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 10:00:03 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/24 10:00:03 main.go:13: exit_monitor: done
+2026/05/24 10:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 10:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 10:05:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 10:05:02 main.go:13: exit_monitor: done
+2026/05/24 10:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 10:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 10:10:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 10:10:02 main.go:13: exit_monitor: done
+2026/05/24 10:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 10:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 10:15:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 10:15:02 main.go:13: exit_monitor: done
+2026/05/24 10:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 10:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 10:20:02 monitor.go:141: exit_monitor: closed Israel closes its airspace by May 24? (stop_loss) @ 0.0080 src=bestBid liq=$16585: PnL $-61.84 (-91.11%)
+2026/05/24 10:20:02 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/24 10:20:02 main.go:13: exit_monitor: done
+2026/05/24 10:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 10:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 10:25:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/24 10:25:02 main.go:13: exit_monitor: done
+2026/05/24 10:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 10:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 10:30:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/24 10:30:02 main.go:13: exit_monitor: done
+2026/05/24 10:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 10:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 10:35:03 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 10:35:03 main.go:13: exit_monitor: done
+2026/05/24 10:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 10:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 10:40:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 10:40:02 main.go:13: exit_monitor: done
+2026/05/24 10:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 10:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 10:45:02 monitor.go:141: exit_monitor: closed Will the price of Bitcoin be above $78,000 on May 24? (take_profit EARLY) @ 0.1110 src=bestBid liq=$28103: PnL $78.35 (122.00%)
+2026/05/24 10:45:02 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/24 10:45:02 main.go:13: exit_monitor: done
+2026/05/24 10:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 10:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 10:50:01 monitor.go:141: exit_monitor: closed Will Trump attend his son's wedding? (stop_loss EARLY) @ 0.0100 src=bestBid liq=$78321: PnL $-50.21 (-81.82%)
+2026/05/24 10:50:02 monitor.go:160: exit_monitor: 1 closed, 46 remaining
+2026/05/24 10:50:02 main.go:13: exit_monitor: done
+2026/05/24 10:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 10:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 10:55:02 monitor.go:160: exit_monitor: 0 closed, 46 remaining
+2026/05/24 10:55:02 main.go:13: exit_monitor: done
+2026/05/24 11:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 11:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
