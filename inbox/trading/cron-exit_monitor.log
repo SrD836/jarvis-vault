@@ -6231,3 +6231,53 @@
 2026/05/24 08:55:02 main.go:13: exit_monitor: done
 2026/05/24 09:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/24 09:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 09:00:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/24 09:00:02 main.go:13: exit_monitor: done
+2026/05/24 09:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 09:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 09:05:01 monitor.go:141: exit_monitor: closed Will WTI Crude Oil (WTI) hit (HIGH) $115 in May? (stop_loss EARLY) @ 0.0300 src=bestBid liq=$96916: PnL $-50.95 (-84.21%)
+2026/05/24 09:05:02 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/24 09:05:02 main.go:13: exit_monitor: done
+2026/05/24 09:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 09:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 09:10:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/24 09:10:02 main.go:13: exit_monitor: done
+2026/05/24 09:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 09:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 09:15:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/24 09:15:02 main.go:13: exit_monitor: done
+2026/05/24 09:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 09:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 09:20:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/24 09:20:02 main.go:13: exit_monitor: done
+2026/05/24 09:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 09:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 09:25:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/24 09:25:02 main.go:13: exit_monitor: done
+2026/05/24 09:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 09:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 09:30:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/24 09:30:02 main.go:13: exit_monitor: done
+2026/05/24 09:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 09:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 09:35:01 monitor.go:141: exit_monitor: closed Will Bitcoin reach $80,000 May 18-24? (stop_loss EARLY) @ 0.0080 src=bestBid liq=$31997: PnL $-53.26 (-88.73%)
+2026/05/24 09:35:02 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/24 09:35:02 main.go:13: exit_monitor: done
+2026/05/24 09:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 09:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 09:40:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/24 09:40:02 main.go:13: exit_monitor: done
+2026/05/24 09:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 09:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 09:45:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/24 09:45:02 main.go:13: exit_monitor: done
+2026/05/24 09:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 09:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 09:50:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/24 09:50:02 main.go:13: exit_monitor: done
+2026/05/24 09:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 09:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/24 09:55:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/24 09:55:02 main.go:13: exit_monitor: done
+2026/05/24 10:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/24 10:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
