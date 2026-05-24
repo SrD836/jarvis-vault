@@ -6,11 +6,18 @@ category: general
 date: 2026-05-24T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-research-phase
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/external/gsd-phase-researcher]]"
+  - "[[skills/external/gsd-discuss-phase]]"
+  - "[[skills/external/gsd-execute-phase]]"
+  - "[[skills/external/gsd-plan-phase]]"
+  - "[[skills/external/gsd-spec-phase]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-24
 ---
+
 
 # `gsd-research-phase` (external skill)
 

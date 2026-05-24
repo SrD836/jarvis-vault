@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — metamask-fdv-above-3b-one-day-after-launch-363-663-664-569-222"
+title: "Polymarket veto — extended-fdv-above-150m-one-day-after-launch-452"
 type: decision
 date: 2026-05-24
-decision: "Veto de tesis 'Metamask FDV above $3B one day after launch?' (rule P4_pre_event): pre-event slug + 221 d to resolution (>=7 threshold)"
+decision: "Veto de tesis 'Extended FDV above $150M one day after launch?' (rule P4_pre_event): pre-event slug + 221 d to resolution (>=7 threshold)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,14 +15,14 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Metamask FDV above $3B one day after launch?
+# Veto: Extended FDV above $150M one day after launch?
 
 ## Mercado
 
-- **Slug**: `metamask-fdv-above-3b-one-day-after-launch-363-663-664-569-222`
+- **Slug**: `extended-fdv-above-150m-one-day-after-launch-452`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.1250
-- **Volumen 24h**: 290757.19 USD
+- **Precio YES**: 0.6600
+- **Volumen 24h**: 266542.99 USD
 - **End date**: 2027-01-01T05:00:00Z
 
 ## Razón del veto
