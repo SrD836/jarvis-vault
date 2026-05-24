@@ -1,5 +1,5 @@
 {
-  "bankroll": 2963.685422219619,
+  "bankroll": 3112.3684604844557,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -191,22 +191,6 @@
       "side": "yes",
       "size": 45.4786756867511,
       "size_usd": 45.4786756867511
-    },
-    {
-      "approved_price": 0.29,
-      "category": "uncategorized",
-      "days_to_resolution": 4,
-      "end_date": "2026-05-24T15:00:00Z",
-      "entry_price": 0.29,
-      "entry_timestamp": "2026-05-19T21:00:04Z",
-      "horizon": "medium",
-      "id": "T-2227129-1779224404592",
-      "liquidity_usd": 400231.1145,
-      "market_id": "2227129",
-      "question": "Will Manchester United FC win on 2026-05-24?",
-      "side": "yes",
-      "size": 61.63244108208504,
-      "size_usd": 61.63244108208504
     },
     {
       "approved_price": 0.53,
@@ -529,22 +513,6 @@
       "size_usd": 61.75420970841677
     },
     {
-      "approved_price": 0.168,
-      "category": "uncategorized",
-      "days_to_resolution": 7,
-      "end_date": "2026-05-31T00:00:00Z",
-      "entry_price": 0.168,
-      "entry_timestamp": "2026-05-23T23:00:04Z",
-      "horizon": "medium",
-      "id": "T-1809560-1779577204027",
-      "liquidity_usd": 236713.95465,
-      "market_id": "1809560",
-      "question": "Strait of Hormuz traffic returns to normal by end of May?",
-      "side": "yes",
-      "size": 59.30874300396346,
-      "size_usd": 59.30874300396346
-    },
-    {
       "approved_price": 0.76,
       "category": "uncategorized",
       "days_to_resolution": 0,
@@ -753,22 +721,6 @@
       "size_usd": 63.770982268552
     },
     {
-      "approved_price": 0.5,
-      "category": "uncategorized",
-      "days_to_resolution": 0,
-      "end_date": "2026-05-24T15:00:00Z",
-      "entry_price": 0.5,
-      "entry_timestamp": "2026-05-24T11:00:03Z",
-      "horizon": "short",
-      "id": "T-2227158-1779620403996",
-      "liquidity_usd": 962190.247,
-      "market_id": "2227158",
-      "question": "Will Tottenham Hotspur FC win on 2026-05-24?",
-      "side": "yes",
-      "size": 62.49556262318096,
-      "size_usd": 62.49556262318096
-    },
-    {
       "approved_price": 0.118,
       "category": "uncategorized",
       "days_to_resolution": 1,
@@ -783,7 +735,23 @@
       "side": "yes",
       "size": 60.420556140524035,
       "size_usd": 60.420556140524035
+    },
+    {
+      "approved_price": 0.93,
+      "category": "uncategorized",
+      "days_to_resolution": 0,
+      "end_date": "2026-05-24T13:00:00Z",
+      "entry_price": 0.93,
+      "entry_timestamp": "2026-05-24T15:00:03Z",
+      "horizon": "short",
+      "id": "T-2287649-1779634803475",
+      "liquidity_usd": 32086.669,
+      "market_id": "2287649",
+      "question": "Will Parma Calcio 1913 win on 2026-05-24?",
+      "side": "yes",
+      "size": 59.273708444392376,
+      "size_usd": 59.273708444392376
     }
   ],
-  "used_exposure": 3094.4666299674755
+  "used_exposure": 2970.3035917026386
 }

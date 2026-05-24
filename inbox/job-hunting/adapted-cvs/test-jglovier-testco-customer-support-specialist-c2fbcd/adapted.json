@@ -1,0 +1,84 @@
+{
+  "adapted": {
+    "headline": "Customer Support Specialist bilingüe (ES/EN) | Atención al cliente & Resolución de problemas",
+    "summary": "Candidato bilingüe (castellano nativo, inglés alto) con experiencia directa en atención al cliente presencial en entorno internacional, gestión de pedidos y recepción de clientes. Perfil proactivo, resolutivo y orientado al usuario, con sólido manejo de herramientas digitales (Microsoft 365, Google Workspace, chatbots de IA) que facilitan la gestión eficiente de tickets y comunicaciones.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 – Julio 2021",
+        "bullets": [
+          "Atendí clientes en sala y barra en inglés, resolviendo dudas e incidencias en tiempo real en entorno multicultural.",
+          "Gestioné cobros en caja con exactitud y recibí clientes como host, priorizando una experiencia positiva desde el primer contacto.",
+          "Coordiné pedidos y colaboré con el equipo para mantener tiempos de respuesta y satisfacción del cliente."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Atención al cliente (presencial y multicanal)",
+      "Comunicación bilingüe Español / Inglés",
+      "Resolución de problemas",
+      "Microsoft 365 (Outlook, Teams, Word, Excel)",
+      "Google Workspace",
+      "Herramientas de IA y chatbots empresariales"
+    ],
+    "skills_secondary": [
+      "Excel avanzado",
+      "Gestión de pedidos",
+      "Trabajo en equipo y liderazgo",
+      "Ofimática",
+      "Google IT Support (certificación)",
+      "Microsoft Azure AI (curso)",
+      "Mejora de procesos digitales"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reenfocado de 'Estudiante de Administración y Finanzas' a 'Customer Support Specialist bilingüe' para alinear con el rol target.",
+      "Summary reescrito priorizando la experiencia en atención al cliente y el bilingüismo ES/EN, que son los requisitos centrales de la oferta.",
+      "'Atención al cliente' y 'Comunicación bilingüe' promovidos a skills_primary por ser los requisitos explícitos de la JD.",
+      "Bullets de experiencia reformulados para destacar la interacción con clientes en inglés, resolución de incidencias y recepción, en lugar de los aspectos operativos de hostelería.",
+      "Google IT Support y Microsoft Azure AI mantenidos en secondary (relevantes para soporte técnico nivel 1 aunque la oferta no los menciona explícitamente).",
+      "Excel avanzado movido a secondary ya que la JD no lo menciona; se prioriza el stack de comunicación y soporte."
+    ],
+    "confidence": 0.72,
+    "target_role": "Customer Support Specialist",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-24T15:10:50.150Z"
+  },
+  "offer_id": "test-jglovier",
+  "offer_title": "Customer Support Specialist",
+  "company": "TestCo",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

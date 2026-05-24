@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-24T14:59:49.914Z",
+  "updated_at": "2026-05-24T15:00:05.624Z",
   "personal": {
     "full_name": "David González Nuez",
     "email": "davidgnjunior@gmail.com",
@@ -192,6 +192,12 @@
       "kind": "number",
       "answer": "0",
       "saved_at": "2026-05-24T14:59:49.914Z"
+    },
+    "5795d32884": {
+      "label": "¿Cuál es tu nivel de Inglés?",
+      "kind": "select",
+      "answer": "B1",
+      "saved_at": "2026-05-24T15:00:05.624Z"
     }
   },
   "extraction_history": [

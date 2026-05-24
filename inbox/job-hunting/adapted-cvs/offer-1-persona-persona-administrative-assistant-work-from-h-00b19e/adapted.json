@@ -1,0 +1,87 @@
+{
+  "adapted": {
+    "headline": "Estudiante de Administración y Finanzas | Asistente Administrativo orientado al trabajo remoto y la digitalización",
+    "summary": "Estudiante de Administración y Finanzas con dominio de Microsoft 365, Google Workspace y Excel avanzado, con especial interés en la automatización de tareas administrativas mediante herramientas de IA y chatbots empresariales. Perfil organizado, resolutivo y habituado al entorno digital, con experiencia en atención al cliente bilingüe y gestión de información. Disponibilidad inmediata para trabajo en remoto.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 – Julio 2021",
+        "bullets": [
+          "Coordinó la recepción y gestión de clientes en entorno bilingüe (español/inglés), garantizando una experiencia de servicio fluida.",
+          "Gestionó cobros en caja y registro de pedidos con precisión, desarrollando habilidades de control de datos y organización.",
+          "Colaboró en equipo bajo alta demanda, demostrando capacidad de adaptación y resolución ágil de incidencias."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft 365 (Word, Excel, Outlook, Teams)",
+      "Google Workspace (Docs, Sheets, Gmail, Drive)",
+      "Excel avanzado",
+      "Herramientas de IA y chatbots empresariales",
+      "Organización y gestión administrativa",
+      "Atención al cliente y comunicación",
+      "Resolución de problemas"
+    ],
+    "skills_secondary": [
+      "Automatización de procesos digitales",
+      "Gestión de correo electrónico",
+      "Google IT Support",
+      "Microsoft Azure AI",
+      "Ofimática",
+      "Trabajo en equipo",
+      "Liderazgo",
+      "Gestión de pedidos e información"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reenfocado hacia 'Asistente Administrativo' en lugar del genérico 'Estudiante de Administración y Finanzas'.",
+      "Summary redactado para destacar disponibilidad remota, dominio de herramientas ofimáticas y automatización con IA: palabras clave directas del perfil de la oferta.",
+      "Promovidos Microsoft 365 y Google Workspace a skills_primary por ser herramientas centrales en cualquier rol de asistente administrativo remoto.",
+      "Promovida 'Organización y gestión administrativa' a primary skill por alineación directa con el rol target.",
+      "Bullets de experiencia en hostelería reformulados para enfatizar gestión de datos, coordinación bilingüe y organización, en lugar del enfoque de servicio de sala.",
+      "Curso de Microsoft Azure AI reordenado antes del Google IT Support para reforzar el ángulo de automatización con IA.",
+      "Automatización de procesos digitales y gestión de correo electrónico añadidas a skills_secondary, extraídas del bloque 'Sobre mí' del CV original."
+    ],
+    "confidence": 0.68,
+    "target_role": "Administrative Assistant (Work From Home) — Persona",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-24T15:12:43.382Z"
+  },
+  "offer_id": "offer-1-persona",
+  "offer_title": "Administrative Assistant (Work From Home)",
+  "company": "Persona",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}
