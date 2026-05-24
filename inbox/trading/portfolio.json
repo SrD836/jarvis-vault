@@ -1,5 +1,5 @@
 {
-  "bankroll": 3287.2374685986447,
+  "bankroll": 3359.825109487047,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -705,38 +705,6 @@
       "size_usd": 60.093098537929954
     },
     {
-      "approved_price": 0.53,
-      "category": "uncategorized",
-      "days_to_resolution": 0,
-      "end_date": "2026-05-24T00:30:00Z",
-      "entry_price": 0.53,
-      "entry_timestamp": "2026-05-24T00:00:03Z",
-      "horizon": "short",
-      "id": "T-2086885-1779580803643",
-      "liquidity_usd": 122184.7619,
-      "market_id": "2086885",
-      "question": "Will Nashville SC win on 2026-05-23?",
-      "side": "yes",
-      "size": 60.50356238912789,
-      "size_usd": 60.50356238912789
-    },
-    {
-      "approved_price": 0.71,
-      "category": "uncategorized",
-      "days_to_resolution": 0,
-      "end_date": "2026-05-24T00:30:00Z",
-      "entry_price": 0.71,
-      "entry_timestamp": "2026-05-24T00:30:03Z",
-      "horizon": "short",
-      "id": "T-2086901-1779582603386",
-      "liquidity_usd": 296014.904,
-      "market_id": "2086901",
-      "question": "Will Chicago Fire FC win on 2026-05-23?",
-      "side": "yes",
-      "size": 63.002356415872946,
-      "size_usd": 63.002356415872946
-    },
-    {
       "approved_price": 0.11,
       "category": "uncategorized",
       "days_to_resolution": 2,
@@ -767,7 +735,39 @@
       "side": "yes",
       "size": 62.30787329981389,
       "size_usd": 62.30787329981389
+    },
+    {
+      "approved_price": 0.82,
+      "category": "uncategorized",
+      "days_to_resolution": 0,
+      "end_date": "2026-05-24T00:30:00Z",
+      "entry_price": 0.82,
+      "entry_timestamp": "2026-05-24T02:00:03Z",
+      "horizon": "short",
+      "id": "T-2086878-1779588003845",
+      "liquidity_usd": 15197.8096,
+      "market_id": "2086878",
+      "question": "Will New York Red Bulls win on 2026-05-23?",
+      "side": "yes",
+      "size": 65.7447493719729,
+      "size_usd": 65.7447493719729
+    },
+    {
+      "approved_price": 0.87,
+      "category": "uncategorized",
+      "days_to_resolution": 0,
+      "end_date": "2026-05-24T00:30:00Z",
+      "entry_price": 0.87,
+      "entry_timestamp": "2026-05-24T02:30:03Z",
+      "horizon": "short",
+      "id": "T-2086885-1779589803605",
+      "liquidity_usd": 21329.5831,
+      "market_id": "2086885",
+      "question": "Will Nashville SC win on 2026-05-23?",
+      "side": "yes",
+      "size": 64.85352854462532,
+      "size_usd": 64.85352854462532
     }
   ],
-  "used_exposure": 3005.6845835884506
+  "used_exposure": 3012.776942700048
 }
