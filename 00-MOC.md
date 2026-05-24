@@ -37,7 +37,8 @@ related:
 | [[inbox/job-hunting/index\|💼 Job hunting]] | Búsquedas, aplicaciones, estado LinkedIn Easy Apply | Manual + cron |
 | [[projects/portfolio-offers\|🗂️ Portfolios por oferta]] | HTML sites adaptados generados por `apply-batch.js` | Auto (pipeline trabajo) |
 | [[Code-Audits/index\|🔍 Code audits]] | Auditorías overnight de repos (cron 01:00) | Diario |
-| [[audit/2026-05-24-vault-audit\|📋 Auditorías del vault]] | Auditorías de salud del propio vault (cognición vs almacén) | Manual / on-demand |
+| [[audit/2026-05-24-vault-audit\|📋 Auditoría vault]] | Salud del vault (cognición vs almacén) | Manual / on-demand |
+| [[audit/2026-05-24-system-e2e-audit\|🩺 Auditoría sistema E2E]] | Foto fija stack JARVIS completo | Manual / on-demand |
 
 ## Arquitectura del sistema
 
