@@ -1,7 +1,7 @@
 ---
 title: "Evolution proposal — researcher"
 type: agent-evolution
-date: 2026-05-23T04:00:34+00:00
+date: 2026-05-24T04:00:27+00:00
 agent: "[[agents/researcher]]"
 pattern: iter-cap-saturated
 confidence: medium
@@ -15,7 +15,7 @@ related:
 
 # Evolución propuesta — `researcher`
 
-_Generado por `hermes/learnings.py` el 2026-05-23T04:00:34+00:00. Ventana: 7 días._
+_Generado por `hermes/learnings.py` el 2026-05-24T04:00:27+00:00. Ventana: 7 días._
 
 ## Patrón: `iter-cap-saturated`
 
@@ -35,59 +35,53 @@ _Generado por `hermes/learnings.py` el 2026-05-23T04:00:34+00:00. Ventana: 7 dí
 
 ### Cambio 1: Limitar iteraciones por tarea en el briefing
 
-**Archivo:** `agents/researcher.md` (briefing del agente)
+**Archivo:** `agents/researcher/briefing.md` (sección de política)
 
-**Snippet a añadir** (justo antes de "Política de delegación"):
+**Snippet a añadir al final de "Política de delegación":**
 
 ```markdown
-## Límites operativos
+## Límite de iteraciones
 
-- **Máximo de iteraciones por tarea:** 6
-- Si tras 6 iteraciones no hay respuesta final → abortar y reportar `"Límite de iteraciones alcanzado. Pendiente: [resumen de lo investigado]"`.
-- No iniciar nuevas búsquedas si ya se han usado 4 iteraciones; priorizar sintetizar lo encontrado.
+- **max_iterations_per_task:** 6
+- Si alcanzas 6 iteraciones sin respuesta final, envía un resumen parcial con `[PARCIAL]` en el subject y aborta explícitamente.
+- NO continúes iterando tras el límite aunque tengas capacidad restante.
 ```
 
-**Razón:** El agente llega a 8 iteraciones (cap) porque no tiene un límite interno. Forzar aborto temprano con reporte evita saturación y da visibilidad.
+**Razón:** El agente agota las 8 iteraciones permitidas por el sistema sin producir respuesta final, lo que causa abortos por cap. Un límite interno más bajo fuerza un cierre controlado.
 
 ---
 
-### Cambio 2: Reducir `max_iterations` en configuración del agente
+### Cambio 2: Reducir `max_iterations` en la configuración del agente
 
-**Archivo:** `openclaw.json` (config global de agentes)
+**Archivo:** `openclaw.json` (sección del agente `researcher`)
 
 **Diff:**
 
-```json
-{
-  "agents": {
-    "researcher": {
-      // ... resto de props
-      "max_iterations": 6,
-      "max_tokens_per_turn": 300000
-    }
-  }
-}
+```diff
+- "max_iterations": 8,
++ "max_iterations": 5,
 ```
 
-**Razón:** Bajar de 8 a 6 iteraciones máximas evita que el agente tope el cap de iteraciones (8) y fuerza a sintetizar antes. El aborto por tokens (500k) también se mitiga indirectamente.
+**Razón:** Bajar el límite global de 8 a 5 fuerza al agente a ser más directo y evita que entre en bucles de búsqueda excesivos.
 
 ---
 
-### Cambio 3: Añadir directiva de síntesis temprana en el briefing
+### Cambio 3: Añadir directiva de "respuesta mínima viable"
 
-**Archivo:** `agents/researcher.md`
+**Archivo:** `agents/researcher/briefing.md` (sección "Directiva de búsqueda")
 
-**Snippet a añadir** al final de "Human notes":
+**Snippet a reemplazar:**
 
 ```markdown
-### Síntesis obligatoria
+## Directiva de búsqueda
 
-- A partir de la iteración 4, **prohíbo** nuevas tool_calls de búsqueda/lectura.
-- En iteración 4-6: solo sintetizar lo recolectado y generar respuesta final.
-- Si la tarea requiere más datos de los obtenidos en 4 iteraciones → incluir en el reporte: `"Datos insuficientes para conclusión definitiva. Áreas no cubiertas: [lista]"`.
+- **Objetivo:** respuesta mínima viable en ≤5 iteraciones.
+- Si tras 3 tool_calls no tienes un hallazgo concreto, cambia de estrategia (reduce scope, usa grep más específico, o pregunta directamente).
+- Prohibido: leer más de 5 archivos sin sintetizar un hallazgo intermedio.
+- Si la tarea requiere >5 fuentes, delega subtareas a otro agente o reporta `[SCOPE_EXCEDIDO]`.
 ```
 
-**Razón:** Los runs fallidos muestran 11-37 tool_calls. Cortar búsquedas en iter 4 fuerza a decidir con lo que hay, evitando bucles de recolección.
+**Razón:** Los runs muestran 11-37 tool_calls sin respuesta final. Una directiva explícita de "respuesta mínima viable" rompe el bucle de búsqueda excesiva.
 
 ## Patrón: `tokens-budget-tight`
 
@@ -105,54 +99,62 @@ _Generado por `hermes/learnings.py` el 2026-05-23T04:00:34+00:00. Ventana: 7 dí
 
 ## Cambios propuestos
 
-### Cambio 1: Limitar contexto inicial del researcher vía `max_input_tokens` en caps env
+### Cambio 1: Limitar herramientas de búsqueda para reducir tokens de entrada
 
-**Archivo:** `openclaw.json` (sección `caps.env` del agente researcher)
+**Archivo:** `briefing del agente researcher` (sección de herramientas o directivas)
+
+**Snippet a añadir (al final del briefing, antes de los comentarios):**
+
+```markdown
+## Límites de búsqueda
+
+- Para investigaciones que requieran >5 búsquedas `grep_search` o `read_file`, usar primero `list_dir` para acotar.
+- Si tras 3 tool_calls consecutivas de lectura/búsqueda no hay avance → reportar hallazgo parcial y abortar.
+- **Prohibido**: leer archivos completos >50KB sin necesidad justificada. Usar `head -n 100` vía `run_bash`.
+```
+
+**Razón:** Los runs abortados muestran 21-37 tool_calls con `grep_search`, `read_file`, `list_dir` que inflan input_tokens hasta 434K. Acotar búsquedas reduce drásticamente el consumo.
+
+---
+
+### Cambio 2: Configurar `max_input_tokens` en caps/env para researcher
+
+**Archivo:** `openclaw.json` (sección `caps` o `env` del agente researcher)
 
 **Snippet:**
+
 ```json
 {
   "agent_id": "researcher",
   "caps": {
-    "env": {
-      "MAX_INPUT_TOKENS_PER_TURN": 150000,
-      "MAX_TOKENS_PER_USER_TURN": 300000,
-      "MAX_ITERATIONS": 12
-    }
+    "max_input_tokens_per_turn": 250000,
+    "max_tool_calls_per_turn": 15,
+    "max_iterations": 6
   }
 }
 ```
 
-**Razón:** El run 101232 consumió 434k input tokens (87% del límite global de 500k). Forzar un tope de 150k por turno obliga al agente a delegar o resumir antes de saturar el contexto.
+**Razón:** El límite global de 500K se excede porque researcher no tiene límite propio. Poner 250K fuerza al agente a ser más conciso antes de abortar por el global, y 15 tool_calls evita loops de búsqueda.
 
-### Cambio 2: Añadir directiva de chunking y delegación en briefing
+---
 
-**Archivo:** `briefings/researcher.md` (sección "Directiva de búsqueda")
+### Cambio 3: Añadir directiva de "primer tool_call informativo"
 
-**Diff:**
-```diff
-- **Directiva de búsqueda:** Basa tus investigaciones en documentación oficial y fuentes recientes. Verifica meticulosamente la información antes de integrarla o sugerirla para el vault.
-+ **Directiva de búsqueda:** 
-+ - Si una tarea requiere >5 archivos o >100k tokens de contexto, divide en subtareas y delega a ti mismo (spawn child researcher) con `max_iterations: 6`.
-+ - Antes de cada tool_call, verifica tokens acumulados. Si input_tokens > 120k, fuerza un resumen intermedio y reinicia contexto.
-+ - Basa tus investigaciones en documentación oficial y fuentes recientes. Verifica meticulosamente la información antes de integrarla o sugerirla para el vault.
-```
-
-**Razón:** Los 3 fallos comparten tool_calls excesivos (11-37) sin delegación. La directiva fuerza chunking explícito.
-
-### Cambio 3: Configurar `allow_agents` para auto-delegación
-
-**Archivo:** `openclaw.json` (sección `allow_agents` del researcher)
+**Archivo:** `briefing del agente researcher` (sección de directivas, antes de "Directiva de búsqueda")
 
 **Snippet:**
-```json
-{
-  "agent_id": "researcher",
-  "allow_agents": ["researcher", "planner"]
-}
+
+```markdown
+### Regla de primer tool_call
+
+Antes de cualquier búsqueda, ejecuta `run_bash` con:
+```bash
+echo "Plan: [1-3 pasos concretos]. Archivos clave: [paths]. Tamaño estimado: [KB]"
+```
+Esto fuerza planificación antes de consumir tokens. Si el plan >3 pasos → abortar y reportar.
 ```
 
-**Razón:** Permitir que researcher se spawn a sí mismo permite ejecutar el chunking propuesto en cambio 2 sin depender de planner.
+**Razón:** Los runs abortados muestran 11-37 tool_calls sin un plan visible. Forzar un tool_call inicial de planificación reduce iteraciones innecesarias y tokens de contexto.
 
 ## Apply
 
