@@ -6,11 +6,18 @@ category: general
 date: 2026-05-24T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-inbox
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/skill-reviewer]]"
+  - "[[skills/external/gsd-check-todos]]"
+  - "[[skills/external/gsd-review-backlog]]"
+  - "[[skills/external/gsd-scan]]"
+  - "[[skills/external/triage-issue]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-24
 ---
+
 
 # `gsd-inbox` (external skill)
 
