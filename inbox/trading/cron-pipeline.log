@@ -1299,3 +1299,16 @@
 2026/05/23 23:30:03 executor.go:197: executor: entered [short] Will the price of Bitcoin be above $76,000 on May 24? @ 0.7600 size=$60.09 (open=50/50, bankroll=$2945)
 2026/05/23 23:30:03 executor.go:202: executor: 1 entered, 85 rejected
 2026/05/23 23:30:03 main.go:13: executor: done
+2026/05/24 00:00:03 main.go:11: executor: starting one-shot pass
+2026/05/24 00:00:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/24 00:00:03 executor.go:62: executor: quota slots this run: short=35 medium=8 long=8 (of 50 remaining today)
+2026/05/24 00:00:03 executor.go:197: executor: entered [short] Will Nashville SC win on 2026-05-23? @ 0.5300 size=$60.50 (open=50/50, bankroll=$2965)
+2026/05/24 00:00:03 executor.go:202: executor: 1 entered, 85 rejected
+2026/05/24 00:00:03 main.go:13: executor: done
+2026/05/24 00:30:03 main.go:11: executor: starting one-shot pass
+2026/05/24 00:30:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/24 00:30:03 executor.go:62: executor: quota slots this run: short=35 medium=8 long=8 (of 49 remaining today)
+2026/05/24 00:30:03 executor.go:197: executor: entered [short] Will Chicago Fire FC win on 2026-05-23? @ 0.7100 size=$63.00 (open=49/50, bankroll=$3087)
+2026/05/24 00:30:03 executor.go:197: executor: entered [short] Will Elon Musk post 240-259 tweets from May 19 to May 26, 2026? @ 0.1100 size=$61.74 (open=50/50, bankroll=$3025)
+2026/05/24 00:30:03 executor.go:202: executor: 2 entered, 84 rejected
+2026/05/24 00:30:03 main.go:13: executor: done

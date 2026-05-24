@@ -1,5 +1,5 @@
 {
-  "bankroll": 3025.1781194563946,
+  "bankroll": 3115.3936649906946,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -352,22 +352,6 @@
       "size_usd": 57.52928942438156
     },
     {
-      "approved_price": 0.73,
-      "category": "uncategorized",
-      "days_to_resolution": 0,
-      "end_date": "2026-05-23T18:00:00Z",
-      "entry_price": 0.73,
-      "entry_timestamp": "2026-05-22T22:00:04Z",
-      "horizon": "short",
-      "id": "T-2087616-1779487204257",
-      "liquidity_usd": 335407.0366,
-      "market_id": "2087616",
-      "question": "Will FC Bayern München win on 2026-05-23?",
-      "side": "yes",
-      "size": 65.59818552839538,
-      "size_usd": 65.59818552839538
-    },
-    {
       "approved_price": 0.84,
       "category": "uncategorized",
       "days_to_resolution": 8,
@@ -640,22 +624,6 @@
       "size_usd": 64.54599816120941
     },
     {
-      "approved_price": 0.08,
-      "category": "uncategorized",
-      "days_to_resolution": 2,
-      "end_date": "2026-05-26T16:00:00Z",
-      "entry_price": 0.08,
-      "entry_timestamp": "2026-05-23T21:30:04Z",
-      "horizon": "short",
-      "id": "T-2313547-1779571804012",
-      "liquidity_usd": 31698.01549,
-      "market_id": "2313547",
-      "question": "Will Elon Musk post 240-259 tweets from May 19 to May 26, 2026?",
-      "side": "yes",
-      "size": 63.25507819798522,
-      "size_usd": 63.25507819798522
-    },
-    {
       "approved_price": 0.196,
       "category": "uncategorized",
       "days_to_resolution": 2,
@@ -686,22 +654,6 @@
       "side": "yes",
       "size": 60.75017710134501,
       "size_usd": 60.75017710134501
-    },
-    {
-      "approved_price": 0.145,
-      "category": "uncategorized",
-      "days_to_resolution": 7,
-      "end_date": "2026-05-31T00:00:00Z",
-      "entry_price": 0.145,
-      "entry_timestamp": "2026-05-23T23:00:04Z",
-      "horizon": "medium",
-      "id": "T-2111640-1779577204027",
-      "liquidity_usd": 65257.73143,
-      "market_id": "2111640",
-      "question": "US-Iran nuclear deal by May 31?",
-      "side": "yes",
-      "size": 64.30050990047559,
-      "size_usd": 64.30050990047559
     },
     {
       "approved_price": 0.6,
@@ -782,7 +734,55 @@
       "side": "yes",
       "size": 60.093098537929954,
       "size_usd": 60.093098537929954
+    },
+    {
+      "approved_price": 0.53,
+      "category": "uncategorized",
+      "days_to_resolution": 0,
+      "end_date": "2026-05-24T00:30:00Z",
+      "entry_price": 0.53,
+      "entry_timestamp": "2026-05-24T00:00:03Z",
+      "horizon": "short",
+      "id": "T-2086885-1779580803643",
+      "liquidity_usd": 122184.7619,
+      "market_id": "2086885",
+      "question": "Will Nashville SC win on 2026-05-23?",
+      "side": "yes",
+      "size": 60.50356238912789,
+      "size_usd": 60.50356238912789
+    },
+    {
+      "approved_price": 0.71,
+      "category": "uncategorized",
+      "days_to_resolution": 0,
+      "end_date": "2026-05-24T00:30:00Z",
+      "entry_price": 0.71,
+      "entry_timestamp": "2026-05-24T00:30:03Z",
+      "horizon": "short",
+      "id": "T-2086901-1779582603386",
+      "liquidity_usd": 296014.904,
+      "market_id": "2086901",
+      "question": "Will Chicago Fire FC win on 2026-05-23?",
+      "side": "yes",
+      "size": 63.002356415872946,
+      "size_usd": 63.002356415872946
+    },
+    {
+      "approved_price": 0.11,
+      "category": "uncategorized",
+      "days_to_resolution": 2,
+      "end_date": "2026-05-26T16:00:00Z",
+      "entry_price": 0.11,
+      "entry_timestamp": "2026-05-24T00:30:03Z",
+      "horizon": "short",
+      "id": "T-2313547-1779582603386",
+      "liquidity_usd": 35130.65675,
+      "market_id": "2313547",
+      "question": "Will Elon Musk post 240-259 tweets from May 19 to May 26, 2026?",
+      "side": "yes",
+      "size": 61.74230928755549,
+      "size_usd": 61.74230928755549
     }
   ],
-  "used_exposure": 3086.8939327307007
+  "used_exposure": 3078.988387196401
 }
