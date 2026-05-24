@@ -2,7 +2,7 @@
 title: "Polymarket veto — standx-fdv-above-1b-one-day-after-launch-758-887-458-572-867"
 type: decision
 date: 2026-05-24
-decision: "Veto de tesis 'StandX FDV above $1B one day after launch?' (rule P4_pre_event): pre-event slug + 222 d to resolution (>=7 threshold)"
+decision: "Veto de tesis 'StandX FDV above $1B one day after launch?' (rule P4_pre_event): pre-event slug + 221 d to resolution (>=7 threshold)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `standx-fdv-above-1b-one-day-after-launch-758-887-458-572-867`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.1400
+- **Precio YES**: 0.1500
 - **Volumen 24h**: 388017.58 USD
 - **End date**: 2027-01-01T05:00:00Z
 
@@ -29,7 +29,7 @@ related:
 
 **Regla aplicada**: `P4_pre_event`
 
-pre-event slug + 222 d to resolution (>=7 threshold)
+pre-event slug + 221 d to resolution (>=7 threshold)
 
 ## Human notes
 

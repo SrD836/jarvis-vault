@@ -1361,3 +1361,14 @@
 2026/05/24 04:30:03 executor.go:197: executor: entered [medium] Iran agrees to unrestricted shipping through Hormuz by May 31? @ 0.2050 size=$65.18 (open=50/50, bankroll=$3194)
 2026/05/24 04:30:03 executor.go:202: executor: 3 entered, 89 rejected
 2026/05/24 04:30:03 main.go:13: executor: done
+2026/05/24 05:00:04 main.go:11: executor: starting one-shot pass
+2026/05/24 05:00:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/24 05:00:04 executor.go:62: executor: quota slots this run: short=31 medium=7 long=7 (of 43 remaining today)
+2026/05/24 05:00:04 executor.go:202: executor: 0 entered, 91 rejected
+2026/05/24 05:00:04 main.go:13: executor: done
+2026/05/24 05:30:03 main.go:11: executor: starting one-shot pass
+2026/05/24 05:30:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/24 05:30:03 executor.go:62: executor: quota slots this run: short=31 medium=7 long=7 (of 44 remaining today)
+2026/05/24 05:30:03 executor.go:197: executor: entered [short] Will Newcastle United FC win on 2026-05-24? @ 0.4000 size=$65.56 (open=50/50, bankroll=$3212)
+2026/05/24 05:30:03 executor.go:202: executor: 1 entered, 91 rejected
+2026/05/24 05:30:03 main.go:13: executor: done

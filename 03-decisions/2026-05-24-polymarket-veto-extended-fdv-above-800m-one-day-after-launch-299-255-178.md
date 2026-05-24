@@ -2,7 +2,7 @@
 title: "Polymarket veto — extended-fdv-above-800m-one-day-after-launch-299-255-178"
 type: decision
 date: 2026-05-24
-decision: "Veto de tesis 'Extended FDV above $800M one day after launch?' (rule P4_pre_event): pre-event slug + 222 d to resolution (>=7 threshold)"
+decision: "Veto de tesis 'Extended FDV above $800M one day after launch?' (rule P4_pre_event): pre-event slug + 221 d to resolution (>=7 threshold)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -29,7 +29,7 @@ related:
 
 **Regla aplicada**: `P4_pre_event`
 
-pre-event slug + 222 d to resolution (>=7 threshold)
+pre-event slug + 221 d to resolution (>=7 threshold)
 
 ## Human notes
 

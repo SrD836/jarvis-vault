@@ -2,7 +2,7 @@
 title: "Polymarket veto — metamask-fdv-above-700m-one-day-after-launch-696-977-652-246-632"
 type: decision
 date: 2026-05-24
-decision: "Veto de tesis 'Metamask FDV above $700M one day after launch?' (rule P4_pre_event): pre-event slug + 222 d to resolution (>=7 threshold)"
+decision: "Veto de tesis 'Metamask FDV above $700M one day after launch?' (rule P4_pre_event): pre-event slug + 221 d to resolution (>=7 threshold)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `metamask-fdv-above-700m-one-day-after-launch-696-977-652-246-632`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.3540
+- **Precio YES**: 0.3450
 - **Volumen 24h**: 1350960.54 USD
 - **End date**: 2027-01-01T05:00:00Z
 
@@ -29,7 +29,7 @@ related:
 
 **Regla aplicada**: `P4_pre_event`
 
-pre-event slug + 222 d to resolution (>=7 threshold)
+pre-event slug + 221 d to resolution (>=7 threshold)
 
 ## Human notes
 
