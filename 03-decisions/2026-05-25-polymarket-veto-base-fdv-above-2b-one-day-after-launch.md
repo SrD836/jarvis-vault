@@ -20,7 +20,7 @@ related:
 ## Mercado
 
 - **Slug**: `base-fdv-above-2b-one-day-after-launch`
-- **Categoría**: uncategorized
+- **Categoría**: crypto-launch
 - **Precio YES**: 0.8000
 - **Volumen 24h**: 221259.61 USD
 - **End date**: 2028-01-01T05:00:00Z

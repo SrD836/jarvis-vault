@@ -2,7 +2,7 @@
 title: "Polymarket veto — ucl-psg-ars-2026-05-30-psg"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'Will Paris Saint-Germain FC win on 2026-05-30?' (rule M2): M2 soft-learned: uncategorized·medium·0.30-0.70 = 5L/0W (wr 0%)"
+decision: "Veto de tesis 'Will Paris Saint-Germain FC win on 2026-05-30?' (rule M2): M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -20,16 +20,16 @@ related:
 ## Mercado
 
 - **Slug**: `ucl-psg-ars-2026-05-30-psg`
-- **Categoría**: uncategorized
+- **Categoría**: other
 - **Precio YES**: 0.4100
-- **Volumen 24h**: 75976.51 USD
+- **Volumen 24h**: 81044.50 USD
 - **End date**: 2026-05-30T16:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `M2`
 
-M2 soft-learned: uncategorized·medium·0.30-0.70 = 5L/0W (wr 0%)
+M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)
 
 ## Human notes
 

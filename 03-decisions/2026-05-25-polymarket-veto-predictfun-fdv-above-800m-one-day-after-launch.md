@@ -20,7 +20,7 @@ related:
 ## Mercado
 
 - **Slug**: `predictfun-fdv-above-800m-one-day-after-launch`
-- **Categoría**: uncategorized
+- **Categoría**: crypto-launch
 - **Precio YES**: 0.3100
 - **Volumen 24h**: 214759.30 USD
 - **End date**: 2028-01-01T05:00:00Z

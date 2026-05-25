@@ -20,7 +20,7 @@ related:
 ## Mercado
 
 - **Slug**: `will-houston-texans-win-the-2027-nfl-afc-championship-334`
-- **Categoría**: uncategorized
+- **Categoría**: sports-season
 - **Precio YES**: 0.1000
 - **Volumen 24h**: 98492.26 USD
 - **End date**: 2027-01-25T00:00:00Z
@@ -34,6 +34,7 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-houston-texans-win-the-2027-nfl-afc-championship-334` score=1.00 (exact slug match)
+- veto `will-baker-mayfield-win-the-2026-nfl-mvp` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

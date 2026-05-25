@@ -33,14 +33,21 @@ type ActiveRule struct {
 }
 
 // Matches reports whether a candidate matches this rule.
-// Category match: case-insensitive exact OR the rule is "uncategorized" and
-// the candidate has empty category (Polymarket Gamma API often returns "").
-// Horizon "?" in the rule = wildcard.
+// Category match: case-insensitive exact OR the rule is "uncategorized" (which
+// is the legacy bucket holding historical losses before category inference
+// existed — treated as wildcard for any non-market category so the historical
+// learning still vetoes new candidates during the transition period).
+// Horizon "?" in the rule = wildcard. Market category is excluded from the
+// wildcard because P6 marketcheck handles it independently.
 func (r ActiveRule) Matches(category, horizon string, price float64) bool {
 	cat := strings.TrimSpace(strings.ToLower(category))
 	ruleCat := strings.TrimSpace(strings.ToLower(r.Category))
 	if ruleCat != cat {
-		if !(ruleCat == "uncategorized" && cat == "") {
+		// Legacy bucket fallback: "uncategorized" matches any non-market
+		// category (including empty string) so pre-inference rules keep working.
+		if ruleCat == "uncategorized" && cat != "market" {
+			// allow
+		} else {
 			return false
 		}
 	}

@@ -20,7 +20,7 @@ related:
 ## Mercado
 
 - **Slug**: `will-james-fishback-be-the-republican-nominee-for-florida-governor`
-- **Categoría**: uncategorized
+- **Categoría**: elections
 - **Precio YES**: 0.1100
 - **Volumen 24h**: 413173.32 USD
 - **End date**: 2026-08-18T00:00:00Z

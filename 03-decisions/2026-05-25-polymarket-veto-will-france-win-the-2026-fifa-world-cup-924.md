@@ -20,9 +20,9 @@ related:
 ## Mercado
 
 - **Slug**: `will-france-win-the-2026-fifa-world-cup-924`
-- **Categoría**: uncategorized
+- **Categoría**: sports-season
 - **Precio YES**: 0.1760
-- **Volumen 24h**: 295555.29 USD
+- **Volumen 24h**: 276642.57 USD
 - **End date**: 2026-07-20T00:00:00Z
 
 ## Razón del veto

@@ -20,9 +20,9 @@ related:
 ## Mercado
 
 - **Slug**: `us-iran-nuclear-deal-by-june-30`
-- **Categoría**: uncategorized
-- **Precio YES**: 0.4100
-- **Volumen 24h**: 222626.92 USD
+- **Categoría**: geopolitics
+- **Precio YES**: 0.4000
+- **Volumen 24h**: 217966.19 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto

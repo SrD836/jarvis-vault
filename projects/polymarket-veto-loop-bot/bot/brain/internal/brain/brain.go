@@ -13,6 +13,7 @@ import (
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/config"
 	commontypes "github.com/davidgn/polymarket-veto-loop-bot/bot/common/types"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/decisionlog"
+	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/antipatterns"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/llmclient"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/marketcheck"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/memory"
@@ -41,10 +42,15 @@ const (
 	ruleWindow         = "P1"
 	ruleMem            = "M1"
 	ruleSoftLearned    = "M2"
+	ruleAntiPattern    = "M3"
 	ruleMarketCheck    = "P6"
 	ruleNews1          = "N1"
 	ruleNews2          = "N2"
 	memoryHitThreshold = 0.7
+	// maxResearchPerCycle caps Claude Max research calls to keep brain runtime
+	// inside the 30-min cron window. Cache TTL is 6h so cumulative coverage
+	// across cycles still reaches most candidates.
+	maxResearchPerCycle = 30
 )
 
 func Run() error {
@@ -79,8 +85,8 @@ func Run() error {
 	if !disableResearch {
 		researcher, err = research.NewClient(tavilyConnPath, dashboardURL, researchCachePath)
 		if err != nil {
-			log.Printf("WARN: research client failed (%v) — news vetoes disabled", err)
-			researcher = nil
+			log.Printf("WARN: Tavily connector missing (%v) — falling back to Claude Max research (no external API key)", err)
+			researcher = research.NewClaudemaxClient(dashboardURL, researchCachePath)
 		}
 
 	// v4: load per-source quality stats and feed the blacklist to the researcher.
@@ -107,8 +113,19 @@ func Run() error {
 	_ = now
 
 	stats := struct {
-		P0, P1, P2, P3, P4, P6, V1, V2, V4, M1, M2, N1, N2, LLM int
+		P0, P1, P2, P3, P4, P6, P7, P8, P9, P10, V1, V2, V4, M1, M2, M3, N1, N2, LLM int
 	}{}
+
+	// M3 prep: anti-patterns extracted from LLM post-mortems on past losses.
+	// Tags appearing ≥3 times are treated as active veto signals.
+	activeAntiPatterns, apErr := antipatterns.LoadActive(memoryPath, 3)
+	if apErr != nil {
+		log.Printf("WARN: load anti-patterns: %v (M3 disabled this cycle)", apErr)
+	}
+	log.Printf("M3: loaded %d active anti-patterns from memory.md", len(activeAntiPatterns))
+
+	researchCalls := 0
+	_ = researchCalls // referenced in loop below
 
 	// M2 prep: load soft-learned veto rules from memory.md. These are the
 	// auto-generated cluster rules (category·horizon·priceBand → win rate < 30%).
@@ -159,6 +176,33 @@ func Run() error {
 			blocked = append(blocked, *vr)
 			recordVeto(mem, &c, *vr, decisionsDir, false)
 			stats.P2++
+			continue
+		}
+
+		// P7-P10: per-category hard rules (cheap pre-research filters).
+		dToEnd := daysUntil(c.EndDate)
+		if vr := rules.EvalWeatherNatural(&c); vr != nil {
+			blocked = append(blocked, *vr)
+			recordVeto(mem, &c, *vr, decisionsDir, false)
+			stats.P7++
+			continue
+		}
+		if vr := rules.EvalElectionFar(&c, dToEnd); vr != nil {
+			blocked = append(blocked, *vr)
+			recordVeto(mem, &c, *vr, decisionsDir, false)
+			stats.P8++
+			continue
+		}
+		if vr := rules.EvalGeopoliticsPump(&c, dToEnd); vr != nil {
+			blocked = append(blocked, *vr)
+			recordVeto(mem, &c, *vr, decisionsDir, true)
+			stats.P9++
+			continue
+		}
+		if vr := rules.EvalSportsChalk(&c, dToEnd); vr != nil {
+			blocked = append(blocked, *vr)
+			recordVeto(mem, &c, *vr, decisionsDir, false)
+			stats.P10++
 			continue
 		}
 
@@ -242,10 +286,29 @@ func Run() error {
 			}
 		}
 
-		// N1/N2: news research
+		// M3: anti-pattern textual match (from LLM-extracted lessons in past losses).
+		if len(activeAntiPatterns) > 0 {
+			if ap := antipatterns.MatchVeto(activeAntiPatterns, c.Slug, c.Question); ap != nil {
+				vr := types.VetoResult{
+					CandidateID: c.ID, Slug: c.Slug, Blocked: true,
+					Reason:   fmt.Sprintf("M3 anti-pattern: %q (visto %d veces)", ap.Text, ap.Count),
+					VetoedBy: ruleAntiPattern,
+				}
+				blocked = append(blocked, vr)
+				recordVeto(mem, &c, vr, decisionsDir, true)
+				stats.M3++
+				continue
+			}
+		}
+
+		// N1/N2: news research. Rate-limited: only candidates in the "news matters"
+		// price band (0.20-0.80) and capped per cycle to keep cron tick under
+		// budget. Outside that band the price is too lopsided for a single
+		// headline to swing the trade enough to matter.
 		var researchSummary string
 		var sourceCites []commontypes.SourceCite
-		if researcher != nil {
+		if researcher != nil && c.CurrentPriceYes >= 0.20 && c.CurrentPriceYes <= 0.80 && researchCalls < maxResearchPerCycle {
+			researchCalls++
 			verdict, _, cites := researcher.EvaluateFull(c.Question, "yes")
 			sourceCites = cites
 			researchSummary = fmt.Sprintf("Tavily+DeepSeek: confirms=%v contradicts=%v silent=%v score=%.2f — %s",
@@ -346,9 +409,9 @@ func Run() error {
 	}
 
 	softrules.GenerateAndAppend(memoryPath)
-	log.Printf("Brain v3 done: %d approved, %d blocked (P0=%d P2=%d P3=%d P4=%d P6=%d V1=%d V2=%d V4=%d M1=%d M2=%d N1=%d N2=%d LLM=%d) horizons in approved: short=%d medium=%d long=%d",
+	log.Printf("Brain v3 done: %d approved, %d blocked (P0=%d P2=%d P3=%d P4=%d P6=%d P7=%d P8=%d P9=%d P10=%d V1=%d V2=%d V4=%d M1=%d M2=%d M3=%d N1=%d N2=%d LLM=%d) horizons in approved: short=%d medium=%d long=%d",
 		len(approved), len(blocked),
-		stats.P0, stats.P2, stats.P3, stats.P4, stats.P6, stats.V1, stats.V2, stats.V4, stats.M1, stats.M2, stats.N1, stats.N2, stats.LLM,
+		stats.P0, stats.P2, stats.P3, stats.P4, stats.P6, stats.P7, stats.P8, stats.P9, stats.P10, stats.V1, stats.V2, stats.V4, stats.M1, stats.M2, stats.M3, stats.N1, stats.N2, stats.LLM,
 		countHorizon(approved, "short"), countHorizon(approved, "medium"), countHorizon(approved, "long"))
 	return nil
 }

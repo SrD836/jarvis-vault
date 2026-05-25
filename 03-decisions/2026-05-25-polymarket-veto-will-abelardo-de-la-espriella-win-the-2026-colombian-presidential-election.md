@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-abelardo-de-la-espriella-win-the-2026-colombian-presidential-election"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'Will Abelardo de la Espriella  win the 2026 Colombian presidential election?' (rule M2): M2 soft-learned: uncategorized·medium·0.30-0.70 = 5L/0W (wr 0%)"
+decision: "Veto de tesis 'Will Abelardo de la Espriella  win the 2026 Colombian presidential election?' (rule M2): M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -20,16 +20,16 @@ related:
 ## Mercado
 
 - **Slug**: `will-abelardo-de-la-espriella-win-the-2026-colombian-presidential-election`
-- **Categoría**: uncategorized
+- **Categoría**: elections
 - **Precio YES**: 0.6400
-- **Volumen 24h**: 56619.18 USD
+- **Volumen 24h**: 54783.05 USD
 - **End date**: 2026-06-21T14:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `M2`
 
-M2 soft-learned: uncategorized·medium·0.30-0.70 = 5L/0W (wr 0%)
+M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)
 
 ## Human notes
 

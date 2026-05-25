@@ -9,6 +9,7 @@ import (
 	"time"
 
 	commontypes "github.com/davidgn/polymarket-veto-loop-bot/bot/common/types"
+	"github.com/davidgn/polymarket-veto-loop-bot/bot/exit_monitor/internal/postmortem"
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/exit_monitor/internal/types"
 )
 
@@ -114,7 +115,28 @@ func writeDecisionLog(decisionsDir string, ct types.ClosedTrade) {
 
 	if err := os.WriteFile(path, []byte(b.String()), 0644); err != nil {
 		fmt.Fprintf(os.Stderr, "[loglosses] write %s: %v\n", path, err)
+		return
 	}
+
+	// Synchronous post-mortem via claudemax (~30-60s). exit_monitor runs as a
+	// one-shot cron every 5 min so we have ample headroom; goroutine would be
+	// killed when main() returns. Best-effort: postmortem.Run swallows errors.
+	dashboardURL := os.Getenv("DASHBOARD_URL")
+	if dashboardURL == "" {
+		dashboardURL = "http://jarvis-dashboard:3000"
+	}
+	memoryPath := os.Getenv("EXIT_MEMORY_PATH")
+	if memoryPath == "" {
+		memoryPath = "vault/agents/polymarket-bot/memory.md"
+	}
+	postmortem.Run(dashboardURL, path, memoryPath, postmortem.LossContext{
+		Slug: ct.Slug, Question: ct.Question, Category: ct.Category,
+		EntryPrice: ct.EntryPrice, ExitPrice: ct.ExitPrice,
+		SizeUSD: ct.Size, PnlUSD: ct.Pnl, DaysHeld: ct.DaysOpen,
+		Horizon: ct.Horizon, ExitReason: ct.Reason,
+		SourcesUsed: ct.SourcesUsed,
+		Date:        date,
+	})
 }
 
 func appendMemoryRow(memoryPath string, ct types.ClosedTrade, isLoss bool) {

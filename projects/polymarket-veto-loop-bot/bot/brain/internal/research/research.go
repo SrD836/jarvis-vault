@@ -450,6 +450,10 @@ func (c *Client) EvaluateFull(question, side string) (Verdict, []Headline, []com
 	if c == nil {
 		return Verdict{Silent: true, Summary: "research client nil"}, nil, nil
 	}
+	// No Tavily key → use Claude Max OAuth fallback (own WebSearch, no external API key).
+	if c.TavilyAPIKey == "" {
+		return c.evaluateFullClaudemax(question, side)
+	}
 	query := question
 	hash := hashQuery(query)
 

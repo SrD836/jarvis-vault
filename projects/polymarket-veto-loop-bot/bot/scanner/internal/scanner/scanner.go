@@ -12,6 +12,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/categorize"
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/config"
 	"github.com/davidgnuez/polymarket-veto-bot/scanner/internal/types"
 )
@@ -151,9 +152,14 @@ func convert(m types.Market, now string) (types.Candidate, bool) {
 		return types.Candidate{}, false
 	}
 
-	category := "uncategorized"
+	category := ""
 	if len(m.Events) > 0 && m.Events[0].Category != "" {
 		category = m.Events[0].Category
+	}
+	if category == "" || category == "uncategorized" {
+		// Gamma API returns empty for most markets; infer locally so that
+		// softrules clusters and per-category hard rules (P7-P10) work.
+		category = categorize.Infer(m.Slug, m.Question)
 	}
 
 	return types.Candidate{

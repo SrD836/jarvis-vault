@@ -20,8 +20,8 @@ related:
 ## Mercado
 
 - **Slug**: `will-trump-recognize-somaliland-before-2027`
-- **Categoría**: uncategorized
-- **Precio YES**: 0.1650
+- **Categoría**: executive-action
+- **Precio YES**: 0.1470
 - **Volumen 24h**: 154251.68 USD
 - **End date**: 2026-12-31T00:00:00Z
 

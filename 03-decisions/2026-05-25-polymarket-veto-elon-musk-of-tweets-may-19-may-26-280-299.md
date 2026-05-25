@@ -20,9 +20,9 @@ related:
 ## Mercado
 
 - **Slug**: `elon-musk-of-tweets-may-19-may-26-280-299`
-- **Categoría**: uncategorized
-- **Precio YES**: 0.2800
-- **Volumen 24h**: 65763.52 USD
+- **Categoría**: other
+- **Precio YES**: 0.2400
+- **Volumen 24h**: 70246.92 USD
 - **End date**: 2026-05-26T16:00:00Z
 
 ## Razón del veto

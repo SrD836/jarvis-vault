@@ -2,7 +2,7 @@
 title: "Polymarket veto — us-x-iran-permanent-peace-deal-by-june-30-2026-837-641-896-877-363-892-537"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'US x Iran permanent peace deal by June 30, 2026?' (rule M2): M2 soft-learned: uncategorized·medium·0.30-0.70 = 5L/0W (wr 0%)"
+decision: "Veto de tesis 'US x Iran permanent peace deal by June 30, 2026?' (rule M2): M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -20,16 +20,16 @@ related:
 ## Mercado
 
 - **Slug**: `us-x-iran-permanent-peace-deal-by-june-30-2026-837-641-896-877-363-892-537`
-- **Categoría**: uncategorized
-- **Precio YES**: 0.5100
-- **Volumen 24h**: 592074.88 USD
+- **Categoría**: geopolitics
+- **Precio YES**: 0.5300
+- **Volumen 24h**: 532115.72 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `M2`
 
-M2 soft-learned: uncategorized·medium·0.30-0.70 = 5L/0W (wr 0%)
+M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)
 
 ## Human notes
 

@@ -194,3 +194,71 @@ func EvalPreEventVeto(c *types.Candidate, minDays int) *types.VetoResult {
 	}
 	return nil
 }
+
+// EvalWeatherNatural (P7): veto every "weather-natural" candidate.
+// Historical wr in this cluster is < 10% — earthquake / volcanic / pandemic
+// markets are pure noise with no information edge for a retail predictor.
+func EvalWeatherNatural(c *types.Candidate) *types.VetoResult {
+	if c.Category != "weather-natural" {
+		return nil
+	}
+	return &types.VetoResult{
+		CandidateID: c.ID, Slug: c.Slug, Blocked: true,
+		Reason:   "P7: weather/natural-disaster cluster — no edge",
+		VetoedBy: "P7",
+	}
+}
+
+// EvalElectionFar (P8): veto elections > 90 days away with price in noisy
+// band [0.30, 0.70]. Far-future elections oscillate on news; only trade
+// extreme convictions.
+func EvalElectionFar(c *types.Candidate, daysToEnd int) *types.VetoResult {
+	if c.Category != "elections" || daysToEnd <= 90 {
+		return nil
+	}
+	p := c.CurrentPriceYes
+	if p < 0.30 || p > 0.70 {
+		return nil
+	}
+	return &types.VetoResult{
+		CandidateID: c.ID, Slug: c.Slug, Blocked: true,
+		Reason: fmt.Sprintf("P8: election %dd out, price %.2f en banda ruido [0.30, 0.70]",
+			daysToEnd, p),
+		VetoedBy: "P8",
+	}
+}
+
+// EvalGeopoliticsPump (P9): geopolitics with low price + short horizon
+// is the pump-and-dump cluster (ceasefire/airspace/strait rumor spikes).
+// Veto price ∈ [0.05, 0.30] AND days_to_resolution ≤ 14.
+func EvalGeopoliticsPump(c *types.Candidate, daysToEnd int) *types.VetoResult {
+	if c.Category != "geopolitics" || daysToEnd > 14 || daysToEnd < 0 {
+		return nil
+	}
+	p := c.CurrentPriceYes
+	if p < 0.05 || p > 0.30 {
+		return nil
+	}
+	return &types.VetoResult{
+		CandidateID: c.ID, Slug: c.Slug, Blocked: true,
+		Reason:   fmt.Sprintf("P9: geopolitics pump cluster (price %.2f, %dd)", p, daysToEnd),
+		VetoedBy: "P9",
+	}
+}
+
+// EvalSportsChalk (P10): same-day sports with price > 0.85 has RR ≤ 0.18.
+// One loss erases 5 wins. Veto.
+func EvalSportsChalk(c *types.Candidate, daysToEnd int) *types.VetoResult {
+	if c.Category != "sports-game" || daysToEnd > 2 || daysToEnd < 0 {
+		return nil
+	}
+	if c.CurrentPriceYes <= 0.85 {
+		return nil
+	}
+	return &types.VetoResult{
+		CandidateID: c.ID, Slug: c.Slug, Blocked: true,
+		Reason: fmt.Sprintf("P10: sports same-day chalk (price %.2f, RR≈%.2f)",
+			c.CurrentPriceYes, (1-c.CurrentPriceYes)/c.CurrentPriceYes),
+		VetoedBy: "P10",
+	}
+}

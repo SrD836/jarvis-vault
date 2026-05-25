@@ -20,7 +20,7 @@ related:
 ## Mercado
 
 - **Slug**: `will-charles-mccall-win-the-2026-oklahoma-governor-republican-primary-election`
-- **Categoría**: uncategorized
+- **Categoría**: elections
 - **Precio YES**: 0.1200
 - **Volumen 24h**: 118740.53 USD
 - **End date**: 2026-06-16T00:00:00Z

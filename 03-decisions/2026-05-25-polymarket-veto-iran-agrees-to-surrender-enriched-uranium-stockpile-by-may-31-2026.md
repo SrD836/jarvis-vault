@@ -2,13 +2,13 @@
 title: "Polymarket veto — iran-agrees-to-surrender-enriched-uranium-stockpile-by-may-31-2026"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'Iran agrees to surrender enriched uranium stockpile by May 31, 2026?' (rule M2): M2 soft-learned: uncategorized·medium·0.10-0.30 = 11L/2W (wr 15%)"
+decision: "Veto de tesis 'Iran agrees to surrender enriched uranium stockpile by May 31, 2026?' (rule P9): P9: geopolitics pump cluster (price 0.12, 5d)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, m2]
+tags: [decision, polymarket, bot, veto, p9]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -20,16 +20,16 @@ related:
 ## Mercado
 
 - **Slug**: `iran-agrees-to-surrender-enriched-uranium-stockpile-by-may-31-2026`
-- **Categoría**: uncategorized
-- **Precio YES**: 0.1160
-- **Volumen 24h**: 485325.50 USD
+- **Categoría**: geopolitics
+- **Precio YES**: 0.1150
+- **Volumen 24h**: 474321.31 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `M2`
+**Regla aplicada**: `P9`
 
-M2 soft-learned: uncategorized·medium·0.10-0.30 = 11L/2W (wr 15%)
+P9: geopolitics pump cluster (price 0.12, 5d)
 
 ## Human notes
 

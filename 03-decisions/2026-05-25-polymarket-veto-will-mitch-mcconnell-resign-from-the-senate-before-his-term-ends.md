@@ -20,7 +20,7 @@ related:
 ## Mercado
 
 - **Slug**: `will-mitch-mcconnell-resign-from-the-senate-before-his-term-ends`
-- **Categoría**: uncategorized
+- **Categoría**: executive-action
 - **Precio YES**: 0.2300
 - **Volumen 24h**: 115265.78 USD
 - **End date**: 2027-01-03T00:00:00Z

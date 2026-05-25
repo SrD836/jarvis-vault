@@ -2,13 +2,13 @@
 title: "Polymarket veto — iran-agrees-to-surrender-enriched-uranium-stockpile-by-june-30-2026"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'Iran agrees to surrender enriched uranium stockpile by June 30, 2026?' (rule M1): memoria: slug prefix match; same price bucket mid (score 0.70)"
+decision: "Veto de tesis 'Iran agrees to surrender enriched uranium stockpile by June 30, 2026?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, m1]
+tags: [decision, polymarket, bot, veto, m2]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -20,20 +20,16 @@ related:
 ## Mercado
 
 - **Slug**: `iran-agrees-to-surrender-enriched-uranium-stockpile-by-june-30-2026`
-- **Categoría**: uncategorized
-- **Precio YES**: 0.2800
-- **Volumen 24h**: 124079.30 USD
+- **Categoría**: geopolitics
+- **Precio YES**: 0.2700
+- **Volumen 24h**: 119746.70 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `M1`
+**Regla aplicada**: `M2`
 
-memoria: slug prefix match; same price bucket mid (score 0.70)
-
-## Patterns en memoria que contribuyeron
-
-- veto `iran-agrees-to-surrender-enriched-uranium-stockpile-by-december-31-2026` score=0.70 (slug prefix match; same price bucket mid)
+M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)
 
 ## Human notes
 
