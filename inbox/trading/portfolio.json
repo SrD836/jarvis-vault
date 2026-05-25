@@ -1,6 +1,6 @@
 {
-  "bankroll": 2800.3025257607737,
-  "used_exposure": 2906.069526426325,
+  "bankroll": 2863.371302215512,
+  "used_exposure": 2693.6107499715863,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -258,22 +258,6 @@
       "liquidity_usd": 29167.02822
     },
     {
-      "id": "T-2133405-1779487204257",
-      "market_id": "2133405",
-      "question": "Iran closes its airspace by May 31?",
-      "side": "yes",
-      "entry_price": 0.84,
-      "size": 61.7404874338415,
-      "category": "uncategorized",
-      "entry_timestamp": "2026-05-22T22:00:04Z",
-      "approved_price": 0.84,
-      "days_to_resolution": 8,
-      "horizon": "medium",
-      "end_date": "2026-05-31T00:00:00Z",
-      "size_usd": 61.7404874338415,
-      "liquidity_usd": 33385.4873
-    },
-    {
       "id": "T-2334097-1779570004545",
       "market_id": "2334097",
       "question": "Will the Iran ceasefire continue through May 25?",
@@ -288,22 +272,6 @@
       "end_date": "2026-05-25T00:00:00Z",
       "size_usd": 62.49483055884765,
       "liquidity_usd": 20842.143
-    },
-    {
-      "id": "T-2313550-1779571804012",
-      "market_id": "2313550",
-      "question": "Will Elon Musk post 300-319 tweets from May 19 to May 26, 2026?",
-      "side": "yes",
-      "entry_price": 0.196,
-      "size": 61.98997663402552,
-      "category": "uncategorized",
-      "entry_timestamp": "2026-05-23T21:30:04Z",
-      "approved_price": 0.196,
-      "days_to_resolution": 2,
-      "horizon": "short",
-      "end_date": "2026-05-26T16:00:00Z",
-      "size_usd": 61.98997663402552,
-      "liquidity_usd": 37829.63034
     },
     {
       "id": "T-2296135-1779571804012",
@@ -498,22 +466,6 @@
       "liquidity_usd": 54791.2803
     },
     {
-      "id": "T-1731345-1779643804205",
-      "market_id": "1731345",
-      "question": "Iran agrees to surrender enriched uranium stockpile by June 30, 2026?",
-      "side": "yes",
-      "entry_price": 0.22,
-      "size": 48.59192645739183,
-      "category": "uncategorized",
-      "entry_timestamp": "2026-05-24T17:30:04Z",
-      "approved_price": 0.22,
-      "days_to_resolution": 36,
-      "horizon": "long",
-      "end_date": "2026-06-30T00:00:00Z",
-      "size_usd": 48.59192645739183,
-      "liquidity_usd": 45527.5508
-    },
-    {
       "id": "T-2111605-1779647403942",
       "market_id": "2111605",
       "question": "Iran agrees to unrestricted shipping through Hormuz by May 31?",
@@ -626,22 +578,6 @@
       "liquidity_usd": 28767.18908
     },
     {
-      "id": "T-2321926-1779665404197",
-      "market_id": "2321926",
-      "question": "Will Elon Musk post 40-64 tweets from May 23 to May 25, 2026?",
-      "side": "yes",
-      "entry_price": 0.7,
-      "size": 50.696143380943575,
-      "category": "uncategorized",
-      "entry_timestamp": "2026-05-24T23:30:04Z",
-      "approved_price": 0.7,
-      "days_to_resolution": 0,
-      "horizon": "short",
-      "end_date": "2026-05-25T16:00:00Z",
-      "size_usd": 50.696143380943575,
-      "liquidity_usd": 14691.8238
-    },
-    {
       "id": "T-569343-1779667204230",
       "market_id": "569343",
       "question": "Will Iván Cepeda Castro win the 1st round of the 2026 Colombian presidential election?",
@@ -672,22 +608,6 @@
       "end_date": "2026-05-31T16:00:00Z",
       "size_usd": 51.13093612428302,
       "liquidity_usd": 52235.60529
-    },
-    {
-      "id": "T-2313548-1779674403929",
-      "market_id": "2313548",
-      "question": "Will Elon Musk post 260-279 tweets from May 19 to May 26, 2026?",
-      "side": "yes",
-      "entry_price": 0.43,
-      "size": 54.59739578286089,
-      "category": "uncategorized",
-      "entry_timestamp": "2026-05-25T02:00:03Z",
-      "approved_price": 0.43,
-      "days_to_resolution": 1,
-      "horizon": "short",
-      "end_date": "2026-05-26T16:00:00Z",
-      "size_usd": 54.59739578286089,
-      "liquidity_usd": 20458.5289
     },
     {
       "id": "T-2132638-1779674403929",
@@ -738,22 +658,6 @@
       "liquidity_usd": 43592.1465
     },
     {
-      "id": "T-2293518-1779687003842",
-      "market_id": "2293518",
-      "question": "Will the price of Bitcoin be above $78,000 on May 25?",
-      "side": "yes",
-      "entry_price": 0.24,
-      "size": 56.52434413898368,
-      "category": "uncategorized",
-      "entry_timestamp": "2026-05-25T05:30:03Z",
-      "approved_price": 0.24,
-      "days_to_resolution": 0,
-      "horizon": "short",
-      "end_date": "2026-05-25T16:00:00Z",
-      "size_usd": 56.52434413898368,
-      "liquidity_usd": 25295.5094
-    },
-    {
       "id": "T-2313547-1779687003842",
       "market_id": "2313547",
       "question": "Will Elon Musk post 240-259 tweets from May 19 to May 26, 2026?",
@@ -770,22 +674,6 @@
       "liquidity_usd": 25971.1388
     },
     {
-      "id": "T-2321929-1779690604559",
-      "market_id": "2321929",
-      "question": "Will Elon Musk post 65-89 tweets from May 23 to May 25, 2026?",
-      "side": "yes",
-      "entry_price": 0.24,
-      "size": 57.229011365280584,
-      "category": "uncategorized",
-      "entry_timestamp": "2026-05-25T06:30:04Z",
-      "approved_price": 0.24,
-      "days_to_resolution": 0,
-      "horizon": "short",
-      "end_date": "2026-05-25T16:00:00Z",
-      "size_usd": 57.229011365280584,
-      "liquidity_usd": 11183.1383
-    },
-    {
       "id": "T-2322404-1779712204481",
       "market_id": "2322404",
       "question": "Will WTI Crude Oil (WTI) hit (HIGH) $105 in May?",
@@ -800,6 +688,88 @@
       "end_date": "2026-06-01T03:59:59.999Z",
       "size_usd": 57.14903113797497,
       "liquidity_usd": 45270.6444
+    },
+    {
+      "id": "T-2132799-1779726947128",
+      "market_id": "2132799",
+      "question": "Will Ethereum dip to $2,000 in May?",
+      "side": "yes",
+      "entry_price": 0.25,
+      "size": 60.84563621908202,
+      "category": "market",
+      "entry_timestamp": "2026-05-25T16:35:47Z",
+      "approved_price": 0.25,
+      "days_to_resolution": 6,
+      "horizon": "medium",
+      "end_date": "2026-06-01T04:00:00Z",
+      "size_usd": 60.84563621908202,
+      "liquidity_usd": 56978.8683,
+      "sources_used": [
+        {
+          "domain": "claudemax-websearch",
+          "url": "",
+          "headline_title": "Ethereum Falls to $2,000 But New Price Prediction Targets $7,500 by End-2026",
+          "published_date": "2026-05-20"
+        },
+        {
+          "domain": "claudemax-websearch",
+          "url": "",
+          "headline_title": "Ethereum Price Prediction: ETH USD Dangerously Close to Losing $2K",
+          "published_date": "2026-05-20"
+        }
+      ]
+    },
+    {
+      "id": "T-2176262-1779726947128",
+      "market_id": "2176262",
+      "question": "Strait of Hormuz traffic returns to normal by July 31?",
+      "side": "yes",
+      "entry_price": 0.74,
+      "size": 59.62872349470038,
+      "category": "geopolitics",
+      "entry_timestamp": "2026-05-25T16:35:47Z",
+      "approved_price": 0.74,
+      "days_to_resolution": 66,
+      "horizon": "long",
+      "end_date": "2026-07-31T00:00:00Z",
+      "size_usd": 59.62872349470038,
+      "liquidity_usd": 151166.9286,
+      "sources_used": [
+        {
+          "domain": "claudemax-websearch",
+          "url": "",
+          "headline_title": "Trump says Iran deal reopening Strait of Hormuz 'largely negotiated,' will be announced soon",
+          "published_date": "2026-05-23"
+        },
+        {
+          "domain": "claudemax-websearch",
+          "url": "",
+          "headline_title": "U.S. and Iran work toward deal to extend ceasefire and reopen Strait of Hormuz",
+          "published_date": "2026-05-24"
+        },
+        {
+          "domain": "claudemax-websearch",
+          "url": "",
+          "headline_title": "Exclusive: What's inside the Iran deal Trump is close to signing (Axios)",
+          "published_date": "2026-05-24"
+        }
+      ]
+    },
+    {
+      "id": "T-2155052-1779726947128",
+      "market_id": "2155052",
+      "question": "US x Iran permanent peace deal by December 31, 2026?",
+      "side": "yes",
+      "entry_price": 0.84,
+      "size": 58.436149024806376,
+      "category": "geopolitics",
+      "entry_timestamp": "2026-05-25T16:35:47Z",
+      "approved_price": 0.84,
+      "days_to_resolution": 219,
+      "horizon": "long",
+      "end_date": "2026-12-31T00:00:00Z",
+      "size_usd": 58.436149024806376,
+      "liquidity_usd": 280623.5509
     }
   ]
 }

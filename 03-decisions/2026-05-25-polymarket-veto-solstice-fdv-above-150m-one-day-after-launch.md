@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `solstice-fdv-above-150m-one-day-after-launch`
 - **Categoría**: crypto-launch
-- **Precio YES**: 0.8400
-- **Volumen 24h**: 51807.53 USD
+- **Precio YES**: 0.6100
+- **Volumen 24h**: 71628.48 USD
 - **End date**: 2027-01-01T05:00:00Z
 
 ## Razón del veto

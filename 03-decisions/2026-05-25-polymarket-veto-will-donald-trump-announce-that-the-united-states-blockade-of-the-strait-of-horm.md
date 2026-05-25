@@ -1,5 +1,5 @@
 ---
-title: "Polymarket veto — will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-june-30-2026"
+title: "Polymarket veto — will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-june-30-2026-159-962"
 type: decision
 date: 2026-05-25
 decision: "Veto de tesis 'Will Donald Trump announce that the United States blockade of the Strait of H...' (rule N1): noticias contradicen tesis: El bloqueo de EEUU sigue activo; Trump exige acue..."
@@ -19,10 +19,10 @@ related:
 
 ## Mercado
 
-- **Slug**: `will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-june-30-2026`
+- **Slug**: `will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-june-30-2026-159-962`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.7200
-- **Volumen 24h**: 95639.92 USD
+- **Precio YES**: 0.7400
+- **Volumen 24h**: 84794.17 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto

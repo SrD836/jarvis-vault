@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-80-ships-transit-the-strait-of-hormuz-on-any-day-by-may-31"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'Will 80 ships transit the Strait of Hormuz on any day by May 31?' (rule P9): P9: geopolitics pump cluster (price 0.06, 5d)"
+decision: "Veto de tesis 'Will 80 ships transit the Strait of Hormuz on any day by May 31?' (rule P9): P9: geopolitics pump cluster (price 0.07, 5d)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-80-ships-transit-the-strait-of-hormuz-on-any-day-by-may-31`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.0560
-- **Volumen 24h**: 89771.91 USD
+- **Precio YES**: 0.0670
+- **Volumen 24h**: 83114.79 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `P9`
 
-P9: geopolitics pump cluster (price 0.06, 5d)
+P9: geopolitics pump cluster (price 0.07, 5d)
 
 ## Human notes
 

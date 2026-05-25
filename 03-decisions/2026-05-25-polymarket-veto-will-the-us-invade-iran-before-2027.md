@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-the-us-invade-iran-before-2027"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'Will the U.S. invade Iran before 2027?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Will the U.S. invade Iran before 2027?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, m1]
+tags: [decision, polymarket, bot, veto, m2]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -22,21 +22,14 @@ related:
 - **Slug**: `will-the-us-invade-iran-before-2027`
 - **Categoría**: geopolitics
 - **Precio YES**: 0.2000
-- **Volumen 24h**: 142172.48 USD
+- **Volumen 24h**: 116426.17 USD
 - **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `M1`
+**Regla aplicada**: `M2`
 
-memoria: exact slug match (score 1.00)
-
-## Patterns en memoria que contribuyeron
-
-- veto `will-the-us-invade-iran-before-2027` score=1.00 (exact slug match)
-- veto `ukraine-signs-peace-deal-with-russia-before-2027` score=0.40 (same category; same price bucket mid)
-- veto `us-announces-new-iran-agreementceasefire-extension-by-may-31` score=0.40 (same category; same price bucket mid)
-- veto `us-announces-new-iran-agreementceasefire-extension-by-june-7` score=0.40 (same category; same price bucket mid)
+M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)
 
 ## Human notes
 

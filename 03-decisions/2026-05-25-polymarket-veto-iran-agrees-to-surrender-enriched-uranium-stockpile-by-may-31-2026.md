@@ -2,7 +2,7 @@
 title: "Polymarket veto — iran-agrees-to-surrender-enriched-uranium-stockpile-by-may-31-2026"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'Iran agrees to surrender enriched uranium stockpile by May 31, 2026?' (rule P9): P9: geopolitics pump cluster (price 0.12, 5d)"
+decision: "Veto de tesis 'Iran agrees to surrender enriched uranium stockpile by May 31, 2026?' (rule P9): P9: geopolitics pump cluster (price 0.17, 5d)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `iran-agrees-to-surrender-enriched-uranium-stockpile-by-may-31-2026`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.1210
-- **Volumen 24h**: 451298.68 USD
+- **Precio YES**: 0.1680
+- **Volumen 24h**: 373444.34 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `P9`
 
-P9: geopolitics pump cluster (price 0.12, 5d)
+P9: geopolitics pump cluster (price 0.17, 5d)
 
 ## Human notes
 

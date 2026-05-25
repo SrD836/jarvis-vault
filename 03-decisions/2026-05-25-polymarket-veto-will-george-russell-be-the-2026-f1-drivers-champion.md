@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-george-russell-be-the-2026-f1-drivers-champion`
 - **Categoría**: sports-season
 - **Precio YES**: 0.2800
-- **Volumen 24h**: 77466.32 USD
+- **Volumen 24h**: 77910.11 USD
 - **End date**: 2026-12-06T00:00:00Z
 
 ## Razón del veto
