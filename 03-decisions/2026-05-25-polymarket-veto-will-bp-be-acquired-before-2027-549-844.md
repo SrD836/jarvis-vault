@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-bp-be-acquired-before-2027-549-844` score=1.00 (exact slug match)
-- veto `xi-jinping-out-before-2027` score=0.40 (same category; same price bucket low)
 - veto `will-there-be-between-8-and-10-earthquakes-of-magnitude-7pt0-or-higher-worldwide-in-2026` score=0.40 (same category; same price bucket low)
-- veto `will-clavicular-be-named-peoples-sexiest-man-alive-in-2026-399` score=0.40 (same category; same price bucket low)
-- veto `will-the-iranian-regime-fall-by-the-end-of-2026` score=0.40 (same category; same price bucket low)
+- veto `will-macky-sall-be-the-next-secretary-general-of-the-united-nations` score=0.40 (same category; same price bucket low)
+- veto `will-anyone-be-jailed-over-epstein-disclosures` score=0.40 (same category; same price bucket low)
+- veto `sam-altman-out-as-openai-ceo-before-2027` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

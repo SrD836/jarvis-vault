@@ -1,5 +1,5 @@
 {
-  "bankroll": 2717.7792473214863,
+  "bankroll": 2896.431235597037,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -353,22 +353,6 @@
       "size_usd": 66.51321012189199
     },
     {
-      "approved_price": 0.13,
-      "category": "uncategorized",
-      "days_to_resolution": 1,
-      "end_date": "2026-05-26T00:00:00Z",
-      "entry_price": 0.13,
-      "entry_timestamp": "2026-05-24T17:00:03Z",
-      "horizon": "short",
-      "id": "T-2324252-1779642003777",
-      "liquidity_usd": 356715.495,
-      "market_id": "2324252",
-      "question": "US x Iran permanent peace deal by May 26, 2026?",
-      "side": "yes",
-      "size": 59.80206490095486,
-      "size_usd": 59.80206490095486
-    },
-    {
       "approved_price": 0.42,
       "category": "uncategorized",
       "days_to_resolution": 5,
@@ -543,22 +527,6 @@
       "side": "yes",
       "size": 52.38491297220494,
       "size_usd": 52.38491297220494
-    },
-    {
-      "approved_price": 0.945,
-      "category": "uncategorized",
-      "days_to_resolution": 0,
-      "end_date": "2026-05-25T16:00:00Z",
-      "entry_price": 0.945,
-      "entry_timestamp": "2026-05-24T22:00:04Z",
-      "horizon": "short",
-      "id": "T-2293512-1779660004159",
-      "liquidity_usd": 28767.18908,
-      "market_id": "2293512",
-      "question": "Will the price of Bitcoin be above $74,000 on May 25?",
-      "side": "yes",
-      "size": 51.50992337459562,
-      "size_usd": 51.50992337459562
     },
     {
       "approved_price": 0.69,
@@ -879,5 +847,5 @@
       ]
     }
   ],
-  "used_exposure": 2864.8728048656117
+  "used_exposure": 2753.560816590061
 }
