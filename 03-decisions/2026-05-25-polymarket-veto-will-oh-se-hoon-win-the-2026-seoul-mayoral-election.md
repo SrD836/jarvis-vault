@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-oh-se-hoon-win-the-2026-seoul-mayoral-election"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'Will Oh Se-hoon win the 2026 Seoul Mayoral Election' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
+decision: "Veto de tesis 'Will Oh Se-hoon win the 2026 Seoul Mayoral Election' (rule M2): M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-oh-se-hoon-win-the-2026-seoul-mayoral-election`
 - **Categoría**: elections
-- **Precio YES**: 0.2900
-- **Volumen 24h**: 51668.56 USD
+- **Precio YES**: 0.3000
+- **Volumen 24h**: 51395.16 USD
 - **End date**: 2026-06-03T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `M2`
 
-M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)
+M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)
 
 ## Human notes
 

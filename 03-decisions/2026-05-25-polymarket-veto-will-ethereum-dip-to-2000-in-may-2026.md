@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-ethereum-dip-to-2000-in-may-2026`
 - **Categoría**: market
-- **Precio YES**: 0.2700
-- **Volumen 24h**: 66082.10 USD
+- **Precio YES**: 0.3100
+- **Volumen 24h**: 61459.30 USD
 - **End date**: 2026-06-01T04:00:00Z
 
 ## Razón del veto

@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-jd-vance-win-the-2028-us-presidential-election`
 - **Categoría**: elections
 - **Precio YES**: 0.1900
-- **Volumen 24h**: 195604.18 USD
+- **Volumen 24h**: 201887.05 USD
 - **End date**: 2028-11-07T00:00:00Z
 
 ## Razón del veto
@@ -34,6 +34,8 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-jd-vance-win-the-2028-us-presidential-election` score=1.00 (exact slug match)
+- veto `will-jd-vance-win-the-2028-republican-presidential-nomination` score=0.70 (slug prefix match; same category)
+- veto `will-rebecca-shepherd-win-the-2026-makerfield-by-election` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

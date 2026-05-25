@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — us-iran-nuclear-deal-by-june-30"
+title: "Polymarket veto — will-psg-win-the-202526-champions-league"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'US-Iran nuclear deal by June 30?' (rule M2): M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)"
+decision: "Veto de tesis 'Will PSG win the 2025–26 Champions League?' (rule M2): M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: US-Iran nuclear deal by June 30?
+# Veto: Will PSG win the 2025–26 Champions League?
 
 ## Mercado
 
-- **Slug**: `us-iran-nuclear-deal-by-june-30`
-- **Categoría**: geopolitics
-- **Precio YES**: 0.4000
-- **Volumen 24h**: 179840.76 USD
-- **End date**: 2026-06-30T00:00:00Z
+- **Slug**: `will-psg-win-the-202526-champions-league`
+- **Categoría**: sports-season
+- **Precio YES**: 0.5800
+- **Volumen 24h**: 51830.23 USD
+- **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 

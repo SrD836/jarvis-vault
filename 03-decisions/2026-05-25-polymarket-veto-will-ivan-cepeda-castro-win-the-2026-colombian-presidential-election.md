@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-abelardo-de-la-espriella-win-the-2026-colombian-presidential-election"
+title: "Polymarket veto — will-ivan-cepeda-castro-win-the-2026-colombian-presidential-election"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'Will Abelardo de la Espriella  win the 2026 Colombian presidential election?' (rule M2): M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)"
+decision: "Veto de tesis 'Will Ivan Cepeda Castro win the 2026 Colombian presidential election?' (rule M2): M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,14 +15,14 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will Abelardo de la Espriella  win the 2026 Colombian presidential election?
+# Veto: Will Ivan Cepeda Castro win the 2026 Colombian presidential election?
 
 ## Mercado
 
-- **Slug**: `will-abelardo-de-la-espriella-win-the-2026-colombian-presidential-election`
+- **Slug**: `will-ivan-cepeda-castro-win-the-2026-colombian-presidential-election`
 - **Categoría**: elections
-- **Precio YES**: 0.6500
-- **Volumen 24h**: 67452.00 USD
+- **Precio YES**: 0.3200
+- **Volumen 24h**: 53676.79 USD
 - **End date**: 2026-06-21T14:00:00Z
 
 ## Razón del veto

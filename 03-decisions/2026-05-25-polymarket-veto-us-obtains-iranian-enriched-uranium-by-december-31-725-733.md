@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-trump-recognize-somaliland-before-2027"
+title: "Polymarket veto — us-obtains-iranian-enriched-uranium-by-december-31-725-733"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'Will Trump recognize Somaliland before 2027?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
+decision: "Veto de tesis 'US obtains Iranian enriched uranium by December 31?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,14 +15,14 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will Trump recognize Somaliland before 2027?
+# Veto: US obtains Iranian enriched uranium by December 31?
 
 ## Mercado
 
-- **Slug**: `will-trump-recognize-somaliland-before-2027`
-- **Categoría**: executive-action
-- **Precio YES**: 0.1420
-- **Volumen 24h**: 154251.68 USD
+- **Slug**: `us-obtains-iranian-enriched-uranium-by-december-31-725-733`
+- **Categoría**: other
+- **Precio YES**: 0.2500
+- **Volumen 24h**: 51616.42 USD
 - **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto

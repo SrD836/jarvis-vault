@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-trump-agree-to-iranian-transit-fees-in-the-strait-of-hormuz-by-may-31"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'Will Trump agree to Iranian transit fees in the Strait of Hormuz by May 31?' (rule P9): P9: geopolitics pump cluster (price 0.06, 5d)"
+decision: "Veto de tesis 'Will Trump agree to Iranian transit fees in the Strait of Hormuz by May 31?' (rule P9): P9: geopolitics pump cluster (price 0.05, 5d)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-trump-agree-to-iranian-transit-fees-in-the-strait-of-hormuz-by-may-31`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.0590
-- **Volumen 24h**: 305921.87 USD
+- **Precio YES**: 0.0520
+- **Volumen 24h**: 317425.37 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `P9`
 
-P9: geopolitics pump cluster (price 0.06, 5d)
+P9: geopolitics pump cluster (price 0.05, 5d)
 
 ## Human notes
 
