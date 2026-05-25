@@ -7106,3 +7106,52 @@
 2026/05/25 01:55:02 main.go:13: exit_monitor: done
 2026/05/25 02:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/25 02:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 02:00:02 monitor.go:141: exit_monitor: closed Will Pumas de la UNAM win on 2026-05-24? (take_profit) @ 0.5200 src=bestBid liq=$28278: PnL $30.01 (57.58%)
+2026/05/25 02:00:02 monitor.go:160: exit_monitor: 1 closed, 45 remaining
+2026/05/25 02:00:02 main.go:13: exit_monitor: done
+2026/05/25 02:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 02:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 02:05:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/25 02:05:02 main.go:13: exit_monitor: done
+2026/05/25 02:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 02:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 02:10:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/25 02:10:02 main.go:13: exit_monitor: done
+2026/05/25 02:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 02:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 02:15:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/25 02:15:02 main.go:13: exit_monitor: done
+2026/05/25 02:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 02:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 02:20:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/25 02:20:02 main.go:13: exit_monitor: done
+2026/05/25 02:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 02:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 02:25:01 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/25 02:25:01 main.go:13: exit_monitor: done
+2026/05/25 02:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 02:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 02:30:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/25 02:30:02 main.go:13: exit_monitor: done
+2026/05/25 02:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 02:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 02:35:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/25 02:35:02 main.go:13: exit_monitor: done
+2026/05/25 02:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 02:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 02:40:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/25 02:40:02 main.go:13: exit_monitor: done
+2026/05/25 02:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 02:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 02:45:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/25 02:45:02 main.go:13: exit_monitor: done
+2026/05/25 02:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 02:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 02:50:01 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/25 02:50:01 main.go:13: exit_monitor: done
+2026/05/25 02:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 02:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 02:55:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/25 02:55:02 main.go:13: exit_monitor: done
+2026/05/25 03:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 03:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
