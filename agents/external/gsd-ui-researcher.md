@@ -4,11 +4,18 @@ type: agent-mirror
 external: true
 date: 2026-05-25T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-ui-researcher.md
-tags: [agent, external, mirror]
 related:
-  - "[[agents/external/index]]"
   - "[[00-MOC]]"
+  - "[[agents/external/gsd-phase-researcher]]"
+  - "[[agents/external/gsd-ui-auditor]]"
+  - "[[agents/external/gsd-ui-checker]]"
+  - "[[agents/external/index]]"
+  - "[[skills/external/gsd-ui-phase]]"
+  - "[[skills/external/ui-styling]]"
+tags: [agent, external, mirror]
+# auto-linked 2026-05-25
 ---
+
 
 # `gsd-ui-researcher` (external Claude Code agent)
 
