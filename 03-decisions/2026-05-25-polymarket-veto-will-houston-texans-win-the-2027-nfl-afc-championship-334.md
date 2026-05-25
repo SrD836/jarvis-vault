@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `will-houston-texans-win-the-2027-nfl-afc-championship-334`
 - **Categoría**: sports-season
-- **Precio YES**: 0.1090
+- **Precio YES**: 0.1100
 - **Volumen 24h**: 98492.26 USD
 - **End date**: 2027-01-25T00:00:00Z
 

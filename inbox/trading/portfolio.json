@@ -1,6 +1,6 @@
 {
-  "bankroll": 2863.371302215512,
-  "used_exposure": 2693.6107499715863,
+  "bankroll": 2749.9817986477774,
+  "used_exposure": 2807.0002535393205,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -770,6 +770,58 @@
       "end_date": "2026-12-31T00:00:00Z",
       "size_usd": 58.436149024806376,
       "liquidity_usd": 280623.5509
+    },
+    {
+      "id": "T-692258-1779730346526",
+      "market_id": "692258",
+      "question": "MicroStrategy sells any Bitcoin by June 30, 2026?",
+      "side": "yes",
+      "entry_price": 0.364,
+      "size": 57.26742604431024,
+      "category": "market",
+      "entry_timestamp": "2026-05-25T17:32:26Z",
+      "approved_price": 0.364,
+      "days_to_resolution": 36,
+      "horizon": "long",
+      "end_date": "2026-07-01T04:00:00Z",
+      "size_usd": 57.26742604431024,
+      "liquidity_usd": 66279.12337,
+      "sources_used": [
+        {
+          "domain": "claudemax-websearch",
+          "url": "",
+          "headline_title": "Bitcoin treasury firm Strategy breaks from 'never sell' approach to the flagship crypto",
+          "published_date": "2026-05-05"
+        },
+        {
+          "domain": "claudemax-websearch",
+          "url": "",
+          "headline_title": "Strategy weighs selling bitcoin to fund dividends amid Q1 net loss",
+          "published_date": "2026-05-05"
+        },
+        {
+          "domain": "claudemax-websearch",
+          "url": "",
+          "headline_title": "Strategy adds 535 bitcoin days after outlining potential sale scenarios",
+          "published_date": "2026-05-11"
+        }
+      ]
+    },
+    {
+      "id": "T-2169995-1779730346526",
+      "market_id": "2169995",
+      "question": "MicroStrategy sells any Bitcoin by May 31, 2026?",
+      "side": "yes",
+      "entry_price": 0.1,
+      "size": 56.12207752342403,
+      "category": "market",
+      "entry_timestamp": "2026-05-25T17:32:26Z",
+      "approved_price": 0.1,
+      "days_to_resolution": 36,
+      "horizon": "long",
+      "end_date": "2026-07-01T04:00:00Z",
+      "size_usd": 56.12207752342403,
+      "liquidity_usd": 48314.0716
     }
   ]
 }

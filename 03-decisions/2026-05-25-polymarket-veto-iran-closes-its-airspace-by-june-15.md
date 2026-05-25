@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-portugal-win-the-2026-fifa-world-cup-912"
+title: "Polymarket veto — iran-closes-its-airspace-by-june-15"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'Will Portugal win the 2026 FIFA World Cup?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
+decision: "Veto de tesis 'Iran closes its airspace by June 15?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will Portugal win the 2026 FIFA World Cup?
+# Veto: Iran closes its airspace by June 15?
 
 ## Mercado
 
-- **Slug**: `will-portugal-win-the-2026-fifa-world-cup-912`
-- **Categoría**: sports-season
-- **Precio YES**: 0.1020
-- **Volumen 24h**: 660942.79 USD
-- **End date**: 2026-07-20T00:00:00Z
+- **Slug**: `iran-closes-its-airspace-by-june-15`
+- **Categoría**: geopolitics
+- **Precio YES**: 0.1920
+- **Volumen 24h**: 50719.77 USD
+- **End date**: 2026-06-15T00:00:00Z
 
 ## Razón del veto
 

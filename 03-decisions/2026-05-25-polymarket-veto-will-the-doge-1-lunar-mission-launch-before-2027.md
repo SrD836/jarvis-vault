@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `will-the-doge-1-lunar-mission-launch-before-2027`
 - **Categoría**: crypto-launch
-- **Precio YES**: 0.1080
+- **Precio YES**: 0.1090
 - **Volumen 24h**: 801749.90 USD
 - **End date**: 2026-12-31T00:00:00Z
 

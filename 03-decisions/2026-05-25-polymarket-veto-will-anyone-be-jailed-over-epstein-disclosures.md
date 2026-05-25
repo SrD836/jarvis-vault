@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-macky-sall-be-the-next-secretary-general-of-the-united-nations"
+title: "Polymarket veto — will-anyone-be-jailed-over-epstein-disclosures"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'Will Macky Sall be the next Secretary-General of the United Nations?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Will anyone be jailed over Epstein disclosures? ' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,14 +15,14 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will Macky Sall be the next Secretary-General of the United Nations?
+# Veto: Will anyone be jailed over Epstein disclosures? 
 
 ## Mercado
 
-- **Slug**: `will-macky-sall-be-the-next-secretary-general-of-the-united-nations`
+- **Slug**: `will-anyone-be-jailed-over-epstein-disclosures`
 - **Categoría**: other
-- **Precio YES**: 0.1180
-- **Volumen 24h**: 109801.28 USD
+- **Precio YES**: 0.1200
+- **Volumen 24h**: 298777.83 USD
 - **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto
@@ -33,11 +33,11 @@ memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
-- veto `will-macky-sall-be-the-next-secretary-general-of-the-united-nations` score=1.00 (exact slug match)
+- veto `will-anyone-be-jailed-over-epstein-disclosures` score=1.00 (exact slug match)
 - veto `fed-emergency-rate-cut-before-2027` score=0.40 (same category; same price bucket low)
 - veto `will-the-feds-lower-bound-reach-0pt25-or-lower-before-2027-173-921-916-764-754-593-935` score=0.40 (same category; same price bucket low)
 - veto `sam-altman-out-as-openai-ceo-before-2027` score=0.40 (same category; same price bucket low)
-- veto `will-anyone-be-jailed-over-epstein-disclosures` score=0.40 (same category; same price bucket low)
+- veto `any-brazil-stf-justice-removed-by-impeachment-before-2027` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

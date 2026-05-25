@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-ethereum-dip-to-2000-in-may-2026`
 - **Categoría**: market
-- **Precio YES**: 0.2900
-- **Volumen 24h**: 51204.63 USD
+- **Precio YES**: 0.2500
+- **Volumen 24h**: 68322.74 USD
 - **End date**: 2026-06-01T04:00:00Z
 
 ## Razón del veto
@@ -33,7 +33,7 @@ silencio mediático sobre catalyst inminente (6 días al cierre)
 
 ## Investigación de noticias
 
-Tavily+DeepSeek: confirms=false contradicts=false silent=true score=0.00 — claudemax error
+Tavily+DeepSeek: confirms=false contradicts=false silent=true score=0.40 — ETH cotiza ~$2,104 el 25-may con tendencia bajista; no hay confirmación de que haya tocado $2,000 aún.
 
 ## Human notes
 

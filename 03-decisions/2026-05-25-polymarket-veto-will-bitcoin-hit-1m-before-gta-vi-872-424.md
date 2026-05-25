@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-bitcoin-hit-1m-before-gta-vi-872-424"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'Will bitcoin hit $1m before GTA VI?' (rule P6): P6 market: BTC-USD spot $77513.24 already > target $1.00 but yes=0.49 (confus..."
+decision: "Veto de tesis 'Will bitcoin hit $1m before GTA VI?' (rule P6): P6 market: BTC-USD spot $77567.16 already > target $1.00 but yes=0.49 (confus..."
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -22,14 +22,14 @@ related:
 - **Slug**: `will-bitcoin-hit-1m-before-gta-vi-872-424`
 - **Categoría**: market
 - **Precio YES**: 0.4930
-- **Volumen 24h**: 119702.85 USD
+- **Volumen 24h**: 119809.86 USD
 - **End date**: 2026-07-31T12:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `P6`
 
-P6 market: BTC-USD spot $77513.24 already > target $1.00 but yes=0.49 (confused book)
+P6 market: BTC-USD spot $77567.16 already > target $1.00 but yes=0.49 (confused book)
 
 ## Human notes
 

@@ -22,7 +22,7 @@ related:
 - **Slug**: `us-strike-on-cuba-by-december-31`
 - **Categoría**: other
 - **Precio YES**: 0.5100
-- **Volumen 24h**: 93225.80 USD
+- **Volumen 24h**: 93212.85 USD
 - **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto
@@ -34,8 +34,8 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `us-strike-on-cuba-by-december-31` score=1.00 (exact slug match)
-- veto `insurrection-act-invoked-by-december-31-184-556` score=0.40 (same category; same price bucket mid)
-- veto `will-mamdani-freeze-nyc-rents-before-2027` score=0.40 (same category; same price bucket mid)
+- veto `will-pete-hegseth-leave-the-trump-administration-before-2027` score=0.40 (same category; same price bucket mid)
+- veto `will-paramount-close-warner-bros-acquisition-by-end-of-2026` score=0.40 (same category; same price bucket mid)
 - veto `will-usdc-hit-50-of-usdt-market-cap-by-december-31-2026` score=0.40 (same category; same price bucket mid)
 - veto `will-anthropics-valuation-hit-high-2pt0t-by-december-31-922` score=0.40 (same category; same price bucket mid)
 
