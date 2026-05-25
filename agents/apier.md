@@ -8,7 +8,7 @@ model_primary: anthropic/claude-sonnet-4-6
 delegation_mode: (default)
 allow_agents: []
 runtime_children: []
-updated: 2026-05-25T07:00:01
+updated: 2026-05-25T07:30:01
 tags: [agent, jarvis, worker]
 related:
   - "[[../00-MOC]]"

@@ -1,0 +1,85 @@
+{
+  "adapted": {
+    "headline": "Estudiante de Administración y Finanzas con orientación a la gestión de cuentas y atención al cliente en entornos internacionales",
+    "summary": "Estudiante de CFGS en Administración y Finanzas con experiencia en atención al cliente en inglés y manejo avanzado de herramientas ofimáticas y digitales. Perfil orientado a la relación con clientes y la resolución de problemas, con base formativa en finanzas relevante para el sector de pagos. Ciudadano de la UE con predisposición a entornos internacionales.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "2021 · verano",
+        "bullets": [
+          "Gestionó atención al cliente en sala y barra en entorno anglófono, desarrollando comunicación fluida en inglés con clientes internacionales.",
+          "Procesó cobros en caja y recepcionó clientes, adquiriendo experiencia directa en gestión de pagos y transacciones presenciales.",
+          "Coordinó pedidos y colaboró en equipo bajo presión en servicio de alta demanda, garantizando la satisfacción del cliente."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Atención al cliente",
+      "Comunicación en inglés",
+      "Resolución de problemas",
+      "Liderazgo y trabajo en equipo",
+      "Microsoft 365",
+      "Excel avanzado"
+    ],
+    "skills_secondary": [
+      "Google Workspace",
+      "Herramientas de IA y chatbots empresariales",
+      "Microsoft Azure AI",
+      "Google IT Support",
+      "Gestión de pedidos",
+      "Ofimática",
+      "Digitalización de procesos"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline ajustado para enfatizar gestión de cuentas y atención al cliente, palabras clave del rol Account Manager.",
+      "Promovida 'Atención al cliente' a skills_primary por ser la competencia más alineada con un perfil Account Manager.",
+      "Experiencia en The Fallow reformulada para destacar gestión de pagos en caja, comunicación en inglés y trabajo en equipo, aspectos relevantes para Adyen.",
+      "ALERTA DE GAP CRÍTICO: El candidato no tiene experiencia en ventas B2B, gestión de cuentas comerciales ni en el sector de pagos digitales. Gap estimado >70%.",
+      "ALERTA DE UBICACIÓN: La oferta es en Berlín y el perfil indica no disposición a reubicarse. Factor eliminatorio probable.",
+      "ALERTA DE IDIOMA: El rol en Berlín probablemente requiere inglés C1+ o alemán; el perfil refleja inglés B1, lo que supone una brecha significativa.",
+      "Se conserva la formación en Administración y Finanzas como único punto de conexión relevante con el contexto de una plataforma de pagos como Adyen."
+    ],
+    "confidence": 0.18,
+    "target_role": "Account Manager – Adyen (Berlin)",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-25T07:51:56.447Z"
+  },
+  "offer_id": "test-jglovier-1779695471",
+  "offer_title": "Account Manager",
+  "company": "Adyen",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}
