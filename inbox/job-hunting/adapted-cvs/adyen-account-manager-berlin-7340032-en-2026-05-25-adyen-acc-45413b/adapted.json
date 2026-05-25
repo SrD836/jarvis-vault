@@ -1,0 +1,88 @@
+{
+  "adapted": {
+    "headline": "Administration & Finance Student | Customer-Facing Experience | AI & Process Automation Enthusiast",
+    "summary": "Motivated Administration and Finance student with hands-on customer service experience in international, English-speaking environments and a strong aptitude for technology and business digitalization. Proficient in Microsoft 365, Google Workspace, and AI tools, with genuine interest in fintech and data-driven process improvement. Looking to bring organizational skills and a client-oriented mindset to a merchant-facing role at a global payments company.",
+    "experience": [
+      {
+        "title": "Waiter / Cashier / Host",
+        "org": "Hospitality roles (incl. The Fallow, Ireland)",
+        "period": "Jun 2021 – Jul 2021 (and prior experience)",
+        "bullets": [
+          "Delivered customer service in English in an international setting, managing orders and client interactions simultaneously under high-volume conditions",
+          "Operated cash register and point-of-sale systems, ensuring accuracy in payment handling and end-of-shift reconciliation",
+          "Welcomed and coordinated guest flow as host, liaising with floor and kitchen teams to optimize the customer experience",
+          "Collaborated in fast-paced team environments, helping distribute tasks and maintain service quality across shifts"
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Customer relationship management",
+      "Client-facing communication (English)",
+      "Microsoft Excel (advanced)",
+      "Microsoft 365 & Google Workspace",
+      "Problem-solving & organizational skills",
+      "AI tools & business chatbots (Microsoft Azure AI)"
+    ],
+    "skills_secondary": [
+      "Data management & automated spreadsheets",
+      "Order & workflow management",
+      "Google IT Support",
+      "Cash handling & POS systems",
+      "Team leadership & task delegation",
+      "Digital process improvement",
+      "Spanish (native) — asset for Spanish-speaking merchant portfolios",
+      "Process automation & email management"
+    ],
+    "education": [
+      {
+        "degree": "Higher Vocational Diploma in Business Administration & Finance (in progress)",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": null
+      },
+      {
+        "degree": "Economics Degree (2 years completed)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      },
+      {
+        "degree": "Google IT Support Certificate",
+        "institution": "Online (Google)",
+        "period": null
+      },
+      {
+        "degree": "Artificial Intelligence with Microsoft Azure Certificate",
+        "institution": "Online",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "CV translated entirely into English as required for the Berlin English-speaking role",
+      "Headline repositioned around customer-facing profile and tech/AI aptitude — closest match to Account Manager requirements",
+      "Hospitality bullets reframed around client interaction, payment processing accuracy, and team coordination — the most transferable skills to merchant relationship management",
+      "Cash/POS experience explicitly highlighted as tangential to Adyen's payments industry context",
+      "'Customer relationship management' promoted to top of primary skills as a rephrasing of 'atención al cliente', the closest available match to the JD core requirement",
+      "Microsoft Azure AI and AI tools retained in primary skills to signal a tech-forward mindset and adaptability",
+      "Spanish native fluency repositioned as a potential business asset (Spanish-speaking merchant segments)",
+      "Confidence set low (0.22): candidate has no fintech or payments background, no formal account management experience, very limited professional history (~1 month documented), and B1 English — well below the typical profile for an Account Manager role at a global fintech in Berlin"
+    ],
+    "confidence": 0.22,
+    "target_role": "Account Manager at Adyen (Berlin)",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-25T08:01:43.916Z"
+  },
+  "offer_id": "adyen-account-manager-berlin-7340032-EN-2026-05-25",
+  "offer_title": "Account Manager",
+  "company": "Adyen",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

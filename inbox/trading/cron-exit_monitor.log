@@ -7389,3 +7389,5 @@
 2026/05/25 07:50:02 main.go:13: exit_monitor: done
 /bin/sh: 1: ./bot/exit_monitor/bin/exit_monitor: Permission denied
 /bin/sh: 1: ./bot/exit_monitor/bin/exit_monitor: Permission denied
+/bin/sh: 1: ./bot/exit_monitor/bin/exit_monitor: Permission denied
+/bin/sh: 1: ./bot/exit_monitor/bin/exit_monitor: Permission denied
