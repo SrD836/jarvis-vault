@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `will-the-uk-designate-the-irgc-a-terrorist-organization-by-june-30`
 - **Categoría**: other
-- **Precio YES**: 0.1070
+- **Precio YES**: 0.1080
 - **Volumen 24h**: 96229.67 USD
 - **End date**: 2026-06-30T00:00:00Z
 

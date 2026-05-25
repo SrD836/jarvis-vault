@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-jd-vance-win-the-2028-us-presidential-election`
 - **Categoría**: elections
-- **Precio YES**: 0.1900
-- **Volumen 24h**: 201887.05 USD
+- **Precio YES**: 0.1850
+- **Volumen 24h**: 283056.41 USD
 - **End date**: 2028-11-07T00:00:00Z
 
 ## Razón del veto

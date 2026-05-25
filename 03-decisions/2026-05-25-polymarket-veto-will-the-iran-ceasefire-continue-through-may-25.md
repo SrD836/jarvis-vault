@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-the-iran-ceasefire-continue-through-may-31-654-633"
+title: "Polymarket veto — will-the-iran-ceasefire-continue-through-may-25"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'Will the Iran ceasefire continue through May 31?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Will the Iran ceasefire continue through May 25?' (rule M1): memoria: slug prefix match; same category; same price bucket high (score 0.90)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,29 +15,29 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will the Iran ceasefire continue through May 31?
+# Veto: Will the Iran ceasefire continue through May 25?
 
 ## Mercado
 
-- **Slug**: `will-the-iran-ceasefire-continue-through-may-31-654-633`
+- **Slug**: `will-the-iran-ceasefire-continue-through-may-25`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.8200
-- **Volumen 24h**: 428686.67 USD
-- **End date**: 
+- **Precio YES**: 0.8540
+- **Volumen 24h**: 1469683.30 USD
+- **End date**: 2026-05-25T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `M1`
 
-memoria: exact slug match (score 1.00)
+memoria: slug prefix match; same category; same price bucket high (score 0.90)
 
 ## Patterns en memoria que contribuyeron
 
-- veto `will-the-iran-ceasefire-continue-through-may-31-654-633` score=1.00 (exact slug match)
 - veto `will-the-iran-ceasefire-continue-through-may-27-496` score=0.90 (slug prefix match; same category; same price bucket high)
+- veto `will-the-iran-ceasefire-continue-through-may-24-733` score=0.70 (slug prefix match; same category)
 - veto `will-the-iran-ceasefire-continue-through-june-15-136-565` score=0.70 (slug prefix match; same category)
 - veto `will-the-iran-ceasefire-continue-through-june-7-849` score=0.70 (slug prefix match; same category)
-- veto `will-the-iran-ceasefire-continue-through-may-24-733` score=0.70 (slug prefix match; same category)
+- veto `will-the-iran-ceasefire-continue-through-may-31-654-633` score=0.70 (slug prefix match; same category)
 
 ## Human notes
 

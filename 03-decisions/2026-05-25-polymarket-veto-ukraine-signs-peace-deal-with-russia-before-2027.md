@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `ukraine-signs-peace-deal-with-russia-before-2027`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.3000
-- **Volumen 24h**: 83055.02 USD
+- **Precio YES**: 0.3200
+- **Volumen 24h**: 87386.96 USD
 - **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto

@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-trump-agree-to-iranian-transit-fees-in-the-strait-of-hormuz-by-may-31`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.0520
-- **Volumen 24h**: 317425.37 USD
+- **Precio YES**: 0.0530
+- **Volumen 24h**: 317303.05 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto

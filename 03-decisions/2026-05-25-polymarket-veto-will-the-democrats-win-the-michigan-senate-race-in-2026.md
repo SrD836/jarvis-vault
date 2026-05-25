@@ -34,10 +34,9 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-the-democrats-win-the-michigan-senate-race-in-2026` score=1.00 (exact slug match)
-- veto `will-paramount-close-warner-bros-acquisition-by-end-of-2026` score=0.40 (same category; same price bucket mid)
 - veto `will-usdc-hit-50-of-usdt-market-cap-by-december-31-2026` score=0.40 (same category; same price bucket mid)
 - veto `hyperliquid-listed-on-binance-in-2026-485` score=0.40 (same category; same price bucket mid)
-- veto `will-zoom-video-communications-be-acquired-before-2027-486-866` score=0.40 (same category; same price bucket mid)
+- veto `will-ubisoft-be-acquired-before-2027-175-488` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 
