@@ -34,9 +34,9 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-macky-sall-be-the-next-secretary-general-of-the-united-nations` score=1.00 (exact slug match)
-- veto `fed-emergency-rate-cut-before-2027` score=0.40 (same category; same price bucket low)
 - veto `will-there-be-between-8-and-10-earthquakes-of-magnitude-7pt0-or-higher-worldwide-in-2026` score=0.40 (same category; same price bucket low)
-- veto `will-clavicular-be-named-peoples-sexiest-man-alive-in-2026-399` score=0.40 (same category; same price bucket low)
+- veto `will-the-feds-lower-bound-reach-0pt5-or-lower-before-2027-459-115-473-497-424-381-849` score=0.40 (same category; same price bucket low)
+- veto `fed-emergency-rate-cut-before-2027` score=0.40 (same category; same price bucket low)
 - veto `xi-jinping-out-before-2027` score=0.40 (same category; same price bucket low)
 
 ## Human notes

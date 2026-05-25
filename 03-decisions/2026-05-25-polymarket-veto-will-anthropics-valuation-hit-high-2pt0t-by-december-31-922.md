@@ -37,7 +37,7 @@ memoria: exact slug match (score 1.00)
 - veto `will-anthropics-valuation-hit-high-1pt75t-by-december-31-328` score=0.90 (slug prefix match; same category; same price bucket mid)
 - veto `will-usdc-hit-50-of-usdt-market-cap-by-december-31-2026` score=0.40 (same category; same price bucket mid)
 - veto `insurrection-act-invoked-by-december-31-184-556` score=0.40 (same category; same price bucket mid)
-- veto `will-the-democrats-win-the-michigan-senate-race-in-2026` score=0.40 (same category; same price bucket mid)
+- veto `will-mamdani-freeze-nyc-rents-before-2027` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

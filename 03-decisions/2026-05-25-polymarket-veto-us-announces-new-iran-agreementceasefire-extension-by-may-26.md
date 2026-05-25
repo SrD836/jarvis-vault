@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `us-announces-new-iran-agreementceasefire-extension-by-may-26`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.1100
-- **Volumen 24h**: 383580.49 USD
+- **Precio YES**: 0.1400
+- **Volumen 24h**: 389490.40 USD
 - **End date**: 
 
 ## Razón del veto
@@ -35,8 +35,8 @@ memoria: exact slug match (score 1.00)
 
 - veto `us-announces-new-iran-agreementceasefire-extension-by-may-26` score=1.00 (exact slug match)
 - veto `us-announces-new-iran-agreementceasefire-extension-by-may-25` score=0.90 (slug prefix match; same category; same price bucket low)
-- veto `us-announces-new-iran-agreementceasefire-extension-by-june-7` score=0.70 (slug prefix match; same category)
 - veto `us-announces-new-iran-agreementceasefire-extension-by-may-31` score=0.70 (slug prefix match; same category)
+- veto `us-announces-new-iran-agreementceasefire-extension-by-june-7` score=0.70 (slug prefix match; same category)
 - veto `will-israel-strike-6-countries-in-2026` score=0.40 (same category; same price bucket low)
 
 ## Human notes

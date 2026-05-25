@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-england-win-the-2026-fifa-world-cup-937`
 - **Categoría**: sports-season
 - **Precio YES**: 0.1130
-- **Volumen 24h**: 230980.23 USD
+- **Volumen 24h**: 192379.82 USD
 - **End date**: 2026-07-20T00:00:00Z
 
 ## Razón del veto

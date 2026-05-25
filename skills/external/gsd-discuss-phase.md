@@ -6,11 +6,18 @@ category: general
 date: 2026-05-25T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-discuss-phase
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/gsd-execute-phase]]"
+  - "[[skills/external/gsd-plan-milestone-gaps]]"
+  - "[[skills/external/gsd-research-phase]]"
+  - "[[skills/external/gsd-spec-phase]]"
+  - "[[skills/external/gsd-ultraplan-phase]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-25
 ---
+
 
 # `gsd-discuss-phase` (external skill)
 

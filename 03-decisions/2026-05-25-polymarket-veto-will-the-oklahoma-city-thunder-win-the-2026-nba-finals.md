@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-the-oklahoma-city-thunder-win-the-2026-nba-finals`
 - **Categoría**: sports-season
-- **Precio YES**: 0.4800
-- **Volumen 24h**: 348923.98 USD
+- **Precio YES**: 0.4900
+- **Volumen 24h**: 368724.78 USD
 - **End date**: 2026-07-01T00:00:00Z
 
 ## Razón del veto

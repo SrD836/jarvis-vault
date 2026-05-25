@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-kimi-antonelli-be-the-2026-f1-drivers-champion`
 - **Categoría**: sports-season
 - **Precio YES**: 0.5760
-- **Volumen 24h**: 54325.10 USD
+- **Volumen 24h**: 53930.55 USD
 - **End date**: 2026-12-06T00:00:00Z
 
 ## Razón del veto

@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-trump-agree-to-iranian-oil-sanction-relief-by-may-31`
 - **Categoría**: executive-action
-- **Precio YES**: 0.2300
-- **Volumen 24h**: 64680.48 USD
+- **Precio YES**: 0.2500
+- **Volumen 24h**: 63811.01 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto

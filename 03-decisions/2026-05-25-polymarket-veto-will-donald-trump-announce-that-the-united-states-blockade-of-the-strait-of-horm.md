@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-june-30-2026"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'Will Donald Trump announce that the United States blockade of the Strait of H...' (rule M2): M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)"
+decision: "Veto de tesis 'Will Donald Trump announce that the United States blockade of the Strait of H...' (rule N1): noticias contradicen tesis: El bloqueo de EEUU sigue activo; Trump exige acue..."
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, m2]
+tags: [decision, polymarket, bot, veto, n1]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,19 @@ related:
 
 - **Slug**: `will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-june-30-2026`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.6900
-- **Volumen 24h**: 93667.33 USD
+- **Precio YES**: 0.7200
+- **Volumen 24h**: 95639.92 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `M2`
+**Regla aplicada**: `N1`
 
-M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)
+noticias contradicen tesis: El bloqueo de EEUU sigue activo; Trump exige acuerdo firmado antes de levantarlo; negociaciones en curso sin deal cer...
+
+## Investigación de noticias
+
+Tavily+DeepSeek: confirms=false contradicts=true silent=false score=0.65 — El bloqueo de EEUU sigue activo; Trump exige acuerdo firmado antes de levantarlo; negociaciones en curso sin deal cer...
 
 ## Human notes
 
