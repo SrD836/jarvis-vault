@@ -2,13 +2,13 @@
 title: "Polymarket veto — us-strike-on-cuba-by-december-31"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'US strike on Cuba by December 31?' (rule M2): M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)"
+decision: "Veto de tesis 'US strike on Cuba by December 31?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, m2]
+tags: [decision, polymarket, bot, veto, m1]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -27,9 +27,13 @@ related:
 
 ## Razón del veto
 
-**Regla aplicada**: `M2`
+**Regla aplicada**: `M1`
 
-M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)
+memoria: exact slug match (score 1.00)
+
+## Patterns en memoria que contribuyeron
+
+- veto `us-strike-on-cuba-by-december-31` score=1.00 (exact slug match)
 
 ## Human notes
 

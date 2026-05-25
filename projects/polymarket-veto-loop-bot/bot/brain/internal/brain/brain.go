@@ -14,6 +14,7 @@ import (
 	commontypes "github.com/davidgn/polymarket-veto-loop-bot/bot/common/types"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/decisionlog"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/llmclient"
+	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/marketcheck"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/memory"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/softrules"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/research"
@@ -40,6 +41,7 @@ const (
 	ruleWindow         = "P1"
 	ruleMem            = "M1"
 	ruleSoftLearned    = "M2"
+	ruleMarketCheck    = "P6"
 	ruleNews1          = "N1"
 	ruleNews2          = "N2"
 	memoryHitThreshold = 0.7
@@ -105,7 +107,7 @@ func Run() error {
 	_ = now
 
 	stats := struct {
-		P0, P1, P2, P3, P4, V1, V2, V4, M1, M2, N1, N2, LLM int
+		P0, P1, P2, P3, P4, P6, V1, V2, V4, M1, M2, N1, N2, LLM int
 	}{}
 
 	// M2 prep: load soft-learned veto rules from memory.md. These are the
@@ -202,6 +204,19 @@ func Run() error {
 				stats.M1++
 				continue
 			}
+		}
+
+		// P6: market-asset reality check via Yahoo Finance. Vetoes BTC/ETH/WTI/SPX/etc.
+		// candidates when the live spot price contradicts the implied yes-probability.
+		if mr := marketcheck.Evaluate(c.Slug, c.Question, c.CurrentPriceYes); mr != nil && mr.Block {
+			vr := types.VetoResult{
+				CandidateID: c.ID, Slug: c.Slug, Blocked: true,
+				Reason: mr.Reason, VetoedBy: ruleMarketCheck,
+			}
+			blocked = append(blocked, vr)
+			recordVeto(mem, &c, vr, decisionsDir, true)
+			stats.P6++
+			continue
 		}
 
 		// M2: soft-learned cluster veto. If the candidate's (category, horizon, price band)
@@ -331,9 +346,9 @@ func Run() error {
 	}
 
 	softrules.GenerateAndAppend(memoryPath)
-	log.Printf("Brain v3 done: %d approved, %d blocked (P0=%d P2=%d P3=%d P4=%d V1=%d V2=%d V4=%d M1=%d M2=%d N1=%d N2=%d LLM=%d) horizons in approved: short=%d medium=%d long=%d",
+	log.Printf("Brain v3 done: %d approved, %d blocked (P0=%d P2=%d P3=%d P4=%d P6=%d V1=%d V2=%d V4=%d M1=%d M2=%d N1=%d N2=%d LLM=%d) horizons in approved: short=%d medium=%d long=%d",
 		len(approved), len(blocked),
-		stats.P0, stats.P2, stats.P3, stats.P4, stats.V1, stats.V2, stats.V4, stats.M1, stats.M2, stats.N1, stats.N2, stats.LLM,
+		stats.P0, stats.P2, stats.P3, stats.P4, stats.P6, stats.V1, stats.V2, stats.V4, stats.M1, stats.M2, stats.N1, stats.N2, stats.LLM,
 		countHorizon(approved, "short"), countHorizon(approved, "medium"), countHorizon(approved, "long"))
 	return nil
 }
