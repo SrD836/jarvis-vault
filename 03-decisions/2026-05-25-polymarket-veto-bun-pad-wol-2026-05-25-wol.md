@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — elon-musk-of-tweets-may-19-may-26-260-279"
+title: "Polymarket veto — bun-pad-wol-2026-05-25-wol"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'Will Elon Musk post 260-279 tweets from May 19 to May 26, 2026?' (rule M2): M2 soft-learned: uncategorized·short·0.30-0.70 = 19L/1W (wr 5%)"
+decision: "Veto de tesis 'Will Wolfsburg win on 2026-05-25?' (rule M2): M2 soft-learned: uncategorized·short·0.30-0.70 = 19L/1W (wr 5%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will Elon Musk post 260-279 tweets from May 19 to May 26, 2026?
+# Veto: Will Wolfsburg win on 2026-05-25?
 
 ## Mercado
 
-- **Slug**: `elon-musk-of-tweets-may-19-may-26-260-279`
+- **Slug**: `bun-pad-wol-2026-05-25-wol`
 - **Categoría**: other
-- **Precio YES**: 0.6300
-- **Volumen 24h**: 96678.67 USD
-- **End date**: 2026-05-26T16:00:00Z
+- **Precio YES**: 0.4400
+- **Volumen 24h**: 134545.27 USD
+- **End date**: 2026-05-25T18:30:00Z
 
 ## Razón del veto
 

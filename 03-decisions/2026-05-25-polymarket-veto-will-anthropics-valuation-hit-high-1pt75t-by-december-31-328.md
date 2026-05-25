@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-anthropics-valuation-hit-high-1pt75t-by-december-31-328`
 - **Categoría**: other
-- **Precio YES**: 0.5300
-- **Volumen 24h**: 92339.86 USD
+- **Precio YES**: 0.5800
+- **Volumen 24h**: 92598.12 USD
 - **End date**: 2027-01-01T12:00:00Z
 
 ## Razón del veto
@@ -37,7 +37,7 @@ memoria: exact slug match (score 1.00)
 - veto `will-anthropics-valuation-hit-high-2pt0t-by-december-31-922` score=0.90 (slug prefix match; same category; same price bucket mid)
 - veto `will-paramount-close-warner-bros-acquisition-by-end-of-2026` score=0.40 (same category; same price bucket mid)
 - veto `will-usdc-hit-50-of-usdt-market-cap-by-december-31-2026` score=0.40 (same category; same price bucket mid)
-- veto `us-strike-on-cuba-by-december-31` score=0.40 (same category; same price bucket mid)
+- veto `will-the-democrats-win-the-michigan-senate-race-in-2026` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

@@ -23878,3 +23878,12 @@
 {"timestamp":"2026-05-25T17:32:26Z","market_id":"2074237","question":"Will WTI Crude Oil (WTI) hit (HIGH) $110 in May?","reason":"already_active"}
 {"timestamp":"2026-05-25T17:32:26Z","market_id":"2176262","question":"Strait of Hormuz traffic returns to normal by July 31?","reason":"already_active"}
 {"timestamp":"2026-05-25T17:32:26Z","market_id":"2155052","question":"US x Iran permanent peace deal by December 31, 2026?","reason":"already_active"}
+{"timestamp":"2026-05-25T18:00:49Z","market_id":"2322404","question":"Will WTI Crude Oil (WTI) hit (HIGH) $105 in May?","reason":"already_active"}
+{"timestamp":"2026-05-25T18:00:49Z","market_id":"2074237","question":"Will WTI Crude Oil (WTI) hit (HIGH) $110 in May?","reason":"already_active"}
+{"timestamp":"2026-05-25T18:00:49Z","market_id":"692258","question":"MicroStrategy sells any Bitcoin by June 30, 2026?","reason":"already_active"}
+{"timestamp":"2026-05-25T18:00:49Z","market_id":"2176262","question":"Strait of Hormuz traffic returns to normal by July 31?","reason":"already_active"}
+{"timestamp":"2026-05-25T18:00:49Z","market_id":"2155052","question":"US x Iran permanent peace deal by December 31, 2026?","reason":"already_active"}
+{"timestamp":"2026-05-25T18:30:51Z","market_id":"2074237","question":"Will WTI Crude Oil (WTI) hit (HIGH) $110 in May?","reason":"already_active"}
+{"timestamp":"2026-05-25T18:30:51Z","market_id":"2322404","question":"Will WTI Crude Oil (WTI) hit (HIGH) $105 in May?","reason":"already_active"}
+{"timestamp":"2026-05-25T18:30:51Z","market_id":"2270338","question":"US x Iran permanent peace deal by July 31, 2026?","reason":"max_open_positions_cap_reached_50"}
+{"timestamp":"2026-05-25T18:30:51Z","market_id":"2155052","question":"US x Iran permanent peace deal by December 31, 2026?","reason":"max_open_positions_cap_reached_50"}

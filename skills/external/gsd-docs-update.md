@@ -6,11 +6,18 @@ category: general
 date: 2026-05-25T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-docs-update
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/documenter]]"
+  - "[[agents/external/gsd-doc-synthesizer]]"
+  - "[[agents/external/gsd-doc-verifier]]"
+  - "[[agents/external/gsd-doc-writer]]"
+  - "[[skills/external/gsd-verify-work]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-25
 ---
+
 
 # `gsd-docs-update` (external skill)
 

@@ -1,39 +1,35 @@
 ---
-title: "Polymarket veto — will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-june-30-2026-159-962"
+title: "Polymarket veto — will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-31-2026-313-388-459-589-533"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'Will Donald Trump announce that the United States blockade of the Strait of H...' (rule N1): noticias contradicen tesis: El bloqueo de EEUU sigue activo; Trump exige acue..."
+decision: "Veto de tesis 'Will Donald Trump announce that the United States blockade of the Strait of H...' (rule M2): M2 soft-learned: uncategorized·medium·0.30-0.70 = 5L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, n1]
+tags: [decision, polymarket, bot, veto, m2]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by June 30, 2026?
+# Veto: Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 31, 2026?
 
 ## Mercado
 
-- **Slug**: `will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-june-30-2026-159-962`
+- **Slug**: `will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-31-2026-313-388-459-589-533`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.7400
-- **Volumen 24h**: 82638.58 USD
-- **End date**: 2026-06-30T00:00:00Z
+- **Precio YES**: 0.3900
+- **Volumen 24h**: 273520.56 USD
+- **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `N1`
+**Regla aplicada**: `M2`
 
-noticias contradicen tesis: El bloqueo de EEUU sigue activo; Trump exige acuerdo firmado antes de levantarlo; negociaciones en curso sin deal cer...
-
-## Investigación de noticias
-
-Tavily+DeepSeek: confirms=false contradicts=true silent=false score=0.65 — El bloqueo de EEUU sigue activo; Trump exige acuerdo firmado antes de levantarlo; negociaciones en curso sin deal cer...
+M2 soft-learned: uncategorized·medium·0.30-0.70 = 5L/0W (wr 0%)
 
 ## Human notes
 
