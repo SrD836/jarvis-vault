@@ -1,6 +1,6 @@
 {
-  "bankroll": 2621.76694549298,
-  "used_exposure": 2913.0651066941173,
+  "bankroll": 2657.5811782428887,
+  "used_exposure": 2911.120873944209,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -288,22 +288,6 @@
       "end_date": "2026-05-23T00:00:00Z",
       "size_usd": 57.49889447139746,
       "liquidity_usd": 77668.211
-    },
-    {
-      "id": "T-2241873-1779562803685",
-      "market_id": "2241873",
-      "question": "Iran closes its airspace by May 24?",
-      "side": "yes",
-      "entry_price": 0.148,
-      "size": 59.72369178832643,
-      "category": "uncategorized",
-      "entry_timestamp": "2026-05-23T19:00:03Z",
-      "approved_price": 0.148,
-      "days_to_resolution": 0,
-      "horizon": "short",
-      "end_date": "2026-05-24T00:00:00Z",
-      "size_usd": 59.72369178832643,
-      "liquidity_usd": 82094.63951
     },
     {
       "id": "T-2334097-1779570004545",
@@ -674,22 +658,6 @@
       "liquidity_usd": 73494.3555
     },
     {
-      "id": "T-2097863-1779660004159",
-      "market_id": "2097863",
-      "question": "Will Inter Miami CF win on 2026-05-24?",
-      "side": "yes",
-      "entry_price": 0.73,
-      "size": 52.561146300607774,
-      "category": "uncategorized",
-      "entry_timestamp": "2026-05-24T22:00:04Z",
-      "approved_price": 0.73,
-      "days_to_resolution": 0,
-      "horizon": "short",
-      "end_date": "2026-05-24T23:00:00Z",
-      "size_usd": 52.561146300607774,
-      "liquidity_usd": 90512.0773
-    },
-    {
       "id": "T-2293512-1779660004159",
       "market_id": "2293512",
       "question": "Will the price of Bitcoin be above $74,000 on May 25?",
@@ -754,22 +722,6 @@
       "liquidity_usd": 52235.60529
     },
     {
-      "id": "T-2294008-1779674403929",
-      "market_id": "2294008",
-      "question": "Will Pumas de la UNAM win on 2026-05-24?",
-      "side": "yes",
-      "entry_price": 0.53,
-      "size": 55.71162834985806,
-      "category": "uncategorized",
-      "entry_timestamp": "2026-05-25T02:00:03Z",
-      "approved_price": 0.53,
-      "days_to_resolution": 0,
-      "horizon": "short",
-      "end_date": "2026-05-24T20:00:00Z",
-      "size_usd": 55.71162834985806,
-      "liquidity_usd": 28277.9986
-    },
-    {
       "id": "T-2313548-1779674403929",
       "market_id": "2313548",
       "question": "Will Elon Musk post 260-279 tweets from May 19 to May 26, 2026?",
@@ -800,6 +752,54 @@
       "end_date": "2026-06-01T03:59:59.999Z",
       "size_usd": 53.50544786720368,
       "liquidity_usd": 71342.58583
+    },
+    {
+      "id": "T-2321929-1779679804173",
+      "market_id": "2321929",
+      "question": "Will Elon Musk post 65-89 tweets from May 23 to May 25, 2026?",
+      "side": "yes",
+      "entry_price": 0.22,
+      "size": 56.47266823863545,
+      "category": "uncategorized",
+      "entry_timestamp": "2026-05-25T03:30:04Z",
+      "approved_price": 0.22,
+      "days_to_resolution": 0,
+      "horizon": "short",
+      "end_date": "2026-05-25T16:00:00Z",
+      "size_usd": 56.47266823863545,
+      "liquidity_usd": 11565.8054
+    },
+    {
+      "id": "T-2230536-1779679804173",
+      "market_id": "2230536",
+      "question": "Will WTI Crude Oil (WTI) hit (LOW) $90 in May?",
+      "side": "yes",
+      "entry_price": 0.9,
+      "size": 55.34321487386274,
+      "category": "uncategorized",
+      "entry_timestamp": "2026-05-25T03:30:04Z",
+      "approved_price": 0.9,
+      "days_to_resolution": 7,
+      "horizon": "medium",
+      "end_date": "2026-06-01T03:59:59.999Z",
+      "size_usd": 55.34321487386274,
+      "liquidity_usd": 35788.5907
+    },
+    {
+      "id": "T-2074237-1779679804173",
+      "market_id": "2074237",
+      "question": "Will WTI Crude Oil (WTI) hit (HIGH) $110 in May?",
+      "side": "yes",
+      "entry_price": 0.1,
+      "size": 54.23635057638548,
+      "category": "uncategorized",
+      "entry_timestamp": "2026-05-25T03:30:04Z",
+      "approved_price": 0.1,
+      "days_to_resolution": 7,
+      "horizon": "medium",
+      "end_date": "2026-06-01T03:59:59.999Z",
+      "size_usd": 54.23635057638548,
+      "liquidity_usd": 43592.1465
     }
   ]
 }

@@ -3,27 +3,20 @@ title: "ecc-common (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-24T03:15:01+00:00
+date: 2026-05-25T03:15:01+00:00
 source_path: ~/.claude/skills/ecc-common
 source_file: ?
-related:
-  - "[[00-MOC]]"
-  - "[[agents/external/gsd-nyquist-auditor]]"
-  - "[[skills/external/gsd-forensics]]"
-  - "[[skills/external/gsd-intel]]"
-  - "[[skills/external/gsd-manager]]"
-  - "[[skills/external/voltagent-core-reference]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-24
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `ecc-common` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/ecc-common/`  
-**Mirrored at**: 2026-05-24T03:15:01+00:00
+**Mirrored at**: 2026-05-25T03:15:01+00:00
 
 ## Descripción
 

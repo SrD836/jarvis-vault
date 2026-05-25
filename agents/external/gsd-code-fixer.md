@@ -2,25 +2,18 @@
 title: "gsd-code-fixer (external agent)"
 type: agent-mirror
 external: true
-date: 2026-05-24T03:15:01+00:00
+date: 2026-05-25T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-code-fixer.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/code-reviewer]]"
-  - "[[agents/debugger]]"
-  - "[[agents/external/index]]"
-  - "[[agents/tester]]"
-  - "[[skills/external/gsd-code-review]]"
-  - "[[skills/external/gsd-code-review-fix]]"
 tags: [agent, external, mirror]
-# auto-linked 2026-05-24
+related:
+  - "[[agents/external/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `gsd-code-fixer` (external Claude Code agent)
 
 **Source**: `~/.claude/agents/gsd-code-fixer.md`  
-**Mirrored at**: 2026-05-24T03:15:01+00:00
+**Mirrored at**: 2026-05-25T03:15:01+00:00
 
 ## Descripción
 

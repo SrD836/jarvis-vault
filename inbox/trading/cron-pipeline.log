@@ -1648,3 +1648,17 @@
 2026/05/25 02:30:04 executor.go:62: executor: quota slots this run: short=32 medium=7 long=7 (of 45 remaining today)
 2026/05/25 02:30:04 executor.go:202: executor: 0 entered, 79 rejected
 2026/05/25 02:30:04 main.go:13: executor: done
+2026/05/25 03:00:04 main.go:11: executor: starting one-shot pass
+2026/05/25 03:00:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/25 03:00:04 executor.go:62: executor: quota slots this run: short=32 medium=7 long=7 (of 45 remaining today)
+2026/05/25 03:00:04 executor.go:197: executor: entered [short] Will Los Angeles FC win on 2026-05-24? @ 0.3100 size=$52.60 (open=50/50, bankroll=$2578)
+2026/05/25 03:00:04 executor.go:202: executor: 1 entered, 78 rejected
+2026/05/25 03:00:04 main.go:13: executor: done
+2026/05/25 03:30:04 main.go:11: executor: starting one-shot pass
+2026/05/25 03:30:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/25 03:30:04 executor.go:62: executor: quota slots this run: short=33 medium=7 long=7 (of 46 remaining today)
+2026/05/25 03:30:04 executor.go:197: executor: entered [short] Will Elon Musk post 65-89 tweets from May 23 to May 25, 2026? @ 0.2200 size=$56.47 (open=48/50, bankroll=$2767)
+2026/05/25 03:30:04 executor.go:197: executor: entered [medium] Will WTI Crude Oil (WTI) hit (LOW) $90 in May? @ 0.9000 size=$55.34 (open=49/50, bankroll=$2712)
+2026/05/25 03:30:04 executor.go:197: executor: entered [medium] Will WTI Crude Oil (WTI) hit (HIGH) $110 in May? @ 0.1000 size=$54.24 (open=50/50, bankroll=$2658)
+2026/05/25 03:30:04 executor.go:202: executor: 3 entered, 77 rejected
+2026/05/25 03:30:04 main.go:13: executor: done

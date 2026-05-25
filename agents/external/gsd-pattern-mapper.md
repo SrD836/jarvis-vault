@@ -2,25 +2,18 @@
 title: "gsd-pattern-mapper (external agent)"
 type: agent-mirror
 external: true
-date: 2026-05-24T03:15:01+00:00
+date: 2026-05-25T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-pattern-mapper.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/external/gsd-code-reviewer]]"
-  - "[[agents/external/gsd-codebase-mapper]]"
-  - "[[agents/external/gsd-doc-synthesizer]]"
-  - "[[agents/external/gsd-plan-checker]]"
-  - "[[agents/external/index]]"
-  - "[[agents/planner]]"
 tags: [agent, external, mirror]
-# auto-linked 2026-05-24
+related:
+  - "[[agents/external/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `gsd-pattern-mapper` (external Claude Code agent)
 
 **Source**: `~/.claude/agents/gsd-pattern-mapper.md`  
-**Mirrored at**: 2026-05-24T03:15:01+00:00
+**Mirrored at**: 2026-05-25T03:15:01+00:00
 
 ## Descripción
 

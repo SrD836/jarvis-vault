@@ -2,25 +2,18 @@
 title: "gsd-codebase-mapper (external agent)"
 type: agent-mirror
 external: true
-date: 2026-05-24T03:15:01+00:00
+date: 2026-05-25T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-codebase-mapper.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/external/gsd-code-reviewer]]"
-  - "[[agents/external/gsd-doc-synthesizer]]"
-  - "[[agents/external/gsd-pattern-mapper]]"
-  - "[[agents/external/gsd-verifier]]"
-  - "[[agents/external/index]]"
-  - "[[skills/external/gsd-map-codebase]]"
 tags: [agent, external, mirror]
-# auto-linked 2026-05-24
+related:
+  - "[[agents/external/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `gsd-codebase-mapper` (external Claude Code agent)
 
 **Source**: `~/.claude/agents/gsd-codebase-mapper.md`  
-**Mirrored at**: 2026-05-24T03:15:01+00:00
+**Mirrored at**: 2026-05-25T03:15:01+00:00
 
 ## Descripción
 
