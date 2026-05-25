@@ -7387,3 +7387,5 @@
 2026/05/25 07:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
 2026/05/25 07:50:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
 2026/05/25 07:50:02 main.go:13: exit_monitor: done
+/bin/sh: 1: ./bot/exit_monitor/bin/exit_monitor: Permission denied
+/bin/sh: 1: ./bot/exit_monitor/bin/exit_monitor: Permission denied
