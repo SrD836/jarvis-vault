@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-england-win-the-2026-fifa-world-cup-937"
+title: "Polymarket veto — bun-pad-wol-2026-05-25-pad"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'Will England win the 2026 FIFA World Cup?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
+decision: "Veto de tesis 'Will Paderborn win on 2026-05-25?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will England win the 2026 FIFA World Cup?
+# Veto: Will Paderborn win on 2026-05-25?
 
 ## Mercado
 
-- **Slug**: `will-england-win-the-2026-fifa-world-cup-937`
-- **Categoría**: sports-season
-- **Precio YES**: 0.1130
-- **Volumen 24h**: 241045.30 USD
-- **End date**: 2026-07-20T00:00:00Z
+- **Slug**: `bun-pad-wol-2026-05-25-pad`
+- **Categoría**: other
+- **Precio YES**: 0.1600
+- **Volumen 24h**: 177036.51 USD
+- **End date**: 2026-05-25T18:30:00Z
 
 ## Razón del veto
 

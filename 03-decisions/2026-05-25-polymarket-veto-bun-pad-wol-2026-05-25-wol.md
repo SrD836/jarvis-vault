@@ -2,7 +2,7 @@
 title: "Polymarket veto — bun-pad-wol-2026-05-25-wol"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'Will Wolfsburg win on 2026-05-25?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
+decision: "Veto de tesis 'Will Wolfsburg win on 2026-05-25?' (rule M2): M2 soft-learned: uncategorized·short·<0.10 = 12L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `bun-pad-wol-2026-05-25-wol`
 - **Categoría**: other
-- **Precio YES**: 0.1100
-- **Volumen 24h**: 448112.45 USD
+- **Precio YES**: 0.0500
+- **Volumen 24h**: 519465.78 USD
 - **End date**: 2026-05-25T18:30:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `M2`
 
-M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)
+M2 soft-learned: uncategorized·short·<0.10 = 12L/0W (wr 0%)
 
 ## Human notes
 

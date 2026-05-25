@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-80-ships-transit-the-strait-of-hormuz-on-any-day-by-may-31`
 - **Categoría**: geopolitics
 - **Precio YES**: 0.0600
-- **Volumen 24h**: 92973.70 USD
+- **Volumen 24h**: 92988.39 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto

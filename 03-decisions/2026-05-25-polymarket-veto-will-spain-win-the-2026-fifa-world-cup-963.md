@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-spain-win-the-2026-fifa-world-cup-963`
 - **Categoría**: sports-season
 - **Precio YES**: 0.1750
-- **Volumen 24h**: 356505.17 USD
+- **Volumen 24h**: 352421.62 USD
 - **End date**: 2026-07-20T00:00:00Z
 
 ## Razón del veto

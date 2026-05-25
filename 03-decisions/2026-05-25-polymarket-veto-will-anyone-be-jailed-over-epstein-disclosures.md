@@ -35,9 +35,9 @@ memoria: exact slug match (score 1.00)
 
 - veto `will-anyone-be-jailed-over-epstein-disclosures` score=1.00 (exact slug match)
 - veto `xi-jinping-out-before-2027` score=0.40 (same category; same price bucket low)
-- veto `will-macky-sall-be-the-next-secretary-general-of-the-united-nations` score=0.40 (same category; same price bucket low)
-- veto `will-petr-yan-fight-sean-omalley-next` score=0.40 (same category; same price bucket low)
+- veto `will-bp-be-acquired-before-2027-549-844` score=0.40 (same category; same price bucket low)
 - veto `will-the-feds-lower-bound-reach-0pt25-or-lower-before-2027-173-921-916-764-754-593-935` score=0.40 (same category; same price bucket low)
+- veto `will-stablecoins-hit-500b-before-2027` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

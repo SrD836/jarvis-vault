@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-the-iranian-regime-fall-by-the-end-of-2026`
 - **Categoría**: other
 - **Precio YES**: 0.1200
-- **Volumen 24h**: 90945.29 USD
+- **Volumen 24h**: 92565.25 USD
 - **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto

@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `will-carlos-roberto-massa-jnior-finish-in-third-place-in-the-first-round-of-the-2026-brazilian-presidential-election`
 - **Categoría**: elections
-- **Precio YES**: 0.1270
+- **Precio YES**: 0.2280
 - **Volumen 24h**: 95590.47 USD
 - **End date**: 2026-10-04T00:00:00Z
 
