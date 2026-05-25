@@ -1821,3 +1821,5 @@
 2026/05/25 12:30:04 executor.go:202: executor: 1 entered, 6 rejected
 2026/05/25 12:30:04 main.go:13: executor: done
 /bin/bash: line 1: ./vault/projects/polymarket-veto-loop-bot/bot/scanner/bin/scanner: Permission denied
+/bin/bash: line 1: ./vault/projects/polymarket-veto-loop-bot/bot/scanner/bin/scanner: Permission denied
+/bin/bash: line 1: ./vault/projects/polymarket-veto-loop-bot/bot/scanner/bin/scanner: Permission denied
