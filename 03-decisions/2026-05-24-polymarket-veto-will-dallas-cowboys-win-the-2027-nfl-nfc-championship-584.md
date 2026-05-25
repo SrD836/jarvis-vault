@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `will-dallas-cowboys-win-the-2027-nfl-nfc-championship-584`
 - **Categoría**: uncategorized
-- **Precio YES**: 0.1100
+- **Precio YES**: 0.1090
 - **Volumen 24h**: 779046.36 USD
 - **End date**: 2027-01-25T00:00:00Z
 

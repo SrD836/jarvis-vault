@@ -1600,3 +1600,14 @@
 2026/05/24 22:30:04 executor.go:62: executor: quota slots this run: short=18 medium=4 long=4 (of 25 remaining today)
 2026/05/24 22:30:04 executor.go:202: executor: 0 entered, 79 rejected
 2026/05/24 22:30:04 main.go:13: executor: done
+2026/05/24 23:00:04 main.go:11: executor: starting one-shot pass
+2026/05/24 23:00:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/24 23:00:04 executor.go:62: executor: quota slots this run: short=18 medium=4 long=4 (of 25 remaining today)
+2026/05/24 23:00:04 executor.go:202: executor: 0 entered, 78 rejected
+2026/05/24 23:00:04 main.go:13: executor: done
+2026/05/24 23:30:04 main.go:11: executor: starting one-shot pass
+2026/05/24 23:30:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/24 23:30:04 executor.go:62: executor: quota slots this run: short=18 medium=4 long=4 (of 25 remaining today)
+2026/05/24 23:30:04 executor.go:197: executor: entered [short] Will Elon Musk post 40-64 tweets from May 23 to May 25, 2026? @ 0.7000 size=$50.70 (open=50/50, bankroll=$2484)
+2026/05/24 23:30:04 executor.go:202: executor: 1 entered, 79 rejected
+2026/05/24 23:30:04 main.go:13: executor: done
