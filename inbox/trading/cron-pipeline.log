@@ -1820,3 +1820,4 @@
 2026/05/25 12:30:04 executor.go:197: executor: entered [medium] Will WTI Crude Oil (WTI) hit (HIGH) $105 in May? @ 0.1500 size=$57.15 (open=50/50, bankroll=$2800)
 2026/05/25 12:30:04 executor.go:202: executor: 1 entered, 6 rejected
 2026/05/25 12:30:04 main.go:13: executor: done
+/bin/bash: line 1: ./vault/projects/polymarket-veto-loop-bot/bot/scanner/bin/scanner: Permission denied
