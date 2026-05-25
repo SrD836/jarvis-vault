@@ -1624,3 +1624,14 @@
 2026/05/25 00:30:03 executor.go:197: executor: entered [short] Will Philadelphia Union win on 2026-05-24? @ 0.1800 size=$51.67 (open=50/50, bankroll=$2532)
 2026/05/25 00:30:03 executor.go:202: executor: 1 entered, 81 rejected
 2026/05/25 00:30:03 main.go:13: executor: done
+2026/05/25 01:00:04 main.go:11: executor: starting one-shot pass
+2026/05/25 01:00:04 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/25 01:00:04 executor.go:62: executor: quota slots this run: short=34 medium=8 long=8 (of 48 remaining today)
+2026/05/25 01:00:04 executor.go:197: executor: entered [short] Will Pumas de la UNAM win on 2026-05-24? @ 0.3300 size=$52.13 (open=50/50, bankroll=$2554)
+2026/05/25 01:00:04 executor.go:202: executor: 1 entered, 81 rejected
+2026/05/25 01:00:04 main.go:13: executor: done
+2026/05/25 01:30:03 main.go:11: executor: starting one-shot pass
+2026/05/25 01:30:03 executor.go:34: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/25 01:30:03 executor.go:62: executor: quota slots this run: short=33 medium=8 long=8 (of 47 remaining today)
+2026/05/25 01:30:03 executor.go:202: executor: 0 entered, 78 rejected
+2026/05/25 01:30:03 main.go:13: executor: done

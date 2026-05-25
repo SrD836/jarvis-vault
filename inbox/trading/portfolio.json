@@ -1,5 +1,5 @@
 {
-  "bankroll": 2606.5515711342446,
+  "bankroll": 2703.4403860702178,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -449,22 +449,6 @@
       "size_usd": 59.80206490095486
     },
     {
-      "approved_price": 0.3,
-      "category": "uncategorized",
-      "days_to_resolution": 1,
-      "end_date": "2026-05-26T16:00:00Z",
-      "entry_price": 0.3,
-      "entry_timestamp": "2026-05-24T17:00:03Z",
-      "horizon": "short",
-      "id": "T-2313548-1779642003777",
-      "liquidity_usd": 28123.154,
-      "market_id": "2313548",
-      "question": "Will Elon Musk post 260-279 tweets from May 19 to May 26, 2026?",
-      "side": "yes",
-      "size": 58.60602360293576,
-      "size_usd": 58.60602360293576
-    },
-    {
       "approved_price": 0.42,
       "category": "uncategorized",
       "days_to_resolution": 5,
@@ -689,22 +673,6 @@
       "size_usd": 52.38491297220494
     },
     {
-      "approved_price": 0.8,
-      "category": "uncategorized",
-      "days_to_resolution": 0,
-      "end_date": "2026-05-24T21:00:00Z",
-      "entry_price": 0.8,
-      "entry_timestamp": "2026-05-24T22:00:04Z",
-      "horizon": "short",
-      "id": "T-2097857-1779660004159",
-      "liquidity_usd": 15101.6322,
-      "market_id": "2097857",
-      "question": "Will Columbus Crew win on 2026-05-24?",
-      "side": "yes",
-      "size": 53.633822755722214,
-      "size_usd": 53.633822755722214
-    },
-    {
       "approved_price": 0.73,
       "category": "uncategorized",
       "days_to_resolution": 0,
@@ -783,7 +751,23 @@
       "side": "yes",
       "size": 51.13093612428302,
       "size_usd": 51.13093612428302
+    },
+    {
+      "approved_price": 0.33,
+      "category": "uncategorized",
+      "days_to_resolution": 0,
+      "end_date": "2026-05-24T20:00:00Z",
+      "entry_price": 0.33,
+      "entry_timestamp": "2026-05-25T01:00:04Z",
+      "horizon": "short",
+      "id": "T-2294008-1779670804814",
+      "liquidity_usd": 66457.5105,
+      "market_id": "2294008",
+      "question": "Will Pumas de la UNAM win on 2026-05-24?",
+      "side": "yes",
+      "size": 52.13103142268489,
+      "size_usd": 52.13103142268489
     }
   ],
-  "used_exposure": 2861.4904810528524
+  "used_exposure": 2801.3816661168794
 }
