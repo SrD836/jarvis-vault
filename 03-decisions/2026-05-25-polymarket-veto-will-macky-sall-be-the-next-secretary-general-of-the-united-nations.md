@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-macky-sall-be-the-next-secretary-general-of-the-united-nations"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'Will Macky Sall be the next Secretary-General of the United Nations?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
+decision: "Veto de tesis 'Will Macky Sall be the next Secretary-General of the United Nations?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, m2]
+tags: [decision, polymarket, bot, veto, m1]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -20,16 +20,24 @@ related:
 ## Mercado
 
 - **Slug**: `will-macky-sall-be-the-next-secretary-general-of-the-united-nations`
-- **Categoría**: uncategorized
+- **Categoría**: other
 - **Precio YES**: 0.1180
 - **Volumen 24h**: 109801.28 USD
 - **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `M2`
+**Regla aplicada**: `M1`
 
-M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)
+memoria: exact slug match (score 1.00)
+
+## Patterns en memoria que contribuyeron
+
+- veto `will-macky-sall-be-the-next-secretary-general-of-the-united-nations` score=1.00 (exact slug match)
+- veto `fed-emergency-rate-cut-before-2027` score=0.40 (same category; same price bucket low)
+- veto `will-there-be-between-8-and-10-earthquakes-of-magnitude-7pt0-or-higher-worldwide-in-2026` score=0.40 (same category; same price bucket low)
+- veto `will-clavicular-be-named-peoples-sexiest-man-alive-in-2026-399` score=0.40 (same category; same price bucket low)
+- veto `xi-jinping-out-before-2027` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

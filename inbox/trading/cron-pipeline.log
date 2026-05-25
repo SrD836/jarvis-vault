@@ -1701,3 +1701,6 @@
 2026/05/25 07:30:04 executor.go:62: executor: quota slots this run: short=28 medium=6 long=6 (of 40 remaining today)
 2026/05/25 07:30:04 executor.go:202: executor: 0 entered, 76 rejected
 2026/05/25 07:30:04 main.go:13: executor: done
+2026/05/25 12:00:01 [scanner] config loaded: mode=simulation sort=end_date_asc window=[2,30]d
+[scanner] starting scan
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=0&order=volumeNum&volume_num_min=50000
