@@ -39,6 +39,7 @@ const (
 	rulePastEnd        = "P2"
 	ruleWindow         = "P1"
 	ruleMem            = "M1"
+	ruleSoftLearned    = "M2"
 	ruleNews1          = "N1"
 	ruleNews2          = "N2"
 	memoryHitThreshold = 0.7
@@ -104,8 +105,17 @@ func Run() error {
 	_ = now
 
 	stats := struct {
-		P0, P1, P2, P3, P4, V1, V2, V4, M1, N1, N2, LLM int
+		P0, P1, P2, P3, P4, V1, V2, V4, M1, M2, N1, N2, LLM int
 	}{}
+
+	// M2 prep: load soft-learned veto rules from memory.md. These are the
+	// auto-generated cluster rules (category·horizon·priceBand → win rate < 30%).
+	// Without this consumer the rules were generated but never enforced.
+	activeSoftRules, sErr := softrules.LoadActiveRules(memoryPath)
+	if sErr != nil {
+		log.Printf("WARN: load soft rules failed: %v (M2 disabled this cycle)", sErr)
+	}
+	log.Printf("M2: loaded %d active soft rules from memory.md", len(activeSoftRules))
 
 	for i, c := range candidates {
 		// P0: price band sanity (v6 — floor 0.10 default, relaxed to 0.05 if days_to_end <= 7)
@@ -190,6 +200,29 @@ func Run() error {
 				}
 				recordVetoWithExtras(mem, &c, vr, decisionsDir, true, "", memHits)
 				stats.M1++
+				continue
+			}
+		}
+
+		// M2: soft-learned cluster veto. If the candidate's (category, horizon, price band)
+		// has been losing systematically (< 30% win rate, >= 5 losses) the rule is enforced
+		// here. Without this brain ignored its own learned patterns — see post-mortem in
+		// agents/polymarket-bot/memory.md "## Reglas blandas aprendidas".
+		if len(activeSoftRules) > 0 {
+			d := daysUntil(c.EndDate)
+			horizonGuess := cfg.Classify(d)
+			if ar := softrules.MatchVeto(activeSoftRules, c.Category, horizonGuess, c.CurrentPriceYes); ar != nil {
+				vr := types.VetoResult{
+					CandidateID: c.ID,
+					Slug:        c.Slug,
+					Blocked:     true,
+					Reason: fmt.Sprintf("M2 soft-learned: %s·%s·%s = %dL/%dW (wr %.0f%%)",
+						ar.Category, ar.Horizon, ar.Band, ar.Losses, ar.Wins, ar.WinRate*100),
+					VetoedBy: ruleSoftLearned,
+				}
+				blocked = append(blocked, vr)
+				recordVeto(mem, &c, vr, decisionsDir, true)
+				stats.M2++
 				continue
 			}
 		}
@@ -298,9 +331,9 @@ func Run() error {
 	}
 
 	softrules.GenerateAndAppend(memoryPath)
-	log.Printf("Brain v3 done: %d approved, %d blocked (P0=%d P2=%d P3=%d P4=%d V1=%d V2=%d V4=%d M1=%d N1=%d N2=%d LLM=%d) horizons in approved: short=%d medium=%d long=%d",
+	log.Printf("Brain v3 done: %d approved, %d blocked (P0=%d P2=%d P3=%d P4=%d V1=%d V2=%d V4=%d M1=%d M2=%d N1=%d N2=%d LLM=%d) horizons in approved: short=%d medium=%d long=%d",
 		len(approved), len(blocked),
-		stats.P0, stats.P2, stats.P3, stats.P4, stats.V1, stats.V2, stats.V4, stats.M1, stats.N1, stats.N2, stats.LLM,
+		stats.P0, stats.P2, stats.P3, stats.P4, stats.V1, stats.V2, stats.V4, stats.M1, stats.M2, stats.N1, stats.N2, stats.LLM,
 		countHorizon(approved, "short"), countHorizon(approved, "medium"), countHorizon(approved, "long"))
 	return nil
 }
