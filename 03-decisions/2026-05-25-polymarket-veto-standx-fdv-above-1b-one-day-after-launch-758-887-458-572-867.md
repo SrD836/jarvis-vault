@@ -2,7 +2,7 @@
 title: "Polymarket veto — standx-fdv-above-1b-one-day-after-launch-758-887-458-572-867"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'StandX FDV above $1B one day after launch?' (rule P4_pre_event): pre-event slug + 221 d to resolution (>=7 threshold)"
+decision: "Veto de tesis 'StandX FDV above $1B one day after launch?' (rule P4_pre_event): pre-event slug + 220 d to resolution (>=7 threshold)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -29,7 +29,7 @@ related:
 
 **Regla aplicada**: `P4_pre_event`
 
-pre-event slug + 221 d to resolution (>=7 threshold)
+pre-event slug + 220 d to resolution (>=7 threshold)
 
 ## Human notes
 

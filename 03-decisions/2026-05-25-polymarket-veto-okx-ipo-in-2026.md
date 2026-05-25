@@ -2,7 +2,7 @@
 title: "Polymarket veto — okx-ipo-in-2026"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'OKX IPO in 2026?' (rule P4_pre_event): pre-event slug + 221 d to resolution (>=7 threshold)"
+decision: "Veto de tesis 'OKX IPO in 2026?' (rule P4_pre_event): pre-event slug + 220 d to resolution (>=7 threshold)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -29,7 +29,7 @@ related:
 
 **Regla aplicada**: `P4_pre_event`
 
-pre-event slug + 221 d to resolution (>=7 threshold)
+pre-event slug + 220 d to resolution (>=7 threshold)
 
 ## Human notes
 

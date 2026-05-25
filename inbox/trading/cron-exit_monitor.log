@@ -7255,3 +7255,53 @@
 2026/05/25 04:55:02 main.go:13: exit_monitor: done
 2026/05/25 05:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/25 05:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 05:00:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/25 05:00:02 main.go:13: exit_monitor: done
+2026/05/25 05:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 05:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 05:05:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/25 05:05:02 main.go:13: exit_monitor: done
+2026/05/25 05:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 05:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 05:10:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/25 05:10:02 main.go:13: exit_monitor: done
+2026/05/25 05:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 05:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 05:15:02 monitor.go:141: exit_monitor: closed Israel x Hezbollah permanent peace deal by May 31, 2026? (take_profit EARLY) @ 0.1110 src=bestBid liq=$75930: PnL $22.90 (44.16%)
+2026/05/25 05:15:02 monitor.go:160: exit_monitor: 1 closed, 47 remaining
+2026/05/25 05:15:02 main.go:13: exit_monitor: done
+2026/05/25 05:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 05:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 05:20:02 monitor.go:160: exit_monitor: 0 closed, 47 remaining
+2026/05/25 05:20:02 main.go:13: exit_monitor: done
+2026/05/25 05:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 05:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 05:25:02 monitor.go:141: exit_monitor: closed Will Elon Musk post 240-259 tweets from May 19 to May 26, 2026? (take_profit EARLY) @ 0.2350 src=bestBid liq=$25971: PnL $28.36 (43.29%)
+2026/05/25 05:25:02 monitor.go:160: exit_monitor: 1 closed, 46 remaining
+2026/05/25 05:25:02 main.go:13: exit_monitor: done
+2026/05/25 05:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 05:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 05:30:02 monitor.go:160: exit_monitor: 0 closed, 46 remaining
+2026/05/25 05:30:02 main.go:13: exit_monitor: done
+2026/05/25 05:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 05:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 05:35:03 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/25 05:35:03 main.go:13: exit_monitor: done
+2026/05/25 05:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 05:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 05:40:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/25 05:40:02 main.go:13: exit_monitor: done
+2026/05/25 05:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 05:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 05:45:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/25 05:45:02 main.go:13: exit_monitor: done
+2026/05/25 05:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 05:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 05:50:02 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/25 05:50:02 main.go:13: exit_monitor: done
+2026/05/25 05:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 05:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 05:55:01 monitor.go:160: exit_monitor: 0 closed, 48 remaining
+2026/05/25 05:55:01 main.go:13: exit_monitor: done
+2026/05/25 06:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 06:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
