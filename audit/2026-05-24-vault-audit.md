@@ -3,8 +3,16 @@ date: 2026-05-24
 type: audit
 scope: vault-obsidian
 status: complete
+related:
+  - "[[00-MOC]]"
+  - "[[CLAUDE]]"
+  - "[[agents/archivist]]"
+  - "[[agents/auditor]]"
+  - "[[audit/2026-05-24-system-e2e-audit]]"
 tags: [audit, vault, second-brain, obsidian]
+# auto-linked 2026-05-25
 ---
+
 
 # Auditoría Vault Obsidian — 2026-05-24
 
