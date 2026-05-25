@@ -7421,3 +7421,19 @@
 /bin/sh: 1: ./bot/exit_monitor/bin/exit_monitor: Permission denied
 /bin/sh: 1: ./bot/exit_monitor/bin/exit_monitor: Permission denied
 /bin/sh: 1: ./bot/exit_monitor/bin/exit_monitor: Permission denied
+2026/05/25 10:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 10:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 10:45:01 monitor.go:41: exit_monitor: no active positions
+2026/05/25 10:45:01 main.go:13: exit_monitor: done
+2026/05/25 10:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 10:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 10:50:01 monitor.go:41: exit_monitor: no active positions
+2026/05/25 10:50:01 main.go:13: exit_monitor: done
+2026/05/25 10:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 10:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 10:55:01 monitor.go:41: exit_monitor: no active positions
+2026/05/25 10:55:01 main.go:13: exit_monitor: done
+2026/05/25 11:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/25 11:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/25 11:00:01 monitor.go:41: exit_monitor: no active positions
+2026/05/25 11:00:01 main.go:13: exit_monitor: done
