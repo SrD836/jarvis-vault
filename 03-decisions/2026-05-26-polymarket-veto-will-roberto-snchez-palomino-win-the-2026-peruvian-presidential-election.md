@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-roberto-snchez-palomino-win-the-2026-peruvian-presidential-election"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Will Roberto Sánchez Palomino win the 2026 Peruvian presidential election?' (rule M2): M2 soft-learned: uncategorized·medium·0.10-0.30 = 11L/2W (wr 15%)"
+decision: "Veto de tesis 'Will Roberto Sánchez Palomino win the 2026 Peruvian presidential election?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-roberto-snchez-palomino-win-the-2026-peruvian-presidential-election`
 - **Categoría**: elections
-- **Precio YES**: 0.2890
-- **Volumen 24h**: 275466.42 USD
+- **Precio YES**: 0.2900
+- **Volumen 24h**: 269798.65 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `M2`
 
-M2 soft-learned: uncategorized·medium·0.10-0.30 = 11L/2W (wr 15%)
+M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)
 
 ## Human notes
 

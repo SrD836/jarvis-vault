@@ -39,10 +39,10 @@ trap 'rm -f "$CTX"' EXIT
     jq '{bankroll, used_exposure, n_positions: (.positions | length), by_horizon: (.positions | group_by(.horizon) | map({h: .[0].horizon, n: length}))}' vault/inbox/trading/portfolio.json
   fi
   echo ""
-  echo "## Brain log tail (cron-pipeline.log, last 200 lines)"
+  echo "## Brain log tail (cron-pipeline.log, last 40 lines)"
   echo ""
   if [[ -f vault/inbox/trading/cron-pipeline.log ]]; then
-    tail -200 vault/inbox/trading/cron-pipeline.log
+    tail -40 vault/inbox/trading/cron-pipeline.log
   fi
 } > "$CTX"
 
@@ -54,7 +54,7 @@ REQ_BODY=$(jq -n \
 
 RESP=$(curl -sS -X POST "$DASHBOARD_URL/api/llm/call" \
   -H 'Content-Type: application/json' \
-  --data "$REQ_BODY")
+  --data-binary @<(printf %s "$REQ_BODY"))
 
 # Dashboard's /api/llm/call returns either {"text":"..."} or {"content":[{"text":"..."}]}.
 # Try both shapes.

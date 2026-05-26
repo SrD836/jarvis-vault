@@ -2,13 +2,13 @@
 title: "Polymarket veto — iran-agrees-to-surrender-enriched-uranium-stockpile-by-june-30-2026"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Iran agrees to surrender enriched uranium stockpile by June 30, 2026?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
+decision: "Veto de tesis 'Iran agrees to surrender enriched uranium stockpile by June 30, 2026?' (rule M1): memoria: slug prefix match; same category; same price bucket mid (score 0.90)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, m2]
+tags: [decision, polymarket, bot, veto, m1]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,21 @@ related:
 
 - **Slug**: `iran-agrees-to-surrender-enriched-uranium-stockpile-by-june-30-2026`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.2400
-- **Volumen 24h**: 198464.84 USD
+- **Precio YES**: 0.2000
+- **Volumen 24h**: 178046.20 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `M2`
+**Regla aplicada**: `M1`
 
-M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)
+memoria: slug prefix match; same category; same price bucket mid (score 0.90)
+
+## Patterns en memoria que contribuyeron
+
+- veto `iran-agrees-to-surrender-enriched-uranium-stockpile-by-december-31-2026` score=0.90 (slug prefix match; same category; same price bucket mid)
+- veto `us-announces-new-iran-agreementceasefire-extension-by-june-7-265` score=0.40 (same category; same price bucket mid)
+- veto `us-announces-new-iran-agreementceasefire-extension-by-may-31-665` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 
