@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `will-the-upper-bound-of-the-target-federal-funds-rate-be-3pt75-at-the-end-of-2026-166`
 - **Categoría**: other
-- **Precio YES**: 0.5190
+- **Precio YES**: 0.5230
 - **Volumen 24h**: 519256.16 USD
 - **End date**: 2026-12-09T00:00:00Z
 

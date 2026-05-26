@@ -2,13 +2,13 @@
 title: "Polymarket veto — us-strike-on-cuba-by-december-31"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'US strike on Cuba by December 31?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'US strike on Cuba by December 31?' (rule M2): M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, m1]
+tags: [decision, polymarket, bot, veto, m2]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,22 +21,15 @@ related:
 
 - **Slug**: `us-strike-on-cuba-by-december-31`
 - **Categoría**: other
-- **Precio YES**: 0.5100
-- **Volumen 24h**: 79230.33 USD
+- **Precio YES**: 0.5000
+- **Volumen 24h**: 82404.99 USD
 - **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `M1`
+**Regla aplicada**: `M2`
 
-memoria: exact slug match (score 1.00)
-
-## Patterns en memoria que contribuyeron
-
-- veto `us-strike-on-cuba-by-december-31` score=1.00 (exact slug match)
-- veto `will-gitlab-be-acquired-before-2027-944-667` score=0.40 (same category; same price bucket mid)
-- veto `will-ubisoft-be-acquired-before-2027-175-488` score=0.40 (same category; same price bucket mid)
-- veto `altcoin-market-cap-dip-to-150b-before-2027` score=0.40 (same category; same price bucket mid)
+M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)
 
 ## Human notes
 

@@ -2,7 +2,7 @@
 title: "Polymarket veto — israel-x-hezbollah-permanent-peace-deal-by-may-31-2026"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Israel x Hezbollah permanent peace deal by May 31, 2026?' (rule P9): P9: geopolitics pump cluster (price 0.08, 4d)"
+decision: "Veto de tesis 'Israel x Hezbollah permanent peace deal by May 31, 2026?' (rule P9): P9: geopolitics pump cluster (price 0.12, 4d)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `israel-x-hezbollah-permanent-peace-deal-by-may-31-2026`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.0770
-- **Volumen 24h**: 106657.64 USD
+- **Precio YES**: 0.1190
+- **Volumen 24h**: 108303.96 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `P9`
 
-P9: geopolitics pump cluster (price 0.08, 4d)
+P9: geopolitics pump cluster (price 0.12, 4d)
 
 ## Human notes
 
