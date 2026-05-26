@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-bitcoin-dip-to-70k-in-may-2026`
 - **Categoría**: market
 - **Precio YES**: 0.0670
-- **Volumen 24h**: 212762.06 USD
+- **Volumen 24h**: 200921.16 USD
 - **End date**: 2026-06-01T04:00:00Z
 
 ## Razón del veto

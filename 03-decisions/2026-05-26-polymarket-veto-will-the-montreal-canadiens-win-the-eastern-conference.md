@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-the-montreal-canadiens-win-the-eastern-conference`
 - **Categoría**: other
 - **Precio YES**: 0.1900
-- **Volumen 24h**: 52240.56 USD
+- **Volumen 24h**: 54085.28 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto

@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-wti-crude-oil-wti-hit-high-105-in-may`
 - **Categoría**: market
-- **Precio YES**: 0.1500
-- **Volumen 24h**: 91338.20 USD
+- **Precio YES**: 0.1400
+- **Volumen 24h**: 90323.23 USD
 - **End date**: 2026-06-01T03:59:59.999Z
 
 ## Razón del veto

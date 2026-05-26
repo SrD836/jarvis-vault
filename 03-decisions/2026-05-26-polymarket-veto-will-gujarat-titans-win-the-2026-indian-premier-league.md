@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-gujarat-titans-win-the-2026-indian-premier-league`
 - **Categoría**: sports-season
-- **Precio YES**: 0.2460
-- **Volumen 24h**: 60568.16 USD
+- **Precio YES**: 0.2390
+- **Volumen 24h**: 60888.17 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto

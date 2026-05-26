@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `starmer-out-by-june-30-2026-862-594-548-219`
 - **Categoría**: executive-action
-- **Precio YES**: 0.2000
-- **Volumen 24h**: 60963.28 USD
+- **Precio YES**: 0.1600
+- **Volumen 24h**: 72903.90 USD
 - **End date**: 2026-06-30T12:00:00Z
 
 ## Razón del veto
@@ -34,7 +34,7 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `starmer-out-by-june-30-2026-862-594-548-219` score=1.00 (exact slug match)
-- veto `will-trump-agree-to-iranian-oil-sanction-relief-by-may-31` score=0.40 (same category; same price bucket mid)
+- veto `will-austria-recognize-palestine-before-2027` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 
