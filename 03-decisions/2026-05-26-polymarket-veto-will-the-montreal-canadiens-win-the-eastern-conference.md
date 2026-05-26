@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-the-montreal-canadiens-win-the-eastern-conference`
 - **Categoría**: other
 - **Precio YES**: 0.1900
-- **Volumen 24h**: 54439.12 USD
+- **Volumen 24h**: 55448.23 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto
@@ -37,7 +37,7 @@ memoria: exact slug match (score 1.00)
 - veto `will-the-montreal-canadiens-win-the-2026-nhl-stanley-cup` score=0.90 (slug prefix match; same category; same price bucket low)
 - veto `elon-musk-of-tweets-may-22-may-29-160-179` score=0.40 (same category; same price bucket low)
 - veto `will-trump-restart-project-freedom-by-may-31` score=0.40 (same category; same price bucket low)
-- veto `elon-musk-of-tweets-may-25-may-27-0-39` score=0.40 (same category; same price bucket low)
+- veto `will-us-unemployment-reach-at-least-5pt5-in-2026` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

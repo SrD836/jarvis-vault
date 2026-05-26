@@ -34,7 +34,7 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-bernadette-wilson-win-the-2026-alaska-governor-election` score=1.00 (exact slug match)
-- veto `will-abelardo-de-la-espriella-win-the-1st-round-of-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket mid)
+- veto `will-ivn-cepeda-castro-win-the-1st-round-of-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket mid)
 - veto `will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983` score=0.40 (same category; same price bucket mid)
 - veto `will-oh-se-hoon-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
 - veto `will-roberto-snchez-palomino-win-the-2026-peruvian-presidential-election` score=0.40 (same category; same price bucket mid)

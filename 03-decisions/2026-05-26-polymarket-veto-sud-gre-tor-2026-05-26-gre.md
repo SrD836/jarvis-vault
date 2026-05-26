@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — ucl-psg-ars-2026-05-30-psg"
+title: "Polymarket veto — sud-gre-tor-2026-05-26-gre"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Will Paris Saint-Germain FC win on 2026-05-30?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Will Grêmio FBPA win on 2026-05-26?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will Paris Saint-Germain FC win on 2026-05-30?
+# Veto: Will Grêmio FBPA win on 2026-05-26?
 
 ## Mercado
 
-- **Slug**: `ucl-psg-ars-2026-05-30-psg`
+- **Slug**: `sud-gre-tor-2026-05-26-gre`
 - **Categoría**: other
-- **Precio YES**: 0.4200
-- **Volumen 24h**: 291239.16 USD
-- **End date**: 2026-05-30T16:00:00Z
+- **Precio YES**: 0.6000
+- **Volumen 24h**: 127013.64 USD
+- **End date**: 2026-05-26T22:00:00Z
 
 ## Razón del veto
 
@@ -33,9 +33,9 @@ memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
-- veto `ucl-psg-ars-2026-05-30-psg` score=1.00 (exact slug match)
-- veto `sud-gre-tor-2026-05-26-gre` score=0.40 (same category; same price bucket mid)
+- veto `sud-gre-tor-2026-05-26-gre` score=1.00 (exact slug match)
 - veto `weed-rescheduled-by-december-31` score=0.40 (same category; same price bucket mid)
+- veto `ucl-psg-ars-2026-05-30-psg` score=0.40 (same category; same price bucket mid)
 - veto `will-trump-agree-to-unfreeze-iranian-assets-by-may-31` score=0.40 (same category; same price bucket mid)
 - veto `claudio-tapia-out-as-afa-president-by-july-19-2026` score=0.40 (same category; same price bucket mid)
 

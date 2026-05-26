@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — puffpaw-fdv-above-400m-one-day-after-launch"
+title: "Polymarket veto — standx-fdv-above-800m-one-day-after-launch-732-932-813-941-568"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Puffpaw FDV above $400M one day after launch?' (rule P4_pre_event): pre-event slug + 219 d to resolution (>=7 threshold)"
+decision: "Veto de tesis 'StandX FDV above $800M one day after launch?' (rule P4_pre_event): pre-event slug + 219 d to resolution (>=7 threshold)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,14 +15,14 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Puffpaw FDV above $400M one day after launch?
+# Veto: StandX FDV above $800M one day after launch?
 
 ## Mercado
 
-- **Slug**: `puffpaw-fdv-above-400m-one-day-after-launch`
+- **Slug**: `standx-fdv-above-800m-one-day-after-launch-732-932-813-941-568`
 - **Categoría**: crypto-launch
-- **Precio YES**: 0.1330
-- **Volumen 24h**: 893200.30 USD
+- **Precio YES**: 0.1900
+- **Volumen 24h**: 329569.05 USD
 - **End date**: 2027-01-01T05:00:00Z
 
 ## Razón del veto

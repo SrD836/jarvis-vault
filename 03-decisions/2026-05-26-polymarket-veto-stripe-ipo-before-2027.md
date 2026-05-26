@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — puffpaw-fdv-above-400m-one-day-after-launch"
+title: "Polymarket veto — stripe-ipo-before-2027"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Puffpaw FDV above $400M one day after launch?' (rule P4_pre_event): pre-event slug + 219 d to resolution (>=7 threshold)"
+decision: "Veto de tesis 'Stripe IPO before 2027?' (rule P4_pre_event): pre-event slug + 218 d to resolution (>=7 threshold)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,21 +15,21 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Puffpaw FDV above $400M one day after launch?
+# Veto: Stripe IPO before 2027?
 
 ## Mercado
 
-- **Slug**: `puffpaw-fdv-above-400m-one-day-after-launch`
+- **Slug**: `stripe-ipo-before-2027`
 - **Categoría**: crypto-launch
-- **Precio YES**: 0.1330
-- **Volumen 24h**: 893200.30 USD
-- **End date**: 2027-01-01T05:00:00Z
+- **Precio YES**: 0.1000
+- **Volumen 24h**: 251885.87 USD
+- **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `P4_pre_event`
 
-pre-event slug + 219 d to resolution (>=7 threshold)
+pre-event slug + 218 d to resolution (>=7 threshold)
 
 ## Human notes
 
