@@ -1,6 +1,6 @@
 {
-  "bankroll": 3888.5333543594975,
-  "used_exposure": 898.97,
+  "bankroll": 3810.7626872723076,
+  "used_exposure": 976.74066708719,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -335,6 +335,43 @@
           "url": "",
           "headline_title": "Abelardo de la Espriella supera a Iván Cepeda según Polymarket con 43% de probabilidad",
           "published_date": "2026-05-11"
+        }
+      ]
+    },
+    {
+      "id": "T-2313280-1779814832575",
+      "market_id": "2313280",
+      "slug": "bitcoin-above-76k-on-may-27-2026",
+      "question": "Will the price of Bitcoin be above $76,000 on May 27?",
+      "side": "yes",
+      "entry_price": 0.68,
+      "size": 77.77066708718995,
+      "category": "market",
+      "entry_timestamp": "2026-05-26T17:00:32Z",
+      "approved_price": 0.68,
+      "days_to_resolution": 0,
+      "horizon": "short",
+      "end_date": "2026-05-27T16:00:00Z",
+      "size_usd": 77.77066708718995,
+      "liquidity_usd": 29452.1193,
+      "sources_used": [
+        {
+          "domain": "claudemax-websearch",
+          "url": "",
+          "headline_title": "Bitcoin Price Today: BTC At $76,610 - May 26, 2026",
+          "published_date": "2026-05-26"
+        },
+        {
+          "domain": "claudemax-websearch",
+          "url": "",
+          "headline_title": "Bitcoin and ethereum prices today, Tuesday, May 26, 2026: Prices hold despite U.S.-Israel airstrikes",
+          "published_date": "2026-05-26"
+        },
+        {
+          "domain": "claudemax-websearch",
+          "url": "",
+          "headline_title": "Current price of Bitcoin for May 26, 2026 | Fortune",
+          "published_date": "2026-05-26"
         }
       ]
     }

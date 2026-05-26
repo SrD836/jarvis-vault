@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-trump-restart-project-freedom-by-may-31`
 - **Categoría**: other
-- **Precio YES**: 0.2160
-- **Volumen 24h**: 376530.91 USD
+- **Precio YES**: 0.1410
+- **Volumen 24h**: 440201.28 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-trump-restart-project-freedom-by-may-31` score=1.00 (exact slug match)
-- veto `elon-musk-of-tweets-may-19-may-26-240-259` score=0.40 (same category; same price bucket mid)
-- veto `elon-musk-of-tweets-may-19-may-26-260-279` score=0.40 (same category; same price bucket mid)
-- veto `ucl-psg-ars-2026-05-30-psg` score=0.40 (same category; same price bucket mid)
-- veto `weed-rescheduled-by-december-31` score=0.40 (same category; same price bucket mid)
+- veto `elon-musk-of-tweets-may-22-may-29-160-179` score=0.40 (same category; same price bucket low)
+- veto `will-us-unemployment-reach-at-least-5pt5-in-2026` score=0.40 (same category; same price bucket low)
+- veto `will-the-montreal-canadiens-win-the-eastern-conference` score=0.40 (same category; same price bucket low)
+- veto `will-the-montreal-canadiens-win-the-2026-nhl-stanley-cup` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

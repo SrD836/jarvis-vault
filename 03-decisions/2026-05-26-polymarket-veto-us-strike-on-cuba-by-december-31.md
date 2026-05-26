@@ -22,7 +22,7 @@ related:
 - **Slug**: `us-strike-on-cuba-by-december-31`
 - **Categoría**: other
 - **Precio YES**: 0.5000
-- **Volumen 24h**: 98297.08 USD
+- **Volumen 24h**: 101051.13 USD
 - **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto
@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `us-strike-on-cuba-by-december-31` score=1.00 (exact slug match)
-- veto `elon-musk-of-tweets-may-19-may-26-240-259` score=0.40 (same category; same price bucket mid)
-- veto `elon-musk-of-tweets-may-19-may-26-260-279` score=0.40 (same category; same price bucket mid)
 - veto `ucl-psg-ars-2026-05-30-psg` score=0.40 (same category; same price bucket mid)
-- veto `will-trump-restart-project-freedom-by-may-31` score=0.40 (same category; same price bucket mid)
+- veto `will-trump-agree-to-unfreeze-iranian-assets-by-may-31` score=0.40 (same category; same price bucket mid)
+- veto `claudio-tapia-out-as-afa-president-by-july-19-2026` score=0.40 (same category; same price bucket mid)
+- veto `will-gitlab-be-acquired-before-2027-944-667` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

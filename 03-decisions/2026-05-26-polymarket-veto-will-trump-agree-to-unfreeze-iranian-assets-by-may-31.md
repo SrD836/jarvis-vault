@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-trump-agree-to-unfreeze-iranian-assets-by-may-31`
 - **Categoría**: other
-- **Precio YES**: 0.2300
-- **Volumen 24h**: 108221.58 USD
+- **Precio YES**: 0.2500
+- **Volumen 24h**: 103650.92 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-trump-agree-to-unfreeze-iranian-assets-by-may-31` score=1.00 (exact slug match)
-- veto `will-trump-agree-to-iranian-oil-sanction-relief-by-may-31` score=0.70 (slug prefix match; same price bucket mid)
 - veto `will-trump-agree-to-iranian-enrichment-of-uranium-by-may-31` score=0.70 (slug prefix match; same category)
+- veto `will-trump-agree-to-iranian-oil-sanction-relief-by-may-31` score=0.70 (slug prefix match; same price bucket mid)
 - veto `will-trump-agree-to-iranian-transit-fees-in-the-strait-of-hormuz-by-may-31` score=0.50 (slug prefix match)
-- veto `elon-musk-of-tweets-may-19-may-26-240-259` score=0.40 (same category; same price bucket mid)
+- veto `weed-rescheduled-by-december-31` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 
