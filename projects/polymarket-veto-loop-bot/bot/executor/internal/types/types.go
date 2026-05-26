@@ -24,6 +24,7 @@ type Approved struct {
 type ActiveTrade struct {
 	ID             string  `json:"id"`
 	MarketID       string  `json:"market_id"`
+	Slug           string  `json:"slug,omitempty"`
 	Question       string  `json:"question"`
 	Side           string  `json:"side"` // "yes" | "no"
 	EntryPrice     float64 `json:"entry_price"`

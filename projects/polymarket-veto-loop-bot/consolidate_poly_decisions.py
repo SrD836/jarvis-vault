@@ -70,11 +70,26 @@ def extract_record(path: Path) -> dict | None:
     return rec
 
 
+def expire_pending_vetos(dry_run: bool) -> int:
+    """Chain step: archive any veto .md past its outcome_observed_after_days window."""
+    script = Path(__file__).resolve().parent / "scripts" / "expire_pending_vetos.py"
+    if not script.is_file():
+        return 0
+    import subprocess
+    cmd = [sys.executable, str(script)]
+    if not dry_run:
+        cmd.append("--apply")
+    return subprocess.run(cmd, check=False).returncode
+
+
 def main(dry_run: bool = False) -> int:
     if not DEC.is_dir():
         print(f"ERROR: {DEC} not found", file=sys.stderr)
         return 1
     OUT_DIR.mkdir(exist_ok=True)
+    print("\n--- step 1: expire stale pending vetos ---")
+    expire_pending_vetos(dry_run)
+    print("\n--- step 2: consolidate polymarket decisions ---")
     by_month: dict[str, list[dict]] = {}
     archive_paths: list[tuple[Path, Path]] = []
     skipped_pending = 0
