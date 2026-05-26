@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `ukraine-agrees-to-limit-size-of-armed-forces-before-2027`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.2500
+- **Precio YES**: 0.2600
 - **Volumen 24h**: 93895.16 USD
 - **End date**: 2026-12-31T00:00:00Z
 

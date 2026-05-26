@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `will-baker-mayfield-win-the-2026-nfl-mvp`
 - **Categoría**: sports-season
-- **Precio YES**: 0.2150
+- **Precio YES**: 0.1860
 - **Volumen 24h**: 98330.00 USD
 - **End date**: 2027-02-15T00:00:00Z
 
@@ -34,6 +34,7 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-baker-mayfield-win-the-2026-nfl-mvp` score=1.00 (exact slug match)
+- veto `will-houston-texans-win-the-2027-nfl-afc-championship-334` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

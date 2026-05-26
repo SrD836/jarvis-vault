@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — us-iran-nuclear-deal-by-june-30"
+title: "Polymarket veto — will-the-carolina-hurricanes-win-the-2026-nhl-stanley-cup"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'US-Iran nuclear deal by June 30?' (rule M2): M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)"
+decision: "Veto de tesis 'Will the Carolina Hurricanes win the 2026 NHL Stanley Cup?' (rule M2): M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,14 +15,14 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: US-Iran nuclear deal by June 30?
+# Veto: Will the Carolina Hurricanes win the 2026 NHL Stanley Cup?
 
 ## Mercado
 
-- **Slug**: `us-iran-nuclear-deal-by-june-30`
-- **Categoría**: geopolitics
-- **Precio YES**: 0.4600
-- **Volumen 24h**: 189943.10 USD
+- **Slug**: `will-the-carolina-hurricanes-win-the-2026-nhl-stanley-cup`
+- **Categoría**: other
+- **Precio YES**: 0.5000
+- **Volumen 24h**: 51416.70 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto

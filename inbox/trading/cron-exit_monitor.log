@@ -8277,3 +8277,53 @@
 2026/05/26 06:55:02 main.go:13: exit_monitor: done
 2026/05/26 07:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/26 07:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/26 07:00:02 monitor.go:160: exit_monitor: 0 closed, 38 remaining
+2026/05/26 07:00:02 main.go:13: exit_monitor: done
+2026/05/26 07:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/26 07:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/26 07:05:02 monitor.go:160: exit_monitor: 0 closed, 38 remaining
+2026/05/26 07:05:02 main.go:13: exit_monitor: done
+2026/05/26 07:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/26 07:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/26 07:10:01 monitor.go:141: exit_monitor: closed Will Elon Musk post 280-299 tweets from May 19 to May 26, 2026? (stop_loss EARLY) @ 0.0600 src=bestBid liq=$23281: PnL $-43.58 (-82.35%)
+2026/05/26 07:10:08 monitor.go:160: exit_monitor: 1 closed, 37 remaining
+2026/05/26 07:10:08 main.go:13: exit_monitor: done
+2026/05/26 07:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/26 07:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/26 07:15:02 monitor.go:160: exit_monitor: 0 closed, 37 remaining
+2026/05/26 07:15:02 main.go:13: exit_monitor: done
+2026/05/26 07:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/26 07:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/26 07:20:02 monitor.go:160: exit_monitor: 0 closed, 37 remaining
+2026/05/26 07:20:02 main.go:13: exit_monitor: done
+2026/05/26 07:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/26 07:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/26 07:25:02 monitor.go:160: exit_monitor: 0 closed, 37 remaining
+2026/05/26 07:25:02 main.go:13: exit_monitor: done
+2026/05/26 07:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/26 07:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/26 07:30:02 monitor.go:160: exit_monitor: 0 closed, 37 remaining
+2026/05/26 07:30:02 main.go:13: exit_monitor: done
+2026/05/26 07:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/26 07:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/26 07:35:02 monitor.go:160: exit_monitor: 0 closed, 37 remaining
+2026/05/26 07:35:02 main.go:13: exit_monitor: done
+2026/05/26 07:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/26 07:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/26 07:40:01 monitor.go:141: exit_monitor: closed US-Iran nuclear deal by June 30? (take_profit EARLY) @ 0.4800 src=bestBid liq=$54260: PnL $22.54 (45.45%)
+2026/05/26 07:40:01 monitor.go:160: exit_monitor: 1 closed, 36 remaining
+2026/05/26 07:40:01 main.go:13: exit_monitor: done
+2026/05/26 07:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/26 07:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/26 07:45:02 monitor.go:160: exit_monitor: 0 closed, 36 remaining
+2026/05/26 07:45:02 main.go:13: exit_monitor: done
+2026/05/26 07:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/26 07:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/26 07:50:03 monitor.go:160: exit_monitor: 0 closed, 36 remaining
+2026/05/26 07:50:03 main.go:13: exit_monitor: done
+2026/05/26 07:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/26 07:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/26 07:55:01 monitor.go:160: exit_monitor: 0 closed, 36 remaining
+2026/05/26 07:55:01 main.go:13: exit_monitor: done
+2026/05/26 08:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/26 08:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%

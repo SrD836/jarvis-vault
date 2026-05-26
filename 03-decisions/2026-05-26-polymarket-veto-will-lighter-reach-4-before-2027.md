@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `will-lighter-reach-4-before-2027`
 - **Categoría**: other
-- **Precio YES**: 0.3600
+- **Precio YES**: 0.2900
 - **Volumen 24h**: 105588.17 USD
 - **End date**: 2027-01-01T05:00:00Z
 
@@ -35,7 +35,6 @@ memoria: exact slug match (score 1.00)
 
 - veto `will-lighter-reach-4-before-2027` score=1.00 (exact slug match)
 - veto `will-usdc-hit-50-of-usdt-market-cap-by-december-31-2026` score=0.40 (same category; same price bucket mid)
-- veto `will-paramount-close-warner-bros-acquisition-by-end-of-2026` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 
