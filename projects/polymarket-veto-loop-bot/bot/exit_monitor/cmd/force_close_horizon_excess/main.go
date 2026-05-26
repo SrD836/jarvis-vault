@@ -20,6 +20,7 @@ import (
 
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/config"
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/exit_monitor/internal/closer"
+	"github.com/davidgn/polymarket-veto-loop-bot/bot/exit_monitor/internal/loglosses"
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/exit_monitor/internal/polyclient"
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/exit_monitor/internal/types"
 )
@@ -210,7 +211,14 @@ func main() {
 	closer.AppendClosed(closedTrades)
 	closer.UpdatePortfolio(closedTrades)
 	closer.RewriteActive(remaining)
-	log.Printf("force_close: closed %d, %d remain", len(closedTrades), len(remaining))
+	memoryPath := os.Getenv("EXIT_MEMORY_PATH")
+	if memoryPath == "" {
+		memoryPath = "vault/agents/polymarket-bot/memory.md"
+	}
+	for _, ct := range closedTrades {
+		loglosses.LogClose(closer.DecisionsDir, memoryPath, ct)
+	}
+	log.Printf("force_close: closed %d, %d remain (logged to %s)", len(closedTrades), len(remaining), memoryPath)
 }
 
 func ceilQuota(quota float64, total int) int {
