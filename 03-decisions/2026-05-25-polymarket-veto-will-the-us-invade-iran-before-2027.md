@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-the-us-invade-iran-before-2027`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.2000
-- **Volumen 24h**: 144930.40 USD
+- **Precio YES**: 0.1900
+- **Volumen 24h**: 151615.51 USD
 - **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto

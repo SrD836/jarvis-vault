@@ -1,6 +1,6 @@
 {
-  "bankroll": 3081.8512810457,
-  "used_exposure": 2603.0307711413975,
+  "bankroll": 2974.920347975752,
+  "used_exposure": 2609.9417042113455,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -258,22 +258,6 @@
       "liquidity_usd": 29167.02822
     },
     {
-      "id": "T-2334097-1779570004545",
-      "market_id": "2334097",
-      "question": "Will the Iran ceasefire continue through May 25?",
-      "side": "yes",
-      "entry_price": 0.95,
-      "size": 62.49483055884765,
-      "category": "uncategorized",
-      "entry_timestamp": "2026-05-23T21:00:04Z",
-      "approved_price": 0.95,
-      "days_to_resolution": 1,
-      "horizon": "short",
-      "end_date": "2026-05-25T00:00:00Z",
-      "size_usd": 62.49483055884765,
-      "liquidity_usd": 20842.143
-    },
-    {
       "id": "T-2296135-1779571804012",
       "market_id": "2296135",
       "question": "Iran closes its airspace by May 27?",
@@ -448,22 +432,6 @@
       "end_date": "2026-05-26T16:00:00Z",
       "size_usd": 52.920489519684516,
       "liquidity_usd": 29564.0505
-    },
-    {
-      "id": "T-2119073-1779654603617",
-      "market_id": "2119073",
-      "question": "Will 80 ships transit the Strait of Hormuz on any day by May 31?",
-      "side": "yes",
-      "entry_price": 0.123,
-      "size": 52.63554710061378,
-      "category": "uncategorized",
-      "entry_timestamp": "2026-05-24T20:30:03Z",
-      "approved_price": 0.123,
-      "days_to_resolution": 6,
-      "horizon": "medium",
-      "end_date": "2026-05-31T00:00:00Z",
-      "size_usd": 52.63554710061378,
-      "liquidity_usd": 23564.09617
     },
     {
       "id": "T-2126542-1779656404369",
@@ -818,6 +786,38 @@
           "published_date": "2026-05-12"
         }
       ]
+    },
+    {
+      "id": "T-2303425-1779750004970",
+      "market_id": "2303425",
+      "question": "Will the price of Bitcoin be above $76,000 on May 26?",
+      "side": "yes",
+      "entry_price": 0.88,
+      "size": 61.637025620914,
+      "category": "market",
+      "entry_timestamp": "2026-05-25T23:00:04Z",
+      "approved_price": 0.88,
+      "days_to_resolution": 0,
+      "horizon": "short",
+      "end_date": "2026-05-26T16:00:00Z",
+      "size_usd": 61.637025620914,
+      "liquidity_usd": 28123.4
+    },
+    {
+      "id": "T-2132779-1779750004970",
+      "market_id": "2132779",
+      "question": "Will Bitcoin dip to $70,000 in May?",
+      "side": "yes",
+      "entry_price": 0.05,
+      "size": 60.40428510849573,
+      "category": "market",
+      "entry_timestamp": "2026-05-25T23:00:04Z",
+      "approved_price": 0.05,
+      "days_to_resolution": 6,
+      "horizon": "medium",
+      "end_date": "2026-06-01T04:00:00Z",
+      "size_usd": 60.40428510849573,
+      "liquidity_usd": 104290.54161
     }
   ]
 }

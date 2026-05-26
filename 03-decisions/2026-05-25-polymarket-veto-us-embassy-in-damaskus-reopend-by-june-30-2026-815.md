@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-the-uk-designate-the-irgc-a-terrorist-organization-by-june-30"
+title: "Polymarket veto — us-embassy-in-damaskus-reopend-by-june-30-2026-815"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'Will the UK designate the IRGC a terrorist organization by June 30? ' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
+decision: "Veto de tesis 'U.S. Embassy in Damascus reopened by June 30, 2026?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,14 +15,14 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will the UK designate the IRGC a terrorist organization by June 30? 
+# Veto: U.S. Embassy in Damascus reopened by June 30, 2026?
 
 ## Mercado
 
-- **Slug**: `will-the-uk-designate-the-irgc-a-terrorist-organization-by-june-30`
+- **Slug**: `us-embassy-in-damaskus-reopend-by-june-30-2026-815`
 - **Categoría**: other
-- **Precio YES**: 0.1040
-- **Volumen 24h**: 96229.67 USD
+- **Precio YES**: 0.1350
+- **Volumen 24h**: 401434.18 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto

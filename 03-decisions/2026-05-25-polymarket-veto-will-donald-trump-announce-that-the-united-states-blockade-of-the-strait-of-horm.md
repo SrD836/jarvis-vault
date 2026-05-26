@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-31-2026-313-388-459-589-533`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.3800
-- **Volumen 24h**: 250664.05 USD
+- **Precio YES**: 0.4100
+- **Volumen 24h**: 239085.05 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto

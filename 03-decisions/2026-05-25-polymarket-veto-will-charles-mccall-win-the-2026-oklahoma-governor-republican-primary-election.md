@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-charles-mccall-win-the-2026-oklahoma-governor-republican-primary-election"
 type: decision
 date: 2026-05-25
-decision: "Veto de tesis 'Will Charles McCall win the 2026 Oklahoma Governor Republican primary election?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
+decision: "Veto de tesis 'Will Charles McCall win the 2026 Oklahoma Governor Republican primary election?' (rule M2): M2 soft-learned: uncategorized·medium·0.10-0.30 = 11L/2W (wr 15%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -29,7 +29,7 @@ related:
 
 **Regla aplicada**: `M2`
 
-M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)
+M2 soft-learned: uncategorized·medium·0.10-0.30 = 11L/2W (wr 15%)
 
 ## Human notes
 

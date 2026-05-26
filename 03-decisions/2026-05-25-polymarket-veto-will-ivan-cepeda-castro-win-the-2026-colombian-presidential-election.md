@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-ivan-cepeda-castro-win-the-2026-colombian-presidential-election`
 - **Categoría**: elections
 - **Precio YES**: 0.3200
-- **Volumen 24h**: 56218.02 USD
+- **Volumen 24h**: 56163.03 USD
 - **End date**: 2026-06-21T14:00:00Z
 
 ## Razón del veto
