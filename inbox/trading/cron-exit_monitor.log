@@ -7935,3 +7935,53 @@
 2026/05/25 23:55:02 main.go:13: exit_monitor: done
 2026/05/26 00:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/26 00:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/26 00:00:02 monitor.go:160: exit_monitor: 0 closed, 40 remaining
+2026/05/26 00:00:02 main.go:13: exit_monitor: done
+2026/05/26 00:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/26 00:05:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/26 00:05:02 monitor.go:160: exit_monitor: 0 closed, 40 remaining
+2026/05/26 00:05:02 main.go:13: exit_monitor: done
+2026/05/26 00:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/26 00:10:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/26 00:10:01 monitor.go:141: exit_monitor: closed Israel closes its airspace by May 31? (take_profit EARLY) @ 0.1800 src=bestBid liq=$32866: PnL $33.26 (50.00%)
+2026/05/26 00:10:02 monitor.go:160: exit_monitor: 1 closed, 39 remaining
+2026/05/26 00:10:02 main.go:13: exit_monitor: done
+2026/05/26 00:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/26 00:15:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/26 00:15:02 monitor.go:160: exit_monitor: 0 closed, 39 remaining
+2026/05/26 00:15:02 main.go:13: exit_monitor: done
+2026/05/26 00:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/26 00:20:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/26 00:20:01 monitor.go:160: exit_monitor: 0 closed, 39 remaining
+2026/05/26 00:20:01 main.go:13: exit_monitor: done
+2026/05/26 00:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/26 00:25:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/26 00:25:02 monitor.go:160: exit_monitor: 0 closed, 39 remaining
+2026/05/26 00:25:02 main.go:13: exit_monitor: done
+2026/05/26 00:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/26 00:30:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/26 00:30:01 monitor.go:141: exit_monitor: closed US obtains Iranian enriched uranium by May 31? (stop_loss EARLY) @ 0.0080 src=bestBid liq=$294980: PnL $-44.01 (-84.91%)
+2026/05/26 00:30:20 monitor.go:160: exit_monitor: 1 closed, 38 remaining
+2026/05/26 00:30:20 main.go:13: exit_monitor: done
+2026/05/26 00:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/26 00:35:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/26 00:35:02 monitor.go:160: exit_monitor: 0 closed, 38 remaining
+2026/05/26 00:35:02 main.go:13: exit_monitor: done
+2026/05/26 00:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/26 00:40:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/26 00:40:02 monitor.go:160: exit_monitor: 0 closed, 38 remaining
+2026/05/26 00:40:02 main.go:13: exit_monitor: done
+2026/05/26 00:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/26 00:45:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/26 00:45:01 monitor.go:160: exit_monitor: 0 closed, 38 remaining
+2026/05/26 00:45:01 main.go:13: exit_monitor: done
+2026/05/26 00:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/26 00:50:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/26 00:50:02 monitor.go:160: exit_monitor: 0 closed, 38 remaining
+2026/05/26 00:50:02 main.go:13: exit_monitor: done
+2026/05/26 00:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/26 00:55:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/26 00:55:02 monitor.go:160: exit_monitor: 0 closed, 38 remaining
+2026/05/26 00:55:02 main.go:13: exit_monitor: done
+2026/05/26 01:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/26 01:00:01 monitor.go:36: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
