@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `israel-x-iran-permanent-peace-deal-by-may-31-2026`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.0790
-- **Volumen 24h**: 497926.05 USD
+- **Precio YES**: 0.0840
+- **Volumen 24h**: 479008.11 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto

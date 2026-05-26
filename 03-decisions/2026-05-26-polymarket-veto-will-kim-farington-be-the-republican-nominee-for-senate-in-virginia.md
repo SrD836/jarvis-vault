@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-the-san-antonio-spurs-win-the-nba-western-conference-finals"
+title: "Polymarket veto — will-kim-farington-be-the-republican-nominee-for-senate-in-virginia"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Will the San Antonio Spurs win the NBA Western Conference Finals?' (rule M2): M2 soft-learned: uncategorized·medium·0.30-0.70 = 5L/0W (wr 0%)"
+decision: "Veto de tesis 'Will Kim Farington be the Republican nominee for Senate in Virginia?' (rule M2): M2 soft-learned: uncategorized·medium·0.30-0.70 = 5L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,14 +15,14 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will the San Antonio Spurs win the NBA Western Conference Finals?
+# Veto: Will Kim Farington be the Republican nominee for Senate in Virginia?
 
 ## Mercado
 
-- **Slug**: `will-the-san-antonio-spurs-win-the-nba-western-conference-finals`
-- **Categoría**: sports-season
-- **Precio YES**: 0.4070
-- **Volumen 24h**: 52821.76 USD
+- **Slug**: `will-kim-farington-be-the-republican-nominee-for-senate-in-virginia`
+- **Categoría**: elections
+- **Precio YES**: 0.3110
+- **Volumen 24h**: 458147.95 USD
 - **End date**: 2026-06-16T00:00:00Z
 
 ## Razón del veto
