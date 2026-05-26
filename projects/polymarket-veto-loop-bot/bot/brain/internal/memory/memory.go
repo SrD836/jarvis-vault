@@ -40,7 +40,10 @@ type Match struct {
 }
 
 const (
-	maxRowsKeep = 100 // append rotation cap per section
+	// maxRowsKeep — append rotation cap per section. Raised from 100 to 500
+	// (2026-05-26) so M2 soft-rule clustering sees five times the historical
+	// sample once closed.jsonl has accumulated enough trades.
+	maxRowsKeep = 500
 )
 
 // Load parses memory.md from disk. Returns empty Memory on file-not-found.

@@ -11,8 +11,8 @@ import (
 	"time"
 
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/config"
+	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/decisionlog"
 	commontypes "github.com/davidgn/polymarket-veto-loop-bot/bot/common/types"
-	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/decisionlog"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/antipatterns"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/llmclient"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/marketcheck"
@@ -379,22 +379,9 @@ func Run() error {
 			SourcesUsed:      sourceCites,
 		})
 
-		// v4: persist as Obsidian decision .md so exit_monitor can patch outcome on close.
-		var tradeSources []decisionlog.TradeSource
-		for _, sc := range sourceCites {
-			tradeSources = append(tradeSources, decisionlog.TradeSource{
-				Domain: sc.Domain, URL: sc.URL,
-				HeadlineTitle: sc.HeadlineTitle, PublishedDate: sc.PublishedDate,
-			})
-		}
-		if _, wErr := decisionlog.WriteTrade(decisionsDir, decisionlog.TradeDecision{
-			Slug: c.Slug, MarketID: c.ID, Question: c.Question, Category: c.Category,
-			EntryPrice: c.CurrentPriceYes, SizeUSD: 0, // size unknown at approve time (executor decides)
-			Horizon: horizon, DaysToResolution: d,
-			SourcesUsed: tradeSources,
-		}); wErr != nil {
-			log.Printf("WARN: decisionlog WriteTrade failed for %s: %v", c.Slug, wErr)
-		}
+		// Persistence of the trade .md happens in executor after actual entry,
+		// not here — brain may re-approve the same slug across cycles until the
+		// executor takes it, and a per-approve .md created one duplicate per day.
 		if i%50 == 0 {
 			log.Printf("Brain progress: %d/%d processed, %d approved, %d blocked",
 				i+1, len(candidates), len(approved), len(blocked))

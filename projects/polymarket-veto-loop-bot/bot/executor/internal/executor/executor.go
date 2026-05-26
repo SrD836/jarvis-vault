@@ -12,6 +12,7 @@ import (
 	"time"
 
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/config"
+	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/decisionlog"
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/executor/internal/types"
 )
 
@@ -22,6 +23,14 @@ const (
 	rejectFile    = "rejections.jsonl"
 	portfolioFile = "portfolio.json"
 )
+
+func envOr(key, def string) string {
+	v := os.Getenv(key)
+	if v == "" {
+		return def
+	}
+	return v
+}
 
 func Run() {
 	cfg, err := config.Load()
@@ -62,6 +71,23 @@ func Run() {
 	log.Printf("executor: quota slots this run: short=%d medium=%d long=%d (of %d remaining today)",
 		slotShort, slotMedium, slotLong, slotsRemaining)
 
+	// Q2 caps: portfolio-aware horizon quota. Q1 only counts trades opened today;
+	// historical positions from previous days don't constrain it, which is how
+	// the portfolio drifted to 1/19/17 (short/medium/long) instead of 70/15/15.
+	// Q2 enforces the quota against MaxOpenPositions directly.
+	capShort := ceilQuota(cfg.HorizonQuotaShort, cfg.MaxOpenPositions)
+	capMedium := ceilQuota(cfg.HorizonQuotaMedium, cfg.MaxOpenPositions)
+	capLong := ceilQuota(cfg.HorizonQuotaLong, cfg.MaxOpenPositions)
+	openByHorizon := map[string]int{}
+	for _, p := range portfolio.Positions {
+		openByHorizon[p.Horizon]++
+	}
+	log.Printf("executor: portfolio quota caps: short=%d medium=%d long=%d (open now: short=%d medium=%d long=%d)",
+		capShort, capMedium, capLong,
+		openByHorizon["short"], openByHorizon["medium"], openByHorizon["long"])
+
+	decisionsDir := envOr("EXECUTOR_DECISIONS_DIR", "vault/03-decisions")
+
 	var rejects []types.Rejection
 	now := time.Now().UTC()
 	nowStr := now.Format(time.RFC3339)
@@ -91,7 +117,7 @@ func Run() {
 			continue
 		}
 
-		// Q1: horizon quota — reject if the candidate's horizon bucket is full.
+		// Q1: horizon quota for new trades opened today.
 		switch a.Horizon {
 		case "short":
 			if slotShort <= 0 {
@@ -111,6 +137,25 @@ func Run() {
 		default:
 			rejects = append(rejects, types.Rejection{Timestamp: nowStr, MarketID: a.CandidateID, Question: a.Question, Reason: "Q1_horizon_unknown"})
 			continue
+		}
+
+		// Q2: portfolio-aware horizon cap (sees inherited positions, not just today).
+		switch a.Horizon {
+		case "short":
+			if openByHorizon["short"] >= capShort {
+				rejects = append(rejects, types.Rejection{Timestamp: nowStr, MarketID: a.CandidateID, Question: a.Question, Reason: fmt.Sprintf("Q2_portfolio_quota_full_short_%d_of_%d", openByHorizon["short"], capShort)})
+				continue
+			}
+		case "medium":
+			if openByHorizon["medium"] >= capMedium {
+				rejects = append(rejects, types.Rejection{Timestamp: nowStr, MarketID: a.CandidateID, Question: a.Question, Reason: fmt.Sprintf("Q2_portfolio_quota_full_medium_%d_of_%d", openByHorizon["medium"], capMedium)})
+				continue
+			}
+		case "long":
+			if openByHorizon["long"] >= capLong {
+				rejects = append(rejects, types.Rejection{Timestamp: nowStr, MarketID: a.CandidateID, Question: a.Question, Reason: fmt.Sprintf("Q2_portfolio_quota_full_long_%d_of_%d", openByHorizon["long"], capLong)})
+				continue
+			}
 		}
 
 		tradeSize := cfg.ComputeTradeSize(portfolio.Bankroll)
@@ -164,6 +209,7 @@ func Run() {
 		trade := types.ActiveTrade{
 			ID:               fmt.Sprintf("T-%s-%d", a.CandidateID, now.UnixMilli()),
 			MarketID:         a.CandidateID,
+			Slug:             a.Slug,
 			Question:         a.Question,
 			Side:             "yes",
 			EntryPrice:       a.CurrentPriceYes,
@@ -185,6 +231,7 @@ func Run() {
 		portfolio.Bankroll -= tradeSize
 		todayCount++
 		openCount++
+		openByHorizon[a.Horizon]++
 
 		switch a.Horizon {
 		case "short":
@@ -194,6 +241,26 @@ func Run() {
 		case "long":
 			slotLong--
 		}
+
+		// Persist Obsidian trade .md once per real entry. Brain used to write it
+		// at approve time, which produced one .md per re-approval day (5+ duplicates
+		// before the executor took the slug). Moved here so 1 .md == 1 real trade.
+		var tradeSources []decisionlog.TradeSource
+		for _, sc := range a.SourcesUsed {
+			tradeSources = append(tradeSources, decisionlog.TradeSource{
+				Domain: sc.Domain, URL: sc.URL,
+				HeadlineTitle: sc.HeadlineTitle, PublishedDate: sc.PublishedDate,
+			})
+		}
+		if _, wErr := decisionlog.WriteTrade(decisionsDir, decisionlog.TradeDecision{
+			Slug: a.Slug, MarketID: a.CandidateID, Question: a.Question, Category: a.Category,
+			EntryPrice: a.CurrentPriceYes, SizeUSD: tradeSize,
+			Horizon: a.Horizon, DaysToResolution: a.DaysToResolution,
+			SourcesUsed: tradeSources,
+		}); wErr != nil {
+			log.Printf("WARN: decisionlog WriteTrade failed for %s: %v", a.Slug, wErr)
+		}
+
 		log.Printf("executor: entered [%s] %s @ %.4f size=$%.2f (open=%d/%d, bankroll=$%.0f)", a.Horizon, a.Question, trade.EntryPrice, tradeSize, openCount, cfg.MaxOpenPositions, portfolio.Bankroll)
 	}
 

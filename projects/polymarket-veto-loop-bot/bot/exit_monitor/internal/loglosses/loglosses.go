@@ -13,7 +13,7 @@ import (
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/exit_monitor/internal/types"
 )
 
-const maxRowsKeep = 100
+const maxRowsKeep = 500
 
 var mu sync.Mutex
 
