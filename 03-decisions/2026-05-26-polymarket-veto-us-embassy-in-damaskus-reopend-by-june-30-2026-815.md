@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `us-embassy-in-damaskus-reopend-by-june-30-2026-815`
 - **Categoría**: other
-- **Precio YES**: 0.1360
+- **Precio YES**: 0.1330
 - **Volumen 24h**: 401434.18 USD
 - **End date**: 2026-06-30T00:00:00Z
 

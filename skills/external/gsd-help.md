@@ -3,27 +3,20 @@ title: "gsd-help (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-25T03:15:01+00:00
+date: 2026-05-26T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-help
 source_file: SKILL.md
-related:
-  - "[[00-MOC]]"
-  - "[[skills/external/gsd-execute-phase]]"
-  - "[[skills/external/gsd-manager]]"
-  - "[[skills/external/gsd-scan]]"
-  - "[[skills/external/gsd-settings]]"
-  - "[[skills/external/gsd-workstreams]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-25
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `gsd-help` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/gsd-help/`  
-**Mirrored at**: 2026-05-25T03:15:01+00:00
+**Mirrored at**: 2026-05-26T03:15:01+00:00
 
 ## Descripción
 

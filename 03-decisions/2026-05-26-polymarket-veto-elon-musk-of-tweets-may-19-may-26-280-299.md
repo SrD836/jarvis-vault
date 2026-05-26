@@ -2,7 +2,7 @@
 title: "Polymarket veto — elon-musk-of-tweets-may-19-may-26-280-299"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Will Elon Musk post 280-299 tweets from May 19 to May 26, 2026?' (rule M2): M2 soft-learned: uncategorized·short·0.10-0.30 = 15L/1W (wr 6%)"
+decision: "Veto de tesis 'Will Elon Musk post 280-299 tweets from May 19 to May 26, 2026?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `elon-musk-of-tweets-may-19-may-26-280-299`
 - **Categoría**: other
-- **Precio YES**: 0.1900
-- **Volumen 24h**: 118941.96 USD
+- **Precio YES**: 0.1800
+- **Volumen 24h**: 111833.66 USD
 - **End date**: 2026-05-26T16:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `M2`
 
-M2 soft-learned: uncategorized·short·0.10-0.30 = 15L/1W (wr 6%)
+M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)
 
 ## Human notes
 

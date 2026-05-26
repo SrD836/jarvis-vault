@@ -3,27 +3,20 @@ title: "gsd-remove-workspace (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-25T03:15:01+00:00
+date: 2026-05-26T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-remove-workspace
 source_file: SKILL.md
-related:
-  - "[[00-MOC]]"
-  - "[[skills/external/gsd-manager]]"
-  - "[[skills/external/gsd-new-workspace]]"
-  - "[[skills/external/gsd-pause-work]]"
-  - "[[skills/external/gsd-remove-phase]]"
-  - "[[skills/external/gsd-undo]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-25
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `gsd-remove-workspace` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/gsd-remove-workspace/`  
-**Mirrored at**: 2026-05-25T03:15:01+00:00
+**Mirrored at**: 2026-05-26T03:15:01+00:00
 
 ## Descripción
 

@@ -2,25 +2,18 @@
 title: "gsd-framework-selector (external agent)"
 type: agent-mirror
 external: true
-date: 2026-05-25T03:15:01+00:00
+date: 2026-05-26T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-framework-selector.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/external/gsd-ai-researcher]]"
-  - "[[agents/external/gsd-eval-planner]]"
-  - "[[agents/external/gsd-research-synthesizer]]"
-  - "[[agents/external/index]]"
-  - "[[skills/external/gsd-ai-integration-phase]]"
-  - "[[skills/external/gsd-select-framework]]"
 tags: [agent, external, mirror]
-# auto-linked 2026-05-25
+related:
+  - "[[agents/external/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `gsd-framework-selector` (external Claude Code agent)
 
 **Source**: `~/.claude/agents/gsd-framework-selector.md`  
-**Mirrored at**: 2026-05-25T03:15:01+00:00
+**Mirrored at**: 2026-05-26T03:15:01+00:00
 
 ## Descripción
 

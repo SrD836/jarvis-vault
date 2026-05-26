@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-the-montreal-canadiens-win-the-2026-nhl-stanley-cup`
 - **Categoría**: other
-- **Precio YES**: 0.1510
-- **Volumen 24h**: 51775.29 USD
+- **Precio YES**: 0.1590
+- **Volumen 24h**: 51433.59 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto

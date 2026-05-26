@@ -22,7 +22,7 @@ related:
 - **Slug**: `iran-agrees-to-surrender-enriched-uranium-stockpile-by-december-31-2026`
 - **Categoría**: geopolitics
 - **Precio YES**: 0.4400
-- **Volumen 24h**: 134313.97 USD
+- **Volumen 24h**: 131768.15 USD
 - **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto

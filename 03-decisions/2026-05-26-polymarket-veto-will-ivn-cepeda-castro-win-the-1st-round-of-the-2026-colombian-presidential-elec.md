@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-ivn-cepeda-castro-win-the-1st-round-of-the-2026-colombian-presidential-election"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Will Iván Cepeda Castro win the 1st round of the 2026 Colombian presidential...' (rule M2): M2 soft-learned: uncategorized·medium·0.30-0.70 = 5L/0W (wr 0%)"
+decision: "Veto de tesis 'Will Iván Cepeda Castro win the 1st round of the 2026 Colombian presidential...' (rule M2): M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-ivn-cepeda-castro-win-the-1st-round-of-the-2026-colombian-presidential-election`
 - **Categoría**: elections
-- **Precio YES**: 0.6900
-- **Volumen 24h**: 70828.98 USD
+- **Precio YES**: 0.6800
+- **Volumen 24h**: 71151.84 USD
 - **End date**: 2026-05-31T16:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `M2`
 
-M2 soft-learned: uncategorized·medium·0.30-0.70 = 5L/0W (wr 0%)
+M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)
 
 ## Human notes
 
