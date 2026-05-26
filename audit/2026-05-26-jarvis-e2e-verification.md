@@ -188,3 +188,114 @@ El refactor entrega la infraestructura completa: pipeline opus, memoria persiste
 El único gap es que el path de entrada via dashboard chat no ejercita la delegación (architecturally separated). Telegram path debería sí (no probado en esta verificación para evitar spam). Decisión de diseño pendiente: unificar entry points o aceptar split (dashboard=fast main-only, Telegram=full pipeline).
 
 Sin code changes adicionales el sistema está operativo y mejora con cada run. El loop Hermes (detect→propose→apply→memory→skill) está cerrado a nivel de scripts; falta solo que se llene de datos reales.
+
+---
+
+## Ronda 2 — Telegram path (re-test T2/T3 con bundle agent runtime)
+
+**Resultado: HALLAZGO CRÍTICO.** El gap G-1 NO es del dashboard chat — es de toda la arquitectura.
+
+### Comando ejecutado (Opción B — bundle directo)
+
+```bash
+docker exec openclaw-fork-openclaw-gateway-1 openclaw agent --agent main \
+  --message "<T2 o T3>" --thinking low --timeout 600 --json
+```
+
+### T2-tg resultado
+
+- `executionTrace.winnerProvider`: `claude-cli`, `winnerModel`: `claude-opus-4-7`
+- 1 attempt, success, `fallbackUsed: false`
+- `usage.output: 2205` tokens (single LLM turn)
+- **`vault/agents/planner/runs/2026-05-26/`**: NO existe
+- **`vault/agents/researcher/runs/2026-05-26/`**: existe pero VACÍO
+- Subagent meta files (`~/.claude/projects/.../subagents/*.meta.json`): NINGUNO en últimos 30 min
+
+### T3-tg resultado
+
+- Mismo provider (`claude-cli` opus-4-7), 1 attempt success
+- **`vault/agents/polymarket-handler/runs/`**: VACÍO post-test
+- Sin meta files de spawn
+
+### Diagnóstico definitivo — G-1 reclasificado a CRITICAL
+
+Inspeccionando `docker exec gateway ps -ef`:
+
+```
+claude -p --allowedTools mcp__openclaw__* --mcp-config /tmp/.../mcp.json
+  --plugin-dir /tmp/.../openclaw-skills --model opus --include-partial-messages ...
+```
+
+Claude-cli recibe **`--allowedTools mcp__openclaw__*` y nada más**. Tools nativos de Claude Code (`Task`, `Agent`) NO están permitidos.
+
+Tools efectivamente registrados en el openclaw mcp server (grep en `/app/dist/*.js`):
+
+```
+createLazyCodeExecutionTool  · createLazyMemoryGetTool  · createLazyMemorySearchTool
+createLazyXSearchTool        · createTavilyExtractTool  · createTavilySearchTool
+createWikiGetTool/...        · DIR_FETCH/LIST_DESCRIPTOR · FILE_FETCH/WRITE_DESCRIPTOR
+createLlmTaskTool
+```
+
+**NINGUNO es `delegate`, `spawn_agent`, `run_subagent` ni equivalente.** El bundle openclaw 2026.5.12-beta.1 **no expone una tool para que un agente invoque a otro**.
+
+Evidencia histórica que confirma: `grep "spawned_children" vault/agents/*/runs/*/*.md` → **100% son `[]` o vacío**. Ningún agente ha spawned a otro en ninguna ejecución registrada del sistema. La arquitectura multi-tier "main→planner→specialists" siempre fue **especificación en Standing Orders sin tool runtime que la implemente**.
+
+### Implicación
+
+- `subagents.allowAgents`, `delegationMode: prefer` en `openclaw.json` son metadata recolectada por curator/orgchart, **no wired a runtime**.
+- Cada agente del sistema es **single-tier**: ejecuta aislado cuando lo invoca cron, Telegram listener, o `openclaw agent --agent X` CLI. No puede llamar a otro agente.
+- Las directivas tipo "delega a planner" o "DEBES delegar al worker" en AGENTS.md son **wishful thinking**: el modelo lee la directiva pero no tiene tool para ejecutarla → la ignora y resuelve solo.
+
+### Tabla actualizada
+
+| Test | Canal | Resultado | Nota |
+|---|---|---|---|
+| T1 | dashboard | ✅ PASS | trivial, no delegation needed |
+| T2 | dashboard | ⚠ PARTIAL → ❌ FAIL | sin tool delegate, no podía delegar |
+| T3 | dashboard | ⚠ PARTIAL → ❌ FAIL | mismo motivo |
+| T2-tg | bundle direct | ❌ FAIL | confirmado: NO existe delegate tool |
+| T3-tg | bundle direct | ❌ FAIL | idem |
+| T4 | hermes | ✅ PASS | learnings + memory_inject OK |
+| T5 | hermes | ✅ PASS | apply_evolution dry-run |
+| T6 | hermes | ✅ PASS | skill_builder detection |
+
+### G-1 reclasificado: necesita Fase G
+
+**Gap arquitectónico**: no existe tool de delegación inter-agente en el bundle. Para que el sistema multi-agente realmente delegue se necesita una de estas vías:
+
+**Opción 1 — Custom mcp server `openclaw-delegate-mcp` (recomendado)**
+- Nuevo proceso que expone tool `delegate(agent_id, task, timeout?)` vía MCP HTTP/SSE
+- Internamente shell-out: `openclaw agent --agent <agent_id> --message <task> --json`
+- Añadir a `mcp-config` del gateway + a `allowedTools` (`mcp__openclaw-delegate__*`)
+- Esfuerzo: 1 día. Riesgo: bajo (proceso aislado, no toca bundle).
+
+**Opción 2 — Patch al bundle openclaw**
+- Añadir `createDelegateTool` que respeta `subagents.allowAgents` config
+- Forking del bundle de openclaw — frágil para actualizaciones futuras.
+- Esfuerzo: 2-3 días. Riesgo: alto.
+
+**Opción 3 — Habilitar Claude Code Task tool nativo**
+- Cambiar `--allowedTools mcp__openclaw__*` a `--allowedTools mcp__openclaw__*,Task`
+- Task tool spawn subagents de Claude Code (no agentes openclaw)
+- Pierdes Standing Orders y allowAgents config; el modelo decide qué prompt envía a cada subagent
+- Pragmatismo alto, pero rompe abstracción openclaw. Esfuerzo: 1h.
+
+**Recomendación**: Opción 1. Mantiene la arquitectura openclaw, no requiere fork, expone una tool clara con autoridad limitada (whitelist `allow_agents`), y permite que el sistema multi-agente funcione realmente.
+
+### Nuevos próximos pasos (priorizados tras Ronda 2)
+
+1. **CRÍTICO**: Diseñar e implementar `openclaw-delegate-mcp` (Fase G). Sin esto el refactor Fases A-F sigue siendo metadata muerta a nivel runtime de delegación.
+2. **MEDIO**: Mientras tanto, aceptar que main hace todo. Modelo opus es capaz — los resultados T2/T3 fueron correctos en contenido (sin alucinación, briefs útiles). La pérdida es de paralelismo y modularidad, no de calidad.
+3. **MEDIO**: Cleanup G-3 (sync-conflicts). 1 comando.
+
+### Lo que sigue intacto post-Ronda 2
+
+- Memoria persistente (memory_lib + memory_inject): funciona, se llena con append manual o desde scripts. Solo no se llena desde delegations porque no hay delegations.
+- apply_evolution: funciona; cuando learnings.py detecte patrones reales (necesita runs reales, no triviales) aplicará.
+- skill_builder: funciona; detecta proposals cuando aparecen en runs.
+- polymarket-handler: existe como agente invocable directo via `openclaw agent --agent polymarket-handler`. Su utilidad es completa SI se invoca directo (cron o usuario), no como child de main.
+
+### Decisión pendiente del usuario
+
+¿Construimos Fase G (delegation tool) ahora, aceptamos que main hace todo y seguimos enriqueciendo memoria/skills, o split: pequeño hack opción 3 y trabajo proper opción 1 después?
