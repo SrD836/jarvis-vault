@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-the-upper-bound-of-the-target-federal-funds-rate-be-3pt75-at-the-end-of-2026-166"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Will the upper bound of the target federal funds rate be 3.75% at the end of ...' (rule M2): M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)"
+decision: "Veto de tesis 'Will the upper bound of the target federal funds rate be 3.75% at the end of ...' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, m2]
+tags: [decision, polymarket, bot, veto, m1]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,23 @@ related:
 
 - **Slug**: `will-the-upper-bound-of-the-target-federal-funds-rate-be-3pt75-at-the-end-of-2026-166`
 - **Categoría**: other
-- **Precio YES**: 0.5200
+- **Precio YES**: 0.5180
 - **Volumen 24h**: 519256.16 USD
 - **End date**: 2026-12-09T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `M2`
+**Regla aplicada**: `M1`
 
-M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)
+memoria: exact slug match (score 1.00)
+
+## Patterns en memoria que contribuyeron
+
+- veto `will-the-upper-bound-of-the-target-federal-funds-rate-be-3pt75-at-the-end-of-2026-166` score=1.00 (exact slug match)
+- veto `will-the-upper-bound-of-the-target-federal-funds-rate-be-1pt25-at-the-end-of-2026-681` score=0.70 (slug prefix match; same category)
+- veto `will-the-upper-bound-of-the-target-federal-funds-rate-be-1pt5-at-the-end-of-2026-a8ms-587` score=0.70 (slug prefix match; same category)
+- veto `will-the-upper-bound-of-the-target-federal-funds-rate-be-1pt75-at-the-end-of-2026-739` score=0.70 (slug prefix match; same category)
+- veto `will-the-upper-bound-of-the-target-federal-funds-rate-be-2pt0-at-the-end-of-2026-736` score=0.70 (slug prefix match; same category)
 
 ## Human notes
 

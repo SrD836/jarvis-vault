@@ -2,13 +2,13 @@
 title: "Polymarket veto — us-x-iran-permanent-peace-deal-by-july-31-2026-831-252"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'US x Iran permanent peace deal by July 31, 2026?' (rule M2): M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)"
+decision: "Veto de tesis 'US x Iran permanent peace deal by July 31, 2026?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, m2]
+tags: [decision, polymarket, bot, veto, m1]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,23 @@ related:
 
 - **Slug**: `us-x-iran-permanent-peace-deal-by-july-31-2026-831-252`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.6900
-- **Volumen 24h**: 300703.53 USD
+- **Precio YES**: 0.6800
+- **Volumen 24h**: 296362.24 USD
 - **End date**: 2026-07-31T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `M2`
+**Regla aplicada**: `M1`
 
-M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)
+memoria: exact slug match (score 1.00)
+
+## Patterns en memoria que contribuyeron
+
+- veto `us-x-iran-permanent-peace-deal-by-july-31-2026-831-252` score=1.00 (exact slug match)
+- veto `us-x-iran-permanent-peace-deal-by-may-31-2026-333-871-241-192-799-449-125` score=0.90 (slug prefix match; same category; same price bucket mid)
+- veto `us-x-iran-permanent-peace-deal-by-june-30-2026-837-641-896-877-363-892-537-597` score=0.90 (slug prefix match; same category; same price bucket mid)
+- veto `us-x-iran-permanent-peace-deal-by-june-7-2026` score=0.90 (slug prefix match; same category; same price bucket mid)
+- veto `us-x-iran-permanent-peace-deal-by-june-15-2026-734-856-129` score=0.90 (slug prefix match; same category; same price bucket mid)
 
 ## Human notes
 

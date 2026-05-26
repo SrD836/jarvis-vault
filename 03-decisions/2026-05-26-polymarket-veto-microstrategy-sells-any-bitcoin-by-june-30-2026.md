@@ -2,13 +2,13 @@
 title: "Polymarket veto — microstrategy-sells-any-bitcoin-by-june-30-2026"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'MicroStrategy sells any Bitcoin by June 30, 2026?' (rule N1): noticias contradicen tesis: Strategy señaló posibilidad de venta pero conti..."
+decision: "Veto de tesis 'MicroStrategy sells any Bitcoin by June 30, 2026?' (rule M1): memoria: slug prefix match; same category (score 0.70)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, n1]
+tags: [decision, polymarket, bot, veto, m1]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,19 +21,20 @@ related:
 
 - **Slug**: `microstrategy-sells-any-bitcoin-by-june-30-2026`
 - **Categoría**: market
-- **Precio YES**: 0.3700
-- **Volumen 24h**: 59439.31 USD
+- **Precio YES**: 0.3260
+- **Volumen 24h**: 136450.98 USD
 - **End date**: 2026-07-01T04:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `N1`
+**Regla aplicada**: `M1`
 
-noticias contradicen tesis: Strategy señaló posibilidad de venta pero continúa comprando BTC; ninguna venta confirmada antes del 30/06.
+memoria: slug prefix match; same category (score 0.70)
 
-## Investigación de noticias
+## Patterns en memoria que contribuyeron
 
-Tavily+DeepSeek: confirms=false contradicts=true silent=false score=0.25 — Strategy señaló posibilidad de venta pero continúa comprando BTC; ninguna venta confirmada antes del 30/06.
+- veto `microstrategy-sells-any-bitcoin-by-may-31-2026` score=0.70 (slug prefix match; same category)
+- veto `will-wti-crude-oil-wti-hit-low-85-in-may-266-388-493-155-935-263-225-869-296-224-342-748-678` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

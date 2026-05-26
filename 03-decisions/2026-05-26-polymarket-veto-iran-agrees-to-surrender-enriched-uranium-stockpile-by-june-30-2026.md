@@ -2,7 +2,7 @@
 title: "Polymarket veto — iran-agrees-to-surrender-enriched-uranium-stockpile-by-june-30-2026"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Iran agrees to surrender enriched uranium stockpile by June 30, 2026?' (rule M1): memoria: slug prefix match; same category; same price bucket mid (score 0.90)"
+decision: "Veto de tesis 'Iran agrees to surrender enriched uranium stockpile by June 30, 2026?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -22,20 +22,22 @@ related:
 - **Slug**: `iran-agrees-to-surrender-enriched-uranium-stockpile-by-june-30-2026`
 - **Categoría**: geopolitics
 - **Precio YES**: 0.2000
-- **Volumen 24h**: 178046.20 USD
+- **Volumen 24h**: 174180.18 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `M1`
 
-memoria: slug prefix match; same category; same price bucket mid (score 0.90)
+memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
+- veto `iran-agrees-to-surrender-enriched-uranium-stockpile-by-june-30-2026` score=1.00 (exact slug match)
 - veto `iran-agrees-to-surrender-enriched-uranium-stockpile-by-december-31-2026` score=0.90 (slug prefix match; same category; same price bucket mid)
-- veto `us-announces-new-iran-agreementceasefire-extension-by-june-7-265` score=0.40 (same category; same price bucket mid)
-- veto `us-announces-new-iran-agreementceasefire-extension-by-may-31-665` score=0.40 (same category; same price bucket mid)
+- veto `iran-agrees-to-surrender-enriched-uranium-stockpile-by-may-31-2026` score=0.70 (slug prefix match; same category)
+- veto `internet-access-restored-in-iran-by-may-31-2026` score=0.40 (same category; same price bucket mid)
+- veto `us-x-iran-diplomatic-meeting-by-june-30-2026-983-259-948` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

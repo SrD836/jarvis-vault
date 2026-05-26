@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-tampa-bay-rays-win-the-2026-american-league-championship-series"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Will Tampa Bay Rays win the 2026 American League Championship Series?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
+decision: "Veto de tesis 'Will Tampa Bay Rays win the 2026 American League Championship Series?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, m2]
+tags: [decision, polymarket, bot, veto, m1]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -27,9 +27,17 @@ related:
 
 ## Razón del veto
 
-**Regla aplicada**: `M2`
+**Regla aplicada**: `M1`
 
-M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)
+memoria: exact slug match (score 1.00)
+
+## Patterns en memoria que contribuyeron
+
+- veto `will-tampa-bay-rays-win-the-2026-american-league-championship-series` score=1.00 (exact slug match)
+- veto `will-france-win-the-2026-fifa-world-cup-924` score=0.40 (same category; same price bucket low)
+- veto `will-germany-win-the-2026-fifa-world-cup-467` score=0.40 (same category; same price bucket low)
+- veto `will-england-win-the-2026-fifa-world-cup-937` score=0.40 (same category; same price bucket low)
+- veto `will-brazil-win-the-2026-fifa-world-cup-183` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

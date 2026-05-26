@@ -34,7 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-dallas-cowboys-win-the-2027-nfl-nfc-championship-584` score=1.00 (exact slug match)
-- veto `will-cincinnati-bengals-win-the-2027-nfl-afc-championship-267` score=0.40 (same category; same price bucket low)
+- veto `will-france-win-the-2026-fifa-world-cup-924` score=0.40 (same category; same price bucket low)
+- veto `will-germany-win-the-2026-fifa-world-cup-467` score=0.40 (same category; same price bucket low)
+- veto `will-england-win-the-2026-fifa-world-cup-937` score=0.40 (same category; same price bucket low)
+- veto `will-brazil-win-the-2026-fifa-world-cup-183` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

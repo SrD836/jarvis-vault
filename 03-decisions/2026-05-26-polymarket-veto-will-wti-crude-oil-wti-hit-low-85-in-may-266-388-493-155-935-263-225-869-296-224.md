@@ -1,14 +1,14 @@
 ---
-title: "Polymarket veto — will-wti-crude-oil-wti-hit-low-85-in-may-266-388-493-155-935-263-225-869-296-224-342-748"
+title: "Polymarket veto — will-wti-crude-oil-wti-hit-low-85-in-may-266-388-493-155-935-263-225-869-296-224-342-748-678"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Will WTI Crude Oil (WTI) hit (LOW) $85 in May?' (rule P6): P6 market: CL=F spot $94.24 already > target $85.00 but yes=0.24 (confused book)"
+decision: "Veto de tesis 'Will WTI Crude Oil (WTI) hit (LOW) $85 in May?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, p6]
+tags: [decision, polymarket, bot, veto, m1]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -19,17 +19,23 @@ related:
 
 ## Mercado
 
-- **Slug**: `will-wti-crude-oil-wti-hit-low-85-in-may-266-388-493-155-935-263-225-869-296-224-342-748`
+- **Slug**: `will-wti-crude-oil-wti-hit-low-85-in-may-266-388-493-155-935-263-225-869-296-224-342-748-678`
 - **Categoría**: market
-- **Precio YES**: 0.2400
-- **Volumen 24h**: 169355.30 USD
+- **Precio YES**: 0.2500
+- **Volumen 24h**: 172107.14 USD
 - **End date**: 2026-06-01T03:59:59.999Z
 
 ## Razón del veto
 
-**Regla aplicada**: `P6`
+**Regla aplicada**: `M1`
 
-P6 market: CL=F spot $94.24 already > target $85.00 but yes=0.24 (confused book)
+memoria: exact slug match (score 1.00)
+
+## Patterns en memoria que contribuyeron
+
+- veto `will-wti-crude-oil-wti-hit-low-85-in-may-266-388-493-155-935-263-225-869-296-224-342-748-678` score=1.00 (exact slug match)
+- veto `will-wti-crude-oil-wti-hit-high-115-in-may-221` score=0.70 (slug prefix match; same category)
+- veto `will-wti-crude-oil-wti-hit-high-200-in-may` score=0.70 (slug prefix match; same category)
 
 ## Human notes
 

@@ -2,13 +2,13 @@
 title: "Polymarket veto — iran-closes-its-airspace-by-june-15"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Iran closes its airspace by June 15?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
+decision: "Veto de tesis 'Iran closes its airspace by June 15?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, m2]
+tags: [decision, polymarket, bot, veto, m1]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,23 @@ related:
 
 - **Slug**: `iran-closes-its-airspace-by-june-15`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.2920
-- **Volumen 24h**: 67858.08 USD
+- **Precio YES**: 0.3060
+- **Volumen 24h**: 67940.92 USD
 - **End date**: 2026-06-15T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `M2`
+**Regla aplicada**: `M1`
 
-M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)
+memoria: exact slug match (score 1.00)
+
+## Patterns en memoria que contribuyeron
+
+- veto `iran-closes-its-airspace-by-june-15` score=1.00 (exact slug match)
+- veto `iran-closes-its-airspace-by-may-31-434-443-672-526-188-756` score=0.90 (slug prefix match; same category; same price bucket mid)
+- veto `iran-closes-its-airspace-by-june-30-432-786-462-866` score=0.90 (slug prefix match; same category; same price bucket mid)
+- veto `iran-closes-its-airspace-by-may-24` score=0.70 (slug prefix match; same category)
+- veto `iran-closes-its-airspace-by-may-29` score=0.70 (slug prefix match; same category)
 
 ## Human notes
 

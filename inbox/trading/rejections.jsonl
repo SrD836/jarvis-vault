@@ -24167,3 +24167,11 @@
 {"timestamp":"2026-05-26T15:32:54Z","market_id":"692258","question":"MicroStrategy sells any Bitcoin by June 30, 2026?","reason":"already_active"}
 {"timestamp":"2026-05-26T15:32:54Z","market_id":"2155052","question":"US x Iran permanent peace deal by December 31, 2026?","reason":"already_active"}
 {"timestamp":"2026-05-26T15:32:54Z","market_id":"824952","question":"MicroStrategy sells any Bitcoin by December 31, 2026?","reason":"already_active"}
+{"timestamp":"2026-05-26T16:00:04Z","market_id":"2074237","question":"Will WTI Crude Oil (WTI) hit (HIGH) $110 in May?","reason":"Q2_portfolio_quota_full_medium_9_of_8"}
+{"timestamp":"2026-05-26T16:00:04Z","market_id":"2322404","question":"Will WTI Crude Oil (WTI) hit (HIGH) $105 in May?","reason":"already_active"}
+{"timestamp":"2026-05-26T16:00:04Z","market_id":"2132779","question":"Will Bitcoin dip to $70,000 in May?","reason":"already_active"}
+{"timestamp":"2026-05-26T16:00:04Z","market_id":"947269","question":"Will Keiko Fujimori win the 2026 Peruvian presidential election?","reason":"Q2_portfolio_quota_full_medium_9_of_8"}
+{"timestamp":"2026-05-26T16:00:04Z","market_id":"569366","question":"Will Abelardo de la Espriella  win the 2026 Colombian presidential election?","reason":"already_active"}
+{"timestamp":"2026-05-26T16:00:04Z","market_id":"692258","question":"MicroStrategy sells any Bitcoin by June 30, 2026?","reason":"Q2_portfolio_quota_full_long_8_of_8"}
+{"timestamp":"2026-05-26T16:00:04Z","market_id":"2155052","question":"US x Iran permanent peace deal by December 31, 2026?","reason":"already_active"}
+{"timestamp":"2026-05-26T16:00:04Z","market_id":"824952","question":"MicroStrategy sells any Bitcoin by December 31, 2026?","reason":"already_active"}
