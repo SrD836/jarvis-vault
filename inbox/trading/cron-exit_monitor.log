@@ -8903,3 +8903,11 @@
 2026/05/26 21:00:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
 2026/05/26 21:00:02 monitor.go:146: exit_monitor: 0 closed, 17 remaining
 2026/05/26 21:00:02 main.go:13: exit_monitor: done
+2026/05/26 21:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/26 21:05:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/26 21:05:02 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/26 21:05:02 main.go:13: exit_monitor: done
+2026/05/26 21:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/26 21:10:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/26 21:10:01 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/26 21:10:01 main.go:13: exit_monitor: done
