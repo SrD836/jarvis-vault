@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Will Spencer Pratt win the 2026 Los Angeles mayoral election?' (rule M2): M2 soft-learned: uncategorized·medium·0.10-0.30 = 11L/2W (wr 15%)"
+decision: "Veto de tesis 'Will Spencer Pratt win the 2026 Los Angeles mayoral election?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -22,14 +22,14 @@ related:
 - **Slug**: `will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983`
 - **Categoría**: elections
 - **Precio YES**: 0.2300
-- **Volumen 24h**: 69905.74 USD
+- **Volumen 24h**: 75261.97 USD
 - **End date**: 2026-06-02T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `M2`
 
-M2 soft-learned: uncategorized·medium·0.10-0.30 = 11L/2W (wr 15%)
+M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)
 
 ## Human notes
 
