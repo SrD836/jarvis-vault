@@ -56,6 +56,8 @@ Sistema multi-agente personal corriendo 24/7 en VPS Hetzner (`agent@88.198.168.6
 3. **applications.jsonl anti-fraude** → marcar `applied/submitted` requiere `linkedin_confirmation:true` + `submitted_at` no-null (validation en `applications.js`).
 4. **main.md regenerado por cron** → directivas persistentes van en `## Human notes` dentro de AGENTS.md (`~/.openclaw/workspace/AGENTS.md`), NO en `vault/agents/<id>.md` (eso es view).
 5. **Sin emojis** en código/CV salvo que David pida (los emojis del vault son OK porque son notas humanas).
+6. **Commit & push protocol (norma dura)** → al cerrar trabajo (cambios listos, sesión terminando, user pide "termina/cierra/guarda esto") SIEMPRE `git add -A && commit && push` automático sin pedir confirmación. Aplica al vault y a cualquier repo hijo (jarvis-dashboard, openclaw-fork, polymarket-veto-loop-bot). Vault PC → push directo via HTTPS fallback `https://github.com/SrD836/jarvis-vault.git`. NUNCA `--no-verify`, `--force`, `--amend`. Si el push falla por divergencia → `pull --rebase`, resolver, push de nuevo. Reportar al user si conflicts no-triviales. Detalle en `~/.claude/projects/.../memory/workflow_always_commit_push.md`.
+7. **Crypto candidates pasan por TradingView (P11)** → cualquier candidato Polymarket con asset crypto detectable (BTC/ETH/SOL/XRP/ADA/DOGE) ejecuta `tradingview.Evaluate` antes de aprobarse. Veta cuando sentimiento técnico (confidence ≥0.60) contradice la tesis implícita del mercado. Implementado en `bot/brain/internal/tradingview/tradingview.go`, wired tras P6 marketcheck.
 
 ---
 

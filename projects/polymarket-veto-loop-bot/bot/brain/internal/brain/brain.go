@@ -20,6 +20,7 @@ import (
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/softrules"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/research"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/rules"
+	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/tradingview"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/types"
 )
 
@@ -44,6 +45,7 @@ const (
 	ruleSoftLearned    = "M2"
 	ruleAntiPattern    = "M3"
 	ruleMarketCheck    = "P6"
+	ruleTradingView    = "P11"
 	ruleNews1          = "N1"
 	ruleNews2          = "N2"
 	memoryHitThreshold = 0.7
@@ -113,7 +115,7 @@ func Run() error {
 	_ = now
 
 	stats := struct {
-		P0, P1, P2, P3, P4, P6, P7, P8, P9, P10, V1, V2, V4, M1, M2, M3, N1, N2, LLM int
+		P0, P1, P2, P3, P4, P6, P7, P8, P9, P10, P11, V1, V2, V4, M1, M2, M3, N1, N2, LLM int
 	}{}
 
 	// M3 prep: anti-patterns extracted from LLM post-mortems on past losses.
@@ -263,6 +265,21 @@ func Run() error {
 			continue
 		}
 
+		// P11: TradingView MCP cross-check for crypto candidates. Calls
+		// tradingview-mcp coin_analysis and vetoes when the directional sentiment
+		// strongly contradicts the implied yes-probability of the market.
+		// Best-effort (network errors return no opinion).
+		if tr := tradingview.Evaluate(c.Slug, c.Question, c.Category, c.CurrentPriceYes); tr != nil && tr.Block {
+			vr := types.VetoResult{
+				CandidateID: c.ID, Slug: c.Slug, Blocked: true,
+				Reason: tr.Reason, VetoedBy: ruleTradingView,
+			}
+			blocked = append(blocked, vr)
+			recordVeto(mem, &c, vr, decisionsDir, true)
+			stats.P11++
+			continue
+		}
+
 		// M2: soft-learned cluster veto. If the candidate's (category, horizon, price band)
 		// has been losing systematically (< 30% win rate, >= 5 losses) the rule is enforced
 		// here. Without this brain ignored its own learned patterns — see post-mortem in
@@ -396,9 +413,9 @@ func Run() error {
 	}
 
 	softrules.GenerateAndAppend(memoryPath)
-	log.Printf("Brain v3 done: %d approved, %d blocked (P0=%d P2=%d P3=%d P4=%d P6=%d P7=%d P8=%d P9=%d P10=%d V1=%d V2=%d V4=%d M1=%d M2=%d M3=%d N1=%d N2=%d LLM=%d) horizons in approved: short=%d medium=%d long=%d",
+	log.Printf("Brain v3 done: %d approved, %d blocked (P0=%d P2=%d P3=%d P4=%d P6=%d P7=%d P8=%d P9=%d P10=%d P11=%d V1=%d V2=%d V4=%d M1=%d M2=%d M3=%d N1=%d N2=%d LLM=%d) horizons in approved: short=%d medium=%d long=%d",
 		len(approved), len(blocked),
-		stats.P0, stats.P2, stats.P3, stats.P4, stats.P6, stats.P7, stats.P8, stats.P9, stats.P10, stats.V1, stats.V2, stats.V4, stats.M1, stats.M2, stats.M3, stats.N1, stats.N2, stats.LLM,
+		stats.P0, stats.P2, stats.P3, stats.P4, stats.P6, stats.P7, stats.P8, stats.P9, stats.P10, stats.P11, stats.V1, stats.V2, stats.V4, stats.M1, stats.M2, stats.M3, stats.N1, stats.N2, stats.LLM,
 		countHorizon(approved, "short"), countHorizon(approved, "medium"), countHorizon(approved, "long"))
 	return nil
 }
