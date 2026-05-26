@@ -20,6 +20,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"log"
 	"net/http"
 	"os"
 	"regexp"
@@ -113,15 +114,24 @@ func Evaluate(slug, question, category string, currentPriceYes float64) *Result 
 }
 
 func evaluateLive(asset string, currentPriceYes float64) *Result {
+	log.Printf("[P11] evaluateLive asset=%s priceYes=%.2f endpoint=%s", asset, currentPriceYes, endpoint)
 	sid, err := ensureSession()
 	if err != nil {
+		log.Printf("[P11] ensureSession error: %v", err)
 		return nil // best effort — no opinion on network error
 	}
 	raw, err := callTool(sid, "coin_analysis", map[string]any{"symbol": asset})
 	if err != nil {
+		log.Printf("[P11] callTool error: %v", err)
 		return nil
 	}
+	preview := string(raw)
+	if len(preview) > 500 {
+		preview = preview[:500] + "...(truncated)"
+	}
+	log.Printf("[P11] response asset=%s bytes=%d preview=%s", asset, len(raw), strings.ReplaceAll(preview, "\n", "\\n"))
 	sent, conf := parseSentiment(raw)
+	log.Printf("[P11] parsed asset=%s sentiment=%s confidence=%.2f", asset, sent, conf)
 	r := &Result{
 		Asset:      asset,
 		Sentiment:  sent,
@@ -147,6 +157,7 @@ func evaluateLive(asset string, currentPriceYes float64) *Result {
 	} else {
 		r.Reason = fmt.Sprintf("tradingview %s sentiment=%s (conf %.2f) aligned with thesis", asset, sent, conf)
 	}
+	log.Printf("[P11] decision asset=%s block=%t reason=%s", asset, r.Block, r.Reason)
 	return r
 }
 
@@ -203,14 +214,123 @@ func callTool(sid, name string, args map[string]any) ([]byte, error) {
 }
 
 // parseSentiment extracts directional bias + confidence from the tradingview-mcp
-// coin_analysis response. The MCP returns SSE-framed JSON-RPC with a content
-// array containing markdown-like text. We do best-effort regex parsing.
+// coin_analysis response. The MCP returns SSE-framed JSON-RPC like:
 //
-// Expected markers in the response text:
-//   - "STRONG_BUY", "BUY", "NEUTRAL", "SELL", "STRONG_SELL"
-//   - confidence as percentage like "75%" or score "0.75"
+//	event: message
+//	data: {"jsonrpc":"2.0","id":1,"result":{"content":[{"type":"text","text":"<JSON>"}],"isError":false}}
+//
+// where <JSON> is a stringified object with rich technical analysis. We extract
+// directional bias from:
+//   - market_structure.trend ("Bullish"/"Bearish"/"Neutral")
+//   - market_sentiment.overall_rating (numeric -3..+3)
+//   - market_sentiment.buy_sell_signal ("STRONG_BUY"/"BUY"/"NEUTRAL"/"SELL"/"STRONG_SELL")
+//   - market_structure.trend_strength ("Strong"/"Moderate"/"Weak")
+//
+// Confidence is derived from trend_strength × abs(overall_rating)/3.
 func parseSentiment(raw []byte) (sentiment string, confidence float64) {
 	text := string(raw)
+
+	// SSE-framed response: extract the "data: {...}" line.
+	jsonLine := text
+	for _, ln := range strings.Split(text, "\n") {
+		ln = strings.TrimSpace(ln)
+		if strings.HasPrefix(ln, "data: ") {
+			jsonLine = strings.TrimPrefix(ln, "data: ")
+			break
+		}
+	}
+
+	// First decode the outer JSON-RPC envelope.
+	var envelope struct {
+		Result struct {
+			Content []struct {
+				Text string `json:"text"`
+			} `json:"content"`
+		} `json:"result"`
+	}
+	if err := json.Unmarshal([]byte(jsonLine), &envelope); err != nil || len(envelope.Result.Content) == 0 {
+		// Fallback to regex over the raw text (backwards compatibility / unit tests with simpler shape)
+		return parseSentimentLegacy(text)
+	}
+
+	// Then decode the inner stringified JSON.
+	var ta struct {
+		MarketStructure struct {
+			Trend         string `json:"trend"`
+			TrendScore    int    `json:"trend_score"`
+			TrendStrength string `json:"trend_strength"`
+		} `json:"market_structure"`
+		MarketSentiment struct {
+			OverallRating int    `json:"overall_rating"`
+			BuySellSignal string `json:"buy_sell_signal"`
+			Momentum      string `json:"momentum"`
+		} `json:"market_sentiment"`
+	}
+	if err := json.Unmarshal([]byte(envelope.Result.Content[0].Text), &ta); err != nil {
+		return parseSentimentLegacy(text)
+	}
+
+	// Directional signal: prefer market_structure.trend, fallback to overall_rating sign.
+	trend := strings.ToLower(ta.MarketStructure.Trend)
+	switch trend {
+	case "bullish":
+		sentiment = "bullish"
+	case "bearish":
+		sentiment = "bearish"
+	default:
+		if ta.MarketSentiment.OverallRating > 0 {
+			sentiment = "bullish"
+		} else if ta.MarketSentiment.OverallRating < 0 {
+			sentiment = "bearish"
+		} else {
+			sentiment = "neutral"
+		}
+	}
+
+	// STRONG_BUY/STRONG_SELL override (rarer but more conclusive).
+	switch ta.MarketSentiment.BuySellSignal {
+	case "STRONG_BUY":
+		sentiment = "bullish"
+	case "STRONG_SELL":
+		sentiment = "bearish"
+	}
+
+	// Confidence: combine trend_strength + magnitude of rating.
+	strength := strings.ToLower(ta.MarketStructure.TrendStrength)
+	switch strength {
+	case "strong":
+		confidence = 0.80
+	case "moderate":
+		confidence = 0.65
+	case "weak":
+		confidence = 0.50
+	default:
+		confidence = 0.40
+	}
+	// Boost if STRONG_* signal present and aligned with trend.
+	if ta.MarketSentiment.BuySellSignal == "STRONG_BUY" || ta.MarketSentiment.BuySellSignal == "STRONG_SELL" {
+		confidence = max64(confidence, 0.85)
+	}
+	// Boost if overall_rating has high magnitude.
+	mag := ta.MarketSentiment.OverallRating
+	if mag < 0 {
+		mag = -mag
+	}
+	if mag >= 2 {
+		confidence = max64(confidence, 0.65)
+	}
+	return sentiment, confidence
+}
+
+func max64(a, b float64) float64 {
+	if a > b {
+		return a
+	}
+	return b
+}
+
+// parseSentimentLegacy keeps the regex-based fallback for tests and unexpected formats.
+func parseSentimentLegacy(text string) (sentiment string, confidence float64) {
 	textU := strings.ToUpper(text)
 	sentiment = "unknown"
 	switch {
@@ -230,8 +350,6 @@ func parseSentiment(raw []byte) (sentiment string, confidence float64) {
 		sentiment = "neutral"
 		confidence = 0.50
 	}
-
-	// Refine confidence with explicit percentages.
 	if m := regexp.MustCompile(`(?i)confidence[^0-9]{0,10}(\d{1,3})\s*%`).FindStringSubmatch(text); m != nil {
 		var pct int
 		fmt.Sscanf(m[1], "%d", &pct)
