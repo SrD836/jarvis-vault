@@ -1,5 +1,5 @@
 ---
-title: "Polymarket veto — us-x-iran-permanent-peace-deal-by-july-31-2026-831"
+title: "Polymarket veto — us-x-iran-permanent-peace-deal-by-july-31-2026-831-252"
 type: decision
 date: 2026-05-26
 decision: "Veto de tesis 'US x Iran permanent peace deal by July 31, 2026?' (rule M2): M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)"
@@ -19,10 +19,10 @@ related:
 
 ## Mercado
 
-- **Slug**: `us-x-iran-permanent-peace-deal-by-july-31-2026-831`
+- **Slug**: `us-x-iran-permanent-peace-deal-by-july-31-2026-831-252`
 - **Categoría**: geopolitics
 - **Precio YES**: 0.6900
-- **Volumen 24h**: 302049.55 USD
+- **Volumen 24h**: 303621.63 USD
 - **End date**: 2026-07-31T00:00:00Z
 
 ## Razón del veto

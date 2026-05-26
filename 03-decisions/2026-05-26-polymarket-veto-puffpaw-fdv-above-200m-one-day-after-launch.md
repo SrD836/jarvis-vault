@@ -2,7 +2,7 @@
 title: "Polymarket veto — puffpaw-fdv-above-200m-one-day-after-launch"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Puffpaw FDV above $200M one day after launch?' (rule P4_pre_event): pre-event slug + 220 d to resolution (>=7 threshold)"
+decision: "Veto de tesis 'Puffpaw FDV above $200M one day after launch?' (rule P4_pre_event): pre-event slug + 219 d to resolution (>=7 threshold)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -29,7 +29,7 @@ related:
 
 **Regla aplicada**: `P4_pre_event`
 
-pre-event slug + 220 d to resolution (>=7 threshold)
+pre-event slug + 219 d to resolution (>=7 threshold)
 
 ## Human notes
 

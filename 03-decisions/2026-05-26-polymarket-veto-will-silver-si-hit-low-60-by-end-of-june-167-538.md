@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-the-uk-designate-the-irgc-a-terrorist-organization-by-june-30"
+title: "Polymarket veto — will-silver-si-hit-low-60-by-end-of-june-167-538"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Will the UK designate the IRGC a terrorist organization by June 30? ' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
+decision: "Veto de tesis 'Will Silver (SI) hit (LOW) $60 by end of June?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will the UK designate the IRGC a terrorist organization by June 30? 
+# Veto: Will Silver (SI) hit (LOW) $60 by end of June?
 
 ## Mercado
 
-- **Slug**: `will-the-uk-designate-the-irgc-a-terrorist-organization-by-june-30`
+- **Slug**: `will-silver-si-hit-low-60-by-end-of-june-167-538`
 - **Categoría**: other
-- **Precio YES**: 0.1100
-- **Volumen 24h**: 96229.67 USD
-- **End date**: 2026-06-30T00:00:00Z
+- **Precio YES**: 0.1300
+- **Volumen 24h**: 191633.37 USD
+- **End date**: 2026-06-30T17:30:00Z
 
 ## Razón del veto
 

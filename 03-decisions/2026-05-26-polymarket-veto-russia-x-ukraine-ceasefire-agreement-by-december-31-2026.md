@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — us-x-iran-permanent-peace-deal-by-july-31-2026-831"
+title: "Polymarket veto — russia-x-ukraine-ceasefire-agreement-by-december-31-2026"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'US x Iran permanent peace deal by July 31, 2026?' (rule M2): M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)"
+decision: "Veto de tesis 'Russia x Ukraine ceasefire agreement by December 31, 2026?' (rule M2): M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: US x Iran permanent peace deal by July 31, 2026?
+# Veto: Russia x Ukraine ceasefire agreement by December 31, 2026?
 
 ## Mercado
 
-- **Slug**: `us-x-iran-permanent-peace-deal-by-july-31-2026-831`
+- **Slug**: `russia-x-ukraine-ceasefire-agreement-by-december-31-2026`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.6900
-- **Volumen 24h**: 302049.55 USD
-- **End date**: 2026-07-31T00:00:00Z
+- **Precio YES**: 0.4400
+- **Volumen 24h**: 51539.95 USD
+- **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto
 
