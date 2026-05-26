@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-the-san-antonio-spurs-win-the-2026-nba-finals`
 - **Categoría**: sports-season
-- **Precio YES**: 0.2620
-- **Volumen 24h**: 319383.43 USD
+- **Precio YES**: 0.2580
+- **Volumen 24h**: 327723.92 USD
 - **End date**: 2026-07-01T00:00:00Z
 
 ## Razón del veto

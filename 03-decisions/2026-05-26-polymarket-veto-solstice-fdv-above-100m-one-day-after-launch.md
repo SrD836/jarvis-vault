@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — solstice-fdv-above-200m-one-day-after-launch-819"
+title: "Polymarket veto — solstice-fdv-above-100m-one-day-after-launch"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Solstice FDV above $200M one day after launch?' (rule P4_pre_event): pre-event slug + 220 d to resolution (>=7 threshold)"
+decision: "Veto de tesis 'Solstice FDV above $100M one day after launch?' (rule P4_pre_event): pre-event slug + 220 d to resolution (>=7 threshold)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,14 +15,14 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Solstice FDV above $200M one day after launch?
+# Veto: Solstice FDV above $100M one day after launch?
 
 ## Mercado
 
-- **Slug**: `solstice-fdv-above-200m-one-day-after-launch-819`
+- **Slug**: `solstice-fdv-above-100m-one-day-after-launch`
 - **Categoría**: crypto-launch
-- **Precio YES**: 0.2510
-- **Volumen 24h**: 119517.11 USD
+- **Precio YES**: 0.9500
+- **Volumen 24h**: 101000.29 USD
 - **End date**: 2027-01-01T05:00:00Z
 
 ## Razón del veto

@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — us-obtains-iranian-enriched-uranium-by-june-30"
+title: "Polymarket veto — will-bp-be-acquired-before-2027-549-844"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'US obtains Iranian enriched uranium by June 30?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
+decision: "Veto de tesis 'Will BP be acquired before 2027?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: US obtains Iranian enriched uranium by June 30?
+# Veto: Will BP be acquired before 2027?
 
 ## Mercado
 
-- **Slug**: `us-obtains-iranian-enriched-uranium-by-june-30`
+- **Slug**: `will-bp-be-acquired-before-2027-549-844`
 - **Categoría**: other
-- **Precio YES**: 0.1000
-- **Volumen 24h**: 138382.54 USD
-- **End date**: 2026-06-30T00:00:00Z
+- **Precio YES**: 0.1400
+- **Volumen 24h**: 1056425.53 USD
+- **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto
 

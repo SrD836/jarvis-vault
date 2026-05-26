@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-31-2026-313-388-459-589-533"
+title: "Polymarket veto — will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-june-30-2026-159-962"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Will Donald Trump announce that the United States blockade of the Strait of H...' (rule M2): M2 soft-learned: uncategorized·medium·0.30-0.70 = 5L/0W (wr 0%)"
+decision: "Veto de tesis 'Will Donald Trump announce that the United States blockade of the Strait of H...' (rule M2): M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,21 +15,21 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 31, 2026?
+# Veto: Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by June 30, 2026?
 
 ## Mercado
 
-- **Slug**: `will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-31-2026-313-388-459-589-533`
+- **Slug**: `will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-june-30-2026-159-962`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.3800
-- **Volumen 24h**: 237774.61 USD
-- **End date**: 2026-05-31T00:00:00Z
+- **Precio YES**: 0.6800
+- **Volumen 24h**: 58158.20 USD
+- **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `M2`
 
-M2 soft-learned: uncategorized·medium·0.30-0.70 = 5L/0W (wr 0%)
+M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)
 
 ## Human notes
 

@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — us-obtains-iranian-enriched-uranium-by-june-30"
+title: "Polymarket veto — will-the-montreal-canadiens-win-the-2026-nhl-stanley-cup"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'US obtains Iranian enriched uranium by June 30?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
+decision: "Veto de tesis 'Will the Montreal Canadiens win the 2026 NHL Stanley Cup?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,14 +15,14 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: US obtains Iranian enriched uranium by June 30?
+# Veto: Will the Montreal Canadiens win the 2026 NHL Stanley Cup?
 
 ## Mercado
 
-- **Slug**: `us-obtains-iranian-enriched-uranium-by-june-30`
+- **Slug**: `will-the-montreal-canadiens-win-the-2026-nhl-stanley-cup`
 - **Categoría**: other
-- **Precio YES**: 0.1000
-- **Volumen 24h**: 138382.54 USD
+- **Precio YES**: 0.1510
+- **Volumen 24h**: 51775.29 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto
