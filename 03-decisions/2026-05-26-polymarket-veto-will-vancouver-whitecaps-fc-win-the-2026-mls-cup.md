@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — elon-musk-of-tweets-may-19-may-26-240-259"
+title: "Polymarket veto — will-vancouver-whitecaps-fc-win-the-2026-mls-cup"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Will Elon Musk post 240-259 tweets from May 19 to May 26, 2026?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
+decision: "Veto de tesis 'Will Vancouver Whitecaps FC win the 2026 MLS Cup?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will Elon Musk post 240-259 tweets from May 19 to May 26, 2026?
+# Veto: Will Vancouver Whitecaps FC win the 2026 MLS Cup?
 
 ## Mercado
 
-- **Slug**: `elon-musk-of-tweets-may-19-may-26-240-259`
+- **Slug**: `will-vancouver-whitecaps-fc-win-the-2026-mls-cup`
 - **Categoría**: other
-- **Precio YES**: 0.2600
-- **Volumen 24h**: 341157.73 USD
-- **End date**: 2026-05-26T16:00:00Z
+- **Precio YES**: 0.1340
+- **Volumen 24h**: 366631.92 USD
+- **End date**: 2026-12-19T00:00:00Z
 
 ## Razón del veto
 

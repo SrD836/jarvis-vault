@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-renan-santos-win-the-2026-brazilian-presidential-election`
 - **Categoría**: elections
-- **Precio YES**: 0.1360
-- **Volumen 24h**: 63052.01 USD
+- **Precio YES**: 0.1350
+- **Volumen 24h**: 63875.75 USD
 - **End date**: 2026-10-04T00:00:00Z
 
 ## Razón del veto

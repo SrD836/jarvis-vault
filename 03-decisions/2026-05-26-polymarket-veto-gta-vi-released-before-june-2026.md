@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-oh-se-hoon-win-the-2026-seoul-mayoral-election"
+title: "Polymarket veto — gta-vi-released-before-june-2026"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Will Oh Se-hoon win the 2026 Seoul Mayoral Election' (rule M2): M2 soft-learned: uncategorized·medium·0.10-0.30 = 11L/2W (wr 15%)"
+decision: "Veto de tesis 'GTA VI released before June 2026?' (rule M2): M2 soft-learned: uncategorized·medium·0.10-0.30 = 11L/2W (wr 15%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will Oh Se-hoon win the 2026 Seoul Mayoral Election
+# Veto: GTA VI released before June 2026?
 
 ## Mercado
 
-- **Slug**: `will-oh-se-hoon-win-the-2026-seoul-mayoral-election`
-- **Categoría**: elections
-- **Precio YES**: 0.2300
-- **Volumen 24h**: 59803.98 USD
-- **End date**: 2026-06-03T00:00:00Z
+- **Slug**: `gta-vi-released-before-june-2026`
+- **Categoría**: other
+- **Precio YES**: 0.1510
+- **Volumen 24h**: 73732.22 USD
+- **End date**: 2026-05-31T12:00:00Z
 
 ## Razón del veto
 

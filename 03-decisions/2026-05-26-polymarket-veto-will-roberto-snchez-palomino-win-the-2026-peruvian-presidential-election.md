@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-roberto-snchez-palomino-win-the-2026-peruvian-presidential-election`
 - **Categoría**: elections
-- **Precio YES**: 0.2880
-- **Volumen 24h**: 275297.77 USD
+- **Precio YES**: 0.2890
+- **Volumen 24h**: 275951.50 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto

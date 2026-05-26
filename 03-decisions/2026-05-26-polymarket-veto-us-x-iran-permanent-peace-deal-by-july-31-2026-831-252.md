@@ -2,13 +2,13 @@
 title: "Polymarket veto — us-x-iran-permanent-peace-deal-by-july-31-2026-831-252"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'US x Iran permanent peace deal by July 31, 2026?' (rule N1): noticias contradicen tesis: Negociaciones activas pero deal 'no inminente'; e..."
+decision: "Veto de tesis 'US x Iran permanent peace deal by July 31, 2026?' (rule M2): M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, n1]
+tags: [decision, polymarket, bot, veto, m2]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,19 +21,15 @@ related:
 
 - **Slug**: `us-x-iran-permanent-peace-deal-by-july-31-2026-831-252`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.7000
-- **Volumen 24h**: 311393.09 USD
+- **Precio YES**: 0.6900
+- **Volumen 24h**: 314486.95 USD
 - **End date**: 2026-07-31T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `N1`
+**Regla aplicada**: `M2`
 
-noticias contradicen tesis: Negociaciones activas pero deal 'no inminente'; estructura propuesta incluye fase 60 días que superaría el 31 julio.
-
-## Investigación de noticias
-
-Tavily+DeepSeek: confirms=false contradicts=true silent=false score=0.75 — Negociaciones activas pero deal 'no inminente'; estructura propuesta incluye fase 60 días que superaría el 31 julio.
+M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)
 
 ## Human notes
 

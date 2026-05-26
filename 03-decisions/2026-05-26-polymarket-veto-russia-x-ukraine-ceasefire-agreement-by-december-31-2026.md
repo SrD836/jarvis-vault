@@ -22,7 +22,7 @@ related:
 - **Slug**: `russia-x-ukraine-ceasefire-agreement-by-december-31-2026`
 - **Categoría**: geopolitics
 - **Precio YES**: 0.4400
-- **Volumen 24h**: 74038.02 USD
+- **Volumen 24h**: 81255.77 USD
 - **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto

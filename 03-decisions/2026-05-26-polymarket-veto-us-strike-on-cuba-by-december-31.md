@@ -22,7 +22,7 @@ related:
 - **Slug**: `us-strike-on-cuba-by-december-31`
 - **Categoría**: other
 - **Precio YES**: 0.5100
-- **Volumen 24h**: 77003.17 USD
+- **Volumen 24h**: 79230.33 USD
 - **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto
@@ -34,9 +34,9 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `us-strike-on-cuba-by-december-31` score=1.00 (exact slug match)
-- veto `will-zoom-video-communications-be-acquired-before-2027-486-866` score=0.40 (same category; same price bucket mid)
-- veto `will-usdc-hit-50-of-usdt-market-cap-by-december-31-2026` score=0.40 (same category; same price bucket mid)
-- veto `will-lighter-reach-4-before-2027` score=0.40 (same category; same price bucket mid)
+- veto `will-gitlab-be-acquired-before-2027-944-667` score=0.40 (same category; same price bucket mid)
+- veto `will-ubisoft-be-acquired-before-2027-175-488` score=0.40 (same category; same price bucket mid)
+- veto `altcoin-market-cap-dip-to-150b-before-2027` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 
