@@ -1,6 +1,6 @@
 {
-  "bankroll": 3194.56442657019,
-  "used_exposure": 2541.0676256169077,
+  "bankroll": 3151.495188951567,
+  "used_exposure": 2476.9668632355306,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -694,22 +694,6 @@
       "liquidity_usd": 104290.54161
     },
     {
-      "id": "T-2169995-1779759026423",
-      "market_id": "2169995",
-      "question": "MicroStrategy sells any Bitcoin by May 31, 2026?",
-      "side": "yes",
-      "entry_price": 0.15,
-      "size": 63.221798348344144,
-      "category": "market",
-      "entry_timestamp": "2026-05-26T01:30:26Z",
-      "approved_price": 0.15,
-      "days_to_resolution": 36,
-      "horizon": "long",
-      "end_date": "2026-07-01T04:00:00Z",
-      "size_usd": 63.221798348344144,
-      "liquidity_usd": 31677.8119
-    },
-    {
       "id": "T-1809418-1779760804552",
       "market_id": "1809418",
       "question": "SCOTUS strikes down Trump's Birthright Citizenship EO?",
@@ -778,20 +762,20 @@
       "liquidity_usd": 21794.814
     },
     {
-      "id": "T-2303427-1779793283201",
+      "id": "T-2303427-1779798604693",
       "market_id": "2303427",
       "question": "Will the price of Bitcoin be above $78,000 on May 26?",
       "side": "yes",
-      "entry_price": 0.29,
-      "size": 65.19519237898346,
+      "entry_price": 0.076,
+      "size": 64.31622834595035,
       "category": "market",
-      "entry_timestamp": "2026-05-26T11:01:23Z",
-      "approved_price": 0.29,
+      "entry_timestamp": "2026-05-26T12:30:04Z",
+      "approved_price": 0.076,
       "days_to_resolution": 0,
       "horizon": "short",
       "end_date": "2026-05-26T16:00:00Z",
-      "size_usd": 65.19519237898346,
-      "liquidity_usd": 16344.29714
+      "size_usd": 64.31622834595035,
+      "liquidity_usd": 25486.64532
     }
   ]
 }

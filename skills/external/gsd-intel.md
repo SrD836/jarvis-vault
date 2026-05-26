@@ -6,11 +6,18 @@ category: general
 date: 2026-05-26T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-intel
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/external/gsd-intel-updater]]"
+  - "[[skills/external/gsd-execute-phase]]"
+  - "[[skills/external/gsd-scan]]"
+  - "[[skills/external/gsd-settings]]"
+  - "[[skills/external/gsd-verify-work]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-26
 ---
+
 
 # `gsd-intel` (external skill)
 

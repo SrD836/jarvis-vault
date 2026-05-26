@@ -6,11 +6,18 @@ category: general
 date: 2026-05-26T03:15:01+00:00
 source_path: ~/.claude/skills/design-system
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/banner-design]]"
+  - "[[skills/external/brand]]"
+  - "[[skills/external/design]]"
+  - "[[skills/external/slides]]"
+  - "[[skills/external/ui-styling]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-26
 ---
+
 
 # `design-system` (external skill)
 

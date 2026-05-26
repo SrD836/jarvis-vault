@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-kim-farington-be-the-republican-nominee-for-senate-in-virginia"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Will Kim Farington be the Republican nominee for Senate in Virginia?' (rule M2): M2 soft-learned: uncategorized·medium·0.30-0.70 = 5L/0W (wr 0%)"
+decision: "Veto de tesis 'Will Kim Farington be the Republican nominee for Senate in Virginia?' (rule M2): M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -29,7 +29,7 @@ related:
 
 **Regla aplicada**: `M2`
 
-M2 soft-learned: uncategorized·medium·0.30-0.70 = 5L/0W (wr 0%)
+M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)
 
 ## Human notes
 

@@ -6,11 +6,18 @@ category: general
 date: 2026-05-26T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-cleanup
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/gsd-archive]]"
+  - "[[skills/external/gsd-complete-milestone]]"
+  - "[[skills/external/gsd-health]]"
+  - "[[skills/external/gsd-remove-phase]]"
+  - "[[skills/external/gsd-session-report]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-26
 ---
+
 
 # `gsd-cleanup` (external skill)
 
