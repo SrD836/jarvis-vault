@@ -1,7 +1,7 @@
 ---
 title: "🤖 Agentes JARVIS"
 type: moc
-updated: 2026-05-26T20:00:02
+updated: 2026-05-26T20:30:01
 tags: [moc, agent, jarvis]
 related:
   - "[[../00-MOC]]"
@@ -15,7 +15,7 @@ related:
 
 | Agente | Rol | Modelo | allowAgents | Children runtime |
 |---|---|---|---|---|
-| [[main]] | main | `anthropic/claude-opus-4-7` | planner, researcher, archivist | — |
+| [[main]] | main | `anthropic/claude-opus-4-7` | planner, researcher, archivist, polymarket-handler | — |
 | [[planner]] | orchestrator | `anthropic/claude-opus-4-7` | researcher, code-reviewer, debugger, tester, documenter, designer, apier, archivist, auditor, monitor, skill-reviewer, job-hunter, polymarket-handler | — |
 | [[code-reviewer]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
 | [[researcher]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
@@ -38,6 +38,7 @@ graph TD
   main -.allowed.-> planner
   main -.allowed.-> researcher
   main -.allowed.-> archivist
+  main -.allowed.-> polymarket-handler
   planner -.allowed.-> researcher
   planner -.allowed.-> code-reviewer
   planner -.allowed.-> debugger

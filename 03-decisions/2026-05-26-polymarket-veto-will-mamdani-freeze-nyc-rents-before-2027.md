@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-mamdani-freeze-nyc-rents-before-2027` score=1.00 (exact slug match)
+- veto `fl1-se-nic-2026-05-26-nic` score=0.40 (same category; same price bucket mid)
+- veto `fl1-se-nic-2026-05-26-se` score=0.40 (same category; same price bucket mid)
 - veto `ucl-psg-ars-2026-05-30-psg` score=0.40 (same category; same price bucket mid)
 - veto `will-trump-agree-to-unfreeze-iranian-assets-by-may-31` score=0.40 (same category; same price bucket mid)
-- veto `claudio-tapia-out-as-afa-president-by-july-19-2026` score=0.40 (same category; same price bucket mid)
-- veto `will-michael-harris-ii-win-the-2026-nl-comeback-player-of-the-year-award` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

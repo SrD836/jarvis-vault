@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-wti-reach-110-in-may-2026-116-472`
 - **Categoría**: market
-- **Precio YES**: 0.0690
-- **Volumen 24h**: 470181.09 USD
+- **Precio YES**: 0.0520
+- **Volumen 24h**: 470138.06 USD
 - **End date**: 2026-06-01T03:59:59.999Z
 
 ## Razón del veto
@@ -34,8 +34,8 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-wti-reach-110-in-may-2026-116-472` score=1.00 (exact slug match)
-- veto `will-wti-dip-to-80-in-may-2026-734-629-766-626-157-663-256-712-397-816-113-876-832` score=0.40 (same category; same price bucket low)
 - veto `will-wti-crude-oil-wti-hit-high-105-in-may` score=0.40 (same category; same price bucket low)
+- veto `will-wti-dip-to-80-in-may-2026-734-629-766-626-157-663-256-712-397-816-113-876-832` score=0.40 (same category; same price bucket low)
 - veto `will-bitcoin-dip-to-70k-in-may-2026` score=0.40 (same category; same price bucket low)
 - veto `will-crude-oil-cl-hit-high-140-by-end-of-june-828-295-574-155` score=0.40 (same category; same price bucket low)
 
