@@ -6,11 +6,18 @@ category: general
 date: 2026-05-26T03:15:01+00:00
 source_path: ~/.claude/skills/triage-issue
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/external/gsd-eval-planner]]"
+  - "[[skills/external/gsd-autonomous]]"
+  - "[[skills/external/gsd-inbox]]"
+  - "[[skills/external/gsd-manager]]"
+  - "[[skills/external/gsd-review-backlog]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-26
 ---
+
 
 # `triage-issue` (external skill)
 

@@ -6,11 +6,18 @@ category: general
 date: 2026-05-26T03:15:01+00:00
 source_path: ~/.claude/skills/claude-mem
 source_file: README.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/external/gsd-intel-updater]]"
+  - "[[skills/external/gsd-autonomous]]"
+  - "[[skills/external/gsd-extract_learnings]]"
+  - "[[skills/external/gsd-intel]]"
+  - "[[skills/external/gsd-sync-skills]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-26
 ---
+
 
 # `claude-mem` (external skill)
 

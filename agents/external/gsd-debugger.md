@@ -4,11 +4,18 @@ type: agent-mirror
 external: true
 date: 2026-05-26T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-debugger.md
-tags: [agent, external, mirror]
 related:
-  - "[[agents/external/index]]"
   - "[[00-MOC]]"
+  - "[[agents/debugger]]"
+  - "[[agents/external/gsd-code-fixer]]"
+  - "[[agents/external/gsd-debug-session-manager]]"
+  - "[[agents/external/gsd-verifier]]"
+  - "[[agents/external/index]]"
+  - "[[skills/external/gsd-debug]]"
+tags: [agent, external, mirror]
+# auto-linked 2026-05-26
 ---
+
 
 # `gsd-debugger` (external Claude Code agent)
 

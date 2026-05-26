@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-macky-sall-be-the-next-secretary-general-of-the-united-nations` score=1.00 (exact slug match)
+- veto `xi-jinping-out-before-2027` score=0.40 (same category; same price bucket low)
+- veto `sam-altman-out-as-openai-ceo-before-2027` score=0.40 (same category; same price bucket low)
 - veto `will-alberta-join-the-us` score=0.40 (same category; same price bucket low)
-- veto `will-the-feds-lower-bound-reach-0pt25-or-lower-before-2027-173-921-916-764-754-593-935` score=0.40 (same category; same price bucket low)
-- veto `uae-x-qatar-sever-diplomatic-relations-in-2026` score=0.40 (same category; same price bucket low)
-- veto `will-hyperliquid-dip-to-12-by-december-31-2026` score=0.40 (same category; same price bucket low)
+- veto `will-7-8-spacex-starship-launches-successfully-reach-space-in-2026` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

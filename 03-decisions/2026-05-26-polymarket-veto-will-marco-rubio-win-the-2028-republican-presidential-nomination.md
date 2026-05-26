@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-marco-rubio-win-the-2028-republican-presidential-nomination`
 - **Categoría**: elections
-- **Precio YES**: 0.2360
-- **Volumen 24h**: 51787.52 USD
+- **Precio YES**: 0.2370
+- **Volumen 24h**: 51816.07 USD
 - **End date**: 2028-11-07T00:00:00Z
 
 ## Razón del veto

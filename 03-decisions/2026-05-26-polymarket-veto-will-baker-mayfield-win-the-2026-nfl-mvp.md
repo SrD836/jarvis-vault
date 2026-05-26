@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `will-baker-mayfield-win-the-2026-nfl-mvp`
 - **Categoría**: sports-season
-- **Precio YES**: 0.3210
+- **Precio YES**: 0.2150
 - **Volumen 24h**: 98330.00 USD
 - **End date**: 2027-02-15T00:00:00Z
 
