@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-wti-reach-110-in-may-2026-116-472`
 - **Categoría**: market
-- **Precio YES**: 0.0580
-- **Volumen 24h**: 467779.88 USD
+- **Precio YES**: 0.0640
+- **Volumen 24h**: 250137.02 USD
 - **End date**: 2026-06-01T03:59:59.999Z
 
 ## Razón del veto
