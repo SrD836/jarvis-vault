@@ -6,7 +6,9 @@ agent: "[[agents/planner]]"
 pattern: iter-cap-saturated
 confidence: medium
 proposed: true
-applied: false
+applied_at: 2026-05-26T17:30:00Z
+applied_by: claude-opus-4-7-via-david
+applied: true
 tags: [agent-evolution, planner, iter-cap-saturated]
 related:
   - "[[agents/planner]]"
