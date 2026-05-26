@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-marco-rubio-win-the-2028-republican-presidential-nomination"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Will Marco Rubio win the 2028 Republican presidential nomination?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Will Marco Rubio win the 2028 Republican presidential nomination?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, m1]
+tags: [decision, polymarket, bot, veto, m2]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,20 +21,15 @@ related:
 
 - **Slug**: `will-marco-rubio-win-the-2028-republican-presidential-nomination`
 - **Categoría**: elections
-- **Precio YES**: 0.2330
-- **Volumen 24h**: 50725.27 USD
+- **Precio YES**: 0.2340
+- **Volumen 24h**: 50325.39 USD
 - **End date**: 2028-11-07T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `M1`
+**Regla aplicada**: `M2`
 
-memoria: exact slug match (score 1.00)
-
-## Patterns en memoria que contribuyeron
-
-- veto `will-marco-rubio-win-the-2028-republican-presidential-nomination` score=1.00 (exact slug match)
-- veto `will-jd-vance-win-the-2028-republican-presidential-nomination` score=0.40 (same category; same price bucket mid)
+M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)
 
 ## Human notes
 

@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-trump-agree-to-iranian-enrichment-of-uranium-by-may-31`
 - **Categoría**: other
-- **Precio YES**: 0.0520
-- **Volumen 24h**: 283968.93 USD
+- **Precio YES**: 0.0580
+- **Volumen 24h**: 353753.14 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto

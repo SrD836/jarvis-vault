@@ -1,7 +1,7 @@
 ---
 title: "Evolution proposal — planner"
 type: agent-evolution
-date: 2026-05-25T04:00:15+00:00
+date: 2026-05-26T04:00:16+00:00
 agent: "[[agents/planner]]"
 pattern: iter-cap-saturated
 confidence: medium
@@ -15,7 +15,7 @@ related:
 
 # Evolución propuesta — `planner`
 
-_Generado por `hermes/learnings.py` el 2026-05-25T04:00:15+00:00. Ventana: 7 días._
+_Generado por `hermes/learnings.py` el 2026-05-26T04:00:16+00:00. Ventana: 7 días._
 
 ## Patrón: `iter-cap-saturated`
 
@@ -34,47 +34,51 @@ _Generado por `hermes/learnings.py` el 2026-05-25T04:00:15+00:00. Ventana: 7 dí
 
 ## Cambios propuestos
 
-### Cambio 1: Reducir `allow_agents` y forzar delegación temprana
+### 1. Limitar `allow_agents` para reducir saturación de iteraciones
 
-**Archivo:** `openclaw.json` → `agents.planner.allow_agents`
+**Archivo:** `agents/planner/openclaw.json`
 
-**Snippet:**
+**Cambio:**
 ```json
-"allow_agents": ["researcher", "code-reviewer", "debugger", "tester", "auditor", "archivist"]
+{
+  "allow_agents": ["researcher", "code-reviewer", "debugger", "tester", "documenter"]
+}
 ```
 
-**Razón:** El planner tiene 11 workers permitidos. En runs con `iter: 16-17` y `spawned_children: []` o solo 1 hijo, el agente pierde iteraciones explorando workers irrelevantes (job-hunter, monitor, skill-reviewer, apier, documenter). Reducir a 6 workers nucleares fuerza delegación real y reduce el espacio de búsqueda.
+**Razón:** 11 agentes disponibles fuerza al planner a iterar evaluando opciones de delegación. Reducir a 5 especialistas nucleares elimina el loop de decisión y baja el ratio de iter/cap.
 
 ---
 
-### Cambio 2: Añadir límite de iteraciones con delegación obligatoria
+### 2. Añadir directiva de aborto temprano por iteraciones
 
-**Archivo:** `briefing/planner.md` → sección "Delegación real obligatoria"
+**Archivo:** `agents/planner/briefing.md` (sección "Política de delegación")
 
-**Snippet:**
+**Cambio:**
 ```markdown
-### Regla de iteraciones
+## Límite de iteraciones
 
-- Si `iter >= 5` y `spawned_children` está vacío → ABORTA inmediatamente con razón "autoejecución detectada (iter N sin delegar)".
-- Si `iter >= 8` y solo has delegado 1 hijo → ABORTA con razón "delegación insuficiente (1 hijo en 8 iter)".
-- Si `iter >= 12` → ABORTA siempre con razón "iter-cap-saturated (12 iter)".
+- Si alcanzas iter 5 sin haber delegado al menos una subtarea → ABORTA inmediatamente con `abort_reason: "no delegation by iter 5"`.
+- Si detectas que estás llamando al mismo tool con los mismos args >1 vez → ABORTA con `abort_reason: "duplicate tool loop"`.
 ```
 
-**Razón:** Los runs fallidos muestran `iter: 16` y `iter: 17` sin aborto automático. El agente necesita reglas duras de aborto basadas en iteraciones para no saturar el límite de 8 caps sin respuesta.
+**Razón:** Los 4 fallos muestran iter 7-17 sin delegación efectiva o con loops duplicados. Un aborto temprano evita consumir 100k+ tokens.
 
 ---
 
-### Cambio 3: Añadir `max_iterations` en configuración del agente
+### 3. Forzar delegación obligatoria en tareas >1 paso
 
-**Archivo:** `openclaw.json` → `agents.planner`
+**Archivo:** `agents/planner/briefing.md` (sección "Delegación real obligatoria")
 
-**Snippet:**
-```json
-"max_iterations": 8,
-"abort_on_iter_cap": true
+**Cambio:**
+```markdown
+### Regla de delegación forzosa
+
+- Toda tarea que requiera >1 tool call o >1 archivo DEBE delegarse a un worker.
+- Si no hay worker adecuado → usa `researcher` como fallback genérico.
+- Prohibido: ejecutar más de 3 tool calls seguidas sin delegar.
 ```
 
-**Razón:** El patrón `iter-cap-saturated` con `cap_value: 8` indica que el sistema aborta por límite de caps, pero el planner no tiene un límite interno propio. Forzar `max_iterations: 8` alinea el agente con el límite del sistema y evita que gaste iteraciones en loops de herramientas duplicadas (como el run con `same tool+args 3x`).
+**Razón:** Los runs abortados muestran `spawned_children: []` en tareas complejas (polymarket bot). Forzar delegación rompe el ciclo de autoejecución.
 
 ## Patrón: `tokens-budget-tight`
 
@@ -97,49 +101,47 @@ _Generado por `hermes/learnings.py` el 2026-05-25T04:00:15+00:00. Ventana: 7 dí
 
 **Archivo:** `openclaw.json` (config del agente planner)
 
-**Snippet:**
-```json
-{
-  "agent_id": "planner",
-  "allow_agents": ["code-reviewer", "researcher", "documenter", "debugger", "tester", "auditor"]
-}
+**Diff:**
+```diff
+- "allow_agents": ["code-reviewer", "researcher", "documenter", "apier", "skill-reviewer", "debugger", "tester", "auditor", "archivist", "monitor", "job-hunter"]
++ "allow_agents": ["researcher", "code-reviewer", "debugger", "tester", "auditor"]
 ```
 
-**Razón:** Eliminar 5 agentes (apier, skill-reviewer, archivist, monitor, job-hunter) que no aparecen en los runs fallidos pero inflan el contexto de planificación con briefings innecesarios.
+**Razón:** 11 agentes en `allow_agents` fuerza al planner a cargar briefings de todos ellos en cada run, inflando input_tokens. Reducir a los 5 más usados (basado en `spawned_children` reales) recorta ~50% del contexto base.
 
 ---
 
-### Cambio 2: Añadir límite de tokens de entrada en briefing
+### Cambio 2: Añadir límite de iteraciones y detección de loops en briefing
 
-**Archivo:** `briefing.md` del agente planner (sección de políticas)
+**Archivo:** `briefing.md` del planner (sección de política de delegación)
 
-**Snippet:**
+**Snippet a añadir al final:**
 ```markdown
-## Límite de contexto
+## Límites operativos
 
-- **Input tokens máx por run:** 120000
-- Si al cargar briefings de workers superas este límite → delega sin leer briefings completos, usa solo `get_agent_briefing` con resumen.
-- Si tras 3 tool calls seguidas superas 100k tokens input → aborta y delega la subtarea más grande al worker más afín.
+- **Máximo 8 iteraciones por run.** Si no has completado la task en 8 tool calls, aborta con `abort_reason: "max_iterations_exceeded"` y reporta progreso parcial.
+- **Detección de loops:** Si invocas el mismo tool con los mismos argumentos 2 veces seguidas, es un loop. Aborta inmediatamente con `abort_reason: "duplicate_tool_loop"`.
+- **Budget de tokens:** Si `input_tokens` supera 100,000 en cualquier iteración, delega la subtarea actual a un worker y finaliza tu parte.
 ```
 
-**Razón:** Los runs muestran inputs de 120k-299k tokens; un límite explícito fuerza delegación temprana antes de saturar el contexto.
+**Razón:** Los runs fallidos muestran 17 y 10 iteraciones con loops de herramientas idénticas. Un límite explícito corta el ciclo antes de quemar tokens.
 
 ---
 
-### Cambio 3: Forzar delegación en tareas >1 paso
+### Cambio 3: Forzar delegación temprana en briefing
 
 **Archivo:** `briefing.md` (sección "Delegación real obligatoria")
 
-**Snippet:**
+**Snippet a añadir:**
 ```markdown
-### Regla de delegación forzosa
+### Regla de delegación temprana
 
-- Si la task requiere >3 tool calls o >2 archivos → DELEGAR obligatoriamente a un worker.
-- Si `spawned_children: []` y task no es trivial (1 archivo, 1 paso) → error de autoejecución.
-- En cada run, antes de tool call #5, si no has delegado aún → delega la parte más pesada.
+- **Si la task requiere >3 archivos o >2 pasos → delega al worker más afín en la primera iteración.**
+- **Prohibido leer más de 5 archivos antes de delegar.** Si necesitas más contexto, delega al researcher para que lo recolecte.
+- **Patrón de fallo conocido:** leer 10+ archivos, hacer 5+ tool calls, y luego delegar. Eso quema tokens sin valor. Delegar primero, luego refinar.
 ```
 
-**Razón:** El run abortado por loop (17 iter, 0 hijos) y el de 27 calls sin hijos muestran que planner se queda tareas complejas en vez de delegar, quemando tokens.
+**Razón:** Los runs con `spawned_children: []` muestran planner ejecutando tareas complejas él mismo. Forzar delegación en iteración 1 reduce drásticamente el consumo de tokens del planner.
 
 ## Apply
 

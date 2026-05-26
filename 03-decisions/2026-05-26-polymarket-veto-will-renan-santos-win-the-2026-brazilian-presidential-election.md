@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983"
+title: "Polymarket veto — will-renan-santos-win-the-2026-brazilian-presidential-election"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Will Spencer Pratt win the 2026 Los Angeles mayoral election?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
+decision: "Veto de tesis 'Will Renan Santos win the 2026 Brazilian presidential election?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will Spencer Pratt win the 2026 Los Angeles mayoral election?
+# Veto: Will Renan Santos win the 2026 Brazilian presidential election?
 
 ## Mercado
 
-- **Slug**: `will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983`
+- **Slug**: `will-renan-santos-win-the-2026-brazilian-presidential-election`
 - **Categoría**: elections
-- **Precio YES**: 0.2200
-- **Volumen 24h**: 66347.75 USD
-- **End date**: 2026-06-02T00:00:00Z
+- **Precio YES**: 0.1330
+- **Volumen 24h**: 63486.43 USD
+- **End date**: 2026-10-04T00:00:00Z
 
 ## Razón del veto
 

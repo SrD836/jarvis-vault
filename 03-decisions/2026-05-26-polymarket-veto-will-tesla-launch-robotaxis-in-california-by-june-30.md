@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `will-tesla-launch-robotaxis-in-california-by-june-30`
 - **Categoría**: crypto-launch
-- **Precio YES**: 0.1000
+- **Precio YES**: 0.1400
 - **Volumen 24h**: 106257.11 USD
 - **End date**: 2026-06-30T00:00:00Z
 
