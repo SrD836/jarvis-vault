@@ -37,7 +37,7 @@ memoria: exact slug match (score 1.00)
 - veto `iran-agrees-to-surrender-enriched-uranium-stockpile-by-december-31-2026` score=0.90 (slug prefix match; same category; same price bucket mid)
 - veto `iran-agrees-to-surrender-enriched-uranium-stockpile-by-may-31-2026` score=0.70 (slug prefix match; same category)
 - veto `us-x-iran-diplomatic-meeting-by-june-15-2026-671` score=0.40 (same category; same price bucket mid)
-- veto `us-x-iran-permanent-peace-deal-by-may-31-2026-333-871-241-192-799-449-125` score=0.40 (same category; same price bucket mid)
+- veto `us-x-iran-diplomatic-meeting-by-june-30-2026-983-259-948` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

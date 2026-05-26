@@ -36,8 +36,8 @@ memoria: exact slug match (score 1.00)
 - veto `us-obtains-iranian-enriched-uranium-by-december-31-725-733` score=1.00 (exact slug match)
 - veto `us-obtains-iranian-enriched-uranium-by-may-31-396` score=0.70 (slug prefix match; same category)
 - veto `us-obtains-iranian-enriched-uranium-by-june-30` score=0.70 (slug prefix match; same category)
-- veto `ucl-psg-ars-2026-05-30-psg` score=0.40 (same category; same price bucket mid)
 - veto `fl1-se-nic-2026-05-26-nic` score=0.40 (same category; same price bucket mid)
+- veto `will-trump-agree-to-unfreeze-iranian-assets-by-may-31` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

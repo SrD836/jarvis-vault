@@ -36,8 +36,8 @@ memoria: exact slug match (score 1.00)
 - veto `will-jd-vance-win-the-2028-us-presidential-election` score=1.00 (exact slug match)
 - veto `will-jd-vance-win-the-2028-republican-presidential-nomination` score=0.70 (slug prefix match; same category)
 - veto `will-renan-santos-win-the-2026-brazilian-presidential-election` score=0.40 (same category; same price bucket low)
-- veto `will-the-republican-party-hold-exactly-28-or-29-governorships-after-the-2026-midterm-elections` score=0.40 (same category; same price bucket low)
 - veto `will-fernando-haddad-win-the-2026-brazilian-presidential-election` score=0.40 (same category; same price bucket low)
+- veto `will-the-republican-party-hold-exactly-28-or-29-governorships-after-the-2026-midterm-elections` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

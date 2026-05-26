@@ -34,7 +34,7 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `fl1-se-nic-2026-05-26-nic` score=1.00 (exact slug match)
-- veto `fl1-se-nic-2026-05-26-se` score=0.90 (slug prefix match; same category; same price bucket mid)
+- veto `fl1-se-nic-2026-05-26-se` score=0.70 (slug prefix match; same category)
 - veto `weed-rescheduled-by-december-31` score=0.40 (same category; same price bucket mid)
 - veto `ucl-psg-ars-2026-05-30-psg` score=0.40 (same category; same price bucket mid)
 - veto `will-trump-agree-to-unfreeze-iranian-assets-by-may-31` score=0.40 (same category; same price bucket mid)

@@ -206,7 +206,7 @@
 {"candidate_id":"631186","slug":"will-saudi-aramco-be-the-largest-company-in-the-world-by-market-cap-on-june-30","blocked":true,"reason":"price floor: 0.0020 \u003c 0.100 (horizon 34 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"608398","slug":"will-discords-market-cap-be-less-than-15b-at-market-close-on-ipo-day","blocked":true,"reason":"price floor: 0.0100 \u003c 0.100 (horizon 34 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1117220","slug":"forsen-to-get-signed-by-an-lck-prog-org-by-jun-30","blocked":true,"reason":"price floor: 0.0080 \u003c 0.100 (horizon 34 d)","vetoed_by":"P0_floor"}
-{"candidate_id":"597967","slug":"starmer-out-by-june-30-2026-862-594-548-219","blocked":true,"reason":"M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)","vetoed_by":"M2"}
+{"candidate_id":"597967","slug":"starmer-out-by-june-30-2026-862-594-548-219","blocked":true,"reason":"memoria: exact slug match (score 1.00)","vetoed_by":"M1"}
 {"candidate_id":"1032267","slug":"gc-hit-8000-high-jun-2026-342-647-753","blocked":true,"reason":"price floor: 0.0090 \u003c 0.100 (horizon 34 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1032347","slug":"will-silver-si-hit-low-45-by-end-of-june-972-272","blocked":true,"reason":"price floor: 0.0200 \u003c 0.100 (horizon 34 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1272493","slug":"will-silver-si-hit-high-130-by-end-of-june","blocked":true,"reason":"price floor: 0.0170 \u003c 0.100 (horizon 34 d)","vetoed_by":"P0_floor"}
@@ -337,7 +337,7 @@
 {"candidate_id":"694937","slug":"will-bp-be-acquired-before-2027-549-844","blocked":true,"reason":"liquidity $3304 \u003c absolute min $5000","vetoed_by":"P3_low_absolute_liquidity"}
 {"candidate_id":"693576","slug":"will-fearx-win-the-lck-2026-season-playoffs","blocked":true,"reason":"price floor: 0.0260 \u003c 0.100 (horizon 218 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"2006983","slug":"us-obtains-iranian-enriched-uranium-by-december-31-725-733","blocked":true,"reason":"memoria: exact slug match (score 1.00)","vetoed_by":"M1"}
-{"candidate_id":"1115677","slug":"jerome-powell-out-from-fed-board-by-december-31","blocked":true,"reason":"M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)","vetoed_by":"M2"}
+{"candidate_id":"1115677","slug":"jerome-powell-out-from-fed-board-by-december-31","blocked":true,"reason":"memoria: exact slug match (score 1.00)","vetoed_by":"M1"}
 {"candidate_id":"667085","slug":"will-zelenskyy-and-putin-meet-next-in-belarus","blocked":true,"reason":"price floor: 0.0170 \u003c 0.100 (horizon 218 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1073790","slug":"will-there-be-between-8-and-10-earthquakes-of-magnitude-7pt0-or-higher-worldwide-in-2026","blocked":true,"reason":"price floor: 0.0980 \u003c 0.100 (horizon 218 d)","vetoed_by":"P0_floor"}
 {"candidate_id":"1116981","slug":"will-the-us-invade-mexico-in-2026","blocked":true,"reason":"price floor: 0.0600 \u003c 0.100 (horizon 218 d)","vetoed_by":"P0_floor"}

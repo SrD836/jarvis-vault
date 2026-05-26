@@ -35,8 +35,9 @@ memoria: exact slug match (score 1.00)
 
 - veto `will-trump-agree-to-iranian-oil-sanction-relief-by-may-31` score=1.00 (exact slug match)
 - veto `will-trump-agree-to-unfreeze-iranian-assets-by-may-31` score=0.70 (slug prefix match; same price bucket mid)
-- veto `will-trump-agree-to-iranian-enrichment-of-uranium-by-may-31` score=0.50 (slug prefix match)
 - veto `will-trump-agree-to-iranian-transit-fees-in-the-strait-of-hormuz-by-may-31` score=0.50 (slug prefix match)
+- veto `will-trump-agree-to-iranian-enrichment-of-uranium-by-may-31` score=0.50 (slug prefix match)
+- veto `starmer-out-by-june-30-2026-862-594-548-219` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

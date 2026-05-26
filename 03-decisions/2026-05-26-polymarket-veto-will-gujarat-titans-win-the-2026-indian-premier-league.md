@@ -35,8 +35,8 @@ memoria: exact slug match (score 1.00)
 
 - veto `will-gujarat-titans-win-the-2026-indian-premier-league` score=1.00 (exact slug match)
 - veto `will-psg-win-the-202526-champions-league` score=0.40 (same category; same price bucket mid)
-- veto `will-the-oklahoma-city-thunder-win-the-nba-western-conference-finals` score=0.40 (same category; same price bucket mid)
 - veto `will-the-san-antonio-spurs-win-the-nba-western-conference-finals` score=0.40 (same category; same price bucket mid)
+- veto `will-the-oklahoma-city-thunder-win-the-nba-western-conference-finals` score=0.40 (same category; same price bucket mid)
 - veto `will-the-oklahoma-city-thunder-win-the-2026-nba-finals` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
