@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — iran-agrees-to-surrender-enriched-uranium-stockpile-by-december-31-2026"
+title: "Polymarket veto — will-mamdani-freeze-nyc-rents-before-2027"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Iran agrees to surrender enriched uranium stockpile by December 31, 2026?' (rule M2): M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)"
+decision: "Veto de tesis 'Will Mamdani freeze NYC rents before 2027?' (rule M2): M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,14 +15,14 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Iran agrees to surrender enriched uranium stockpile by December 31, 2026?
+# Veto: Will Mamdani freeze NYC rents before 2027?
 
 ## Mercado
 
-- **Slug**: `iran-agrees-to-surrender-enriched-uranium-stockpile-by-december-31-2026`
-- **Categoría**: geopolitics
-- **Precio YES**: 0.4600
-- **Volumen 24h**: 128599.55 USD
+- **Slug**: `will-mamdani-freeze-nyc-rents-before-2027`
+- **Categoría**: other
+- **Precio YES**: 0.3000
+- **Volumen 24h**: 257650.03 USD
 - **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto

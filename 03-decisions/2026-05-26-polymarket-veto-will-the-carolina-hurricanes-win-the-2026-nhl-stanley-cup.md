@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-the-carolina-hurricanes-win-the-2026-nhl-stanley-cup`
 - **Categoría**: other
 - **Precio YES**: 0.4900
-- **Volumen 24h**: 51526.25 USD
+- **Volumen 24h**: 51319.34 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto

@@ -2,7 +2,7 @@
 title: "Polymarket veto — iran-closes-its-airspace-by-june-15"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Iran closes its airspace by June 15?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
+decision: "Veto de tesis 'Iran closes its airspace by June 15?' (rule M2): M2 soft-learned: uncategorized·medium·0.10-0.30 = 11L/2W (wr 15%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `iran-closes-its-airspace-by-june-15`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.2810
-- **Volumen 24h**: 65944.51 USD
+- **Precio YES**: 0.2640
+- **Volumen 24h**: 65868.01 USD
 - **End date**: 2026-06-15T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `M2`
 
-M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)
+M2 soft-learned: uncategorized·medium·0.10-0.30 = 11L/2W (wr 15%)
 
 ## Human notes
 
