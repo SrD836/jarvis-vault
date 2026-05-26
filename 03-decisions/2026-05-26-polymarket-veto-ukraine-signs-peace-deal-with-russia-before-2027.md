@@ -22,7 +22,7 @@ related:
 - **Slug**: `ukraine-signs-peace-deal-with-russia-before-2027`
 - **Categoría**: geopolitics
 - **Precio YES**: 0.3100
-- **Volumen 24h**: 64876.76 USD
+- **Volumen 24h**: 64472.89 USD
 - **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto
@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `ukraine-signs-peace-deal-with-russia-before-2027` score=1.00 (exact slug match)
-- veto `us-announces-new-iran-agreementceasefire-extension-by-may-31-665` score=0.40 (same category; same price bucket mid)
 - veto `internet-access-restored-in-iran-by-june-30-2026` score=0.40 (same category; same price bucket mid)
 - veto `internet-access-restored-in-iran-by-may-31-2026` score=0.40 (same category; same price bucket mid)
 - veto `us-x-iran-diplomatic-meeting-by-june-30-2026-983-259-948` score=0.40 (same category; same price bucket mid)
+- veto `us-x-iran-permanent-peace-deal-by-may-31-2026-333-871-241-192-799-449-125` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

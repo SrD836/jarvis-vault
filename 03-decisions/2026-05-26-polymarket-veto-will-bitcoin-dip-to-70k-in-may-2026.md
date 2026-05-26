@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-bitcoin-dip-to-70k-in-may-2026"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Will Bitcoin dip to $70,000 in May?' (rule M1): memoria: slug prefix match; same category (score 0.70)"
+decision: "Veto de tesis 'Will Bitcoin dip to $70,000 in May?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,23 +21,23 @@ related:
 
 - **Slug**: `will-bitcoin-dip-to-70k-in-may-2026`
 - **Categoría**: market
-- **Precio YES**: 0.0540
-- **Volumen 24h**: 227621.69 USD
+- **Precio YES**: 0.0550
+- **Volumen 24h**: 230099.58 USD
 - **End date**: 2026-06-01T04:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `M1`
 
-memoria: slug prefix match; same category (score 0.70)
+memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
+- veto `will-bitcoin-dip-to-70k-in-may-2026` score=1.00 (exact slug match)
 - veto `will-bitcoin-dip-to-65k-in-may-2026` score=0.70 (slug prefix match; same category)
 - veto `will-bitcoin-dip-to-50k-in-may-2026` score=0.70 (slug prefix match; same category)
 - veto `will-wti-dip-to-80-in-may-2026-734-629-766-626-157-663-256-712-397-816-113-876-832` score=0.40 (same category; same price bucket low)
 - veto `will-crude-oil-cl-hit-high-140-by-end-of-june-828-295-574-155` score=0.40 (same category; same price bucket low)
-- veto `will-ethereum-reach-6500-by-december-31-2026` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-abelardo-de-la-espriella-win-the-2026-colombian-presidential-election"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Will Abelardo de la Espriella  win the 2026 Colombian presidential election?' (rule M1): memoria: slug prefix match; same category; same price bucket mid (score 0.90)"
+decision: "Veto de tesis 'Will Abelardo de la Espriella  win the 2026 Colombian presidential election?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,20 +21,20 @@ related:
 
 - **Slug**: `will-abelardo-de-la-espriella-win-the-2026-colombian-presidential-election`
 - **Categoría**: elections
-- **Precio YES**: 0.7100
-- **Volumen 24h**: 85062.25 USD
+- **Precio YES**: 0.7200
+- **Volumen 24h**: 84925.62 USD
 - **End date**: 2026-06-21T14:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `M1`
 
-memoria: slug prefix match; same category; same price bucket mid (score 0.90)
+memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
+- veto `will-abelardo-de-la-espriella-win-the-2026-colombian-presidential-election` score=1.00 (exact slug match)
 - veto `will-abelardo-de-la-espriella-win-the-1st-round-of-the-2026-colombian-presidential-election` score=0.90 (slug prefix match; same category; same price bucket mid)
-- veto `will-ivn-cepeda-castro-win-the-1st-round-of-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket mid)
 - veto `will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983` score=0.40 (same category; same price bucket mid)
 - veto `will-oh-se-hoon-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
 - veto `will-roberto-snchez-palomino-win-the-2026-peruvian-presidential-election` score=0.40 (same category; same price bucket mid)

@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-trump-agree-to-unfreeze-iranian-assets-by-may-31`
 - **Categoría**: other
 - **Precio YES**: 0.2300
-- **Volumen 24h**: 108096.17 USD
+- **Volumen 24h**: 108221.58 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto

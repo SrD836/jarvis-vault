@@ -29,20 +29,28 @@ CTX=$(mktemp)
 trap 'rm -f "$CTX"' EXIT
 
 {
-  echo "## Closed trades últimos 7d (closed.jsonl)"
+  echo "## Aggregate stats últimos 7d (closed.jsonl)"
   echo ""
-  jq -c --arg s "$SINCE" 'select(.exit_timestamp >= $s)' vault/inbox/trading/closed.jsonl || true
+  jq -s --arg s "$SINCE" '
+    [.[] | select(.exit_timestamp >= $s)] |
+    {
+      total: length,
+      wins: ([.[] | select(.pnl > 0)] | length),
+      losses: ([.[] | select(.pnl <= 0)] | length),
+      total_pnl: ([.[] | .pnl] | add),
+      by_horizon: (group_by(.horizon) | map({h: .[0].horizon, n: length, pnl: ([.[] | .pnl] | add), winrate: (([.[] | select(.pnl>0)] | length) / length)})),
+      by_category_worst: (group_by(.category) | map({c: .[0].category, n: length, pnl: ([.[] | .pnl] | add), winrate: (([.[] | select(.pnl>0)] | length) / length)}) | sort_by(.pnl) | .[0:10])
+    }
+  ' vault/inbox/trading/closed.jsonl || true
+  echo ""
+  echo "## Últimos 30 cierres (más recientes)"
+  echo ""
+  jq -c --arg s "$SINCE" 'select(.exit_timestamp >= $s)' vault/inbox/trading/closed.jsonl | tail -30 || true
   echo ""
   echo "## Portfolio snapshot (portfolio.json)"
   echo ""
   if [[ -f vault/inbox/trading/portfolio.json ]]; then
     jq '{bankroll, used_exposure, n_positions: (.positions | length), by_horizon: (.positions | group_by(.horizon) | map({h: .[0].horizon, n: length}))}' vault/inbox/trading/portfolio.json
-  fi
-  echo ""
-  echo "## Brain log tail (cron-pipeline.log, last 40 lines)"
-  echo ""
-  if [[ -f vault/inbox/trading/cron-pipeline.log ]]; then
-    tail -40 vault/inbox/trading/cron-pipeline.log
   fi
 } > "$CTX"
 
