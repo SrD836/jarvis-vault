@@ -5,10 +5,16 @@ auditor: Claude Opus 4.7 (1M context)
 scope: 13 agentes orgchart + Hermes feedback loop + pipeline delegación + nodos huérfanos Obsidian
 status: COMPLETO
 related:
-  - "[[audit/2026-05-26-polymarket-bot-audit]]"
+  - "[[agents/auditor]]"
+  - "[[agents/planner]]"
+  - "[[agents/polymarket-bot/memory]]"
+  - "[[agents/runs-today]]"
   - "[[audit/2026-05-24-vault-audit]]"
+  - "[[audit/2026-05-26-polymarket-bot-audit]]"
 tags: [audit, jarvis, system, multi-agent, hermes, obsidian]
+# auto-linked 2026-05-26
 ---
+
 
 # JARVIS System Audit — 2026-05-26
 

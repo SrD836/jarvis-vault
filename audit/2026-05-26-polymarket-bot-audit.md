@@ -4,8 +4,16 @@ date: 2026-05-26
 audit_scope: PR #1 (06dd6af) — horizon enforcement, brain learning loop, vault consolidation
 auditor: Claude Opus 4.7 (1M context)
 status: COMPLETO
+related:
+  - "[[agents/polymarket-bot/memory]]"
+  - "[[agents/runs-today]]"
+  - "[[analysis/performance/weekly/2026-W22]]"
+  - "[[audit/2026-05-26-jarvis-system-audit]]"
+  - "[[projects/polymarket-veto-loop-bot/analytics/weekly_review_prompt]]"
 tags: [audit, polymarket, bot, post-deploy]
+# auto-linked 2026-05-26
 ---
+
 
 # Polymarket Bot Audit — 2026-05-26
 

@@ -6,11 +6,18 @@ category: general
 date: 2026-05-26T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-ui-phase
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/design-system]]"
+  - "[[skills/external/gsd-execute-phase]]"
+  - "[[skills/external/gsd-review]]"
+  - "[[skills/external/ui-styling]]"
+  - "[[skills/external/ui-ux-pro-max]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-26
 ---
+
 
 # `gsd-ui-phase` (external skill)
 
