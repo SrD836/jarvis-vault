@@ -4,11 +4,11 @@ type: agent
 role: orchestrator
 agent_id: planner
 workspace: /home/node/.openclaw/workspace/agents/planner
-model_primary: anthropic/claude-sonnet-4-6
+model_primary: anthropic/claude-opus-4-7
 delegation_mode: prefer
-allow_agents: [code-reviewer, researcher, documenter, apier, skill-reviewer, debugger, tester, auditor, archivist, monitor, job-hunter]
+allow_agents: [researcher, code-reviewer, debugger, tester, documenter, designer, apier, archivist, auditor, monitor, skill-reviewer, job-hunter, polymarket-handler]
 runtime_children: []
-updated: 2026-05-26T19:00:01
+updated: 2026-05-26T20:00:02
 tags: [agent, jarvis, orchestrator]
 related:
   - "[[../00-MOC]]"
@@ -18,13 +18,13 @@ related:
 # 🤖 planner
 
 **Rol:** orchestrator
-**Modelo:** `anthropic/claude-sonnet-4-6`
+**Modelo:** `anthropic/claude-opus-4-7`
 **Workspace:** `/home/node/.openclaw/workspace/agents/planner`
 
 ## Política de delegación
 
 - **delegationMode:** `prefer`
-- **allowAgents (config):** [[code-reviewer]] [[researcher]] [[documenter]] [[apier]] [[skill-reviewer]] [[debugger]] [[tester]] [[auditor]] [[archivist]] [[monitor]] [[job-hunter]]
+- **allowAgents (config):** [[researcher]] [[code-reviewer]] [[debugger]] [[tester]] [[documenter]] [[designer]] [[apier]] [[archivist]] [[auditor]] [[monitor]] [[skill-reviewer]] [[job-hunter]] [[polymarket-handler]]
 - **Hijos runtime (subagent-registry):** _(ninguno aún)_
 
 ## Sesiones recientes
@@ -55,6 +55,8 @@ _(Si no tienes plugin Dataview, mira `02-sessions/` y filtra por frontmatter `ag
 - Si dudas a qué worker delegar → elige el más afín y delega. No te quedes haciéndolo tú.
 
 **Directiva operativa:** Maximiza el paralelismo y delega tareas a los agentes especializados siempre que la complejidad lo justifique. Mantén una estricta trazabilidad de las decisiones en `03-decisions`.
+
+
 
 
 

@@ -22,7 +22,7 @@ related:
 - **Slug**: `us-obtains-iranian-enriched-uranium-by-december-31-725-733`
 - **Categoría**: other
 - **Precio YES**: 0.2100
-- **Volumen 24h**: 78610.72 USD
+- **Volumen 24h**: 78585.20 USD
 - **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto
@@ -36,8 +36,8 @@ memoria: exact slug match (score 1.00)
 - veto `us-obtains-iranian-enriched-uranium-by-december-31-725-733` score=1.00 (exact slug match)
 - veto `us-obtains-iranian-enriched-uranium-by-may-31-396` score=0.70 (slug prefix match; same category)
 - veto `us-obtains-iranian-enriched-uranium-by-june-30` score=0.70 (slug prefix match; same category)
-- veto `ucl-psg-ars-2026-05-30-psg` score=0.40 (same category; same price bucket mid)
 - veto `will-trump-agree-to-unfreeze-iranian-assets-by-may-31` score=0.40 (same category; same price bucket mid)
+- veto `ucl-psg-ars-2026-05-30-psg` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

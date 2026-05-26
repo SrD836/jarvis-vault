@@ -1,7 +1,7 @@
 ---
 title: "🤖 Agentes JARVIS"
 type: moc
-updated: 2026-05-26T19:00:01
+updated: 2026-05-26T20:00:02
 tags: [moc, agent, jarvis]
 related:
   - "[[../00-MOC]]"
@@ -15,8 +15,8 @@ related:
 
 | Agente | Rol | Modelo | allowAgents | Children runtime |
 |---|---|---|---|---|
-| [[main]] | main | `anthropic/claude-sonnet-4-6` | planner, documenter, job-hunter | — |
-| [[planner]] | orchestrator | `anthropic/claude-sonnet-4-6` | code-reviewer, researcher, documenter, apier, skill-reviewer, debugger, tester, auditor, archivist, monitor, job-hunter | — |
+| [[main]] | main | `anthropic/claude-opus-4-7` | planner, researcher, archivist | — |
+| [[planner]] | orchestrator | `anthropic/claude-opus-4-7` | researcher, code-reviewer, debugger, tester, documenter, designer, apier, archivist, auditor, monitor, skill-reviewer, job-hunter, polymarket-handler | — |
 | [[code-reviewer]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
 | [[researcher]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
 | [[documenter]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
@@ -29,28 +29,32 @@ related:
 | [[monitor]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
 | [[designer]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
 | [[job-hunter]] | orchestrator | `anthropic/claude-sonnet-4-6` | researcher, documenter, archivist | — |
+| [[polymarket-handler]] | orchestrator | `anthropic/claude-sonnet-4-6` | researcher | — |
 
 ## Org chart (Mermaid)
 
 ```mermaid
 graph TD
   main -.allowed.-> planner
-  main -.allowed.-> documenter
-  main -.allowed.-> job-hunter
-  planner -.allowed.-> code-reviewer
+  main -.allowed.-> researcher
+  main -.allowed.-> archivist
   planner -.allowed.-> researcher
-  planner -.allowed.-> documenter
-  planner -.allowed.-> apier
-  planner -.allowed.-> skill-reviewer
+  planner -.allowed.-> code-reviewer
   planner -.allowed.-> debugger
   planner -.allowed.-> tester
-  planner -.allowed.-> auditor
+  planner -.allowed.-> documenter
+  planner -.allowed.-> designer
+  planner -.allowed.-> apier
   planner -.allowed.-> archivist
+  planner -.allowed.-> auditor
   planner -.allowed.-> monitor
+  planner -.allowed.-> skill-reviewer
   planner -.allowed.-> job-hunter
+  planner -.allowed.-> polymarket-handler
   job-hunter -.allowed.-> researcher
   job-hunter -.allowed.-> documenter
   job-hunter -.allowed.-> archivist
+  polymarket-handler -.allowed.-> researcher
 ```
 
 Leyenda:
