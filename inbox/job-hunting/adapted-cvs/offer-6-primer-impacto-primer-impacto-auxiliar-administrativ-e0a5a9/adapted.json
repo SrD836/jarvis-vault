@@ -1,0 +1,85 @@
+{
+  "adapted": {
+    "headline": "Auxiliar Administrativo en formación | Microsoft 365 · Excel · Atención al cliente",
+    "summary": "Estudiante de Ciclo Superior en Administración y Finanzas con dominio avanzado de Excel, Microsoft 365 y Google Workspace. Orientado a la gestión eficiente de documentación, datos y procesos de oficina. Persona organizada, resolutiva y con experiencia real en atención al cliente y trabajo en equipo.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Jun 2021 – Jul 2021",
+        "bullets": [
+          "Gestionó cobros en caja y recepción de clientes, garantizando precisión y rapidez en cada operación.",
+          "Atendió al público en inglés, resolviendo incidencias y coordinando pedidos en entorno de alta demanda.",
+          "Colaboró en equipo distribuyendo tareas para mantener la fluidez del servicio y la satisfacción del cliente."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft 365 (Word, Excel, Outlook, Teams)",
+      "Excel avanzado",
+      "Google Workspace",
+      "Gestión documental y ofimática",
+      "Atención al cliente",
+      "Organización y control de datos",
+      "Resolución de problemas"
+    ],
+    "skills_secondary": [
+      "Herramientas de IA y chatbots empresariales",
+      "Microsoft Azure AI",
+      "Google IT Support",
+      "Gestión de correo electrónico",
+      "Mejora de procesos digitales",
+      "Trabajo en equipo",
+      "Capacidad de liderazgo"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline ajustado a 'Auxiliar Administrativo en formación' para alinear con el puesto target y destacar formación oficial directamente relevante.",
+      "Skills_primary reorganizadas priorizando herramientas de ofimática (Microsoft 365, Excel, Google Workspace) y atención al cliente, en detrimento del eje tecnológico/IA del CV original.",
+      "Bullets de experiencia reformulados para destacar gestión de caja, recepción de clientes y coordinación de equipo — más transferibles a un rol administrativo que el enfoque de hostelería.",
+      "Herramientas de IA y chatbots desplazadas a skills_secondary: son un valor diferencial pero no prioritarias para un puesto de auxiliar administrativo básico.",
+      "Summary reescrito con foco en gestión documental, organización y ofimática, sustituyendo el pitch de digitalización/automatización del CV original.",
+      "Nota: la oferta no incluye descripción detallada de requisitos; la adaptación se basa en competencias estándar del puesto. Confidence moderada por experiencia laboral escasa (solo 1 mes documentado)."
+    ],
+    "confidence": 0.72,
+    "target_role": "Auxiliar administrativo/a en Primer Impacto",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T19:20:13.465Z"
+  },
+  "offer_id": "offer-6-primer-impacto",
+  "offer_title": "Auxiliar administrativo/a",
+  "company": "Primer Impacto",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}
