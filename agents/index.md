@@ -1,7 +1,7 @@
 ---
 title: "🤖 Agentes JARVIS"
 type: moc
-updated: 2026-05-27T11:00:01
+updated: 2026-05-27T12:00:01
 tags: [moc, agent, jarvis]
 related:
   - "[[../00-MOC]]"
@@ -15,8 +15,8 @@ related:
 
 | Agente | Rol | Modelo | allowAgents | Children runtime |
 |---|---|---|---|---|
-| [[main]] | main | `anthropic/claude-opus-4-7` | planner, researcher, archivist, polymarket-handler | — |
-| [[planner]] | orchestrator | `anthropic/claude-opus-4-7` | researcher, code-reviewer, debugger, tester, documenter, designer, apier, archivist, auditor, monitor, skill-reviewer, job-hunter, polymarket-handler | — |
+| [[main]] | main | `anthropic/claude-opus-4-7` | planner, researcher, archivist, polymarket-handler, skill-dispatcher | — |
+| [[planner]] | orchestrator | `anthropic/claude-opus-4-7` | researcher, code-reviewer, debugger, tester, documenter, designer, apier, archivist, auditor, monitor, skill-reviewer, job-hunter, polymarket-handler, skill-dispatcher | — |
 | [[code-reviewer]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
 | [[researcher]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
 | [[documenter]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
@@ -30,6 +30,7 @@ related:
 | [[designer]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
 | [[job-hunter]] | orchestrator | `anthropic/claude-sonnet-4-6` | researcher, documenter, archivist | — |
 | [[polymarket-handler]] | orchestrator | `anthropic/claude-sonnet-4-6` | researcher | — |
+| [[skill-dispatcher]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
 
 ## Org chart (Mermaid)
 
@@ -39,6 +40,7 @@ graph TD
   main -.allowed.-> researcher
   main -.allowed.-> archivist
   main -.allowed.-> polymarket-handler
+  main -.allowed.-> skill-dispatcher
   planner -.allowed.-> researcher
   planner -.allowed.-> code-reviewer
   planner -.allowed.-> debugger
@@ -52,6 +54,7 @@ graph TD
   planner -.allowed.-> skill-reviewer
   planner -.allowed.-> job-hunter
   planner -.allowed.-> polymarket-handler
+  planner -.allowed.-> skill-dispatcher
   job-hunter -.allowed.-> researcher
   job-hunter -.allowed.-> documenter
   job-hunter -.allowed.-> archivist

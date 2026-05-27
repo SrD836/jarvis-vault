@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `microstrategy-sells-any-bitcoin-by-june-30-2026`
 - **Categoría**: market
-- **Precio YES**: 0.3660
-- **Volumen 24h**: 177302.98 USD
+- **Precio YES**: 0.3670
+- **Volumen 24h**: 174556.21 USD
 - **End date**: 2026-07-01T04:00:00Z
 
 ## Razón del veto
