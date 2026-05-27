@@ -2,7 +2,7 @@
 title: "gsd-doc-writer (external agent)"
 type: agent-mirror
 external: true
-date: 2026-05-26T03:15:01+00:00
+date: 2026-05-27T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-doc-writer.md
 related:
   - "[[00-MOC]]"
@@ -13,14 +13,14 @@ related:
   - "[[agents/external/index]]"
   - "[[skills/external/gsd-docs-update]]"
 tags: [agent, external, mirror]
-# auto-linked 2026-05-26
+# auto-linked 2026-05-27
 ---
 
 
 # `gsd-doc-writer` (external Claude Code agent)
 
 **Source**: `~/.claude/agents/gsd-doc-writer.md`  
-**Mirrored at**: 2026-05-26T03:15:01+00:00
+**Mirrored at**: 2026-05-27T03:15:01+00:00
 
 ## Descripción
 

@@ -2,7 +2,7 @@
 title: "Polymarket veto — israel-closes-its-airspace-by-may-31"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Israel closes its airspace by May 31?' (rule P9): P9: geopolitics pump cluster (price 0.09, 4d)"
+decision: "Veto de tesis 'Israel closes its airspace by May 31?' (rule P9): P9: geopolitics pump cluster (price 0.07, 4d)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `israel-closes-its-airspace-by-may-31`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.0900
-- **Volumen 24h**: 230997.47 USD
+- **Precio YES**: 0.0700
+- **Volumen 24h**: 225148.67 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `P9`
 
-P9: geopolitics pump cluster (price 0.09, 4d)
+P9: geopolitics pump cluster (price 0.07, 4d)
 
 ## Human notes
 

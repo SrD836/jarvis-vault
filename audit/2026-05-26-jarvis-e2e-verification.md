@@ -2,11 +2,18 @@
 title: "JARVIS — Verificación E2E del refactor (Fases A-F)"
 type: audit
 date: 2026-05-26
-tags: [audit, e2e, jarvis, refactor-verification]
 related:
   - "[[2026-05-26-jarvis-system-audit]]"
   - "[[2026-05-26-polymarket-bot-audit]]"
+  - "[[agents/auditor]]"
+  - "[[agents/debugger]]"
+  - "[[agents/main]]"
+  - "[[agents/planner]]"
+  - "[[agents/tester]]"
+tags: [audit, e2e, jarvis, refactor-verification]
+# auto-linked 2026-05-27
 ---
+
 
 # JARVIS — Verificación E2E del refactor (commits `e34bee59` + `5de2845b`)
 

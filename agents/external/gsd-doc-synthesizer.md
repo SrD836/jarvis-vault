@@ -2,25 +2,25 @@
 title: "gsd-doc-synthesizer (external agent)"
 type: agent-mirror
 external: true
-date: 2026-05-26T03:15:01+00:00
+date: 2026-05-27T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-doc-synthesizer.md
 related:
   - "[[00-MOC]]"
-  - "[[agents/external/gsd-assumptions-analyzer]]"
   - "[[agents/external/gsd-doc-classifier]]"
+  - "[[agents/external/gsd-doc-verifier]]"
+  - "[[agents/external/gsd-ingest-docs]]"
   - "[[agents/external/gsd-plan-checker]]"
   - "[[agents/external/gsd-research-synthesizer]]"
   - "[[agents/external/index]]"
-  - "[[skills/external/gsd-ingest-docs]]"
 tags: [agent, external, mirror]
-# auto-linked 2026-05-26
+# auto-linked 2026-05-27
 ---
 
 
 # `gsd-doc-synthesizer` (external Claude Code agent)
 
 **Source**: `~/.claude/agents/gsd-doc-synthesizer.md`  
-**Mirrored at**: 2026-05-26T03:15:01+00:00
+**Mirrored at**: 2026-05-27T03:15:01+00:00
 
 ## Descripción
 

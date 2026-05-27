@@ -3,9 +3,17 @@ title: "planner — memory"
 type: agent-memory
 agent: "[[agents/planner]]"
 created: 2026-05-26
+related:
+  - "[[agents/auditor/memory]]"
+  - "[[agents/main/memory]]"
+  - "[[agents/planner]]"
+  - "[[inbox/2026-05-26-feedback-loops-brief]]"
+  - "[[wiki/agent-evolution/planner]]"
 tags: [agent-memory, planner]
 schema_version: 1
+# auto-linked 2026-05-27
 ---
+
 
 # planner — memoria persistente
 

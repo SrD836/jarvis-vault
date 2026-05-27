@@ -3,9 +3,17 @@ title: "designer — memory"
 type: agent-memory
 agent: "[[agents/designer]]"
 created: 2026-05-26
+related:
+  - "[[agents/archivist/memory]]"
+  - "[[agents/auditor/memory]]"
+  - "[[agents/designer]]"
+  - "[[agents/main/memory]]"
+  - "[[agents/skill-reviewer/memory]]"
 tags: [agent-memory, designer]
 schema_version: 1
+# auto-linked 2026-05-27
 ---
+
 
 # designer — memoria persistente
 

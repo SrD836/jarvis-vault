@@ -3,9 +3,17 @@ title: "documenter — memory"
 type: agent-memory
 agent: "[[agents/documenter]]"
 created: 2026-05-26
+related:
+  - "[[agents/auditor/memory]]"
+  - "[[agents/debugger/memory]]"
+  - "[[agents/documenter]]"
+  - "[[agents/skill-reviewer/memory]]"
+  - "[[agents/tester/memory]]"
 tags: [agent-memory, documenter]
 schema_version: 1
+# auto-linked 2026-05-27
 ---
+
 
 # documenter — memoria persistente
 

@@ -2,7 +2,7 @@
 title: "gsd-nyquist-auditor (external agent)"
 type: agent-mirror
 external: true
-date: 2026-05-26T03:15:01+00:00
+date: 2026-05-27T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-nyquist-auditor.md
 related:
   - "[[00-MOC]]"
@@ -11,16 +11,16 @@ related:
   - "[[agents/external/gsd-verifier]]"
   - "[[agents/external/index]]"
   - "[[agents/tester]]"
-  - "[[skills/external/gsd-validate-phase]]"
+  - "[[skills/external/gsd-add-tests]]"
 tags: [agent, external, mirror]
-# auto-linked 2026-05-26
+# auto-linked 2026-05-27
 ---
 
 
 # `gsd-nyquist-auditor` (external Claude Code agent)
 
 **Source**: `~/.claude/agents/gsd-nyquist-auditor.md`  
-**Mirrored at**: 2026-05-26T03:15:01+00:00
+**Mirrored at**: 2026-05-27T03:15:01+00:00
 
 ## Descripción
 

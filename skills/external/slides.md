@@ -3,27 +3,20 @@ title: "slides (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-26T03:15:01+00:00
+date: 2026-05-27T03:15:01+00:00
 source_path: ~/.claude/skills/slides
 source_file: SKILL.md
-related:
-  - "[[00-MOC]]"
-  - "[[skills/external/brand]]"
-  - "[[skills/external/design-system]]"
-  - "[[skills/external/gsd-graphify]]"
-  - "[[skills/external/ui-styling]]"
-  - "[[skills/external/ui-ux-pro-max]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-26
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `slides` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/slides/`  
-**Mirrored at**: 2026-05-26T03:15:01+00:00
+**Mirrored at**: 2026-05-27T03:15:01+00:00
 
 ## Descripción
 

@@ -3,9 +3,17 @@ title: "tester — memory"
 type: agent-memory
 agent: "[[agents/tester]]"
 created: 2026-05-26
+related:
+  - "[[agents/auditor/memory]]"
+  - "[[agents/code-reviewer/memory]]"
+  - "[[agents/debugger/memory]]"
+  - "[[agents/monitor/memory]]"
+  - "[[agents/skill-reviewer/memory]]"
 tags: [agent-memory, tester]
 schema_version: 1
+# auto-linked 2026-05-27
 ---
+
 
 # tester — memoria persistente
 

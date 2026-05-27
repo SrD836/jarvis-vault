@@ -3,9 +3,17 @@ title: "auditor — memory"
 type: agent-memory
 agent: "[[agents/auditor]]"
 created: 2026-05-26
+related:
+  - "[[03-decisions/index]]"
+  - "[[agents/auditor]]"
+  - "[[agents/main/memory]]"
+  - "[[agents/monitor/memory]]"
+  - "[[agents/skill-reviewer/memory]]"
 tags: [agent-memory, auditor]
 schema_version: 1
+# auto-linked 2026-05-27
 ---
+
 
 # auditor — memoria persistente
 

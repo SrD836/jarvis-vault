@@ -3,9 +3,17 @@ title: "skill-reviewer — memory"
 type: agent-memory
 agent: "[[agents/skill-reviewer]]"
 created: 2026-05-26
+related:
+  - "[[agents/auditor/memory]]"
+  - "[[agents/code-reviewer/memory]]"
+  - "[[agents/debugger/memory]]"
+  - "[[agents/skill-reviewer]]"
+  - "[[agents/tester/memory]]"
 tags: [agent-memory, skill-reviewer]
 schema_version: 1
+# auto-linked 2026-05-27
 ---
+
 
 # skill-reviewer — memoria persistente
 

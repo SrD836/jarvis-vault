@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-abelardo-de-la-espriella-win-the-2026-colombian-presidential-election`
 - **Categoría**: elections
-- **Precio YES**: 0.7300
-- **Volumen 24h**: 95226.95 USD
+- **Precio YES**: 0.7100
+- **Volumen 24h**: 88125.57 USD
 - **End date**: 2026-06-21T14:00:00Z
 
 ## Razón del veto

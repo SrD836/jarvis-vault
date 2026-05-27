@@ -2,25 +2,25 @@
 title: "gsd-eval-auditor (external agent)"
 type: agent-mirror
 external: true
-date: 2026-05-26T03:15:01+00:00
+date: 2026-05-27T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-eval-auditor.md
 related:
   - "[[00-MOC]]"
-  - "[[agents/external/gsd-eval-planner]]"
+  - "[[agents/auditor]]"
   - "[[agents/external/gsd-nyquist-auditor]]"
   - "[[agents/external/gsd-security-auditor]]"
-  - "[[agents/external/gsd-ui-auditor]]"
   - "[[agents/external/index]]"
+  - "[[agents/tester]]"
   - "[[skills/external/gsd-eval-review]]"
 tags: [agent, external, mirror]
-# auto-linked 2026-05-26
+# auto-linked 2026-05-27
 ---
 
 
 # `gsd-eval-auditor` (external Claude Code agent)
 
 **Source**: `~/.claude/agents/gsd-eval-auditor.md`  
-**Mirrored at**: 2026-05-26T03:15:01+00:00
+**Mirrored at**: 2026-05-27T03:15:01+00:00
 
 ## Descripción
 

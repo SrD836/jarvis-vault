@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `russia-x-ukraine-ceasefire-agreement-by-december-31-2026`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.4400
-- **Volumen 24h**: 113986.73 USD
+- **Precio YES**: 0.4500
+- **Volumen 24h**: 124264.83 USD
 - **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto
@@ -35,9 +35,9 @@ memoria: exact slug match (score 1.00)
 
 - veto `russia-x-ukraine-ceasefire-agreement-by-december-31-2026` score=1.00 (exact slug match)
 - veto `internet-access-restored-in-iran-by-may-31-2026` score=0.40 (same category; same price bucket mid)
-- veto `us-x-iran-diplomatic-meeting-by-june-30-2026-983-259-948` score=0.40 (same category; same price bucket mid)
 - veto `us-x-iran-diplomatic-meeting-by-june-15-2026-671` score=0.40 (same category; same price bucket mid)
-- veto `us-iran-nuclear-deal-by-may-31-974` score=0.40 (same category; same price bucket mid)
+- veto `us-x-iran-diplomatic-meeting-by-june-30-2026-983-259-948` score=0.40 (same category; same price bucket mid)
+- veto `will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-31-2026-313...` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

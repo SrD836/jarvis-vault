@@ -2,25 +2,25 @@
 title: "gsd-code-reviewer (external agent)"
 type: agent-mirror
 external: true
-date: 2026-05-26T03:15:01+00:00
+date: 2026-05-27T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-code-reviewer.md
 related:
   - "[[00-MOC]]"
   - "[[agents/code-reviewer]]"
-  - "[[agents/debugger]]"
+  - "[[agents/external/gsd-code-fixer]]"
   - "[[agents/external/gsd-security-auditor]]"
+  - "[[agents/external/gsd-verifier]]"
   - "[[agents/external/index]]"
-  - "[[agents/tester]]"
   - "[[skills/external/gsd-code-review]]"
 tags: [agent, external, mirror]
-# auto-linked 2026-05-26
+# auto-linked 2026-05-27
 ---
 
 
 # `gsd-code-reviewer` (external Claude Code agent)
 
 **Source**: `~/.claude/agents/gsd-code-reviewer.md`  
-**Mirrored at**: 2026-05-26T03:15:01+00:00
+**Mirrored at**: 2026-05-27T03:15:01+00:00
 
 ## Descripción
 

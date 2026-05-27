@@ -22,7 +22,7 @@ related:
 - **Slug**: `ucl-psg-ars-2026-05-30-psg`
 - **Categoría**: other
 - **Precio YES**: 0.4200
-- **Volumen 24h**: 287120.33 USD
+- **Volumen 24h**: 253207.09 USD
 - **End date**: 2026-05-30T16:00:00Z
 
 ## Razón del veto
@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `ucl-psg-ars-2026-05-30-psg` score=1.00 (exact slug match)
-- veto `fl1-se-nic-2026-05-26-nic` score=0.40 (same category; same price bucket mid)
+- veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.40 (same category; same price bucket mid)
 - veto `weed-rescheduled-by-december-31` score=0.40 (same category; same price bucket mid)
-- veto `will-trump-agree-to-unfreeze-iranian-assets-by-may-31` score=0.40 (same category; same price bucket mid)
 - veto `claudio-tapia-out-as-afa-president-by-july-19-2026` score=0.40 (same category; same price bucket mid)
+- veto `will-snapchat-be-acquired-before-2027-286-465` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

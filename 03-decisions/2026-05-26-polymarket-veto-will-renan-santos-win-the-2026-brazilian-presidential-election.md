@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-renan-santos-win-the-2026-brazilian-presidential-election`
 - **Categoría**: elections
 - **Precio YES**: 0.1390
-- **Volumen 24h**: 86004.91 USD
+- **Volumen 24h**: 83791.50 USD
 - **End date**: 2026-10-04T00:00:00Z
 
 ## Razón del veto
@@ -35,8 +35,8 @@ memoria: exact slug match (score 1.00)
 
 - veto `will-renan-santos-win-the-2026-brazilian-presidential-election` score=1.00 (exact slug match)
 - veto `peru-general-election-invalidated-by-june-30` score=0.40 (same category; same price bucket low)
-- veto `will-derek-dooley-be-the-republican-nominee-for-senate-in-georgia` score=0.40 (same category; same price bucket low)
 - veto `will-fernando-haddad-win-the-2026-brazilian-presidential-election` score=0.40 (same category; same price bucket low)
+- veto `will-derek-dooley-be-the-republican-nominee-for-senate-in-georgia` score=0.40 (same category; same price bucket low)
 - veto `will-the-republican-party-hold-exactly-28-or-29-governorships-after-the-2026-midterm-elections` score=0.40 (same category; same price bucket low)
 
 ## Human notes

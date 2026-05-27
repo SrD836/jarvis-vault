@@ -3,9 +3,17 @@ title: "apier — memory"
 type: agent-memory
 agent: "[[agents/apier]]"
 created: 2026-05-26
+related:
+  - "[[agents/apier]]"
+  - "[[agents/auditor/memory]]"
+  - "[[agents/main/memory]]"
+  - "[[agents/monitor/memory]]"
+  - "[[agents/planner/memory]]"
 tags: [agent-memory, apier]
 schema_version: 1
+# auto-linked 2026-05-27
 ---
+
 
 # apier — memoria persistente
 
