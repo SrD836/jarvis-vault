@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — israel-x-iran-permanent-peace-deal-by-june-30-2026-262"
+title: "Polymarket veto — nato-x-russia-military-clash-by-december-31-2026-244"
 type: decision
 date: 2026-05-27
-decision: "Veto de tesis 'Israel x Iran permanent peace deal by June 30, 2026?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'NATO x Russia military clash by December 31, 2026?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Israel x Iran permanent peace deal by June 30, 2026?
+# Veto: NATO x Russia military clash by December 31, 2026?
 
 ## Mercado
 
-- **Slug**: `israel-x-iran-permanent-peace-deal-by-june-30-2026-262`
+- **Slug**: `nato-x-russia-military-clash-by-december-31-2026-244`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.2050
-- **Volumen 24h**: 205092.97 USD
-- **End date**: 2026-06-30T00:00:00Z
+- **Precio YES**: 0.2700
+- **Volumen 24h**: 67751.91 USD
+- **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto
 
@@ -33,8 +33,8 @@ memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
-- veto `israel-x-iran-permanent-peace-deal-by-june-30-2026-262` score=1.00 (exact slug match)
-- veto `israel-x-iran-permanent-peace-deal-by-may-31-2026` score=0.70 (slug prefix match; same category)
+- veto `nato-x-russia-military-clash-by-december-31-2026-244` score=1.00 (exact slug match)
+- veto `internet-access-restored-in-iran-by-may-31-2026` score=0.40 (same category; same price bucket mid)
 - veto `internet-access-restored-in-iran-by-june-30-2026` score=0.40 (same category; same price bucket mid)
 - veto `us-x-iran-diplomatic-meeting-by-june-30-2026-983-259-948` score=0.40 (same category; same price bucket mid)
 - veto `us-iran-nuclear-deal-by-may-31-974` score=0.40 (same category; same price bucket mid)

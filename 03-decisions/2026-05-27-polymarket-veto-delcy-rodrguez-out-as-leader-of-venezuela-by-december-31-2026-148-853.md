@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `delcy-rodrguez-out-as-leader-of-venezuela-by-december-31-2026-148-853`
 - **Categoría**: other
-- **Precio YES**: 0.1300
+- **Precio YES**: 0.1400
 - **Volumen 24h**: 144317.20 USD
 - **End date**: 2026-12-31T00:00:00Z
 

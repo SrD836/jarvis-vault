@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-anthropics-valuation-hit-high-2pt0t-by-december-31-922`
 - **Categoría**: other
 - **Precio YES**: 0.4700
-- **Volumen 24h**: 53386.23 USD
+- **Volumen 24h**: 54024.53 USD
 - **End date**: 2027-01-01T12:00:00Z
 
 ## Razón del veto
@@ -37,7 +37,7 @@ memoria: exact slug match (score 1.00)
 - veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.40 (same category; same price bucket mid)
 - veto `ucl-psg-ars-2026-05-30-psg` score=0.40 (same category; same price bucket mid)
 - veto `will-zoom-video-communications-be-acquired-before-2027-486-866` score=0.40 (same category; same price bucket mid)
-- veto `us-obtains-iranian-enriched-uranium-by-december-31-725-733` score=0.40 (same category; same price bucket mid)
+- veto `jerome-powell-out-from-fed-board-by-december-31` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

@@ -9333,3 +9333,52 @@
 2026/05/27 05:55:02 main.go:13: exit_monitor: done
 2026/05/27 06:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/27 06:00:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 06:00:04 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 06:00:04 main.go:13: exit_monitor: done
+2026/05/27 06:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 06:05:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 06:05:01 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 06:05:01 main.go:13: exit_monitor: done
+2026/05/27 06:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 06:10:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 06:10:02 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 06:10:02 main.go:13: exit_monitor: done
+2026/05/27 06:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 06:15:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 06:15:01 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 06:15:01 main.go:13: exit_monitor: done
+2026/05/27 06:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 06:20:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 06:20:01 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 06:20:01 main.go:13: exit_monitor: done
+2026/05/27 06:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 06:25:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 06:25:13 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 06:25:13 main.go:13: exit_monitor: done
+2026/05/27 06:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 06:30:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 06:30:06 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 06:30:06 main.go:13: exit_monitor: done
+2026/05/27 06:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 06:35:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 06:35:01 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 06:35:01 main.go:13: exit_monitor: done
+2026/05/27 06:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 06:40:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 06:40:04 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 06:40:04 main.go:13: exit_monitor: done
+2026/05/27 06:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 06:45:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 06:45:01 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 06:45:01 main.go:13: exit_monitor: done
+2026/05/27 06:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 06:50:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 06:50:02 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 06:50:02 main.go:13: exit_monitor: done
+2026/05/27 06:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 06:55:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 06:55:11 monitor.go:38: exit_monitor: quote fetch error for 569344: gamma GET 569344: Get "https://gamma-api.polymarket.com/markets/569344": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2026/05/27 06:55:14 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 06:55:14 main.go:13: exit_monitor: done
+2026/05/27 07:00:02 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 07:00:02 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
