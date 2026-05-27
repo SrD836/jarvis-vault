@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `jerome-powell-out-from-fed-board-by-december-31` score=1.00 (exact slug match)
-- veto `col-cry-ray-2026-05-27-ray` score=0.40 (same category; same price bucket mid)
 - veto `col-cry-ray-2026-05-27-cry` score=0.40 (same category; same price bucket mid)
-- veto `elon-musk-of-tweets-may-22-may-29-160-179` score=0.40 (same category; same price bucket mid)
-- veto `elon-musk-of-tweets-may-22-may-29-200-219` score=0.40 (same category; same price bucket mid)
+- veto `col-cry-ray-2026-05-27-draw` score=0.40 (same category; same price bucket mid)
+- veto `col-cry-ray-2026-05-27-ray` score=0.40 (same category; same price bucket mid)
+- veto `col-cry-ray-2026-05-27-btts` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

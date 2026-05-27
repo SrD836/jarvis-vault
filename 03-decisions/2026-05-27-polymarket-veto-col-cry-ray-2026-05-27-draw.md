@@ -2,7 +2,7 @@
 title: "Polymarket veto — col-cry-ray-2026-05-27-draw"
 type: decision
 date: 2026-05-27
-decision: "Veto de tesis 'Will Crystal Palace FC vs. Rayo Vallecano de Madrid end in a draw?' (rule M1): memoria: slug prefix match; same category; same price bucket mid (score 0.90)"
+decision: "Veto de tesis 'Will Crystal Palace FC vs. Rayo Vallecano de Madrid end in a draw?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -22,22 +22,22 @@ related:
 - **Slug**: `col-cry-ray-2026-05-27-draw`
 - **Categoría**: other
 - **Precio YES**: 0.3100
-- **Volumen 24h**: 136531.96 USD
+- **Volumen 24h**: 142067.32 USD
 - **End date**: 2026-05-27T19:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `M1`
 
-memoria: slug prefix match; same category; same price bucket mid (score 0.90)
+memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
-- veto `col-cry-ray-2026-05-27-ray` score=0.90 (slug prefix match; same category; same price bucket mid)
+- veto `col-cry-ray-2026-05-27-draw` score=1.00 (exact slug match)
 - veto `col-cry-ray-2026-05-27-cry` score=0.90 (slug prefix match; same category; same price bucket mid)
+- veto `col-cry-ray-2026-05-27-ray` score=0.90 (slug prefix match; same category; same price bucket mid)
+- veto `col-cry-ray-2026-05-27-btts` score=0.90 (slug prefix match; same category; same price bucket mid)
 - veto `save-act-becomes-law-by-december-31-2026-347` score=0.40 (same category; same price bucket mid)
-- veto `elon-musk-of-tweets-may-22-may-29-160-179` score=0.40 (same category; same price bucket mid)
-- veto `elon-musk-of-tweets-may-22-may-29-200-219` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

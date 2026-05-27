@@ -1,0 +1,89 @@
+{
+  "adapted": {
+    "headline": "Estudiante de Administración y Finanzas | Gestión Digital y Certificados Electrónicos",
+    "summary": "Estudiante de CFGS en Administración y Finanzas con sólidas competencias en herramientas digitales y ofimática avanzada (Microsoft 365, Excel, Google Workspace). Formación complementaria en Soporte TI (Google) e Inteligencia Artificial con Microsoft Azure, con especial interés en la mejora de procesos administrativos digitales. Perfil organizado, resolutivo y con capacidad para gestionar documentación y procesos electrónicos con precisión.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 · Julio 2021",
+        "bullets": [
+          "Gestionó cobros en caja con atención al detalle y manejo de sistemas de TPV digitales.",
+          "Coordinó la recepción y distribución de clientes, optimizando flujos de atención al público.",
+          "Colaboró en equipo multitarea, priorizando tareas y resolviendo incidencias en tiempo real.",
+          "Atendió clientes en inglés, demostrando comunicación efectiva en entorno internacional."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft 365 (Word, Excel, Outlook)",
+      "Excel Avanzado",
+      "Google Workspace",
+      "Soporte TI (Google IT Support)",
+      "Inteligencia Artificial con Microsoft Azure",
+      "Gestión Administrativa",
+      "Atención al cliente"
+    ],
+    "skills_secondary": [
+      "Herramientas de IA y chatbots empresariales",
+      "Resolución de problemas",
+      "Trabajo en equipo y liderazgo",
+      "Automatización de procesos digitales",
+      "Python",
+      "SQL",
+      "Git",
+      "Bash scripting",
+      "REST APIs",
+      "Linux"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reformulado para incluir 'Gestión Digital y Certificados Electrónicos', alineándose directamente con el puesto de Auxiliar Administrativo/a - Certificados Digitales.",
+      "Promovidas a skills_primary: Microsoft 365, Excel Avanzado, Google Workspace, Google IT Support y Azure AI, por ser los más relevantes para la tramitación y gestión de certificados digitales.",
+      "Bullets de experiencia reenfocados en gestión de cobros digitales, coordinación de flujos y trabajo en equipo, sustituyendo narrativa gastronómica por terminología más administrativa.",
+      "Summary adaptado con mención explícita al interés en procesos administrativos digitales, clave para la gestión de certificados electrónicos.",
+      "Educación reordenada: el CFGS en Administración y Finanzas aparece primero por su relevancia directa al puesto.",
+      "Skills técnicas de programación (Python, Docker, Linux, React) movidas a skills_secondary por ser menos relevantes en un perfil puramente administrativo."
+    ],
+    "confidence": 0.68,
+    "target_role": "Auxiliar Administrativo/a - Certificados Digitales (Servinform)",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T18:31:04.343Z"
+  },
+  "offer_id": "offer-4-servinform",
+  "offer_title": "Auxiliar Administrativo/a - Certificados Digitales",
+  "company": "Servinform",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}
