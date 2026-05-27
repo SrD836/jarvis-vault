@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-24T17:07:40.291Z",
+  "updated_at": "2026-05-27T15:27:57.713919Z",
   "personal": {
     "full_name": "David González Nuez",
     "email": "davidgnjunior@gmail.com",
@@ -13,40 +13,56 @@
     "country_code": "España (+34)"
   },
   "preferences": {
-    "salary_min_eur_year": 24000,
-    "salary_max_eur_year": 32000,
+    "salary_min_eur_year": null,
+    "salary_max_eur_year": null,
     "modality": [
-      "remote",
-      "hybrid"
+      "remote"
     ],
     "willing_to_relocate": false,
     "relocate_cities": [],
-    "notice_period_days": 15,
-    "earliest_start_date": null,
-    "industries_preferred": [],
+    "notice_period_days": 0,
+    "earliest_start_date": "ASAP",
+    "industries_preferred": [
+      "AI/ML",
+      "Customer Support",
+      "Operations",
+      "Automation/RPA"
+    ],
     "industries_excluded": [],
     "company_size_min": null,
     "company_size_max": null,
     "contract_types": [
+      "freelance",
+      "contractor",
+      "part_time",
       "full_time"
     ],
-    "languages_required": []
+    "languages_required": [],
+    "schedule": "async",
+    "availability_note": "Summer 2026 + ongoing - much free time"
   },
   "skills": {
     "primary": [
-      "Excel avanzado",
-      "Herramientas de IA y chatbots empresariales",
-      "Microsoft 365",
-      "Google Workspace",
-      "Resolución de problemas",
-      "Liderazgo y trabajo en equipo"
+      "Python",
+      "JavaScript / TypeScript",
+      "Docker",
+      "Linux",
+      "LLMs / Prompt engineering",
+      "REST APIs",
+      "Git",
+      "SQL"
     ],
     "secondary": [
-      "Atención al cliente",
-      "Gestión de pedidos",
-      "Ofimática",
-      "Google IT Support",
-      "Microsoft Azure AI"
+      "Go",
+      "React",
+      "Node.js",
+      "Supabase",
+      "Twilio",
+      "Resend",
+      "Playwright",
+      "Obsidian",
+      "Bash scripting",
+      "CI/CD"
     ],
     "years_by_skill": {}
   },
@@ -216,6 +232,54 @@
       "at": "2026-05-19T20:41:22.332Z",
       "source_file": "cv.pdf",
       "raw_chars": 1701
+    }
+  ],
+  "projects": [
+    {
+      "name": "JARVIS",
+      "role": "Creator",
+      "stack": "Go, Docker, React, Claude Max",
+      "summary": "Personal multi-agent system 24/7 with Telegram interface",
+      "relevance_tags": [
+        "AI",
+        "automation",
+        "devops",
+        "multi-agent"
+      ]
+    },
+    {
+      "name": "polymarket-bot v6",
+      "role": "Creator",
+      "stack": "Go, cron, TradingView API",
+      "summary": "Autonomous Polymarket trading bot with technical analysis gate",
+      "relevance_tags": [
+        "AI",
+        "finance",
+        "automation",
+        "autonomous"
+      ]
+    },
+    {
+      "name": "Obsidian vault automation",
+      "role": "Creator",
+      "stack": "Python, cron, Markdown",
+      "summary": "Knowledge base automation with daily briefs and cron generators",
+      "relevance_tags": [
+        "knowledge-mgmt",
+        "automation",
+        "productivity"
+      ]
+    },
+    {
+      "name": "Web apps with modern stack",
+      "role": "Developer",
+      "stack": "Supabase, Twilio, Resend, Node",
+      "summary": "Several web and mobile apps with API integrations",
+      "relevance_tags": [
+        "full-stack",
+        "API",
+        "integrations"
+      ]
     }
   ]
 }

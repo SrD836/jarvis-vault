@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `strait-of-hormuz-traffic-returns-to-normal-by-end-of-june`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.4600
-- **Volumen 24h**: 240585.45 USD
+- **Precio YES**: 0.4200
+- **Volumen 24h**: 274042.56 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto
@@ -34,9 +34,9 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `strait-of-hormuz-traffic-returns-to-normal-by-end-of-june` score=1.00 (exact slug match)
-- veto `strait-of-hormuz-traffic-returns-to-normal-by-june-15` score=0.90 (slug prefix match; same category; same price bucket mid)
 - veto `strait-of-hormuz-traffic-returns-to-normal-by-july-31` score=0.90 (slug prefix match; same category; same price bucket mid)
 - veto `strait-of-hormuz-traffic-returns-to-normal-by-end-of-may` score=0.70 (slug prefix match; same category)
+- veto `strait-of-hormuz-traffic-returns-to-normal-by-june-15` score=0.70 (slug prefix match; same category)
 - veto `us-x-iran-permanent-peace-deal-by-june-30-2026-837-641-896-877-363-892-537-597` score=0.40 (same category; same price bucket mid)
 
 ## Human notes

@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `predictfun-fdv-above-500m-one-day-after-launch`
 - **Categoría**: crypto-launch
-- **Precio YES**: 0.4600
+- **Precio YES**: 0.4700
 - **Volumen 24h**: 622039.07 USD
 - **End date**: 2028-01-01T05:00:00Z
 
