@@ -22,7 +22,7 @@ related:
 - **Slug**: `strait-of-hormuz-traffic-returns-to-normal-by-end-of-june`
 - **Categoría**: geopolitics
 - **Precio YES**: 0.4200
-- **Volumen 24h**: 316487.32 USD
+- **Volumen 24h**: 291282.74 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto
@@ -37,7 +37,7 @@ memoria: exact slug match (score 1.00)
 - veto `strait-of-hormuz-traffic-returns-to-normal-by-july-31` score=0.90 (slug prefix match; same category; same price bucket mid)
 - veto `strait-of-hormuz-traffic-returns-to-normal-by-end-of-may` score=0.70 (slug prefix match; same category)
 - veto `strait-of-hormuz-traffic-returns-to-normal-by-june-15` score=0.70 (slug prefix match; same category)
-- veto `us-iran-nuclear-deal-by-may-31-974` score=0.40 (same category; same price bucket mid)
+- veto `will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-31-2026-313...` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

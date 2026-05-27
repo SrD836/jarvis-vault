@@ -3,27 +3,20 @@ title: "gsd-milestone-summary (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-26T03:15:01+00:00
+date: 2026-05-27T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-milestone-summary
 source_file: SKILL.md
-related:
-  - "[[00-MOC]]"
-  - "[[skills/external/gsd-audit-milestone]]"
-  - "[[skills/external/gsd-complete-milestone]]"
-  - "[[skills/external/gsd-new-milestone]]"
-  - "[[skills/external/gsd-progress]]"
-  - "[[skills/external/gsd-session-report]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-26
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `gsd-milestone-summary` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/gsd-milestone-summary/`  
-**Mirrored at**: 2026-05-26T03:15:01+00:00
+**Mirrored at**: 2026-05-27T03:15:01+00:00
 
 ## Descripción
 

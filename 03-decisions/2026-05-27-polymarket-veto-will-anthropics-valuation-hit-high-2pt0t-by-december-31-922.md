@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-mamdani-freeze-nyc-rents-before-2027"
+title: "Polymarket veto — will-anthropics-valuation-hit-high-2pt0t-by-december-31-922"
 type: decision
 date: 2026-05-27
-decision: "Veto de tesis 'Will Mamdani freeze NYC rents before 2027?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Will Anthropic's valuation hit (HIGH) $2.0T by December 31?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will Mamdani freeze NYC rents before 2027?
+# Veto: Will Anthropic's valuation hit (HIGH) $2.0T by December 31?
 
 ## Mercado
 
-- **Slug**: `will-mamdani-freeze-nyc-rents-before-2027`
+- **Slug**: `will-anthropics-valuation-hit-high-2pt0t-by-december-31-922`
 - **Categoría**: other
-- **Precio YES**: 0.3000
-- **Volumen 24h**: 257650.03 USD
-- **End date**: 2026-12-31T00:00:00Z
+- **Precio YES**: 0.4700
+- **Volumen 24h**: 53386.23 USD
+- **End date**: 2027-01-01T12:00:00Z
 
 ## Razón del veto
 
@@ -33,7 +33,7 @@ memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
-- veto `will-mamdani-freeze-nyc-rents-before-2027` score=1.00 (exact slug match)
+- veto `will-anthropics-valuation-hit-high-2pt0t-by-december-31-922` score=1.00 (exact slug match)
 - veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.40 (same category; same price bucket mid)
 - veto `ucl-psg-ars-2026-05-30-psg` score=0.40 (same category; same price bucket mid)
 - veto `claudio-tapia-out-as-afa-president-by-july-19-2026` score=0.40 (same category; same price bucket mid)

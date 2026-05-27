@@ -3,27 +3,20 @@ title: "gsd-autonomous (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-26T03:15:01+00:00
+date: 2026-05-27T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-autonomous
 source_file: SKILL.md
-related:
-  - "[[00-MOC]]"
-  - "[[skills/external/gsd-execute-phase]]"
-  - "[[skills/external/gsd-manager]]"
-  - "[[skills/external/gsd-plan-review-convergence]]"
-  - "[[skills/external/gsd-research-phase]]"
-  - "[[skills/external/gsd-ultraplan-phase]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-26
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `gsd-autonomous` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/gsd-autonomous/`  
-**Mirrored at**: 2026-05-26T03:15:01+00:00
+**Mirrored at**: 2026-05-27T03:15:01+00:00
 
 ## Descripción
 

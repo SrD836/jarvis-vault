@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `standx-fdv-above-1b-one-day-after-launch-758-887-458-572-867`
 - **Categoría**: crypto-launch
-- **Precio YES**: 0.1400
+- **Precio YES**: 0.1500
 - **Volumen 24h**: 388897.77 USD
 - **End date**: 2027-01-01T05:00:00Z
 

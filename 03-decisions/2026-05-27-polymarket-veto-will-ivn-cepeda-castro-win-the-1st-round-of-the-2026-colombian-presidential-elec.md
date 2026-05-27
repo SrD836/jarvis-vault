@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-ivn-cepeda-castro-win-the-1st-round-of-the-2026-colombian-presidential-election`
 - **Categoría**: elections
-- **Precio YES**: 0.6100
-- **Volumen 24h**: 67178.53 USD
+- **Precio YES**: 0.6600
+- **Volumen 24h**: 78834.37 USD
 - **End date**: 2026-05-31T16:00:00Z
 
 ## Razón del veto
