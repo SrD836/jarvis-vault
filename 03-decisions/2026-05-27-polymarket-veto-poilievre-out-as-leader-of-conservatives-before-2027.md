@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `poilievre-out-as-leader-of-conservatives-before-2027` score=1.00 (exact slug match)
-- veto `will-trump-restart-project-freedom-by-may-31` score=0.40 (same category; same price bucket low)
+- veto `will-silver-si-hit-low-55-by-end-of-june-185-484` score=0.40 (same category; same price bucket low)
 - veto `kharg-island-no-longer-under-iranian-control-by-june-30-561-854` score=0.40 (same category; same price bucket low)
 - veto `will-iga-witek-be-the-2026-womens-wimbledon-winner` score=0.40 (same category; same price bucket low)
-- veto `will-the-feds-lower-bound-reach-0pt25-or-lower-before-2027-173-921-916-764-754-593-935` score=0.40 (same category; same price bucket low)
+- veto `will-zelenskyy-and-putin-meet-next-in-qatar-uae` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

@@ -35,9 +35,9 @@ memoria: exact slug match (score 1.00)
 
 - veto `will-the-san-antonio-spurs-win-the-2026-nba-finals` score=1.00 (exact slug match)
 - veto `will-the-san-antonio-spurs-win-the-nba-western-conference-finals` score=0.70 (slug prefix match; same category)
+- veto `will-france-win-the-2026-fifa-world-cup-924` score=0.40 (same category; same price bucket low)
 - veto `will-england-win-the-2026-fifa-world-cup-937` score=0.40 (same category; same price bucket low)
-- veto `will-spain-win-the-2026-fifa-world-cup-963` score=0.40 (same category; same price bucket low)
-- veto `will-brazil-win-the-2026-fifa-world-cup-183` score=0.40 (same category; same price bucket low)
+- veto `will-germany-win-the-2026-fifa-world-cup-467` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 
