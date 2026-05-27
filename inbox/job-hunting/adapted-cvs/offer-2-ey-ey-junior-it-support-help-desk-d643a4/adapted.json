@@ -1,0 +1,94 @@
+{
+  "adapted": {
+    "headline": "Técnico de Soporte IT Junior | Certificado Google IT Support | Microsoft 365 & Google Workspace",
+    "summary": "Estudiante de Administración y Finanzas con certificación en Google IT Support y formación en Microsoft Azure, orientado al soporte técnico a usuarios y la resolución ágil de incidencias. Dominio del ecosistema Microsoft 365 y Google Workspace en entornos corporativos, con experiencia demostrada en atención al cliente de alta demanda y capacidad para trabajar en equipo bajo presión. Perfil proactivo con interés en crecer en IT dentro de una organización global como EY.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda) & otros establecimientos",
+        "period": "2021 · verano",
+        "bullets": [
+          "Resolví incidencias de clientes en tiempo real en entorno de alta afluencia, priorizando satisfacción y velocidad de respuesta.",
+          "Operé sistemas digitales de cobro y gestión de pedidos, manteniendo registro preciso de transacciones.",
+          "Atendí a usuarios internacionales en inglés, desarrollando comunicación clara y efectiva en contexto multicultural.",
+          "Coordiné con el equipo la distribución de tareas para garantizar fluidez operativa del servicio."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft 365",
+      "Google Workspace",
+      "Soporte IT (Certificación Google IT Support)",
+      "Resolución de problemas técnicos",
+      "Herramientas de IA y chatbots empresariales",
+      "Linux",
+      "Atención al usuario / Help Desk"
+    ],
+    "skills_secondary": [
+      "Excel avanzado",
+      "Microsoft Azure (IA)",
+      "Python",
+      "Git",
+      "SQL",
+      "Bash scripting",
+      "Automatización de procesos",
+      "Ofimática avanzada",
+      "Docker",
+      "Trabajo en equipo",
+      "Gestión del tiempo",
+      "Inglés profesional"
+    ],
+    "education": [
+      {
+        "degree": "Certificación: Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Google / Formación Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Formación Online",
+        "period": null
+      },
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline ajustado de 'Estudiante de Administración y Finanzas' a perfil de Soporte IT Junior, alineado con la oferta.",
+      "Certificación Google IT Support promovida a primer puesto en educación y añadida como skill primaria por ser directamente relevante al rol de Help Desk.",
+      "Microsoft 365 y Google Workspace promovidos a skills_primary por su centralidad en entornos corporativos como EY.",
+      "Linux incluido en skills_primary tomando del perfil estructurado, relevante para soporte técnico de nivel 1.",
+      "Experiencia en hostelería reenmarcada en clave de soporte al usuario: resolución de incidencias, gestión de sistemas digitales y comunicación bajo presión.",
+      "Curso de IA con Microsoft Azure situado como segunda credencial técnica para reforzar familiaridad con el ecosistema Microsoft.",
+      "Python, Git, SQL, Docker y Bash scripting incluidos en skills_secondary desde el perfil estructurado para completar el perfil técnico.",
+      "Summary enfocado en el pitch para EY destacando certificación, ecosistema Microsoft y orientación a soporte.",
+      "Nota: el candidato carece de experiencia IT laboral formal; la confianza se reduce por ello, aunque la certificación Google IT Support compensa parcialmente ese gap."
+    ],
+    "confidence": 0.61,
+    "target_role": "Junior IT Support – Help Desk en EY",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T17:07:56.358Z"
+  },
+  "offer_id": "offer-2-ey",
+  "offer_title": "Junior IT Support – Help Desk",
+  "company": "EY",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

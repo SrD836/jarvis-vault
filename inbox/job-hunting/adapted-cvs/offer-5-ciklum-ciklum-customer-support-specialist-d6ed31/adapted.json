@@ -1,0 +1,93 @@
+{
+  "adapted": {
+    "headline": "Customer Support Specialist orientado a tecnología y digitalización",
+    "summary": "Estudiante de Administración y Finanzas con experiencia directa en atención al cliente en entornos internacionales y dominio de herramientas digitales (Microsoft 365, Google Workspace, IA y chatbots empresariales). Formación complementaria en Soporte IT y Microsoft Azure que me permite gestionar incidencias técnicas con agilidad. Proactivo, resolutivo y con nivel de inglés funcional para comunicación con clientes.",
+    "experience": [
+      {
+        "title": "Camarero · Cajero · Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 – Julio 2021",
+        "bullets": [
+          "Atendí a clientes en sala y barra íntegramente en inglés, gestionando solicitudes y resolviendo incidencias en tiempo real.",
+          "Procesé cobros en caja con precisión, manteniendo el flujo de servicio bajo presión.",
+          "Coordiné la recepción y distribución de clientes como host, priorizando la experiencia del usuario.",
+          "Colaboré en equipo multidisciplinar para garantizar tiempos de respuesta óptimos durante el servicio."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Atención al cliente",
+      "Microsoft 365 (Word, Excel, Outlook)",
+      "Google Workspace",
+      "Herramientas de IA y chatbots empresariales",
+      "Resolución de problemas",
+      "Soporte IT (Google IT Support)",
+      "Excel avanzado",
+      "Comunicación en inglés"
+    ],
+    "skills_secondary": [
+      "Microsoft Azure (IA)",
+      "LLMs / Prompt engineering",
+      "Mejora de procesos digitales",
+      "Trabajo en equipo",
+      "Capacidad de liderazgo",
+      "Python",
+      "SQL",
+      "Git",
+      "Bash scripting",
+      "Automatización de tareas (correo, clasificación, hojas de cálculo)",
+      "Gestión de pedidos",
+      "Ofimática avanzada"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados, sin completar)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reenfocado de 'Estudiante de Administración y Finanzas' a 'Customer Support Specialist orientado a tecnología' para alinear con el rol target.",
+      "Promovidas 'Atención al cliente', 'Herramientas de IA y chatbots', 'Microsoft 365', 'Google Workspace' y 'Soporte IT' a skills_primary por relevancia directa para soporte al cliente en empresa tecnológica.",
+      "Skills técnicas de perfil (Python, Docker, Linux, REST APIs, React, etc.) relegadas a skills_secondary o eliminadas del primer plano, ya que no son prioritarias en customer support.",
+      "Bullets de experiencia en The Fallow reformulados para destacar gestión de incidencias, comunicación en inglés y orientación al cliente, alineados con keywords de un rol de soporte.",
+      "Summary redactado destacando la combinación única de experiencia en atención al cliente + formación IT + manejo de herramientas digitales y IA.",
+      "Google IT Support ascendido a skills_primary: Ciklum es empresa tecnológica y el rol puede involucrar soporte técnico.",
+      "Confidence moderada (0.63): el candidato tiene orientación y skills relevantes, pero la experiencia formal en customer support es breve (1 mes en hostelería) y la descripción de la oferta es escasa, lo que limita la precisión de la adaptación."
+    ],
+    "confidence": 0.63,
+    "target_role": "Customer Support Specialist en Ciklum",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T17:27:10.368Z"
+  },
+  "offer_id": "offer-5-ciklum",
+  "offer_title": "Customer Support Specialist",
+  "company": "Ciklum",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

@@ -16,21 +16,12 @@
       "tecnoempleo"
     ],
     "keywords": "auxiliar administrativo, asistente administrativo, becario administrativo, prácticas administración, helpdesk junior, técnico soporte usuario, soporte IT nivel 1, mesa de ayuda, atención al cliente call center, back office, gestor administrativo junior, recepción y administración, data entry, captura de datos, operador administrativo, contable junior, auxiliar contable, soporte ofimático, becario IT helpdesk",
-    "exclusiones": "presencial, senior, requiere visa US, requiere alemán, requiere holandés, workable, greenhouse, lever, ashby, bamboohr, smartrecruiters, jobvite, icims, recruitee, personio, teamtailor, redirect to external portal, outlier, mercor, scale ai, dataannotation, invisible, toloka, surge, remotasks, ai trainer, ai annotator, rlhf trainer",
+    "exclusiones": "presencial, senior, requiere visa US, requiere alemán, requiere holandés, jobvite, icims, redirect to external portal, outlier, mercor, scale ai, dataannotation, invisible, toloka, surge, remotasks, ai trainer, ai annotator, rlhf trainer",
     "posted_within_days": 30,
     "num_results": 10,
     "excluded_ats": [
-      "workable.com",
-      "greenhouse.io",
-      "lever.co",
-      "ashbyhq.com",
-      "bamboohr.com",
-      "smartrecruiters.com",
       "jobvite.com",
       "icims.com",
-      "recruitee.com",
-      "personio.com",
-      "teamtailor.com",
       "wellfound.com",
       "remoterocketship.com"
     ]

@@ -7651,3 +7651,134 @@
 2026/05/27 17:00:01 [scanner] config loaded: mode=simulation sort=end_date_asc window=[2,30]d
 [scanner] starting scan
 [scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=0&order=volumeNum&volume_num_min=50000
+[scanner] page 0 (offset 0): 100 raw, 54 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=100&order=volumeNum&volume_num_min=50000
+[scanner] page 1 (offset 100): 100 raw, 86 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=200&order=volumeNum&volume_num_min=50000
+[scanner] page 2 (offset 200): 100 raw, 120 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=300&order=volumeNum&volume_num_min=50000
+[scanner] page 3 (offset 300): 100 raw, 143 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=400&order=volumeNum&volume_num_min=50000
+[scanner] page 4 (offset 400): 100 raw, 169 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=500&order=volumeNum&volume_num_min=50000
+[scanner] page 5 (offset 500): 100 raw, 180 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=600&order=volumeNum&volume_num_min=50000
+[scanner] page 6 (offset 600): 100 raw, 192 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=700&order=volumeNum&volume_num_min=50000
+[scanner] page 7 (offset 700): 100 raw, 210 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=800&order=volumeNum&volume_num_min=50000
+[scanner] page 8 (offset 800): 100 raw, 226 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=900&order=volumeNum&volume_num_min=50000
+[scanner] page 9 (offset 900): 100 raw, 248 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1000&order=volumeNum&volume_num_min=50000
+[scanner] page 10 (offset 1000): 100 raw, 266 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1100&order=volumeNum&volume_num_min=50000
+[scanner] page 11 (offset 1100): 100 raw, 285 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1200&order=volumeNum&volume_num_min=50000
+[scanner] page 12 (offset 1200): 100 raw, 308 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1300&order=volumeNum&volume_num_min=50000
+[scanner] page 13 (offset 1300): 100 raw, 326 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1400&order=volumeNum&volume_num_min=50000
+[scanner] page 14 (offset 1400): 100 raw, 350 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1500&order=volumeNum&volume_num_min=50000
+[scanner] page 15 (offset 1500): 100 raw, 372 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1600&order=volumeNum&volume_num_min=50000
+[scanner] page 16 (offset 1600): 100 raw, 400 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1700&order=volumeNum&volume_num_min=50000
+[scanner] page 17 (offset 1700): 100 raw, 437 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1800&order=volumeNum&volume_num_min=50000
+[scanner] page 18 (offset 1800): 100 raw, 468 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1900&order=volumeNum&volume_num_min=50000
+[scanner] page 19 (offset 1900): 100 raw, 494 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=2000&order=volumeNum&volume_num_min=50000
+[scanner] page 20 (offset 2000): 100 raw, 500 candidates so far
+[scanner] scan complete: 500 candidates (sorted by endDate asc)
+[scanner] wrote 500 candidates to vault/inbox/trading/candidates.jsonl
+[scanner] done
+2026/05/27 17:00:03 main.go:11: Brain starting...
+2026/05/27 17:00:03 brain.go:63: Brain v3: config loaded mode=simulation v2_under=0h horizon=[short<=2d, medium<=30d, long>30d] quota=70/15/15
+2026/05/27 17:00:03 brain.go:75: Brain v2: processing 500 candidates
+2026/05/27 17:00:03 brain.go:83: Memory loaded: 500 vetos, 78 losses
+2026/05/27 17:00:03 brain.go:90: WARN: Tavily connector missing (read tavily connector: open /openclaw-workspace/connectors/tavily.json: no such file or directory) — falling back to Claude Max research (no external API key)
+2026/05/27 17:00:03 brain.go:103: research: blacklisted domains this cycle: claudemax-websearch
+2026/05/27 17:00:03 brain.go:127: M3: loaded 2 active anti-patterns from memory.md
+2026/05/27 17:00:03 brain.go:139: M2: loaded 9 active soft rules from memory.md
+2026/05/27 17:00:04 tradingview.go:117: [P11] evaluateLive asset=BTCUSDT priceYes=0.82 endpoint=http://localhost:8766/mcp
+2026/05/27 17:00:04 tradingview.go:132: [P11] response asset=BTCUSDT bytes=3734 preview=event: message\ndata: {"jsonrpc":"2.0","id":1,"result":{"content":[{"type":"text","text":"{\n  \"symbol\": \"KUCOIN:BTCUSDT\",\n  \"exchange\": \"kucoin\",\n  \"timeframe\": \"15m\",\n  \"timestamp\": \"real-time\",\n  \"price_data\": {\n    \"current_price\": 75297.9,\n    \"open\": 75143.9,\n    \"high\": 75325.4,\n    \"low\": 75116.8,\n    \"close\": 75297.9,\n    \"change_percent\": 0.205,\n    \"volume\": 13.11645667\n  },\n  \"timeframe_context\": {\n    \"timeframe\": \"15m\",\n    \"bia...(truncated)
+2026/05/27 17:00:04 tradingview.go:134: [P11] parsed asset=BTCUSDT sentiment=bearish confidence=0.50
+2026/05/27 17:01:05 brain.go:416: Brain v3 done: 6 approved, 494 blocked (P0=388 P2=5 P3=26 P4=6 P6=0 P7=2 P8=0 P9=9 P10=0 P11=0 V1=0 V2=0 V4=0 M1=58 M2=0 M3=0 N1=0 N2=0 LLM=0) horizons in approved: short=1 medium=4 long=1
+2026/05/27 17:01:05 main.go:17: Brain finished.
+2026/05/27 17:01:05 main.go:11: executor: starting one-shot pass
+2026/05/27 17:01:05 executor.go:43: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/27 17:01:05 executor.go:71: executor: quota slots this run: short=33 medium=8 long=8 (of 47 remaining today)
+2026/05/27 17:01:05 executor.go:85: executor: portfolio quota caps: short=35 medium=8 long=8 (open now: short=1 medium=8 long=8)
+2026/05/27 17:01:05 executor.go:269: executor: 0 entered, 6 rejected
+2026/05/27 17:01:05 main.go:13: executor: done
+2026/05/27 17:30:01 [scanner] config loaded: mode=simulation sort=end_date_asc window=[2,30]d
+[scanner] starting scan
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=0&order=volumeNum&volume_num_min=50000
+[scanner] page 0 (offset 0): 100 raw, 53 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=100&order=volumeNum&volume_num_min=50000
+[scanner] page 1 (offset 100): 100 raw, 84 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=200&order=volumeNum&volume_num_min=50000
+[scanner] page 2 (offset 200): 100 raw, 120 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=300&order=volumeNum&volume_num_min=50000
+[scanner] page 3 (offset 300): 100 raw, 145 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=400&order=volumeNum&volume_num_min=50000
+[scanner] page 4 (offset 400): 100 raw, 172 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=500&order=volumeNum&volume_num_min=50000
+[scanner] page 5 (offset 500): 100 raw, 185 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=600&order=volumeNum&volume_num_min=50000
+[scanner] page 6 (offset 600): 100 raw, 197 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=700&order=volumeNum&volume_num_min=50000
+[scanner] page 7 (offset 700): 100 raw, 216 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=800&order=volumeNum&volume_num_min=50000
+[scanner] page 8 (offset 800): 100 raw, 231 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=900&order=volumeNum&volume_num_min=50000
+[scanner] page 9 (offset 900): 100 raw, 254 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1000&order=volumeNum&volume_num_min=50000
+[scanner] page 10 (offset 1000): 100 raw, 272 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1100&order=volumeNum&volume_num_min=50000
+[scanner] page 11 (offset 1100): 100 raw, 290 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1200&order=volumeNum&volume_num_min=50000
+[scanner] page 12 (offset 1200): 100 raw, 313 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1300&order=volumeNum&volume_num_min=50000
+[scanner] page 13 (offset 1300): 100 raw, 330 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1400&order=volumeNum&volume_num_min=50000
+[scanner] page 14 (offset 1400): 100 raw, 357 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1500&order=volumeNum&volume_num_min=50000
+[scanner] page 15 (offset 1500): 100 raw, 379 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1600&order=volumeNum&volume_num_min=50000
+[scanner] page 16 (offset 1600): 100 raw, 406 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1700&order=volumeNum&volume_num_min=50000
+[scanner] page 17 (offset 1700): 100 raw, 447 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1800&order=volumeNum&volume_num_min=50000
+[scanner] page 18 (offset 1800): 100 raw, 475 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1900&order=volumeNum&volume_num_min=50000
+[scanner] page 19 (offset 1900): 100 raw, 500 candidates so far
+[scanner] scan complete: 500 candidates (sorted by endDate asc)
+[scanner] wrote 500 candidates to vault/inbox/trading/candidates.jsonl
+[scanner] done
+2026/05/27 17:30:04 main.go:11: Brain starting...
+2026/05/27 17:30:04 brain.go:63: Brain v3: config loaded mode=simulation v2_under=0h horizon=[short<=2d, medium<=30d, long>30d] quota=70/15/15
+2026/05/27 17:30:04 brain.go:75: Brain v2: processing 500 candidates
+2026/05/27 17:30:04 brain.go:83: Memory loaded: 500 vetos, 78 losses
+2026/05/27 17:30:04 brain.go:90: WARN: Tavily connector missing (read tavily connector: open /openclaw-workspace/connectors/tavily.json: no such file or directory) — falling back to Claude Max research (no external API key)
+2026/05/27 17:30:04 brain.go:103: research: blacklisted domains this cycle: claudemax-websearch
+2026/05/27 17:30:04 brain.go:127: M3: loaded 2 active anti-patterns from memory.md
+2026/05/27 17:30:04 brain.go:139: M2: loaded 9 active soft rules from memory.md
+2026/05/27 17:30:04 tradingview.go:117: [P11] evaluateLive asset=BTCUSDT priceYes=0.79 endpoint=http://localhost:8766/mcp
+2026/05/27 17:30:04 tradingview.go:132: [P11] response asset=BTCUSDT bytes=3723 preview=event: message\ndata: {"jsonrpc":"2.0","id":1,"result":{"content":[{"type":"text","text":"{\n  \"symbol\": \"KUCOIN:BTCUSDT\",\n  \"exchange\": \"kucoin\",\n  \"timeframe\": \"15m\",\n  \"timestamp\": \"real-time\",\n  \"price_data\": {\n    \"current_price\": 75016,\n    \"open\": 74971.9,\n    \"high\": 75081,\n    \"low\": 74900.5,\n    \"close\": 75016,\n    \"change_percent\": 0.059,\n    \"volume\": 17.12419364\n  },\n  \"timeframe_context\": {\n    \"timeframe\": \"15m\",\n    \"bias\": \...(truncated)
+2026/05/27 17:30:04 tradingview.go:134: [P11] parsed asset=BTCUSDT sentiment=bearish confidence=0.50
+2026/05/27 17:30:31 brain.go:403: Brain progress: 151/500 processed, 2 approved, 149 blocked
+2026/05/27 17:30:32 brain.go:416: Brain v3 done: 4 approved, 496 blocked (P0=392 P2=4 P3=24 P4=5 P6=0 P7=2 P8=0 P9=8 P10=0 P11=0 V1=0 V2=0 V4=0 M1=61 M2=0 M3=0 N1=0 N2=0 LLM=0) horizons in approved: short=1 medium=2 long=1
+2026/05/27 17:30:32 main.go:17: Brain finished.
+2026/05/27 17:30:32 main.go:11: executor: starting one-shot pass
+2026/05/27 17:30:32 executor.go:43: executor v4: mode=simulation sizeMode=dynamic_equal sizeFrac=0.020 sizeMin=25 sizeMax=500 maxExposure=5000 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=70/15/15
+2026/05/27 17:30:32 executor.go:71: executor: quota slots this run: short=33 medium=8 long=8 (of 47 remaining today)
+2026/05/27 17:30:32 executor.go:85: executor: portfolio quota caps: short=35 medium=8 long=8 (open now: short=1 medium=8 long=8)
+2026/05/27 17:30:32 executor.go:269: executor: 0 entered, 4 rejected
+2026/05/27 17:30:32 main.go:13: executor: done
+2026/05/27 18:00:01 [scanner] config loaded: mode=simulation sort=end_date_asc window=[2,30]d
+[scanner] starting scan
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=0&order=volumeNum&volume_num_min=50000

@@ -22,7 +22,7 @@ related:
 - **Slug**: `col-cry-ray-2026-05-27-cry`
 - **Categoría**: other
 - **Precio YES**: 0.4500
-- **Volumen 24h**: 227321.04 USD
+- **Volumen 24h**: 309164.53 USD
 - **End date**: 2026-05-27T19:00:00Z
 
 ## Razón del veto
@@ -35,8 +35,8 @@ memoria: exact slug match (score 1.00)
 
 - veto `col-cry-ray-2026-05-27-cry` score=1.00 (exact slug match)
 - veto `col-cry-ray-2026-05-27-ray` score=0.90 (slug prefix match; same category; same price bucket mid)
-- veto `weed-rescheduled-by-december-31` score=0.40 (same category; same price bucket mid)
 - veto `save-act-becomes-law-by-december-31-2026-347` score=0.40 (same category; same price bucket mid)
+- veto `elon-musk-of-tweets-may-22-may-29-160-179` score=0.40 (same category; same price bucket mid)
 - veto `elon-musk-of-tweets-may-22-may-29-200-219` score=0.40 (same category; same price bucket mid)
 
 ## Human notes

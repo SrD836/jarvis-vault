@@ -23,6 +23,7 @@ Tracking de búsquedas realizadas, ofertas presentadas, estado de aplicación. D
 | 2026-05-17 | Multi-bucket David (IT support, AI training, VA) | multi-source | — | — | presented | [2026-05-17-david-multi.md](2026-05-17-david-multi.md) |
 | 2026-05-18 | LinkedIn multi-bucket (IT support, AI training, CS, VA) | linkedin-only | 10 | 10 | presented | [2026-05-18-trabajo-page-linkedin.md](2026-05-18-trabajo-page-linkedin.md) |
 | 2026-05-20 | auxiliar admin / helpdesk / soporte IT / data entry / atención cliente | linkedin+indeed+tecnoempleo | ~25 | 10 | presented | [2026-05-20-trabajo-1779305625.md](2026-05-20-trabajo-1779305625.md) |
+| 2026-05-27 | auxiliar admin / back office / helpdesk / data entry / soporte IT (UI Trabajo) | linkedin+indeed+infojobs+tecnoempleo | ~30 | 10 | presented | [2026-05-27-trabajo-1779901440.md](2026-05-27-trabajo-1779901440.md) |
 
 ## Empresas contactadas / aplicadas
 

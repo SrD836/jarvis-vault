@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-roberto-snchez-palomino-win-the-2026-peruvian-presidential-election`
 - **Categoría**: elections
-- **Precio YES**: 0.2900
-- **Volumen 24h**: 124641.13 USD
+- **Precio YES**: 0.2870
+- **Volumen 24h**: 120905.47 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto
@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-roberto-snchez-palomino-win-the-2026-peruvian-presidential-election` score=1.00 (exact slug match)
-- veto `will-abelardo-de-la-espriella-win-the-1st-round-of-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket mid)
-- veto `will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983` score=0.40 (same category; same price bucket mid)
 - veto `will-ivn-cepeda-castro-win-the-1st-round-of-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket mid)
-- veto `will-ivan-cepeda-castro-win-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket mid)
+- veto `will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983` score=0.40 (same category; same price bucket mid)
+- veto `will-abelardo-de-la-espriella-win-the-1st-round-of-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket mid)
+- veto `will-abelardo-de-la-espriella-win-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 
