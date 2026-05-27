@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `prince-andrew-sentenced-to-prison` score=1.00 (exact slug match)
-- veto `sud-gre-tor-2026-05-26-gre` score=0.40 (same category; same price bucket low)
 - veto `elon-musk-of-tweets-may-25-may-27-0-39` score=0.40 (same category; same price bucket low)
 - veto `elon-musk-of-tweets-may-22-may-29-160-179` score=0.40 (same category; same price bucket low)
 - veto `will-trump-restart-project-freedom-by-may-31` score=0.40 (same category; same price bucket low)
+- veto `will-the-colorado-avalanche-win-the-2026-nhl-stanley-cup` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

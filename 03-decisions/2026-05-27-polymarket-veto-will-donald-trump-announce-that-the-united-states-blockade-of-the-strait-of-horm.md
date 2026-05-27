@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-31-2026-313-388-459-589-533"
 type: decision
 date: 2026-05-27
-decision: "Veto de tesis 'Will Donald Trump announce that the United States blockade of the Strait of H...' (rule P9): P9: geopolitics pump cluster (price 0.30, 3d)"
+decision: "Veto de tesis 'Will Donald Trump announce that the United States blockade of the Strait of H...' (rule P9): P9: geopolitics pump cluster (price 0.28, 3d)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-31-2026-313-388-459-589-533`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.3000
-- **Volumen 24h**: 243272.70 USD
+- **Precio YES**: 0.2800
+- **Volumen 24h**: 244371.77 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `P9`
 
-P9: geopolitics pump cluster (price 0.30, 3d)
+P9: geopolitics pump cluster (price 0.28, 3d)
 
 ## Human notes
 
