@@ -22,7 +22,7 @@ related:
 - **Slug**: `starmer-out-by-june-30-2026-862-594-548-219-739`
 - **Categoría**: executive-action
 - **Precio YES**: 0.1900
-- **Volumen 24h**: 75404.32 USD
+- **Volumen 24h**: 75325.65 USD
 - **End date**: 2026-06-30T12:00:00Z
 
 ## Razón del veto

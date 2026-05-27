@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-trump-restart-project-freedom-by-may-31`
 - **Categoría**: other
-- **Precio YES**: 0.0940
-- **Volumen 24h**: 470205.51 USD
+- **Precio YES**: 0.0910
+- **Volumen 24h**: 471042.04 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
@@ -36,8 +36,8 @@ memoria: exact slug match (score 1.00)
 - veto `will-trump-restart-project-freedom-by-may-31` score=1.00 (exact slug match)
 - veto `will-silver-si-hit-low-55-by-end-of-june-185-484` score=0.40 (same category; same price bucket low)
 - veto `kharg-island-no-longer-under-iranian-control-by-june-30-561-854` score=0.40 (same category; same price bucket low)
-- veto `will-iga-witek-be-the-2026-womens-wimbledon-winner` score=0.40 (same category; same price bucket low)
-- veto `will-zelenskyy-and-putin-meet-next-in-qatar-uae` score=0.40 (same category; same price bucket low)
+- veto `will-merab-dvalishvili-fight-alexandre-pantoja-next` score=0.40 (same category; same price bucket low)
+- veto `prince-andrew-sentenced-to-prison` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

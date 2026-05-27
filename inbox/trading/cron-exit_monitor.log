@@ -9561,3 +9561,65 @@
 2026/05/27 10:00:01 monitor.go:38: exit_monitor: quote fetch error for 566136: gamma GET 566136: HTTP 403: Polymarket API is temporarily unavailable for scheduled maintenance.
 2026/05/27 10:00:01 monitor.go:38: exit_monitor: quote fetch error for 566140: gamma GET 566140: HTTP 403: Polymarket API is temporarily unavailable for scheduled maintenance.
 2026/05/27 10:00:01 monitor.go:38: exit_monitor: quote fetch error for 2316216: gamma GET 2316216: HTTP 403: Polymarket API is temporarily unavailable for scheduled maintenance.
+2026/05/27 10:00:01 monitor.go:38: exit_monitor: quote fetch error for 2111640: gamma GET 2111640: HTTP 403: Polymarket API is temporarily unavailable for scheduled maintenance.
+2026/05/27 10:00:02 monitor.go:38: exit_monitor: quote fetch error for 569344: gamma GET 569344: HTTP 403: Polymarket API is temporarily unavailable for scheduled maintenance.
+2026/05/27 10:00:02 monitor.go:38: exit_monitor: quote fetch error for 2322404: gamma GET 2322404: HTTP 403: Polymarket API is temporarily unavailable for scheduled maintenance.
+2026/05/27 10:00:02 monitor.go:38: exit_monitor: quote fetch error for 2155052: gamma GET 2155052: HTTP 403: Polymarket API is temporarily unavailable for scheduled maintenance.
+2026/05/27 10:00:02 monitor.go:38: exit_monitor: quote fetch error for 2270338: gamma GET 2270338: HTTP 403: Polymarket API is temporarily unavailable for scheduled maintenance.
+2026/05/27 10:00:02 monitor.go:38: exit_monitor: quote fetch error for 2155023: gamma GET 2155023: HTTP 403: Polymarket API is temporarily unavailable for scheduled maintenance.
+2026/05/27 10:00:02 monitor.go:38: exit_monitor: quote fetch error for 1809418: gamma GET 1809418: HTTP 403: Polymarket API is temporarily unavailable for scheduled maintenance.
+2026/05/27 10:00:02 monitor.go:38: exit_monitor: quote fetch error for 824952: gamma GET 824952: HTTP 403: Polymarket API is temporarily unavailable for scheduled maintenance.
+2026/05/27 10:00:02 monitor.go:38: exit_monitor: quote fetch error for 701547: gamma GET 701547: HTTP 403: Polymarket API is temporarily unavailable for scheduled maintenance.
+2026/05/27 10:00:02 monitor.go:38: exit_monitor: quote fetch error for 569366: gamma GET 569366: HTTP 403: Polymarket API is temporarily unavailable for scheduled maintenance.
+2026/05/27 10:00:02 monitor.go:38: exit_monitor: quote fetch error for 2313280: gamma GET 2313280: HTTP 403: Polymarket API is temporarily unavailable for scheduled maintenance.
+2026/05/27 10:00:02 monitor.go:38: exit_monitor: quote fetch error for 947269: gamma GET 947269: HTTP 403: Polymarket API is temporarily unavailable for scheduled maintenance.
+2026/05/27 10:00:02 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 10:00:02 main.go:13: exit_monitor: done
+2026/05/27 10:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 10:05:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 10:05:01 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 10:05:01 main.go:13: exit_monitor: done
+2026/05/27 10:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 10:10:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 10:10:06 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 10:10:06 main.go:13: exit_monitor: done
+2026/05/27 10:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 10:15:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 10:15:11 monitor.go:38: exit_monitor: quote fetch error for 569366: gamma GET 569366: Get "https://gamma-api.polymarket.com/markets/569366": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2026/05/27 10:15:11 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 10:15:11 main.go:13: exit_monitor: done
+2026/05/27 10:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 10:20:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 10:20:05 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 10:20:05 main.go:13: exit_monitor: done
+2026/05/27 10:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 10:25:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 10:25:01 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 10:25:01 main.go:13: exit_monitor: done
+2026/05/27 10:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 10:30:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 10:30:04 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 10:30:04 main.go:13: exit_monitor: done
+2026/05/27 10:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 10:35:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 10:35:10 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 10:35:10 main.go:13: exit_monitor: done
+2026/05/27 10:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 10:40:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 10:40:03 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 10:40:03 main.go:13: exit_monitor: done
+2026/05/27 10:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 10:45:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 10:45:02 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 10:45:02 main.go:13: exit_monitor: done
+2026/05/27 10:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 10:50:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 10:50:09 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 10:50:09 main.go:13: exit_monitor: done
+2026/05/27 10:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 10:55:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 10:55:12 monitor.go:38: exit_monitor: quote fetch error for 1809418: gamma GET 1809418: Get "https://gamma-api.polymarket.com/markets/1809418": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2026/05/27 10:55:12 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 10:55:12 main.go:13: exit_monitor: done
+2026/05/27 11:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 11:00:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
