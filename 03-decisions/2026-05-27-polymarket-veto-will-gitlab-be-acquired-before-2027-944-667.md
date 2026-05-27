@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-anthropics-valuation-hit-high-2pt0t-by-december-31-922"
+title: "Polymarket veto — will-gitlab-be-acquired-before-2027-944-667"
 type: decision
 date: 2026-05-27
-decision: "Veto de tesis 'Will Anthropic's valuation hit (HIGH) $2.0T by December 31?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Will GitLab be acquired before 2027?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will Anthropic's valuation hit (HIGH) $2.0T by December 31?
+# Veto: Will GitLab be acquired before 2027?
 
 ## Mercado
 
-- **Slug**: `will-anthropics-valuation-hit-high-2pt0t-by-december-31-922`
+- **Slug**: `will-gitlab-be-acquired-before-2027-944-667`
 - **Categoría**: other
-- **Precio YES**: 0.4700
-- **Volumen 24h**: 53386.23 USD
-- **End date**: 2027-01-01T12:00:00Z
+- **Precio YES**: 0.2100
+- **Volumen 24h**: 1167783.03 USD
+- **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto
 
@@ -33,11 +33,11 @@ memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
-- veto `will-anthropics-valuation-hit-high-2pt0t-by-december-31-922` score=1.00 (exact slug match)
+- veto `will-gitlab-be-acquired-before-2027-944-667` score=1.00 (exact slug match)
 - veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.40 (same category; same price bucket mid)
 - veto `ucl-psg-ars-2026-05-30-psg` score=0.40 (same category; same price bucket mid)
-- veto `will-gitlab-be-acquired-before-2027-944-667` score=0.40 (same category; same price bucket mid)
 - veto `will-mamdani-freeze-nyc-rents-before-2027` score=0.40 (same category; same price bucket mid)
+- veto `will-zoom-video-communications-be-acquired-before-2027-486-866` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 
