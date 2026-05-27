@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — ucl-psg-ars-2026-05-30-psg"
+title: "Polymarket veto — col-cry-ray-2026-05-27-ray"
 type: decision
 date: 2026-05-27
-decision: "Veto de tesis 'Will Paris Saint-Germain FC win on 2026-05-30?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Will Rayo Vallecano de Madrid win on 2026-05-27?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will Paris Saint-Germain FC win on 2026-05-30?
+# Veto: Will Rayo Vallecano de Madrid win on 2026-05-27?
 
 ## Mercado
 
-- **Slug**: `ucl-psg-ars-2026-05-30-psg`
+- **Slug**: `col-cry-ray-2026-05-27-ray`
 - **Categoría**: other
-- **Precio YES**: 0.4200
-- **Volumen 24h**: 533814.33 USD
-- **End date**: 2026-05-30T16:00:00Z
+- **Precio YES**: 0.2500
+- **Volumen 24h**: 103631.01 USD
+- **End date**: 2026-05-27T19:00:00Z
 
 ## Razón del veto
 
@@ -33,10 +33,10 @@ memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
-- veto `ucl-psg-ars-2026-05-30-psg` score=1.00 (exact slug match)
+- veto `col-cry-ray-2026-05-27-ray` score=1.00 (exact slug match)
+- veto `col-cry-ray-2026-05-27-cry` score=0.90 (slug prefix match; same category; same price bucket mid)
 - veto `save-act-becomes-law-by-december-31-2026-347` score=0.40 (same category; same price bucket mid)
-- veto `col-cry-ray-2026-05-27-cry` score=0.40 (same category; same price bucket mid)
-- veto `col-cry-ray-2026-05-27-ray` score=0.40 (same category; same price bucket mid)
+- veto `weed-rescheduled-by-december-31` score=0.40 (same category; same price bucket mid)
 - veto `elon-musk-of-tweets-may-22-may-29-200-219` score=0.40 (same category; same price bucket mid)
 
 ## Human notes

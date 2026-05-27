@@ -38,18 +38,154 @@
   "attachments": {
     "cv": "cv.pdf",
     "certifications": [
-      "Certificado_Santander.pdf",
-      "certificate-elements-of-ai-es.png",
-      "Coursera_5CVZJ3TSGW7G.pdf",
-      "Coursera_5K1ICKCKI57G.pdf",
-      "Coursera_8849WECF2DP7.pdf",
-      "Coursera_AFM8G220SV0T.pdf",
-      "Coursera_F1A8C8ZVZ3GA.pdf",
-      "Coursera_GUNPUCG5I2CZ.pdf",
-      "Coursera_O3C1CO6A1IWO.pdf",
-      "Coursera_ZA3DQ4339R30.pdf",
-      "Coursera_ZUHG5GID0ERO.pdf",
-      "Evaluaci__n_final.pdf"
-    ]
+      "cert-coursera-google-it-support-professional.pdf",
+      "cert-coursera-azure-ai-900-specialization.pdf",
+      "cert-coursera-azure-ai.pdf",
+      "cert-coursera-azure-machine-learning.pdf",
+      "cert-coursera-azure-computer-vision.pdf",
+      "cert-coursera-azure-nlp.pdf",
+      "cert-coursera-google-it-tech-fundamentals.pdf",
+      "cert-coursera-google-operating-systems.pdf",
+      "cert-coursera-google-system-admin.pdf",
+      "cert-elements-of-ai-es.png",
+      "cert-santander-google-ai-productivity.pdf",
+      "cert-google-skillshop-evaluacion.pdf"
+    ],
+    "certifications_meta": {
+      "cert-coursera-google-it-support-professional.pdf": {
+        "title": "Google IT Support Professional Certificate",
+        "issuer": "Google (Coursera)",
+        "date": "2025-05-26",
+        "relevance_tags": [
+          "IT",
+          "support",
+          "tech-support",
+          "helpdesk",
+          "networking",
+          "sysadmin",
+          "security",
+          "customer-support"
+        ]
+      },
+      "cert-coursera-azure-ai-900-specialization.pdf": {
+        "title": "Microsoft Azure AI Fundamentals (AI-900) Specialization",
+        "issuer": "Microsoft (Coursera)",
+        "date": "2025-10-06",
+        "relevance_tags": [
+          "AI",
+          "ML",
+          "Azure",
+          "cloud",
+          "computer-vision",
+          "NLP",
+          "AI-engineer"
+        ]
+      },
+      "cert-coursera-azure-ai.pdf": {
+        "title": "Artificial Intelligence on Microsoft Azure",
+        "issuer": "Microsoft (Coursera)",
+        "date": "2025-09-23",
+        "relevance_tags": [
+          "AI",
+          "Azure",
+          "cloud"
+        ]
+      },
+      "cert-coursera-azure-machine-learning.pdf": {
+        "title": "Microsoft Azure Machine Learning",
+        "issuer": "Microsoft (Coursera)",
+        "date": "2025-09-25",
+        "relevance_tags": [
+          "ML",
+          "Azure",
+          "cloud",
+          "AI"
+        ]
+      },
+      "cert-coursera-azure-computer-vision.pdf": {
+        "title": "Computer Vision in Microsoft Azure",
+        "issuer": "Microsoft (Coursera)",
+        "date": "2025-09-27",
+        "relevance_tags": [
+          "computer-vision",
+          "AI",
+          "Azure"
+        ]
+      },
+      "cert-coursera-azure-nlp.pdf": {
+        "title": "Natural Language Processing in Microsoft Azure",
+        "issuer": "Microsoft (Coursera)",
+        "date": "2025-09-30",
+        "relevance_tags": [
+          "NLP",
+          "AI",
+          "Azure",
+          "LLM"
+        ]
+      },
+      "cert-coursera-google-it-tech-fundamentals.pdf": {
+        "title": "Technical Support Fundamentals",
+        "issuer": "Google (Coursera)",
+        "date": "2025-05-14",
+        "relevance_tags": [
+          "IT",
+          "support",
+          "tech-support",
+          "helpdesk"
+        ]
+      },
+      "cert-coursera-google-operating-systems.pdf": {
+        "title": "Operating Systems and You: Becoming a Power User",
+        "issuer": "Google (Coursera)",
+        "date": "2025-05-22",
+        "relevance_tags": [
+          "IT",
+          "sysadmin",
+          "linux",
+          "windows"
+        ]
+      },
+      "cert-coursera-google-system-admin.pdf": {
+        "title": "System Administration and IT Infrastructure Services",
+        "issuer": "Google (Coursera)",
+        "date": "2025-05-25",
+        "relevance_tags": [
+          "sysadmin",
+          "IT",
+          "infrastructure",
+          "devops"
+        ]
+      },
+      "cert-elements-of-ai-es.png": {
+        "title": "Elements of AI",
+        "issuer": "University of Helsinki / MinnaLearn",
+        "date": "",
+        "relevance_tags": [
+          "AI",
+          "fundamentals",
+          "ML"
+        ]
+      },
+      "cert-santander-google-ai-productivity.pdf": {
+        "title": "Google: Inteligencia Artificial y productividad",
+        "issuer": "Santander Open Academy / Google",
+        "date": "2025-04-06",
+        "relevance_tags": [
+          "AI",
+          "productivity",
+          "AI-tools"
+        ]
+      },
+      "cert-google-skillshop-evaluacion.pdf": {
+        "title": "Google Skillshop Evaluation (98%)",
+        "issuer": "Google Skillshop",
+        "date": "2025-04-10",
+        "relevance_tags": [
+          "marketing",
+          "google-ads",
+          "analytics"
+        ]
+      }
+    }
   }
 }

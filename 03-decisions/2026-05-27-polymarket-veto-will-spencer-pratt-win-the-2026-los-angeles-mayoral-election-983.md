@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983`
 - **Categoría**: elections
 - **Precio YES**: 0.2400
-- **Volumen 24h**: 210241.00 USD
+- **Volumen 24h**: 209374.59 USD
 - **End date**: 2026-06-02T00:00:00Z
 
 ## Razón del veto
@@ -37,7 +37,7 @@ memoria: exact slug match (score 1.00)
 - veto `will-abelardo-de-la-espriella-win-the-1st-round-of-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket mid)
 - veto `will-ivn-cepeda-castro-win-the-1st-round-of-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket mid)
 - veto `will-roberto-snchez-palomino-win-the-2026-peruvian-presidential-election` score=0.40 (same category; same price bucket mid)
-- veto `will-abelardo-de-la-espriella-win-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket mid)
+- veto `will-ivan-cepeda-castro-win-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

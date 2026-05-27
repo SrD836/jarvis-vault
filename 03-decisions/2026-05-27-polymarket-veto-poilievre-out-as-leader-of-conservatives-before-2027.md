@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `poilievre-out-as-leader-of-conservatives-before-2027`
 - **Categoría**: other
-- **Precio YES**: 0.1600
+- **Precio YES**: 0.1700
 - **Volumen 24h**: 149283.15 USD
 - **End date**: 2026-12-31T00:00:00Z
 

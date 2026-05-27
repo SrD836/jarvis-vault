@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-trump-restart-project-freedom-by-may-31`
 - **Categoría**: other
 - **Precio YES**: 0.0790
-- **Volumen 24h**: 270645.37 USD
+- **Volumen 24h**: 124917.28 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
