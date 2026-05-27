@@ -20,13 +20,17 @@ cited_dates:
     - title: Current price of Bitcoin for May 26, 2026 | Fortune
       date: 2026-05-26
       url: 
-outcome: pending
+outcome: loss
 outcome_observed_after_days: 30
 tags: [decision, polymarket, bot, trade, approved]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
   - "[[projects/polymarket-veto-loop-bot]]"
+pnl_usd: -70.91
+closed_at: 2026-05-27T13:50:01Z
+exit_reason: stop_loss
+days_open: 0.87
 ---
 
 # Trade aprobado: Will the price of Bitcoin be above $76,000 on May 27?

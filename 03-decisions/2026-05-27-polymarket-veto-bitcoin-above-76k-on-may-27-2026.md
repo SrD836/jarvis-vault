@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `bitcoin-above-76k-on-may-27-2026`
 - **Categoría**: market
-- **Precio YES**: 0.4200
-- **Volumen 24h**: 110948.83 USD
+- **Precio YES**: 0.2000
+- **Volumen 24h**: 117038.51 USD
 - **End date**: 2026-05-27T16:00:00Z
 
 ## Razón del veto

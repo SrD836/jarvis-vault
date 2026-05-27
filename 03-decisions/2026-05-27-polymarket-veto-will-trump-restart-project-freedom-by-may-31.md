@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-trump-restart-project-freedom-by-may-31`
 - **Categoría**: other
-- **Precio YES**: 0.0880
-- **Volumen 24h**: 474102.36 USD
+- **Precio YES**: 0.0750
+- **Volumen 24h**: 481312.80 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
@@ -37,7 +37,7 @@ memoria: exact slug match (score 1.00)
 - veto `elon-musk-of-tweets-may-22-may-29-220-239` score=0.40 (same category; same price bucket low)
 - veto `elon-musk-of-tweets-may-22-may-29-160-179` score=0.40 (same category; same price bucket low)
 - veto `jeffrey-epstein-foul-play-confirmed-by-december-31-2026` score=0.40 (same category; same price bucket low)
-- veto `will-silver-si-hit-low-55-by-end-of-june-185-484` score=0.40 (same category; same price bucket low)
+- veto `us-obtains-iranian-enriched-uranium-by-june-30` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

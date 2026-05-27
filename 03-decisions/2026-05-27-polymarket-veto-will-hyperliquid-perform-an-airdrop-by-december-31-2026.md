@@ -34,9 +34,9 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-hyperliquid-perform-an-airdrop-by-december-31-2026` score=1.00 (exact slug match)
-- veto `will-hyperliquid-perform-an-airdrop-by-december-31-2026` score=1.00 (exact slug match)
+- veto `opensea-fdv-above-100m-one-day-after-launch-172-151-588-987` score=0.40 (same category; same price bucket mid)
 - veto `will-pumpfun-perform-an-airdrop-by-december-31-2026` score=0.40 (same category; same price bucket mid)
-- veto `consensys-ipo-closing-market-cap-above-1b` score=0.40 (same category; same price bucket mid)
+- veto `metamask-fdv-above-1b-one-day-after-launch-978-851-628-634` score=0.40 (same category; same price bucket mid)
 - veto `will-ostium-launch-a-token-by-december-31-2026` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
