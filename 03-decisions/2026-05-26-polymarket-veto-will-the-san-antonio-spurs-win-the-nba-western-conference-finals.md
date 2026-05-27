@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-the-san-antonio-spurs-win-the-nba-western-conference-finals`
 - **Categoría**: sports-season
-- **Precio YES**: 0.4150
-- **Volumen 24h**: 76295.65 USD
+- **Precio YES**: 0.4180
+- **Volumen 24h**: 88134.98 USD
 - **End date**: 2026-06-16T00:00:00Z
 
 ## Razón del veto

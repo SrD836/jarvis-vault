@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — zhang-youxia-sentenced-to-prison-before-2027"
+title: "Polymarket veto — delcy-rodrguez-out-as-leader-of-venezuela-by-december-31-2026-148-853"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Zhang Youxia sentenced to prison before 2027?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Delcy Rodríguez out as leader of Venezuela by December 31, 2026?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,14 +15,14 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Zhang Youxia sentenced to prison before 2027?
+# Veto: Delcy Rodríguez out as leader of Venezuela by December 31, 2026?
 
 ## Mercado
 
-- **Slug**: `zhang-youxia-sentenced-to-prison-before-2027`
+- **Slug**: `delcy-rodrguez-out-as-leader-of-venezuela-by-december-31-2026-148-853`
 - **Categoría**: other
-- **Precio YES**: 0.1100
-- **Volumen 24h**: 134203.71 USD
+- **Precio YES**: 0.1200
+- **Volumen 24h**: 144317.20 USD
 - **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto
@@ -33,7 +33,7 @@ memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
-- veto `zhang-youxia-sentenced-to-prison-before-2027` score=1.00 (exact slug match)
+- veto `delcy-rodrguez-out-as-leader-of-venezuela-by-december-31-2026-148-853` score=1.00 (exact slug match)
 - veto `sud-gre-tor-2026-05-26-gre` score=0.40 (same category; same price bucket low)
 - veto `elon-musk-of-tweets-may-25-may-27-0-39` score=0.40 (same category; same price bucket low)
 - veto `will-trump-restart-project-freedom-by-may-31` score=0.40 (same category; same price bucket low)

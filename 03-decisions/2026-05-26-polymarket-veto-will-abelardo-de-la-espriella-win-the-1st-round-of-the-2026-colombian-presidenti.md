@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-abelardo-de-la-espriella-win-the-1st-round-of-the-2026-colombian-presidential-election`
 - **Categoría**: elections
 - **Precio YES**: 0.4180
-- **Volumen 24h**: 79832.89 USD
+- **Volumen 24h**: 79683.45 USD
 - **End date**: 2026-05-31T16:00:00Z
 
 ## Razón del veto

@@ -2,7 +2,7 @@
 title: "Polymarket veto — elon-musk-of-tweets-may-22-may-29-180-199"
 type: decision
 date: 2026-05-26
-decision: "Veto de tesis 'Will Elon Musk post 180-199 tweets from May 22 to May 29, 2026?' (rule M1): memoria: slug prefix match; same category (score 0.70)"
+decision: "Veto de tesis 'Will Elon Musk post 180-199 tweets from May 22 to May 29, 2026?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,23 +21,23 @@ related:
 
 - **Slug**: `elon-musk-of-tweets-may-22-may-29-180-199`
 - **Categoría**: other
-- **Precio YES**: 0.3010
-- **Volumen 24h**: 62540.55 USD
+- **Precio YES**: 0.3240
+- **Volumen 24h**: 63682.02 USD
 - **End date**: 2026-05-29T16:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `M1`
 
-memoria: slug prefix match; same category (score 0.70)
+memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
-- veto `elon-musk-of-tweets-may-19-may-26-340-359` score=0.70 (slug prefix match; same category)
+- veto `elon-musk-of-tweets-may-22-may-29-180-199` score=1.00 (exact slug match)
 - veto `elon-musk-of-tweets-may-19-may-26-220-239` score=0.70 (slug prefix match; same category)
-- veto `elon-musk-of-tweets-may-19-may-26-300-319` score=0.70 (slug prefix match; same category)
 - veto `elon-musk-of-tweets-may-25-may-27-0-39` score=0.70 (slug prefix match; same category)
-- veto `elon-musk-of-tweets-may-22-may-29-420-439` score=0.70 (slug prefix match; same category)
+- veto `elon-musk-of-tweets-may-22-may-29-360-379` score=0.70 (slug prefix match; same category)
+- veto `elon-musk-of-tweets-may-22-may-29-140-159` score=0.70 (slug prefix match; same category)
 
 ## Human notes
 
