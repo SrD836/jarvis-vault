@@ -3,9 +3,17 @@ title: "monitor — memory"
 type: agent-memory
 agent: "[[agents/monitor]]"
 created: 2026-05-26
+related:
+  - "[[agents/auditor/memory]]"
+  - "[[agents/main/memory]]"
+  - "[[agents/monitor]]"
+  - "[[agents/planner/memory]]"
+  - "[[agents/skill-reviewer/memory]]"
 tags: [agent-memory, monitor]
 schema_version: 1
+# auto-linked 2026-05-27
 ---
+
 
 # monitor — memoria persistente
 

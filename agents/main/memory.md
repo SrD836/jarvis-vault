@@ -3,9 +3,17 @@ title: "main — memory"
 type: agent-memory
 agent: "[[agents/main]]"
 created: 2026-05-26
+related:
+  - "[[agents/archivist/memory]]"
+  - "[[agents/auditor/memory]]"
+  - "[[agents/main]]"
+  - "[[agents/monitor/memory]]"
+  - "[[agents/planner/memory]]"
 tags: [agent-memory, main]
 schema_version: 1
+# auto-linked 2026-05-27
 ---
+
 
 # main — memoria persistente
 

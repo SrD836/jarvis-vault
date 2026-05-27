@@ -3,9 +3,17 @@ title: "researcher — memory"
 type: agent-memory
 agent: "[[agents/researcher]]"
 created: 2026-05-26
+related:
+  - "[[agents/archivist/memory]]"
+  - "[[agents/debugger/memory]]"
+  - "[[agents/main/memory]]"
+  - "[[agents/planner/memory]]"
+  - "[[agents/researcher]]"
 tags: [agent-memory, researcher]
 schema_version: 1
+# auto-linked 2026-05-27
 ---
+
 
 # researcher — memoria persistente
 

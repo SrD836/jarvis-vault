@@ -3,9 +3,17 @@ title: "code-reviewer — memory"
 type: agent-memory
 agent: "[[agents/code-reviewer]]"
 created: 2026-05-26
+related:
+  - "[[agents/auditor/memory]]"
+  - "[[agents/code-reviewer]]"
+  - "[[agents/debugger/memory]]"
+  - "[[agents/skill-reviewer/memory]]"
+  - "[[agents/tester/memory]]"
 tags: [agent-memory, code-reviewer]
 schema_version: 1
+# auto-linked 2026-05-27
 ---
+
 
 # code-reviewer — memoria persistente
 

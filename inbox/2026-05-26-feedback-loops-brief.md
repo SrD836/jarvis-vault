@@ -1,8 +1,16 @@
 ---
 type: brief
+related:
+  - "[[01-briefs/2026-05-26-feedback-loops-llm-agents]]"
+  - "[[agents/auditor]]"
+  - "[[agents/index]]"
+  - "[[agents/monitor]]"
+  - "[[agents/tester]]"
 tags: [brief, feedback-loops, jarvis, agentic-patterns]
 created: 2026-05-26T22:05:00+02:00
+# auto-linked 2026-05-27
 ---
+
 
 # Brief — Feedback loops para agentes LLM (2026) aplicables a JARVIS
 

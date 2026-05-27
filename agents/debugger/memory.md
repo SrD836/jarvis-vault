@@ -3,9 +3,17 @@ title: "debugger — memory"
 type: agent-memory
 agent: "[[agents/debugger]]"
 created: 2026-05-26
+related:
+  - "[[agents/auditor/memory]]"
+  - "[[agents/code-reviewer/memory]]"
+  - "[[agents/debugger]]"
+  - "[[agents/monitor/memory]]"
+  - "[[agents/tester/memory]]"
 tags: [agent-memory, debugger]
 schema_version: 1
+# auto-linked 2026-05-27
 ---
+
 
 # debugger — memoria persistente
 

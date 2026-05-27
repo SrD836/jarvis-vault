@@ -3,9 +3,17 @@ title: "polymarket-handler — memory"
 type: agent-memory
 agent: "[[agents/polymarket-handler]]"
 created: 2026-05-26
+related:
+  - "[[03-decisions/index]]"
+  - "[[agents/auditor/memory]]"
+  - "[[agents/main/memory]]"
+  - "[[agents/polymarket-bot/memory]]"
+  - "[[agents/polymarket-handler]]"
 tags: [agent-memory, polymarket-handler]
 schema_version: 1
+# auto-linked 2026-05-27
 ---
+
 
 # polymarket-handler — memoria persistente
 
