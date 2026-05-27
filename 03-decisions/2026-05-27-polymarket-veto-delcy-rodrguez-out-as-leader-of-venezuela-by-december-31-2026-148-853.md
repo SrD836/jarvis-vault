@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `delcy-rodrguez-out-as-leader-of-venezuela-by-december-31-2026-148-853`
 - **Categoría**: other
-- **Precio YES**: 0.1200
+- **Precio YES**: 0.1300
 - **Volumen 24h**: 144317.20 USD
 - **End date**: 2026-12-31T00:00:00Z
 
@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `delcy-rodrguez-out-as-leader-of-venezuela-by-december-31-2026-148-853` score=1.00 (exact slug match)
+- veto `elon-musk-of-tweets-may-22-may-29-160-179` score=0.40 (same category; same price bucket low)
 - veto `will-trump-restart-project-freedom-by-may-31` score=0.40 (same category; same price bucket low)
 - veto `openai-receives-federal-backstop-for-infrastructure-before-july` score=0.40 (same category; same price bucket low)
 - veto `will-silver-si-hit-low-55-by-end-of-june-185-484` score=0.40 (same category; same price bucket low)
-- veto `kharg-island-no-longer-under-iranian-control-by-june-30-561-854` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 
