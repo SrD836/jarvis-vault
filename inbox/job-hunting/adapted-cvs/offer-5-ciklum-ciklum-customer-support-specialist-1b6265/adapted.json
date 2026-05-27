@@ -1,0 +1,88 @@
+{
+  "adapted": {
+    "headline": "Estudiante de Administración y Finanzas orientado a Customer Support — Experiencia en atención al cliente, herramientas digitales y chatbots empresariales",
+    "summary": "Perfil con experiencia directa de cara al cliente en entornos exigentes, incluyendo comunicación en inglés con público internacional. Manejo sólido de Microsoft 365, Google Workspace y herramientas de IA/chatbots, complementado con formación certificada en IT Support (Google) e Inteligencia Artificial (Microsoft Azure). Persona resolutiva y organizada, con capacidad para gestionar incidencias de forma eficiente y empática.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow",
+        "period": "Jun 2021 · Jul 2021",
+        "bullets": [
+          "Atendí a clientes en sala, barra y recepción, resolviendo dudas e incidencias en tiempo real en entorno de alta demanda.",
+          "Gestioné cobros en caja y coordiné pedidos, garantizando precisión y satisfacción del cliente.",
+          "Comuniqué con clientes internacionales en inglés, adaptando el mensaje a distintos perfiles y necesidades.",
+          "Colaboré en equipo para mantener la calidad del servicio durante picos de trabajo."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Atención al cliente",
+      "Resolución de problemas",
+      "Herramientas de IA y chatbots empresariales",
+      "Microsoft 365 (Word, Excel, Outlook)",
+      "Google Workspace",
+      "Excel avanzado",
+      "Comunicación en inglés"
+    ],
+    "skills_secondary": [
+      "Google IT Support (certificación)",
+      "Microsoft Azure AI (formación)",
+      "Trabajo en equipo",
+      "Gestión de pedidos y datos",
+      "Mejora de procesos digitales",
+      "Capacidad de liderazgo",
+      "Python (automatización básica)",
+      "Bash scripting"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria (ULPGC)",
+        "period": null
+      },
+      {
+        "degree": "Google IT Support Professional Certificate",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reenfocado a Customer Support en lugar del headline genérico de estudiante de administración.",
+      "Summary reformulado para destacar experiencia de cara al cliente, comunicación en inglés y herramientas digitales directamente relevantes al rol.",
+      "Bullets de The Fallow reescritos con verbos de acción y lenguaje orientado a soporte: resolución de incidencias, gestión de clientes, precisión en cobros.",
+      "Promovidos 'Atención al cliente', 'Herramientas de IA y chatbots' y 'Resolución de problemas' a skills_primary por alta relevancia a la oferta.",
+      "Skills técnicas avanzadas del perfil (Docker, Linux, REST APIs, Git, Go, React) omitidas de primary y secondary por no ser relevantes a Customer Support.",
+      "Python incluido en secondary únicamente como automatización básica, no como skill técnica de desarrollo.",
+      "Inglés mantenido en B1 (regla canónica; no alterado pese a experiencia laboral en Irlanda)."
+    ],
+    "confidence": 0.65,
+    "target_role": "Customer Support Specialist",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T20:48:54.424Z"
+  },
+  "offer_id": "offer-5-ciklum",
+  "offer_title": "Customer Support Specialist",
+  "company": "Ciklum",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

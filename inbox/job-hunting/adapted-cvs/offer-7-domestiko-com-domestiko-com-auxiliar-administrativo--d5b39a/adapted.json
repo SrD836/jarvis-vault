@@ -1,0 +1,91 @@
+{
+  "adapted": {
+    "headline": "Auxiliar Administrativo · Estudiante de Administración y Finanzas con dominio de Microsoft 365 y herramientas de gestión",
+    "summary": "Estudiante de CFGS en Administración y Finanzas con sólido manejo de herramientas ofimáticas (Microsoft 365, Google Workspace) y Excel avanzado. Perfil organizado, resolutivo y con capacidad de trabajo en equipo, orientado a apoyar procesos administrativos con eficiencia. Interés adicional en la digitalización y mejora de flujos de trabajo mediante herramientas de IA.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow",
+        "period": "Junio 2021 · Julio 2021 (Irlanda)",
+        "bullets": [
+          "Gestión de cobros en caja y control de pagos con atención a la exactitud y el registro de transacciones.",
+          "Recepción y coordinación de clientes, asegurando una atención ordenada y fluida del servicio.",
+          "Trabajo en equipo en entorno de alta demanda, distribuyendo tareas y manteniendo la operativa diaria.",
+          "Atención al público en inglés, resolviendo consultas y gestionando pedidos de forma eficaz."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft 365 (Word, Excel, Outlook)",
+      "Excel avanzado",
+      "Google Workspace",
+      "Gestión administrativa y ofimática",
+      "Atención al cliente",
+      "Trabajo en equipo",
+      "Resolución de problemas",
+      "Organización y planificación"
+    ],
+    "skills_secondary": [
+      "Herramientas de IA y chatbots empresariales",
+      "Automatización de procesos",
+      "Microsoft Azure (IA)",
+      "Google IT Support",
+      "SQL",
+      "Gestión de correo electrónico",
+      "Clasificación y archivo de documentos",
+      "Capacidad de liderazgo",
+      "Mejora de procesos digitales",
+      "Python (nivel básico)"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Inglés fijado a B1 (regla canónica hard rule — el CV original decía 'nivel alto', ignorado).",
+      "Headline reenfocado al rol administrativo, sustituyendo el titular genérico de estudiante de finanzas.",
+      "Skills primarias reordenadas: Microsoft 365, Excel avanzado y herramientas ofimáticas subidos al bloque principal por ser el núcleo del puesto.",
+      "Skills técnicas de desarrollo (Python, Docker, Git, etc.) bajadas a secundario o eliminadas por baja relevancia para un auxiliar administrativo.",
+      "Bullets de experiencia en The Fallow reformulados para destacar cobros, recepción, organización y trabajo en equipo en lugar del contexto hostelero.",
+      "Cursos de IA y Google IT Support mantenidos en educación como diferenciador de perfil digital, pero sin sobrepromocionar frente a las competencias administrativas.",
+      "Summary añadido con pitch orientado a la oferta: apoyo administrativo + herramientas digitales."
+    ],
+    "confidence": 0.62,
+    "target_role": "Auxiliar administrativo/a laboral",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T20:11:37.931Z"
+  },
+  "offer_id": "offer-7-domestiko-com",
+  "offer_title": "Auxiliar administrativo/a laboral",
+  "company": "domestiko.com",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

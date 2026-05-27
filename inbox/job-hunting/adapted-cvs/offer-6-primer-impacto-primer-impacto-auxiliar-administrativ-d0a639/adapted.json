@@ -1,0 +1,87 @@
+{
+  "adapted": {
+    "headline": "Estudiante de Administración y Finanzas · Auxiliar Administrativo con dominio de Microsoft 365 y Excel avanzado",
+    "summary": "Estudiante de CFGS en Administración y Finanzas con sólida base en ofimática avanzada, gestión documental y herramientas digitales empresariales. Domino Microsoft 365 y Google Workspace, y cuento con experiencia práctica en atención al cliente y trabajo en equipo bajo presión. Me interesa especialmente optimizar tareas administrativas mediante herramientas de IA y automatización.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "2021 · verano",
+        "bullets": [
+          "Gestión de caja y cobro de clientes con precisión en el manejo de efectivo y medios de pago.",
+          "Recepción y atención al cliente en inglés, garantizando una experiencia de calidad en entorno exigente.",
+          "Coordinación con el equipo para la gestión eficiente de pedidos y flujo de trabajo en sala."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft 365 (Word, Excel, Outlook, Teams)",
+      "Excel avanzado (hojas de cálculo, automatización de datos)",
+      "Google Workspace",
+      "Gestión documental y correo electrónico",
+      "Herramientas de IA y chatbots empresariales",
+      "Atención al cliente",
+      "Organización y planificación de tareas"
+    ],
+    "skills_secondary": [
+      "Resolución de problemas",
+      "Trabajo en equipo y capacidad de liderazgo",
+      "Mejora de procesos digitales",
+      "Google IT Support",
+      "Microsoft Azure (IA)",
+      "Ofimática general",
+      "SQL",
+      "Python (básico)"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria (ULPGC)",
+        "period": null
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline ajustado al rol de Auxiliar Administrativo, destacando Administración y Finanzas y Excel avanzado como diferenciadores clave.",
+      "Añadido párrafo de summary centrado en ofimática, gestión documental y digitalización de procesos, en línea con el perfil de un puesto admin.",
+      "Skills primary reorganizadas: Microsoft 365, Excel, Google Workspace y gestión documental al frente por ser las más relevantes para funciones administrativas.",
+      "Skills de programación (Python, Docker, Git, etc.) del perfil estructurado movidas a secondary o eliminadas del bloque principal para no distorsionar el perfil frente a un puesto administrativo convencional.",
+      "Bullets de experiencia reformulados para resaltar gestión de caja, atención al cliente y coordinación de equipo — habilidades transferibles al entorno admin.",
+      "Nivel de inglés mantenido en B1 según regla canónica (sin elevar pese a experiencia en Irlanda).",
+      "Confianza moderada-alta: la formación en Administración y Finanzas es directamente relevante y las skills ofimáticas encajan bien, pero la experiencia laboral formal es muy limitada (1 mes en hostelería)."
+    ],
+    "confidence": 0.73,
+    "target_role": "Auxiliar Administrativo/a",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T20:11:55.986Z"
+  },
+  "offer_id": "offer-6-primer-impacto",
+  "offer_title": "Auxiliar administrativo/a",
+  "company": "Primer Impacto",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

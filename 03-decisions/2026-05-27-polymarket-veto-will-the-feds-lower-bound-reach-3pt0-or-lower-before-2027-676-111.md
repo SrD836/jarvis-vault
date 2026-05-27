@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-the-feds-lower-bound-reach-3pt0-or-lower-before-2027-676-111` score=1.00 (exact slug match)
-- veto `will-the-feds-lower-bound-reach-0pt5-or-lower-before-2027-459-115-473-497-424-381-849` score=0.90 (slug prefix match; same category; same price bucket low)
 - veto `will-the-feds-lower-bound-reach-0pt25-or-lower-before-2027-173-921-916-764-754-593-935` score=0.90 (slug prefix match; same category; same price bucket low)
+- veto `will-the-feds-lower-bound-reach-0pt5-or-lower-before-2027-459-115-473-497-424-381-849` score=0.90 (slug prefix match; same category; same price bucket low)
+- veto `will-donald-trump-dance-on-may-25-2026` score=0.40 (same category; same price bucket low)
 - veto `us-obtains-iranian-enriched-uranium-by-june-30` score=0.40 (same category; same price bucket low)
-- veto `will-silver-si-hit-low-55-by-end-of-june-185-484` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

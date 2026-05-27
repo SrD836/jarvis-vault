@@ -1,0 +1,87 @@
+{
+  "adapted": {
+    "headline": "Estudiante de Administración y Finanzas orientado a operaciones de nómina y gestión de datos",
+    "summary": "Estudiante de CFGS en Administración y Finanzas con dominio avanzado de Excel y Microsoft 365, en búsqueda de desarrollar carrera en payroll y operaciones financieras globales. Perfil organizado y detallista, con experiencia en manejo de caja, atención al cliente internacional y gestión de datos. Interés especial en la automatización de procesos y mejora continua en entornos digitales.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "2021 · verano",
+        "bullets": [
+          "Gestionó cobros en caja y cuadre de cuentas al cierre, garantizando exactitud en el manejo de efectivo en entorno de alto volumen",
+          "Atendió pedidos y reclamaciones en inglés en entorno multicultural, desarrollando comunicación efectiva con clientes internacionales",
+          "Coordinó con el equipo la distribución de tareas durante el servicio, asegurando flujo operativo eficiente sin supervisión directa"
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft Excel (avanzado)",
+      "Microsoft 365",
+      "Google Workspace",
+      "Gestión de datos y registros",
+      "Administración y Finanzas",
+      "Resolución de problemas",
+      "Atención al detalle"
+    ],
+    "skills_secondary": [
+      "Herramientas de IA y chatbots empresariales",
+      "Mejora de procesos digitales",
+      "Microsoft Azure (IA)",
+      "Google IT Support",
+      "Trabajo en equipo",
+      "Capacidad de liderazgo",
+      "Comunicación escrita",
+      "Automatización de tareas administrativas"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Google IT Support Certificate",
+        "institution": "Curso Online",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reorientado al rol de Payroll Associate, destacando Administración y Finanzas como eje central",
+      "Summary redactado para enfatizar exactitud numérica, gestión de datos y operaciones financieras directamente relevantes a nómina",
+      "Excel (avanzado) y Microsoft 365 promovidos al top de skills_primary por ser herramientas centrales en operaciones de payroll",
+      "Skills técnicas de programación (Python, JavaScript, Docker, REST APIs, etc.) omitidas por irrelevancia para este rol",
+      "Experiencia de hostelería reencuadrada con énfasis en manejo de caja, exactitud numérica y trabajo en entorno internacional",
+      "Inglés mantenido en B1 per regla canónica del perfil (no modificado pese a experiencia en Irlanda)",
+      "Confianza moderada-baja: la formación en Administración y Finanzas es un match directo, pero no hay experiencia formal en payroll ni en software de nómina (ADP, Workday, Personio, etc.)"
+    ],
+    "confidence": 0.57,
+    "target_role": "Payroll Associate | Spain — Deel",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T20:51:28.006Z"
+  },
+  "offer_id": "offer-3-deel",
+  "offer_title": "Payroll Associate | Spain",
+  "company": "Deel",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

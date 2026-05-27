@@ -1,0 +1,89 @@
+{
+  "adapted": {
+    "headline": "Auxiliar Administrativo en formación · Gestión digital y ofimática avanzada",
+    "summary": "Estudiante de CFGS en Administración y Finanzas con sólido dominio de herramientas ofimáticas (Microsoft 365, Excel avanzado) y conocimientos en soporte TI y certificación digital. Perfil orientado a la gestión documental y la tramitación administrativa con apoyo tecnológico. Disponibilidad inmediata y capacidad de aprendizaje rápido en entornos de atención al cliente.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "2021 · verano",
+        "bullets": [
+          "Gestión de cobros en caja con atención a la exactitud y cuadre de importes.",
+          "Recepción y registro de clientes, manteniendo orden documental y fluidez en el acceso al servicio.",
+          "Atención al público en castellano e inglés en entorno de alta rotación.",
+          "Coordinación con equipo para gestión eficiente de flujos de trabajo."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft 365 (Word, Excel avanzado, Outlook)",
+      "Google Workspace",
+      "Gestión documental y tramitación administrativa",
+      "Soporte de Tecnologías de la Información (Google IT Support)",
+      "Atención al cliente presencial y digital",
+      "Herramientas de IA y automatización de procesos",
+      "Resolución de incidencias y seguimiento de procedimientos"
+    ],
+    "skills_secondary": [
+      "Inteligencia Artificial con Microsoft Azure",
+      "Chatbots empresariales",
+      "Google IT Support certificado",
+      "Ofimática avanzada",
+      "Gestión de correo electrónico y agenda",
+      "Trabajo en equipo y coordinación",
+      "Organización y planificación",
+      "Capacidad de aprendizaje autónomo"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reformulado de 'Estudiante de Administración y Finanzas' a perfil administrativo con foco en gestión digital, alineado con el puesto de Auxiliar Administrativo - Certificados Digitales.",
+      "Skills_primary reordenadas: Microsoft 365, gestión documental y Google IT Support subidos a primary por ser directamente relevantes para tramitación de certificados digitales.",
+      "Python, JavaScript, Docker, SQL y demás skills técnicas de desarrollo eliminadas de la presentación principal — no aplicables a este perfil administrativo.",
+      "Bullets de experiencia en hostelería reformulados para destacar gestión de cobros, recepción/registro de clientes y coordinación de equipo — transferibles a un puesto administrativo.",
+      "Nivel de inglés fijado a B1 según regla hard del perfil canónico (el CV original indicaba 'nivel alto', ignorado).",
+      "Educación reordenada: CFGS Administración y Finanzas aparece primero por ser el título más relevante; cursos de IT y Azure destacados como formación complementaria digital.",
+      "Summary ajustado para mencionar explícitamente gestión documental y tramitación administrativa, anticipando las tareas habituales del puesto.",
+      "Grado en Economía (incompleto) mantenido pero relegado al final de la sección educativa para no restar foco."
+    ],
+    "confidence": 0.72,
+    "target_role": "Auxiliar Administrativo/a - Certificados Digitales (Servinform)",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T20:41:07.930Z"
+  },
+  "offer_id": "offer-4-servinform",
+  "offer_title": "Auxiliar Administrativo/a - Certificados Digitales",
+  "company": "Servinform",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

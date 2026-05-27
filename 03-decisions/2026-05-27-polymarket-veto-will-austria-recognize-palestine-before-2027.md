@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `will-austria-recognize-palestine-before-2027`
 - **Categoría**: executive-action
-- **Precio YES**: 0.1190
+- **Precio YES**: 0.1220
 - **Volumen 24h**: 172322.50 USD
 - **End date**: 2026-12-31T00:00:00Z
 
@@ -35,6 +35,7 @@ memoria: exact slug match (score 1.00)
 
 - veto `will-austria-recognize-palestine-before-2027` score=1.00 (exact slug match)
 - veto `starmer-out-by-june-30-2026-862-594-548-219-739` score=0.40 (same category; same price bucket low)
+- veto `will-germany-recognize-palestine-before-2027` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 
