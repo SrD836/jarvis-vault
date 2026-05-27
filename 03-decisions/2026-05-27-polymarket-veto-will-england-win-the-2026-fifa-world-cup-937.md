@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-england-win-the-2026-fifa-world-cup-937`
 - **Categoría**: sports-season
 - **Precio YES**: 0.1130
-- **Volumen 24h**: 342558.42 USD
+- **Volumen 24h**: 347764.38 USD
 - **End date**: 2026-07-20T00:00:00Z
 
 ## Razón del veto
@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-england-win-the-2026-fifa-world-cup-937` score=1.00 (exact slug match)
-- veto `will-brazil-win-the-2026-fifa-world-cup-183` score=0.40 (same category; same price bucket low)
-- veto `will-argentina-win-the-2026-fifa-world-cup-245` score=0.40 (same category; same price bucket low)
-- veto `will-france-win-the-2026-fifa-world-cup-924` score=0.40 (same category; same price bucket low)
+- veto `will-spain-win-the-2026-fifa-world-cup-963` score=0.40 (same category; same price bucket low)
+- veto `will-portugal-win-the-2026-fifa-world-cup-912` score=0.40 (same category; same price bucket low)
 - veto `will-the-san-antonio-spurs-win-the-2026-nba-finals` score=0.40 (same category; same price bucket low)
+- veto `will-germany-win-the-2026-fifa-world-cup-467` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

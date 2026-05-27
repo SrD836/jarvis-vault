@@ -1,0 +1,92 @@
+{
+  "adapted": {
+    "headline": "Especialista en Atención al Cliente | Soporte Digital e IA | Español Nativo · Inglés B1",
+    "summary": "Estudiante de Administración y Finanzas con experiencia directa en atención al público en entornos exigentes, incluyendo soporte en inglés. Familiarizado con herramientas de IA, chatbots empresariales y Microsoft 365, lo que me permite adaptarme rápidamente a plataformas de soporte digitales. Disponibilidad inmediata, perfil resolutivo y orientación a la satisfacción del cliente.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Jun 2021 – Jul 2021",
+        "bullets": [
+          "Atendí consultas e incidencias de clientes en inglés y español en un entorno de alto volumen, priorizando la satisfacción del cliente.",
+          "Gestioné el cobro en caja con precisión, reduciendo errores de facturación y agilizando tiempos de respuesta.",
+          "Actué como punto de contacto en recepción, coordinando la experiencia del cliente desde la llegada hasta la resolución de cualquier problema.",
+          "Colaboré en un equipo multicultural bajo presión, distribuyendo tareas para mantener un servicio fluido y eficiente."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Atención al cliente",
+      "Herramientas de IA y chatbots empresariales",
+      "Microsoft 365 (Outlook, Word, Excel)",
+      "Google Workspace",
+      "Resolución de problemas",
+      "Comunicación en inglés",
+      "Excel avanzado"
+    ],
+    "skills_secondary": [
+      "Google IT Support (certificación)",
+      "Microsoft Azure AI (curso)",
+      "Gestión y automatización de correo electrónico",
+      "LLMs / Prompt engineering",
+      "Mejora de procesos digitales",
+      "Automatización de tareas con hojas de cálculo",
+      "Liderazgo y trabajo en equipo",
+      "Capacidad organizativa",
+      "Python (básico)",
+      "SQL (básico)",
+      "Gestión de pedidos",
+      "Ofimática avanzada"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados, sin completar)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline adaptado de 'Estudiante de Administración y Finanzas' a perfil de Customer Support para alinear con el rol target de Ciklum.",
+      "Bullets de la experiencia en hostelería reformulados con lenguaje propio de soporte al cliente: gestión de incidencias, punto de contacto, satisfacción del cliente — sin añadir información no presente en el CV original.",
+      "Skills primarias reorganizadas priorizando Atención al cliente, IA/chatbots, Microsoft 365 y Resolución de problemas, todas presentes en el CV original.",
+      "Python, Docker, REST APIs y otras habilidades técnicas del perfil estructurado degradadas a skills_secondary o eliminadas de primarias por baja relevancia para un rol de soporte.",
+      "Google IT Support y Microsoft Azure AI promovidos en skills_secondary por su relevancia potencial en soporte técnico digital.",
+      "Summary reorientado hacia soporte digital, herramientas empresariales y disponibilidad inmediata en lugar del foco en automatización técnica.",
+      "Confidence moderada (0.60): experiencia laboral documentada muy breve (1 mes), sin historial formal en Customer Support; el perfil cubre las soft skills y herramientas digitales pero carece de experiencia sostenida en el área."
+    ],
+    "confidence": 0.6,
+    "target_role": "Customer Support Specialist",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T17:49:35.496Z"
+  },
+  "offer_id": "offer-5-ciklum",
+  "offer_title": "Customer Support Specialist",
+  "company": "Ciklum",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

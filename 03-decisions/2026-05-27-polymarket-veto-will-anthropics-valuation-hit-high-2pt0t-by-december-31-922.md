@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-anthropics-valuation-hit-high-2pt0t-by-december-31-922`
 - **Categoría**: other
 - **Precio YES**: 0.4700
-- **Volumen 24h**: 53791.96 USD
+- **Volumen 24h**: 53801.22 USD
 - **End date**: 2027-01-01T12:00:00Z
 
 ## Razón del veto
@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-anthropics-valuation-hit-high-2pt0t-by-december-31-922` score=1.00 (exact slug match)
-- veto `save-act-becomes-law-by-december-31-2026-347` score=0.40 (same category; same price bucket mid)
 - veto `col-cry-ray-2026-05-27-cry` score=0.40 (same category; same price bucket mid)
-- veto `elon-musk-of-tweets-may-22-may-29-200-219` score=0.40 (same category; same price bucket mid)
+- veto `col-cry-ray-2026-05-27-ray` score=0.40 (same category; same price bucket mid)
 - veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.40 (same category; same price bucket mid)
+- veto `elon-musk-of-tweets-may-22-may-29-200-219` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

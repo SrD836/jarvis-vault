@@ -1,5 +1,5 @@
 ---
-title: "Polymarket veto — will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-31-2026-313-388-459-589-533"
+title: "Polymarket veto — will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-june-30-2026-159-962"
 type: decision
 date: 2026-05-27
 decision: "Veto de tesis 'Will Donald Trump announce that the United States blockade of the Strait of H...' (rule M1): memoria: slug prefix match; same category; same price bucket mid (score 0.90)"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 31, 2026?
+# Veto: Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by June 30, 2026?
 
 ## Mercado
 
-- **Slug**: `will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-31-2026-313-388-459-589-533`
+- **Slug**: `will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-june-30-2026-159-962`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.3600
-- **Volumen 24h**: 171139.84 USD
-- **End date**: 2026-05-31T00:00:00Z
+- **Precio YES**: 0.6700
+- **Volumen 24h**: 56601.05 USD
+- **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto
 
@@ -34,10 +34,10 @@ memoria: slug prefix match; same category; same price bucket mid (score 0.90)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-31-2026-313...` score=0.90 (slug prefix match; same category; same price bucket mid)
+- veto `will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-june-30-2026-15...` score=0.90 (slug prefix match; same category; same price bucket mid)
+- veto `will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-28-2026` score=0.70 (slug prefix match; same category)
 - veto `internet-access-restored-in-iran-by-may-31-2026` score=0.40 (same category; same price bucket mid)
-- veto `us-x-iran-permanent-peace-deal-by-june-30-2026-837-641-896-877-363-892-537-597` score=0.40 (same category; same price bucket mid)
-- veto `us-x-iran-permanent-peace-deal-by-may-31-2026-333-871-241-192-799-449-125` score=0.40 (same category; same price bucket mid)
-- veto `us-x-iran-permanent-peace-deal-by-june-7-2026` score=0.40 (same category; same price bucket mid)
+- veto `us-announces-new-iran-agreementceasefire-extension-by-june-7-265-824-655` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

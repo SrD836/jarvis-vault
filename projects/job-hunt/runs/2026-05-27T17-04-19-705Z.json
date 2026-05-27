@@ -1,0 +1,202 @@
+{
+  "run_id": "trabajo-1779901459705",
+  "started_at": "2026-05-27T17:04:19.705Z",
+  "config": {
+    "profile": {
+      "sobre_mi": "David González Nuez, 21 años, Teror (Gran Canaria, España). Bilingüe español/inglés (nivel alto). Operador de sistemas multi-agente IA (proyecto JARVIS sobre VPS Hetzner). Certificaciones: Google IT Support Professional (May 2025) + Microsoft Azure AI-900 Specialization (Oct 2025). En curso: CFGS Administración y Finanzas (ULPGC). Stack: Excel avanzado, Microsoft 365, Google Workspace, Docker básico, scripting bash, configs JSON/YAML, APIs IA (OpenAI, Anthropic, DeepSeek), Obsidian, prompt engineering. Sin experiencia laboral formal extensa pero capacidad demostrada de asumir tareas técnicas complejas usando IA como copiloto.",
+      "que_busco": "Prioridades por bucket:\n1. AI training / annotation / RLHF (Outlier, Mercor, Scale AI, DataAnnotation, Invisible, Toloka, Surge, Remotasks)\n2. Freelance técnico (Upwork, Malt, Workana): Excel automation, prompt engineering, asistente virtual técnico\n3. Contrato remoto junior: IT Support tier 1/2, customer success técnico, cloud support Azure, AI ops junior\n4. B2B PYMEs España (especial Canarias) para automatización IA / chatbots / agentes\n\nNO aplicar automáticamente — solo investigar y reportar. David decide."
+    },
+    "filters": {
+      "ubicacion": "Spain",
+      "modalidad": [
+        "remoto",
+        "hibrido"
+      ],
+      "fuentes": [
+        "linkedin",
+        "indeed",
+        "infojobs",
+        "tecnoempleo"
+      ],
+      "keywords": "auxiliar administrativo, asistente administrativo, becario administrativo, prácticas administración, helpdesk junior, técnico soporte usuario, soporte IT nivel 1, mesa de ayuda, atención al cliente call center, back office, gestor administrativo junior, recepción y administración, data entry, captura de datos, operador administrativo, contable junior, auxiliar contable, soporte ofimático, becario IT helpdesk",
+      "exclusiones": "presencial, senior, requiere visa US, requiere alemán, requiere holandés, workable, greenhouse, lever, ashby, bamboohr, smartrecruiters, jobvite, icims, recruitee, personio, teamtailor, redirect to external portal, outlier, mercor, scale ai, dataannotation, invisible, toloka, surge, remotasks, ai trainer, ai annotator, rlhf trainer",
+      "posted_within_days": 30,
+      "num_results": 10,
+      "excluded_ats": [
+        "workable.com",
+        "greenhouse.io",
+        "lever.co",
+        "ashbyhq.com",
+        "bamboohr.com",
+        "smartrecruiters.com",
+        "jobvite.com",
+        "icims.com",
+        "recruitee.com",
+        "personio.com",
+        "teamtailor.com",
+        "wellfound.com",
+        "remoterocketship.com"
+      ],
+      "schedule": [],
+      "contract_types": [],
+      "industries_preferred": [],
+      "salary_min_eur_year": null,
+      "salary_max_eur_year": null,
+      "excluded_companies": []
+    },
+    "attachments": {
+      "cv": "cv.pdf",
+      "certifications": [
+        "cert-coursera-google-it-support-professional.pdf",
+        "cert-coursera-azure-ai-900-specialization.pdf",
+        "cert-coursera-azure-ai.pdf",
+        "cert-coursera-azure-machine-learning.pdf",
+        "cert-coursera-azure-computer-vision.pdf",
+        "cert-coursera-azure-nlp.pdf",
+        "cert-coursera-google-it-tech-fundamentals.pdf",
+        "cert-coursera-google-operating-systems.pdf",
+        "cert-coursera-google-system-admin.pdf",
+        "cert-elements-of-ai-es.png",
+        "cert-santander-google-ai-productivity.pdf",
+        "cert-google-skillshop-evaluacion.pdf"
+      ],
+      "certifications_meta": {
+        "cert-coursera-google-it-support-professional.pdf": {
+          "title": "Google IT Support Professional Certificate",
+          "issuer": "Google (Coursera)",
+          "date": "2025-05-26",
+          "relevance_tags": [
+            "IT",
+            "support",
+            "tech-support",
+            "helpdesk",
+            "networking",
+            "sysadmin",
+            "security",
+            "customer-support"
+          ]
+        },
+        "cert-coursera-azure-ai-900-specialization.pdf": {
+          "title": "Microsoft Azure AI Fundamentals (AI-900) Specialization",
+          "issuer": "Microsoft (Coursera)",
+          "date": "2025-10-06",
+          "relevance_tags": [
+            "AI",
+            "ML",
+            "Azure",
+            "cloud",
+            "computer-vision",
+            "NLP",
+            "AI-engineer"
+          ]
+        },
+        "cert-coursera-azure-ai.pdf": {
+          "title": "Artificial Intelligence on Microsoft Azure",
+          "issuer": "Microsoft (Coursera)",
+          "date": "2025-09-23",
+          "relevance_tags": [
+            "AI",
+            "Azure",
+            "cloud"
+          ]
+        },
+        "cert-coursera-azure-machine-learning.pdf": {
+          "title": "Microsoft Azure Machine Learning",
+          "issuer": "Microsoft (Coursera)",
+          "date": "2025-09-25",
+          "relevance_tags": [
+            "ML",
+            "Azure",
+            "cloud",
+            "AI"
+          ]
+        },
+        "cert-coursera-azure-computer-vision.pdf": {
+          "title": "Computer Vision in Microsoft Azure",
+          "issuer": "Microsoft (Coursera)",
+          "date": "2025-09-27",
+          "relevance_tags": [
+            "computer-vision",
+            "AI",
+            "Azure"
+          ]
+        },
+        "cert-coursera-azure-nlp.pdf": {
+          "title": "Natural Language Processing in Microsoft Azure",
+          "issuer": "Microsoft (Coursera)",
+          "date": "2025-09-30",
+          "relevance_tags": [
+            "NLP",
+            "AI",
+            "Azure",
+            "LLM"
+          ]
+        },
+        "cert-coursera-google-it-tech-fundamentals.pdf": {
+          "title": "Technical Support Fundamentals",
+          "issuer": "Google (Coursera)",
+          "date": "2025-05-14",
+          "relevance_tags": [
+            "IT",
+            "support",
+            "tech-support",
+            "helpdesk"
+          ]
+        },
+        "cert-coursera-google-operating-systems.pdf": {
+          "title": "Operating Systems and You: Becoming a Power User",
+          "issuer": "Google (Coursera)",
+          "date": "2025-05-22",
+          "relevance_tags": [
+            "IT",
+            "sysadmin",
+            "linux",
+            "windows"
+          ]
+        },
+        "cert-coursera-google-system-admin.pdf": {
+          "title": "System Administration and IT Infrastructure Services",
+          "issuer": "Google (Coursera)",
+          "date": "2025-05-25",
+          "relevance_tags": [
+            "sysadmin",
+            "IT",
+            "infrastructure",
+            "devops"
+          ]
+        },
+        "cert-elements-of-ai-es.png": {
+          "title": "Elements of AI",
+          "issuer": "University of Helsinki / MinnaLearn",
+          "date": "",
+          "relevance_tags": [
+            "AI",
+            "fundamentals",
+            "ML"
+          ]
+        },
+        "cert-santander-google-ai-productivity.pdf": {
+          "title": "Google: Inteligencia Artificial y productividad",
+          "issuer": "Santander Open Academy / Google",
+          "date": "2025-04-06",
+          "relevance_tags": [
+            "AI",
+            "productivity",
+            "AI-tools"
+          ]
+        },
+        "cert-google-skillshop-evaluacion.pdf": {
+          "title": "Google Skillshop Evaluation (98%)",
+          "issuer": "Google Skillshop",
+          "date": "2025-04-10",
+          "relevance_tags": [
+            "marketing",
+            "google-ads",
+            "analytics"
+          ]
+        }
+      }
+    }
+  },
+  "brief": "## Filtros estructurados\n\nEsta búsqueda viene del UI Trabajo del dashboard. USA los filtros literalmente, NO derives queries propios del USER.md.\n\n### Profile\n\n**Sobre mí:**\nDavid González Nuez, 21 años, Teror (Gran Canaria, España). Bilingüe español/inglés (nivel alto). Operador de sistemas multi-agente IA (proyecto JARVIS sobre VPS Hetzner). Certificaciones: Google IT Support Professional (May 2025) + Microsoft Azure AI-900 Specialization (Oct 2025). En curso: CFGS Administración y Finanzas (ULPGC). Stack: Excel avanzado, Microsoft 365, Google Workspace, Docker básico, scripting bash, configs JSON/YAML, APIs IA (OpenAI, Anthropic, DeepSeek), Obsidian, prompt engineering. Sin experiencia laboral formal extensa pero capacidad demostrada de asumir tareas técnicas complejas usando IA como copiloto.\n\n**Qué busco:**\nPrioridades por bucket:\n1. AI training / annotation / RLHF (Outlier, Mercor, Scale AI, DataAnnotation, Invisible, Toloka, Surge, Remotasks)\n2. Freelance técnico (Upwork, Malt, Workana): Excel automation, prompt engineering, asistente virtual técnico\n3. Contrato remoto junior: IT Support tier 1/2, customer success técnico, cloud support Azure, AI ops junior\n4. B2B PYMEs España (especial Canarias) para automatización IA / chatbots / agentes\n\nNO aplicar automáticamente — solo investigar y reportar. David decide.\n\n### Filters\n\n- Ubicación: Spain\n- Modalidad: remoto, hibrido\n- Fuentes (OBLIGATORIO solo estas, NO usar otras): linkedin, indeed, infojobs, tecnoempleo\n- Keywords: auxiliar administrativo, asistente administrativo, becario administrativo, prácticas administración, helpdesk junior, técnico soporte usuario, soporte IT nivel 1, mesa de ayuda, atención al cliente call center, back office, gestor administrativo junior, recepción y administración, data entry, captura de datos, operador administrativo, contable junior, auxiliar contable, soporte ofimático, becario IT helpdesk\n- Exclusiones: presencial, senior, requiere visa US, requiere alemán, requiere holandés, workable, greenhouse, lever, ashby, bamboohr, smartrecruiters, jobvite, icims, recruitee, personio, teamtailor, redirect to external portal, outlier, mercor, scale ai, dataannotation, invisible, toloka, surge, remotasks, ai trainer, ai annotator, rlhf trainer\n- Publicadas en últimos N días: 30\n- Número de ofertas objetivo: 10\n\n### EXCLUYE estas ofertas (ya analizadas en runs previos)\n\nNO devuelvas ninguna oferta que coincida con estas URLs o títulos. Si encuentras alguna repetida, sáltala y busca otra hasta cumplir el número objetivo.\n\n- https://www.linkedin.com/jobs/view/it-helpdesk-technician-at-sardine-4416298154\n- https://es.linkedin.com/jobs/view/virtual-assistant-work-from-home-at-persona-4415496511\n- https://es.linkedin.com/jobs/view/customer-support-specialist-english-speaking-at-holafly-4413827653\n- https://www.linkedin.com/jobs/view/technical-customer-success-manager-at-hubtype-4413940402\n- https://es.linkedin.com/jobs/view/admin-billing-compliance-operations-manager-ai-native-at-hubtype-4414512090\n- https://www.linkedin.com/jobs/view/data-science-consultant-ai-trainer-at-dataannotation-4391915440\n- https://www.linkedin.com/jobs/view/technical-consultant-ai-trainer-at-dataannotation-4397407179\n- https://www.linkedin.com/jobs/view/english-u-s-native-ai-trainer-evaluator-remote-hourly-contractor-at-cntxt-ai-4410479195\n- https://www.linkedin.com/jobs/view/backend-systems-ai-model-trainer-remote-at-chatgpt-jobs-4401928748\n- https://www.linkedin.com/jobs/view/junior-account-executive-%E2%80%93-ai-agents-remote-at-process-street-4403795965\n- Administrative Assistant (Work From Home) @ Persona\n- Junior IT Support – Help Desk @ EY\n- Soporte Técnico Junior Genesys Cloud CX @ IOON\n- Atención al Cliente @ Singularu\n- Customer Support Specialist @ Ciklum\n- Agente Telefónico de Atención al Cliente @ Serviguide BPO\n- Remote Event Operations Assistant @ Your Startup Operations\n- Auxiliar Administrativa – Sector Bancario @ Normadat\n- Agente Call Center 2.º Nivel – Customer Care @ Media Markt Saturn\n- Fully Remote Executive Assistant to Elite CEOs @ Donna Pro\n- https://es.linkedin.com/jobs/view/administrative-assistant-work-from-home-at-persona-4415617123\n- https://www.tecnoempleo.com/junior-it-support-help-desk-ey/soporte-microinformatica/rf-a33411d8421d73607f4a\n- https://es.linkedin.com/jobs/view/soporte-tecnico-junior-genesys-cloud-cx-at-ioon-4410180721\n- https://es.indeed.com/rc/clk?jk=9051f5d403328d15\n- https://es.indeed.com/rc/clk?jk=b2ff6210de015eab\n- https://es.indeed.com/rc/clk?jk=fc720ce289df037c\n- https://es.linkedin.com/jobs/view/remote-event-operations-assistant-at-your-startup-operations-4410293459\n- https://es.indeed.com/rc/clk?jk=b422f7315bcfe276\n- https://es.indeed.com/rc/clk?jk=42f71c84d4773c3c\n- https://es.linkedin.com/jobs/view/fully-remote-executive-assistant-to-elite-ceos-at-donna-pro-4412887342\n\n### Attachments\n- CV: /home/agent/agent-stack/vault/attachments/trabajo/cv.pdf\n- Certificación: /home/agent/agent-stack/vault/attachments/trabajo/cert-coursera-google-it-support-professional.pdf\n- Certificación: /home/agent/agent-stack/vault/attachments/trabajo/cert-coursera-azure-ai-900-specialization.pdf\n- Certificación: /home/agent/agent-stack/vault/attachments/trabajo/cert-coursera-azure-ai.pdf\n- Certificación: /home/agent/agent-stack/vault/attachments/trabajo/cert-coursera-azure-machine-learning.pdf\n- Certificación: /home/agent/agent-stack/vault/attachments/trabajo/cert-coursera-azure-computer-vision.pdf\n- Certificación: /home/agent/agent-stack/vault/attachments/trabajo/cert-coursera-azure-nlp.pdf\n- Certificación: /home/agent/agent-stack/vault/attachments/trabajo/cert-coursera-google-it-tech-fundamentals.pdf\n- Certificación: /home/agent/agent-stack/vault/attachments/trabajo/cert-coursera-google-operating-systems.pdf\n- Certificación: /home/agent/agent-stack/vault/attachments/trabajo/cert-coursera-google-system-admin.pdf\n- Certificación: /home/agent/agent-stack/vault/attachments/trabajo/cert-elements-of-ai-es.png\n- Certificación: /home/agent/agent-stack/vault/attachments/trabajo/cert-santander-google-ai-productivity.pdf\n- Certificación: /home/agent/agent-stack/vault/attachments/trabajo/cert-google-skillshop-evaluacion.pdf\n\n### Output esperado\n\n1. Busca en LAS fuentes listadas (estrictamente, ignora otras).\n2. Filtra por publicación ≤ 30 días.\n3. Devuelve EXACTAMENTE 10 ofertas con formato `## N. Título @ Empresa` + bullets Modalidad/Ubicación/Publicado/Descripción/Match/Link.\n4. Persiste en `/home/agent/agent-stack/vault/inbox/job-hunting/<YYYY-MM-DD>-trabajo-<unix_ts>.md` con frontmatter `source: ui_trabajo`, `run_id: trabajo-<ts>`.\n5. Si <10 resultados disponibles, reporta shortfall claramente — NO rellenar con otras fuentes.\n\nNO escribas memory.md en este flujo. Config completo ya vive en projects/job-hunt/config.json."
+}
