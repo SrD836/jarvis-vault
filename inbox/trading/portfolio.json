@@ -1,6 +1,6 @@
 {
-  "bankroll": 3818.9311315190666,
-  "used_exposure": 974.9522228404313,
+  "bankroll": 3760.476413149347,
+  "used_exposure": 916.7769412101511,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -114,22 +114,6 @@
       "end_date": "2026-05-31T16:00:00Z",
       "size_usd": 51.13093612428302,
       "liquidity_usd": 52235.60529
-    },
-    {
-      "id": "T-2322404-1779712204481",
-      "market_id": "2322404",
-      "question": "Will WTI Crude Oil (WTI) hit (HIGH) $105 in May?",
-      "side": "yes",
-      "entry_price": 0.15,
-      "size": 57.14903113797497,
-      "category": "market",
-      "entry_timestamp": "2026-05-25T12:30:04Z",
-      "approved_price": 0.15,
-      "days_to_resolution": 6,
-      "horizon": "medium",
-      "end_date": "2026-06-01T03:59:59.999Z",
-      "size_usd": 57.14903113797497,
-      "liquidity_usd": 45270.6444
     },
     {
       "id": "T-2155052-1779726947128",
@@ -324,43 +308,6 @@
       ]
     },
     {
-      "id": "T-2313280-1779814832575",
-      "market_id": "2313280",
-      "slug": "bitcoin-above-76k-on-may-27-2026",
-      "question": "Will the price of Bitcoin be above $76,000 on May 27?",
-      "side": "yes",
-      "entry_price": 0.68,
-      "size": 77.77066708718995,
-      "category": "market",
-      "entry_timestamp": "2026-05-26T17:00:32Z",
-      "approved_price": 0.68,
-      "days_to_resolution": 0,
-      "horizon": "short",
-      "end_date": "2026-05-27T16:00:00Z",
-      "size_usd": 77.77066708718995,
-      "liquidity_usd": 29452.1193,
-      "sources_used": [
-        {
-          "domain": "claudemax-websearch",
-          "url": "",
-          "headline_title": "Bitcoin Price Today: BTC At $76,610 - May 26, 2026",
-          "published_date": "2026-05-26"
-        },
-        {
-          "domain": "claudemax-websearch",
-          "url": "",
-          "headline_title": "Bitcoin and ethereum prices today, Tuesday, May 26, 2026: Prices hold despite U.S.-Israel airstrikes",
-          "published_date": "2026-05-26"
-        },
-        {
-          "domain": "claudemax-websearch",
-          "url": "",
-          "headline_title": "Current price of Bitcoin for May 26, 2026 | Fortune",
-          "published_date": "2026-05-26"
-        }
-      ]
-    },
-    {
       "id": "T-947269-1779870679596",
       "market_id": "947269",
       "slug": "will-keiko-fujimori-win-the-2026-peruvian-presidential-election",
@@ -387,6 +334,43 @@
           "domain": "claudemax-websearch",
           "url": "",
           "headline_title": "Última encuesta Ipsos: Keiko Fujimori lidera con 39% y Roberto Sánchez retrocede con 35% en segunda vuelta",
+          "published_date": "2026-05-20"
+        }
+      ]
+    },
+    {
+      "id": "T-1087513-1779894004820",
+      "market_id": "1087513",
+      "slug": "will-jannik-sinner-win-the-2026-mens-french-open",
+      "question": "Will Jannik Sinner win the 2026 Men's French Open?",
+      "side": "yes",
+      "entry_price": 0.74,
+      "size": 76.74441659488464,
+      "category": "other",
+      "entry_timestamp": "2026-05-27T15:00:04Z",
+      "approved_price": 0.74,
+      "days_to_resolution": 10,
+      "horizon": "medium",
+      "end_date": "2026-06-07T00:00:00Z",
+      "size_usd": 76.74441659488464,
+      "liquidity_usd": 55603.239,
+      "sources_used": [
+        {
+          "domain": "claudemax-websearch",
+          "url": "",
+          "headline_title": "Sinner's Paris charge begins as world No. 1 extends winning streak",
+          "published_date": "2026-05-26"
+        },
+        {
+          "domain": "claudemax-websearch",
+          "url": "",
+          "headline_title": "Sinner knocks out Tabur in first round Roland Garros 2026",
+          "published_date": "2026-05-26"
+        },
+        {
+          "domain": "claudemax-websearch",
+          "url": "",
+          "headline_title": "Roland Garros 2026 withdrawals: Alcaraz out through wrist injury",
           "published_date": "2026-05-20"
         }
       ]

@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `poilievre-out-as-leader-of-conservatives-before-2027`
 - **Categoría**: other
-- **Precio YES**: 0.1600
+- **Precio YES**: 0.1700
 - **Volumen 24h**: 149283.15 USD
 - **End date**: 2026-12-31T00:00:00Z
 
@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `poilievre-out-as-leader-of-conservatives-before-2027` score=1.00 (exact slug match)
-- veto `elon-musk-of-tweets-may-22-may-29-220-239` score=0.40 (same category; same price bucket low)
+- veto `tim-walz-charged-by-december-31-2026` score=0.40 (same category; same price bucket low)
 - veto `elon-musk-of-tweets-may-22-may-29-160-179` score=0.40 (same category; same price bucket low)
+- veto `elon-musk-of-tweets-may-22-may-29-220-239` score=0.40 (same category; same price bucket low)
 - veto `will-trump-restart-project-freedom-by-may-31` score=0.40 (same category; same price bucket low)
-- veto `will-silver-si-hit-low-55-by-end-of-june-185-484` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

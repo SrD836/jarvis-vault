@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "updated_at": "2026-05-27",
+  "owner": "David Gonzalez Nuez",
+  "certs": [
+    {
+      "file": "coursera-google-it-support-professional.pdf",
+      "title": "Google IT Support Professional Certificate",
+      "issuer": "Google (Coursera)",
+      "date": "2025-05-26",
+      "type": "specialization",
+      "summary": "5-course professional certificate covering troubleshooting, networking, OS, sysadmin, security",
+      "relevance_tags": ["IT", "support", "tech-support", "helpdesk", "networking", "sysadmin", "security", "customer-support"]
+    },
+    {
+      "file": "coursera-azure-ai-900-specialization.pdf",
+      "title": "Microsoft Azure AI Fundamentals (AI-900) Specialization",
+      "issuer": "Microsoft (Coursera)",
+      "date": "2025-10-06",
+      "type": "specialization",
+      "summary": "5-course spec on Azure AI: ML, computer vision, NLP, AI fundamentals",
+      "relevance_tags": ["AI", "ML", "Azure", "cloud", "computer-vision", "NLP", "AI-engineer"]
+    },
+    {
+      "file": "coursera-azure-ai.pdf",
+      "title": "Artificial Intelligence on Microsoft Azure",
+      "issuer": "Microsoft (Coursera)",
+      "date": "2025-09-23",
+      "type": "course",
+      "relevance_tags": ["AI", "Azure", "cloud"]
+    },
+    {
+      "file": "coursera-azure-machine-learning.pdf",
+      "title": "Microsoft Azure Machine Learning",
+      "issuer": "Microsoft (Coursera)",
+      "date": "2025-09-25",
+      "type": "course",
+      "relevance_tags": ["ML", "Azure", "cloud", "AI"]
+    },
+    {
+      "file": "coursera-azure-computer-vision.pdf",
+      "title": "Computer Vision in Microsoft Azure",
+      "issuer": "Microsoft (Coursera)",
+      "date": "2025-09-27",
+      "type": "course",
+      "relevance_tags": ["computer-vision", "AI", "Azure"]
+    },
+    {
+      "file": "coursera-azure-nlp.pdf",
+      "title": "Natural Language Processing in Microsoft Azure",
+      "issuer": "Microsoft (Coursera)",
+      "date": "2025-09-30",
+      "type": "course",
+      "relevance_tags": ["NLP", "AI", "Azure", "LLM"]
+    },
+    {
+      "file": "coursera-google-it-tech-fundamentals.pdf",
+      "title": "Technical Support Fundamentals",
+      "issuer": "Google (Coursera)",
+      "date": "2025-05-14",
+      "type": "course",
+      "relevance_tags": ["IT", "support", "tech-support", "helpdesk"]
+    },
+    {
+      "file": "coursera-google-operating-systems.pdf",
+      "title": "Operating Systems and You: Becoming a Power User",
+      "issuer": "Google (Coursera)",
+      "date": "2025-05-22",
+      "type": "course",
+      "relevance_tags": ["IT", "sysadmin", "linux", "windows"]
+    },
+    {
+      "file": "coursera-google-system-admin.pdf",
+      "title": "System Administration and IT Infrastructure Services",
+      "issuer": "Google (Coursera)",
+      "date": "2025-05-25",
+      "type": "course",
+      "relevance_tags": ["sysadmin", "IT", "infrastructure", "devops"]
+    },
+    {
+      "file": "elements-of-ai-es.png",
+      "title": "Elements of AI",
+      "issuer": "University of Helsinki / MinnaLearn",
+      "date": null,
+      "type": "course",
+      "summary": "Free intro AI course (in Spanish)",
+      "relevance_tags": ["AI", "fundamentals", "ML"]
+    },
+    {
+      "file": "santander-google-ai-productivity.pdf",
+      "title": "Google: Inteligencia Artificial y productividad",
+      "issuer": "Santander Open Academy / Google",
+      "date": "2025-04-06",
+      "type": "course",
+      "summary": "AI productivity tools (2h, self-evaluated)",
+      "relevance_tags": ["AI", "productivity", "AI-tools"]
+    },
+    {
+      "file": "google-skillshop-evaluacion.pdf",
+      "title": "Google Skillshop Evaluation (98%)",
+      "issuer": "Google Skillshop",
+      "date": "2025-04-10",
+      "type": "assessment",
+      "summary": "Google Ads/Marketing Platform/Analytics evaluation 39/40",
+      "relevance_tags": ["marketing", "google-ads", "analytics"]
+    }
+  ]
+}

@@ -42,3 +42,6 @@ Thumbs.db
 # Temp / debug
 *.tmp
 .tmp/
+
+# Awesome-CV upstream clone (public repo, no need to vendor)
+cv-templates/awesome-cv-posquit0/

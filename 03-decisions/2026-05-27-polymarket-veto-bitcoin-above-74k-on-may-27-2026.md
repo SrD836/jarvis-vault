@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `bitcoin-above-74k-on-may-27-2026`
 - **Categoría**: market
-- **Precio YES**: 0.9390
-- **Volumen 24h**: 136589.95 USD
+- **Precio YES**: 0.9250
+- **Volumen 24h**: 289346.87 USD
 - **End date**: 2026-05-27T16:00:00Z
 
 ## Razón del veto

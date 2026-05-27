@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `will-israel-strike-6-countries-in-2026`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.1050
+- **Precio YES**: 0.1070
 - **Volumen 24h**: 636710.86 USD
 - **End date**: 2026-12-31T00:00:00Z
 
@@ -37,7 +37,7 @@ memoria: exact slug match (score 1.00)
 - veto `us-announces-new-iran-agreementceasefire-extension-by-may-27` score=0.40 (same category; same price bucket low)
 - veto `us-announces-new-iran-agreementceasefire-extension-by-may-28` score=0.40 (same category; same price bucket low)
 - veto `israel-x-iran-permanent-peace-deal-by-may-31-2026` score=0.40 (same category; same price bucket low)
-- veto `israel-closes-its-airspace-by-may-31` score=0.40 (same category; same price bucket low)
+- veto `iran-agrees-to-surrender-enriched-uranium-stockpile-by-may-31-2026` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 
