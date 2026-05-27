@@ -1,0 +1,86 @@
+{
+  "adapted": {
+    "headline": "Auxiliar Administrativo | Gestión de Incidencias y Atención al Cliente",
+    "summary": "Estudiante de Ciclo Superior en Administración y Finanzas con experiencia en atención al cliente, gestión de pedidos y resolución de incidencias. Dominio avanzado de Microsoft 365 y herramientas digitales de gestión. Perfil organizado, resolutivo y orientado a la tramitación eficiente de solicitudes y reclamaciones.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 – Julio 2021",
+        "bullets": [
+          "Gestión de pedidos y atención directa al cliente en sala, barra y recepción.",
+          "Resolución de incidencias y reclamaciones con orientación a la satisfacción del cliente.",
+          "Cobro en caja y control de operaciones administrativas básicas del punto de venta.",
+          "Trabajo en equipo en entorno de alta demanda con comunicación en inglés."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft 365 (Word, Excel, Outlook)",
+      "Excel avanzado",
+      "Atención al cliente y gestión de reclamaciones",
+      "Resolución de incidencias",
+      "Gestión de pedidos",
+      "Google Workspace",
+      "Herramientas de IA y chatbots empresariales"
+    ],
+    "skills_secondary": [
+      "Capacidad de liderazgo y trabajo en equipo",
+      "Mejora y digitalización de procesos",
+      "Soporte de Tecnologías de la Información (Google IT Support)",
+      "Inteligencia Artificial con Microsoft Azure",
+      "Organización y gestión documental",
+      "Comunicación escrita y oral",
+      "Adaptabilidad y orientación al detalle"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline ajustado a rol administrativo de incidencias en lugar del headline genérico de estudiante.",
+      "Bullets de experiencia en hostelería reformulados para enfatizar gestión de pedidos, resolución de incidencias y atención al cliente — palabras clave directas de la oferta.",
+      "Skills_primary reordenadas para priorizar herramientas administrativas (Microsoft 365, Excel), atención al cliente y resolución de incidencias sobre skills tecnológicas de desarrollo.",
+      "Skills técnicas del perfil JSON (Python, JavaScript, Docker, SQL, etc.) excluidas de ambas listas por ser irrelevantes para este puesto administrativo.",
+      "Nivel de inglés corregido de 'alto' (CV original) a 'B1' conforme al canon oficial del perfil.",
+      "Summary orientado al perfil de auxiliar administrativo para tramitación de incidencias en pedidos online."
+    ],
+    "confidence": 0.72,
+    "target_role": "Auxiliar Administrativo/a Incidencias Pedidos Online – Servinform",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T20:58:38.970Z"
+  },
+  "offer_id": "offer-5-servinform",
+  "offer_title": "Aux. Administrativo/a Incidencias Pedidos Online",
+  "company": "Servinform",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

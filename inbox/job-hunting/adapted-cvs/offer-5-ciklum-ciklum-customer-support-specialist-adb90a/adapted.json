@@ -1,0 +1,89 @@
+{
+  "adapted": {
+    "headline": "Estudiante de Administración y Finanzas | Orientado a Customer Support y Digitalización de Procesos",
+    "summary": "Candidato con experiencia directa en atención al cliente presencial en inglés y español, manejo de Microsoft 365, Google Workspace y conocimientos en IA y chatbots empresariales. Perfil resolutivo, organizado y orientado a la mejora de procesos, con formación complementaria en soporte de tecnologías de la información (Google IT Support). Disponibilidad inmediata y alta adaptabilidad a entornos digitales y remotos.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow",
+        "period": "Junio 2021 – Julio 2021",
+        "bullets": [
+          "Atención directa al cliente en inglés y español, gestionando consultas, pedidos e incidencias en un entorno de alta rotación.",
+          "Cobro en caja y gestión de pagos, garantizando la satisfacción del cliente durante todo el proceso.",
+          "Recepción y orientación de clientes (host) con comunicación proactiva y resolución de incidencias en tiempo real.",
+          "Colaboración en equipo bajo presión, distribuyendo tareas para mantener un servicio fluido y eficiente."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Atención al cliente",
+      "Resolución de problemas",
+      "Microsoft 365",
+      "Google Workspace",
+      "Herramientas de IA y chatbots empresariales",
+      "Comunicación en inglés (B1)",
+      "Trabajo en equipo"
+    ],
+    "skills_secondary": [
+      "Excel avanzado",
+      "Google IT Support (certificación)",
+      "Microsoft Azure (IA)",
+      "Gestión de correo electrónico",
+      "Mejora de procesos digitales",
+      "Ofimática avanzada",
+      "Organización y gestión de tareas",
+      "Capacidad de liderazgo"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados, sin completar)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reorientado de perfil genérico de A&F a 'Customer Support y Digitalización de Procesos' para alinear con el rol objetivo.",
+      "Summary redactado destacando experiencia en atención al cliente en inglés, herramientas digitales y certificación Google IT Support como diferenciadores clave para el rol.",
+      "Experiencia en The Fallow reformulada con bullets orientados a soporte al cliente: gestión de consultas, resolución de incidencias en tiempo real, comunicación proactiva.",
+      "Skills primarias priorizadas con foco en customer support: atención al cliente, resolución de problemas, Microsoft 365, Google Workspace, IA/chatbots.",
+      "Excel avanzado movido a skills secundarias (menos central para CS puro que para finanzas/operaciones).",
+      "Google IT Support y Microsoft Azure (IA) destacados en skills secundarias como diferenciadores tecnológicos para un rol de soporte moderno.",
+      "Educación reordenada: CFGS A&F primero (formación principal vigente), seguido de certificaciones relevantes al rol, economía al final.",
+      "Nota: la JD proporcionada es mínima (solo título del puesto); la adaptación se basa en requisitos típicos de Customer Support Specialist."
+    ],
+    "confidence": 0.66,
+    "target_role": "Customer Support Specialist — Ciklum",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T20:41:25.531Z"
+  },
+  "offer_id": "offer-5-ciklum",
+  "offer_title": "Customer Support Specialist",
+  "company": "Ciklum",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

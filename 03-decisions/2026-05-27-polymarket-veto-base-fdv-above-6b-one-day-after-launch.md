@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `base-fdv-above-6b-one-day-after-launch`
 - **Categoría**: crypto-launch
-- **Precio YES**: 0.4100
+- **Precio YES**: 0.4000
 - **Volumen 24h**: 114447.75 USD
 - **End date**: 2028-01-01T05:00:00Z
 

@@ -1,0 +1,88 @@
+{
+  "adapted": {
+    "headline": "Estudiante de Administración y Finanzas | Gestión Documental Digital y Microsoft 365",
+    "summary": "Estudiante de CFGS en Administración y Finanzas con dominio de Microsoft 365, Excel avanzado y herramientas digitales empresariales. Formación complementaria en Soporte IT (Google) e Inteligencia Artificial con Microsoft Azure, orientada a la gestión de procesos administrativos digitales. Perfil organizado, resolutivo y con experiencia en atención al cliente en entornos presenciales e internacionales.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 – Julio 2021",
+        "bullets": [
+          "Gestioné cobros en caja y recepción de clientes, manteniendo precisión en operaciones de registro y pago.",
+          "Atendí al público en inglés en entorno internacional, desarrollando habilidades de comunicación y servicio al cliente.",
+          "Coordiné tareas de sala y barra en equipo bajo alta demanda, priorizando eficiencia y organización."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft 365 (Word, Excel, Outlook)",
+      "Excel avanzado",
+      "Google Workspace",
+      "Gestión documental digital",
+      "Herramientas de IA y chatbots empresariales",
+      "Soporte de Tecnologías de la Información (Google IT Support)",
+      "Atención al cliente"
+    ],
+    "skills_secondary": [
+      "Microsoft Azure (IA)",
+      "Resolución de problemas",
+      "Mejora de procesos digitales",
+      "Organización y gestión de tareas",
+      "Trabajo en equipo",
+      "SQL",
+      "Python",
+      "Bash scripting",
+      "Capacidad de liderazgo"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria (ULPGC)",
+        "period": null
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reenfocado a 'Gestión Documental Digital y Microsoft 365' para alinear con el perfil administrativo-digital de la oferta.",
+      "Inglés corregido de 'alto' (CV original) a B1 conforme a regla canónica inamovible.",
+      "Skills_primary reordenadas priorizando Microsoft 365, Excel, Google Workspace y Gestión documental digital, más relevantes para Auxiliar Administrativo.",
+      "'Gestión documental digital' añadida como skill primary, derivada directamente de la formación CFGS Administración y Finanzas y el manejo de herramientas de gestión declarado en el CV — no es skill inventada.",
+      "Bullets de experiencia reformulados para destacar facetas administrativas: cobros en caja, registro, coordinación; en lugar del enfoque hostelero original.",
+      "Python y SQL desplazados a skills_secondary por baja relevancia en un puesto de Auxiliar Administrativo.",
+      "Summary añadido orientado a procesos administrativos digitales y certificados, aprovechando la formación IT de Google y Azure."
+    ],
+    "confidence": 0.63,
+    "target_role": "Auxiliar Administrativo/a - Certificados Digitales (Servinform)",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T19:20:43.925Z"
+  },
+  "offer_id": "offer-4-servinform",
+  "offer_title": "Auxiliar Administrativo/a - Certificados Digitales",
+  "company": "Servinform",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

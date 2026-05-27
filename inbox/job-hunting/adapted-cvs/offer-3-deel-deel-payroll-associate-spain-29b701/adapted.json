@@ -1,0 +1,89 @@
+{
+  "adapted": {
+    "headline": "Estudiante de Administración y Finanzas | Orientado a Payroll, Datos y Mejora de Procesos",
+    "summary": "Estudiante de Administración y Finanzas con dominio de Excel avanzado y herramientas de gestión como Microsoft 365 y Google Workspace. Perfil organizado y resolutivo, con interés activo en la digitalización y automatización de procesos administrativos y financieros. Disponibilidad inmediata y orientación a entornos de trabajo remoto y asíncrono.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 · Julio 2021",
+        "bullets": [
+          "Gestioné cobros en caja con precisión y registro de transacciones en entorno de alta rotación.",
+          "Coordiné la recepción y atención al cliente en inglés, manteniendo estándares de calidad en cada interacción.",
+          "Colaboré en equipo para gestionar pedidos simultáneos, desarrollando capacidad de priorización y trabajo bajo presión."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Excel avanzado",
+      "Microsoft 365",
+      "Google Workspace",
+      "Gestión y control de datos",
+      "Administración y Finanzas (formación en curso)",
+      "Atención al detalle y organización",
+      "Herramientas de IA y chatbots empresariales"
+    ],
+    "skills_secondary": [
+      "Google IT Support",
+      "Inteligencia Artificial con Microsoft Azure",
+      "Automatización de tareas y hojas de cálculo",
+      "Resolución de problemas",
+      "Capacidad de liderazgo y trabajo en equipo",
+      "Mejora de procesos digitales",
+      "Gestión de correo electrónico",
+      "Atención al cliente",
+      "Trabajo remoto y asíncrono"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reorientado explícitamente hacia Payroll y procesos financieros para alinear con la oferta de Deel.",
+      "Summary redactado destacando Excel avanzado, Microsoft 365 y Google Workspace como herramientas directamente relevantes para un rol de Payroll Associate.",
+      "Excel avanzado y Gestión de datos promovidos a skills_primary por ser competencias clave en roles de nómina y administración financiera.",
+      "Herramientas de IA y chatbots empresariales incluidas en skills_primary por la orientación de Deel hacia tecnología y automatización.",
+      "Bullet de cajero reformulado para enfatizar precisión en cobros y registro de transacciones, alineado con responsabilidades de payroll.",
+      "Formación en Administración y Finanzas destacada como educación principal y en skills_primary por relevancia directa al rol.",
+      "Nivel de inglés mantenido en B1 según regla canónica — no modificado pese al contexto internacional de Deel.",
+      "Confianza moderada-baja (0.48): el candidato no tiene experiencia directa en payroll ni nóminas; la relevancia se apoya principalmente en la formación en curso y competencias digitales."
+    ],
+    "confidence": 0.48,
+    "target_role": "Payroll Associate | Spain — Deel",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T20:11:31.383Z"
+  },
+  "offer_id": "offer-3-deel",
+  "offer_title": "Payroll Associate | Spain",
+  "company": "Deel",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

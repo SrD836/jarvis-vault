@@ -1,0 +1,91 @@
+{
+  "adapted": {
+    "headline": "Especialista en Atención al Cliente con habilidades digitales avanzadas y experiencia en entornos internacionales",
+    "summary": "Estudiante de Administración y Finanzas con experiencia directa en atención al cliente en entornos de alto ritmo, incluyendo trabajo en inglés en Irlanda. Dominio de herramientas digitales, Microsoft 365 y chatbots empresariales orientados a la resolución eficiente de incidencias. Perfil proactivo y resolutivo, con interés en la mejora continua de procesos de soporte.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 · Julio 2021",
+        "bullets": [
+          "Atendí a clientes en sala y barra en inglés, gestionando consultas, pedidos y reclamaciones con rapidez y empatía.",
+          "Procesé cobros en caja y supervisé la recepción de clientes, asegurando una experiencia fluida y satisfactoria.",
+          "Colaboré en equipo multicultural de alto volumen, coordinando tareas y resolviendo incidencias en tiempo real."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Atención al cliente (presencial y multicanal)",
+      "Resolución de problemas e incidencias",
+      "Microsoft 365 (Word, Excel, Outlook, Teams)",
+      "Google Workspace (Gmail, Drive, Sheets, Meet)",
+      "Herramientas de IA y chatbots empresariales",
+      "Comunicación en inglés",
+      "Trabajo en equipo y coordinación"
+    ],
+    "skills_secondary": [
+      "Excel avanzado",
+      "Google IT Support (certificación)",
+      "Inteligencia Artificial con Microsoft Azure",
+      "LLMs y prompt engineering",
+      "Python",
+      "SQL",
+      "Automatización de tareas digitales",
+      "Gestión de correo electrónico y ofimática",
+      "Organización y gestión del tiempo",
+      "Capacidad de liderazgo",
+      "Interés por mejora de procesos digitales"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reformulado hacia 'Atención al Cliente' en lugar de 'Estudiante de Administración y Finanzas' para alinear con el rol target.",
+      "Skills_primary reordenadas para priorizar competencias de customer support: atención al cliente, resolución de problemas, herramientas digitales y comunicación en inglés.",
+      "Python, Docker, Git, REST APIs y otras skills técnicas avanzadas del perfil movidas a secondary o eliminadas, al no ser relevantes para un CS Specialist.",
+      "Bullets de experiencia reformulados para resaltar gestión de reclamaciones, atención en inglés y trabajo en equipo en lugar del énfasis hostelero original.",
+      "Google IT Support y Microsoft Azure AI promovidos arriba en educación para reforzar la credibilidad técnica en soporte digital.",
+      "Grado en Economía (incompleto) movido al final de educación para evitar percepción negativa frente al CFGS en curso.",
+      "Summary añadido enfocando el pitch en entornos internacionales, idioma inglés y herramientas digitales de soporte.",
+      "Confidence moderada-baja (0.58): experiencia en cliente real pero muy breve (1 mes), JD sin requisitos detallados — perfil encaja en entry-level CS pero carece de experiencia formal en soporte técnico."
+    ],
+    "confidence": 0.58,
+    "target_role": "Customer Support Specialist — Ciklum",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T18:11:57.794Z"
+  },
+  "offer_id": "offer-5-ciklum",
+  "offer_title": "Customer Support Specialist",
+  "company": "Ciklum",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

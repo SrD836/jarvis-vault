@@ -1,0 +1,92 @@
+{
+  "adapted": {
+    "headline": "Estudiante de Administración y Finanzas | Excel avanzado · Gestión de datos · Orientado a procesos de nómina",
+    "summary": "Estudiante de Grado Superior en Administración y Finanzas con sólido dominio de Excel avanzado y Microsoft 365, herramientas clave en la gestión de nómina. Perfil organizado y orientado al detalle, con experiencia en manejo de cobros, atención a clientes internacionales y uso de herramientas digitales para la mejora de procesos. Disponible de inmediato para incorporarme a un entorno de payroll en remoto.",
+    "experience": [
+      {
+        "title": "Camarero · Cajero · Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Jun 2021 · Jul 2021",
+        "bullets": [
+          "Gestioné cobros en caja con exactitud en entorno de alta rotación, minimizando errores en el cuadre de caja.",
+          "Atendí a clientes internacionales en inglés como host y en sala, desarrollando comunicación efectiva en entorno multicultural.",
+          "Coordiné distribución de tareas entre compañeros durante el servicio, apoyando la fluidez operativa del equipo.",
+          "Resolví incidencias de pedidos y cobros de forma autónoma bajo presión de tiempo."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Excel avanzado",
+      "Microsoft 365",
+      "Google Workspace",
+      "Gestión administrativa y financiera",
+      "Herramientas de IA y automatización",
+      "Resolución de problemas",
+      "Atención al detalle"
+    ],
+    "skills_secondary": [
+      "Google IT Support",
+      "Microsoft Azure (IA)",
+      "Manejo de chatbots empresariales",
+      "Trabajo en equipo",
+      "Liderazgo y coordinación",
+      "Mejora de procesos digitales",
+      "Python",
+      "SQL",
+      "Hojas de cálculo automatizadas",
+      "Gestión de correo electrónico",
+      "Comunicación en inglés (B1)",
+      "Capacidad de aprendizaje autónomo"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria (ULPGC)",
+        "period": null
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reorientado al rol de Payroll Associate, eliminando el foco genérico en digitalización y enfatizando Excel, gestión de datos y procesos de nómina.",
+      "Excel avanzado promovido a primera posición en skills_primary por ser competencia clave en payroll.",
+      "Experiencia en The Fallow reenmarcada para destacar manejo de cobros/caja y atención al detalle, conectándola con tareas administrativo-financieras.",
+      "Summary de apertura redirigido hacia conceptos de payroll: precisión, gestión de datos, procesos en remoto.",
+      "Skills de AI/automatización mantenidas en secondary como diferencial moderno, pero sin posicionarlas por encima de las administrativas.",
+      "Inglés mantenido en B1 según regla canónica del perfil (el CV original indicaba 'nivel alto', ignorado por hard rule).",
+      "Python y SQL incluidos en secondary como skills reales del perfil, sin forzarlos como relevantes para este rol."
+    ],
+    "confidence": 0.52,
+    "target_role": "Payroll Associate | Spain — Deel",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T20:24:26.787Z"
+  },
+  "offer_id": "offer-3-deel",
+  "offer_title": "Payroll Associate | Spain",
+  "company": "Deel",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

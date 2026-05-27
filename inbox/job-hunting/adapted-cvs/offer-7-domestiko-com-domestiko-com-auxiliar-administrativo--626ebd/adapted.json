@@ -1,0 +1,87 @@
+{
+  "adapted": {
+    "headline": "Auxiliar Administrativo en formación · CFGS Administración y Finanzas · Microsoft 365 & Excel avanzado",
+    "summary": "Estudiante de Administración y Finanzas con dominio de Excel avanzado, Microsoft 365 y Google Workspace, orientado a la eficiencia y organización de procesos administrativos. Experiencia en atención al cliente, gestión de cobros y trabajo en equipo en entornos de alta demanda. Conocimiento complementario en herramientas de IA aplicadas a la gestión documental y automatización de tareas administrativas.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 · Julio 2021",
+        "bullets": [
+          "Gestionó cobros en caja y recepción de clientes, asegurando exactitud en transacciones y atención fluida.",
+          "Coordinó pedidos y comunicación con el equipo en un entorno multilingüe (español e inglés).",
+          "Atendió al público en sala y barra con foco en la satisfacción del cliente y resolución ágil de incidencias."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft 365 (Word, Excel, Outlook)",
+      "Excel avanzado",
+      "Google Workspace",
+      "Gestión y organización documental",
+      "Atención al cliente",
+      "Ofimática",
+      "Resolución de problemas"
+    ],
+    "skills_secondary": [
+      "Herramientas de IA y chatbots empresariales",
+      "Microsoft Azure (IA)",
+      "Google IT Support",
+      "Capacidad de liderazgo",
+      "Trabajo en equipo",
+      "Mejora de procesos digitales",
+      "Automatización de tareas (correo, clasificación, hojas de cálculo)",
+      "Gestión de pedidos"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reenfocado al puesto de Auxiliar Administrativo, destacando el CFGS en Administración y Finanzas y las herramientas de ofimática.",
+      "Summary reescrito para priorizar competencias administrativas (Excel, Microsoft 365, organización) sobre el perfil tecnológico/IA que aparecía primero en el CV original.",
+      "Skills primarias reorganizadas: Microsoft 365, Excel avanzado, ofimática y atención al cliente pasan a primer plano por su directa relevancia al puesto.",
+      "Herramientas de IA y automatización movidas a skills secundarias — son diferencial pero no el núcleo del rol administrativo.",
+      "Skills técnicas de desarrollo (Python, Docker, APIs, Git, SQL, etc.) omitidas por no ser relevantes a este puesto.",
+      "Experiencia en hostelería reformulada resaltando cobro en caja, gestión de pedidos y atención al cliente — aspectos transferibles al rol administrativo.",
+      "Inglés mantenido en B1 conforme a nivel oficial canonical."
+    ],
+    "confidence": 0.78,
+    "target_role": "Auxiliar administrativo/a laboral",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T21:05:01.687Z"
+  },
+  "offer_id": "offer-7-domestiko-com",
+  "offer_title": "Auxiliar administrativo/a laboral",
+  "company": "domestiko.com",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

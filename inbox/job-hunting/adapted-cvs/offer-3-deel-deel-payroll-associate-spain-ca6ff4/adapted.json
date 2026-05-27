@@ -1,0 +1,86 @@
+{
+  "adapted": {
+    "headline": "Estudiante de Administración y Finanzas · Gestión de Datos y Procesos Financieros",
+    "summary": "Estudiante de Ciclo Superior en Administración y Finanzas con dominio avanzado de Excel y herramientas de ofimática (Microsoft 365, Google Workspace). Orientado a la precisión en el manejo de datos numéricos y la optimización de procesos administrativos. Motivado para contribuir en entornos de nóminas y cumplimiento laboral dentro de una empresa global como Deel.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 – Julio 2021",
+        "bullets": [
+          "Gestioné cobros y cuadre de caja diario asegurando exactitud numérica en cada transacción.",
+          "Atendí reclamaciones e incidencias de facturación de clientes internacionales en inglés.",
+          "Coordiné tareas de recepción y gestión de pedidos en equipo bajo entorno de alta demanda."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Excel avanzado",
+      "Microsoft 365",
+      "Google Workspace",
+      "Gestión y control de datos",
+      "Atención al detalle",
+      "Automatización de procesos administrativos",
+      "Resolución de problemas"
+    ],
+    "skills_secondary": [
+      "Herramientas de IA y chatbots empresariales",
+      "Microsoft Azure (IA)",
+      "Google IT Support",
+      "Gestión de efectivo / cobro en caja",
+      "Trabajo en equipo",
+      "Capacidad de liderazgo",
+      "Mejora de procesos digitales",
+      "Ofimática avanzada"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      },
+      {
+        "degree": "Google IT Support",
+        "institution": "Curso Online (Google)",
+        "period": null
+      },
+      {
+        "degree": "Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline ajustado hacia gestión de datos y procesos financieros, alineado con las responsabilidades de un Payroll Associate.",
+      "Summary añadido con pitch específico para Deel, destacando Excel avanzado, Microsoft 365 y motivación por el compliance y la precisión numérica.",
+      "Excel avanzado, Microsoft 365 y Google Workspace promovidos a skills_primary por su alta relevancia en procesos de nómina y administración de datos.",
+      "Bullets de experiencia reenmarcados para resaltar exactitud numérica, cuadre de caja y resolución de incidencias de facturación — transferibles a auditoría de nóminas.",
+      "Skills de desarrollo (Python, Docker, JavaScript, etc.) presentes en el perfil estructurado omitidas: no aparecen en el CV original y no son relevantes para este rol payroll administrativo.",
+      "Confianza moderada-baja (0.45): la formación en Administración y Finanzas es directamente relevante, pero no existe experiencia previa en nóminas ni manejo de software RRHH especializado (Workday, SAP HR, ADP, etc.)."
+    ],
+    "confidence": 0.45,
+    "target_role": "Payroll Associate | Spain — Deel",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T21:31:45.637Z"
+  },
+  "offer_id": "offer-3-deel",
+  "offer_title": "Payroll Associate | Spain",
+  "company": "Deel",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

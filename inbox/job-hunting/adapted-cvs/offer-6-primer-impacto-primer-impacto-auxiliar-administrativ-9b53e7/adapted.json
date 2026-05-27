@@ -1,0 +1,88 @@
+{
+  "adapted": {
+    "headline": "Estudiante de Administración y Finanzas · Ofimática avanzada · Atención al cliente",
+    "summary": "Estudiante de CFGS en Administración y Finanzas con dominio de Excel avanzado y el paquete Microsoft 365, orientado a la gestión eficiente de tareas administrativas y documentación. Experiencia en atención al cliente, gestión de caja y trabajo en equipo en entornos de alta demanda. Perfil resolutivo y organizado, con interés en la mejora continua de procesos de oficina.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 – Julio 2021",
+        "bullets": [
+          "Gestioné cobros en caja y cuadre de cuentas con precisión en entorno de alta afluencia.",
+          "Coordiné la recepción y distribución de clientes, priorizando tareas simultáneas de forma organizada.",
+          "Atendí pedidos y resolví incidencias en inglés, garantizando la satisfacción del cliente.",
+          "Colaboré con el equipo para mantener el flujo operativo durante los servicios."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft 365 (Word, Excel, Outlook)",
+      "Excel avanzado (hojas automatizadas, fórmulas)",
+      "Google Workspace",
+      "Gestión documental y archivo",
+      "Atención al cliente",
+      "Organización y gestión de tareas",
+      "Ofimática general"
+    ],
+    "skills_secondary": [
+      "Herramientas de IA y chatbots empresariales",
+      "Resolución de problemas",
+      "Trabajo en equipo y coordinación",
+      "Capacidad de liderazgo",
+      "Google IT Support (certificación)",
+      "Inteligencia Artificial con Microsoft Azure",
+      "Mejora de procesos digitales",
+      "Gestión de correo electrónico",
+      "Control y clasificación de datos"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reorientado al rol de auxiliar administrativo, destacando ofimática y atención al cliente en lugar del enfoque tecnológico/digital del CV original.",
+      "Skills primarias reordenadas para priorizar Microsoft 365, Excel y gestión documental, directamente relevantes para el puesto.",
+      "Herramientas de IA y chatbots rebajadas a skills secundarias — siguen siendo un diferenciador pero no son el foco principal de un auxiliar admin.",
+      "Bullets de la experiencia en The Fallow reformulados para resaltar gestión de caja, organización y coordinación en lugar de la faceta hostelera.",
+      "Python, JavaScript, Docker y demás skills de desarrollo omitidas — no aplican a esta oferta y podrían generar desajuste de expectativas.",
+      "Nivel de inglés mantenido en B1 conforme a la regla canónica, aunque el CV original indicaba 'nivel alto'."
+    ],
+    "confidence": 0.78,
+    "target_role": "Auxiliar administrativo/a — Primer Impacto",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T20:41:02.339Z"
+  },
+  "offer_id": "offer-6-primer-impacto",
+  "offer_title": "Auxiliar administrativo/a",
+  "company": "Primer Impacto",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

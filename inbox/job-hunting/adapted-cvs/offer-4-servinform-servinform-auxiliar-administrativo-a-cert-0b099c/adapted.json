@@ -1,0 +1,85 @@
+{
+  "adapted": {
+    "headline": "Auxiliar Administrativo · Administración y Finanzas en curso | Microsoft 365 · Procesos Digitales",
+    "summary": "Estudiante de CFGS en Administración y Finanzas con alta afinidad digital y dominio de herramientas ofimáticas (Microsoft 365, Google Workspace, Excel avanzado). Formación complementaria en IT Support (Google) e Inteligencia Artificial con Microsoft Azure, con interés directo en la gestión y verificación de documentación digital. Perfil resolutivo, organizado y orientado a la atención al cliente.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "2021 · verano",
+        "bullets": [
+          "Gestión de cobros en caja y control de operaciones de cierre, asegurando la exactitud de los registros.",
+          "Recepción y atención al cliente en inglés, resolviendo incidencias de forma ágil y profesional.",
+          "Coordinación de sala y distribución de tareas dentro del equipo en entorno de alta demanda."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft 365 (Word, Excel avanzado, Outlook)",
+      "Google Workspace",
+      "Ofimática y gestión documental",
+      "Atención al cliente",
+      "Herramientas de IA y chatbots empresariales",
+      "Gestión y control de datos en hojas de cálculo",
+      "Resolución de problemas"
+    ],
+    "skills_secondary": [
+      "Google IT Support (certificación)",
+      "Inteligencia Artificial con Microsoft Azure",
+      "Mejora de procesos digitales",
+      "Trabajo en equipo",
+      "Organización y planificación",
+      "Gestión del correo electrónico",
+      "Automatización de tareas administrativas"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas (en curso)",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": null
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reenfocado al rol de Auxiliar Administrativo con mención explícita a Microsoft 365 y procesos digitales, alineado con la oferta de Servinform.",
+      "Summary reescrito para destacar la formación en CFGS Administración y Finanzas como directamente relevante, y los cursos de Google IT Support y Azure AI como diferenciadores en el contexto de certificados digitales.",
+      "Skills primarias reorganizadas para priorizar ofimática, Microsoft 365, gestión documental y atención al cliente, que son las competencias más demandadas en un puesto de auxiliar administrativo con componente digital.",
+      "Experiencia en hostelería refraseada para destacar gestión de caja, control de registros y atención al cliente, ángulos más transferibles a un entorno administrativo.",
+      "Nivel de inglés mantenido en B1 conforme a regla canónica — no modificado pese a la experiencia en Irlanda.",
+      "Skills técnicas de desarrollo (Python, Docker, etc.) del perfil estructurado omitidas: no presentes en el CV original en texto y no relevantes para este rol administrativo."
+    ],
+    "confidence": 0.62,
+    "target_role": "Auxiliar Administrativo/a - Certificados Digitales (Servinform)",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T21:52:03.921Z"
+  },
+  "offer_id": "offer-4-servinform",
+  "offer_title": "Auxiliar Administrativo/a - Certificados Digitales",
+  "company": "Servinform",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

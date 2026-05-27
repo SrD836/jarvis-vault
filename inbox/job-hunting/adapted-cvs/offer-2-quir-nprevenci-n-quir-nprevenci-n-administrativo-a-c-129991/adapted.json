@@ -1,0 +1,87 @@
+{
+  "adapted": {
+    "headline": "Administrativo/a en formación · Gestión documental y ofimática avanzada · Trabajo remoto",
+    "summary": "Estudiante de Ciclo Superior en Administración y Finanzas con sólido dominio de Microsoft 365, Excel avanzado y herramientas de gestión digital. Perfil organizado y resolutivo, con capacidad para gestionar documentación, coordinar tareas administrativas y trabajar de forma autónoma en remoto. Interés activo en la mejora y digitalización de procesos de back-office.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 – Julio 2021",
+        "bullets": [
+          "Gestionó cobros en caja y registro de pedidos, garantizando exactitud en la documentación de operaciones.",
+          "Coordinó la recepción y distribución de clientes en sala, priorizando tareas bajo presión.",
+          "Comunicó con clientes internacionales en inglés, manteniendo un trato profesional y resolutivo."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft 365 (Word, Excel, Outlook, Teams)",
+      "Excel avanzado (fórmulas, hojas automatizadas)",
+      "Google Workspace",
+      "Gestión y organización documental",
+      "Ofimática profesional",
+      "Resolución de problemas",
+      "Trabajo en remoto autónomo"
+    ],
+    "skills_secondary": [
+      "Herramientas de IA y chatbots empresariales",
+      "Microsoft Azure (curso certificado)",
+      "Google IT Support (curso certificado)",
+      "Automatización de tareas administrativas",
+      "Gestión de correo electrónico y comunicaciones",
+      "Trabajo en equipo y coordinación",
+      "Atención al cliente",
+      "Mejora de procesos digitales"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reformulado para reflejar perfil administrativo y modalidad remota, eliminando el foco en digitalización/IA que no es prioritario en esta oferta.",
+      "Summary reorientado: se enfatiza gestión documental, autonomía en remoto y Microsoft 365, palabras clave directamente relevantes para un puesto CAE en Quirónprevención.",
+      "Skills primarias: se han promovido Microsoft 365, Excel avanzado, Google Workspace y gestión documental; se han retirado Python, Docker, SQL y skills técnicas de programación por ser irrelevantes para este rol.",
+      "Skills secundarias: se mantienen IA/automatización y certificaciones como valor diferencial de digitalización, sin ocupar posiciones primarias.",
+      "Experiencia hostelería reformulada con verbos administrativos (gestionó cobros, coordinó, registró) para acercarla al perfil de backoffice.",
+      "Educación reordenada para destacar el CFGS en Administración y Finanzas como formación directamente alineada con el puesto.",
+      "Confidence moderada-baja: el candidato no tiene experiencia directa en CAE (Coordinación de Actividades Empresariales / documentación de prevención de riesgos laborales), que es el core del puesto en Quirónprevención. La formación y habilidades ofimáticas son el principal punto de apoyo."
+    ],
+    "confidence": 0.52,
+    "target_role": "Administrativo/a CAE - Trabajo Remoto (Quirónprevención)",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T18:30:52.679Z"
+  },
+  "offer_id": "offer-2-quir-nprevenci-n",
+  "offer_title": "Administrativo/a CAE - Trabajo Remoto",
+  "company": "Quirónprevención",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

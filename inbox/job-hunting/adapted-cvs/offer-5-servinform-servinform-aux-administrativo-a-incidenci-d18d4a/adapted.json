@@ -1,0 +1,88 @@
+{
+  "adapted": {
+    "headline": "Aux. Administrativo/a · Gestión de Incidencias y Pedidos Online | Microsoft 365 · Excel Avanzado · Atención al Cliente",
+    "summary": "Estudiante de Administración y Finanzas (CFGS en curso) con sólido manejo de herramientas ofimáticas (Microsoft 365, Excel avanzado) y experiencia directa en gestión de pedidos y atención al cliente. Perfil resolutivo y organizado, habituado a priorizar incidencias para garantizar la satisfacción del cliente. Disponibilidad inmediata.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 – Julio 2021",
+        "bullets": [
+          "Gestioné pedidos de clientes y resolví incidencias en tiempo real en entorno de alta demanda.",
+          "Procesé cobros en caja y verifiqué la exactitud de pedidos, minimizando errores de facturación.",
+          "Atendí a clientes internacionales en inglés, manteniendo comunicación clara y orientada a soluciones.",
+          "Coordiné con el equipo de sala y cocina para garantizar la entrega correcta y puntual de pedidos."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft 365 (Excel avanzado, Outlook, Word)",
+      "Google Workspace",
+      "Resolución de incidencias y problemas",
+      "Gestión y seguimiento de pedidos",
+      "Atención al cliente",
+      "Ofimática avanzada",
+      "Herramientas de IA y chatbots empresariales"
+    ],
+    "skills_secondary": [
+      "Google IT Support",
+      "Inteligencia Artificial con Microsoft Azure",
+      "Mejora de procesos digitales",
+      "Gestión de correo electrónico",
+      "Organización y clasificación de datos",
+      "Hojas de cálculo automatizadas",
+      "Trabajo en equipo",
+      "Capacidad de liderazgo"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reformulado para reflejar el rol de Aux. Administrativo/a en gestión de incidencias y pedidos online.",
+      "Summary reenfocado hacia resolución de incidencias, gestión de pedidos y manejo de herramientas ofimáticas, palabras clave presentes en la oferta.",
+      "Bullets de experiencia hostelera reformulados para destacar gestión de pedidos, resolución de incidencias y procesamiento de cobros en lugar del contexto gastronómico genérico.",
+      "Skills reordenadas: 'Resolución de incidencias', 'Gestión y seguimiento de pedidos' y 'Atención al cliente' promovidas a primary por ser core skills del puesto.",
+      "Herramientas de IA y chatbots empresariales mantenidas en primary como diferenciador de eficiencia administrativa.",
+      "Skills técnicas de programación del perfil (Python, SQL, Docker, etc.) omitidas por no ser relevantes para este rol administrativo.",
+      "Inglés mantenido en B1 (regla hard — sin upgrade aunque la experiencia en Irlanda pudiera sugerir nivel superior)."
+    ],
+    "confidence": 0.62,
+    "target_role": "Aux. Administrativo/a Incidencias Pedidos Online — Servinform",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T19:20:25.891Z"
+  },
+  "offer_id": "offer-5-servinform",
+  "offer_title": "Aux. Administrativo/a Incidencias Pedidos Online",
+  "company": "Servinform",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

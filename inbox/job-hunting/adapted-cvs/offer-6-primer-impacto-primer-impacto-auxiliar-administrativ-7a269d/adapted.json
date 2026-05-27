@@ -1,0 +1,87 @@
+{
+  "adapted": {
+    "headline": "Auxiliar Administrativo · Estudiante de Administración y Finanzas con dominio de Microsoft 365 y herramientas de IA",
+    "summary": "Estudiante de CFGS en Administración y Finanzas con sólido manejo de ofimática avanzada (Excel, Microsoft 365, Google Workspace) y conocimientos en herramientas de inteligencia artificial aplicadas a la gestión empresarial. Persona organizada, resolutiva y orientada a la mejora de procesos, con experiencia en atención al cliente y trabajo en entornos de alta demanda.",
+    "experience": [
+      {
+        "title": "Camarero · Cajero · Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 · Julio 2021",
+        "bullets": [
+          "Gestionó cobros en caja y control de pedidos en entorno de alta afluencia, garantizando exactitud en las transacciones.",
+          "Atendió a clientes en inglés, resolviendo incidencias y manteniendo estándares de servicio.",
+          "Coordinó con el equipo la distribución de tareas para asegurar un flujo de trabajo eficiente en sala."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft 365 (Word, Excel avanzado, Outlook, Teams)",
+      "Google Workspace (Docs, Sheets, Drive, Gmail)",
+      "Excel avanzado (fórmulas, tablas dinámicas, automatización)",
+      "Herramientas de IA y chatbots empresariales",
+      "Gestión administrativa y control documental",
+      "Atención al cliente",
+      "Organización y resolución de problemas"
+    ],
+    "skills_secondary": [
+      "Mejora de procesos digitales",
+      "Trabajo en equipo y liderazgo operativo",
+      "Microsoft Azure (IA aplicada)",
+      "Google IT Support",
+      "Gestión de correo electrónico y agenda",
+      "Hoja de cálculo automatizada",
+      "Clasificación y archivo de documentos",
+      "Comunicación en inglés (B1)"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas (en curso)",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": null
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline ajustado al puesto target 'Auxiliar administrativo/a', sustituyendo el genérico 'Estudiante de Administración y Finanzas'.",
+      "Inglés corregido de 'nivel alto' (CV original) a 'B1', conforme al perfil canónico.",
+      "Skills reordenadas: Excel, Microsoft 365 y Google Workspace promovidos a primary por ser herramientas nucleares del puesto administrativo.",
+      "Herramientas de IA y chatbots mantenidas en primary como diferenciador competitivo frente a otros auxiliares administrativos.",
+      "Bullets de experiencia en The Fallow reformulados para destacar gestión de caja, coordinación de equipo y atención al cliente, aspectos transferibles al rol administrativo.",
+      "Skills de programación (Python, JavaScript, Docker, etc.) del perfil técnico omitidas por no ser relevantes para este puesto.",
+      "Summary redactado orientado a la oferta: énfasis en ofimática, organización y mejora de procesos en lugar de automatización técnica."
+    ],
+    "confidence": 0.78,
+    "target_role": "Auxiliar administrativo/a · Primer Impacto",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T20:24:25.156Z"
+  },
+  "offer_id": "offer-6-primer-impacto",
+  "offer_title": "Auxiliar administrativo/a",
+  "company": "Primer Impacto",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

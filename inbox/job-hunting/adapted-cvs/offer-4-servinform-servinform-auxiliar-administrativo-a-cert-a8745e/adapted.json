@@ -1,0 +1,89 @@
+{
+  "adapted": {
+    "headline": "Auxiliar Administrativo orientado a la digitalización y gestión documental",
+    "summary": "Estudiante de Ciclo Superior en Administración y Finanzas con sólido dominio de herramientas ofimáticas (Excel avanzado, Microsoft 365, Google Workspace) e interés declarado en la mejora de procesos digitales. Familiarizado con inteligencia artificial aplicada a entornos empresariales y con capacidad para gestionar tareas de backoffice de forma organizada y autónoma. Disponible de forma inmediata.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 · Julio 2021",
+        "bullets": [
+          "Gestión de cobros en caja y control de operaciones administrativas del turno.",
+          "Coordinación de equipo y distribución de tareas para mantener el flujo de trabajo eficiente.",
+          "Atención al cliente en inglés, resolución de incidencias y registro de pedidos.",
+          "Experiencia en entorno multilingüe y multitarea con alto volumen de operaciones."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Excel avanzado",
+      "Microsoft 365",
+      "Google Workspace",
+      "Herramientas de IA y chatbots empresariales",
+      "Gestión documental",
+      "Ofimática",
+      "Resolución de problemas"
+    ],
+    "skills_secondary": [
+      "SQL",
+      "Python",
+      "Google IT Support",
+      "Microsoft Azure (IA)",
+      "LLMs / Prompt engineering",
+      "Trabajo en equipo",
+      "Liderazgo operativo",
+      "Mejora de procesos digitales",
+      "Atención al cliente",
+      "Automatización de tareas"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Inglés corregido de 'nivel alto' (CV original) a B1 (nivel oficial canon del candidato)",
+      "Headline reenfocado desde 'Estudiante de Administración y Finanzas' hacia perfil administrativo-digital alineado con la oferta",
+      "Skills primarias priorizadas con herramientas ofimáticas (Excel, Microsoft 365, Google Workspace) y gestión documental por relevancia directa con el rol",
+      "SQL y Python reubicados a skills secundarias; no son núcleo de la oferta pero refuerzan el perfil digital del candidato",
+      "Bullets de experiencia en hostelería reformulados para destacar gestión de cobros, coordinación de equipo y registro de operaciones como skills transferibles a tareas administrativas",
+      "Formación CFGS Administración y Finanzas destacada en primer lugar por ser la credencial más relevante para la posición"
+    ],
+    "confidence": 0.65,
+    "target_role": "Auxiliar Administrativo/a - Certificados Digitales",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T20:11:48.823Z"
+  },
+  "offer_id": "offer-4-servinform",
+  "offer_title": "Auxiliar Administrativo/a - Certificados Digitales",
+  "company": "Servinform",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

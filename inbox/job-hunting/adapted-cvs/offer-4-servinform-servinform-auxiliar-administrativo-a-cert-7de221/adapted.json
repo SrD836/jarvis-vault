@@ -1,0 +1,89 @@
+{
+  "adapted": {
+    "headline": "Auxiliar Administrativo · Ofimática Avanzada y Gestión Documental Digital",
+    "summary": "Estudiante de Administración y Finanzas con dominio de Microsoft 365, Excel avanzado y Google Workspace, orientado a la digitalización y mejora de procesos administrativos. Familiarizado con herramientas de soporte TI e inteligencia artificial aplicadas al entorno empresarial. Perfil organizado, resolutivo y con facilidad para aprender nuevos sistemas y plataformas digitales.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow",
+        "period": "2021 · verano",
+        "bullets": [
+          "Gestión de caja y cobro a clientes, garantizando la exactitud de las operaciones y el registro diario de datos.",
+          "Atención al cliente en español e inglés, resolviendo incidencias con agilidad y trato profesional.",
+          "Coordinación de pedidos y trabajo en equipo en entorno de alta demanda, manteniendo el flujo operativo sin interrupciones."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft 365 (Word, Excel, Outlook)",
+      "Excel avanzado",
+      "Google Workspace",
+      "Gestión documental y ofimática",
+      "Herramientas de IA y chatbots empresariales",
+      "Atención al cliente",
+      "Resolución de problemas"
+    ],
+    "skills_secondary": [
+      "Google IT Support (certificación)",
+      "Inteligencia Artificial con Microsoft Azure",
+      "SQL",
+      "Python",
+      "Automatización de tareas administrativas",
+      "Trabajo en equipo",
+      "Capacidad de liderazgo y distribución de tareas",
+      "Interés por la mejora de procesos digitales",
+      "Git",
+      "REST APIs",
+      "Bash scripting"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria (ULPGC)",
+        "period": null
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline ajustado al rol de Auxiliar Administrativo con énfasis en ofimática avanzada y gestión documental digital, alineado con la oferta.",
+      "Skills primarias reordenadas priorizando Microsoft 365, Excel avanzado y Google Workspace, que son los activos más directamente relevantes para un puesto administrativo.",
+      "Nivel de inglés corregido de 'alto' (CV original) a B1, conforme al nivel oficial canónico del candidato.",
+      "Bullets de la experiencia en hostelería reformulados para destacar gestión de datos, registro de operaciones de caja y coordinación — habilidades transferibles al entorno administrativo.",
+      "Summary reenfocado en digitalización y ofimática en lugar de automatización/IA, más adecuado para un puesto auxiliar de perfil mixto administrativo-digital.",
+      "Skills tecnológicas del perfil estructurado (SQL, Python, Git) mantenidas en secondary como diferenciadores, sin promoverlas a primary dado el perfil del puesto."
+    ],
+    "confidence": 0.67,
+    "target_role": "Auxiliar Administrativo/a - Certificados Digitales (Servinform)",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T22:07:50.474Z"
+  },
+  "offer_id": "offer-4-servinform",
+  "offer_title": "Auxiliar Administrativo/a - Certificados Digitales",
+  "company": "Servinform",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

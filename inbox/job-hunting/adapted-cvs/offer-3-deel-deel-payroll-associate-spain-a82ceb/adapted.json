@@ -1,0 +1,89 @@
+{
+  "adapted": {
+    "headline": "Estudiante de Administración y Finanzas orientado a Payroll & Operaciones | Excel avanzado · Microsoft 365 · SQL",
+    "summary": "Estudiante de Ciclo Superior en Administración y Finanzas con sólido manejo de Excel avanzado, Microsoft 365 y herramientas de gestión de datos. Interés activo en la digitalización de procesos administrativos y experiencia práctica en entornos de atención al cliente en inglés. Disponibilidad inmediata y capacidad de trabajo remoto en horario asíncrono.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 · Julio 2021",
+        "bullets": [
+          "Gestionó cobros en caja y cuadre de cierres diarios con atención a la exactitud numérica.",
+          "Coordinó la recepción de clientes y registro de pedidos en entorno bilingüe (español e inglés).",
+          "Trabajó en equipo bajo alta demanda, priorizando tareas para mantener la eficiencia operativa."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft Excel (avanzado)",
+      "Microsoft 365",
+      "Google Workspace",
+      "SQL",
+      "Gestión y control de datos",
+      "Resolución de problemas",
+      "Administración y Finanzas"
+    ],
+    "skills_secondary": [
+      "Python",
+      "Automatización de procesos",
+      "Herramientas de IA / chatbots empresariales",
+      "Microsoft Azure (IA)",
+      "Google IT Support",
+      "Bash scripting",
+      "Git",
+      "Atención al cliente",
+      "Trabajo en equipo",
+      "Capacidad de liderazgo",
+      "Mejora de procesos digitales"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria (ULPGC)",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Google IT Support Certificate",
+        "institution": "Curso Online (Google)",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reorientado a Payroll & Operaciones para alinearlo con la oferta de Deel.",
+      "Excel avanzado, Microsoft 365 y SQL promovidos a skills_primary por ser herramientas clave en roles de payroll.",
+      "Bullet de cajero reformulado para destacar cuadre numérico y exactitud, directamente relevante para conciliación de nóminas.",
+      "Python, IA y automatización movidos a skills_secondary: presentes en el perfil pero secundarios en una posición de Payroll Associate.",
+      "Summary escrito enfocando base en Administración & Finanzas, gestión de datos y disponibilidad remota — valores que Deel busca en este rol.",
+      "Inglés mantenido en B1 per regla canónica del perfil, sin elevar pese a la experiencia en Irlanda."
+    ],
+    "confidence": 0.55,
+    "target_role": "Payroll Associate | Spain — Deel",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T20:41:01.333Z"
+  },
+  "offer_id": "offer-3-deel",
+  "offer_title": "Payroll Associate | Spain",
+  "company": "Deel",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

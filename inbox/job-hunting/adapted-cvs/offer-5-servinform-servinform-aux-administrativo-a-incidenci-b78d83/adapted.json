@@ -1,0 +1,90 @@
+{
+  "adapted": {
+    "headline": "Auxiliar Administrativo · Gestión de Incidencias y Pedidos Online",
+    "summary": "Estudiante de Grado Superior en Administración y Finanzas con experiencia directa en gestión de pedidos, cobro en caja y atención al cliente presencial y en inglés. Perfil resolutivo y organizado, con dominio de herramientas de ofimática (Microsoft 365, Excel avanzado) y capacidad para gestionar incidencias de forma ágil y metódica.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 – Julio 2021",
+        "bullets": [
+          "Gestioné pedidos en sala y barra, coordinando entregas y resolviendo incidencias en tiempo real con clientes.",
+          "Realicé cobros en caja y cuadre de cuentas, garantizando la exactitud de las transacciones.",
+          "Recepcioné y orienté a clientes en inglés, ofreciendo atención personalizada y resolviendo dudas sobre el servicio.",
+          "Colaboré en equipo bajo presión, distribuyendo tareas para mantener el flujo operativo eficiente."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Atención al cliente",
+      "Gestión y seguimiento de pedidos",
+      "Resolución de incidencias",
+      "Microsoft Excel (avanzado)",
+      "Microsoft 365 (Word, Outlook, Teams)",
+      "Organización y gestión documental",
+      "Comunicación en inglés"
+    ],
+    "skills_secondary": [
+      "Google Workspace",
+      "Herramientas de IA y chatbots empresariales",
+      "Google IT Support (certificación)",
+      "Inteligencia Artificial con Microsoft Azure (certificación)",
+      "Trabajo en equipo",
+      "Capacidad de liderazgo",
+      "Mejora de procesos digitales",
+      "Resolución de problemas",
+      "Manejo de programas de gestión"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reorientado de 'Estudiante de Administración y Finanzas' a 'Auxiliar Administrativo · Gestión de Incidencias y Pedidos Online' para alinearse con el rol target.",
+      "Summary redactado para enfatizar gestión de pedidos, resolución de incidencias y ofimática, en lugar de digitalización y automatización.",
+      "Bullets de experiencia reformulados: se destacan gestión de pedidos, cobro en caja e incidencias en lugar de trabajo en equipo genérico.",
+      "Skills primarias reorganizadas: subidos 'Gestión de pedidos', 'Resolución de incidencias' y 'Atención al cliente' por ser las competencias centrales de la oferta.",
+      "Skills de IA/programación (Python, Docker, LLMs) omitidas de primarias y secundarias por no ser relevantes para este rol administrativo.",
+      "Microsoft Excel y Microsoft 365 promovidos a skills primarias por su uso habitual en tareas administrativas de back-office.",
+      "Formación académica en Administración y Finanzas posicionada primera por alineación directa con el puesto.",
+      "Nota: la escasa experiencia laboral formal reduce la puntuación de confianza; se compensó maximizando la relevancia de los bullets disponibles y la formación académica."
+    ],
+    "confidence": 0.62,
+    "target_role": "Auxiliar Administrativo/a Incidencias Pedidos Online — Servinform",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T18:30:39.133Z"
+  },
+  "offer_id": "offer-5-servinform",
+  "offer_title": "Aux. Administrativo/a Incidencias Pedidos Online",
+  "company": "Servinform",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

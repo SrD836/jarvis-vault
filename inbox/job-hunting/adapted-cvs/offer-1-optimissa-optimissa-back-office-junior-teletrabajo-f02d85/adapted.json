@@ -1,0 +1,90 @@
+{
+  "adapted": {
+    "headline": "Estudiante de Administración y Finanzas | Back Office & Digitalización de Procesos",
+    "summary": "Estudiante de CFGS en Administración y Finanzas con dominio avanzado de Excel, Microsoft 365 y herramientas de IA empresarial. Perfil orientado a la eficiencia operativa, la gestión de datos y la mejora de procesos en entornos digitales. Disponibilidad inmediata para trabajo en remoto.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 · Julio 2021",
+        "bullets": [
+          "Gestioné el cobro en caja con precisión, asegurando el control y registro de transacciones diarias.",
+          "Coordiné la atención al cliente en inglés, resolviendo incidencias con rapidez y profesionalidad.",
+          "Trabajé en equipo en entorno de alta demanda, gestionando pedidos y distribuyendo tareas para mantener el flujo operativo.",
+          "Colaboré en la recepción y registro de clientes (rol Host), aplicando protocolos de organización interna."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Excel avanzado",
+      "Microsoft 365 (Word, Outlook, Teams)",
+      "Google Workspace",
+      "Herramientas de IA y chatbots empresariales",
+      "Gestión y organización de datos",
+      "Ofimática avanzada"
+    ],
+    "skills_secondary": [
+      "Google IT Support",
+      "Microsoft Azure (IA)",
+      "SQL (básico)",
+      "Python (básico)",
+      "Automatización de procesos",
+      "Atención al cliente",
+      "Resolución de problemas",
+      "Trabajo en equipo",
+      "Gestión de correo electrónico",
+      "Clasificación y archivo documental",
+      "Capacidad de liderazgo",
+      "Mejora continua de procesos"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Google IT Support",
+        "institution": "Curso Online",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline ajustado de 'Estudiante de Administración y Finanzas' genérico a foco explícito en Back Office y digitalización, alineado con el rol target.",
+      "Skills primarias reorientadas: Excel, Microsoft 365, Google Workspace e IA empresarial pasan a primer plano por ser las más relevantes para un Back Office Junior; Python, Docker, Linux y el resto del stack técnico-dev del perfil canónico quedan fuera o en secundarias por ser irrelevantes para este rol.",
+      "Bullets de la experiencia en hostelería reformulados con verbos de acción (Gestioné, Coordiné, Trabajé, Colaboré) y énfasis en control de datos, gestión de pedidos y coordinación operativa — competencias transferibles al contexto back-office.",
+      "Skills secundarias ampliadas con 'Automatización de procesos', 'Gestión de correo' y 'Clasificación documental', extraídas del apartado 'Sobre mí' del CV original, donde el candidato menciona estas áreas de interés y práctica activa.",
+      "Nivel de inglés fijado en B1 según el perfil canónico estructurado; el CV original indicaba 'nivel alto' de forma subjetiva.",
+      "El Grado en Economía (incompleto) se mantiene como formación complementaria, aportando contexto sin inflar el perfil."
+    ],
+    "confidence": 0.7,
+    "target_role": "Back Office Junior (Teletrabajo) — Optimissa",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T18:30:54.252Z"
+  },
+  "offer_id": "offer-1-optimissa",
+  "offer_title": "Back Office Junior | Teletrabajo",
+  "company": "Optimissa",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}

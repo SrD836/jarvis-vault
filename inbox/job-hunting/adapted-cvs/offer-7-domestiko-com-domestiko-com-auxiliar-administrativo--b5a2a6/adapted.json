@@ -1,0 +1,90 @@
+{
+  "adapted": {
+    "headline": "Auxiliar Administrativo · Estudiante de Administración y Finanzas con dominio de Microsoft 365 y Excel avanzado",
+    "summary": "Estudiante de CFGS en Administración y Finanzas con sólida base en ofimática, gestión documental y herramientas digitales. Manejo avanzado de Excel, Microsoft 365 y Google Workspace, con capacidad demostrada para organizar información, atender clientes y trabajar en equipo bajo presión. Perfil orientado a la eficiencia y la mejora de procesos administrativos.",
+    "experience": [
+      {
+        "title": "Camarero / Cajero / Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 · Julio 2021",
+        "bullets": [
+          "Gestioné el cobro en caja y el registro de operaciones diarias con precisión y responsabilidad.",
+          "Atendí a clientes en inglés y español, resolviendo incidencias con autonomía y orientación al servicio.",
+          "Coordiné la recepción y distribución de pedidos dentro del equipo, garantizando fluidez operativa.",
+          "Colaboré en entorno multicultural de alta demanda, desarrollando capacidad de adaptación y trabajo en equipo."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft 365 (Word, Excel, Outlook, Teams)",
+      "Excel avanzado (hojas automatizadas, fórmulas, gestión de datos)",
+      "Google Workspace",
+      "Gestión documental y ofimática",
+      "Atención al cliente",
+      "Organización y planificación de tareas",
+      "Herramientas de IA y chatbots empresariales"
+    ],
+    "skills_secondary": [
+      "Google IT Support",
+      "Inteligencia Artificial con Microsoft Azure",
+      "Resolución de problemas",
+      "Trabajo en equipo",
+      "Capacidad de liderazgo",
+      "Mejora de procesos digitales",
+      "Cobro en caja / TPV",
+      "Comunicación en inglés",
+      "Automatización de tareas rutinarias",
+      "SQL (consultas básicas)"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": "En curso"
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Formación online",
+        "period": null
+      },
+      {
+        "degree": "Google IT Support",
+        "institution": "Formación online (Google)",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reenfocado al puesto de Auxiliar Administrativo, eliminando la mención genérica de 'Estudiante de Administración y Finanzas' como único descriptor.",
+      "Promovidos Microsoft 365, Excel avanzado y Google Workspace a skills_primary por ser herramientas centrales en roles administrativos.",
+      "Reformulados los bullets de experiencia hostelera para destacar gestión de caja, organización de pedidos y atención al cliente, competencias transferibles al ámbito administrativo-laboral.",
+      "Desplazados Python, Docker, Linux, REST APIs y otras skills técnicas de desarrollo al no ser relevantes para esta oferta (omitidas del output para no distorsionar el perfil).",
+      "Incluido SQL como skill secundario a nivel básico, relevante para gestión de datos en entornos administrativos.",
+      "Summary reescrito con pitch orientado a administración, ofimática y soporte de oficina en lugar de digitalización/IA como foco principal.",
+      "Nivel de inglés ajustado a B1 según perfil estructurado (el CV original indicaba 'nivel alto', que no coincide con el dato canónico)."
+    ],
+    "confidence": 0.72,
+    "target_role": "Auxiliar administrativo/a laboral",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T18:30:12.708Z"
+  },
+  "offer_id": "offer-7-domestiko-com",
+  "offer_title": "Auxiliar administrativo/a laboral",
+  "company": "domestiko.com",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}
