@@ -22,7 +22,7 @@ related:
 - **Slug**: `col-cry-ray-2026-05-27-cry`
 - **Categoría**: other
 - **Precio YES**: 0.4700
-- **Volumen 24h**: 161497.25 USD
+- **Volumen 24h**: 171854.11 USD
 - **End date**: 2026-05-27T19:00:00Z
 
 ## Razón del veto

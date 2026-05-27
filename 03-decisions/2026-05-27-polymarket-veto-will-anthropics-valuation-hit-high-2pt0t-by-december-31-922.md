@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-anthropics-valuation-hit-high-2pt0t-by-december-31-922`
 - **Categoría**: other
 - **Precio YES**: 0.4700
-- **Volumen 24h**: 53932.64 USD
+- **Volumen 24h**: 53848.23 USD
 - **End date**: 2027-01-01T12:00:00Z
 
 ## Razón del veto

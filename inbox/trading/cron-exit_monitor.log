@@ -9770,3 +9770,52 @@
 2026/05/27 13:55:02 main.go:13: exit_monitor: done
 2026/05/27 14:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/27 14:00:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 14:00:02 monitor.go:146: exit_monitor: 0 closed, 16 remaining
+2026/05/27 14:00:02 main.go:13: exit_monitor: done
+2026/05/27 14:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 14:05:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 14:05:02 monitor.go:146: exit_monitor: 0 closed, 16 remaining
+2026/05/27 14:05:02 main.go:13: exit_monitor: done
+2026/05/27 14:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 14:10:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 14:10:01 monitor.go:146: exit_monitor: 0 closed, 16 remaining
+2026/05/27 14:10:01 main.go:13: exit_monitor: done
+2026/05/27 14:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 14:15:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 14:15:02 monitor.go:146: exit_monitor: 0 closed, 16 remaining
+2026/05/27 14:15:02 main.go:13: exit_monitor: done
+2026/05/27 14:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 14:20:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 14:20:02 monitor.go:146: exit_monitor: 0 closed, 16 remaining
+2026/05/27 14:20:02 main.go:13: exit_monitor: done
+2026/05/27 14:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 14:25:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 14:25:01 monitor.go:146: exit_monitor: 0 closed, 16 remaining
+2026/05/27 14:25:01 main.go:13: exit_monitor: done
+2026/05/27 14:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 14:30:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 14:30:02 monitor.go:146: exit_monitor: 0 closed, 16 remaining
+2026/05/27 14:30:02 main.go:13: exit_monitor: done
+2026/05/27 14:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 14:35:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 14:35:02 monitor.go:146: exit_monitor: 0 closed, 16 remaining
+2026/05/27 14:35:02 main.go:13: exit_monitor: done
+2026/05/27 14:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 14:40:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 14:40:01 monitor.go:146: exit_monitor: 0 closed, 16 remaining
+2026/05/27 14:40:01 main.go:13: exit_monitor: done
+2026/05/27 14:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 14:45:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 14:45:02 monitor.go:146: exit_monitor: 0 closed, 16 remaining
+2026/05/27 14:45:02 main.go:13: exit_monitor: done
+2026/05/27 14:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 14:50:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 14:50:02 monitor.go:146: exit_monitor: 0 closed, 16 remaining
+2026/05/27 14:50:02 main.go:13: exit_monitor: done
+2026/05/27 14:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 14:55:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 14:55:01 monitor.go:127: exit_monitor: closed Will WTI Crude Oil (WTI) hit (HIGH) $105 in May? (stop_loss EARLY) @ 0.0300 src=bestBid liq=$70733: PnL $-45.72 (-80.00%)
+2026/05/27 14:55:09 monitor.go:146: exit_monitor: 1 closed, 15 remaining
+2026/05/27 14:55:09 main.go:13: exit_monitor: done
+2026/05/27 15:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 15:00:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%

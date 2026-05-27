@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-gujarat-titans-win-the-2026-indian-premier-league`
 - **Categoría**: sports-season
-- **Precio YES**: 0.2260
-- **Volumen 24h**: 58535.15 USD
+- **Precio YES**: 0.2240
+- **Volumen 24h**: 58512.75 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
@@ -35,8 +35,8 @@ memoria: exact slug match (score 1.00)
 
 - veto `will-gujarat-titans-win-the-2026-indian-premier-league` score=1.00 (exact slug match)
 - veto `will-psg-win-the-202526-champions-league` score=0.40 (same category; same price bucket mid)
-- veto `will-the-san-antonio-spurs-win-the-nba-western-conference-finals` score=0.40 (same category; same price bucket mid)
 - veto `will-the-oklahoma-city-thunder-win-the-nba-western-conference-finals` score=0.40 (same category; same price bucket mid)
+- veto `will-the-san-antonio-spurs-win-the-nba-western-conference-finals` score=0.40 (same category; same price bucket mid)
 - veto `will-the-oklahoma-city-thunder-win-the-2026-nba-finals` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
