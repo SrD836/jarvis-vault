@@ -2,7 +2,7 @@
 title: "Polymarket veto — us-x-iran-permanent-peace-deal-by-may-31-2026-333-871-241-192-799-449-125"
 type: decision
 date: 2026-05-27
-decision: "Veto de tesis 'US x Iran permanent peace deal by May 31, 2026?' (rule P9): P9: geopolitics pump cluster (price 0.24, 3d)"
+decision: "Veto de tesis 'US x Iran permanent peace deal by May 31, 2026?' (rule P9): P9: geopolitics pump cluster (price 0.26, 3d)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `us-x-iran-permanent-peace-deal-by-may-31-2026-333-871-241-192-799-449-125`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.2400
-- **Volumen 24h**: 2564868.38 USD
+- **Precio YES**: 0.2600
+- **Volumen 24h**: 2654622.02 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `P9`
 
-P9: geopolitics pump cluster (price 0.24, 3d)
+P9: geopolitics pump cluster (price 0.26, 3d)
 
 ## Human notes
 

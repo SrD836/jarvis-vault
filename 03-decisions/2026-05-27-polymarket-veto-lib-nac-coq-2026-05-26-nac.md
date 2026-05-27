@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `lib-nac-coq-2026-05-26-nac`
 - **Categoría**: other
-- **Precio YES**: 0.5400
-- **Volumen 24h**: 247138.37 USD
+- **Precio YES**: 0.7700
+- **Volumen 24h**: 265141.79 USD
 - **End date**: 2026-05-27T00:30:00Z
 
 ## Razón del veto
@@ -34,8 +34,8 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `lib-nac-coq-2026-05-26-nac` score=1.00 (exact slug match)
-- veto `weed-rescheduled-by-december-31` score=0.40 (same category; same price bucket mid)
 - veto `lib-uni-tol-2026-05-26-uni` score=0.40 (same category; same price bucket mid)
+- veto `weed-rescheduled-by-december-31` score=0.40 (same category; same price bucket mid)
 - veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.40 (same category; same price bucket mid)
 - veto `ucl-psg-ars-2026-05-30-psg` score=0.40 (same category; same price bucket mid)
 

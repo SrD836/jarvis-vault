@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-wti-crude-oil-wti-hit-high-105-in-may`
 - **Categoría**: market
 - **Precio YES**: 0.1000
-- **Volumen 24h**: 80484.43 USD
+- **Volumen 24h**: 77837.58 USD
 - **End date**: 2026-06-01T03:59:59.999Z
 
 ## Razón del veto
@@ -34,9 +34,9 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-wti-crude-oil-wti-hit-high-105-in-may` score=1.00 (exact slug match)
-- veto `will-wti-crude-oil-wti-hit-low-85-in-may-266-388-493-155-935-263-225-869-296-224-342-748-678` score=0.70 (slug prefix match; same category)
 - veto `will-wti-crude-oil-wti-hit-high-200-in-may` score=0.70 (slug prefix match; same category)
 - veto `will-wti-crude-oil-wti-hit-high-115-in-may-221` score=0.70 (slug prefix match; same category)
+- veto `will-wti-crude-oil-wti-hit-low-85-in-may-266-388-493-155-935-263-225-869-296-224-342-748-678` score=0.70 (slug prefix match; same category)
 - veto `will-wti-dip-to-80-in-may-2026-734-629-766-626-157-663-256-712-397-816-113-876-832` score=0.40 (same category; same price bucket low)
 
 ## Human notes
