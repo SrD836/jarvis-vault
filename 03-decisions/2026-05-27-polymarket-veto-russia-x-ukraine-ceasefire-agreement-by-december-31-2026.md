@@ -35,9 +35,9 @@ memoria: exact slug match (score 1.00)
 
 - veto `russia-x-ukraine-ceasefire-agreement-by-december-31-2026` score=1.00 (exact slug match)
 - veto `internet-access-restored-in-iran-by-may-31-2026` score=0.40 (same category; same price bucket mid)
-- veto `internet-access-restored-in-iran-by-june-30-2026` score=0.40 (same category; same price bucket mid)
-- veto `us-x-iran-permanent-peace-deal-by-may-31-2026-333-871-241-192-799-449-125` score=0.40 (same category; same price bucket mid)
 - veto `us-iran-nuclear-deal-by-may-31-974` score=0.40 (same category; same price bucket mid)
+- veto `us-x-iran-permanent-peace-deal-by-may-31-2026-333-871-241-192-799-449-125` score=0.40 (same category; same price bucket mid)
+- veto `will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-31-2026-313...` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

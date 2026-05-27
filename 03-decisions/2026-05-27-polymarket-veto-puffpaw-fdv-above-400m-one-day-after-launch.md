@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `puffpaw-fdv-above-400m-one-day-after-launch`
 - **Categoría**: crypto-launch
-- **Precio YES**: 0.1830
+- **Precio YES**: 0.1820
 - **Volumen 24h**: 893200.30 USD
 - **End date**: 2027-01-01T05:00:00Z
 

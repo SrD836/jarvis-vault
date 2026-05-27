@@ -22,7 +22,7 @@ related:
 - **Slug**: `ucl-psg-ars-2026-05-30-psg`
 - **Categoría**: other
 - **Precio YES**: 0.4200
-- **Volumen 24h**: 258662.10 USD
+- **Volumen 24h**: 258678.00 USD
 - **End date**: 2026-05-30T16:00:00Z
 
 ## Razón del veto
@@ -37,7 +37,7 @@ memoria: exact slug match (score 1.00)
 - veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.40 (same category; same price bucket mid)
 - veto `elon-musk-of-tweets-may-22-may-29-160-179` score=0.40 (same category; same price bucket mid)
 - veto `weed-rescheduled-by-december-31` score=0.40 (same category; same price bucket mid)
-- veto `will-mamdani-freeze-nyc-rents-before-2027` score=0.40 (same category; same price bucket mid)
+- veto `will-aaron-rodgers-retire-before-next-season` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

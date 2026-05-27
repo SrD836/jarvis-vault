@@ -9433,3 +9433,56 @@
 2026/05/27 07:55:23 main.go:13: exit_monitor: done
 2026/05/27 08:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/27 08:00:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 08:00:01 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 08:00:01 main.go:13: exit_monitor: done
+2026/05/27 08:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 08:05:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 08:05:01 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 08:05:01 main.go:13: exit_monitor: done
+2026/05/27 08:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 08:10:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 08:10:16 monitor.go:38: exit_monitor: quote fetch error for 2155023: gamma GET 2155023: Get "https://gamma-api.polymarket.com/markets/2155023": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2026/05/27 08:10:16 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 08:10:16 main.go:13: exit_monitor: done
+2026/05/27 08:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 08:15:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 08:15:18 monitor.go:38: exit_monitor: quote fetch error for 562186: gamma GET 562186: Get "https://gamma-api.polymarket.com/markets/562186": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2026/05/27 08:15:22 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 08:15:22 main.go:13: exit_monitor: done
+2026/05/27 08:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 08:20:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 08:20:11 monitor.go:38: exit_monitor: quote fetch error for 569366: gamma GET 569366: Get "https://gamma-api.polymarket.com/markets/569366": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2026/05/27 08:20:11 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 08:20:11 main.go:13: exit_monitor: done
+2026/05/27 08:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 08:25:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 08:25:01 monitor.go:127: exit_monitor: closed Will Ken Paxton win the 2026 Texas Republican Primary? (market_closed) @ 0.9990 src=bestBid liq=$0: PnL $6.38 (8.00%)
+2026/05/27 08:25:04 monitor.go:146: exit_monitor: 1 closed, 16 remaining
+2026/05/27 08:25:04 main.go:13: exit_monitor: done
+2026/05/27 08:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 08:30:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 08:30:19 monitor.go:146: exit_monitor: 0 closed, 16 remaining
+2026/05/27 08:30:19 main.go:13: exit_monitor: done
+2026/05/27 08:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 08:35:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 08:35:03 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 08:35:03 main.go:13: exit_monitor: done
+2026/05/27 08:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 08:40:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 08:40:18 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 08:40:18 main.go:13: exit_monitor: done
+2026/05/27 08:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 08:45:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 08:45:01 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 08:45:01 main.go:13: exit_monitor: done
+2026/05/27 08:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 08:50:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 08:50:13 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 08:50:13 main.go:13: exit_monitor: done
+2026/05/27 08:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 08:55:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 08:55:21 monitor.go:38: exit_monitor: quote fetch error for 947269: gamma GET 947269: Get "https://gamma-api.polymarket.com/markets/947269": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2026/05/27 08:55:21 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 08:55:21 main.go:13: exit_monitor: done
+2026/05/27 09:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 09:00:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%

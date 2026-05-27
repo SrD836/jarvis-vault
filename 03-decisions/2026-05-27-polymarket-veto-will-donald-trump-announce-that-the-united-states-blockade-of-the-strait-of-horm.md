@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-31-2026-313-388-459-589-533`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.3200
-- **Volumen 24h**: 196382.75 USD
+- **Precio YES**: 0.3100
+- **Volumen 24h**: 193118.43 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
@@ -35,9 +35,9 @@ memoria: slug prefix match; same category; same price bucket mid (score 0.90)
 
 - veto `will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-31-2026-313...` score=0.90 (slug prefix match; same category; same price bucket mid)
 - veto `internet-access-restored-in-iran-by-may-31-2026` score=0.40 (same category; same price bucket mid)
-- veto `internet-access-restored-in-iran-by-june-30-2026` score=0.40 (same category; same price bucket mid)
-- veto `us-x-iran-permanent-peace-deal-by-may-31-2026-333-871-241-192-799-449-125` score=0.40 (same category; same price bucket mid)
 - veto `us-iran-nuclear-deal-by-may-31-974` score=0.40 (same category; same price bucket mid)
+- veto `us-x-iran-permanent-peace-deal-by-may-31-2026-333-871-241-192-799-449-125` score=0.40 (same category; same price bucket mid)
+- veto `us-announces-new-iran-agreementceasefire-extension-by-may-31-665-831-238` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 
