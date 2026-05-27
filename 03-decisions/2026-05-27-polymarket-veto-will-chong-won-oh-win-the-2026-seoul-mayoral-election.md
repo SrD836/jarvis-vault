@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-chong-won-oh-win-the-2026-seoul-mayoral-election`
 - **Categoría**: elections
 - **Precio YES**: 0.7800
-- **Volumen 24h**: 58375.41 USD
+- **Volumen 24h**: 55061.74 USD
 - **End date**: 2026-06-03T00:00:00Z
 
 ## Razón del veto

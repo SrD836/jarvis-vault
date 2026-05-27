@@ -8,7 +8,7 @@ model_primary: anthropic/claude-opus-4-7
 delegation_mode: prefer
 allow_agents: [researcher, code-reviewer, debugger, tester, documenter, designer, apier, archivist, auditor, monitor, skill-reviewer, job-hunter, polymarket-handler, skill-dispatcher]
 runtime_children: []
-updated: 2026-05-27T12:00:01
+updated: 2026-05-27T13:00:01
 tags: [agent, jarvis, orchestrator]
 related:
   - "[[../00-MOC]]"
@@ -55,6 +55,8 @@ _(Si no tienes plugin Dataview, mira `02-sessions/` y filtra por frontmatter `ag
 - Si dudas a qué worker delegar → elige el más afín y delega. No te quedes haciéndolo tú.
 
 **Directiva operativa:** Maximiza el paralelismo y delega tareas a los agentes especializados siempre que la complejidad lo justifique. Mantén una estricta trazabilidad de las decisiones en `03-decisions`.
+
+
 
 
 

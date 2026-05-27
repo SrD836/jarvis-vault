@@ -1,7 +1,7 @@
 ---
 title: "🤖 Agentes JARVIS"
 type: moc
-updated: 2026-05-27T12:00:01
+updated: 2026-05-27T13:00:01
 tags: [moc, agent, jarvis]
 related:
   - "[[../00-MOC]]"
@@ -25,8 +25,8 @@ related:
 | [[debugger]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
 | [[tester]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
 | [[auditor]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
-| [[archivist]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
-| [[monitor]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
+| [[archivist]] | worker | `anthropic/claude-haiku-4-5` | — | — |
+| [[monitor]] | worker | `anthropic/claude-haiku-4-5` | — | — |
 | [[designer]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
 | [[job-hunter]] | orchestrator | `anthropic/claude-sonnet-4-6` | researcher, documenter, archivist | — |
 | [[polymarket-handler]] | orchestrator | `anthropic/claude-sonnet-4-6` | researcher | — |
