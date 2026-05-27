@@ -8,7 +8,7 @@ model_primary: anthropic/claude-opus-4-7
 delegation_mode: prefer
 allow_agents: [planner, researcher, archivist, polymarket-handler, skill-dispatcher]
 runtime_children: []
-updated: 2026-05-27T11:30:01
+updated: 2026-05-27T12:00:01
 tags: [agent, jarvis, main]
 related:
   - "[[../00-MOC]]"
@@ -291,6 +291,7 @@ Si necesitas reset interno sin que David escriba /new, hazlo tú silenciosamente
 - `/home/agent/agent-stack/vault/02-sessions/` (transcripts de sesiones anteriores)
 
 Si el usuario pregunta por algo que no encuentras tras buscar honestamente en esos paths, di: "He buscado en [paths] y no encuentro X concreto. ¿Lo discutimos por primera vez ahora o me das una pista de dónde guardamos esto?"
+
 
 
 

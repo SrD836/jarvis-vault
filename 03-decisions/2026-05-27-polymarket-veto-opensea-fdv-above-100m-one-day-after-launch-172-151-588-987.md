@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — puffpaw-fdv-above-400m-one-day-after-launch"
+title: "Polymarket veto — opensea-fdv-above-100m-one-day-after-launch-172-151-588-987"
 type: decision
 date: 2026-05-27
-decision: "Veto de tesis 'Puffpaw FDV above $400M one day after launch?' (rule P4_pre_event): pre-event slug + 218 d to resolution (>=7 threshold)"
+decision: "Veto de tesis 'Opensea FDV above $100M one day after launch?' (rule P4_pre_event): pre-event slug + 218 d to resolution (>=7 threshold)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,14 +15,14 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Puffpaw FDV above $400M one day after launch?
+# Veto: Opensea FDV above $100M one day after launch?
 
 ## Mercado
 
-- **Slug**: `puffpaw-fdv-above-400m-one-day-after-launch`
+- **Slug**: `opensea-fdv-above-100m-one-day-after-launch-172-151-588-987`
 - **Categoría**: crypto-launch
-- **Precio YES**: 0.1150
-- **Volumen 24h**: 893200.30 USD
+- **Precio YES**: 0.6500
+- **Volumen 24h**: 214242.35 USD
 - **End date**: 2027-01-01T05:00:00Z
 
 ## Razón del veto

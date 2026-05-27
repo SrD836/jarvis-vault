@@ -36,8 +36,8 @@ memoria: exact slug match (score 1.00)
 - veto `israel-x-iran-permanent-peace-deal-by-june-30-2026-262` score=1.00 (exact slug match)
 - veto `israel-x-iran-permanent-peace-deal-by-may-31-2026` score=0.90 (slug prefix match; same category; same price bucket low)
 - veto `us-announces-new-iran-agreementceasefire-extension-by-may-28` score=0.40 (same category; same price bucket low)
-- veto `iran-agrees-to-surrender-enriched-uranium-stockpile-by-may-31-2026` score=0.40 (same category; same price bucket low)
-- veto `israel-closes-its-airspace-by-may-31` score=0.40 (same category; same price bucket low)
+- veto `israel-x-hezbollah-permanent-peace-deal-by-may-31-2026` score=0.40 (same category; same price bucket low)
+- veto `us-announces-new-iran-agreementceasefire-extension-by-may-27` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 
