@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `col-cry-ray-2026-05-27-cry`
 - **Categoría**: other
-- **Precio YES**: 0.8000
-- **Volumen 24h**: 879030.93 USD
+- **Precio YES**: 0.9000
+- **Volumen 24h**: 996177.60 USD
 - **End date**: 2026-05-27T19:00:00Z
 
 ## Razón del veto
@@ -35,8 +35,8 @@ memoria: exact slug match (score 1.00)
 
 - veto `col-cry-ray-2026-05-27-cry` score=1.00 (exact slug match)
 - veto `col-cry-ray-2026-05-27-btts` score=0.70 (slug prefix match; same category)
-- veto `col-cry-ray-2026-05-27-draw` score=0.70 (slug prefix match; same category)
 - veto `col-cry-ray-2026-05-27-ray` score=0.70 (slug prefix match; same category)
+- veto `col-cry-ray-2026-05-27-draw` score=0.70 (slug prefix match; same category)
 - veto `will-michael-harris-ii-win-the-2026-nl-comeback-player-of-the-year-award` score=0.40 (same category; same price bucket high)
 
 ## Human notes

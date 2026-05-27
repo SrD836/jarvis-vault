@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `col-cry-ray-2026-05-27-draw`
 - **Categoría**: other
-- **Precio YES**: 0.1900
-- **Volumen 24h**: 262504.87 USD
+- **Precio YES**: 0.1100
+- **Volumen 24h**: 299789.07 USD
 - **End date**: 2026-05-27T19:00:00Z
 
 ## Razón del veto
@@ -34,9 +34,9 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `col-cry-ray-2026-05-27-draw` score=1.00 (exact slug match)
-- veto `col-cry-ray-2026-05-27-cry` score=0.70 (slug prefix match; same category)
-- veto `col-cry-ray-2026-05-27-btts` score=0.70 (slug prefix match; same category)
 - veto `col-cry-ray-2026-05-27-ray` score=0.70 (slug prefix match; same category)
+- veto `col-cry-ray-2026-05-27-btts` score=0.70 (slug prefix match; same category)
+- veto `col-cry-ray-2026-05-27-cry` score=0.70 (slug prefix match; same category)
 - veto `tim-walz-charged-by-december-31-2026` score=0.40 (same category; same price bucket low)
 
 ## Human notes

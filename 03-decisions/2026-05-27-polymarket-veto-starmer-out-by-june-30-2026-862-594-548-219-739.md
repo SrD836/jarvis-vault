@@ -22,7 +22,7 @@ related:
 - **Slug**: `starmer-out-by-june-30-2026-862-594-548-219-739`
 - **Categoría**: executive-action
 - **Precio YES**: 0.1800
-- **Volumen 24h**: 89791.03 USD
+- **Volumen 24h**: 73587.49 USD
 - **End date**: 2026-06-30T12:00:00Z
 
 ## Razón del veto
@@ -35,7 +35,6 @@ memoria: exact slug match (score 1.00)
 
 - veto `starmer-out-by-june-30-2026-862-594-548-219-739` score=1.00 (exact slug match)
 - veto `will-austria-recognize-palestine-before-2027` score=0.40 (same category; same price bucket low)
-- veto `will-germany-recognize-palestine-before-2027` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

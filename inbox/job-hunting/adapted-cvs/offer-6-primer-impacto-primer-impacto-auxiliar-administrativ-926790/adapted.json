@@ -1,0 +1,89 @@
+{
+  "adapted": {
+    "headline": "Estudiante de Administración y Finanzas · Auxiliar Administrativo con dominio de Microsoft 365 y herramientas digitales",
+    "summary": "Estudiante de CF GS en Administración y Finanzas con sólido manejo de Microsoft 365, Google Workspace y Excel avanzado. Orientado a la mejora de procesos y la digitalización de tareas administrativas. Perfil resolutivo, organizado y con experiencia en atención al público en entornos de alta demanda.",
+    "experience": [
+      {
+        "title": "Camarero · Cajero · Host",
+        "org": "The Fallow (Irlanda)",
+        "period": "Junio 2021 – Julio 2021",
+        "bullets": [
+          "Gestionó cobros en caja y cuadre de cuentas en entorno de alta afluencia.",
+          "Coordinó la recepción y distribución de clientes, optimizando tiempos de espera.",
+          "Procesó pedidos y realizó seguimiento de incidencias de servicio en equipo.",
+          "Prestó atención al cliente en inglés, resolviendo dudas y gestionando reclamaciones."
+        ]
+      }
+    ],
+    "skills_primary": [
+      "Microsoft 365 (Word, Excel, Outlook, Teams)",
+      "Excel avanzado",
+      "Google Workspace",
+      "Gestión documental y ofimática",
+      "Herramientas de IA y chatbots empresariales",
+      "Atención al cliente",
+      "Resolución de problemas"
+    ],
+    "skills_secondary": [
+      "Mejora de procesos digitales",
+      "Gestión de pedidos",
+      "Trabajo en equipo",
+      "Capacidad de liderazgo",
+      "Google IT Support",
+      "Microsoft Azure (IA)",
+      "Automatización de tareas rutinarias",
+      "Clasificación y archivo de documentación"
+    ],
+    "education": [
+      {
+        "degree": "Ciclo Formativo de Grado Superior en Administración y Finanzas (en curso)",
+        "institution": "IES Felo Monzón Grau-Bassas",
+        "period": null
+      },
+      {
+        "degree": "Grado en Economía (2 años cursados)",
+        "institution": "Universidad de Las Palmas de Gran Canaria",
+        "period": null
+      },
+      {
+        "degree": "Curso de Soporte de Tecnologías de la Información (Google IT Support)",
+        "institution": "Curso Online",
+        "period": null
+      },
+      {
+        "degree": "Curso de Inteligencia Artificial con Microsoft Azure",
+        "institution": "Curso Online",
+        "period": null
+      }
+    ],
+    "languages": [
+      {
+        "name": "Castellano",
+        "level": "native"
+      },
+      {
+        "name": "Inglés",
+        "level": "B1"
+      }
+    ],
+    "summary_of_changes": [
+      "Headline reformulado para reflejar el rol de Auxiliar Administrativo en lugar del genérico 'Estudiante de Administración y Finanzas'.",
+      "Microsoft 365 y Excel avanzado promovidos a skills_primary por ser competencias nucleares del puesto.",
+      "Google Workspace y Gestión documental/ofimática añadidos a primary para alinear con tareas típicas del auxiliar administrativo.",
+      "Bullets de experiencia en The Fallow reorientados hacia competencias transversales administrativas: cobros, cuadre, gestión de pedidos y atención, en lugar del enfoque hostelero del CV original.",
+      "Herramientas de IA y chatbots empresariales mantenidas en primary como diferenciador de perfil digitalizado.",
+      "Python, JavaScript, Docker, Linux y otras skills técnicas del perfil estructurado omitidas por no ser relevantes para el puesto y no aparecer en el CV original.",
+      "Summary adaptado con pitch directo al rol administrativo, destacando organización, digitalización y manejo de herramientas de oficina.",
+      "Nivel de inglés fijado en B1 según regla canónica."
+    ],
+    "confidence": 0.78,
+    "target_role": "Auxiliar administrativo/a – Primer Impacto",
+    "model": "claudemax/claude-sonnet-4-6",
+    "adapted_at": "2026-05-27T21:44:02.332Z"
+  },
+  "offer_id": "offer-6-primer-impacto",
+  "offer_title": "Auxiliar administrativo/a",
+  "company": "Primer Impacto",
+  "cv_filename": "cv.pdf",
+  "feedback": null
+}
