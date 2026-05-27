@@ -9382,3 +9382,54 @@
 2026/05/27 06:55:14 main.go:13: exit_monitor: done
 2026/05/27 07:00:02 main.go:11: exit_monitor: starting one-shot pass
 2026/05/27 07:00:02 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 07:00:02 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 07:00:02 main.go:13: exit_monitor: done
+2026/05/27 07:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 07:05:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 07:05:09 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 07:05:09 main.go:13: exit_monitor: done
+2026/05/27 07:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 07:10:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 07:10:10 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 07:10:10 main.go:13: exit_monitor: done
+2026/05/27 07:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 07:15:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 07:15:09 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 07:15:09 main.go:13: exit_monitor: done
+2026/05/27 07:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 07:20:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 07:20:04 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 07:20:04 main.go:13: exit_monitor: done
+2026/05/27 07:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 07:25:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 07:25:11 monitor.go:38: exit_monitor: quote fetch error for 2316216: gamma GET 2316216: Get "https://gamma-api.polymarket.com/markets/2316216": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2026/05/27 07:25:12 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 07:25:12 main.go:13: exit_monitor: done
+2026/05/27 07:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 07:30:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 07:30:01 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 07:30:01 main.go:13: exit_monitor: done
+2026/05/27 07:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 07:35:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 07:35:05 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 07:35:05 main.go:13: exit_monitor: done
+2026/05/27 07:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 07:40:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 07:40:16 monitor.go:38: exit_monitor: quote fetch error for 566136: gamma GET 566136: Get "https://gamma-api.polymarket.com/markets/566136": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2026/05/27 07:40:16 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 07:40:16 main.go:13: exit_monitor: done
+2026/05/27 07:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 07:45:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 07:45:08 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 07:45:08 main.go:13: exit_monitor: done
+2026/05/27 07:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 07:50:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 07:50:04 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 07:50:04 main.go:13: exit_monitor: done
+2026/05/27 07:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 07:55:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%
+2026/05/27 07:55:11 monitor.go:38: exit_monitor: quote fetch error for 2270338: gamma GET 2270338: Get "https://gamma-api.polymarket.com/markets/2270338": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2026/05/27 07:55:23 monitor.go:146: exit_monitor: 0 closed, 17 remaining
+2026/05/27 07:55:23 main.go:13: exit_monitor: done
+2026/05/27 08:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/27 08:00:01 monitor.go:22: exit_monitor: config loaded stopLoss=150 takeProfitPct=40%

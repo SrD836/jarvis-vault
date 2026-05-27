@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-renan-santos-win-the-2026-brazilian-presidential-election`
 - **Categoría**: elections
-- **Precio YES**: 0.1520
-- **Volumen 24h**: 68279.53 USD
+- **Precio YES**: 0.1550
+- **Volumen 24h**: 68418.98 USD
 - **End date**: 2026-10-04T00:00:00Z
 
 ## Razón del veto
@@ -35,8 +35,8 @@ memoria: exact slug match (score 1.00)
 
 - veto `will-renan-santos-win-the-2026-brazilian-presidential-election` score=1.00 (exact slug match)
 - veto `will-renan-santos-win-the-first-round-of-the-2026-brazilian-presidential-election` score=0.90 (slug prefix match; same category; same price bucket low)
-- veto `will-rebecca-shepherd-win-the-2026-makerfield-by-election` score=0.40 (same category; same price bucket low)
-- veto `peru-general-election-invalidated-by-june-30` score=0.40 (same category; same price bucket low)
+- veto `will-fernando-haddad-win-the-2026-brazilian-presidential-election` score=0.40 (same category; same price bucket low)
+- veto `will-the-republican-party-hold-exactly-28-or-29-governorships-after-the-2026-midterm-elections` score=0.40 (same category; same price bucket low)
 - veto `will-nancy-dahlstrom-win-the-2026-alaska-governor-election` score=0.40 (same category; same price bucket low)
 
 ## Human notes
