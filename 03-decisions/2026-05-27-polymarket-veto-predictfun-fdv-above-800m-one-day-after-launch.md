@@ -2,7 +2,7 @@
 title: "Polymarket veto — predictfun-fdv-above-800m-one-day-after-launch"
 type: decision
 date: 2026-05-27
-decision: "Veto de tesis 'Predict.fun FDV above $800M one day after launch?' (rule P4_pre_event): pre-event slug + 584 d to resolution (>=7 threshold)"
+decision: "Veto de tesis 'Predict.fun FDV above $800M one day after launch?' (rule P4_pre_event): pre-event slug + 583 d to resolution (>=7 threshold)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `predictfun-fdv-above-800m-one-day-after-launch`
 - **Categoría**: crypto-launch
-- **Precio YES**: 0.3300
+- **Precio YES**: 0.3200
 - **Volumen 24h**: 214941.98 USD
 - **End date**: 2028-01-01T05:00:00Z
 
@@ -29,7 +29,7 @@ related:
 
 **Regla aplicada**: `P4_pre_event`
 
-pre-event slug + 584 d to resolution (>=7 threshold)
+pre-event slug + 583 d to resolution (>=7 threshold)
 
 ## Human notes
 

@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `israel-x-iran-permanent-peace-deal-by-june-30-2026-262`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.2030
-- **Volumen 24h**: 205316.43 USD
+- **Precio YES**: 0.1980
+- **Volumen 24h**: 205014.46 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto
@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `israel-x-iran-permanent-peace-deal-by-june-30-2026-262` score=1.00 (exact slug match)
-- veto `israel-x-iran-permanent-peace-deal-by-may-31-2026` score=0.70 (slug prefix match; same category)
-- veto `internet-access-restored-in-iran-by-june-30-2026` score=0.40 (same category; same price bucket mid)
-- veto `us-x-iran-diplomatic-meeting-by-june-30-2026-983-259-948` score=0.40 (same category; same price bucket mid)
-- veto `us-iran-nuclear-deal-by-may-31-974` score=0.40 (same category; same price bucket mid)
+- veto `israel-x-iran-permanent-peace-deal-by-may-31-2026` score=0.90 (slug prefix match; same category; same price bucket low)
+- veto `us-announces-new-iran-agreementceasefire-extension-by-may-28` score=0.40 (same category; same price bucket low)
+- veto `iran-agrees-to-surrender-enriched-uranium-stockpile-by-may-31-2026` score=0.40 (same category; same price bucket low)
+- veto `us-announces-new-iran-agreementceasefire-extension-by-may-27` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

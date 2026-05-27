@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-psg-win-the-202526-champions-league`
 - **Categoría**: sports-season
 - **Precio YES**: 0.5800
-- **Volumen 24h**: 261265.27 USD
+- **Volumen 24h**: 261285.17 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
