@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-oh-se-hoon-win-the-2026-seoul-mayoral-election"
 type: decision
 date: 2026-05-27
-decision: "Veto de tesis 'Will Oh Se-hoon win the 2026 Seoul Mayoral Election' (rule M2): M2 soft-learned: uncategorized·medium·0.10-0.30 = 11L/2W (wr 15%)"
+decision: "Veto de tesis 'Will Oh Se-hoon win the 2026 Seoul Mayoral Election' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, m2]
+tags: [decision, polymarket, bot, veto, m1]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -22,14 +22,22 @@ related:
 - **Slug**: `will-oh-se-hoon-win-the-2026-seoul-mayoral-election`
 - **Categoría**: elections
 - **Precio YES**: 0.2000
-- **Volumen 24h**: 55059.63 USD
+- **Volumen 24h**: 54352.74 USD
 - **End date**: 2026-06-03T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `M2`
+**Regla aplicada**: `M1`
 
-M2 soft-learned: uncategorized·medium·0.10-0.30 = 11L/2W (wr 15%)
+memoria: exact slug match (score 1.00)
+
+## Patterns en memoria que contribuyeron
+
+- veto `will-oh-se-hoon-win-the-2026-seoul-mayoral-election` score=1.00 (exact slug match)
+- veto `will-abelardo-de-la-espriella-win-the-1st-round-of-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket mid)
+- veto `will-ivn-cepeda-castro-win-the-1st-round-of-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket mid)
+- veto `will-roberto-snchez-palomino-win-the-2026-peruvian-presidential-election` score=0.40 (same category; same price bucket mid)
+- veto `will-ivan-cepeda-castro-win-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

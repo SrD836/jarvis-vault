@@ -35,7 +35,6 @@ memoria: exact slug match (score 1.00)
 
 - veto `will-marco-rubio-win-the-2028-us-presidential-election` score=1.00 (exact slug match)
 - veto `will-renan-santos-win-the-2026-brazilian-presidential-election` score=0.40 (same category; same price bucket low)
-- veto `will-rebecca-shepherd-win-the-2026-makerfield-by-election` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

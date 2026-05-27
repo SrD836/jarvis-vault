@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-trump-agree-to-unfreeze-iranian-assets-by-may-31"
 type: decision
 date: 2026-05-27
-decision: "Veto de tesis 'Will Trump agree to unfreeze Iranian assets by May 31?' (rule M1): memoria: slug prefix match; same category (score 0.70)"
+decision: "Veto de tesis 'Will Trump agree to unfreeze Iranian assets by May 31?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,23 +21,23 @@ related:
 
 - **Slug**: `will-trump-agree-to-unfreeze-iranian-assets-by-may-31`
 - **Categoría**: other
-- **Precio YES**: 0.2500
-- **Volumen 24h**: 50277.32 USD
+- **Precio YES**: 0.1600
+- **Volumen 24h**: 50398.31 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `M1`
 
-memoria: slug prefix match; same category (score 0.70)
+memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
+- veto `will-trump-agree-to-unfreeze-iranian-assets-by-may-31` score=1.00 (exact slug match)
 - veto `will-trump-agree-to-iranian-enrichment-of-uranium-by-may-31` score=0.70 (slug prefix match; same category)
 - veto `will-trump-agree-to-iranian-transit-fees-in-the-strait-of-hormuz-by-may-31` score=0.50 (slug prefix match)
-- veto `elon-musk-of-tweets-may-22-may-29-160-179` score=0.40 (same category; same price bucket mid)
-- veto `ucl-psg-ars-2026-05-30-psg` score=0.40 (same category; same price bucket mid)
-- veto `weed-rescheduled-by-december-31` score=0.40 (same category; same price bucket mid)
+- veto `elon-musk-of-tweets-may-22-may-29-220-239` score=0.40 (same category; same price bucket low)
+- veto `elon-musk-of-tweets-may-22-may-29-200-219` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

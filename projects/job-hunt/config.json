@@ -178,5 +178,7 @@
         ]
       }
     }
-  }
+  },
+  "easy_apply_only": true,
+  "external_apply_mode": "list_only"
 }

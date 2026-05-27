@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-mamdani-freeze-nyc-rents-before-2027` score=1.00 (exact slug match)
+- veto `lib-ind1-ros-2026-05-27-ind1` score=0.40 (same category; same price bucket mid)
 - veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.40 (same category; same price bucket mid)
 - veto `elon-musk-of-tweets-may-22-may-29-160-179` score=0.40 (same category; same price bucket mid)
 - veto `ucl-psg-ars-2026-05-30-psg` score=0.40 (same category; same price bucket mid)
-- veto `will-filipe-luis-be-the-next-manager-of-ssc-napoli` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 
