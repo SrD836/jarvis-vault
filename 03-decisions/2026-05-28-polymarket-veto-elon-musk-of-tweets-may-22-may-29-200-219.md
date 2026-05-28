@@ -22,7 +22,7 @@ related:
 - **Slug**: `elon-musk-of-tweets-may-22-may-29-200-219`
 - **Categoría**: other
 - **Precio YES**: 0.0700
-- **Volumen 24h**: 124303.99 USD
+- **Volumen 24h**: 127232.38 USD
 - **End date**: 2026-05-29T16:00:00Z
 
 ## Razón del veto
@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `elon-musk-of-tweets-may-22-may-29-200-219` score=1.00 (exact slug match)
-- veto `elon-musk-of-tweets-may-22-may-29-500plus` score=0.70 (slug prefix match; same category)
-- veto `elon-musk-of-tweets-may-22-may-29-160-179` score=0.70 (slug prefix match; same category)
+- veto `elon-musk-of-tweets-may-22-may-29-420-439` score=0.70 (slug prefix match; same category)
 - veto `elon-musk-of-tweets-may-22-may-29-260-279` score=0.70 (slug prefix match; same category)
-- veto `elon-musk-of-tweets-may-22-may-29-380-399` score=0.70 (slug prefix match; same category)
+- veto `elon-musk-of-tweets-may-22-may-29-220-239` score=0.70 (slug prefix match; same category)
+- veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.70 (slug prefix match; same category)
 
 ## Human notes
 

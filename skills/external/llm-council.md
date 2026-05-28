@@ -6,11 +6,18 @@ category: general
 date: 2026-05-28T03:15:01+00:00
 source_path: ~/.claude/skills/llm-council
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/brainstorming]]"
+  - "[[skills/external/grill-me]]"
+  - "[[skills/external/gsd-discuss-phase]]"
+  - "[[skills/external/gsd-plan-review-convergence]]"
+  - "[[skills/external/verification-before-completion]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-28
 ---
+
 
 # `llm-council` (external skill)
 

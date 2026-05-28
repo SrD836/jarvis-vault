@@ -6,11 +6,18 @@ category: general
 date: 2026-05-28T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-audit-fix
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/gsd-audit-milestone]]"
+  - "[[skills/external/gsd-audit-uat]]"
+  - "[[skills/external/gsd-code-review-fix]]"
+  - "[[skills/external/gsd-validate-phase]]"
+  - "[[skills/external/gsd-verify-work]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-28
 ---
+
 
 # `gsd-audit-fix` (external skill)
 

@@ -6,11 +6,18 @@ category: general
 date: 2026-05-28T03:15:01+00:00
 source_path: ~/.claude/skills/claude-mem
 source_file: ?
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/archivist]]"
+  - "[[agents/skill-dispatcher]]"
+  - "[[memories/system-memory]]"
+  - "[[skills/external/dispatching-parallel-agents]]"
+  - "[[skills/external/gsd-sync-skills]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-28
 ---
+
 
 # `claude-mem` (external skill)
 

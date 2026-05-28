@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-the-republican-party-control-the-house-after-the-2026-midterm-elections`
 - **Categoría**: elections
 - **Precio YES**: 0.2000
-- **Volumen 24h**: 59843.57 USD
+- **Volumen 24h**: 59786.67 USD
 - **End date**: 2026-11-03T00:00:00Z
 
 ## Razón del veto
@@ -34,7 +34,7 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-the-republican-party-control-the-house-after-the-2026-midterm-elections` score=1.00 (exact slug match)
-- veto `will-abelardo-de-la-espriella-win-the-1st-round-of-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket mid)
+- veto `will-the-republican-party-hold-exactly-56-senate-seats-after-the-2026-midterm-elections` score=0.70 (slug prefix match; same category)
 - veto `will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983` score=0.40 (same category; same price bucket mid)
 - veto `will-oh-se-hoon-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
 - veto `will-abelardo-de-la-espriella-win-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket mid)

@@ -22,7 +22,7 @@ related:
 - **Slug**: `ucl-psg-ars-2026-05-30-ars`
 - **Categoría**: other
 - **Precio YES**: 0.3100
-- **Volumen 24h**: 65234.88 USD
+- **Volumen 24h**: 64459.07 USD
 - **End date**: 2026-05-30T16:00:00Z
 
 ## Razón del veto
