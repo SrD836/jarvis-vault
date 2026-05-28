@@ -6,11 +6,18 @@ category: general
 date: 2026-05-28T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-add-backlog
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/gsd-inbox]]"
+  - "[[skills/external/gsd-next]]"
+  - "[[skills/external/gsd-plant-seed]]"
+  - "[[skills/external/gsd-review-backlog]]"
+  - "[[skills/external/gsd-scan]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-28
 ---
+
 
 # `gsd-add-backlog` (external skill)
 

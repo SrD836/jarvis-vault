@@ -1,0 +1,12 @@
+Confirmación de envío — sesión Cowork 2026-05-28
+================================================
+Enviado: 2026-05-28 ~18:52-18:55 UTC (Gmail web vía Claude in Chrome)
+Adjunto: resume.pdf 97KB (adapted-cvs/cold-gestorias-2026-05-28/resume.pdf)
+
+Evidencia visual capturada en chat de sesión:
+- Toast "Mensaje enviado" tras click Enviar
+- Lista Enviados muestra el email con icono clip (adjunto confirmado)
+- Contador Borradores bajó de 51 → 48 tras los 3 envíos
+
+NOTA: Screenshot a disco timed out (quirk Chrome conocido).
+Prueba documentada inline en transcripción de sesión.

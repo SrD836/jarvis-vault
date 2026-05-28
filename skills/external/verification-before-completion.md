@@ -6,11 +6,18 @@ category: general
 date: 2026-05-28T03:15:01+00:00
 source_path: ~/.claude/skills/verification-before-completion
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/gsd-code-review]]"
+  - "[[skills/external/gsd-verify-work]]"
+  - "[[skills/external/requesting-code-review]]"
+  - "[[skills/external/systematic-debugging]]"
+  - "[[skills/external/test-driven-development]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-28
 ---
+
 
 # `verification-before-completion` (external skill)
 

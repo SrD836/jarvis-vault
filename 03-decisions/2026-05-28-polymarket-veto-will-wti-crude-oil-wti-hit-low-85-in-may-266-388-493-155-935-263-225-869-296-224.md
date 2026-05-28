@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-wti-crude-oil-wti-hit-low-85-in-may-266-388-493-155-935-263-225-869-296-224-342-748-678`
 - **Categoría**: market
-- **Precio YES**: 0.3000
-- **Volumen 24h**: 137329.94 USD
+- **Precio YES**: 0.3600
+- **Volumen 24h**: 130008.19 USD
 - **End date**: 2026-06-01T03:59:59.999Z
 
 ## Razón del veto

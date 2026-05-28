@@ -191,7 +191,12 @@ Fallback rápido: 3 PDFs pre-renderizados en `master-cv/variants/` (`resume-A.pd
 {"offer_id":"cold-<slug-empresa>-<YYYY-MM-DD>","company":"<empresa>","offer_url":null,"offer_title":"Iniciativa propia","status":"cold_email_sent","apply_method":"cold_email","email_to":"<email>","email_subject":"<subject>","email_body_path":"cold-emails/cold-<slug>/email.txt","email_screenshot":"cold-emails/cold-<slug>/sent.png","sent_at":"<ISO-UTC>","cv_pdf_url":"adapted-cvs/cold-<slug>/resume.pdf","template_family":"<sb2nov|jakegut>","confidence":0.5,"created_at":"<ISO-UTC>","updated_at":"<ISO-UTC>"}
 ```
 
-`status:"applied"` y `status:"cold_email_sent"` son los dos únicos estados que cuentan como "contacto efectivo" para el dashboard y para la cuota.
+**Tasking platform signup** (schema NUEVO 2026-05-28):
+```json
+{"offer_id":"tasking-<plataforma>-<YYYY-MM-DD>","company":"<plataforma>","offer_url":"<signup URL>","offer_title":"Tasking platform signup","status":"tasking_platform_signed_up","apply_method":"tasking_signup","signup_screenshot":"tasking-signups/tasking-<plataforma>-<YYYY-MM-DD>/confirmation.png","signed_up_at":"<ISO-UTC>","confidence":1.0,"created_at":"<ISO-UTC>","updated_at":"<ISO-UTC>"}
+```
+
+`status:"applied"`, `status:"cold_email_sent"` y `status:"tasking_platform_signed_up"` son los tres estados que cuentan como "contacto efectivo" para el dashboard. Solo los dos primeros cuentan contra la cuota cowork 10/día; tasking signups van aparte (esfuerzo del user, no de Claude).
 
 ### Fase 8 — Cierre de sesión
 
@@ -205,6 +210,8 @@ Append a `apply-sessions.jsonl`:
 ## Cuota diaria
 
 **Máximo 10 contactos por día UTC**, sumando portal applies + cold emails. Antes de cada apply o envío, contar líneas en `applications.jsonl` con `created_at` dentro del día UTC actual y status en (`applied`, `cold_email_sent`). Si ≥10 → parar, reportar al user.
+
+Tasking platform signups NO cuentan en la cuota (los hace el user, no Claude). Se registran con `status:"tasking_platform_signed_up"` cuando el user reporta signup completado con screenshot de confirmación.
 
 ## Reglas duras (NO violar)
 
@@ -233,4 +240,13 @@ Vault sincronizado por Syncthing PC↔VPS. Cualquier escritura local replica al 
 
 ---
 
-**Última actualización**: 2026-05-28 (pivote de estrategia: trabajo sencillo + verano muchas horas + septiembre flexible + evitar atención al cliente + añadida Fase 1B iniciativa propia)
+**Última actualización**: 2026-05-28 (pivote de estrategia: trabajo sencillo + verano muchas horas + septiembre flexible + evitar atención al cliente + añadida Fase 1B iniciativa propia + status nuevo tasking_platform_signed_up fuera de cuota cowork)
+
+**Plataformas tasking verificadas 2026-05-28** (Tier 1 prioridad signup user):
+- TELUS Contributor (= Lionbridge AI tras adquisición 2020): https://www.telusinternational.ai/cmp
+- Outlier: https://outlier.ai ($15-50/h, generalista, multilingüe)
+- DataAnnotation.tech: https://www.dataannotation.tech ($20+/h base)
+- Toloka: https://toloka.ai (mejor soporte ES del sector, pay bajo pero estable)
+- Tier 2: Alignerr (alignerr.com $40-120/h), OneForma (transcripción/traducción), Prolific (encuestas académicas)
+- AVOID: Mercor (requiere PhD), Appen (reduced LLM 2025), Surge (selectivo)
+- SCAM CONFIRMADO: thinkremote.org (trust 1/100, fake hiring scheme, payout block)

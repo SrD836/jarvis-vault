@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-the-san-antonio-spurs-win-the-2026-nba-finals`
 - **Categoría**: sports-season
-- **Precio YES**: 0.1520
-- **Volumen 24h**: 100476.56 USD
+- **Precio YES**: 0.1560
+- **Volumen 24h**: 116161.62 USD
 - **End date**: 2026-07-01T00:00:00Z
 
 ## Razón del veto
@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-the-san-antonio-spurs-win-the-2026-nba-finals` score=1.00 (exact slug match)
-- veto `will-argentina-win-the-2026-fifa-world-cup-245` score=0.40 (same category; same price bucket low)
 - veto `will-spain-win-the-2026-fifa-world-cup-963` score=0.40 (same category; same price bucket low)
 - veto `will-portugal-win-the-2026-fifa-world-cup-912` score=0.40 (same category; same price bucket low)
 - veto `will-brazil-win-the-2026-fifa-world-cup-183` score=0.40 (same category; same price bucket low)
+- veto `will-argentina-win-the-2026-fifa-world-cup-245` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

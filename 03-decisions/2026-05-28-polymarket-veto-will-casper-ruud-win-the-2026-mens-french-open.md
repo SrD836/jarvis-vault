@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-casper-ruud-win-the-2026-mens-french-open`
 - **Categoría**: other
-- **Precio YES**: 0.1100
-- **Volumen 24h**: 103359.21 USD
+- **Precio YES**: 0.1060
+- **Volumen 24h**: 107562.04 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto
@@ -36,8 +36,8 @@ memoria: exact slug match (score 1.00)
 - veto `will-casper-ruud-win-the-2026-mens-french-open` score=1.00 (exact slug match)
 - veto `will-trump-restart-project-freedom-by-may-31` score=0.40 (same category; same price bucket low)
 - veto `will-trump-agree-to-unfreeze-iranian-assets-by-may-31` score=0.40 (same category; same price bucket low)
-- veto `will-rafael-jodar-win-the-2026-mens-french-open` score=0.40 (same category; same price bucket low)
 - veto `nicols-maduro-released-from-custody-by-december-31-2026` score=0.40 (same category; same price bucket low)
+- veto `will-rafael-jodar-win-the-2026-mens-french-open` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

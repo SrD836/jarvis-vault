@@ -6,11 +6,18 @@ category: general
 date: 2026-05-28T03:15:01+00:00
 source_path: ~/.claude/skills/tdd
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/tester]]"
+  - "[[skills/external/receiving-code-review]]"
+  - "[[skills/external/systematic-debugging]]"
+  - "[[skills/external/test-driven-development]]"
+  - "[[skills/external/verification-before-completion]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-28
 ---
+
 
 # `tdd` (external skill)
 

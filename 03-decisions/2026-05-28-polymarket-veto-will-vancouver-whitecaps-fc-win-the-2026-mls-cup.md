@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-novak-djokovic-win-the-2026-mens-french-open"
+title: "Polymarket veto — will-vancouver-whitecaps-fc-win-the-2026-mls-cup"
 type: decision
 date: 2026-05-28
-decision: "Veto de tesis 'Will Novak Djokovic win the 2026 Men's French Open?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Will Vancouver Whitecaps FC win the 2026 MLS Cup?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will Novak Djokovic win the 2026 Men's French Open?
+# Veto: Will Vancouver Whitecaps FC win the 2026 MLS Cup?
 
 ## Mercado
 
-- **Slug**: `will-novak-djokovic-win-the-2026-mens-french-open`
+- **Slug**: `will-vancouver-whitecaps-fc-win-the-2026-mls-cup`
 - **Categoría**: other
-- **Precio YES**: 0.1990
-- **Volumen 24h**: 176187.75 USD
-- **End date**: 2026-06-07T00:00:00Z
+- **Precio YES**: 0.1420
+- **Volumen 24h**: 366651.38 USD
+- **End date**: 2026-12-19T00:00:00Z
 
 ## Razón del veto
 
@@ -33,7 +33,7 @@ memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
-- veto `will-novak-djokovic-win-the-2026-mens-french-open` score=1.00 (exact slug match)
+- veto `will-vancouver-whitecaps-fc-win-the-2026-mls-cup` score=1.00 (exact slug match)
 - veto `will-trump-restart-project-freedom-by-may-31` score=0.40 (same category; same price bucket low)
 - veto `will-trump-agree-to-unfreeze-iranian-assets-by-may-31` score=0.40 (same category; same price bucket low)
 - veto `will-casper-ruud-win-the-2026-mens-french-open` score=0.40 (same category; same price bucket low)

@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `jerome-powell-out-from-fed-board-by-december-31`
 - **Categoría**: other
-- **Precio YES**: 0.4800
+- **Precio YES**: 0.4700
 - **Volumen 24h**: 129688.20 USD
 - **End date**: 2026-12-31T00:00:00Z
 
@@ -34,8 +34,8 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `jerome-powell-out-from-fed-board-by-december-31` score=1.00 (exact slug match)
-- veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.40 (same category; same price bucket mid)
 - veto `elon-musk-of-tweets-may-22-may-29-160-179` score=0.40 (same category; same price bucket mid)
+- veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.40 (same category; same price bucket mid)
 - veto `ucl-psg-ars-2026-05-30-ars` score=0.40 (same category; same price bucket mid)
 - veto `ucl-psg-ars-2026-05-30-psg` score=0.40 (same category; same price bucket mid)
 

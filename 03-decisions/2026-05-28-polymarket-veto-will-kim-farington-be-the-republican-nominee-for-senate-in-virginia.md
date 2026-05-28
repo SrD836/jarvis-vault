@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `will-kim-farington-be-the-republican-nominee-for-senate-in-virginia`
 - **Categoría**: elections
-- **Precio YES**: 0.3110
+- **Precio YES**: 0.3000
 - **Volumen 24h**: 458192.26 USD
 - **End date**: 2026-06-16T00:00:00Z
 
@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-kim-farington-be-the-republican-nominee-for-senate-in-virginia` score=1.00 (exact slug match)
-- veto `will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983` score=0.40 (same category; same price bucket mid)
-- veto `will-oh-se-hoon-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
-- veto `will-chong-won-oh-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
 - veto `will-abelardo-de-la-espriella-win-the-1st-round-of-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket mid)
+- veto `will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983` score=0.40 (same category; same price bucket mid)
+- veto `will-chong-won-oh-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
+- veto `will-oh-se-hoon-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-chong-won-oh-win-the-2026-seoul-mayoral-election`
 - **Categoría**: elections
-- **Precio YES**: 0.7800
-- **Volumen 24h**: 85639.35 USD
+- **Precio YES**: 0.7900
+- **Volumen 24h**: 87153.58 USD
 - **End date**: 2026-06-03T00:00:00Z
 
 ## Razón del veto
@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-chong-won-oh-win-the-2026-seoul-mayoral-election` score=1.00 (exact slug match)
-- veto `will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983` score=0.40 (same category; same price bucket mid)
-- veto `will-oh-se-hoon-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
 - veto `will-abelardo-de-la-espriella-win-the-1st-round-of-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket mid)
-- veto `will-kim-farington-be-the-republican-nominee-for-senate-in-virginia` score=0.40 (same category; same price bucket mid)
+- veto `will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983` score=0.40 (same category; same price bucket mid)
+- veto `will-ivn-cepeda-castro-win-the-1st-round-of-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket mid)
+- veto `will-oh-se-hoon-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 
