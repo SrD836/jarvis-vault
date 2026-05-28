@@ -1,7 +1,7 @@
 ---
 title: "Agents externos — índice"
 type: index
-date: 2026-05-27T03:15:01+00:00
+date: 2026-05-28T03:15:01+00:00
 tags: [index, agents, external]
 related:
   - "[[00-MOC]]"
@@ -9,7 +9,7 @@ related:
 
 # Agents externos (`~/.claude/agents/`)
 
-_Mirror generado por `hermes/mirror_external.py` el 2026-05-27T03:15:01+00:00._
+_Mirror generado por `hermes/mirror_external.py` el 2026-05-28T03:15:01+00:00._
 
 - [[agents/external/gsd-advisor-researcher]]
 - [[agents/external/gsd-ai-researcher]]
@@ -44,6 +44,7 @@ _Mirror generado por `hermes/mirror_external.py` el 2026-05-27T03:15:01+00:00._
 - [[agents/external/gsd-ui-researcher]]
 - [[agents/external/gsd-user-profiler]]
 - [[agents/external/gsd-verifier]]
+- [[agents/external/skill-dispatcher]]
 
 ## Human notes
 

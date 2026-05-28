@@ -3,7 +3,7 @@ title: "gsd-list-phase-assumptions (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-27T03:15:01+00:00
+date: 2026-05-28T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-list-phase-assumptions
 source_file: SKILL.md
 tags: [skill, external, general, mirror]
@@ -16,7 +16,7 @@ related:
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/gsd-list-phase-assumptions/`  
-**Mirrored at**: 2026-05-27T03:15:01+00:00
+**Mirrored at**: 2026-05-28T03:15:01+00:00
 
 ## Descripción
 

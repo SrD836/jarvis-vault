@@ -35,9 +35,9 @@ memoria: exact slug match (score 1.00)
 
 - veto `will-the-upper-bound-of-the-target-federal-funds-rate-be-3pt75-at-the-end-of-2026-166` score=1.00 (exact slug match)
 - veto `will-the-upper-bound-of-the-target-federal-funds-rate-be-4pt0-at-the-end-of-2026-386` score=0.90 (slug prefix match; same category; same price bucket mid)
+- veto `will-the-upper-bound-of-the-target-federal-funds-rate-be-1pt0-at-the-end-of-2026-434` score=0.70 (slug prefix match; same category)
 - veto `will-the-upper-bound-of-the-target-federal-funds-rate-be-3pt0-at-the-end-of-2026-593` score=0.70 (slug prefix match; same category)
-- veto `will-the-upper-bound-of-the-target-federal-funds-rate-be-1pt75-at-the-end-of-2026-739` score=0.70 (slug prefix match; same category)
-- veto `will-the-upper-bound-of-the-target-federal-funds-rate-be-1pt25-at-the-end-of-2026-681` score=0.70 (slug prefix match; same category)
+- veto `will-the-upper-bound-of-the-target-federal-funds-rate-be-1pt5-at-the-end-of-2026-a8ms-587` score=0.70 (slug prefix match; same category)
 
 ## Human notes
 

@@ -1,7 +1,7 @@
 ---
 title: "Skills externos — índice"
 type: index
-date: 2026-05-27T03:15:01+00:00
+date: 2026-05-28T03:15:01+00:00
 tags: [index, skills, external]
 related:
   - "[[00-MOC]]"
@@ -9,17 +9,21 @@ related:
 
 # Skills externos (`~/.claude/skills/`)
 
-_Mirror generado por `hermes/mirror_external.py` el 2026-05-27T03:15:01+00:00._
+_Mirror generado por `hermes/mirror_external.py` el 2026-05-28T03:15:01+00:00._
 
 ### general
 
 - [[skills/external/banner-design]]
+- [[skills/external/brainstorming]]
 - [[skills/external/brand]]
 - [[skills/external/caveman]]
 - [[skills/external/claude-mem]]
 - [[skills/external/design]]
 - [[skills/external/design-system]]
+- [[skills/external/dispatching-parallel-agents]]
 - [[skills/external/ecc-common]]
+- [[skills/external/executing-plans]]
+- [[skills/external/finishing-a-development-branch]]
 - [[skills/external/grill-me]]
 - [[skills/external/gsd-add-backlog]]
 - [[skills/external/gsd-add-phase]]
@@ -108,14 +112,24 @@ _Mirror generado por `hermes/mirror_external.py` el 2026-05-27T03:15:01+00:00._
 - [[skills/external/gsd-workstreams]]
 - [[skills/external/gstack]]
 - [[skills/external/llm-council]]
+- [[skills/external/receiving-code-review]]
+- [[skills/external/requesting-code-review]]
 - [[skills/external/slides]]
+- [[skills/external/subagent-driven-development]]
 - [[skills/external/superpowers]]
+- [[skills/external/systematic-debugging]]
 - [[skills/external/tdd]]
+- [[skills/external/test-driven-development]]
 - [[skills/external/triage-issue]]
 - [[skills/external/ui-styling]]
 - [[skills/external/ui-ux-pro-max]]
+- [[skills/external/using-git-worktrees]]
+- [[skills/external/using-superpowers]]
+- [[skills/external/verification-before-completion]]
 - [[skills/external/voltagent-best-practices]]
 - [[skills/external/voltagent-core-reference]]
+- [[skills/external/writing-plans]]
+- [[skills/external/writing-skills]]
 
 ## Human notes
 

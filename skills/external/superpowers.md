@@ -3,9 +3,9 @@ title: "superpowers (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-27T03:15:01+00:00
+date: 2026-05-28T03:15:01+00:00
 source_path: ~/.claude/skills/superpowers
-source_file: README.md
+source_file: ?
 tags: [skill, external, general, mirror]
 related:
   - "[[skills/index]]"
@@ -16,7 +16,7 @@ related:
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/superpowers/`  
-**Mirrored at**: 2026-05-27T03:15:01+00:00
+**Mirrored at**: 2026-05-28T03:15:01+00:00
 
 ## Descripción
 
