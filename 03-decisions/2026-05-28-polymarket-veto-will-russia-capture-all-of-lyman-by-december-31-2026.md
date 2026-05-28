@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — russia-x-ukraine-ceasefire-agreement-by-december-31-2026"
+title: "Polymarket veto — will-russia-capture-all-of-lyman-by-december-31-2026"
 type: decision
 date: 2026-05-28
-decision: "Veto de tesis 'Russia x Ukraine ceasefire agreement by December 31, 2026?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Will Russia capture all of Lyman by December 31, 2026?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,14 +15,14 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Russia x Ukraine ceasefire agreement by December 31, 2026?
+# Veto: Will Russia capture all of Lyman by December 31, 2026?
 
 ## Mercado
 
-- **Slug**: `russia-x-ukraine-ceasefire-agreement-by-december-31-2026`
+- **Slug**: `will-russia-capture-all-of-lyman-by-december-31-2026`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.4500
-- **Volumen 24h**: 127417.84 USD
+- **Precio YES**: 0.2200
+- **Volumen 24h**: 154325.75 USD
 - **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto
@@ -33,7 +33,7 @@ memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
-- veto `russia-x-ukraine-ceasefire-agreement-by-december-31-2026` score=1.00 (exact slug match)
+- veto `will-russia-capture-all-of-lyman-by-december-31-2026` score=1.00 (exact slug match)
 - veto `us-x-iran-diplomatic-meeting-by-june-15-2026-671` score=0.40 (same category; same price bucket mid)
 - veto `us-x-iran-diplomatic-meeting-by-june-30-2026-983-259-948` score=0.40 (same category; same price bucket mid)
 - veto `will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-31-2026-313...` score=0.40 (same category; same price bucket mid)

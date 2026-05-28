@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `claude-4pt8-released-by-may-31`
 - **Categoría**: other
-- **Precio YES**: 0.8500
-- **Volumen 24h**: 214319.65 USD
+- **Precio YES**: 0.8800
+- **Volumen 24h**: 241628.29 USD
 - **End date**: 2026-07-31T00:00:00Z
 
 ## Razón del veto

@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-the-upper-bound-of-the-target-federal-funds-rate-be-4pt25-at-the-end-of-2026-984` score=1.00 (exact slug match)
+- veto `will-the-upper-bound-of-the-target-federal-funds-rate-be-3pt75-at-the-end-of-2026-166` score=0.70 (slug prefix match; same category)
 - veto `will-the-upper-bound-of-the-target-federal-funds-rate-be-1pt0-at-the-end-of-2026-434` score=0.70 (slug prefix match; same category)
 - veto `will-the-upper-bound-of-the-target-federal-funds-rate-be-1pt5-at-the-end-of-2026-a8ms-587` score=0.70 (slug prefix match; same category)
 - veto `will-the-upper-bound-of-the-target-federal-funds-rate-be-3pt0-at-the-end-of-2026-593` score=0.70 (slug prefix match; same category)
-- veto `will-the-upper-bound-of-the-target-federal-funds-rate-be-1pt25-at-the-end-of-2026-681` score=0.70 (slug prefix match; same category)
 
 ## Human notes
 
