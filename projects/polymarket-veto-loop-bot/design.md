@@ -1,4 +1,59 @@
-# Polymarket Veto-Loop Bot — Design v3.1
+# Polymarket Veto-Loop Bot — Design v7
+
+> v7 (2026-05-28): edge-gate + Kelly fraccional + thesis-based exits + calibración Brier.
+> El bot arranca en `mode=shadow` (no abre posiciones, solo registra predicciones)
+> hasta que `analytics/brier.py` confirme Brier < 0.20 en ≥1 categoría con ≥20 muestras
+> resueltas. Toggle `mode: shadow → simulation` manual del user (1 línea en config.json).
+
+## Cambios duros v7 (sobre el viejo Design v3.1 abajo)
+
+### Reglas duras añadidas
+| # | Regla | Significado |
+|---|---|---|
+| E1 | **Edge no declarado** | LLM devuelve `edge_type=none` o vacío → veto. Sin edge no se opera (prompt maestro principio #2). |
+| E2 | **Edge bajo mínimo** | `|estimated_prob − implied_price| < min_edge_points` (default 0.05). Tras fees + ruido no hay margen. |
+| S1 | **Categoría suspendida** | `analytics/brier.py` detecta Brier > 0.25 durante 3 semanas consecutivas en la categoría → escribe `suspended_categories.json`. Brain bloquea nuevos candidatos. |
+
+### Sizing — Kelly fraccional ¼
+- Reemplaza Kelly 1.5% fijo.
+- `b = (1 - market_price) / market_price`; `f* = (p̂·b − (1−p̂))/b`; `size = bankroll · 0.25 · f*`.
+- Caps duros: 5% por trade (`max_per_trade_pct`), 40% exposición total (`max_total_exposure_pct`).
+- Si `f* ≤ 0` → reject `kelly_size_zero`, sin consumir cuota.
+
+### Cuotas por horizonte — USD, no número de trades
+- `horizon_quota_short × max_exposure_usd` = USD cap del bucket short, etc.
+- Default v7: 75/15/10 (sobre 0.7/0.15/0.15 del v6).
+- Justificación: un trade $25 ya no cuenta como un trade $500.
+
+### Salidas — solo thesis-based (no SL/TP)
+1. `market_closed` — Polymarket resolvió. Backfillea `outcome` en `predictions.jsonl`.
+2. `no_remaining_edge` — `daysLeft < 1 ∧ |price − estimated_prob| < 0.02`.
+3. `target_hit` — yes: `price ≥ target_prob`; no: `price ≤ target_prob`.
+- **Eliminados** `take_profit`/`stop_loss` (% y USD). Prompt maestro principio #4.
+- `bot/exit_monitor/cmd/force_close_horizon_excess/` marcado **DEPRECATED**. NO debe estar en cron.
+
+### Modo shadow (calibración warm-up)
+- `mode=shadow` → executor itera approved, calcula Kelly, log "would have opened …" y escribe `predictions.jsonl` con `decision="skip_shadow"`. No muta `portfolio.json`/`active.jsonl`.
+- Release: cuando `brier.py` ve ≥1 categoría con Brier < 0.20 y ≥20 muestras resueltas → escribe `shadow_ready.json` + log `READY_TO_RESUME`.
+- Toggle a `simulation` lo hace el user; el script nunca edita `config.json`.
+
+### Calibración — `predictions.jsonl`
+- Brain escribe una fila por cada decisión post-LLM (skip por E1/E2/S1/LLM, o approve).
+- Executor en shadow escribe una fila por candidato aprobado.
+- `exit_monitor` backfillea `outcome`/`resolution`/`resolved_at` cuando cierra por `market_closed`.
+- `analytics/brier.py` agrega por `category × horizon × edge_type` → tabla markdown a memory.md.
+
+### TradingView scope (P11) acotado
+- Solo se evalúa si `dependsOnUnderlying(slug, question)` matches (price/above/below/$N/k|m|b/ATH...).
+- Mercados como "will-coinbase-list-token-x" o "ethereum-merge-completes" ya no consumen llamadas MCP.
+
+### Hard rules vigentes
+- Regla 1 CLAUDE.md (jarvis_never_anthropic_api): LLM siempre vía `dashboard /api/llm/call` (Claude Max OAuth).
+- Regla 6 (commit & push protocol): `git add -A && commit && push` al cerrar. Nunca `--no-verify`/`--force`/`--amend`.
+
+---
+
+# Polymarket Veto-Loop Bot — Design v3.1 (histórico)
 
 > Contrato de referencia del sistema. Alcance cerrado. Sin prosa.
 

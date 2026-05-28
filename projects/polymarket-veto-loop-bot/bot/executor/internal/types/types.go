@@ -3,6 +3,9 @@ package types
 import commontypes "github.com/davidgn/polymarket-veto-loop-bot/bot/common/types"
 
 // Approved is a candidate that passed all veto rules, ready for execution.
+//
+// v7: edge fields carry the LLM's probability estimate so the executor can
+// Kelly-size and so the monitor can exit on thesis invalidation / target hit.
 type Approved struct {
 	CandidateID      string  `json:"candidate_id"`
 	Slug             string  `json:"slug"`
@@ -18,9 +21,18 @@ type Approved struct {
 	Horizon          string                   `json:"horizon"`
 	LiquidityUSD     float64                  `json:"liquidity_usd,omitempty"`
 	SourcesUsed      []commontypes.SourceCite `json:"sources_used,omitempty"`
+	// v7 edge fields.
+	EstimatedProb      float64 `json:"estimated_prob,omitempty"`
+	EdgeType           string  `json:"edge_type,omitempty"`
+	EdgeDescription    string  `json:"edge_description,omitempty"`
+	ThesisInvalidation string  `json:"thesis_invalidation,omitempty"`
 }
 
 // ActiveTrade stored in active.jsonl after successful entry.
+//
+// v7 adds EstimatedProb / TargetProb / ThesisInvalidation / EdgeType so the
+// exit monitor can decide on tesis-invalidated / target-hit / no-remaining-
+// edge instead of SL/TP percent triggers.
 type ActiveTrade struct {
 	ID             string  `json:"id"`
 	MarketID       string  `json:"market_id"`
@@ -38,6 +50,11 @@ type ActiveTrade struct {
 	SizeUSD          float64                  `json:"size_usd"`
 	LiquidityUSD     float64                  `json:"liquidity_usd,omitempty"`
 	SourcesUsed      []commontypes.SourceCite `json:"sources_used,omitempty"`
+	// v7 fields.
+	EstimatedProb      float64 `json:"estimated_prob,omitempty"`
+	TargetProb         float64 `json:"target_prob,omitempty"`
+	ThesisInvalidation string  `json:"thesis_invalidation,omitempty"`
+	EdgeType           string  `json:"edge_type,omitempty"`
 }
 
 // Portfolio state, single JSON object.

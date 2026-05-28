@@ -1,11 +1,17 @@
-// One-shot: rebalance active.jsonl to satisfy the horizon quota.
+// DEPRECATED (v7, 2026-05-28): closes the K worst positions per horizon
+// bucket by mark-to-market PnL. This violates the v7 thesis-exit rule
+// ("sales cuando la tesis se invalida, no porque toque rebalancear" — see
+// prompt maestro principle #4 and projects/polymarket-veto-loop-bot/design.md).
 //
-// Reads active.jsonl + portfolio.json, fetches a live quote per position,
-// computes unrealized PnL, and closes the K worst positions in each over-quota
-// bucket so the remaining counts respect ceil(MaxOpenPositions × quota).
+// DO NOT run on cron. Kept as a manual utility only; new callers should use
+// bot/exit_monitor/cmd/force_close_all/ (closes everything, no PnL ranking)
+// or rely on monitor.go's thesis-based exits.
 //
-// Defaults to --dry-run; pass --apply to actually mutate. Always writes a
-// .bak-YYYY-MM-DD next to active.jsonl/portfolio.json before mutating.
+// Original docstring:
+//   Reads active.jsonl + portfolio.json, fetches a live quote per position,
+//   computes unrealized PnL, and closes the K worst positions in each over-
+//   quota bucket so the remaining counts respect ceil(MaxOpenPositions × quota).
+//   Defaults to --dry-run; pass --apply to actually mutate.
 package main
 
 import (

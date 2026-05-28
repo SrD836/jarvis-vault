@@ -84,6 +84,32 @@ func detectAsset(text string) string {
 	return ""
 }
 
+// dependsOnUnderlying reports whether a Polymarket question's resolution
+// depends on the spot price of an underlying asset (vs. a categorical event
+// like "will-coinbase-list-X" or "ethereum-merge-completes"). Only price-
+// dependent markets benefit from TradingView's technical signal.
+//
+// v7 rationale: TA over a binary-event market price is a category error.
+// We restrict P11 to questions where the underlying ASSET price is the
+// thing being asked about.
+var underlyingPricePatterns = []*regexp.Regexp{
+	regexp.MustCompile(`(?i)\b(price|above|below|hit|reach|exceed|cross|over|under)\b[^.]{0,40}\$?\s*\d`),
+	regexp.MustCompile(`(?i)\$\s*\d[\d,kKmMbB.]*\b`),
+	regexp.MustCompile(`(?i)\b\d+[kKmMbB]\b`),
+	regexp.MustCompile(`(?i)\b(close|closing|finish|end)\s+(above|below|at)\b`),
+	regexp.MustCompile(`(?i)\b(all[- ]time[- ]high|ath|new high|new low)\b`),
+}
+
+func dependsOnUnderlying(slug, question string) bool {
+	hay := strings.ToLower(slug + " " + question)
+	for _, re := range underlyingPricePatterns {
+		if re.MatchString(hay) {
+			return true
+		}
+	}
+	return false
+}
+
 // Evaluate returns a P11 veto verdict. nil = no opinion (not crypto or network error).
 // category and currentPriceYes are used to scope and direction-check.
 func Evaluate(slug, question, category string, currentPriceYes float64) *Result {
@@ -94,6 +120,12 @@ func Evaluate(slug, question, category string, currentPriceYes float64) *Result 
 	}
 	if asset == "" {
 		// Crypto category but no asset detected — skip (cannot query specific symbol)
+		return nil
+	}
+	// v7: only run TradingView for markets whose resolution depends on the
+	// underlying asset price. "Will-coinbase-list-token-x" and "ethereum-merge-
+	// completes" are crypto-flavoured but TA tells us nothing about them.
+	if !dependsOnUnderlying(slug, question) {
 		return nil
 	}
 

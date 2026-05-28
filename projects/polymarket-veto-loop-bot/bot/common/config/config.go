@@ -49,8 +49,22 @@ type BotConfig struct {
 	MinAbsoluteLiquidityUSD float64 `json:"min_absolute_liquidity_usd"`  // default 5000
 	PreEventVetoMinDays     int     `json:"pre_event_veto_min_days"`     // default 7
 
+	// v7 (2026-05-28): edge-gate + Kelly sizing + shadow mode.
+	// SizingMode: "kelly_fractional" | "dynamic_equal" | "fixed".
+	// MinEdgePoints: required |estimated_prob - implied_price| for approval (E2).
+	// Mode: "shadow" → log predictions, no trades. "simulation" → virtual fills.
+	SizingMode          string  `json:"sizing_mode"`
+	KellyFraction       float64 `json:"kelly_fraction"`
+	MaxPerTradePct      float64 `json:"max_per_trade_pct"`
+	MaxTotalExposurePct float64 `json:"max_total_exposure_pct"`
+	MinEdgePoints       float64 `json:"min_edge_points"`
+
 	Mode               string  `json:"mode"`
 }
+
+// ShadowEnabled reports whether the bot must skip real fills and only log
+// predictions for calibration. Source-of-truth is the Mode field.
+func (c *BotConfig) ShadowEnabled() bool { return c.Mode == "shadow" }
 
 func Load() (*BotConfig, error) {
 	path := os.Getenv("BOT_CONFIG_PATH")
@@ -115,23 +129,75 @@ func (c *BotConfig) applyDefaults() {
 	if c.PreEventVetoMinDays == 0 {
 		c.PreEventVetoMinDays = 7
 	}
+	// v7 defaults.
+	if c.SizingMode == "" {
+		c.SizingMode = "kelly_fractional"
+	}
+	if c.KellyFraction == 0 {
+		c.KellyFraction = 0.25
+	}
+	if c.MaxPerTradePct == 0 {
+		c.MaxPerTradePct = 0.05
+	}
+	if c.MaxTotalExposurePct == 0 {
+		c.MaxTotalExposurePct = 0.40
+	}
+	if c.MinEdgePoints == 0 {
+		c.MinEdgePoints = 0.05
+	}
+	if c.Mode == "" {
+		c.Mode = "shadow"
+	}
 }
 
-// ComputeTradeSize returns the size in USD for the next trade given current bankroll.
-// In dynamic_equal mode: bankroll * SizeFraction, clamped to [SizeMin, SizeMax].
-// In fixed mode: TradeSizeUSD.
-func (c *BotConfig) ComputeTradeSize(bankroll float64) float64 {
-	if c.SizeMode == "fixed" {
+// ComputeTradeSize returns the size in USD for the next trade.
+//
+// v7: when SizingMode == "kelly_fractional", Kelly criterion is applied with
+// the configured fractional multiplier (default ¼ Kelly):
+//
+//	b  = (1 - marketPrice) / marketPrice   (payoff odds)
+//	f* = (estimatedProb * b - (1 - estimatedProb)) / b
+//	size = bankroll * KellyFraction * f*
+//
+// Clamped to [SizeMin, bankroll * MaxPerTradePct]. Returns 0 when f* <= 0
+// (no edge — caller must treat as reject, not as min size).
+//
+// Legacy modes preserved:
+//   - "fixed": returns TradeSizeUSD.
+//   - "dynamic_equal" (or any other value): bankroll * SizeFraction clamped to [SizeMin, SizeMax].
+func (c *BotConfig) ComputeTradeSize(bankroll, estimatedProb, marketPrice float64) float64 {
+	switch c.SizingMode {
+	case "kelly_fractional":
+		if marketPrice <= 0 || marketPrice >= 1 {
+			return 0
+		}
+		b := (1.0 - marketPrice) / marketPrice
+		q := 1.0 - estimatedProb
+		fStar := (estimatedProb*b - q) / b
+		if fStar <= 0 {
+			return 0
+		}
+		size := bankroll * c.KellyFraction * fStar
+		capPerTrade := bankroll * c.MaxPerTradePct
+		if size > capPerTrade {
+			size = capPerTrade
+		}
+		if size < c.SizeMin {
+			size = c.SizeMin
+		}
+		return size
+	case "fixed":
 		return c.TradeSizeUSD
+	default:
+		s := bankroll * c.SizeFraction
+		if s < c.SizeMin {
+			s = c.SizeMin
+		}
+		if s > c.SizeMax {
+			s = c.SizeMax
+		}
+		return s
 	}
-	s := bankroll * c.SizeFraction
-	if s < c.SizeMin {
-		s = c.SizeMin
-	}
-	if s > c.SizeMax {
-		s = c.SizeMax
-	}
-	return s
 }
 
 // Classify returns "short", "medium" or "long" based on days-to-resolution.

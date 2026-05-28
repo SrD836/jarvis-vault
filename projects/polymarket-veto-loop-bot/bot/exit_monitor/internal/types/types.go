@@ -3,6 +3,9 @@ package types
 import commontypes "github.com/davidgn/polymarket-veto-loop-bot/bot/common/types"
 
 // ActiveTrade from the executor's active.jsonl.
+//
+// v7: EstimatedProb / TargetProb / ThesisInvalidation drive thesis-based
+// exits in monitor.go (target hit, no remaining edge, future: invalidation).
 type ActiveTrade struct {
 	ID               string                   `json:"id"`
 	MarketID         string                   `json:"market_id"`
@@ -19,6 +22,10 @@ type ActiveTrade struct {
 	Horizon          string                   `json:"horizon,omitempty"`
 	EndDate          string                   `json:"end_date,omitempty"`
 	SourcesUsed      []commontypes.SourceCite `json:"sources_used,omitempty"`
+	EstimatedProb      float64 `json:"estimated_prob,omitempty"`
+	TargetProb         float64 `json:"target_prob,omitempty"`
+	ThesisInvalidation string  `json:"thesis_invalidation,omitempty"`
+	EdgeType           string  `json:"edge_type,omitempty"`
 }
 
 // ClosedTrade written to closed.jsonl on exit.

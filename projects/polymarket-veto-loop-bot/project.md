@@ -17,6 +17,15 @@ tags: []
 
 # Polymarket Veto-Loop Bot
 
+## Estado (2026-05-28)
+Bot pausado en **`mode: shadow`** tras post-mortem v6 (semanas perdiendo capital — sin calibración, sin edge declarado, cuotas por nº de trades). Re-operación condicional a `analytics/brier.py` confirmando Brier < 0.20 en ≥1 categoría con ≥20 muestras resueltas. Toggle `mode → simulation` manual del user. Detalle: `design.md` sección "Cambios duros v7".
+
+Acciones requeridas en VPS tras este merge:
+1. `git pull && (cd bot && go build ./...)` + rebuild containers brain/executor/exit_monitor.
+2. Quitar `force_close_horizon_excess` del crontab.
+3. `go run ./bot/exit_monitor/cmd/force_close_all/ --apply` (cierra todo, reason=manual_reset_v7).
+4. Esperar 7 días. Leer `vault/inbox/trading/shadow_ready.json`. Si `ready=true` y Brier < 0.20 → `config.json: "mode": "simulation"` + deploy.
+
 ## Objetivo
 Construir un bot de trading sobre mercados de Polymarket que opere inicialmente en modo **simulación** (sin dinero real) con un bankroll virtual de **10.000 USD**. La tesis central, tomada del artículo de referencia, es que un LLM es **mal predictor pero buen revisor de reglas**: por eso el sistema separa la generación de tesis del filtrado, dejando al LLM el rol de auditor estricto que veta cualquier idea que no cumpla criterios duros.
 
