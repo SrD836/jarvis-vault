@@ -1,0 +1,25 @@
+Asunto: Candidatura espontánea — David González, apoyo administrativo con automatización (Power Automate / VBA / Python)
+
+Para: info@gestoriarubenmaria.es
+
+---
+
+Buenos días,
+
+Soy David González, estudiante de Ciclo Superior en Administración y Finanzas en el IES Felo Monzón Grau-Bassas (Las Palmas). Os escribo de iniciativa propia por si en verano os encaja un apoyo al equipo de tramitación.
+
+Mi perfil combina la formación administrativa con experiencia técnica en automatización: en mis prácticas en una consultora de inspección reduje el tiempo de tareas repetitivas usando Power Automate, VBA y Excel avanzado, y formé parte del comité interno de adopción de IA. Para un volumen de trámites amplio y variado como el vuestro (administrativo, náutica, transporte, herencias, jubilaciones, certificados), creo que puedo aportar especialmente en:
+
+- Auto-generación de plantillas documentales por tipo de trámite (Word/PDF desde datos en Excel).
+- Consolidación y limpieza de bases de datos de clientes recurrentes.
+- Flujos Outlook → Excel → Word para los procesos más repetitivos.
+
+Disponibilidad: muchas horas en verano (junio–agosto 2026), y a partir de septiembre compatible con horario de tarde por las clases del Ciclo. Adjunto mi CV.
+
+Si en algún momento tenéis carga de trabajo o necesidad de un apoyo administrativo con perfil técnico, me encantaría poder colaborar. Muchas gracias por vuestro tiempo.
+
+Un saludo,
+David González
++34 611 411 804
+davidgnjunior@gmail.com
+Portfolio / proyectos: https://jarvss.duckdns.org/portfolios/david/

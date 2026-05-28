@@ -1,0 +1,154 @@
+%-------------------------
+% David Gonzalez Nuez - CV cold email gestorias Las Palmas
+% Plantilla sb2nov-resume, ATS-friendly
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeItemPlain}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large David Gonz\'alez} & Email: \href{mailto:davidgnjunior@gmail.com}{davidgnjunior@gmail.com}\\
+  Teror, Gran Canaria & Tel: \href{tel:+34611411804}{+34 611 411 804} \\
+\end{tabular*}
+
+\vspace{4pt}
+
+%----------OBJETIVO-----------------
+\section{Perfil}
+Estudiante de Ciclo Superior en Administraci\'on y Finanzas, con experiencia previa en automatizaci\'on de tareas administrativas repetitivas (VBA, Power Automate, Power Query, Python) durante 3 meses de pr\'acticas en consultor\'ia de inspecci\'on. Busco un puesto de back office / data entry / asistencia administrativa remota o h\'ibrido en Las Palmas, con disponibilidad amplia en verano 2026 y compatible con clases a partir de septiembre 2026.
+
+%-----------EXPERIENCIA-----------------
+\section{Experiencia}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Ellitoral -- Consultor\'ia de inspecci\'on}{Gran Canaria}
+      {Becario, Departamento de Inspecci\'on (FCT)}{Ene 2025 -- Mar 2025}
+      \resumeItemListStart
+        \resumeItem{Automatizaci\'on administrativa}
+          {Reducci\'on de tareas manuales recurrentes mediante macros Excel/VBA, flujos en Power Automate y limpieza de datos con Power Query y scripts Python. Trabajo sobre archivos heterog\'eneos y plantillas documentales.}
+        \resumeItem{Comit\'e interno de IA}
+          {Coordinaci\'on operativa del comit\'e: identificaci\'on de casos de uso de IA aplicables al d\'ia a d\'ia del equipo, evaluaci\'on de herramientas (Copilot, ChatGPT, Claude) y elaboraci\'on de gu\'ias internas y sesiones formativas.}
+        \resumeItem{Apoyo operativo}
+          {Soporte al equipo en tareas administrativas diarias: gesti\'on documental, ofim\'atica avanzada (Excel, Word, PowerPoint), Microsoft 365 y Google Workspace.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {The Fallow}{Irlanda}
+      {Camarero / Cajero / Host (verano)}{Jun 2021 -- Sep 2021}
+      \resumeItemListStart
+        \resumeItem{Operaciones en pico}
+          {Servicio de sala y caja con picos de 80-120 comensales, cuadre diario de TPV y coordinaci\'on \'agil sala-cocina.}
+        \resumeItem{Bilingue ES/EN}
+          {Atenci\'on operativa en ingl\'es funcional (B1) en hosteler\'ia internacional.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------FORMACION-----------------
+\section{Formaci\'on}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {IES Felo Monz\'on Grau-Bassas}{Las Palmas de Gran Canaria}
+      {Ciclo Superior -- Administraci\'on y Finanzas (en curso)}{Sep 2025 -- Jun 2027}
+    \resumeSubheading
+      {Universidad de Las Palmas de Gran Canaria (ULPGC)}{Las Palmas}
+      {Grado en Econom\'ia -- 2 a\~nos cursados (~120 ECTS, sin completar)}{Sep 2022 -- Jun 2024}
+    \resumeSubheading
+      {Coursera}{Online}
+      {Google IT Support Professional Certificate; 4 cursos Microsoft Azure AI (AI-900, ML, Computer Vision)}{2025}
+  \resumeSubHeadingListEnd
+
+%-----------PROYECTOS-----------------
+\section{Proyectos personales}
+  \resumeSubHeadingListStart
+    \resumeSubItem{JARVIS}
+      {Sistema personal multi-agente (Python + MCP + servidor 24/7 en VPS) que orquesta tareas de productividad, scraping y automatizaciones diarias. GitHub: @SrD836.}
+    \resumeSubItem{polymarket-bot}
+      {Bot aut\'onomo de an\'alisis y operaci\'on en mercados de predicci\'on (Python, APIs).}
+  \resumeSubHeadingListEnd
+
+%--------COMPETENCIAS------------
+\section{Competencias}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Ofim\'atica y automatizaci\'on}{: Excel avanzado, VBA, Power Query, Power Automate, Microsoft 365, Google Workspace}
+    }
+    \item{
+      \textbf{Lenguajes}{: Python, JavaScript, SQL b\'asico, Bash b\'asico}
+    }
+    \item{
+      \textbf{IA y prompt engineering}{: APIs Claude/OpenAI, integraci\'on MCP, dise\~no de flujos asistidos por IA}
+    }
+    \item{
+      \textbf{Idiomas}{: Espa\~nol nativo. Ingl\'es B1 funcional (operativo, no avanzado).}
+    }
+  \resumeSubHeadingListEnd
+
+\end{document}

@@ -1,0 +1,25 @@
+Asunto: Candidatura espontánea — David González, apoyo administrativo + automatización Excel/VBA
+
+Para: info@gesmas.com
+
+---
+
+Buenos días,
+
+Soy David González, estudiante de Ciclo Superior en Administración y Finanzas en el IES Felo Monzón Grau-Bassas (Las Palmas). Os escribo de iniciativa propia por si en verano os encaja un apoyo administrativo en Gestoría Más 2000.
+
+En mis prácticas en una consultora de inspección reduje el tiempo de tareas repetitivas mediante macros Excel/VBA, Power Automate y Power Query, y formé parte del comité interno de adopción de IA. Para una gestoría con cartera estable de clientes, creo que puedo aportar especialmente en:
+
+- Conciliación bancaria mensual automatizada (matching extractos vs. contabilidad).
+- Generación batch de reporting fiscal/contable a clientes desde plantillas Excel.
+- Limpieza y normalización de bases de datos heterogéneas (clientes, proveedores, modelos AEAT).
+
+Disponibilidad: muchas horas en verano (junio–agosto 2026), y a partir de septiembre compatible con horario de tarde por las clases del Ciclo. Adjunto mi CV.
+
+Si en algún momento tenéis carga de trabajo o necesidad de un apoyo administrativo con perfil técnico, me encantaría poder colaborar. Muchas gracias por vuestro tiempo.
+
+Un saludo,
+David González
++34 611 411 804
+davidgnjunior@gmail.com
+Portfolio / proyectos: https://jarvss.duckdns.org/portfolios/david/
