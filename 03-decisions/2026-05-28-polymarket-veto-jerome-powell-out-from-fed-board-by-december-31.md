@@ -2,13 +2,13 @@
 title: "Polymarket veto — jerome-powell-out-from-fed-board-by-december-31"
 type: decision
 date: 2026-05-28
-decision: "Veto de tesis 'Jerome Powell out from Fed Board by December 31?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Jerome Powell out from Fed Board by December 31?' (rule M2): M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, m1]
+tags: [decision, polymarket, bot, veto, m2]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -27,17 +27,9 @@ related:
 
 ## Razón del veto
 
-**Regla aplicada**: `M1`
+**Regla aplicada**: `M2`
 
-memoria: exact slug match (score 1.00)
-
-## Patterns en memoria que contribuyeron
-
-- veto `jerome-powell-out-from-fed-board-by-december-31` score=1.00 (exact slug match)
-- veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.40 (same category; same price bucket mid)
-- veto `ucl-psg-ars-2026-05-30-ars` score=0.40 (same category; same price bucket mid)
-- veto `ucl-psg-ars-2026-05-30-psg` score=0.40 (same category; same price bucket mid)
-- veto `will-alexander-zverev-win-the-2026-mens-french-open` score=0.40 (same category; same price bucket mid)
+M2 soft-learned: uncategorized·?·0.30-0.70 = 6L/0W (wr 0%)
 
 ## Human notes
 

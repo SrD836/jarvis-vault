@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-oh-se-hoon-win-the-2026-seoul-mayoral-election`
 - **Categoría**: elections
 - **Precio YES**: 0.2200
-- **Volumen 24h**: 125976.71 USD
+- **Volumen 24h**: 106862.53 USD
 - **End date**: 2026-06-03T00:00:00Z
 
 ## Razón del veto
@@ -36,8 +36,8 @@ memoria: exact slug match (score 1.00)
 - veto `will-oh-se-hoon-win-the-2026-seoul-mayoral-election` score=1.00 (exact slug match)
 - veto `will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983` score=0.40 (same category; same price bucket mid)
 - veto `will-chong-won-oh-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
+- veto `will-keiko-fujimori-win-the-2026-peruvian-presidential-election` score=0.40 (same category; same price bucket mid)
 - veto `will-ivan-cepeda-castro-win-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket mid)
-- veto `will-abelardo-de-la-espriella-win-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

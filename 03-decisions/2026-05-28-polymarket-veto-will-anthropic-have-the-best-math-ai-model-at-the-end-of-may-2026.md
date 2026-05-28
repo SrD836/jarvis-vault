@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-anthropic-have-the-best-math-ai-model-at-the-end-of-may-2026`
 - **Categoría**: other
-- **Precio YES**: 0.1300
-- **Volumen 24h**: 83521.21 USD
+- **Precio YES**: 0.1100
+- **Volumen 24h**: 84001.13 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
@@ -35,9 +35,9 @@ memoria: exact slug match (score 1.00)
 
 - veto `will-anthropic-have-the-best-math-ai-model-at-the-end-of-may-2026` score=1.00 (exact slug match)
 - veto `nicols-maduro-released-from-custody-by-december-31-2026` score=0.40 (same category; same price bucket low)
+- veto `will-trump-agree-to-unfreeze-iranian-assets-by-may-31` score=0.40 (same category; same price bucket low)
 - veto `will-trump-restart-project-freedom-by-may-31` score=0.40 (same category; same price bucket low)
 - veto `will-us-unemployment-reach-at-least-5pt5-in-2026` score=0.40 (same category; same price bucket low)
-- veto `will-trump-agree-to-unfreeze-iranian-assets-by-may-31` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

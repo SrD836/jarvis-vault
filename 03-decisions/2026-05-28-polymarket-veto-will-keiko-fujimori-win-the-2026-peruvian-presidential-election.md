@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-keiko-fujimori-win-the-2026-peruvian-presidential-election"
 type: decision
 date: 2026-05-28
-decision: "Veto de tesis 'Will Keiko Fujimori win the 2026 Peruvian presidential election?' (rule N2): silencio mediático sobre catalyst inminente (9 días al cierre)"
+decision: "Veto de tesis 'Will Keiko Fujimori win the 2026 Peruvian presidential election?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, n2]
+tags: [decision, polymarket, bot, veto, m1]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -22,18 +22,22 @@ related:
 - **Slug**: `will-keiko-fujimori-win-the-2026-peruvian-presidential-election`
 - **Categoría**: elections
 - **Precio YES**: 0.7400
-- **Volumen 24h**: 53526.92 USD
+- **Volumen 24h**: 53543.03 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `N2`
+**Regla aplicada**: `M1`
 
-silencio mediático sobre catalyst inminente (9 días al cierre)
+memoria: exact slug match (score 1.00)
 
-## Investigación de noticias
+## Patterns en memoria que contribuyeron
 
-Tavily+DeepSeek: confirms=false contradicts=false silent=true score=0.50 — 
+- veto `will-keiko-fujimori-win-the-2026-peruvian-presidential-election` score=1.00 (exact slug match)
+- veto `will-oh-se-hoon-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
+- veto `will-chong-won-oh-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
+- veto `will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983` score=0.40 (same category; same price bucket mid)
+- veto `will-ivan-cepeda-castro-win-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

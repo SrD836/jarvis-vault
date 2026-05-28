@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-tom-steyer-win-the-california-governor-election-in-2026`
 - **Categoría**: elections
-- **Precio YES**: 0.1960
-- **Volumen 24h**: 64175.34 USD
+- **Precio YES**: 0.1970
+- **Volumen 24h**: 63673.70 USD
 - **End date**: 2026-11-03T00:00:00Z
 
 ## Razón del veto
@@ -35,7 +35,6 @@ memoria: exact slug match (score 1.00)
 
 - veto `will-tom-steyer-win-the-california-governor-election-in-2026` score=1.00 (exact slug match)
 - veto `will-renan-santos-win-the-2026-brazilian-presidential-election` score=0.40 (same category; same price bucket low)
-- veto `will-fernando-haddad-win-the-2026-brazilian-presidential-election` score=0.40 (same category; same price bucket low)
 - veto `will-kim-boo-kyum-win-the-2026-daegu-mayoral-election` score=0.40 (same category; same price bucket low)
 - veto `will-rebecca-shepherd-win-the-2026-makerfield-by-election` score=0.40 (same category; same price bucket low)
 
