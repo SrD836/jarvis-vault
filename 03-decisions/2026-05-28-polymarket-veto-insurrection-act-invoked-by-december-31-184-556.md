@@ -2,13 +2,13 @@
 title: "Polymarket veto — insurrection-act-invoked-by-december-31-184-556"
 type: decision
 date: 2026-05-28
-decision: "Veto de tesis 'Insurrection Act invoked by December 31?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
+decision: "Veto de tesis 'Insurrection Act invoked by December 31?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, m2]
+tags: [decision, polymarket, bot, veto, m1]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -27,9 +27,17 @@ related:
 
 ## Razón del veto
 
-**Regla aplicada**: `M2`
+**Regla aplicada**: `M1`
 
-M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)
+memoria: exact slug match (score 1.00)
+
+## Patterns en memoria que contribuyeron
+
+- veto `insurrection-act-invoked-by-december-31-184-556` score=1.00 (exact slug match)
+- veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.40 (same category; same price bucket mid)
+- veto `ucl-psg-ars-2026-05-30-psg` score=0.40 (same category; same price bucket mid)
+- veto `ucl-psg-ars-2026-05-30-ars` score=0.40 (same category; same price bucket mid)
+- veto `will-vitality-win-iem-cologne-major-2026` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

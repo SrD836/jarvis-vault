@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `microstrategy-sells-any-bitcoin-by-june-30-2026`
 - **Categoría**: market
-- **Precio YES**: 0.6000
-- **Volumen 24h**: 153606.37 USD
+- **Precio YES**: 0.6090
+- **Volumen 24h**: 159524.85 USD
 - **End date**: 2026-07-01T04:00:00Z
 
 ## Razón del veto
@@ -36,7 +36,7 @@ memoria: exact slug match (score 1.00)
 - veto `microstrategy-sells-any-bitcoin-by-june-30-2026` score=1.00 (exact slug match)
 - veto `microstrategy-sells-any-bitcoin-by-may-31-2026` score=0.70 (slug prefix match; same category)
 - veto `microstrategy-sells-any-bitcoin-by-december-31-2026` score=0.70 (slug prefix match; same category)
-- veto `will-wti-crude-oil-wti-hit-low-85-in-may-266-388-493-155-935-263-225-869-296-224-342-748-678` score=0.40 (same category; same price bucket mid)
+- veto `bitcoin-above-74k-on-may-28-2026` score=0.40 (same category; same price bucket mid)
 - veto `will-bitcoin-dip-to-45000-by-december-31-2026-674-923-755-971-998-525-926-245-316-517-544-589-965-923-986-841-815-224` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
