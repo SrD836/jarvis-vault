@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-neymar-play-in-the-2026-fifa-world-cup-for-brazil`
 - **Categoría**: sports-season
-- **Precio YES**: 0.7400
-- **Volumen 24h**: 99054.49 USD
+- **Precio YES**: 0.7500
+- **Volumen 24h**: 105936.62 USD
 - **End date**: 2026-07-19T00:00:00Z
 
 ## Razón del veto

@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `us-x-iran-permanent-peace-deal-by-july-31-2026-831-252`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.6700
-- **Volumen 24h**: 300439.21 USD
+- **Precio YES**: 0.5800
+- **Volumen 24h**: 363121.81 USD
 - **End date**: 2026-07-31T00:00:00Z
 
 ## Razón del veto
@@ -35,9 +35,9 @@ memoria: exact slug match (score 1.00)
 
 - veto `us-x-iran-permanent-peace-deal-by-july-31-2026-831-252` score=1.00 (exact slug match)
 - veto `us-x-iran-permanent-peace-deal-by-june-30-2026-837-641-896-877-363-892-537-597` score=0.90 (slug prefix match; same category; same price bucket mid)
+- veto `us-x-iran-permanent-peace-deal-by-june-7-2026` score=0.90 (slug prefix match; same category; same price bucket mid)
 - veto `us-x-iran-permanent-peace-deal-by-june-15-2026-734-856-129` score=0.90 (slug prefix match; same category; same price bucket mid)
 - veto `us-x-iran-permanent-peace-deal-by-december-31-2026-961-587-341-574-555` score=0.90 (slug prefix match; same category; same price bucket mid)
-- veto `us-x-iran-permanent-peace-deal-by-june-7-2026` score=0.70 (slug prefix match; same category)
 
 ## Human notes
 

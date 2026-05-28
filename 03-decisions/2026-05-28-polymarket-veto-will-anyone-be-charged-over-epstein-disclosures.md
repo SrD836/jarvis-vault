@@ -35,8 +35,8 @@ memoria: exact slug match (score 1.00)
 
 - veto `will-anyone-be-charged-over-epstein-disclosures` score=1.00 (exact slug match)
 - veto `elon-musk-of-tweets-may-22-may-29-200-219` score=0.40 (same category; same price bucket low)
-- veto `will-trump-restart-project-freedom-by-may-31` score=0.40 (same category; same price bucket low)
 - veto `will-trump-agree-to-unfreeze-iranian-assets-by-may-31` score=0.40 (same category; same price bucket low)
+- veto `will-trump-restart-project-freedom-by-may-31` score=0.40 (same category; same price bucket low)
 - veto `will-rafael-jodar-win-the-2026-mens-french-open` score=0.40 (same category; same price bucket low)
 
 ## Human notes
