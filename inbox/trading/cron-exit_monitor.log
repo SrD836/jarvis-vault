@@ -10604,3 +10604,31 @@
 2026/05/28 08:00:01 monitor.go:24: exit_monitor v7: mode=shadow thesis-exits (no SL/TP). MinEdgePoints=0.050
 2026/05/28 08:00:01 monitor.go:28: exit_monitor: no active positions
 2026/05/28 08:00:01 main.go:13: exit_monitor: done
+2026/05/28 09:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/28 09:30:01 monitor.go:24: exit_monitor v7: mode=shadow thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/28 09:30:01 monitor.go:28: exit_monitor: no active positions
+2026/05/28 09:30:01 main.go:13: exit_monitor: done
+2026/05/28 09:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/28 09:35:01 monitor.go:24: exit_monitor v7: mode=shadow thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/28 09:35:01 monitor.go:28: exit_monitor: no active positions
+2026/05/28 09:35:01 main.go:13: exit_monitor: done
+2026/05/28 09:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/28 09:40:01 monitor.go:24: exit_monitor v7: mode=shadow thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/28 09:40:01 monitor.go:28: exit_monitor: no active positions
+2026/05/28 09:40:01 main.go:13: exit_monitor: done
+2026/05/28 09:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/28 09:45:01 monitor.go:24: exit_monitor v7: mode=shadow thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/28 09:45:01 monitor.go:28: exit_monitor: no active positions
+2026/05/28 09:45:01 main.go:13: exit_monitor: done
+2026/05/28 09:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/28 09:50:01 monitor.go:24: exit_monitor v7: mode=shadow thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/28 09:50:01 monitor.go:28: exit_monitor: no active positions
+2026/05/28 09:50:01 main.go:13: exit_monitor: done
+2026/05/28 09:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/28 09:55:01 monitor.go:24: exit_monitor v7: mode=shadow thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/28 09:55:01 monitor.go:28: exit_monitor: no active positions
+2026/05/28 09:55:01 main.go:13: exit_monitor: done
+2026/05/28 10:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/28 10:00:01 monitor.go:24: exit_monitor v7: mode=shadow thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/28 10:00:01 monitor.go:28: exit_monitor: no active positions
+2026/05/28 10:00:01 main.go:13: exit_monitor: done
