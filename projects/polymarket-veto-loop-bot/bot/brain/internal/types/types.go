@@ -29,6 +29,9 @@ type VetoResult struct {
 }
 
 // Approved is a candidate that passed all veto rules, ready for sizing.
+//
+// v7: carries the LLM's declared edge so the executor can Kelly-size and
+// so the monitor can exit on tesis invalidation / target hit.
 type Approved struct {
 	CandidateID      string  `json:"candidate_id"`
 	Slug             string  `json:"slug"`
@@ -44,6 +47,13 @@ type Approved struct {
 	Horizon          string                   `json:"horizon"` // short | medium | long
 	LiquidityUSD     float64                  `json:"liquidity_usd,omitempty"`
 	SourcesUsed      []commontypes.SourceCite `json:"sources_used,omitempty"`
+	// v7 edge-gate fields. EstimatedProb is the LLM's probability that YES
+	// resolves true. TargetProb is the price at which the executor closes
+	// the position (defaults to EstimatedProb).
+	EstimatedProb      float64 `json:"estimated_prob,omitempty"`
+	EdgeType           string  `json:"edge_type,omitempty"`
+	EdgeDescription    string  `json:"edge_description,omitempty"`
+	ThesisInvalidation string  `json:"thesis_invalidation,omitempty"`
 }
 
 // LLMRequest payload to the JARVIS dashboard LLM bridge.
@@ -65,10 +75,18 @@ type LLMResponse struct {
 }
 
 // LLMBlockResult is the structured output we ask the LLM to return.
+//
+// v7: extended with the edge-gate fields. EstimatedProb / EdgeType /
+// EdgeDescription / ThesisInvalidation are populated even when Block=false,
+// so the brain can route the candidate through E1/E2 checks before approving.
 type LLMBlockResult struct {
-	Block  bool   `json:"block"`
-	Reason string `json:"reason"`
-	Rule   string `json:"rule"` // "V3", "V5", "V6"
+	Block              bool    `json:"block"`
+	Reason             string  `json:"reason"`
+	Rule               string  `json:"rule"` // "V3", "V5", "V6"
+	EstimatedProb      float64 `json:"estimated_prob,omitempty"`
+	EdgeType           string  `json:"edge_type,omitempty"` // info|arb|calibration|liquidity|other|none
+	EdgeDescription    string  `json:"edge_description,omitempty"`
+	ThesisInvalidation string  `json:"thesis_invalidation,omitempty"`
 }
 
 // PriceHistory for V4 chasing check (tracking price movement in last 4h).

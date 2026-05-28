@@ -13,6 +13,7 @@ import (
 
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/config"
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/decisionlog"
+	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/predictions"
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/executor/internal/types"
 )
 
@@ -37,18 +38,64 @@ func Run() {
 	if err != nil {
 		log.Fatalf("executor: load config: %v", err)
 	}
-	if cfg.Mode != "simulation" {
-		panic("live trading not authorized — set mode=simulation in bot/config.json")
+	switch cfg.Mode {
+	case "shadow", "simulation":
+		// allowed
+	case "live":
+		panic("live trading not authorized — only shadow/simulation are supported in v7")
+	default:
+		panic(fmt.Sprintf("unknown mode %q — expected shadow|simulation|live", cfg.Mode))
 	}
-	log.Printf("executor v4: mode=%s sizeMode=%s sizeFrac=%.3f sizeMin=%.0f sizeMax=%.0f maxExposure=%.0f maxOpen=%d maxSameCat=%d maxPerDay=%d quota=%.0f/%.0f/%.0f",
-		cfg.Mode, cfg.SizeMode, cfg.SizeFraction, cfg.SizeMin, cfg.SizeMax,
-		cfg.MaxExposureUSD, cfg.MaxOpenPositions, cfg.MaxSameCategory, cfg.MaxNewTradesPerDay,
+	log.Printf("executor v7: mode=%s sizingMode=%s kellyFrac=%.2f maxPerTrade=%.2f%% maxExposure=%.2f%% minEdge=%.3f maxOpen=%d maxSameCat=%d maxPerDay=%d quota=%.0f/%.0f/%.0f",
+		cfg.Mode, cfg.SizingMode, cfg.KellyFraction, cfg.MaxPerTradePct*100, cfg.MaxTotalExposurePct*100,
+		cfg.MinEdgePoints, cfg.MaxOpenPositions, cfg.MaxSameCategory, cfg.MaxNewTradesPerDay,
 		cfg.HorizonQuotaShort*100, cfg.HorizonQuotaMedium*100, cfg.HorizonQuotaLong*100)
 
 	portfolio := loadOrCreatePortfolio(cfg)
 	approved := readApproved()
 	if len(approved) == 0 {
 		log.Println("executor: no approved candidates")
+		return
+	}
+
+	// v7 shadow mode: log every approved candidate as a prediction with
+	// decision="skip_shadow" and exit without mutating portfolio/active.jsonl.
+	// This is the calibration warm-up before re-enabling real fills.
+	if cfg.Mode == "shadow" {
+		nowStr := time.Now().UTC().Format(time.RFC3339)
+		predPath := envOr("EXECUTOR_PREDICTIONS_PATH", predictions.DefaultPath)
+		for _, a := range approved {
+			tradeSize := cfg.ComputeTradeSize(portfolio.Bankroll, a.EstimatedProb, a.CurrentPriceYes)
+			side := "buy_yes"
+			if a.EstimatedProb < a.CurrentPriceYes {
+				side = "buy_no"
+			}
+			p := predictions.Prediction{
+				Timestamp:          nowStr,
+				MarketID:           a.CandidateID,
+				Slug:               a.Slug,
+				Question:           a.Question,
+				Category:           predictions.NormalizeCategory(a.Category),
+				HorizonDays:        a.DaysToResolution,
+				Horizon:            a.Horizon,
+				ImpliedPrice:       a.CurrentPriceYes,
+				EstimatedProb:      a.EstimatedProb,
+				EdgePoints:         math.Abs(a.EstimatedProb - a.CurrentPriceYes),
+				EdgeType:           a.EdgeType,
+				EdgeDescription:    a.EdgeDescription,
+				ChecklistPassed:    true,
+				Decision:           "skip_shadow",
+				SkipReason:         "mode=shadow (calibration warm-up)",
+				SizeUSD:            tradeSize,
+				ThesisInvalidation: a.ThesisInvalidation,
+			}
+			if err := predictions.Append(predPath, p); err != nil {
+				log.Printf("executor shadow: predictions append failed for %s: %v", a.Slug, err)
+			}
+			log.Printf("executor shadow: would have opened [%s] %s @ %.4f size=$%.2f (side=%s edge=%.3f)",
+				a.Horizon, a.Question, a.CurrentPriceYes, tradeSize, side, math.Abs(a.EstimatedProb-a.CurrentPriceYes))
+		}
+		log.Printf("executor shadow: %d candidates logged to predictions.jsonl, 0 trades opened", len(approved))
 		return
 	}
 
@@ -60,31 +107,27 @@ func Run() {
 		}
 	}
 
-	// Quota slots per horizon for THIS run (ceil of quota * (max - already_today))
-	slotsRemaining := cfg.MaxNewTradesPerDay - todayCount
-	if slotsRemaining < 0 {
-		slotsRemaining = 0
-	}
-	slotShort := ceilQuota(cfg.HorizonQuotaShort, slotsRemaining)
-	slotMedium := ceilQuota(cfg.HorizonQuotaMedium, slotsRemaining)
-	slotLong := ceilQuota(cfg.HorizonQuotaLong, slotsRemaining)
-	log.Printf("executor: quota slots this run: short=%d medium=%d long=%d (of %d remaining today)",
-		slotShort, slotMedium, slotLong, slotsRemaining)
-
-	// Q2 caps: portfolio-aware horizon quota. Q1 only counts trades opened today;
-	// historical positions from previous days don't constrain it, which is how
-	// the portfolio drifted to 1/19/17 (short/medium/long) instead of 70/15/15.
-	// Q2 enforces the quota against MaxOpenPositions directly.
-	capShort := ceilQuota(cfg.HorizonQuotaShort, cfg.MaxOpenPositions)
-	capMedium := ceilQuota(cfg.HorizonQuotaMedium, cfg.MaxOpenPositions)
-	capLong := ceilQuota(cfg.HorizonQuotaLong, cfg.MaxOpenPositions)
-	openByHorizon := map[string]int{}
+	// v7: horizon quotas are USD caps over MaxExposureUSD, not trade counts.
+	// Reason (post-mortem 2026-05-27): counting trades makes a $25 trade equal
+	// to a $500 trade, which let the portfolio drift away from the intended
+	// capital allocation. Caps are computed once per cycle and consumed
+	// incrementally as trades are accepted below.
+	usdCapShort := cfg.HorizonQuotaShort * cfg.MaxExposureUSD
+	usdCapMedium := cfg.HorizonQuotaMedium * cfg.MaxExposureUSD
+	usdCapLong := cfg.HorizonQuotaLong * cfg.MaxExposureUSD
+	usdByHorizon := map[string]float64{}
 	for _, p := range portfolio.Positions {
-		openByHorizon[p.Horizon]++
+		sz := p.Size
+		if p.SizeUSD > 0 {
+			sz = p.SizeUSD
+		}
+		usdByHorizon[p.Horizon] += sz
 	}
-	log.Printf("executor: portfolio quota caps: short=%d medium=%d long=%d (open now: short=%d medium=%d long=%d)",
-		capShort, capMedium, capLong,
-		openByHorizon["short"], openByHorizon["medium"], openByHorizon["long"])
+	log.Printf("executor v7: USD horizon caps short=$%.0f medium=$%.0f long=$%.0f (used now short=$%.0f medium=$%.0f long=$%.0f)",
+		usdCapShort, usdCapMedium, usdCapLong,
+		usdByHorizon["short"], usdByHorizon["medium"], usdByHorizon["long"])
+	maxTotalExposureUSD := portfolio.Bankroll * cfg.MaxTotalExposurePct
+	log.Printf("executor v7: total exposure cap $%.0f (bankroll=$%.0f × %.0f%%)", maxTotalExposureUSD, portfolio.Bankroll, cfg.MaxTotalExposurePct*100)
 
 	decisionsDir := envOr("EXECUTOR_DECISIONS_DIR", "vault/03-decisions")
 
@@ -117,48 +160,50 @@ func Run() {
 			continue
 		}
 
-		// Q1: horizon quota for new trades opened today.
+		// v7 sizing: Kelly fractional needs the LLM's estimated probability and
+		// the current price. If the LLM did not declare a real edge or Kelly
+		// returns 0 (no edge after fees), we reject without consuming quota.
+		tradeSize := cfg.ComputeTradeSize(portfolio.Bankroll, a.EstimatedProb, a.CurrentPriceYes)
+		if tradeSize <= 0 {
+			rejects = append(rejects, types.Rejection{
+				Timestamp: nowStr, MarketID: a.CandidateID,
+				Question: a.Question, Reason: "kelly_size_zero (edge insufficient or invalid price)",
+			})
+			continue
+		}
+
+		// USD horizon quota (replaces Q1/Q2 trade-count caps from v6).
+		var usdCap float64
 		switch a.Horizon {
 		case "short":
-			if slotShort <= 0 {
-				rejects = append(rejects, types.Rejection{Timestamp: nowStr, MarketID: a.CandidateID, Question: a.Question, Reason: "Q1_horizon_quota_full_short"})
-				continue
-			}
+			usdCap = usdCapShort
 		case "medium":
-			if slotMedium <= 0 {
-				rejects = append(rejects, types.Rejection{Timestamp: nowStr, MarketID: a.CandidateID, Question: a.Question, Reason: "Q1_horizon_quota_full_medium"})
-				continue
-			}
+			usdCap = usdCapMedium
 		case "long":
-			if slotLong <= 0 {
-				rejects = append(rejects, types.Rejection{Timestamp: nowStr, MarketID: a.CandidateID, Question: a.Question, Reason: "Q1_horizon_quota_full_long"})
-				continue
-			}
+			usdCap = usdCapLong
 		default:
 			rejects = append(rejects, types.Rejection{Timestamp: nowStr, MarketID: a.CandidateID, Question: a.Question, Reason: "Q1_horizon_unknown"})
 			continue
 		}
-
-		// Q2: portfolio-aware horizon cap (sees inherited positions, not just today).
-		switch a.Horizon {
-		case "short":
-			if openByHorizon["short"] >= capShort {
-				rejects = append(rejects, types.Rejection{Timestamp: nowStr, MarketID: a.CandidateID, Question: a.Question, Reason: fmt.Sprintf("Q2_portfolio_quota_full_short_%d_of_%d", openByHorizon["short"], capShort)})
-				continue
-			}
-		case "medium":
-			if openByHorizon["medium"] >= capMedium {
-				rejects = append(rejects, types.Rejection{Timestamp: nowStr, MarketID: a.CandidateID, Question: a.Question, Reason: fmt.Sprintf("Q2_portfolio_quota_full_medium_%d_of_%d", openByHorizon["medium"], capMedium)})
-				continue
-			}
-		case "long":
-			if openByHorizon["long"] >= capLong {
-				rejects = append(rejects, types.Rejection{Timestamp: nowStr, MarketID: a.CandidateID, Question: a.Question, Reason: fmt.Sprintf("Q2_portfolio_quota_full_long_%d_of_%d", openByHorizon["long"], capLong)})
-				continue
-			}
+		if usdByHorizon[a.Horizon]+tradeSize > usdCap {
+			rejects = append(rejects, types.Rejection{
+				Timestamp: nowStr, MarketID: a.CandidateID, Question: a.Question,
+				Reason: fmt.Sprintf("Q1_horizon_usd_cap_%s: used $%.0f + $%.0f > cap $%.0f",
+					a.Horizon, usdByHorizon[a.Horizon], tradeSize, usdCap),
+			})
+			continue
 		}
 
-		tradeSize := cfg.ComputeTradeSize(portfolio.Bankroll)
+		// Total exposure cap (Kelly v7 — bankroll × max_total_exposure_pct).
+		if portfolio.UsedExposure+tradeSize > maxTotalExposureUSD {
+			rejects = append(rejects, types.Rejection{
+				Timestamp: nowStr, MarketID: a.CandidateID, Question: a.Question,
+				Reason: fmt.Sprintf("kelly_total_exposure_cap: used $%.0f + $%.0f > cap $%.0f",
+					portfolio.UsedExposure, tradeSize, maxTotalExposureUSD),
+			})
+			continue
+		}
+		// Legacy hard floor still respected.
 		if portfolio.UsedExposure+tradeSize > cfg.MaxExposureUSD {
 			rejects = append(rejects, types.Rejection{
 				Timestamp: nowStr, MarketID: a.CandidateID,
@@ -206,23 +251,36 @@ func Run() {
 			continue
 		}
 
+		// v7: side is dictated by edge direction. If LLM probability > implied
+		// we buy YES; if lower we buy NO. The "target" price for the monitor
+		// is the LLM probability itself (estimatedProb).
+		side := "yes"
+		entryPrice := a.CurrentPriceYes
+		if a.EstimatedProb > 0 && a.EstimatedProb < a.CurrentPriceYes {
+			side = "no"
+			entryPrice = 1.0 - a.CurrentPriceYes
+		}
 		trade := types.ActiveTrade{
-			ID:               fmt.Sprintf("T-%s-%d", a.CandidateID, now.UnixMilli()),
-			MarketID:         a.CandidateID,
-			Slug:             a.Slug,
-			Question:         a.Question,
-			Side:             "yes",
-			EntryPrice:       a.CurrentPriceYes,
-			Size:             tradeSize,
-			SizeUSD:          tradeSize,
-			Category:         a.Category,
-			EntryTimestamp:   nowStr,
-			ApprovedPrice:    a.ApprovedPriceYes,
-			DaysToResolution: a.DaysToResolution,
-			Horizon:          a.Horizon,
-			EndDate:          a.EndDate,
-			LiquidityUSD:     a.LiquidityUSD,
-			SourcesUsed:      a.SourcesUsed,
+			ID:                 fmt.Sprintf("T-%s-%d", a.CandidateID, now.UnixMilli()),
+			MarketID:           a.CandidateID,
+			Slug:               a.Slug,
+			Question:           a.Question,
+			Side:               side,
+			EntryPrice:         entryPrice,
+			Size:               tradeSize,
+			SizeUSD:            tradeSize,
+			Category:           a.Category,
+			EntryTimestamp:     nowStr,
+			ApprovedPrice:      a.ApprovedPriceYes,
+			DaysToResolution:   a.DaysToResolution,
+			Horizon:            a.Horizon,
+			EndDate:            a.EndDate,
+			LiquidityUSD:       a.LiquidityUSD,
+			SourcesUsed:        a.SourcesUsed,
+			EstimatedProb:      a.EstimatedProb,
+			TargetProb:         a.EstimatedProb,
+			ThesisInvalidation: a.ThesisInvalidation,
+			EdgeType:           a.EdgeType,
 		}
 
 		appendActive(trade)
@@ -231,16 +289,7 @@ func Run() {
 		portfolio.Bankroll -= tradeSize
 		todayCount++
 		openCount++
-		openByHorizon[a.Horizon]++
-
-		switch a.Horizon {
-		case "short":
-			slotShort--
-		case "medium":
-			slotMedium--
-		case "long":
-			slotLong--
-		}
+		usdByHorizon[a.Horizon] += tradeSize
 
 		// Persist Obsidian trade .md once per real entry. Brain used to write it
 		// at approve time, which produced one .md per re-approval day (5+ duplicates

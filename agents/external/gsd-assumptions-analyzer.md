@@ -6,6 +6,7 @@ date: 2026-05-28T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-assumptions-analyzer.md
 related:
   - "[[00-MOC]]"
+  - "[[agents/external/gsd-codebase-mapper]]"
   - "[[agents/external/gsd-eval-planner]]"
   - "[[agents/external/gsd-phase-researcher]]"
   - "[[agents/external/gsd-plan-checker]]"

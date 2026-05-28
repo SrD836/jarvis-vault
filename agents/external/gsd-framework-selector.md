@@ -6,9 +6,9 @@ date: 2026-05-28T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-framework-selector.md
 related:
   - "[[00-MOC]]"
-  - "[[agents/external/gsd-domain-researcher]]"
+  - "[[agents/external/gsd-ai-researcher]]"
   - "[[agents/external/gsd-eval-planner]]"
-  - "[[agents/external/gsd-research-synthesizer]]"
+  - "[[agents/external/gsd-phase-researcher]]"
   - "[[agents/external/index]]"
   - "[[skills/external/gsd-ai-integration-phase]]"
   - "[[skills/external/gsd-select-framework]]"

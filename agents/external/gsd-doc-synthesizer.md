@@ -11,7 +11,6 @@ related:
   - "[[agents/external/gsd-plan-checker]]"
   - "[[agents/external/gsd-research-synthesizer]]"
   - "[[agents/external/index]]"
-  - "[[skills/external/gsd-ingest-docs]]"
 tags: [agent, external, mirror]
 # auto-linked 2026-05-28
 ---

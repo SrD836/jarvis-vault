@@ -3,9 +3,9 @@
   "exit_monitor_interval_min": 5,
   "horizon_short_max_days": 2,
   "horizon_medium_max_days": 30,
-  "horizon_quota_short": 0.7,
+  "horizon_quota_short": 0.75,
   "horizon_quota_medium": 0.15,
-  "horizon_quota_long": 0.15,
+  "horizon_quota_long": 0.10,
   "v2_veto_under_hours": 0,
   "max_exposure_usd": 5000,
   "max_same_category": 10,
@@ -19,6 +19,11 @@
   "stop_loss_usd": 150,
   "stop_loss_pct": 80,
   "take_profit_pct": 40,
-  "mode": "simulation",
-  "liquidity_min_ratio": 4
+  "mode": "shadow",
+  "liquidity_min_ratio": 4,
+  "sizing_mode": "kelly_fractional",
+  "kelly_fraction": 0.25,
+  "max_per_trade_pct": 0.05,
+  "max_total_exposure_pct": 0.40,
+  "min_edge_points": 0.05
 }

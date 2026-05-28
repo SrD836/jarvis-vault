@@ -103,12 +103,51 @@ func TestEvaluate_CacheHit_NoSecondHTTP(t *testing.T) {
 	defer srv.Close()
 	endpoint = srv.URL
 
-	Evaluate("btc-test", "BTC?", "crypto", 0.5)
+	Evaluate("btc-above-100k", "BTC above $100k?", "crypto", 0.5)
 	// First call → 2 HTTP (initialize + tools/call). Second call hits cache.
 	first := calls
-	Evaluate("btc-test", "BTC?", "crypto", 0.5)
+	Evaluate("btc-above-100k", "BTC above $100k?", "crypto", 0.5)
 	if calls != first {
 		t.Errorf("cache miss: expected %d calls, got %d", first, calls)
+	}
+}
+
+func TestDependsOnUnderlying(t *testing.T) {
+	cases := []struct {
+		slug, question string
+		want           bool
+	}{
+		{"will-btc-be-above-80k-on-may-28", "BTC above $80k on May 28?", true},
+		{"btc-price-100k-by-eoy", "BTC price hits 100k by EOY", true},
+		{"eth-new-ath-2026", "ETH all-time high in 2026", true},
+		{"will-coinbase-list-token-x", "Will Coinbase list token X?", false},
+		{"ethereum-merge-completes", "Ethereum merge completes?", false},
+		{"sec-approves-eth-etf", "SEC approves ETH ETF?", false},
+	}
+	for _, c := range cases {
+		got := dependsOnUnderlying(c.slug, c.question)
+		if got != c.want {
+			t.Errorf("dependsOnUnderlying(%q, %q) = %v, want %v", c.slug, c.question, got, c.want)
+		}
+	}
+}
+
+func TestEvaluate_NonPriceDependent_SkipsEvenForCrypto(t *testing.T) {
+	resetState()
+	calls := 0
+	srv := fakeMCP(t, func(name string, args map[string]any) string {
+		calls++
+		return `{"jsonrpc":"2.0","id":1,"result":{"content":[{"type":"text","text":"STRONG_SELL\nConfidence: 90%"}]}}`
+	})
+	defer srv.Close()
+	endpoint = srv.URL
+
+	r := Evaluate("will-coinbase-list-token-x", "Will Coinbase list token X?", "crypto", 0.65)
+	if r != nil {
+		t.Fatalf("expected nil for non-price-dependent crypto market, got %+v", r)
+	}
+	if calls != 0 {
+		t.Errorf("MCP should not be called for non-price-dependent markets, got %d calls", calls)
 	}
 }
 

@@ -9,7 +9,6 @@ related:
   - "[[agents/external/gsd-eval-auditor]]"
   - "[[agents/external/gsd-nyquist-auditor]]"
   - "[[agents/external/gsd-plan-checker]]"
-  - "[[agents/external/gsd-security-auditor]]"
   - "[[agents/external/index]]"
   - "[[skills/external/gsd-eval-review]]"
 tags: [agent, external, mirror]

@@ -29,6 +29,13 @@ CTX=$(mktemp)
 trap 'rm -f "$CTX"' EXIT
 
 {
+  # v7: prepend Brier-score report so the LLM sees calibration before PnL.
+  echo "## Calibración (Brier últimos 7d)"
+  echo ""
+  echo '```'
+  python3 "$SCRIPT_DIR/brier.py" --days 7 --predictions vault/inbox/trading/predictions.jsonl 2>&1 || true
+  echo '```'
+  echo ""
   echo "## Aggregate stats últimos 7d (closed.jsonl)"
   echo ""
   jq -s --arg s "$SINCE" '

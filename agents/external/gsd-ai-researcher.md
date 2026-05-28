@@ -8,9 +8,9 @@ related:
   - "[[00-MOC]]"
   - "[[agents/external/gsd-framework-selector]]"
   - "[[agents/external/gsd-phase-researcher]]"
+  - "[[agents/external/gsd-project-researcher]]"
   - "[[agents/external/gsd-research-synthesizer]]"
   - "[[agents/external/index]]"
-  - "[[agents/researcher]]"
   - "[[skills/external/gsd-ai-integration-phase]]"
 tags: [agent, external, mirror]
 # auto-linked 2026-05-28

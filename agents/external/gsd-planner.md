@@ -8,6 +8,7 @@ related:
   - "[[00-MOC]]"
   - "[[agents/external/gsd-eval-planner]]"
   - "[[agents/external/gsd-plan-checker]]"
+  - "[[agents/external/gsd-roadmapper]]"
   - "[[agents/external/index]]"
   - "[[agents/planner]]"
   - "[[skills/external/gsd-plan-phase]]"

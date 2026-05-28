@@ -9,6 +9,7 @@ related:
   - "[[agents/external/gsd-domain-researcher]]"
   - "[[agents/external/gsd-planner]]"
   - "[[agents/external/gsd-research-synthesizer]]"
+  - "[[agents/external/gsd-roadmapper]]"
   - "[[agents/external/index]]"
   - "[[agents/planner]]"
   - "[[skills/external/gsd-research-phase]]"

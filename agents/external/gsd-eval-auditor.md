@@ -11,6 +11,7 @@ related:
   - "[[agents/external/gsd-nyquist-auditor]]"
   - "[[agents/external/gsd-security-auditor]]"
   - "[[agents/external/index]]"
+  - "[[agents/tester]]"
   - "[[skills/external/gsd-eval-review]]"
 tags: [agent, external, mirror]
 # auto-linked 2026-05-28

@@ -6,7 +6,7 @@ date: 2026-05-28T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-domain-researcher.md
 related:
   - "[[00-MOC]]"
-  - "[[agents/external/gsd-advisor-researcher]]"
+  - "[[agents/external/gsd-ai-researcher]]"
   - "[[agents/external/gsd-eval-planner]]"
   - "[[agents/external/gsd-phase-researcher]]"
   - "[[agents/external/gsd-project-researcher]]"

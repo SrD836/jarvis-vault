@@ -6,9 +6,9 @@ date: 2026-05-28T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-intel-updater.md
 related:
   - "[[00-MOC]]"
+  - "[[agents/archivist]]"
+  - "[[agents/documenter]]"
   - "[[agents/external/gsd-codebase-mapper]]"
-  - "[[agents/external/gsd-doc-synthesizer]]"
-  - "[[agents/external/gsd-pattern-mapper]]"
   - "[[agents/external/gsd-research-synthesizer]]"
   - "[[agents/external/index]]"
   - "[[skills/external/gsd-intel]]"

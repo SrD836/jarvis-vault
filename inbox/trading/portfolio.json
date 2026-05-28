@@ -374,6 +374,60 @@
           "published_date": "2026-05-20"
         }
       ]
+    },
+    {
+      "id": "T-1087513-1779894004820",
+      "market_id": "1087513",
+      "slug": "will-jannik-sinner-win-the-2026-mens-french-open",
+      "question": "Will Jannik Sinner win the 2026 Men's French Open?",
+      "side": "yes",
+      "entry_price": 0.74,
+      "size": 76.74441659488464,
+      "category": "other",
+      "entry_timestamp": "2026-05-27T15:00:04Z",
+      "approved_price": 0.74,
+      "days_to_resolution": 10,
+      "horizon": "medium",
+      "end_date": "2026-06-07T00:00:00Z",
+      "size_usd": 76.74441659488464,
+      "liquidity_usd": 55603.239,
+      "sources_used": [
+        {
+          "domain": "claudemax-websearch",
+          "url": "",
+          "headline_title": "Sinner's Paris charge begins as world No. 1 extends winning streak",
+          "published_date": "2026-05-26"
+        },
+        {
+          "domain": "claudemax-websearch",
+          "url": "",
+          "headline_title": "Sinner knocks out Tabur in first round Roland Garros 2026",
+          "published_date": "2026-05-26"
+        },
+        {
+          "domain": "claudemax-websearch",
+          "url": "",
+          "headline_title": "Roland Garros 2026 withdrawals: Alcaraz out through wrist injury",
+          "published_date": "2026-05-20"
+        }
+      ]
+    },
+    {
+      "id": "T-2322008-1779899405064",
+      "market_id": "2322008",
+      "slug": "bitcoin-above-74k-on-may-28-2026",
+      "question": "Will the price of Bitcoin be above $74,000 on May 28?",
+      "side": "yes",
+      "entry_price": 0.807,
+      "size": 75.20952826298695,
+      "category": "market",
+      "entry_timestamp": "2026-05-27T16:30:05Z",
+      "approved_price": 0.807,
+      "days_to_resolution": 0,
+      "horizon": "short",
+      "end_date": "2026-05-28T16:00:00Z",
+      "size_usd": 75.20952826298695,
+      "liquidity_usd": 31979.54643
     }
   ]
 }

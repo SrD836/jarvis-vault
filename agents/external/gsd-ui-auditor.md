@@ -6,6 +6,7 @@ date: 2026-05-28T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-ui-auditor.md
 related:
   - "[[00-MOC]]"
+  - "[[agents/auditor]]"
   - "[[agents/external/gsd-eval-auditor]]"
   - "[[agents/external/gsd-nyquist-auditor]]"
   - "[[agents/external/gsd-security-auditor]]"

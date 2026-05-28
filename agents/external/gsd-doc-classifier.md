@@ -9,9 +9,9 @@ related:
   - "[[agents/external/gsd-doc-synthesizer]]"
   - "[[agents/external/gsd-doc-verifier]]"
   - "[[agents/external/gsd-doc-writer]]"
-  - "[[agents/external/gsd-pattern-mapper]]"
+  - "[[agents/external/gsd-ingest-docs]]"
+  - "[[agents/external/gsd-verifier]]"
   - "[[agents/external/index]]"
-  - "[[skills/external/gsd-ingest-docs]]"
 tags: [agent, external, mirror]
 # auto-linked 2026-05-28
 ---

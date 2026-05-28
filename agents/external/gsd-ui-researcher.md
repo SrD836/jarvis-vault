@@ -6,7 +6,7 @@ date: 2026-05-28T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-ui-researcher.md
 related:
   - "[[00-MOC]]"
-  - "[[agents/external/gsd-phase-researcher]]"
+  - "[[agents/designer]]"
   - "[[agents/external/gsd-ui-auditor]]"
   - "[[agents/external/gsd-ui-checker]]"
   - "[[agents/external/index]]"

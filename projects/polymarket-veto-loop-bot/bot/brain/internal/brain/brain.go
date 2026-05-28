@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
+	"math"
 	"os"
 	"path/filepath"
 	"strings"
@@ -12,6 +13,7 @@ import (
 
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/config"
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/decisionlog"
+	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/predictions"
 	commontypes "github.com/davidgn/polymarket-veto-loop-bot/bot/common/types"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/antipatterns"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/llmclient"
@@ -34,6 +36,8 @@ var (
 	tavilyConnPath    = envOr("BRAIN_TAVILY_CONNECTOR", "/openclaw-workspace/connectors/tavily.json")
 	dashboardURL      = envOr("DASHBOARD_URL", "http://jarvis-dashboard:3000")
 	sourceStatsPath   = envOr("BRAIN_SOURCE_STATS", "vault/agents/polymarket-bot/source-stats.jsonl")
+	predictionsPath   = envOr("BRAIN_PREDICTIONS_PATH", predictions.DefaultPath)
+	suspendedPath     = envOr("BRAIN_SUSPENDED_CATEGORIES", "vault/inbox/trading/suspended_categories.json")
 	disableResearch   = envOr("BRAIN_DISABLE_RESEARCH", "") != ""
 )
 
@@ -48,6 +52,9 @@ const (
 	ruleTradingView    = "P11"
 	ruleNews1          = "N1"
 	ruleNews2          = "N2"
+	ruleEdgeMissing    = "E1" // v7: LLM declared edge_type=none or empty
+	ruleEdgeBelowMin   = "E2" // v7: |estimated_prob - implied| < MinEdgePoints
+	ruleCategorySusp   = "S1" // v7: category Brier > 0.25 × 3w
 	memoryHitThreshold = 0.7
 	// maxResearchPerCycle caps Claude Max research calls to keep brain runtime
 	// inside the 30-min cron window. Cache TTL is 6h so cumulative coverage
@@ -115,8 +122,16 @@ func Run() error {
 	_ = now
 
 	stats := struct {
-		P0, P1, P2, P3, P4, P6, P7, P8, P9, P10, P11, V1, V2, V4, M1, M2, M3, N1, N2, LLM int
+		P0, P1, P2, P3, P4, P6, P7, P8, P9, P10, P11, V1, V2, V4, M1, M2, M3, N1, N2, LLM, E1, E2, S1 int
 	}{}
+
+	// v7: load suspended categories. Brier-driven auto-suspend writes this file
+	// when a category posts Brier > 0.25 for 3 consecutive weeks. Brain blocks
+	// candidates in those categories with rule S1.
+	suspendedCats := loadSuspendedCategories(suspendedPath)
+	if len(suspendedCats) > 0 {
+		log.Printf("S1: %d categories suspended by Brier review: %v", len(suspendedCats), suspendedCats)
+	}
 
 	// M3 prep: anti-patterns extracted from LLM post-mortems on past losses.
 	// Tags appearing ≥3 times are treated as active veto signals.
@@ -139,6 +154,24 @@ func Run() error {
 	log.Printf("M2: loaded %d active soft rules from memory.md", len(activeSoftRules))
 
 	for i, c := range candidates {
+		// S1: suspended-category gate (v7). Comes first because the rest of the
+		// pipeline is pointless work for vetoed categories.
+		if len(suspendedCats) > 0 {
+			catKey := predictions.NormalizeCategory(c.Category)
+			if _, susp := suspendedCats[catKey]; susp {
+				vr := types.VetoResult{
+					CandidateID: c.ID, Slug: c.Slug, Blocked: true,
+					Reason:   fmt.Sprintf("categoría suspendida por Brier (cat=%s)", catKey),
+					VetoedBy: ruleCategorySusp,
+				}
+				blocked = append(blocked, vr)
+				recordVeto(mem, &c, vr, decisionsDir, true)
+				appendSkipPrediction(&c, cfg, vr.Reason, ruleCategorySusp)
+				stats.S1++
+				continue
+			}
+		}
+
 		// P0: price band sanity (v6 — floor 0.10 default, relaxed to 0.05 if days_to_end <= 7)
 		if vr := rules.EvalPriceBand(&c, cfg.PriceFloor, cfg.PriceCeiling); vr != nil {
 			blocked = append(blocked, *vr)
@@ -359,11 +392,13 @@ func Run() error {
 			}
 		}
 
-		// LLM: semantic V3/V5/V6
+		// LLM: semantic V3/V5/V6 + v7 edge declaration.
 		llmResult := llmclient.EvaluateV3V5V6(&c)
 		if llmResult == nil {
 			log.Printf("WARN: LLM returned nil for %s, passing", c.Slug)
-		} else if llmResult.Block {
+			llmResult = &types.LLMBlockResult{}
+		}
+		if llmResult.Block {
 			vr := types.VetoResult{
 				CandidateID: c.ID,
 				Slug:        c.Slug,
@@ -373,28 +408,70 @@ func Run() error {
 			}
 			blocked = append(blocked, vr)
 			recordVetoWithExtras(mem, &c, vr, decisionsDir, true, researchSummary, nil)
+			appendDecisionPrediction(&c, cfg, llmResult, "skip", vr.Reason, 0)
 			stats.LLM++
+			continue
+		}
+
+		// E1: LLM did not declare a real edge. Without an edge we are not
+		// allowed to enter — see prompt maestro principle #2.
+		edgeType := strings.ToLower(strings.TrimSpace(llmResult.EdgeType))
+		if edgeType == "" || edgeType == "none" {
+			vr := types.VetoResult{
+				CandidateID: c.ID, Slug: c.Slug, Blocked: true,
+				Reason:   "edge no declarado por LLM (edge_type=none)",
+				VetoedBy: ruleEdgeMissing,
+			}
+			blocked = append(blocked, vr)
+			recordVetoWithExtras(mem, &c, vr, decisionsDir, true, researchSummary, nil)
+			appendDecisionPrediction(&c, cfg, llmResult, "skip", vr.Reason, 0)
+			stats.E1++
+			continue
+		}
+
+		// E2: edge below configured minimum (default 5pp). Even if the LLM
+		// declared an edge type, we require the magnitude to clear fees + noise.
+		edgePts := math.Abs(llmResult.EstimatedProb - c.CurrentPriceYes)
+		if edgePts < cfg.MinEdgePoints {
+			vr := types.VetoResult{
+				CandidateID: c.ID, Slug: c.Slug, Blocked: true,
+				Reason:   fmt.Sprintf("edge %.3f < mín %.3f (p̂=%.3f, implied=%.3f)", edgePts, cfg.MinEdgePoints, llmResult.EstimatedProb, c.CurrentPriceYes),
+				VetoedBy: ruleEdgeBelowMin,
+			}
+			blocked = append(blocked, vr)
+			recordVetoWithExtras(mem, &c, vr, decisionsDir, true, researchSummary, nil)
+			appendDecisionPrediction(&c, cfg, llmResult, "skip", vr.Reason, 0)
+			stats.E2++
 			continue
 		}
 
 		d := daysUntil(c.EndDate)
 		horizon := cfg.Classify(d)
+		side := "buy_yes"
+		if llmResult.EstimatedProb < c.CurrentPriceYes {
+			side = "buy_no"
+		}
 		approved = append(approved, types.Approved{
-			CandidateID:      c.ID,
-			Slug:             c.Slug,
-			Question:         c.Question,
-			Category:         c.Category,
-			CurrentPriceYes:  c.CurrentPriceYes,
-			Volume24h:        c.Volume24h,
-			LiquidityUSD:     c.LiquidityUSD,
-			EndDate:          c.EndDate,
-			ScannedAt:        c.ScannedAt,
-			ApprovedAt:       time.Now().UTC().Format(time.RFC3339),
-			ApprovedPriceYes: c.CurrentPriceYes,
-			DaysToResolution: d,
-			Horizon:          horizon,
-			SourcesUsed:      sourceCites,
+			CandidateID:        c.ID,
+			Slug:               c.Slug,
+			Question:           c.Question,
+			Category:           c.Category,
+			CurrentPriceYes:    c.CurrentPriceYes,
+			Volume24h:          c.Volume24h,
+			LiquidityUSD:       c.LiquidityUSD,
+			EndDate:            c.EndDate,
+			ScannedAt:          c.ScannedAt,
+			ApprovedAt:         time.Now().UTC().Format(time.RFC3339),
+			ApprovedPriceYes:   c.CurrentPriceYes,
+			DaysToResolution:   d,
+			Horizon:            horizon,
+			SourcesUsed:        sourceCites,
+			EstimatedProb:      llmResult.EstimatedProb,
+			EdgeType:           edgeType,
+			EdgeDescription:    llmResult.EdgeDescription,
+			ThesisInvalidation: llmResult.ThesisInvalidation,
 		})
+		appendDecisionPrediction(&c, cfg, llmResult, side, "", 0)
 
 		// Persistence of the trade .md happens in executor after actual entry,
 		// not here — brain may re-approve the same slug across cycles until the
@@ -413,11 +490,90 @@ func Run() error {
 	}
 
 	softrules.GenerateAndAppend(memoryPath)
-	log.Printf("Brain v3 done: %d approved, %d blocked (P0=%d P2=%d P3=%d P4=%d P6=%d P7=%d P8=%d P9=%d P10=%d P11=%d V1=%d V2=%d V4=%d M1=%d M2=%d M3=%d N1=%d N2=%d LLM=%d) horizons in approved: short=%d medium=%d long=%d",
+	log.Printf("Brain v7 done: %d approved, %d blocked (P0=%d P2=%d P3=%d P4=%d P6=%d P7=%d P8=%d P9=%d P10=%d P11=%d V1=%d V2=%d V4=%d M1=%d M2=%d M3=%d N1=%d N2=%d LLM=%d E1=%d E2=%d S1=%d) horizons in approved: short=%d medium=%d long=%d",
 		len(approved), len(blocked),
-		stats.P0, stats.P2, stats.P3, stats.P4, stats.P6, stats.P7, stats.P8, stats.P9, stats.P10, stats.P11, stats.V1, stats.V2, stats.V4, stats.M1, stats.M2, stats.M3, stats.N1, stats.N2, stats.LLM,
+		stats.P0, stats.P2, stats.P3, stats.P4, stats.P6, stats.P7, stats.P8, stats.P9, stats.P10, stats.P11, stats.V1, stats.V2, stats.V4, stats.M1, stats.M2, stats.M3, stats.N1, stats.N2, stats.LLM, stats.E1, stats.E2, stats.S1,
 		countHorizon(approved, "short"), countHorizon(approved, "medium"), countHorizon(approved, "long"))
 	return nil
+}
+
+// loadSuspendedCategories reads the auto-suspend list emitted by analytics/brier.py.
+// Schema: {"suspended": [{"category": "geopolitics", "since": "...", "until": "..."}]}
+// or a flat list of strings. Missing file → empty map.
+func loadSuspendedCategories(path string) map[string]struct{} {
+	out := map[string]struct{}{}
+	raw, err := os.ReadFile(path)
+	if err != nil {
+		return out
+	}
+	var rich struct {
+		Suspended []struct {
+			Category string `json:"category"`
+		} `json:"suspended"`
+	}
+	if err := json.Unmarshal(raw, &rich); err == nil && len(rich.Suspended) > 0 {
+		for _, s := range rich.Suspended {
+			c := predictions.NormalizeCategory(s.Category)
+			if c != "" {
+				out[c] = struct{}{}
+			}
+		}
+		return out
+	}
+	var flat []string
+	if err := json.Unmarshal(raw, &flat); err == nil {
+		for _, s := range flat {
+			out[predictions.NormalizeCategory(s)] = struct{}{}
+		}
+	}
+	return out
+}
+
+// appendSkipPrediction logs an S1-style veto where the LLM never ran.
+func appendSkipPrediction(c *types.Candidate, cfg *config.BotConfig, reason, rule string) {
+	d := daysUntil(c.EndDate)
+	p := predictions.Prediction{
+		MarketID:     c.ID,
+		Slug:         c.Slug,
+		Question:     c.Question,
+		Category:     predictions.NormalizeCategory(c.Category),
+		HorizonDays:  d,
+		Horizon:      cfg.Classify(d),
+		ImpliedPrice: c.CurrentPriceYes,
+		Decision:     "skip",
+		SkipReason:   rule + ": " + reason,
+	}
+	if err := predictions.Append(predictionsPath, p); err != nil {
+		log.Printf("WARN: predictions append (skip %s): %v", rule, err)
+	}
+}
+
+// appendDecisionPrediction logs a post-LLM decision (veto or approve). The
+// estimated_prob / edge_type fields are carried from the LLM result so the
+// Brier loop has data to score once the market resolves.
+func appendDecisionPrediction(c *types.Candidate, cfg *config.BotConfig, lr *types.LLMBlockResult, decision, skipReason string, sizeUSD float64) {
+	d := daysUntil(c.EndDate)
+	p := predictions.Prediction{
+		MarketID:           c.ID,
+		Slug:               c.Slug,
+		Question:           c.Question,
+		Category:           predictions.NormalizeCategory(c.Category),
+		HorizonDays:        d,
+		Horizon:            cfg.Classify(d),
+		ImpliedPrice:       c.CurrentPriceYes,
+		EstimatedProb:      lr.EstimatedProb,
+		EdgePoints:         math.Abs(lr.EstimatedProb - c.CurrentPriceYes),
+		EdgeType:           strings.ToLower(strings.TrimSpace(lr.EdgeType)),
+		EdgeDescription:    lr.EdgeDescription,
+		ChecklistPassed:    decision != "skip",
+		Decision:           decision,
+		SkipReason:         skipReason,
+		SizeUSD:            sizeUSD,
+		ThesisInvalidation: lr.ThesisInvalidation,
+	}
+	if err := predictions.Append(predictionsPath, p); err != nil {
+		log.Printf("WARN: predictions append (%s): %v", decision, err)
+	}
 }
 
 func evalWindowGate(c *types.Candidate, minDays, maxDays int) *types.VetoResult {

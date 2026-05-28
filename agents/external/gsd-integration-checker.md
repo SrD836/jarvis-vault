@@ -6,12 +6,12 @@ date: 2026-05-28T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-integration-checker.md
 related:
   - "[[00-MOC]]"
+  - "[[agents/external/gsd-codebase-mapper]]"
   - "[[agents/external/gsd-eval-auditor]]"
   - "[[agents/external/gsd-plan-checker]]"
   - "[[agents/external/gsd-verifier]]"
   - "[[agents/external/index]]"
   - "[[agents/tester]]"
-  - "[[skills/external/gsd-validate-phase]]"
 tags: [agent, external, mirror]
 # auto-linked 2026-05-28
 ---
