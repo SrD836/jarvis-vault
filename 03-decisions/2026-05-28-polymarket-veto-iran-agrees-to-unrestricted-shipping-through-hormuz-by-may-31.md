@@ -2,7 +2,7 @@
 title: "Polymarket veto — iran-agrees-to-unrestricted-shipping-through-hormuz-by-may-31"
 type: decision
 date: 2026-05-28
-decision: "Veto de tesis 'Iran agrees to unrestricted shipping through Hormuz by May 31?' (rule P9): P9: geopolitics pump cluster (price 0.07, 2d)"
+decision: "Veto de tesis 'Iran agrees to unrestricted shipping through Hormuz by May 31?' (rule P9): P9: geopolitics pump cluster (price 0.09, 2d)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `iran-agrees-to-unrestricted-shipping-through-hormuz-by-may-31`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.0660
-- **Volumen 24h**: 76042.75 USD
+- **Precio YES**: 0.0920
+- **Volumen 24h**: 69628.24 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `P9`
 
-P9: geopolitics pump cluster (price 0.07, 2d)
+P9: geopolitics pump cluster (price 0.09, 2d)
 
 ## Human notes
 

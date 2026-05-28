@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-the-new-york-knicks-win-the-2026-nba-finals`
 - **Categoría**: sports-season
 - **Precio YES**: 0.2850
-- **Volumen 24h**: 145255.63 USD
+- **Volumen 24h**: 143210.76 USD
 - **End date**: 2026-07-01T00:00:00Z
 
 ## Razón del veto
@@ -34,10 +34,9 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-the-new-york-knicks-win-the-2026-nba-finals` score=1.00 (exact slug match)
-- veto `will-the-san-antonio-spurs-win-the-nba-western-conference-finals` score=0.40 (same category; same price bucket mid)
 - veto `will-the-oklahoma-city-thunder-win-the-nba-western-conference-finals` score=0.40 (same category; same price bucket mid)
-- veto `will-psg-win-the-202526-champions-league` score=0.40 (same category; same price bucket mid)
 - veto `will-the-oklahoma-city-thunder-win-the-2026-nba-finals` score=0.40 (same category; same price bucket mid)
+- veto `will-psg-win-the-202526-champions-league` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

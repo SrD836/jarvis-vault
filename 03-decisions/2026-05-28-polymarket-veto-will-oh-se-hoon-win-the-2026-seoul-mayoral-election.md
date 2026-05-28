@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-oh-se-hoon-win-the-2026-seoul-mayoral-election`
 - **Categoría**: elections
 - **Precio YES**: 0.2200
-- **Volumen 24h**: 88249.73 USD
+- **Volumen 24h**: 92250.09 USD
 - **End date**: 2026-06-03T00:00:00Z
 
 ## Razón del veto

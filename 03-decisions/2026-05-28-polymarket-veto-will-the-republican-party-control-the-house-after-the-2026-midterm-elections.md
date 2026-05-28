@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-the-republican-party-control-the-house-after-the-2026-midterm-elections`
 - **Categoría**: elections
 - **Precio YES**: 0.2000
-- **Volumen 24h**: 59786.69 USD
+- **Volumen 24h**: 59776.44 USD
 - **End date**: 2026-11-03T00:00:00Z
 
 ## Razón del veto

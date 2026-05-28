@@ -5,7 +5,15 @@ batch_id: batch-1779909507963-d99bd8
 offer_id: offer-5-servinform
 started_at: 2026-05-27T19:18:27.967Z
 parent: dashboard-batch
+related:
+  - "[[agents/designer]]"
+  - "[[agents/job-hunter]]"
+  - "[[skills/external/banner-design]]"
+  - "[[skills/external/design]]"
+  - "[[skills/external/ui-ux-pro-max]]"
+# auto-linked 2026-05-28
 ---
+
 
 ## build-portfolio — offer-5-servinform
 

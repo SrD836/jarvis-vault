@@ -22,7 +22,7 @@ related:
 - **Slug**: `us-x-iran-permanent-peace-deal-by-july-31-2026-831-252`
 - **Categoría**: geopolitics
 - **Precio YES**: 0.6200
-- **Volumen 24h**: 311335.77 USD
+- **Volumen 24h**: 311048.03 USD
 - **End date**: 2026-07-31T00:00:00Z
 
 ## Razón del veto
