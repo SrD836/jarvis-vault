@@ -78,18 +78,20 @@ También tienes 3 PDFs pre-renderizados (color variants de Posquit0) en `master-
    - Proyectos (JARVIS, polymarket-bot): describirlos con framing apropiado al puesto. Para admin junior → "demuestra capacidad autodidacta de gestión y operación de sistemas"; para IT support → "demuestra troubleshooting, Linux, automatización". NO cambies el código real, solo el lenguaje.
    - Conocimientos sidebar: reordena poniendo arriba lo relevante al puesto (ofimática para admin, soporte IT para helpdesk, etc.).
 
-4. **Compilar via SSH al VPS** (compile-cv.sh está instalado en `~/bin/compile-cv.sh` del usuario `agent`):
-   ```bash
-   ssh -i ~/.ssh/id_ed25519 agent@88.198.168.61 \
-     "compile-cv.sh inbox/job-hunting/adapted-cvs/<offer_id>"
-   ```
-   El script auto-detecta el engine (xelatex para Awesome-CV, pdflatex para el resto), compila en el container gateway, y deja `resume.pdf` en el mismo directorio. Latencia ~10-20s.
+4. **Compilar via filesystem-trigger** (no necesitas SSH ni HTTP — tu sandbox solo necesita escribir archivos y esperar):
 
-   - Si retorna "OK: ..." → todo bien, el PDF está listo.
-   - Si retorna "compile FAILED — log tail:" → revisa el error, arregla el .tex, reintenta. Errores típicos: caracteres especiales sin escapar, llaves desbalanceadas.
-   - **Si falla 2 veces seguidas**: abandona la adaptación, usa una variante pre-renderizada de `master-cv/variants/` y reporta al usuario el problema.
+   - **Paso 1**: escribe `adapted-cvs/<offer_id>/resume.tex` y, si es plantilla Awesome-CV, copia también `awesome-cv.cls` desde `cv-templates/awesome-cv-posquit0/` al mismo directorio (el watcher la copia automáticamente si falta, pero hacerlo explícito acelera).
 
-5. Syncthing trae el PDF de vuelta al PC en ~30s. Ya puedes subirlo en el portal.
+   - **Paso 2**: espera. Un cron del VPS (`cv-compile-watcher.sh`, corre cada minuto) detecta el `.tex` nuevo y compila vía `compile-cv.sh`. El resultado vuelve por Syncthing.
+
+   - **Paso 3**: poll cada 5-10s, durante hasta **120s**, comprobando:
+     - Si aparece `adapted-cvs/<offer_id>/resume.pdf` → compile OK, usa ese PDF.
+     - Si aparece `adapted-cvs/<offer_id>/.compile.error` → compile falló. Lee el archivo (contiene últimas líneas del log de xelatex/pdflatex), arregla el `.tex`, borra el `.error` y vuelve a esperar.
+     - Si pasan 120s sin que aparezca ni uno ni otro → algo va mal con Syncthing o el watcher; reporta al usuario.
+
+   - **Si falla 2 veces seguidas** (mismo offer): abandona la adaptación, usa una variante pre-renderizada de `master-cv/variants/` y reporta al usuario.
+
+   Latencia típica end-to-end: 60-90s (Syncthing PC→VPS ~20s + espera cron ≤60s + compile 5-10s + Syncthing VPS→PC ~20s).
 
 ### Fase 5 — Cover letter (opcional pero recomendado)
 
