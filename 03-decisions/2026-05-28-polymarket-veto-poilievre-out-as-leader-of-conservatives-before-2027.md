@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-novak-djokovic-win-the-2026-mens-french-open"
+title: "Polymarket veto — poilievre-out-as-leader-of-conservatives-before-2027"
 type: decision
 date: 2026-05-28
-decision: "Veto de tesis 'Will Novak Djokovic win the 2026 Men's French Open?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Poilievre out as leader of Conservatives by December 31, 2026?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will Novak Djokovic win the 2026 Men's French Open?
+# Veto: Poilievre out as leader of Conservatives by December 31, 2026?
 
 ## Mercado
 
-- **Slug**: `will-novak-djokovic-win-the-2026-mens-french-open`
+- **Slug**: `poilievre-out-as-leader-of-conservatives-before-2027`
 - **Categoría**: other
-- **Precio YES**: 0.1880
-- **Volumen 24h**: 209109.68 USD
-- **End date**: 2026-06-07T00:00:00Z
+- **Precio YES**: 0.1600
+- **Volumen 24h**: 149312.56 USD
+- **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto
 
@@ -33,7 +33,7 @@ memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
-- veto `will-novak-djokovic-win-the-2026-mens-french-open` score=1.00 (exact slug match)
+- veto `poilievre-out-as-leader-of-conservatives-before-2027` score=1.00 (exact slug match)
 - veto `nicols-maduro-released-from-custody-by-december-31-2026` score=0.40 (same category; same price bucket low)
 - veto `will-anthropic-have-the-best-math-ai-model-at-the-end-of-may-2026` score=0.40 (same category; same price bucket low)
 - veto `will-trump-restart-project-freedom-by-may-31` score=0.40 (same category; same price bucket low)

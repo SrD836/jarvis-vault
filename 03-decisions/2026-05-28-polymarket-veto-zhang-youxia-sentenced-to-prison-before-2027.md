@@ -35,9 +35,9 @@ memoria: exact slug match (score 1.00)
 
 - veto `zhang-youxia-sentenced-to-prison-before-2027` score=1.00 (exact slug match)
 - veto `nicols-maduro-released-from-custody-by-december-31-2026` score=0.40 (same category; same price bucket low)
-- veto `will-trump-agree-to-unfreeze-iranian-assets-by-may-31` score=0.40 (same category; same price bucket low)
-- veto `will-trump-restart-project-freedom-by-may-31` score=0.40 (same category; same price bucket low)
 - veto `will-anthropic-have-the-best-math-ai-model-at-the-end-of-may-2026` score=0.40 (same category; same price bucket low)
+- veto `will-trump-restart-project-freedom-by-may-31` score=0.40 (same category; same price bucket low)
+- veto `will-trump-agree-to-unfreeze-iranian-assets-by-may-31` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

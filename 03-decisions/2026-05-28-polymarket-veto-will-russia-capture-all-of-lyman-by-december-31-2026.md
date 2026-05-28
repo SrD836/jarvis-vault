@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `will-russia-capture-all-of-lyman-by-december-31-2026`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.2200
+- **Precio YES**: 0.2100
 - **Volumen 24h**: 154325.75 USD
 - **End date**: 2026-12-31T00:00:00Z
 
