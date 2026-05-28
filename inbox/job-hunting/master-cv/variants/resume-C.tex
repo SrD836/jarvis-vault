@@ -1,0 +1,145 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Master CV — David González Nuez · Variant C (skyblue — asistente virtual / ops)
+% Editado manualmente 2026-05-28 para flujo Cowork (pool de 3 variantes).
+% Layout: 2-column sidebar (left) + main (right), Awesome-CV class (Posquit0 pinned 964f99d).
+
+\documentclass[10pt, a4paper]{awesome-cv}
+
+\geometry{left=1.0cm, top=.7cm, right=1.0cm, bottom=1.2cm, footskip=.4cm}
+
+\colorlet{awesome}{awesome-skyblue}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% PERSONAL — used by \makecvheader
+\name{David}{González Nuez}
+\position{Asistente Virtual / Operaciones Remotas}
+\address{Teror, España}
+\mobile{611411804}
+\email{davidgnjunior@gmail.com}
+\github{SrD836}
+
+
+\begin{document}
+
+\makecvheader[C]
+\makecvfooter
+  { \today }
+  { David González Nuez~~~\textperiodcentered~~~Résumé }
+  { \thepage }
+
+% Two-column layout: sidebar 32% / main 66%
+\noindent\begin{minipage}[t]{0.32\textwidth}
+\vspace{0pt}
+
+% ===== SIDEBAR =====
+
+
+\cvsection{ Habilidades clave }
+\begin{itemize}[leftmargin=*, label={}, itemsep=2pt]
+\item \textbf{Ofimática}\\{\footnotesize Excel, Word, Google Workspace}
+\item \textbf{Atención al cliente}\\{\footnotesize TPV, gestión de incidencias, trato bilingüe}
+\item \textbf{Soporte IT}\\{\footnotesize Windows, Linux, troubleshooting básico}
+\item \textbf{Automatización}\\{\footnotesize Python, scripts, cron}
+\item \textbf{IA aplicada}\\{\footnotesize LLMs, prompt engineering, APIs Claude/Azure}
+\item \textbf{Web stack}\\{\footnotesize JavaScript, React, Node.js, REST APIs}
+\item \textbf{Infraestructura}\\{\footnotesize Docker, Git, SQL, Bash}
+\end{itemize}
+
+
+
+\cvsection{ Idiomas }
+\begin{itemize}[leftmargin=*, label={}, itemsep=2pt]
+\item \textbf{Castellano} \hfill \textit{Nativo}
+\item \textbf{Inglés} \hfill \textit{B1 — funcional}
+\end{itemize}
+
+
+
+\cvsection{ Formación }
+\par\vspace{4pt}
+\textbf{Ciclo Formativo de Grado Superior en Administración y Finanzas}\\
+{\small IES Felo Monzón Grau-Bassas \hfill\textit{En curso} }
+
+\par\vspace{6pt}
+\textbf{Grado en Economía (≈120 ECTS, 2 años cursados)}\\
+{\small Universidad de Las Palmas de Gran Canaria  }\\
+{\footnotesize\color{graytext}Microeconomía, Estadística, Contabilidad Financiera, Matemáticas para Economía.}
+
+
+
+\cvsection{ Certificaciones }
+\begin{itemize}[leftmargin=*, label={}, itemsep=4pt]
+\item \textbf{Soporte IT}\\{\footnotesize\color{graytext}Google IT Support Professional Certificate (Coursera, 2025) }
+\item \textbf{Inteligencia Artificial — Microsoft Azure}\\{\footnotesize\color{graytext}AI-900 Fundamentals · AI on Azure · ML · Computer Vision (Coursera, 2025) }
+\end{itemize}
+
+
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+\vspace{0pt}
+
+% ===== MAIN COLUMN =====
+
+
+\cvsection{ Resumen }
+\begin{cvparagraph}
+Estudiante de Administración y Finanzas con base sólida en automatización con IA y soporte IT autodidacta. Experiencia previa en atención al cliente bilingüe (ES/EN) en hostelería de alto volumen. Disponible para trabajo \textbf{100\% remoto y asíncrono}, compatible con estudios. Ciudadano UE, inglés B1 funcional, residente en Teror (Gran Canaria).
+\end{cvparagraph}
+
+
+
+\cvsection{ Experiencia }
+\begin{cventries}
+\cventry
+  { Customer Service Associate — Camarero / Cajero / Host }
+  { The Fallow }
+  { Irlanda }
+  { Verano 2021 }
+  {
+\begin{cvitems}
+    \item { Atención simultánea a \textbf{80-120 comensales} en turnos pico de temporada turística, manteniendo precisión y ritmo bajo presión. }
+    \item { Procesamiento de cobros TPV y efectivo con cuadre diario de caja sin descuadres. }
+    \item { Comunicación en inglés con clientela internacional (B1 funcional aplicado a contexto real de hostelería y resolución de incidencias). }
+    \item { Coordinación con equipo de sala y cocina en momentos de alta demanda. }
+  \end{cvitems}
+  }
+\end{cventries}
+
+
+
+\cvsection{ Proyectos personales }
+\begin{cventries}
+\cventry
+  { JARVIS — Sistema multi-agente personal }
+  { Creator }
+  { Go, Docker, React, Claude API }
+  { 2024 — actualidad }
+  {
+\begin{cvitems}
+    \item { Plataforma multi-agente corriendo 24/7 en servidor propio con interfaz Telegram. 16 agentes especializados (planner, researcher, code-reviewer, etc.) con delegación dinámica. }
+    \item { Stack productivo: Go + Docker + React + integración LLM (Claude). Pipeline de skills inyectado centralizadamente con validación automática. }
+    \item { Demuestra capacidad autodidacta de diseñar, desplegar y operar sistemas completos end-to-end. }
+\end{cvitems}
+  }
+\cventry
+  { polymarket-bot — Bot autónomo de trading }
+  { Creator }
+  { Go, cron, APIs externas }
+  { 2024 — actualidad }
+  {
+\begin{cvitems}
+    \item { Bot que escanea mercados, evalúa con LLM y opera con reglas de gestión de riesgo. Memoria persistente con análisis retrospectivo de operaciones. }
+    \item { Pipeline cron tipo scanner→brain→executor con monitorización continua y observabilidad (logs estructurados, métricas Brier). }
+\end{cvitems}
+  }
+\end{cventries}
+\par\vspace{4pt}
+{\small\color{graytext} Código y documentación disponibles en GitHub: \textbf{@SrD836}}
+
+
+\end{minipage}
+
+\end{document}

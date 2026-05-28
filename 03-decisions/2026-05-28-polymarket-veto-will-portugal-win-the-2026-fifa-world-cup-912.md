@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-portugal-win-the-2026-fifa-world-cup-912`
 - **Categoría**: sports-season
 - **Precio YES**: 0.1040
-- **Volumen 24h**: 443334.01 USD
+- **Volumen 24h**: 449006.44 USD
 - **End date**: 2026-07-20T00:00:00Z
 
 ## Razón del veto
