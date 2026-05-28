@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `us-iran-nuclear-deal-by-june-30`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.3900
-- **Volumen 24h**: 236333.61 USD
+- **Precio YES**: 0.3800
+- **Volumen 24h**: 235208.55 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto
@@ -37,7 +37,7 @@ memoria: exact slug match (score 1.00)
 - veto `us-iran-nuclear-deal-by-may-31-974` score=0.70 (slug prefix match; same category)
 - veto `internet-access-restored-in-iran-by-may-31-2026` score=0.40 (same category; same price bucket mid)
 - veto `us-x-iran-permanent-peace-deal-by-june-30-2026-837-641-896-877-363-892-537-597` score=0.40 (same category; same price bucket mid)
-- veto `will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-31-2026-313...` score=0.40 (same category; same price bucket mid)
+- veto `us-x-iran-permanent-peace-deal-by-june-7-2026` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — base-fdv-above-6b-one-day-after-launch"
+title: "Polymarket veto — abstract-fdv-above-200m-one-day-after-launch"
 type: decision
 date: 2026-05-28
-decision: "Veto de tesis 'Base FDV above $6B one day after launch?' (rule P4_pre_event): pre-event slug + 583 d to resolution (>=7 threshold)"
+decision: "Veto de tesis 'Abstract FDV above $200M one day after launch?' (rule P4_pre_event): pre-event slug + 583 d to resolution (>=7 threshold)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,14 +15,14 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Base FDV above $6B one day after launch?
+# Veto: Abstract FDV above $200M one day after launch?
 
 ## Mercado
 
-- **Slug**: `base-fdv-above-6b-one-day-after-launch`
+- **Slug**: `abstract-fdv-above-200m-one-day-after-launch`
 - **Categoría**: crypto-launch
-- **Precio YES**: 0.4100
-- **Volumen 24h**: 114447.75 USD
+- **Precio YES**: 0.7700
+- **Volumen 24h**: 101425.06 USD
 - **End date**: 2028-01-01T05:00:00Z
 
 ## Razón del veto

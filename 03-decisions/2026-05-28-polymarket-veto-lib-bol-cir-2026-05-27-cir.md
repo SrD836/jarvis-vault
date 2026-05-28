@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `lib-bol-cir-2026-05-27-cir`
 - **Categoría**: other
-- **Precio YES**: 0.3200
-- **Volumen 24h**: 192422.08 USD
+- **Precio YES**: 0.1700
+- **Volumen 24h**: 206341.52 USD
 - **End date**: 2026-05-28T00:30:00Z
 
 ## Razón del veto
@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `lib-bol-cir-2026-05-27-cir` score=1.00 (exact slug match)
-- veto `lib-cor-cp-2026-05-27-cor` score=0.40 (same category; same price bucket mid)
-- veto `save-act-becomes-law-by-december-31-2026-347` score=0.40 (same category; same price bucket mid)
-- veto `elon-musk-of-tweets-may-22-may-29-160-179` score=0.40 (same category; same price bucket mid)
-- veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.40 (same category; same price bucket mid)
+- veto `tim-walz-charged-by-december-31-2026` score=0.40 (same category; same price bucket low)
+- veto `elon-musk-of-tweets-may-22-may-29-200-219` score=0.40 (same category; same price bucket low)
+- veto `will-trump-restart-project-freedom-by-may-31` score=0.40 (same category; same price bucket low)
+- veto `us-obtains-iranian-enriched-uranium-by-june-30` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

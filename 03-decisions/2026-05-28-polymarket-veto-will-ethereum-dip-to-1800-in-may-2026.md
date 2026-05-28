@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-ethereum-dip-to-1800-in-may-2026`
 - **Categoría**: market
-- **Precio YES**: 0.0510
-- **Volumen 24h**: 58546.87 USD
+- **Precio YES**: 0.0500
+- **Volumen 24h**: 70628.29 USD
 - **End date**: 2026-06-01T04:00:00Z
 
 ## Razón del veto
@@ -34,8 +34,8 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-ethereum-dip-to-1800-in-may-2026` score=1.00 (exact slug match)
-- veto `will-ethereum-dip-to-1400-in-may-2026` score=0.70 (slug prefix match; same category)
 - veto `will-ethereum-dip-to-2000-in-may-2026` score=0.70 (slug prefix match; same category)
+- veto `will-ethereum-dip-to-1400-in-may-2026` score=0.70 (slug prefix match; same category)
 - veto `will-wti-dip-to-80-in-may-2026-734-629-766-626-157-663-256-712-397-816-113-876-832` score=0.40 (same category; same price bucket low)
 - veto `will-bitcoin-dip-to-70k-in-may-2026-438-356-919` score=0.40 (same category; same price bucket low)
 

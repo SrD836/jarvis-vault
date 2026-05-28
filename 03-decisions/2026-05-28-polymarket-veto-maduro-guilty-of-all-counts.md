@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-macky-sall-be-the-next-secretary-general-of-the-united-nations"
+title: "Polymarket veto — maduro-guilty-of-all-counts"
 type: decision
 date: 2026-05-28
-decision: "Veto de tesis 'Will Macky Sall be the next Secretary-General of the United Nations?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Maduro guilty of all counts?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will Macky Sall be the next Secretary-General of the United Nations?
+# Veto: Maduro guilty of all counts?
 
 ## Mercado
 
-- **Slug**: `will-macky-sall-be-the-next-secretary-general-of-the-united-nations`
+- **Slug**: `maduro-guilty-of-all-counts`
 - **Categoría**: other
-- **Precio YES**: 0.1180
-- **Volumen 24h**: 109801.28 USD
-- **End date**: 2026-12-31T00:00:00Z
+- **Precio YES**: 0.1900
+- **Volumen 24h**: 103142.51 USD
+- **End date**: 2027-12-31T00:00:00Z
 
 ## Razón del veto
 
@@ -33,7 +33,7 @@ memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
-- veto `will-macky-sall-be-the-next-secretary-general-of-the-united-nations` score=1.00 (exact slug match)
+- veto `maduro-guilty-of-all-counts` score=1.00 (exact slug match)
 - veto `elon-musk-of-tweets-may-22-may-29-200-219` score=0.40 (same category; same price bucket low)
 - veto `will-trump-restart-project-freedom-by-may-31` score=0.40 (same category; same price bucket low)
 - veto `us-obtains-iranian-enriched-uranium-by-june-30` score=0.40 (same category; same price bucket low)

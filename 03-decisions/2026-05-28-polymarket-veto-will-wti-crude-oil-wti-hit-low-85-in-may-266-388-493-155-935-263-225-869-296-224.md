@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-wti-crude-oil-wti-hit-low-85-in-may-266-388-493-155-935-263-225-869-296-224-342-748-678`
 - **Categoría**: market
 - **Precio YES**: 0.3000
-- **Volumen 24h**: 135731.76 USD
+- **Volumen 24h**: 143138.36 USD
 - **End date**: 2026-06-01T03:59:59.999Z
 
 ## Razón del veto
@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-wti-crude-oil-wti-hit-low-85-in-may-266-388-493-155-935-263-225-869-296-224-342-748-678` score=1.00 (exact slug match)
-- veto `will-wti-crude-oil-wti-hit-high-200-in-may` score=0.70 (slug prefix match; same category)
 - veto `will-wti-crude-oil-wti-hit-high-105-in-may` score=0.70 (slug prefix match; same category)
 - veto `bitcoin-above-74k-on-may-28-2026` score=0.40 (same category; same price bucket mid)
 - veto `will-ethereum-dip-to-2000-in-may-2026` score=0.40 (same category; same price bucket mid)
+- veto `microstrategy-sells-any-bitcoin-by-june-30-2026` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

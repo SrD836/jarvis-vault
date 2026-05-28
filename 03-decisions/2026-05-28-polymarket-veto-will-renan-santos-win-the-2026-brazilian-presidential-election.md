@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-renan-santos-win-the-2026-brazilian-presidential-election`
 - **Categoría**: elections
 - **Precio YES**: 0.1510
-- **Volumen 24h**: 69035.34 USD
+- **Volumen 24h**: 69176.76 USD
 - **End date**: 2026-10-04T00:00:00Z
 
 ## Razón del veto
@@ -35,7 +35,6 @@ memoria: exact slug match (score 1.00)
 
 - veto `will-renan-santos-win-the-2026-brazilian-presidential-election` score=1.00 (exact slug match)
 - veto `will-fernando-haddad-win-the-2026-brazilian-presidential-election` score=0.40 (same category; same price bucket low)
-- veto `will-oh-se-hoon-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket low)
 - veto `will-marco-rubio-win-the-2028-us-presidential-election` score=0.40 (same category; same price bucket low)
 
 ## Human notes
