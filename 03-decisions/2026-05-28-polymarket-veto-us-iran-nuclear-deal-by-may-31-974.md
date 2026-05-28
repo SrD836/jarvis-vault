@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `us-iran-nuclear-deal-by-may-31-974`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.1220
-- **Volumen 24h**: 366781.34 USD
+- **Precio YES**: 0.1200
+- **Volumen 24h**: 352577.57 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto

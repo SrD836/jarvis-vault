@@ -22,7 +22,7 @@ related:
 - **Slug**: `ucl-psg-ars-2026-05-30-psg`
 - **Categoría**: other
 - **Precio YES**: 0.4200
-- **Volumen 24h**: 475456.59 USD
+- **Volumen 24h**: 478262.03 USD
 - **End date**: 2026-05-30T16:00:00Z
 
 ## Razón del veto
@@ -36,8 +36,8 @@ memoria: exact slug match (score 1.00)
 - veto `ucl-psg-ars-2026-05-30-psg` score=1.00 (exact slug match)
 - veto `lib-cor-cp-2026-05-27-cor` score=0.40 (same category; same price bucket mid)
 - veto `lib-bol-cir-2026-05-27-cir` score=0.40 (same category; same price bucket mid)
-- veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.40 (same category; same price bucket mid)
 - veto `elon-musk-of-tweets-may-22-may-29-160-179` score=0.40 (same category; same price bucket mid)
+- veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

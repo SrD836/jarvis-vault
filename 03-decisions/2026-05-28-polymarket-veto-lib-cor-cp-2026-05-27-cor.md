@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `lib-cor-cp-2026-05-27-cor`
 - **Categoría**: other
-- **Precio YES**: 0.5900
-- **Volumen 24h**: 237397.55 USD
+- **Precio YES**: 0.2100
+- **Volumen 24h**: 266369.70 USD
 - **End date**: 2026-05-28T00:30:00Z
 
 ## Razón del veto
@@ -36,8 +36,8 @@ memoria: exact slug match (score 1.00)
 - veto `lib-cor-cp-2026-05-27-cor` score=1.00 (exact slug match)
 - veto `save-act-becomes-law-by-december-31-2026-347` score=0.40 (same category; same price bucket mid)
 - veto `lib-bol-cir-2026-05-27-cir` score=0.40 (same category; same price bucket mid)
-- veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.40 (same category; same price bucket mid)
 - veto `elon-musk-of-tweets-may-22-may-29-160-179` score=0.40 (same category; same price bucket mid)
+- veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

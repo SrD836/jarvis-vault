@@ -22,7 +22,7 @@ related:
 - **Slug**: `microstrategy-sells-any-bitcoin-by-december-31-2026`
 - **Categoría**: market
 - **Precio YES**: 0.8400
-- **Volumen 24h**: 81584.43 USD
+- **Volumen 24h**: 81601.55 USD
 - **End date**: 2027-01-01T05:00:00Z
 
 ## Razón del veto
@@ -34,9 +34,8 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `microstrategy-sells-any-bitcoin-by-december-31-2026` score=1.00 (exact slug match)
-- veto `microstrategy-sells-any-bitcoin-by-may-31-2026` score=0.70 (slug prefix match; same category)
 - veto `microstrategy-sells-any-bitcoin-by-june-30-2026` score=0.70 (slug prefix match; same category)
-- veto `will-ethereum-dip-to-2000-in-may-2026` score=0.40 (same category; same price bucket high)
+- veto `microstrategy-sells-any-bitcoin-by-may-31-2026` score=0.70 (slug prefix match; same category)
 
 ## Human notes
 

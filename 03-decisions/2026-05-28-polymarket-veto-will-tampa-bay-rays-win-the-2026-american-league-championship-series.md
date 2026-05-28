@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-spain-win-the-2026-fifa-world-cup-963"
+title: "Polymarket veto — will-tampa-bay-rays-win-the-2026-american-league-championship-series"
 type: decision
 date: 2026-05-28
-decision: "Veto de tesis 'Will Spain win the 2026 FIFA World Cup?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Will Tampa Bay Rays win the 2026 American League Championship Series?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will Spain win the 2026 FIFA World Cup?
+# Veto: Will Tampa Bay Rays win the 2026 American League Championship Series?
 
 ## Mercado
 
-- **Slug**: `will-spain-win-the-2026-fifa-world-cup-963`
+- **Slug**: `will-tampa-bay-rays-win-the-2026-american-league-championship-series`
 - **Categoría**: sports-season
-- **Precio YES**: 0.1730
-- **Volumen 24h**: 215673.12 USD
-- **End date**: 2026-07-20T00:00:00Z
+- **Precio YES**: 0.1280
+- **Volumen 24h**: 373880.47 USD
+- **End date**: 2026-11-01T00:00:00Z
 
 ## Razón del veto
 
@@ -33,11 +33,11 @@ memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
-- veto `will-spain-win-the-2026-fifa-world-cup-963` score=1.00 (exact slug match)
+- veto `will-tampa-bay-rays-win-the-2026-american-league-championship-series` score=1.00 (exact slug match)
 - veto `will-france-win-the-2026-fifa-world-cup-924` score=0.40 (same category; same price bucket low)
 - veto `will-england-win-the-2026-fifa-world-cup-937` score=0.40 (same category; same price bucket low)
 - veto `will-germany-win-the-2026-fifa-world-cup-467` score=0.40 (same category; same price bucket low)
-- veto `will-the-san-antonio-spurs-win-the-2026-nba-finals` score=0.40 (same category; same price bucket low)
+- veto `will-spain-win-the-2026-fifa-world-cup-963` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

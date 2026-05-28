@@ -36,8 +36,8 @@ memoria: exact slug match (score 1.00)
 - veto `will-mamdani-freeze-nyc-rents-before-2027` score=1.00 (exact slug match)
 - veto `lib-cor-cp-2026-05-27-cor` score=0.40 (same category; same price bucket mid)
 - veto `lib-bol-cir-2026-05-27-cir` score=0.40 (same category; same price bucket mid)
-- veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.40 (same category; same price bucket mid)
 - veto `elon-musk-of-tweets-may-22-may-29-160-179` score=0.40 (same category; same price bucket mid)
+- veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 
