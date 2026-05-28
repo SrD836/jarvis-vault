@@ -141,20 +141,34 @@ Fallback rápido: 3 PDFs pre-renderizados en `master-cv/variants/` (`resume-A.pd
    - Proyectos personales (JARVIS, polymarket-bot): framing apropiado. Para admin/back office → "demuestra autonomía técnica y operación de sistemas"; para data entry → "demuestra meticulosidad con datos y scripts". NO cambiar lo que el código realmente hace.
    - Conocimientos sidebar reordenado para poner arriba lo relevante al puesto.
 
-4. **Compilar via filesystem-trigger**:
-   - Escribir `adapted-cvs/<offer_id>/resume.tex` (+ `awesome-cv.cls` si Posquit0).
-   - Esperar el cron `cv-compile-watcher.sh` del VPS (corre cada minuto).
+4. **Compilar** — **PROTOCOLO NUEVO 2026-05-28: compile local primero, watcher VPS como fallback**:
+
+   **Vía A (preferida, 10s, fiable)** — pdflatex en sandbox:
+   - Copiar `adapted-cvs/<offer_id>/resume.tex` (+ `awesome-cv.cls` si Posquit0) a `/tmp/cv-build/` en sandbox Linux.
+   - `cd /tmp/cv-build && pdflatex -interaction=nonstopmode -halt-on-error resume.tex > compile.log 2>&1`
+   - Validar con `qpdf --check resume.pdf` (debe terminar en `%%EOF`).
+   - `cp /tmp/cv-build/resume.pdf` al directorio `adapted-cvs/<offer_id>/` (forzar overwrite si hay sync-conflict de Syncthing — usar `mcp__cowork__allow_cowork_file_delete` antes de `rm -f` si necesario).
+
+   **Vía B (fallback, 60-90s)** — watcher VPS:
+   - Esperar cron `cv-compile-watcher.sh` (corre cada minuto).
    - Poll cada 5-10s hasta 120s:
-     - `resume.pdf` aparece → OK.
+     - `resume.pdf` aparece → validar con qpdf que tiene `%%EOF` (el watcher puede sincronizar PDFs truncados — verificar siempre).
      - `.compile.error` aparece → leer log, arreglar `.tex`, borrar `.error`, esperar de nuevo.
      - 120s sin nada → reportar al user.
    - Si falla 2 veces seguidas → variant pre-renderizada de `master-cv/variants/` como fallback, reportar.
 
-5. **Quirks de sandbox conocidos** (heredados de sesión 2026-05-28):
-   - Edit/Write NO propagan a `master-cv/*.tex` — usar `bash` heredoc (`cat > file << 'EOF' ... EOF`). Para `adapted-cvs/<offer_id>/` Edit/Write sí funcionan.
-   - Screenshots de Chrome con `save_to_disk:true` no aterrizan en sandbox; usar evidencia inline o skip.
+   **Quirks del watcher VPS observados 2026-05-28**:
+   - NO tiene `lmodern.sty` instalado — si el `.tex` usa `\usepackage{lmodern}` → compile falla en VPS pero funciona en sandbox local. **Mantener el .tex sin lmodern** (Computer Modern por defecto es OK).
+   - PDFs producidos por watcher VPS a veces se sincronizan truncados a 20% del tamaño real (sin trailer ni xref) — siempre validar con `qpdf --check` antes de usar.
+
+5. **Quirks de sandbox conocidos** (heredados + confirmados sesión 2026-05-28):
+   - Edit/Write NO propagan a `master-cv/*.tex` — usar `bash` heredoc (`cat > file << 'EOF' ... EOF`). Para `adapted-cvs/<offer_id>/` Edit/Write sí funcionan **mayoritariamente** pero la metadata (size/mtime) puede quedar cacheada — verificar contenido real con `head`/`tail` antes de asumir éxito.
+   - **Bash heredoc trunca archivos >~5800 bytes** — para .tex grandes, usar Write tool en vez de heredoc, o partir en chunks.
+   - Screenshots de Chrome con `save_to_disk:true` cuelgan intermittently (timeout 30s). Evidencia inline en chat sirve, documentar en `cold-emails/<slug>/sent.txt` cuando screenshot falle.
    - LinkedIn lazy-render: la descripción del job NO aparece al cargar; clickear "Mostrar más" o usar `javascript_tool` para leer DOM si screenshot falla.
    - Borrar archivos del vault requiere `mcp__cowork__allow_cowork_file_delete` antes de `rm -rf`.
+   - **Gmail MCP connector NO expone send_email** — solo `create_draft`. Para envío autónomo: Claude in Chrome + navigate a Gmail → abrir compose → `find file input` → `file_upload` PDF desde path del vault → click coords Enviar → verificar toast "Mensaje enviado". Cuota de tool calls por envío: ~5-7.
+   - Syncthing puede crear `.sync-conflict-*` files cuando sandbox y watcher VPS escriben simultáneamente — limpiar con `allow_cowork_file_delete` + `rm` y `mv` el conflict al canónico.
 
 ### Fase 5 — Cover letter o cuerpo del email
 
@@ -240,7 +254,7 @@ Vault sincronizado por Syncthing PC↔VPS. Cualquier escritura local replica al 
 
 ---
 
-**Última actualización**: 2026-05-28 (pivote de estrategia: trabajo sencillo + verano muchas horas + septiembre flexible + evitar atención al cliente + añadida Fase 1B iniciativa propia + status nuevo tasking_platform_signed_up fuera de cuota cowork)
+**Última actualización**: 2026-05-28 (pivote de estrategia + Fase 1B iniciativa propia + status tasking_platform_signed_up + protocolo compile-local-primero + envío autónomo via Chrome file_upload)
 
 **Plataformas tasking verificadas 2026-05-28** (Tier 1 prioridad signup user):
 - TELUS Contributor (= Lionbridge AI tras adquisición 2020): https://www.telusinternational.ai/cmp

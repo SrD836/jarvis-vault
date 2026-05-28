@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-wti-crude-oil-wti-hit-high-100-in-may"
 type: decision
 date: 2026-05-28
-decision: "Veto de tesis 'Will WTI Crude Oil (WTI) hit (HIGH) $100 in May?' (rule M1): memoria: slug prefix match; same category (score 0.70)"
+decision: "Veto de tesis 'Will WTI Crude Oil (WTI) hit (HIGH) $100 in May?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,21 +21,23 @@ related:
 
 - **Slug**: `will-wti-crude-oil-wti-hit-high-100-in-may`
 - **Categoría**: market
-- **Precio YES**: 0.0800
-- **Volumen 24h**: 123308.59 USD
+- **Precio YES**: 0.0590
+- **Volumen 24h**: 133122.16 USD
 - **End date**: 2026-06-01T03:59:59.999Z
 
 ## Razón del veto
 
 **Regla aplicada**: `M1`
 
-memoria: slug prefix match; same category (score 0.70)
+memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
-- veto `will-wti-crude-oil-wti-hit-high-105-in-may` score=0.70 (slug prefix match; same category)
+- veto `will-wti-crude-oil-wti-hit-high-100-in-may` score=1.00 (exact slug match)
 - veto `will-wti-crude-oil-wti-hit-low-85-in-may-266-388-493-155-935-263-225-869-296-224-342-748-678` score=0.70 (slug prefix match; same category)
-- veto `microstrategy-sells-any-bitcoin-by-may-31-2026` score=0.40 (same category; same price bucket low)
+- veto `will-wti-crude-oil-wti-hit-high-105-in-may` score=0.70 (slug prefix match; same category)
+- veto `will-wti-dip-to-80-in-may-2026-734-629-766-626-157-663-256-712-397-816-113-876-832` score=0.40 (same category; same price bucket low)
+- veto `will-bitcoin-dip-to-70k-in-may-2026-438-356-919` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 
