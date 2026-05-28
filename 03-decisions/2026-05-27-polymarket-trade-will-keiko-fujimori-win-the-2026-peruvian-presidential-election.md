@@ -17,13 +17,17 @@ cited_dates:
     - title: Última encuesta Ipsos: Keiko Fujimori lidera con 39% y Roberto Sánchez retrocede con 35% en segunda vuelta
       date: 2026-05-20
       url: 
-outcome: pending
+outcome: breakeven
 outcome_observed_after_days: 10
 tags: [decision, polymarket, bot, trade, approved]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
   - "[[projects/polymarket-veto-loop-bot]]"
+pnl_usd: 0.00
+closed_at: 2026-05-28T07:48:17Z
+exit_reason: manual_reset_v7
+days_open: 0.97
 ---
 
 # Trade aprobado: Will Keiko Fujimori win the 2026 Peruvian presidential election?

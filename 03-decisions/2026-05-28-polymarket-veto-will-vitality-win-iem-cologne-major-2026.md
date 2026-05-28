@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-vitality-win-iem-cologne-major-2026`
 - **Categoría**: other
-- **Precio YES**: 0.4900
-- **Volumen 24h**: 54075.85 USD
+- **Precio YES**: 0.4800
+- **Volumen 24h**: 54144.93 USD
 - **End date**: 2026-06-21T00:00:00Z
 
 ## Razón del veto
@@ -37,7 +37,7 @@ memoria: exact slug match (score 1.00)
 - veto `elon-musk-of-tweets-may-22-may-29-160-179` score=0.40 (same category; same price bucket mid)
 - veto `ucl-psg-ars-2026-05-30-psg` score=0.40 (same category; same price bucket mid)
 - veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.40 (same category; same price bucket mid)
-- veto `will-the-vegas-golden-knights-win-the-2026-nhl-stanley-cup` score=0.40 (same category; same price bucket mid)
+- veto `will-the-carolina-hurricanes-win-the-2026-nhl-stanley-cup` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

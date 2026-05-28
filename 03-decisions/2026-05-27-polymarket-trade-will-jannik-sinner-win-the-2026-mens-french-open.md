@@ -20,13 +20,17 @@ cited_dates:
     - title: Roland Garros 2026 withdrawals: Alcaraz out through wrist injury
       date: 2026-05-20
       url: 
-outcome: pending
+outcome: loss
 outcome_observed_after_days: 10
 tags: [decision, polymarket, bot, trade, approved]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
   - "[[projects/polymarket-veto-loop-bot]]"
+pnl_usd: -1.04
+closed_at: 2026-05-28T07:48:17Z
+exit_reason: manual_reset_v7
+days_open: 0.70
 ---
 
 # Trade aprobado: Will Jannik Sinner win the 2026 Men's French Open?
