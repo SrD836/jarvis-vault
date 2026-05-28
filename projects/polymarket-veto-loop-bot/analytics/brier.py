@@ -184,6 +184,20 @@ def main() -> int:
     ap.add_argument("--shadow-ready-out", default=DEFAULT_SHADOW_READY)
     ap.add_argument("--history", default=DEFAULT_HISTORY)
     ap.add_argument("--no-write", action="store_true", help="print only, do not touch memory.md / suspended / shadow_ready")
+    ap.add_argument(
+        "--skips",
+        choices=("include", "exclude", "only"),
+        default="include",
+        help=(
+            "How to treat predictions whose decision was skip / skip_shadow / "
+            "veto. v7 P6: passive_resolver backfills outcomes for *every* "
+            "evaluated candidate, so 'include' (default) lets Brier score the "
+            "LLM's negative calls — proving it acts as a filter, not just a "
+            "trader. 'exclude' restricts to actual trade intents; 'only' "
+            "isolates the skip-quality view (does the LLM's 'none' actually "
+            "ride past edge?)."
+        ),
+    )
     args = ap.parse_args()
 
     pred_path = pathlib.Path(args.predictions)
@@ -199,13 +213,26 @@ def main() -> int:
             return 2
 
     windowed = [r for r in rows if in_window(r, since)]
+
+    # v7 P6: filter by decision intent per --skips choice. Skip-class
+    # decisions are skip, skip_shadow, and explicit veto (E1/E2/M2/P*).
+    # Trade-class decisions are buy_yes and buy_no.
+    skip_decisions = {"skip", "skip_shadow"}
+    def is_skip(r: dict) -> bool:
+        d = (r.get("decision") or "").lower()
+        return d in skip_decisions or d.startswith("veto") or d.startswith("skip")
+    if args.skips == "exclude":
+        windowed = [r for r in windowed if not is_skip(r)]
+    elif args.skips == "only":
+        windowed = [r for r in windowed if is_skip(r)]
+
     n_total, b_total = brier(windowed)
 
     by_cat = group_brier(windowed, "category")
     by_hor = group_brier(windowed, "horizon")
     by_edge = group_brier(windowed, "edge_type")
 
-    print(f"# Brier — last {args.days} days")
+    print(f"# Brier — last {args.days} days (skips={args.skips})")
     print(f"resolved={n_total}  overall_brier={b_total:.4f}")
     print()
     print(render_table("Por categoría", by_cat))
