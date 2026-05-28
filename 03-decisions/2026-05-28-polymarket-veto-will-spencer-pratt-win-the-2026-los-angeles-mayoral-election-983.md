@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983`
 - **Categoría**: elections
-- **Precio YES**: 0.2500
-- **Volumen 24h**: 123457.36 USD
+- **Precio YES**: 0.2300
+- **Volumen 24h**: 182774.93 USD
 - **End date**: 2026-06-02T00:00:00Z
 
 ## Razón del veto

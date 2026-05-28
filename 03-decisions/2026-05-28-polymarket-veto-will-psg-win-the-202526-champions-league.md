@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-psg-win-the-202526-champions-league`
 - **Categoría**: sports-season
 - **Precio YES**: 0.5800
-- **Volumen 24h**: 279143.85 USD
+- **Volumen 24h**: 314976.21 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
@@ -34,9 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-psg-win-the-202526-champions-league` score=1.00 (exact slug match)
+- veto `will-arsenal-win-the-202526-champions-league` score=0.40 (same category; same price bucket mid)
 - veto `will-the-oklahoma-city-thunder-win-the-2026-nba-finals` score=0.40 (same category; same price bucket mid)
 - veto `will-the-new-york-knicks-win-the-2026-nba-finals` score=0.40 (same category; same price bucket mid)
-- veto `will-pedro-gonalves-be-included-in-portugals-official-2026-world-cup-squad-list` score=0.40 (same category; same price bucket mid)
+- veto `will-neymar-play-in-the-2026-fifa-world-cup-for-brazil` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

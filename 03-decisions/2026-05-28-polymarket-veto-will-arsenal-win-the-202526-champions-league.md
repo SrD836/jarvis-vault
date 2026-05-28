@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-neymar-play-in-the-2026-fifa-world-cup-for-brazil"
+title: "Polymarket veto — will-arsenal-win-the-202526-champions-league"
 type: decision
 date: 2026-05-28
-decision: "Veto de tesis 'Will Neymar play in the 2026 FIFA World Cup?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Will Arsenal win the 2025–26 Champions League?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will Neymar play in the 2026 FIFA World Cup?
+# Veto: Will Arsenal win the 2025–26 Champions League?
 
 ## Mercado
 
-- **Slug**: `will-neymar-play-in-the-2026-fifa-world-cup-for-brazil`
+- **Slug**: `will-arsenal-win-the-202526-champions-league`
 - **Categoría**: sports-season
-- **Precio YES**: 0.7400
-- **Volumen 24h**: 99054.49 USD
-- **End date**: 2026-07-19T00:00:00Z
+- **Precio YES**: 0.4300
+- **Volumen 24h**: 51503.73 USD
+- **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 
@@ -33,11 +33,11 @@ memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
-- veto `will-neymar-play-in-the-2026-fifa-world-cup-for-brazil` score=1.00 (exact slug match)
-- veto `will-arsenal-win-the-202526-champions-league` score=0.40 (same category; same price bucket mid)
+- veto `will-arsenal-win-the-202526-champions-league` score=1.00 (exact slug match)
+- veto `will-psg-win-the-202526-champions-league` score=0.40 (same category; same price bucket mid)
 - veto `will-the-oklahoma-city-thunder-win-the-2026-nba-finals` score=0.40 (same category; same price bucket mid)
 - veto `will-the-new-york-knicks-win-the-2026-nba-finals` score=0.40 (same category; same price bucket mid)
-- veto `will-psg-win-the-202526-champions-league` score=0.40 (same category; same price bucket mid)
+- veto `will-neymar-play-in-the-2026-fifa-world-cup-for-brazil` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

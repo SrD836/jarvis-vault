@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `iran-closes-its-airspace-by-june-15`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.2180
-- **Volumen 24h**: 51204.01 USD
+- **Precio YES**: 0.2170
+- **Volumen 24h**: 52124.95 USD
 - **End date**: 2026-06-15T00:00:00Z
 
 ## Razón del veto

@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — iran-closes-its-airspace-by-may-31-434-443-672-526-188-756"
+title: "Polymarket veto — israel-x-hezbollah-permanent-peace-deal-by-may-31-2026"
 type: decision
 date: 2026-05-28
-decision: "Veto de tesis 'Iran closes its airspace by May 31?' (rule P9): P9: geopolitics pump cluster (price 0.07, 2d)"
+decision: "Veto de tesis 'Israel x Hezbollah permanent peace deal by May 31, 2026?' (rule P9): P9: geopolitics pump cluster (price 0.06, 2d)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,21 +15,21 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Iran closes its airspace by May 31?
+# Veto: Israel x Hezbollah permanent peace deal by May 31, 2026?
 
 ## Mercado
 
-- **Slug**: `iran-closes-its-airspace-by-may-31-434-443-672-526-188-756`
+- **Slug**: `israel-x-hezbollah-permanent-peace-deal-by-may-31-2026`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.0660
-- **Volumen 24h**: 348110.99 USD
+- **Precio YES**: 0.0570
+- **Volumen 24h**: 98071.64 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `P9`
 
-P9: geopolitics pump cluster (price 0.07, 2d)
+P9: geopolitics pump cluster (price 0.06, 2d)
 
 ## Human notes
 

@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-kim-boo-kyum-win-the-2026-daegu-mayoral-election`
 - **Categoría**: elections
-- **Precio YES**: 0.1100
-- **Volumen 24h**: 55022.67 USD
+- **Precio YES**: 0.1600
+- **Volumen 24h**: 59061.69 USD
 - **End date**: 2026-06-03T00:00:00Z
 
 ## Razón del veto

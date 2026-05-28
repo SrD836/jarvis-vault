@@ -2,7 +2,7 @@
 title: "Polymarket veto — us-announces-new-iran-agreementceasefire-extension-by-may-28"
 type: decision
 date: 2026-05-28
-decision: "Veto de tesis 'US announces new Iran agreement/ceasefire extension by May 28?' (rule P9): P9: geopolitics pump cluster (price 0.05, 0d)"
+decision: "Veto de tesis 'US announces new Iran agreement/ceasefire extension by May 28?' (rule P9): P9: geopolitics pump cluster (price 0.14, 0d)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `us-announces-new-iran-agreementceasefire-extension-by-may-28`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.0500
-- **Volumen 24h**: 311275.44 USD
+- **Precio YES**: 0.1440
+- **Volumen 24h**: 626984.49 USD
 - **End date**: 2026-05-28T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `P9`
 
-P9: geopolitics pump cluster (price 0.05, 0d)
+P9: geopolitics pump cluster (price 0.14, 0d)
 
 ## Human notes
 
