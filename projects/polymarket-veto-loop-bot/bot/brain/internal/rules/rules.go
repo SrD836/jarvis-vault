@@ -92,15 +92,22 @@ func daysUntilISO(endDate string) int {
 // EvalPriceBand: P0_floor if YES price is below the configured floor (with relaxed
 // floor for imminent binary events), P0_ceiling if above the ceiling.
 //
-// Floor relaxed to 0.05 if days-to-resolution is in [0, 7]: short-dated binary events
-// can legitimately price at 0.05–0.10 close to resolution; the bid/ask spread is
-// less dominant relative to expected payoff.
+// v7 P4 (2026-05-28): floor lowered from 0.10 → 0.05. Additional relaxation
+// to 0.03 when a short-horizon candidate has liquidity above
+// PriceFloorShortLiqRelaxUSD (default $20k): deep books absorb the bid/ask
+// spread well enough that low-priced bets stay tradeable without the SL/TP
+// asymmetric burn that motivated the v6 0.10 floor (and which v7 already
+// removed by killing % stop-loss).
 //
-// Long-dated markets at price < floor are traps: the bid/ask spread alone can
-// trigger stop_loss_pct without any fundamental move.
+// EvalPriceBandV7 accepts the extra relaxation knobs; the old 2-arg
+// EvalPriceBand stays as a thin shim so untouched callers keep compiling.
 func EvalPriceBand(c *types.Candidate, floor, ceiling float64) *types.VetoResult {
+	return EvalPriceBandV7(c, floor, ceiling, 0, 0)
+}
+
+func EvalPriceBandV7(c *types.Candidate, floor, ceiling, relaxFloor, relaxLiqUSD float64) *types.VetoResult {
 	if floor <= 0 {
-		floor = 0.10
+		floor = 0.05
 	}
 	if ceiling <= 0 {
 		ceiling = 0.95
@@ -109,10 +116,14 @@ func EvalPriceBand(c *types.Candidate, floor, ceiling float64) *types.VetoResult
 	effFloor := floor
 	days := daysUntilISO(c.EndDate)
 	if days >= 0 && days <= 7 {
-		// Imminent binary events: relax floor to 0.05.
-		if effFloor > 0.05 {
-			effFloor = 0.05
-		}
+		// Imminent binary events: keep at floor (already 0.05 by default).
+	}
+	// v7 P4 short-horizon + deep-book relaxation.
+	if relaxFloor > 0 && relaxLiqUSD > 0 &&
+		days >= 0 && days <= 7 &&
+		c.LiquidityUSD >= relaxLiqUSD &&
+		relaxFloor < effFloor {
+		effFloor = relaxFloor
 	}
 
 	if c.CurrentPriceYes < effFloor {
@@ -120,7 +131,7 @@ func EvalPriceBand(c *types.Candidate, floor, ceiling float64) *types.VetoResult
 			CandidateID: c.ID,
 			Slug:        c.Slug,
 			Blocked:     true,
-			Reason:      fmt.Sprintf("price floor: %.4f < %.3f (horizon %d d)", c.CurrentPriceYes, effFloor, days),
+			Reason:      fmt.Sprintf("price floor: %.4f < %.3f (horizon %d d, liq $%.0f)", c.CurrentPriceYes, effFloor, days, c.LiquidityUSD),
 			VetoedBy:    "P0_floor",
 		}
 	}

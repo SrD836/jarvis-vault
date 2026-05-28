@@ -122,7 +122,7 @@ func Run() error {
 	_ = now
 
 	stats := struct {
-		P0, P1, P2, P3, P4, P6, P7, P8, P9, P10, P11, V1, V2, V4, M1, M2, M3, N1, N2, LLM, E1, E2, S1 int
+		P0, P1, P2, P3, P4, P6, P7, P8, P9, P10, P11, V1, V2, V4, M1, M2, M3, N1, N2, LLM, E1, E2, S1, LLMNoEdge, LLMParseFail int
 	}{}
 
 	// v7: load suspended categories. Brier-driven auto-suspend writes this file
@@ -172,8 +172,8 @@ func Run() error {
 			}
 		}
 
-		// P0: price band sanity (v6 — floor 0.10 default, relaxed to 0.05 if days_to_end <= 7)
-		if vr := rules.EvalPriceBand(&c, cfg.PriceFloor, cfg.PriceCeiling); vr != nil {
+		// P0: price band sanity (v7 P4 — floor 0.05 default; 0.03 if horizon≤7d AND liquidity≥$20k).
+		if vr := rules.EvalPriceBandV7(&c, cfg.PriceFloor, cfg.PriceCeiling, cfg.PriceFloorShortLiqRelax, cfg.PriceFloorShortLiqRelaxUSD); vr != nil {
 			blocked = append(blocked, *vr)
 			recordVeto(mem, &c, *vr, decisionsDir, false)
 			stats.P0++
@@ -415,7 +415,14 @@ func Run() error {
 
 		// E1: LLM did not declare a real edge. Without an edge we are not
 		// allowed to enter — see prompt maestro principle #2.
+		// v7 P3: track LLM parse failures (rule=PARSE) and edge=none separately
+		// from generic E1 so we can tell apart "LLM broken" vs "LLM declined".
 		edgeType := strings.ToLower(strings.TrimSpace(llmResult.EdgeType))
+		if llmResult.Rule == "PARSE" {
+			stats.LLMParseFail++
+		} else if edgeType == "" || edgeType == "none" {
+			stats.LLMNoEdge++
+		}
 		if edgeType == "" || edgeType == "none" {
 			vr := types.VetoResult{
 				CandidateID: c.ID, Slug: c.Slug, Blocked: true,
@@ -490,9 +497,9 @@ func Run() error {
 	}
 
 	softrules.GenerateAndAppend(memoryPath)
-	log.Printf("Brain v7 done: %d approved, %d blocked (P0=%d P2=%d P3=%d P4=%d P6=%d P7=%d P8=%d P9=%d P10=%d P11=%d V1=%d V2=%d V4=%d M1=%d M2=%d M3=%d N1=%d N2=%d LLM=%d E1=%d E2=%d S1=%d) horizons in approved: short=%d medium=%d long=%d",
+	log.Printf("Brain v7 done: %d approved, %d blocked (P0=%d P2=%d P3=%d P4=%d P6=%d P7=%d P8=%d P9=%d P10=%d P11=%d V1=%d V2=%d V4=%d M1=%d M2=%d M3=%d N1=%d N2=%d LLM=%d E1=%d E2=%d S1=%d LLM_NoEdge=%d LLM_ParseFail=%d) horizons in approved: short=%d medium=%d long=%d",
 		len(approved), len(blocked),
-		stats.P0, stats.P2, stats.P3, stats.P4, stats.P6, stats.P7, stats.P8, stats.P9, stats.P10, stats.P11, stats.V1, stats.V2, stats.V4, stats.M1, stats.M2, stats.M3, stats.N1, stats.N2, stats.LLM, stats.E1, stats.E2, stats.S1,
+		stats.P0, stats.P2, stats.P3, stats.P4, stats.P6, stats.P7, stats.P8, stats.P9, stats.P10, stats.P11, stats.V1, stats.V2, stats.V4, stats.M1, stats.M2, stats.M3, stats.N1, stats.N2, stats.LLM, stats.E1, stats.E2, stats.S1, stats.LLMNoEdge, stats.LLMParseFail,
 		countHorizon(approved, "short"), countHorizon(approved, "medium"), countHorizon(approved, "long"))
 	return nil
 }

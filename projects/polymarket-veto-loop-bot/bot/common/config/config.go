@@ -59,6 +59,12 @@ type BotConfig struct {
 	MaxTotalExposurePct float64 `json:"max_total_exposure_pct"`
 	MinEdgePoints       float64 `json:"min_edge_points"`
 
+	// v7 P4: P0 floor relaxation. When a short-horizon candidate has
+	// liquidity above PriceFloorShortLiqRelaxUSD, the floor drops to
+	// PriceFloorShortLiqRelax. Defaults wired in applyDefaults.
+	PriceFloorShortLiqRelax     float64 `json:"price_floor_short_liq_relax"`
+	PriceFloorShortLiqRelaxUSD  float64 `json:"price_floor_short_liq_relax_usd"`
+
 	Mode               string  `json:"mode"`
 }
 
@@ -116,9 +122,20 @@ func (c *BotConfig) applyDefaults() {
 	if c.LiquidityMinRatio == 0 {
 		c.LiquidityMinRatio = 4
 	}
-	// v6 defaults.
+	// v6 defaults — KEPT at 0.10 per v7 P4 audit (analytics/audit_p0_floor.py
+	// 2026-05-28): trades in band 0.05-0.10 lost $-1363 net under v6 (44% win
+	// rate). Removing the floor wholesale would re-expose to those losses.
+	// v7 P4 instead introduces a narrow liquidity relaxation: floor drops to
+	// 0.05 only for short-horizon candidates with liquidity≥$20k, where
+	// deep-book absorption mitigates the spread-driven decay.
 	if c.PriceFloor == 0 {
 		c.PriceFloor = 0.10
+	}
+	if c.PriceFloorShortLiqRelax == 0 {
+		c.PriceFloorShortLiqRelax = 0.05
+	}
+	if c.PriceFloorShortLiqRelaxUSD == 0 {
+		c.PriceFloorShortLiqRelaxUSD = 20000
 	}
 	if c.PriceCeiling == 0 {
 		c.PriceCeiling = 0.95
