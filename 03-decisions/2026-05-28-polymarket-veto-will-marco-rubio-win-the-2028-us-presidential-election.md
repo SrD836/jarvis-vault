@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-marco-rubio-win-the-2028-us-presidential-election`
 - **Categoría**: elections
 - **Precio YES**: 0.1350
-- **Volumen 24h**: 54906.80 USD
+- **Volumen 24h**: 54717.30 USD
 - **End date**: 2028-11-07T00:00:00Z
 
 ## Razón del veto
@@ -34,8 +34,8 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-marco-rubio-win-the-2028-us-presidential-election` score=1.00 (exact slug match)
-- veto `will-fernando-haddad-win-the-2026-brazilian-presidential-election` score=0.40 (same category; same price bucket low)
 - veto `will-renan-santos-win-the-2026-brazilian-presidential-election` score=0.40 (same category; same price bucket low)
+- veto `will-fernando-haddad-win-the-2026-brazilian-presidential-election` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

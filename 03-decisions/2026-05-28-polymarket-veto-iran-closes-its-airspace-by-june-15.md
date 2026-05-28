@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `iran-closes-its-airspace-by-june-15`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.3600
-- **Volumen 24h**: 72083.88 USD
+- **Precio YES**: 0.3960
+- **Volumen 24h**: 75517.72 USD
 - **End date**: 2026-06-15T00:00:00Z
 
 ## Razón del veto
@@ -37,7 +37,7 @@ memoria: exact slug match (score 1.00)
 - veto `iran-closes-its-airspace-by-june-30-432-786-462-866` score=0.90 (slug prefix match; same category; same price bucket mid)
 - veto `iran-closes-its-airspace-by-may-29` score=0.70 (slug prefix match; same category)
 - veto `iran-closes-its-airspace-by-may-31-434-443-672-526-188-756` score=0.70 (slug prefix match; same category)
-- veto `us-x-iran-permanent-peace-deal-by-june-30-2026-837-641-896-877-363-892-537-597` score=0.40 (same category; same price bucket mid)
+- veto `internet-access-restored-in-iran-by-may-31-2026` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

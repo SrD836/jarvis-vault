@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-macky-sall-be-the-next-secretary-general-of-the-united-nations` score=1.00 (exact slug match)
+- veto `tim-walz-charged-by-december-31-2026` score=0.40 (same category; same price bucket low)
 - veto `elon-musk-of-tweets-may-22-may-29-200-219` score=0.40 (same category; same price bucket low)
-- veto `will-anthropic-have-the-best-math-ai-model-at-the-end-of-may-2026` score=0.40 (same category; same price bucket low)
 - veto `will-trump-restart-project-freedom-by-may-31` score=0.40 (same category; same price bucket low)
-- veto `us-obtains-iranian-enriched-uranium-by-june-30` score=0.40 (same category; same price bucket low)
+- veto `will-anthropic-have-the-best-math-ai-model-at-the-end-of-may-2026` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 
