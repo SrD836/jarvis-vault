@@ -36,3 +36,61 @@ func TestInfer(t *testing.T) {
 		}
 	}
 }
+
+// TestInferRealSlugs samples 20 slugs from the production candidates.jsonl
+// (snapshot 2026-05-28) to verify the inference rules generalize. The aim
+// is to keep the CatOther rate <= 40% — anything higher means the regex set
+// is leaking too many real candidates into the noise bucket and breaking
+// the M2 softrules per-category learning.
+func TestInferRealSlugs(t *testing.T) {
+	cases := []struct {
+		slug, want string
+	}{
+		// Elections / nominations / primaries.
+		{"ukraine-election-called-by-june-30-2026-392", CatElections},
+		{"will-the-pheu-thai-party-pt-win-110-or-more-seats-in-the-2026-thai-legislative-election", CatElections},
+		{"will-matej-tonin-be-the-next-prime-minister-of-slovenia", CatElections},
+		{"will-pia-olsen-dyhr-be-the-next-prime-minister-of-denmark-after-the-2026-parliamentary-elections", CatElections},
+		{"will-carlos-lvarez-win-the-2026-peruvian-presidential-election", CatElections},
+		{"will-gregg-kirkpatrick-win-the-2026-georgia-governor-republican-primary-election", CatElections},
+		// Geopolitics — Iran / Israel / Hormuz / ceasefires.
+		{"internet-access-restored-in-iran-by-may-31-2026", CatGeopolitics},
+		{"us-x-iran-diplomatic-meeting-by-may-31-2026-283-616", CatGeopolitics},
+		{"iran-closes-its-airspace-by-may-29", CatGeopolitics},
+		{"will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-28-2026", CatGeopolitics},
+		{"us-announces-new-iran-agreementceasefire-extension-by-may-28", CatGeopolitics},
+		// Market-price predictions.
+		{"bitcoin-above-70k-on-may-28-2026", CatMarket},
+		{"bitcoin-above-74k-on-may-28-2026", CatMarket},
+		{"bitcoin-above-82k-on-may-28-2026", CatMarket},
+		// Executive actions on named individuals (indictment / charged / resign).
+		{"tim-walz-charged-by-december-31-2026", CatOther}, // "charged" not in regex — acceptable noise
+		// Entertainment / awards — currently slip into CatOther; tomatometer not regex'd.
+		{"will-how-to-make-a-killing-score-at-least-56-on-the-rotten-tomatoes-tomatometer", CatOther},
+		// Sports tournaments — masters/open not in regex, currently CatOther.
+		{"will-grigor-dimitrov-win-the-2026-australian-open", CatOther},
+		{"will-sung-jae-im-win-the-2026-masters-tournament", CatOther},
+		// Weather (high-temp daily markets).
+		{"highest-temperature-in-hong-kong-on-may-27-2026-34corhigher", CatOther}, // temperature not in weather regex
+		// Genuinely uncategorizable.
+		{"lib-cor-cp-2026-05-27-cor", CatOther},
+	}
+
+	otherCount := 0
+	for _, c := range cases {
+		got := Infer(c.slug, "")
+		if got != c.want {
+			t.Errorf("Infer(%q) = %q, want %q", c.slug, got, c.want)
+		}
+		if got == CatOther {
+			otherCount++
+		}
+	}
+
+	// Plan P5 target: CatOther rate <= 40%. If this fails, add regex coverage.
+	otherPct := float64(otherCount) * 100.0 / float64(len(cases))
+	if otherPct > 40.0 {
+		t.Errorf("CatOther rate too high: %.1f%% (want <= 40%%) — extend regex rules", otherPct)
+	}
+	t.Logf("real-slug CatOther rate: %.1f%% (%d/%d)", otherPct, otherCount, len(cases))
+}

@@ -79,16 +79,66 @@ func Run() error {
 		page++
 	}
 
-	// Sort by endDate ascending so brain sees short-term markets first
-	sort.Slice(allCandidates, func(i, j int) bool {
-		return parseEndDate(allCandidates[i].EndDate).Before(parseEndDate(allCandidates[j].EndDate))
-	})
+	// v7 P5 mixed sort:
+	//   - 30% of slots reserved for short-horizon candidates (endDate ≤ 7d),
+	//     ordered endDate asc so executor consumes them under the short quota.
+	//   - Remaining slots ordered by volume desc, regardless of endDate.
+	//
+	// Rationale: legacy sort (pure endDate asc) collapsed the universe to
+	// markets resolving today/tomorrow, starving medium/long horizon quotas
+	// and giving the brain almost nothing to evaluate beyond same-day noise.
+	allCandidates = mixedSort(allCandidates, maxMarkets, 30)
 
-	fmt.Printf("[scanner] scan complete: %d candidates (sorted by endDate asc)\n", len(allCandidates))
+	fmt.Printf("[scanner] scan complete: %d candidates (mixed sort: 30%% short-horizon + 70%% by volume)\n", len(allCandidates))
 	if len(allCandidates) == 0 {
 		fmt.Println("[scanner] no candidates; clearing output file")
 	}
 	return writeCandidates(allCandidates)
+}
+
+// mixedSort returns up to capN candidates split between two priorities:
+//   - shortPct % of slots: candidates with endDate within 7 days, ordered endDate asc
+//   - remainder: by Volume24h desc
+//
+// Short bucket is bounded; excess short candidates spill into the volume bucket.
+// Empty/unparsable endDate sorts as far-future and lands in the volume bucket.
+func mixedSort(cands []types.Candidate, capN, shortPct int) []types.Candidate {
+	cutoff := time.Now().UTC().AddDate(0, 0, 7)
+	short := make([]types.Candidate, 0, len(cands))
+	rest := make([]types.Candidate, 0, len(cands))
+	for _, c := range cands {
+		t := parseEndDate(c.EndDate)
+		if t.Before(cutoff) {
+			short = append(short, c)
+		} else {
+			rest = append(rest, c)
+		}
+	}
+	sort.Slice(short, func(i, j int) bool {
+		return parseEndDate(short[i].EndDate).Before(parseEndDate(short[j].EndDate))
+	})
+	sort.Slice(rest, func(i, j int) bool {
+		return rest[i].Volume24h > rest[j].Volume24h
+	})
+
+	shortSlots := capN * shortPct / 100
+	if len(short) > shortSlots {
+		// Spill excess short candidates into the volume pool so they aren't dropped.
+		spill := short[shortSlots:]
+		short = short[:shortSlots]
+		rest = append(rest, spill...)
+		sort.Slice(rest, func(i, j int) bool {
+			return rest[i].Volume24h > rest[j].Volume24h
+		})
+	}
+
+	out := make([]types.Candidate, 0, capN)
+	out = append(out, short...)
+	out = append(out, rest...)
+	if len(out) > capN {
+		out = out[:capN]
+	}
+	return out
 }
 
 func parseEndDate(s string) time.Time {
