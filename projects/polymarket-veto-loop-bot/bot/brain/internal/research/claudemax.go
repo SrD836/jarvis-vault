@@ -14,12 +14,28 @@ import (
 	"fmt"
 	"io"
 	"net/http"
+	"net/url"
 	"os"
 	"strings"
 	"time"
 
 	commontypes "github.com/davidgn/polymarket-veto-loop-bot/bot/common/types"
 )
+
+// extractHostname parses a URL and returns the lowercased host without "www.".
+// Returns empty string when the input is not a parseable absolute URL.
+func extractHostname(raw string) string {
+	raw = strings.TrimSpace(raw)
+	if raw == "" {
+		return ""
+	}
+	u, err := url.Parse(raw)
+	if err != nil || u.Host == "" {
+		return ""
+	}
+	h := strings.ToLower(u.Host)
+	return strings.TrimPrefix(h, "www.")
+}
 
 const (
 	claudemaxModel        = "claudemax/claude-sonnet-4-6"
@@ -35,7 +51,7 @@ Devuelves EXCLUSIVAMENTE un JSON válido (sin markdown, sin code-fence):
   "score": 0.5,
   "summary": "una frase breve en español",
   "cited_dates": [
-    {"headline_title": "...", "date": "YYYY-MM-DD"}
+    {"headline_title": "...", "date": "YYYY-MM-DD", "url": "https://www.reuters.com/..."}
   ]
 }
 
@@ -44,6 +60,7 @@ Reglas:
 - score ∈ [0, 1] = tu confianza.
 - summary <= 120 chars.
 - cited_dates obligatorio si no es silent (al menos 1 entry).
+- url EN CADA cited_dates obligatorio cuando no es silent — apunta a la página real (Reuters/AP/Bloomberg/NYT/...). Sin url ficticio: si no recuerdas la URL exacta, omite ese entry, no inventes.
 - NO inventes hechos ni fechas. Si dudas → silent.
 - Para mercados deportivos same-day: silent salvo lesiones/cambios alineación oficiales.
 - Para geopolítica: contradicts si hay anuncio oficial opuesto a la tesis.`
@@ -79,22 +96,37 @@ func (c *Client) evaluateFullClaudemax(question, side string) (Verdict, []Headli
 		v = Verdict{Silent: true, Score: 0, Summary: "claudemax error"}
 	}
 
-	// Claude Max doesn't surface headlines to us — we record the cited_dates
-	// as synthetic Headline rows so the cache & citation downstream keeps
-	// working without code churn.
+	// v7 P2: build Headlines with real URL + host when the LLM provided one,
+	// otherwise fall back to the synthetic pseudo-domain. citesFromVerdict
+	// matches by title, so we keep the existing pipeline but emit accurate
+	// Domain/URL when available.
 	headlines := make([]Headline, 0, len(v.CitedDates))
 	for _, cd := range v.CitedDates {
-		headlines = append(headlines, Headline{
+		h := Headline{
 			Title:         cd.HeadlineTitle,
+			URL:           cd.URL,
 			PublishedDate: cd.Date,
-			Source:        "claudemax-websearch",
-		})
+		}
+		if host := extractHostname(cd.URL); host != "" {
+			h.Source = host
+		} else {
+			h.Source = "claudemax-websearch"
+		}
+		headlines = append(headlines, h)
 	}
 	c.appendCache(CacheEntry{
 		Hash: hash, Query: query, Timestamp: time.Now().UTC().Format(time.RFC3339),
 		Headlines: headlines, Verdict: v, Model: claudemaxModel,
 	})
-	return v, headlines, citesFromVerdict(v, headlines)
+	cites := citesFromVerdict(v, headlines)
+	// Mark cites with no resolvable URL as Synthetic so downstream filters
+	// (closer.AppendSourceStats) can drop them from the domain blacklist.
+	for i := range cites {
+		if cites[i].URL == "" || cites[i].Domain == "claudemax-websearch" {
+			cites[i].Synthetic = true
+		}
+	}
+	return v, headlines, cites
 }
 
 func (c *Client) synthesizeClaudemax(question, side string) (Verdict, error) {

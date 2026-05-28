@@ -28,9 +28,11 @@ type Headline struct {
 }
 
 // CitedDate is what the LLM asserts having based its verdict on.
+// v7 P2: URL is mandatory on the claudemax path so source attribution works.
 type CitedDate struct {
 	HeadlineTitle string `json:"headline_title"`
 	Date          string `json:"date"`
+	URL           string `json:"url,omitempty"`
 }
 
 // Verdict is the structured output of the LLM auditor synthesis.

@@ -75,6 +75,14 @@ func GenerateAndAppend(memoryPath string) {
 		if s.losses < minLossesCluster {
 			continue
 		}
+		// v7 P1: drop clusters with no category. Legacy losses without a
+		// resolvable category accumulated 126 "uncategorized" rules that
+		// the current scanner (which classifies real categories) can never
+		// match → 1 match/cron of pure noise. The rule generator now
+		// refuses to emit them.
+		if k.category == "" || strings.EqualFold(k.category, "uncategorized") {
+			continue
+		}
 		winRate := 0.0
 		if total > 0 {
 			winRate = float64(s.wins) / float64(total)
@@ -84,7 +92,7 @@ func GenerateAndAppend(memoryPath string) {
 		}
 		rule := fmt.Sprintf(
 			"- En categoría `%s` · horizonte `%s` · precio `%s`: %d losses, %d wins (win rate %.0f%%). **Veto soft o reducir size 50%%.**",
-			emptyOr(k.category, "uncategorized"),
+			k.category,
 			emptyOr(k.horizon, "?"),
 			k.band, s.losses, s.wins, winRate*100,
 		)

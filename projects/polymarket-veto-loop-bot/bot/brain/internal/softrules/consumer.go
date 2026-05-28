@@ -33,23 +33,26 @@ type ActiveRule struct {
 }
 
 // Matches reports whether a candidate matches this rule.
-// Category match: case-insensitive exact OR the rule is "uncategorized" (which
-// is the legacy bucket holding historical losses before category inference
-// existed — treated as wildcard for any non-market category so the historical
-// learning still vetoes new candidates during the transition period).
-// Horizon "?" in the rule = wildcard. Market category is excluded from the
-// wildcard because P6 marketcheck handles it independently.
+//
+// v7 P1 (2026-05-28): removed the legacy wildcard fallback whereby an
+// "uncategorized" rule matched any non-market category. Rationale: 126
+// uncategorized rules accumulated from pre-categorize losses and the
+// wildcard caused them to soft-veto candidates whose real categories were
+// nothing alike. New uncategorized rules are no longer generated
+// (GenerateAndAppend filters them out); legacy ones become inert here and
+// will be purged from memory.md by analytics/cleanup_legacy_soft_rules.py.
+//
+// Horizon "?" in the rule = wildcard (still honored — pre-categorize horizon
+// was sometimes unresolvable).
 func (r ActiveRule) Matches(category, horizon string, price float64) bool {
 	cat := strings.TrimSpace(strings.ToLower(category))
 	ruleCat := strings.TrimSpace(strings.ToLower(r.Category))
+	if ruleCat == "" || ruleCat == "uncategorized" {
+		// inert rule from legacy data — no implicit wildcard.
+		return false
+	}
 	if ruleCat != cat {
-		// Legacy bucket fallback: "uncategorized" matches any non-market
-		// category (including empty string) so pre-inference rules keep working.
-		if ruleCat == "uncategorized" && cat != "market" {
-			// allow
-		} else {
-			return false
-		}
+		return false
 	}
 	if r.Horizon != "?" && !strings.EqualFold(r.Horizon, horizon) {
 		return false

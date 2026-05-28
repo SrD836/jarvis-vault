@@ -149,8 +149,13 @@ func AppendSourceStats(ct types.ClosedTrade) error {
 	defer f.Close()
 	enc := json.NewEncoder(f)
 	for _, s := range ct.SourcesUsed {
+		// v7 P2: synthetic cites (no resolvable URL) would all collapse the
+		// blacklist to "claudemax-websearch" and disable domain-level scoring.
+		if s.Synthetic {
+			continue
+		}
 		dom := strings.ToLower(strings.TrimSpace(s.Domain))
-		if dom == "" || dom == "legacy" {
+		if dom == "" || dom == "legacy" || dom == "claudemax-websearch" {
 			continue
 		}
 		_ = enc.Encode(map[string]interface{}{

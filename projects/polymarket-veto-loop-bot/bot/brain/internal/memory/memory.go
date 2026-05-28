@@ -208,6 +208,14 @@ func patternScore(p Pattern, c CandidateLike) (float64, string) {
 	if commonSlugPrefix(p.Slug, c.Slug) >= 4 {
 		score += 0.5
 		whys = append(whys, "slug prefix match")
+	} else if j := slugTokenJaccard(p.Slug, c.Slug); j >= 0.5 {
+		// v7 P1 fuzzy: when no prefix match, score by Jaccard over slug tokens.
+		// Polymarket slugs are kebab-encoded question text, so token overlap
+		// captures "iran-airspace-by-may-29" vs "iran-airspace-by-may-31"
+		// without requiring identical word order. Slug substitutes for
+		// question text since memory.md doesn't persist questions.
+		score += 0.55 * j
+		whys = append(whys, fmt.Sprintf("slug token jaccard %.2f", j))
 	}
 
 	// category match
@@ -234,6 +242,63 @@ func patternScore(p Pattern, c CandidateLike) (float64, string) {
 		return score, ""
 	}
 	return score, strings.Join(whys, "; ")
+}
+
+// slugStopWords are filler tokens that pollute Jaccard similarity (every
+// market has them; matching on them is noise). Kept short and curated.
+var slugStopWords = map[string]struct{}{
+	"will": {}, "be": {}, "is": {}, "the": {}, "a": {}, "an": {}, "to": {},
+	"of": {}, "on": {}, "in": {}, "at": {}, "by": {}, "for": {}, "and": {},
+	"or": {}, "this": {}, "that": {}, "2026": {}, "2025": {}, "2027": {},
+}
+
+// slugTokens splits a kebab slug into tokens with stop words and pure
+// numbers removed. Pure-digit tokens are dropped because they are usually
+// dates or strike prices that vary between otherwise-identical markets.
+func slugTokens(s string) map[string]struct{} {
+	out := map[string]struct{}{}
+	for _, tok := range strings.Split(strings.ToLower(s), "-") {
+		if tok == "" {
+			continue
+		}
+		if _, skip := slugStopWords[tok]; skip {
+			continue
+		}
+		// drop pure-digit tokens (dates, strike prices, lottery IDs)
+		allDigit := true
+		for _, r := range tok {
+			if r < '0' || r > '9' {
+				allDigit = false
+				break
+			}
+		}
+		if allDigit {
+			continue
+		}
+		out[tok] = struct{}{}
+	}
+	return out
+}
+
+// slugTokenJaccard returns |A∩B|/|A∪B| over content tokens. 0 when either
+// side has no content tokens. Designed for short kebab slugs (5-15 tokens).
+func slugTokenJaccard(a, b string) float64 {
+	ta := slugTokens(a)
+	tb := slugTokens(b)
+	if len(ta) == 0 || len(tb) == 0 {
+		return 0
+	}
+	inter := 0
+	for k := range ta {
+		if _, ok := tb[k]; ok {
+			inter++
+		}
+	}
+	union := len(ta) + len(tb) - inter
+	if union == 0 {
+		return 0
+	}
+	return float64(inter) / float64(union)
 }
 
 func commonSlugPrefix(a, b string) int {
