@@ -65,6 +65,9 @@ tags: [memory, antigravity, context]
 ---
 
 ## Patrones aprendidos
+- [Auto-Consolidated 2026-05-28] Disco subió a 82%: 72% -> 82%
+- [Auto-Consolidated 2026-05-28] Ratio veto/trade: None -> 8:0
+- [Auto-Consolidated 2026-05-28] Liberación anticipada del disco: None -> antes de las 18:00
 - [Auto-Consolidated 2026-05-20] Stop vs Kelly inconsistente: -30% -> USD: pérdida máxima del trade en USD
 - [Auto-Consolidated 2026-05-20] Veto-loop como filtro binario: itera -> terminal
 - [Auto-Consolidated 2026-05-20] Catalyst 72h: solaparse con 72h antes de AHORA -> se activa solo en la ventana 72h-0h previas a resolución

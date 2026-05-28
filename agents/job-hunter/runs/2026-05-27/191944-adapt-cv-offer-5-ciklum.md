@@ -5,7 +5,15 @@ batch_id: batch-1779909507934-36ff96
 offer_id: offer-5-ciklum
 started_at: 2026-05-27T19:18:27.935Z
 parent: dashboard-batch
+related:
+  - "[[agents/designer/runs/2026-05-27/204653-build-portfolio-offer-5-ciklum]]"
+  - "[[agents/job-hunter]]"
+  - "[[agents/job-hunter/runs/2026-05-27/202349-adapt-cv-offer-5-ciklum]]"
+  - "[[agents/runs-today]]"
+  - "[[inbox/job-hunting/index]]"
+# auto-linked 2026-05-28
 ---
+
 
 ## adapt-cv — offer-5-ciklum
 

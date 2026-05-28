@@ -5,7 +5,15 @@ batch_id: batch-1779906538164-54a4d5
 offer_id: offer-2-quir-nprevenci-n
 started_at: 2026-05-27T18:28:58.165Z
 parent: dashboard-batch
+related:
+  - "[[agents/designer]]"
+  - "[[agents/documenter]]"
+  - "[[agents/job-hunter]]"
+  - "[[agents/skill-reviewer]]"
+  - "[[inbox/job-hunting/index]]"
+# auto-linked 2026-05-28
 ---
+
 
 ## adapt-cv — offer-2-quir-nprevenci-n
 

@@ -5,7 +5,15 @@ batch_id: batch-1779906538234-44b59b
 offer_id: offer-6-primer-impacto
 started_at: 2026-05-27T18:28:58.235Z
 parent: dashboard-batch
+related:
+  - "[[agents/designer/runs/2026-05-27/214226-build-portfolio-offer-6-primer-impacto]]"
+  - "[[agents/designer/runs/2026-05-27/220012-build-portfolio-offer-6-primer-impacto]]"
+  - "[[agents/job-hunter]]"
+  - "[[agents/job-hunter/runs/2026-05-27/220112-adapt-cv-offer-6-primer-impacto]]"
+  - "[[inbox/job-hunting/index]]"
+# auto-linked 2026-05-28
 ---
+
 
 ## adapt-cv — offer-6-primer-impacto
 
