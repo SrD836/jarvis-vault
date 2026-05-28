@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `israel-closes-its-airspace-by-may-31`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.0760
-- **Volumen 24h**: 199764.43 USD
+- **Precio YES**: 0.0790
+- **Volumen 24h**: 204468.52 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto

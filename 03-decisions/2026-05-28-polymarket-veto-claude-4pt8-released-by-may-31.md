@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `claude-4pt8-released-by-may-31`
 - **Categoría**: other
-- **Precio YES**: 0.7700
-- **Volumen 24h**: 141476.97 USD
+- **Precio YES**: 0.6800
+- **Volumen 24h**: 160896.82 USD
 - **End date**: 2026-07-31T00:00:00Z
 
 ## Razón del veto
@@ -35,9 +35,9 @@ memoria: exact slug match (score 1.00)
 
 - veto `claude-4pt8-released-by-may-31` score=1.00 (exact slug match)
 - veto `elon-musk-of-tweets-may-22-may-29-160-179` score=0.40 (same category; same price bucket mid)
-- veto `ucl-psg-ars-2026-05-30-ars` score=0.40 (same category; same price bucket mid)
 - veto `ucl-psg-ars-2026-05-30-psg` score=0.40 (same category; same price bucket mid)
-- veto `will-vitality-win-iem-cologne-major-2026` score=0.40 (same category; same price bucket mid)
+- veto `ucl-psg-ars-2026-05-30-ars` score=0.40 (same category; same price bucket mid)
+- veto `will-jannik-sinner-win-the-2026-mens-french-open` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

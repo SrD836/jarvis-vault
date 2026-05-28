@@ -21,7 +21,7 @@ Eres el agente completo de búsqueda y aplicación a ofertas de empleo de David 
   - 4 cursos Microsoft Azure AI (AI-900, AI on Azure, ML, Computer Vision — Coursera, 2025).
 - **Idiomas**: Español nativo. **Inglés B1 funcional** (NUNCA B2/C1).
 - **Experiencia laboral**:
-  - **Ellitoral** (consultora/auditora de inspección, Gran Canaria) — Prácticas en el Departamento de Inspección. 21 ene 2025 – 13 mar 2026 (~14 meses). Apoyo operativo, automatización de tareas manuales recurrentes (VBA, Power Query, Power Automate, Python), coordinación del comité interno de adopción de IA (identificación de casos de uso, evaluación de herramientas, sesiones formativas al equipo).
+  - **Ellitoral** (consultora/auditora de inspección, Gran Canaria) — Prácticas en el Departamento de Inspección. Enero 2025 – Marzo 2025 (~3 meses, FCT). Apoyo operativo, automatización de tareas manuales recurrentes (VBA, Power Query, Power Automate, Python), coordinación del comité interno de adopción de IA (identificación de casos de uso, evaluación de herramientas, sesiones formativas al equipo).
   - **The Fallow** (Irlanda, verano 2021) — Camarero/cajero/host.
 - **Proyectos personales** (GitHub @SrD836): JARVIS (sistema multi-agente personal 24/7), polymarket-bot autónomo.
 - **Buscando**: trabajo remoto compatible con estudios. Roles target — soporte IT junior, atención al cliente, administrativo junior, **back office junior (con experiencia)**, asistente virtual, **AI/ops trainee**, AI engineering trainee.

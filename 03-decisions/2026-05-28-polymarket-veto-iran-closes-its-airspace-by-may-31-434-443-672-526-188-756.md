@@ -2,7 +2,7 @@
 title: "Polymarket veto — iran-closes-its-airspace-by-may-31-434-443-672-526-188-756"
 type: decision
 date: 2026-05-28
-decision: "Veto de tesis 'Iran closes its airspace by May 31?' (rule P9): P9: geopolitics pump cluster (price 0.10, 2d)"
+decision: "Veto de tesis 'Iran closes its airspace by May 31?' (rule P9): P9: geopolitics pump cluster (price 0.08, 2d)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `iran-closes-its-airspace-by-may-31-434-443-672-526-188-756`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.1020
-- **Volumen 24h**: 305665.79 USD
+- **Precio YES**: 0.0770
+- **Volumen 24h**: 332467.16 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `P9`
 
-P9: geopolitics pump cluster (price 0.10, 2d)
+P9: geopolitics pump cluster (price 0.08, 2d)
 
 ## Human notes
 

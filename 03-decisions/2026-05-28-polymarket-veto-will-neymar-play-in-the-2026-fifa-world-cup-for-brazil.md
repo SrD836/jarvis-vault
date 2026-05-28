@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-neymar-play-in-the-2026-fifa-world-cup-for-brazil`
 - **Categoría**: sports-season
-- **Precio YES**: 0.8700
-- **Volumen 24h**: 56521.23 USD
+- **Precio YES**: 0.7400
+- **Volumen 24h**: 88787.81 USD
 - **End date**: 2026-07-19T00:00:00Z
 
 ## Razón del veto
@@ -34,6 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-neymar-play-in-the-2026-fifa-world-cup-for-brazil` score=1.00 (exact slug match)
+- veto `will-the-oklahoma-city-thunder-win-the-2026-nba-finals` score=0.40 (same category; same price bucket mid)
+- veto `will-the-new-york-knicks-win-the-2026-nba-finals` score=0.40 (same category; same price bucket mid)
+- veto `will-psg-win-the-202526-champions-league` score=0.40 (same category; same price bucket mid)
+- veto `will-pedro-gonalves-be-included-in-portugals-official-2026-world-cup-squad-list` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 
