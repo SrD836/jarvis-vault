@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-abelardo-de-la-espriella-win-the-1st-round-of-the-2026-colombian-presidential-election`
 - **Categoría**: elections
-- **Precio YES**: 0.3150
-- **Volumen 24h**: 88929.69 USD
+- **Precio YES**: 0.3090
+- **Volumen 24h**: 94775.50 USD
 - **End date**: 2026-05-31T16:00:00Z
 
 ## Razón del veto
@@ -35,9 +35,9 @@ memoria: exact slug match (score 1.00)
 
 - veto `will-abelardo-de-la-espriella-win-the-1st-round-of-the-2026-colombian-presidential-election` score=1.00 (exact slug match)
 - veto `will-abelardo-de-la-espriella-win-the-2026-colombian-presidential-election` score=0.90 (slug prefix match; same category; same price bucket mid)
-- veto `will-oh-se-hoon-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
 - veto `will-roberto-snchez-palomino-win-the-2026-peruvian-presidential-election` score=0.40 (same category; same price bucket mid)
 - veto `will-ivan-cepeda-castro-win-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket mid)
+- veto `will-ivn-cepeda-castro-win-the-1st-round-of-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

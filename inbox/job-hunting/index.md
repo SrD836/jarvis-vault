@@ -25,6 +25,7 @@ Tracking de búsquedas realizadas, ofertas presentadas, estado de aplicación. D
 | 2026-05-20 | auxiliar admin / helpdesk / soporte IT / data entry / atención cliente | linkedin+indeed+tecnoempleo | ~25 | 10 | presented | [2026-05-20-trabajo-1779305625.md](2026-05-20-trabajo-1779305625.md) |
 | 2026-05-27 | auxiliar admin / back office / helpdesk / data entry / soporte IT (UI Trabajo) | linkedin+indeed+infojobs+tecnoempleo | ~30 | 10 | presented | [2026-05-27-trabajo-1779901440.md](2026-05-27-trabajo-1779901440.md) |
 | 2026-05-28 | auxiliar admin / helpdesk / soporte IT / data entry / atención cliente / back office (UI Trabajo) | linkedin+indeed+tecnoempleo | ~35 | 10 | presented | [2026-05-28-trabajo-1748472600.md](2026-05-28-trabajo-1748472600.md) |
+| 2026-05-28 | auxiliar admin / helpdesk / soporte IT / data entry / auxiliar contable / atención cliente (UI Trabajo #2) | linkedin+indeed+tecnoempleo | ~35 | 10 | presented | [2026-05-28-trabajo-1780009080.md](2026-05-28-trabajo-1780009080.md) |
 
 ## Empresas contactadas / aplicadas
 
