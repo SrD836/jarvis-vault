@@ -2,7 +2,7 @@
 title: "Polymarket veto — metamask-fdv-above-1b-one-day-after-launch-978-851-628-634"
 type: decision
 date: 2026-05-28
-decision: "Veto de tesis 'Metamask FDV above $1B one day after launch?' (rule P4_pre_event): pre-event slug + 218 d to resolution (>=7 threshold)"
+decision: "Veto de tesis 'Metamask FDV above $1B one day after launch?' (rule P4_pre_event): pre-event slug + 217 d to resolution (>=7 threshold)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -29,7 +29,7 @@ related:
 
 **Regla aplicada**: `P4_pre_event`
 
-pre-event slug + 218 d to resolution (>=7 threshold)
+pre-event slug + 217 d to resolution (>=7 threshold)
 
 ## Human notes
 

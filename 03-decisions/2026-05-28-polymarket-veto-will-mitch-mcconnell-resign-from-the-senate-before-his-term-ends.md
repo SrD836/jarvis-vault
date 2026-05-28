@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `will-mitch-mcconnell-resign-from-the-senate-before-his-term-ends`
 - **Categoría**: executive-action
-- **Precio YES**: 0.2100
+- **Precio YES**: 0.2200
 - **Volumen 24h**: 115344.55 USD
 - **End date**: 2027-01-03T00:00:00Z
 

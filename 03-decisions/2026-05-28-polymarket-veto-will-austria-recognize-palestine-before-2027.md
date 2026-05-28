@@ -35,6 +35,7 @@ memoria: exact slug match (score 1.00)
 
 - veto `will-austria-recognize-palestine-before-2027` score=1.00 (exact slug match)
 - veto `starmer-out-by-june-30-2026-862-594-548-219-739` score=0.40 (same category; same price bucket low)
+- veto `netanyahu-out-by-june-30-383-244-575` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 
