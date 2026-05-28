@@ -22,7 +22,7 @@ related:
 - **Slug**: `strait-of-hormuz-traffic-returns-to-normal-by-end-of-june`
 - **Categoría**: geopolitics
 - **Precio YES**: 0.3900
-- **Volumen 24h**: 421992.50 USD
+- **Volumen 24h**: 421495.19 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto
