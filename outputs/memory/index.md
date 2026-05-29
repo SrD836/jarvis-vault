@@ -1,7 +1,7 @@
 ---
 title: "Memoria JARVIS — índice"
 type: memory-export-index
-generated_at: 2026-05-29T09:48:10Z
+generated_at: 2026-05-29T10:02:57Z
 tags: [memory-export, jarvis, read-only, MOC]
 ---
 
@@ -13,3 +13,4 @@ tags: [memory-export, jarvis, read-only, MOC]
 |---|---|---|
 | [[polymarket-bot]] | 614 | veto:500, loss:96, antipattern:15, note:3 |
 | [[job-hunter]] | 15 | note:8, profile:7 |
+| [[cron:nightly_digest]] | 2 | insight:2 |

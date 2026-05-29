@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-gitlab-be-acquired-before-2027-944-667` score=1.00 (exact slug match)
+- veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.40 (same category; same price bucket mid)
+- veto `nor-rbk-bog-2026-05-29-bog` score=0.40 (same category; same price bucket mid)
 - veto `ucl-psg-ars-2026-05-30-ars` score=0.40 (same category; same price bucket mid)
-- veto `will-alexander-zverev-win-the-2026-mens-french-open` score=0.40 (same category; same price bucket mid)
-- veto `claudio-tapia-out-as-afa-president-by-july-19-2026` score=0.40 (same category; same price bucket mid)
-- veto `will-the-upper-bound-of-the-target-federal-funds-rate-be-4pt0-at-the-end-of-2026-386` score=0.40 (same category; same price bucket mid)
+- veto `ucl-psg-ars-2026-05-30-psg` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

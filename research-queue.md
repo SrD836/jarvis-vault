@@ -19,7 +19,8 @@ Añade una pregunta por línea, terminada en `?`. El cron de las 02:00 cogerá l
 
 ## Pendientes
 
-_(añade preguntas aquí)_
+- ¿Qué patrones de fallo recurrentes muestran los runs.jsonl y los logs de los crons nocturnos, y qué mitigaciones concretas aplican?
+- ¿Qué reglas del polymarket-bot (P0–P11) generan más vetos y cuáles podrían estar sobre-filtrando oportunidades?
 
 ## Procesadas
 

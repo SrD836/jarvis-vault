@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-the-iranian-regime-fall-by-the-end-of-2026`
 - **Categoría**: other
 - **Precio YES**: 0.1600
-- **Volumen 24h**: 75409.84 USD
+- **Volumen 24h**: 72709.70 USD
 - **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto
@@ -36,7 +36,7 @@ memoria: exact slug match (score 1.00)
 - veto `will-the-iranian-regime-fall-by-the-end-of-2026` score=1.00 (exact slug match)
 - veto `will-the-iranian-regime-fall-by-may-31` score=0.70 (slug prefix match; same category)
 - veto `will-the-iranian-regime-fall-by-june-30` score=0.70 (slug prefix match; same category)
-- veto `will-trump-agree-to-unfreeze-iranian-assets-by-may-31` score=0.40 (same category; same price bucket low)
+- veto `another-us-strike-on-venezuela-by-december-31` score=0.40 (same category; same price bucket low)
 - veto `will-trump-restart-project-freedom-by-may-31` score=0.40 (same category; same price bucket low)
 
 ## Human notes
