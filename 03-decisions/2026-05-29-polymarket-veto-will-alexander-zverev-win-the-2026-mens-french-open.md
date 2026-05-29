@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-alexander-zverev-win-the-2026-mens-french-open"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Alexander Zverev win the 2026 Men's French Open?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Will Alexander Zverev win the 2026 Men's French Open?' (rule V3 Trigger vago: sin fecha concreta o sin evento verificable.): V3 Trigger vago: sin fecha concreta o sin evento verificable.: V3 Trigger vag..."
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, m1]
+tags: [decision, polymarket, bot, veto, v3 trigger vago: sin fecha concreta o sin evento verificable.]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,23 +21,15 @@ related:
 
 - **Slug**: `will-alexander-zverev-win-the-2026-mens-french-open`
 - **Categoría**: other
-- **Precio YES**: 0.3360
-- **Volumen 24h**: 177406.00 USD
+- **Precio YES**: 0.3250
+- **Volumen 24h**: 163350.30 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `M1`
+**Regla aplicada**: `V3 Trigger vago: sin fecha concreta o sin evento verificable.`
 
-memoria: exact slug match (score 1.00)
-
-## Patterns en memoria que contribuyeron
-
-- veto `will-alexander-zverev-win-the-2026-mens-french-open` score=1.00 (exact slug match)
-- veto `nor-rbk-bog-2026-05-29-bog` score=0.40 (same category; same price bucket mid)
-- veto `ucl-psg-ars-2026-05-30-ars` score=0.40 (same category; same price bucket mid)
-- veto `ucl-psg-ars-2026-05-30-psg` score=0.40 (same category; same price bucket mid)
-- veto `will-a-claude-mythos-model-be-released-by-june-30-2026-684-583` score=0.40 (same category; same price bucket mid)
+V3 Trigger vago: sin fecha concreta o sin evento verificable.: V3 Trigger vago: la pregunta carece de un evento concreto y verificable que determine la resolución. Zverev ganar un torneo en 2026 depende de múltiples factores no discretos (lesiones, forma, rivales, sorteo) y la fecha de resolución está a >1 año sin un catalizador específico.
 
 ## Human notes
 

@@ -24427,3 +24427,74 @@
 {"timestamp":"2026-05-28T06:30:04Z","market_id":"1087513","question":"Will Jannik Sinner win the 2026 Men's French Open?","reason":"already_active"}
 {"timestamp":"2026-05-28T06:30:04Z","market_id":"1193650","question":"Will the 2026 Midterm Elections happen as scheduled?","reason":"Q2_portfolio_quota_full_long_8_of_8"}
 {"timestamp":"2026-05-28T06:30:04Z","market_id":"676937","question":"Will Elon Musk be richest person on December 31?","reason":"Q2_portfolio_quota_full_long_8_of_8"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"2134342","question":"Will FK Bodø/Glimt win on 2026-05-29?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"2244268","question":"Will Trump restart Project Freedom by May 31?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"1962237","question":"US x Iran permanent peace deal by June 30, 2026?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"2325745","question":"Israel x Lebanon diplomatic meeting by May 31?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"566140","question":"Will Arsenal win the 2025–26 Champions League?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"2111562","question":"Will Trump agree to Iranian oil sanction relief by May 31?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"569343","question":"Will Iván Cepeda Castro win the 1st round of the 2026 Colombian presidential election?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"569344","question":"Will Abelardo de la Espriella win the 1st round of the 2026 Colombian presidential election?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"2364500","question":"US announces new Iran agreement/ceasefire extension by June 3?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"678937","question":"Will Chong Won-oh win the 2026 Seoul Mayoral Election","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"947289","question":"Will Roberto Sánchez Palomino win the 2026 Peruvian presidential election?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"1087515","question":"Will Novak Djokovic win the 2026 Men's French Open?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"1087520","question":"Will Casper Ruud win the 2026 Men's French Open?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"2270330","question":"US x Iran permanent peace deal by June 15, 2026?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"569368","question":"Will Ivan Cepeda Castro win the 2026 Colombian presidential election?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"1171858","question":"NATO x Russia military clash by June 30, 2026?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"1731345","question":"Iran agrees to surrender enriched uranium stockpile by June 30, 2026?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"1900410","question":"Pete Hegseth impeached by June 30?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"957019","question":"US-Iran nuclear deal by June 30?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"2241742","question":"Iran closes its airspace by June 30?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"823412","question":"Will there be exactly 7 earthquakes of magnitude 7.0 or higher worldwide by June 30?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"2354003","question":"US announces new Iran agreement/ceasefire extension by June 30?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"597967","question":"Starmer out by June 30, 2026?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"553856","question":"Will the Oklahoma City Thunder win the 2026 NBA Finals?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"553858","question":"Will the New York Knicks win the 2026 NBA Finals?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"2169995","question":"MicroStrategy sells any Bitcoin by May 31, 2026?","reason":"Q1_horizon_usd_cap_long: used $355 + $149 \u003e cap $500"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"692258","question":"MicroStrategy sells any Bitcoin by June 30, 2026?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"1630444","question":"Will Neymar play in the World Cup?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"558940","question":"Will Portugal win the 2026 FIFA World Cup?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"558934","question":"Will Spain win the 2026 FIFA World Cup?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:03:27Z","market_id":"2270338","question":"US x Iran permanent peace deal by July 31, 2026?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"2364498","question":"US announces new Iran agreement/ceasefire extension by May 29?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"2316216","question":"Will Paris Saint-Germain FC win on 2026-05-30?","reason":"already_active"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"1972137","question":"Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 31, 2026?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"1962237","question":"US x Iran permanent peace deal by June 30, 2026?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"566140","question":"Will Arsenal win the 2025–26 Champions League?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"569344","question":"Will Abelardo de la Espriella win the 1st round of the 2026 Colombian presidential election?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"569343","question":"Will Iván Cepeda Castro win the 1st round of the 2026 Colombian presidential election?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"678929","question":"Will Oh Se-hoon win the 2026 Seoul Mayoral Election","reason":"already_active"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"678937","question":"Will Chong Won-oh win the 2026 Seoul Mayoral Election","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"947269","question":"Will Keiko Fujimori win the 2026 Peruvian presidential election?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"1087514","question":"Will Alexander Zverev win the 2026 Men's French Open?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"1087515","question":"Will Novak Djokovic win the 2026 Men's French Open?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"947289","question":"Will Roberto Sánchez Palomino win the 2026 Peruvian presidential election?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"2354023","question":"Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by June 7, 2026?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"1087520","question":"Will Casper Ruud win the 2026 Men's French Open?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"2270330","question":"US x Iran permanent peace deal by June 15, 2026?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"2354976","question":"Strait of Hormuz traffic returns to normal by June 15?","reason":"already_active"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"564210","question":"Will the Oklahoma City Thunder win the NBA Western Conference Finals?","reason":"already_active"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"906974","question":"Will there be no change in Fed interest rates after the June 2026 meeting?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"569368","question":"Will Ivan Cepeda Castro win the 2026 Colombian presidential election?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"957019","question":"US-Iran nuclear deal by June 30?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"956980","question":"Ukraine agrees not to join NATO by June 30? ","reason":"Q1_horizon_usd_cap_long: used $397 + $175 \u003e cap $500"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"2241742","question":"Iran closes its airspace by June 30?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"2183424","question":"US obtains Iranian enriched uranium by June 30?","reason":"already_active"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"1731345","question":"Iran agrees to surrender enriched uranium stockpile by June 30, 2026?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"1971905","question":"Strait of Hormuz traffic returns to normal by end of June?","reason":"already_active"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"823412","question":"Will there be exactly 7 earthquakes of magnitude 7.0 or higher worldwide by June 30?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"1708086","question":"Kharg Island no longer under Iranian control by June 30?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"553856","question":"Will the Oklahoma City Thunder win the 2026 NBA Finals?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"553858","question":"Will the New York Knicks win the 2026 NBA Finals?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"692258","question":"MicroStrategy sells any Bitcoin by June 30, 2026?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"2169995","question":"MicroStrategy sells any Bitcoin by May 31, 2026?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"1630444","question":"Will Neymar play in the World Cup?","reason":"Q1_horizon_usd_cap_long: used $458 + $144 \u003e cap $500"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"558936","question":"Will France win the 2026 FIFA World Cup?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"558940","question":"Will Portugal win the 2026 FIFA World Cup?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"558935","question":"Will England win the 2026 FIFA World Cup?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"558934","question":"Will Spain win the 2026 FIFA World Cup?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"2270338","question":"US x Iran permanent peace deal by July 31, 2026?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"2176262","question":"Strait of Hormuz traffic returns to normal by July 31?","reason":"kelly_size_zero (edge insufficient or invalid price)"}
+{"timestamp":"2026-05-29T15:35:09Z","market_id":"1363963","question":"Will CDU win the most seats in the 2026 Sachsen-Anhalt parliamentary elections?","reason":"already_active"}

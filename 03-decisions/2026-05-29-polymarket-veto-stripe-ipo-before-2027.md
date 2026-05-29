@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `stripe-ipo-before-2027`
 - **Categoría**: crypto-launch
-- **Precio YES**: 0.1000
+- **Precio YES**: 0.0900
 - **Volumen 24h**: 251885.87 USD
 - **End date**: 2026-12-31T00:00:00Z
 

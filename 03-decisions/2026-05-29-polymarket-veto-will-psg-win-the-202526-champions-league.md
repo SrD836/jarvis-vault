@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-psg-win-the-202526-champions-league"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will PSG win the 2025–26 Champions League?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Will PSG win the 2025–26 Champions League?' (rule V3): V3: V3 Trigger vago: la pregunta se refiere a un evento que ocurriría en may..."
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, m1]
+tags: [decision, polymarket, bot, veto, v3]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -22,22 +22,14 @@ related:
 - **Slug**: `will-psg-win-the-202526-champions-league`
 - **Categoría**: sports-season
 - **Precio YES**: 0.5800
-- **Volumen 24h**: 362573.58 USD
+- **Volumen 24h**: 370237.91 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `M1`
+**Regla aplicada**: `V3`
 
-memoria: exact slug match (score 1.00)
-
-## Patterns en memoria que contribuyeron
-
-- veto `will-psg-win-the-202526-champions-league` score=1.00 (exact slug match)
-- veto `will-arsenal-win-the-202526-champions-league` score=0.40 (same category; same price bucket mid)
-- veto `will-the-san-antonio-spurs-win-the-nba-western-conference-finals` score=0.40 (same category; same price bucket mid)
-- veto `will-the-oklahoma-city-thunder-win-the-nba-western-conference-finals` score=0.40 (same category; same price bucket mid)
-- veto `will-the-new-york-knicks-win-the-2026-nba-finals` score=0.40 (same category; same price bucket mid)
+V3: V3 Trigger vago: la pregunta se refiere a un evento que ocurriría en mayo de 2026, demasiado lejano en el futuro sin una fecha concreta que permita verificar un catalizador específico en los próximos 7 días.
 
 ## Human notes
 

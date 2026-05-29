@@ -2,13 +2,13 @@
 title: "Polymarket veto — strait-of-hormuz-traffic-returns-to-normal-by-july-31"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Strait of Hormuz traffic returns to normal by July 31?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Strait of Hormuz traffic returns to normal by July 31?' (rule E2): edge 0.030 < mín 0.030 (p̂=0.550, implied=0.580)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, m1]
+tags: [decision, polymarket, bot, veto, e2]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -22,22 +22,14 @@ related:
 - **Slug**: `strait-of-hormuz-traffic-returns-to-normal-by-july-31`
 - **Categoría**: geopolitics
 - **Precio YES**: 0.5800
-- **Volumen 24h**: 161987.75 USD
+- **Volumen 24h**: 137290.77 USD
 - **End date**: 2026-07-31T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `M1`
+**Regla aplicada**: `E2`
 
-memoria: exact slug match (score 1.00)
-
-## Patterns en memoria que contribuyeron
-
-- veto `strait-of-hormuz-traffic-returns-to-normal-by-july-31` score=1.00 (exact slug match)
-- veto `strait-of-hormuz-traffic-returns-to-normal-by-end-of-june` score=0.90 (slug prefix match; same category; same price bucket mid)
-- veto `strait-of-hormuz-traffic-returns-to-normal-by-end-of-may` score=0.70 (slug prefix match; same category)
-- veto `strait-of-hormuz-traffic-returns-to-normal-by-june-15` score=0.70 (slug prefix match; same category)
-- veto `will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-31-2026-313...` score=0.40 (same category; same price bucket mid)
+edge 0.030 < mín 0.030 (p̂=0.550, implied=0.580)
 
 ## Human notes
 
