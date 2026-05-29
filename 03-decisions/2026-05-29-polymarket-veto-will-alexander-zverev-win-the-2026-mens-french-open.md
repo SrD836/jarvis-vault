@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-alexander-zverev-win-the-2026-mens-french-open`
 - **Categoría**: other
-- **Precio YES**: 0.3280
-- **Volumen 24h**: 279685.96 USD
+- **Precio YES**: 0.3170
+- **Volumen 24h**: 279529.55 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto

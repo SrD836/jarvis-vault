@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-keiko-fujimori-win-the-2026-peruvian-presidential-election"
+title: "Polymarket veto — will-nithya-raman-win-the-2026-los-angeles-mayoral-election-876"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Keiko Fujimori win the 2026 Peruvian presidential election?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Will Nithya Raman win the 2026 Los Angeles mayoral election?' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will Keiko Fujimori win the 2026 Peruvian presidential election?
+# Veto: Will Nithya Raman win the 2026 Los Angeles mayoral election?
 
 ## Mercado
 
-- **Slug**: `will-keiko-fujimori-win-the-2026-peruvian-presidential-election`
+- **Slug**: `will-nithya-raman-win-the-2026-los-angeles-mayoral-election-876`
 - **Categoría**: elections
-- **Precio YES**: 0.7700
-- **Volumen 24h**: 81878.51 USD
-- **End date**: 2026-06-07T00:00:00Z
+- **Precio YES**: 0.2100
+- **Volumen 24h**: 50019.74 USD
+- **End date**: 2026-06-02T00:00:00Z
 
 ## Razón del veto
 
@@ -33,8 +33,8 @@ memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
-- veto `will-keiko-fujimori-win-the-2026-peruvian-presidential-election` score=1.00 (exact slug match)
-- veto `will-nithya-raman-win-the-2026-los-angeles-mayoral-election-876` score=0.40 (same category; same price bucket mid)
+- veto `will-nithya-raman-win-the-2026-los-angeles-mayoral-election-876` score=1.00 (exact slug match)
+- veto `will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983` score=0.40 (same category; same price bucket mid)
 - veto `will-chong-won-oh-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
 - veto `will-oh-se-hoon-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
 - veto `will-roberto-snchez-palomino-win-the-2026-peruvian-presidential-election` score=0.40 (same category; same price bucket mid)

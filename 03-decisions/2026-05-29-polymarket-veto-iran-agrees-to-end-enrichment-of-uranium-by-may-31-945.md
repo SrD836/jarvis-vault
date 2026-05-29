@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `iran-agrees-to-end-enrichment-of-uranium-by-may-31-945`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.0980
-- **Volumen 24h**: 160070.67 USD
+- **Precio YES**: 0.0950
+- **Volumen 24h**: 145884.66 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto

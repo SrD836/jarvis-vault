@@ -2,7 +2,7 @@
 title: "Polymarket veto — opensea-fdv-above-100m-one-day-after-launch-172-151-588-987"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Opensea FDV above $100M one day after launch?' (rule P4_pre_event): pre-event slug + 217 d to resolution (>=7 threshold)"
+decision: "Veto de tesis 'Opensea FDV above $100M one day after launch?' (rule P4_pre_event): pre-event slug + 216 d to resolution (>=7 threshold)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -29,7 +29,7 @@ related:
 
 **Regla aplicada**: `P4_pre_event`
 
-pre-event slug + 217 d to resolution (>=7 threshold)
+pre-event slug + 216 d to resolution (>=7 threshold)
 
 ## Human notes
 
