@@ -140,3 +140,26 @@ Pregúntate antes de responder:
 - ¿Estoy a punto de cometer alguna de las reglas duras (API key, bind mount, anti-fraude)?
 
 Si todo OK → ejecuta. No preguntes para validar.
+
+---
+
+## Reglas de commit (obligatorias, no negociables)
+
+> Extiende la regla dura 6 (Commit & push protocol). La regla 6 = commit&push al cerrar sesión/trabajo. Estas reglas suben la granularidad: commit por CADA tarea, no solo al final.
+
+1. Tras CADA tarea completada con éxito, ejecuta inmediatamente:
+   `git add -A && git commit -m "<descripción concisa de la tarea>"`
+
+2. NO esperes a que el usuario te lo pida. NO acumules varias tareas en un solo commit.
+
+3. Una "tarea completada" = un cambio funcional que pasa sus tests/verificaciones, no un archivo guardado a medias.
+
+4. Mensaje de commit: imperativo, presente, una línea, <72 caracteres.
+   - Bien: "arregla router para enrutar tareas nocturnas a deepseek"
+   - Mal:  "cambios" / "wip" / "varios fixes"
+
+5. Si una tarea falla, NO commitees el estado roto. Revierte o arregla antes.
+
+6. Al final de cada fase del `PLAN_RESCATE_JARVIS.md`, además del commit por tarea: `git commit --allow-empty -m "fase N: completada"` para marcar el hito.
+
+7. Push al remoto tras cada commit si existe origin configurado: `git push origin HEAD`. Si falla por conflicto, para y reporta — NO fuerces (coherente con regla 6: nunca `--no-verify`, `--force`, `--amend`).
