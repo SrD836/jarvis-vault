@@ -12251,3 +12251,52 @@
 2026/05/29 19:55:01 main.go:13: exit_monitor: done
 2026/05/29 20:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/29 20:00:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/29 20:00:02 monitor.go:179: exit_monitor: 0 closed, 13 remaining
+2026/05/29 20:00:02 main.go:13: exit_monitor: done
+2026/05/29 20:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/29 20:05:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/29 20:05:01 monitor.go:179: exit_monitor: 0 closed, 17 remaining
+2026/05/29 20:05:01 main.go:13: exit_monitor: done
+2026/05/29 20:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/29 20:10:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/29 20:10:01 monitor.go:179: exit_monitor: 0 closed, 17 remaining
+2026/05/29 20:10:01 main.go:13: exit_monitor: done
+2026/05/29 20:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/29 20:15:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/29 20:15:01 monitor.go:179: exit_monitor: 0 closed, 17 remaining
+2026/05/29 20:15:01 main.go:13: exit_monitor: done
+2026/05/29 20:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/29 20:20:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/29 20:20:01 monitor.go:179: exit_monitor: 0 closed, 17 remaining
+2026/05/29 20:20:01 main.go:13: exit_monitor: done
+2026/05/29 20:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/29 20:25:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/29 20:25:02 monitor.go:179: exit_monitor: 0 closed, 17 remaining
+2026/05/29 20:25:02 main.go:13: exit_monitor: done
+2026/05/29 20:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/29 20:30:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/29 20:30:02 monitor.go:179: exit_monitor: 0 closed, 17 remaining
+2026/05/29 20:30:02 main.go:13: exit_monitor: done
+2026/05/29 20:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/29 20:35:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/29 20:35:01 monitor.go:179: exit_monitor: 0 closed, 17 remaining
+2026/05/29 20:35:01 main.go:13: exit_monitor: done
+2026/05/29 20:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/29 20:40:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/29 20:40:01 monitor.go:143: exit_monitor: closed Will the price of Bitcoin be above $74,000 on May 30? (no_remaining_edge EARLY) @ 0.3100 src=bestBid liq=$25582: PnL $3.06 (6.90%)
+2026/05/29 20:40:01 monitor.go:179: exit_monitor: 1 closed, 9 remaining
+2026/05/29 20:40:01 main.go:13: exit_monitor: done
+2026/05/29 20:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/29 20:45:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/29 20:45:01 monitor.go:179: exit_monitor: 0 closed, 9 remaining
+2026/05/29 20:45:01 main.go:13: exit_monitor: done
+2026/05/29 20:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/29 20:50:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/29 20:50:02 monitor.go:179: exit_monitor: 0 closed, 9 remaining
+2026/05/29 20:50:02 main.go:13: exit_monitor: done
+2026/05/29 20:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/29 20:55:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/29 20:55:01 monitor.go:179: exit_monitor: 0 closed, 9 remaining
+2026/05/29 20:55:01 main.go:13: exit_monitor: done
+2026/05/29 21:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/29 21:00:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030

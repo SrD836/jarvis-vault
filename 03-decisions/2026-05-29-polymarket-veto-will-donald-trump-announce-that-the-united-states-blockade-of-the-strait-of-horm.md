@@ -1,35 +1,35 @@
 ---
-title: "Polymarket veto — will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-june-30-2026-159-962"
+title: "Polymarket veto — will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-31-2026-313-388-459-589-533"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Donald Trump announce that the United States blockade of the Strait of H...' (rule V3 Trigger vago): V3 Trigger vago: V3 Trigger vago: No hay una fecha concreta ni evento verific..."
+decision: "Veto de tesis 'Will Donald Trump announce that the United States blockade of the Strait of H...' (rule E2): edge 0.010 < mín 0.030 (p̂=0.350, implied=0.360)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, v3 trigger vago]
+tags: [decision, polymarket, bot, veto, e2]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by June 30, 2026?
+# Veto: Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 31, 2026?
 
 ## Mercado
 
-- **Slug**: `will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-june-30-2026-159-962`
+- **Slug**: `will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-31-2026-313-388-459-589-533`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.8400
-- **Volumen 24h**: 246435.61 USD
-- **End date**: 2026-06-30T00:00:00Z
+- **Precio YES**: 0.3600
+- **Volumen 24h**: 2062228.85 USD
+- **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `V3 Trigger vago`
+**Regla aplicada**: `E2`
 
-V3 Trigger vago: V3 Trigger vago: No hay una fecha concreta ni evento verificable más allá de una declaración genérica de Trump. El evento depende de una acción de un político (Trump) que no tiene plazo definido ni señal de que ocurra en los próximos 7 días. Además, la probabilidad implícita de 0.84 parece excesiva para un evento sin catalyst inmediato.
+edge 0.010 < mín 0.030 (p̂=0.350, implied=0.360)
 
 ## Human notes
 

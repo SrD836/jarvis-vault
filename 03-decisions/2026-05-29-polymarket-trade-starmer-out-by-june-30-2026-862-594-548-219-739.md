@@ -10,13 +10,17 @@ size_usd: 61.21
 horizon: long
 days_to_resolution: 31
 sources_used: []
-outcome: pending
+outcome: loss
 outcome_observed_after_days: 31
 tags: [decision, polymarket, bot, trade, approved]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
   - "[[projects/polymarket-veto-loop-bot]]"
+pnl_usd: -4.37
+closed_at: 2026-05-29T20:35:41Z
+exit_reason: horizon-shortonly-2026-05-29
+days_open: 0.21
 ---
 
 # Trade aprobado: Starmer out by June 30, 2026?

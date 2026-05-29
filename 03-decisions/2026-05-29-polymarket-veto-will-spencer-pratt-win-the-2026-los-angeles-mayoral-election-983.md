@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Spencer Pratt win the 2026 Los Angeles mayoral election?' (rule V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días que pueda cambiar drásticamente la probabilidad.): V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 día..."
+decision: "Veto de tesis 'Will Spencer Pratt win the 2026 Los Angeles mayoral election?' (rule Pregunta ambigua o sin evento verificable en el plazo definido (V3).): Pregunta ambigua o sin evento verificable en el plazo definido (V3).: V3 Trig..."
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, v6 sin catalyst: no hay evento discreto identificable en los próximos 7 días que pueda cambiar drásticamente la probabilidad.]
+tags: [decision, polymarket, bot, veto, pregunta ambigua o sin evento verificable en el plazo definido (v3).]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983`
 - **Categoría**: elections
-- **Precio YES**: 0.2000
-- **Volumen 24h**: 232181.87 USD
+- **Precio YES**: 0.2100
+- **Volumen 24h**: 251503.60 USD
 - **End date**: 2026-06-02T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días que pueda cambiar drásticamente la probabilidad.`
+**Regla aplicada**: `Pregunta ambigua o sin evento verificable en el plazo definido (V3).`
 
-V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días que pueda cambiar drásticamente la probabilidad.: No hay evidencia suficiente de que Spencer Pratt, conocido principalmente como celebridad de reality TV, sea un candidato real o viable para la alcaldía de Los Ángeles en 2026. El evento carece de fuentes concretas que lo vinculen a una campaña formal, registro de candidatura, o intención verificada. El volumen alto y precio bajo sugieren especulación sin base informacional.
+Pregunta ambigua o sin evento verificable en el plazo definido (V3).: V3 Trigger vago: Spencer Pratt es una figura mediática (actor de reality shows) sin historial político, y la pregunta carece de una fecha concreta de evento verificable. No hay indicios de que haya declarado oficialmente su candidatura ni de que existan elecciones primarias en 2026 para la alcaldía de Los Ángeles.
 
 ## Human notes
 

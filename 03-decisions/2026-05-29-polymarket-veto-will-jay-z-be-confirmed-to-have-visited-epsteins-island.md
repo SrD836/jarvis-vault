@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-jay-z-be-confirmed-to-have-visited-epsteins-island"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Jay-Z be confirmed to have visited Epstein’s island?' (rule V3 Trigger vago: sin fecha concreta o sin evento verificable.): V3 Trigger vago: sin fecha concreta o sin evento verificable.: V3 Trigger vag..."
+decision: "Veto de tesis 'Will Jay-Z be confirmed to have visited Epstein’s island?' (rule V3 y V6): V3 y V6: V3 Trigger vago: la pregunta depende de una 'confirmación' no espec..."
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, v3 trigger vago: sin fecha concreta o sin evento verificable.]
+tags: [decision, polymarket, bot, veto, v3 y v6]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -27,9 +27,9 @@ related:
 
 ## Razón del veto
 
-**Regla aplicada**: `V3 Trigger vago: sin fecha concreta o sin evento verificable.`
+**Regla aplicada**: `V3 y V6`
 
-V3 Trigger vago: sin fecha concreta o sin evento verificable.: V3 Trigger vago: The question 'Will Jay-Z be confirmed to have visited Epstein’s island?' lacks a concrete, verifiable trigger event. 'Confirmed' is undefined—no specific report, document release, or authoritative source (e.g., court filing, government investigation, named journalist) is tied to a date or actionable source. Without a discrete, verifiable catalyst, the outcome is speculative.
+V3 y V6: V3 Trigger vago: la pregunta depende de una 'confirmación' no especificada sin fecha concreta ni evento verificable. No hay un criterio claro sobre qué constituye confirmación (documento judicial, declaración de testigo, informe oficial, foto, video, etc.), lo que hace imposible determinar un resultado objetivo. Además, V6 Sin catalyst: no hay un evento discreto identificable en los próximos 7 días que pueda resolver el mercado.
 
 ## Human notes
 

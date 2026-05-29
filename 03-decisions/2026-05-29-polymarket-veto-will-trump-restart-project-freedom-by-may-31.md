@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-trump-restart-project-freedom-by-may-31"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Trump restart Project Freedom by May 31?' (rule E2): edge 0.003 < mín 0.030 (p̂=0.050, implied=0.047)"
+decision: "Veto de tesis 'Will Trump restart Project Freedom by May 31?' (rule E2): edge 0.025 < mín 0.030 (p̂=0.020, implied=0.045)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-trump-restart-project-freedom-by-may-31`
 - **Categoría**: other
-- **Precio YES**: 0.0470
-- **Volumen 24h**: 55489.15 USD
+- **Precio YES**: 0.0450
+- **Volumen 24h**: 51760.68 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `E2`
 
-edge 0.003 < mín 0.030 (p̂=0.050, implied=0.047)
+edge 0.025 < mín 0.030 (p̂=0.020, implied=0.045)
 
 ## Human notes
 

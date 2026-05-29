@@ -22,7 +22,7 @@ related:
 - **Slug**: `iran-leadership-change-by-may-31-593-194-829`
 - **Categoría**: geopolitics
 - **Precio YES**: 0.0200
-- **Volumen 24h**: 50182.07 USD
+- **Volumen 24h**: 50450.39 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto

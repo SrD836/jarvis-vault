@@ -2,13 +2,13 @@
 title: "Polymarket veto — iran-closes-its-airspace-by-june-30-432-786-462-866"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Iran closes its airspace by June 30?' (rule E2): edge 0.023 < mín 0.030 (p̂=0.190, implied=0.213)"
+decision: "Veto de tesis 'Iran closes its airspace by June 30?' (rule E1): edge no declarado por LLM (edge_type=none)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, e2]
+tags: [decision, polymarket, bot, veto, e1]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `iran-closes-its-airspace-by-june-30-432-786-462-866`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.2130
-- **Volumen 24h**: 140611.42 USD
+- **Precio YES**: 0.2260
+- **Volumen 24h**: 137559.57 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `E2`
+**Regla aplicada**: `E1`
 
-edge 0.023 < mín 0.030 (p̂=0.190, implied=0.213)
+edge no declarado por LLM (edge_type=none)
 
 ## Human notes
 

@@ -2,7 +2,7 @@
 title: "Polymarket veto — us-iran-nuclear-deal-by-may-31-974"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'US-Iran nuclear deal by May 31?' (rule P9): P9: geopolitics pump cluster (price 0.09, 1d)"
+decision: "Veto de tesis 'US-Iran nuclear deal by May 31?' (rule P9): P9: geopolitics pump cluster (price 0.08, 1d)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `us-iran-nuclear-deal-by-may-31-974`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.0860
-- **Volumen 24h**: 901336.65 USD
+- **Precio YES**: 0.0760
+- **Volumen 24h**: 872850.90 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `P9`
 
-P9: geopolitics pump cluster (price 0.09, 1d)
+P9: geopolitics pump cluster (price 0.08, 1d)
 
 ## Human notes
 

@@ -10,13 +10,17 @@ size_usd: 0.00
 horizon: long
 days_to_resolution: 41
 sources_used: []
-outcome: pending
+outcome: loss
 outcome_observed_after_days: 41
 tags: [decision, polymarket, bot, trade, approved]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
   - "[[projects/polymarket-veto-loop-bot]]"
+pnl_usd: -21.36
+closed_at: 2026-05-29T20:35:41Z
+exit_reason: horizon-shortonly-2026-05-29
+days_open: 0.23
 ---
 
 # Trade aprobado: Strait of Hormuz traffic returns to normal by end of June?

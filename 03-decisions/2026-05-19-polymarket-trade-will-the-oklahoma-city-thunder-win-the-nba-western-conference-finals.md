@@ -10,13 +10,17 @@ size_usd: 0.00
 horizon: medium
 days_to_resolution: 27
 sources_used: []
-outcome: pending
+outcome: loss
 outcome_observed_after_days: 27
 tags: [decision, polymarket, bot, trade, approved]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
   - "[[projects/polymarket-veto-loop-bot]]"
+pnl_usd: -2.62
+closed_at: 2026-05-29T20:35:41Z
+exit_reason: horizon-shortonly-2026-05-29
+days_open: 0.23
 ---
 
 # Trade aprobado: Will the Oklahoma City Thunder win the NBA Western Conference Finals?

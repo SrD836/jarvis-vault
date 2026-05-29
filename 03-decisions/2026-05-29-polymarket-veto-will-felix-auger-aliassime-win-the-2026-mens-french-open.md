@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-felix-auger-aliassime-win-the-2026-mens-french-open`
 - **Categoría**: other
-- **Precio YES**: 0.0440
-- **Volumen 24h**: 110287.97 USD
+- **Precio YES**: 0.0500
+- **Volumen 24h**: 117881.69 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `V6 Sin catalyst`
 
-V6 Sin catalyst: V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días que pueda cambiar significativamente la probabilidad de que Felix Auger Aliassime gane Roland Garros 2026, un evento que ocurre en más de 9 meses. No hay partidos cruciales cercanos ni anuncios relevantes.
+V6 Sin catalyst: V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días que pueda afectar significativamente el resultado de un torneo que termina en junio de 2026.
 
 ## Human notes
 
