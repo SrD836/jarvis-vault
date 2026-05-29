@@ -13,7 +13,31 @@ import (
 )
 
 const dashboardURL = "http://localhost:3000/api/llm/call"
-const defaultModel = "claude-sonnet-4-6"
+
+// v8 BOT-CAL: route the decision LLM to DeepSeek (never Claude in the automated
+// calibration loop — Claude at calibration volume risks Max suspension) AND fix
+// the request/response shape. The previous code sent {message} (singular) and
+// read .content, but the dashboard route requires messages[] and returns .text,
+// so the LLM stage had literally never run (0 [LLM] lines ever).
+const defaultModel = "deepseek/deepseek-chat"
+
+// Request/response shape for the dashboard /api/llm/call route (Express).
+type llmCallMessage struct {
+	Role    string `json:"role"`
+	Content string `json:"content"`
+}
+
+type llmCallRequest struct {
+	Model     string           `json:"model"`
+	System    string           `json:"system"`
+	Messages  []llmCallMessage `json:"messages"`
+	MaxTokens int              `json:"max_tokens"`
+}
+
+type llmCallResponse struct {
+	Text  string `json:"text"`
+	Error string `json:"error"`
+}
 
 // SystemPromptEdgeGate is the v7 prompt. The LLM still vetoes V3/V5/V6 but is
 // also forced to emit an explicit probability estimate, edge type, edge
@@ -70,11 +94,13 @@ const SystemPromptV3V5V6 = SystemPromptEdgeGate
 // Returns the LLM result. If the dashboard is unreachable, returns a pass
 // (conservative: don't block on infra failure).
 func EvaluateV3V5V6(c *types.Candidate) *types.LLMBlockResult {
-	payload := types.LLMRequest{
-		Model:  defaultModel,
-		System: SystemPromptEdgeGate,
-		Message: fmt.Sprintf("Market: %s\nCategory: %s\nQuestion: %s\nEnd date: %s\nVolume: %.0f\nImplied price (YES): %.4f\n\nDevuelve el JSON con tu estimated_prob, edge_type, edge_description y thesis_invalidation.",
-			c.Slug, c.Category, c.Question, c.EndDate, c.Volume24h, c.CurrentPriceYes),
+	userMsg := fmt.Sprintf("Market: %s\nCategory: %s\nQuestion: %s\nEnd date: %s\nVolume: %.0f\nImplied price (YES): %.4f\n\nDevuelve el JSON con tu estimated_prob, edge_type, edge_description y thesis_invalidation.",
+		c.Slug, c.Category, c.Question, c.EndDate, c.Volume24h, c.CurrentPriceYes)
+	payload := llmCallRequest{
+		Model:     defaultModel,
+		System:    SystemPromptEdgeGate,
+		Messages:  []llmCallMessage{{Role: "user", Content: userMsg}},
+		MaxTokens: 700,
 	}
 
 	body, err := json.Marshal(payload)
@@ -82,7 +108,7 @@ func EvaluateV3V5V6(c *types.Candidate) *types.LLMBlockResult {
 		return &types.LLMBlockResult{Block: false, Reason: fmt.Sprintf("LLM marshal error: %v", err), Rule: ""}
 	}
 
-	client := &http.Client{Timeout: 30 * time.Second}
+	client := &http.Client{Timeout: 45 * time.Second}
 	resp, err := client.Post(dashboardURL, "application/json", bytes.NewReader(body))
 	if err != nil {
 		return &types.LLMBlockResult{Block: false, Reason: fmt.Sprintf("LLM unreachable: %v", err), Rule: ""}
@@ -93,15 +119,17 @@ func EvaluateV3V5V6(c *types.Candidate) *types.LLMBlockResult {
 		return &types.LLMBlockResult{Block: false, Reason: fmt.Sprintf("LLM status %d", resp.StatusCode), Rule: ""}
 	}
 
-	var llmResp types.LLMResponse
+	var llmResp llmCallResponse
 	if err := json.NewDecoder(resp.Body).Decode(&llmResp); err != nil {
 		return &types.LLMBlockResult{Block: false, Reason: fmt.Sprintf("LLM decode error: %v", err), Rule: "PARSE"}
 	}
+	if llmResp.Error != "" {
+		return &types.LLMBlockResult{Block: false, Reason: fmt.Sprintf("LLM router error: %s", llmResp.Error), Rule: ""}
+	}
 
-	// v7 P3: tolerate stray prose around the JSON object by slicing on first
-	// '{' and last '}'. Some Claude responses wrap the JSON in a fenced block
-	// or add a one-liner before it.
-	raw := llmResp.Content
+	// Dashboard /api/llm/call returns the completion in `text`. Tolerate stray
+	// prose around the JSON object by slicing on first '{' and last '}'.
+	raw := llmResp.Text
 	jstart := strings.Index(raw, "{")
 	jend := strings.LastIndex(raw, "}")
 	if jstart < 0 || jend <= jstart {

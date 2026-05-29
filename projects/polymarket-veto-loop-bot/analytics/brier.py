@@ -33,6 +33,13 @@ MIN_RESOLVED_FOR_RELEASE = 20
 SUSPEND_BRIER = 0.25
 SUSPEND_CONSECUTIVE = 3
 RELEASE_BRIER = 0.20
+# v8 BOT-CAL: count-based FAST auto-suspend. A category with >= SUSPEND_MIN_N
+# resolved predictions AND Brier > SUSPEND_BRIER_FAST in the current window is
+# suspended immediately, without waiting the 3 consecutive weekly windows. This
+# is the "suspende categorias con Brier sistematicamente malo (>0.30 sobre N>=20)"
+# rule — it fires as soon as enough data exists, complementing the slower 3w rule.
+SUSPEND_BRIER_FAST = 0.30
+SUSPEND_MIN_N = 20
 
 DEFAULT_PREDICTIONS = "vault/inbox/trading/predictions.jsonl"
 DEFAULT_MEMORY = "vault/agents/polymarket-bot/memory.md"
@@ -253,10 +260,18 @@ def main() -> int:
 
     week = now.strftime("%G-W%V")
     hist = update_history(pathlib.Path(args.history), week, by_cat)
-    suspended = compute_suspended(hist)
+    suspended_3w = compute_suspended(hist)
+    # v8 BOT-CAL: count-based fast suspend on the current window.
+    suspended_count = sorted({
+        cat for cat, n, b in by_cat
+        if n >= SUSPEND_MIN_N and b > SUSPEND_BRIER_FAST
+    })
+    suspended = sorted(set(suspended_3w) | set(suspended_count))
     write_suspended(pathlib.Path(args.suspended_out), suspended, now.isoformat())
-    if suspended:
-        print(f"S1: suspended categories (Brier > {SUSPEND_BRIER} × {SUSPEND_CONSECUTIVE}w): {suspended}", file=sys.stderr)
+    if suspended_count:
+        print(f"S1 (count-based, Brier>{SUSPEND_BRIER_FAST} N>={SUSPEND_MIN_N}): {suspended_count}", file=sys.stderr)
+    if suspended_3w:
+        print(f"S1 (3-week, Brier>{SUSPEND_BRIER} x{SUSPEND_CONSECUTIVE}w): {suspended_3w}", file=sys.stderr)
 
     qualifying = [
         (name, n, b) for name, n, b in by_cat

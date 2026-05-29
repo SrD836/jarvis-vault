@@ -60,6 +60,10 @@ const (
 	// inside the 30-min cron window. Cache TTL is 6h so cumulative coverage
 	// across cycles still reaches most candidates.
 	maxResearchPerCycle = 30
+	// v8 BOT-CAL: cap LLM (DeepSeek) evals per cycle. Mirrors maxResearchPerCycle.
+	// Bounds DeepSeek cost/latency; candidates beyond the cap are deferred to the
+	// next cycle (NOT blocked) so calibration data accrues steadily, not in a burst.
+	maxLLMPerCycle = 80
 )
 
 func Run() error {
@@ -143,6 +147,7 @@ func Run() error {
 
 	researchCalls := 0
 	_ = researchCalls // referenced in loop below
+	llmCalls := 0
 
 	// M2 prep: load soft-learned veto rules from memory.md. These are the
 	// auto-generated cluster rules (category·horizon·priceBand → win rate < 30%).
@@ -265,7 +270,15 @@ func Run() error {
 				CurrentPriceYes: c.CurrentPriceYes,
 				Question:        c.Question,
 			}
-			hits := mem.Match(cl)
+			// v8 BOT-CAL: in simulation/calibration mode, consult ONLY real loss
+			// outcomes (MatchLosses) — matching the circular veto history starves
+			// the pipeline. Other modes keep full veto+loss matching.
+			var hits []memory.Match
+			if cfg.Mode == "simulation" {
+				hits = mem.MatchLosses(cl)
+			} else {
+				hits = mem.Match(cl)
+			}
 			if len(hits) > 0 && hits[0].Score >= memoryHitThreshold {
 				vr := types.VetoResult{
 					CandidateID: c.ID,
@@ -391,6 +404,14 @@ func Run() error {
 				continue
 			}
 		}
+
+		// v8 BOT-CAL: cap LLM (DeepSeek) evals/cycle. Candidates beyond the cap are
+		// deferred to the next cycle (left as candidates, NOT blocked) so DeepSeek
+		// cost/latency stay bounded while calibration data accrues steadily.
+		if llmCalls >= maxLLMPerCycle {
+			continue
+		}
+		llmCalls++
 
 		// LLM: semantic V3/V5/V6 + v7 edge declaration.
 		llmResult := llmclient.EvaluateV3V5V6(&c)

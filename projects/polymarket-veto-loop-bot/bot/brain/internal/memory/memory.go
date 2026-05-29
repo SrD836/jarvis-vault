@@ -194,6 +194,38 @@ func (m *Memory) Match(c CandidateLike) []Match {
 	return hits
 }
 
+// MatchLosses is like Match but scores ONLY against real loss outcomes
+// (m.Losses), ignoring the veto history. v8 BOT-CAL: in simulation/calibration
+// mode the veto history is circular (most past vetos are P0/M1 themselves), so
+// matching against it vetoes longshots merely for resembling other vetoed
+// longshots and starves the calibration pipeline. Losses are real evidence the
+// bot must still respect ("consult previous decisions before operating").
+func (m *Memory) MatchLosses(c CandidateLike) []Match {
+	if m == nil {
+		return nil
+	}
+	var hits []Match
+	for _, p := range m.Losses {
+		score, why := patternScore(p, c)
+		if score >= 0.4 {
+			hits = append(hits, Match{Pattern: p, Score: score, Why: why})
+		}
+	}
+	for i := 0; i < len(hits); i++ {
+		max := i
+		for j := i + 1; j < len(hits); j++ {
+			if hits[j].Score > hits[max].Score {
+				max = j
+			}
+		}
+		hits[i], hits[max] = hits[max], hits[i]
+	}
+	if len(hits) > 5 {
+		hits = hits[:5]
+	}
+	return hits
+}
+
 // patternScore returns similarity in [0,1] between a past pattern and a candidate.
 func patternScore(p Pattern, c CandidateLike) (float64, string) {
 	score := 0.0
