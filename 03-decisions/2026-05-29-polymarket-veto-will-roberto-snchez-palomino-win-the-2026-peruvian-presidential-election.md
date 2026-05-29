@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-roberto-snchez-palomino-win-the-2026-peruvian-presidential-election`
 - **Categoría**: elections
-- **Precio YES**: 0.2230
-- **Volumen 24h**: 81049.40 USD
+- **Precio YES**: 0.1790
+- **Volumen 24h**: 133224.50 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto
@@ -34,10 +34,9 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-roberto-snchez-palomino-win-the-2026-peruvian-presidential-election` score=1.00 (exact slug match)
-- veto `will-nithya-raman-win-the-2026-los-angeles-mayoral-election-876` score=0.40 (same category; same price bucket mid)
-- veto `will-chong-won-oh-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
-- veto `will-oh-se-hoon-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
-- veto `will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983` score=0.40 (same category; same price bucket mid)
+- veto `will-renan-santos-win-the-2026-brazilian-presidential-election` score=0.40 (same category; same price bucket low)
+- veto `will-the-republican-party-hold-exactly-51-senate-seats-after-the-2026-midterm-elections-753` score=0.40 (same category; same price bucket low)
+- veto `will-the-republican-party-hold-exactly-52-senate-seats-after-the-2026-midterm-elections-829` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

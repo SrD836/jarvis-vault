@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-the-new-york-knicks-win-the-2026-nba-finals`
 - **Categoría**: sports-season
-- **Precio YES**: 0.3110
-- **Volumen 24h**: 400497.67 USD
+- **Precio YES**: 0.3150
+- **Volumen 24h**: 400441.80 USD
 - **End date**: 2026-07-01T00:00:00Z
 
 ## Razón del veto

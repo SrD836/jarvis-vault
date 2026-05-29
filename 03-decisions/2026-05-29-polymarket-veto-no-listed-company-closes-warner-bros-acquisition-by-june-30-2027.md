@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — 2k-container-ship-transits-of-suez-canal-in-h1-2026"
+title: "Polymarket veto — no-listed-company-closes-warner-bros-acquisition-by-june-30-2027"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis '2k+ container ship transits of Suez Canal in H1 2026?' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
+decision: "Veto de tesis 'No listed company closes Warner Bros acquisition by June 30, 2027' (rule M2): M2 soft-learned: uncategorized·?·0.10-0.30 = 7L/0W (wr 0%)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: 2k+ container ship transits of Suez Canal in H1 2026?
+# Veto: No listed company closes Warner Bros acquisition by June 30, 2027
 
 ## Mercado
 
-- **Slug**: `2k-container-ship-transits-of-suez-canal-in-h1-2026`
+- **Slug**: `no-listed-company-closes-warner-bros-acquisition-by-june-30-2027`
 - **Categoría**: other
-- **Precio YES**: 0.1090
-- **Volumen 24h**: 139224.30 USD
-- **End date**: 2026-06-30T00:00:00Z
+- **Precio YES**: 0.1300
+- **Volumen 24h**: 177058.13 USD
+- **End date**: 
 
 ## Razón del veto
 

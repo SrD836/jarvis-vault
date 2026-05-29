@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-novak-djokovic-win-the-2026-mens-french-open`
 - **Categoría**: other
 - **Precio YES**: 0.1690
-- **Volumen 24h**: 248847.09 USD
+- **Volumen 24h**: 271012.64 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto
@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-novak-djokovic-win-the-2026-mens-french-open` score=1.00 (exact slug match)
-- veto `will-us-unemployment-reach-at-least-5pt5-in-2026` score=0.40 (same category; same price bucket low)
-- veto `nicols-maduro-released-from-custody-by-december-31-2026` score=0.40 (same category; same price bucket low)
 - veto `another-us-strike-on-venezuela-by-december-31` score=0.40 (same category; same price bucket low)
+- veto `nicols-maduro-released-from-custody-by-december-31-2026` score=0.40 (same category; same price bucket low)
 - veto `will-trump-restart-project-freedom-by-may-31` score=0.40 (same category; same price bucket low)
+- veto `will-trump-agree-to-unfreeze-iranian-assets-by-may-31` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 
