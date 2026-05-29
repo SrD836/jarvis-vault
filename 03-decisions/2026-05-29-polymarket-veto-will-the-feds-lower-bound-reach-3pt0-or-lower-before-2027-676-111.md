@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-the-feds-lower-bound-reach-3pt0-or-lower-before-2027-676-111` score=1.00 (exact slug match)
-- veto `another-us-strike-on-venezuela-by-december-31` score=0.40 (same category; same price bucket low)
-- veto `nicols-maduro-released-from-custody-by-december-31-2026` score=0.40 (same category; same price bucket low)
 - veto `will-trump-restart-project-freedom-by-may-31` score=0.40 (same category; same price bucket low)
 - veto `will-trump-agree-to-unfreeze-iranian-assets-by-may-31` score=0.40 (same category; same price bucket low)
+- veto `will-rafael-jodar-win-the-2026-mens-french-open` score=0.40 (same category; same price bucket low)
+- veto `will-novak-djokovic-win-the-2026-mens-french-open` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

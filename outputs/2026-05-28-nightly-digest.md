@@ -4,8 +4,16 @@ type: nightly-digest
 date: 2026-05-28
 generated_at: 2026-05-29T09:16:09Z
 model: deepseek-chat
+related:
+  - "[[03-decisions/2026-05-29-polymarket-veto-bitcoin-above-74k-on-may-29-2026]]"
+  - "[[agents/index]]"
+  - "[[agents/runs-today]]"
+  - "[[outputs/2026-05-29-nightly-digest]]"
+  - "[[outputs/memory/cron_nightly_digest]]"
 tags: [nightly-digest, jarvis, autonomous]
+# auto-linked 2026-05-29
 ---
+
 
 # Digest nocturno — 2026-05-28
 

@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-bernadette-wilson-win-the-2026-alaska-governor-election"
+title: "Polymarket veto — will-abelardo-de-la-espriella-win-the-1st-round-of-the-2026-colombian-presidential-election"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Bernadette Wilson win the 2026 Alaska governor election?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Will Abelardo de la Espriella win the 1st round of the 2026 Colombian preside...' (rule M1): memoria: exact slug match (score 1.00)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will Bernadette Wilson win the 2026 Alaska governor election?
+# Veto: Will Abelardo de la Espriella win the 1st round of the 2026 Colombian presidential election?
 
 ## Mercado
 
-- **Slug**: `will-bernadette-wilson-win-the-2026-alaska-governor-election`
+- **Slug**: `will-abelardo-de-la-espriella-win-the-1st-round-of-the-2026-colombian-presidential-election`
 - **Categoría**: elections
-- **Precio YES**: 0.2100
-- **Volumen 24h**: 152456.04 USD
-- **End date**: 2026-11-03T00:00:00Z
+- **Precio YES**: 0.2470
+- **Volumen 24h**: 53937.35 USD
+- **End date**: 2026-05-31T16:00:00Z
 
 ## Razón del veto
 
@@ -33,8 +33,8 @@ memoria: exact slug match (score 1.00)
 
 ## Patterns en memoria que contribuyeron
 
-- veto `will-bernadette-wilson-win-the-2026-alaska-governor-election` score=1.00 (exact slug match)
-- veto `will-abelardo-de-la-espriella-win-the-1st-round-of-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket mid)
+- veto `will-abelardo-de-la-espriella-win-the-1st-round-of-the-2026-colombian-presidential-election` score=1.00 (exact slug match)
+- veto `will-abelardo-de-la-espriella-win-the-2026-colombian-presidential-election` score=0.90 (slug prefix match; same category; same price bucket mid)
 - veto `will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983` score=0.40 (same category; same price bucket mid)
 - veto `will-nithya-raman-win-the-2026-los-angeles-mayoral-election-876` score=0.40 (same category; same price bucket mid)
 - veto `will-chong-won-oh-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)

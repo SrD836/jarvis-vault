@@ -4,8 +4,16 @@ type: nightly-digest
 date: 2026-05-29
 generated_at: 2026-05-29T09:16:18Z
 model: deepseek-chat
+related:
+  - "[[01-briefs/2026-05-29]]"
+  - "[[agents/index]]"
+  - "[[agents/runs-today]]"
+  - "[[outputs/2026-05-28-nightly-digest]]"
+  - "[[outputs/memory/cron_nightly_digest]]"
 tags: [nightly-digest, jarvis, autonomous]
+# auto-linked 2026-05-29
 ---
+
 
 # Digest nocturno — 2026-05-29
 

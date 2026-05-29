@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `us-strike-on-cuba-by-december-31`
 - **Categoría**: other
-- **Precio YES**: 0.5500
-- **Volumen 24h**: 89213.65 USD
+- **Precio YES**: 0.5400
+- **Volumen 24h**: 89954.68 USD
 - **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto
@@ -37,7 +37,7 @@ memoria: exact slug match (score 1.00)
 - veto `elon-musk-of-tweets-may-22-may-29-160-179` score=0.40 (same category; same price bucket mid)
 - veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.40 (same category; same price bucket mid)
 - veto `nor-rbk-bog-2026-05-29-bog` score=0.40 (same category; same price bucket mid)
-- veto `ucl-psg-ars-2026-05-30-ars` score=0.40 (same category; same price bucket mid)
+- veto `ucl-psg-ars-2026-05-30-psg` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 
