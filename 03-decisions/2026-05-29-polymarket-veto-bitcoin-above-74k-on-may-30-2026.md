@@ -2,13 +2,13 @@
 title: "Polymarket veto — bitcoin-above-74k-on-may-30-2026"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will the price of Bitcoin be above $74,000 on May 30?' (rule E2): edge 0.010 < mín 0.030 (p̂=0.330, implied=0.320)"
+decision: "Veto de tesis 'Will the price of Bitcoin be above $74,000 on May 30?' (rule P11): tradingview BTCUSDT sentiment=bearish (conf 0.65) contradicts bull thesis (pr..."
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, e2]
+tags: [decision, polymarket, bot, veto, p11]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `bitcoin-above-74k-on-may-30-2026`
 - **Categoría**: market
-- **Precio YES**: 0.3200
-- **Volumen 24h**: 111743.43 USD
+- **Precio YES**: 0.2200
+- **Volumen 24h**: 115484.05 USD
 - **End date**: 2026-05-30T16:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `E2`
+**Regla aplicada**: `P11`
 
-edge 0.010 < mín 0.030 (p̂=0.330, implied=0.320)
+tradingview BTCUSDT sentiment=bearish (conf 0.65) contradicts bull thesis (price_yes=0.97)
 
 ## Human notes
 

@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `microstrategy-sells-any-bitcoin-by-june-30-2026`
 - **Categoría**: market
-- **Precio YES**: 0.7000
-- **Volumen 24h**: 382206.06 USD
+- **Precio YES**: 0.7430
+- **Volumen 24h**: 386265.55 USD
 - **End date**: 2026-07-01T04:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.`
 
-V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.: V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días que pueda desencadenar la venta de Bitcoin por parte de MicroStrategy.
+V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.: No hay un evento discreto verificable en los próximos 7 días para el cual tenga información asimétrica o un edge concreto. La fecha de resolución es lejana (junio 2026) y la probabilidad implícita del 74.3% sugiere que el mercado ya descuenta información general sobre la posibilidad de venta, sin un catalyst inmediato.
 
 ## Human notes
 

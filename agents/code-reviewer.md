@@ -4,11 +4,11 @@ type: agent
 role: worker
 agent_id: code-reviewer
 workspace: /home/node/.openclaw/workspace/agents/code-reviewer
-model_primary: anthropic/claude-sonnet-4-6
+model_primary: anthropic/claude-opus-4-8
 delegation_mode: suggest
 allow_agents: []
 runtime_children: []
-updated: 2026-05-29T21:30:01
+updated: 2026-05-29T22:30:01
 tags: [agent, jarvis, worker]
 related:
   - "[[../00-MOC]]"
@@ -18,7 +18,7 @@ related:
 # 🤖 code-reviewer
 
 **Rol:** worker
-**Modelo:** `anthropic/claude-sonnet-4-6`
+**Modelo:** `anthropic/claude-opus-4-8`
 **Workspace:** `/home/node/.openclaw/workspace/agents/code-reviewer`
 
 ## Política de delegación
@@ -56,6 +56,8 @@ Al cerrar cada turn, escribir run file a:
 con el mismo frontmatter+secciones que planner (ver [[agents/planner/runs/2026-05-16/225903-from-main]] como referencia). Incluir: task recibida íntegra, output enviado, tool_calls, spawned_children, duration_ms, tokens, aborted.
 
 **Directiva de revisión:** Prioriza siempre la seguridad, el rendimiento y la estricta adherencia a las reglas del repositorio (`AGENT_RULES.md`). No apruebes ni generes código destructivo.
+
+
 
 
 

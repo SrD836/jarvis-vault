@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-steve-hershey-win-the-2026-maryland-governor-republican-primary-election"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Steve Hershey win the 2026 Maryland Governor Republican primary election?' (rule E2): edge 0.010 < mín 0.030 (p̂=0.030, implied=0.020)"
+decision: "Veto de tesis 'Will Steve Hershey win the 2026 Maryland Governor Republican primary election?' (rule E2): edge 0.005 < mín 0.030 (p̂=0.015, implied=0.020)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -29,7 +29,7 @@ related:
 
 **Regla aplicada**: `E2`
 
-edge 0.010 < mín 0.030 (p̂=0.030, implied=0.020)
+edge 0.005 < mín 0.030 (p̂=0.015, implied=0.020)
 
 ## Human notes
 

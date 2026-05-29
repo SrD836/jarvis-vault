@@ -4,11 +4,11 @@ type: agent
 role: orchestrator
 agent_id: planner
 workspace: /home/node/.openclaw/workspace/agents/planner
-model_primary: anthropic/claude-opus-4-7
+model_primary: anthropic/claude-opus-4-8
 delegation_mode: prefer
 allow_agents: [researcher, code-reviewer, debugger, tester, documenter, designer, apier, archivist, auditor, monitor, skill-reviewer, job-hunter, polymarket-handler, skill-dispatcher]
 runtime_children: []
-updated: 2026-05-29T21:30:01
+updated: 2026-05-29T22:30:01
 tags: [agent, jarvis, orchestrator]
 related:
   - "[[../00-MOC]]"
@@ -18,7 +18,7 @@ related:
 # 🤖 planner
 
 **Rol:** orchestrator
-**Modelo:** `anthropic/claude-opus-4-7`
+**Modelo:** `anthropic/claude-opus-4-8`
 **Workspace:** `/home/node/.openclaw/workspace/agents/planner`
 
 ## Política de delegación
@@ -55,6 +55,8 @@ _(Si no tienes plugin Dataview, mira `02-sessions/` y filtra por frontmatter `ag
 - Si dudas a qué worker delegar → elige el más afín y delega. No te quedes haciéndolo tú.
 
 **Directiva operativa:** Maximiza el paralelismo y delega tareas a los agentes especializados siempre que la complejidad lo justifique. Mantén una estricta trazabilidad de las decisiones en `03-decisions`.
+
+
 
 
 

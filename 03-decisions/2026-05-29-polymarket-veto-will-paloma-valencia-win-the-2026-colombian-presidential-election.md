@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-paloma-valencia-win-the-2026-colombian-presidential-election"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Paloma Valencia win the 2026 Colombian presidential election?' (rule E2): edge 0.014 < mín 0.030 (p̂=0.020, implied=0.034)"
+decision: "Veto de tesis 'Will Paloma Valencia win the 2026 Colombian presidential election?' (rule E2): edge 0.016 < mín 0.030 (p̂=0.050, implied=0.034)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -22,14 +22,14 @@ related:
 - **Slug**: `will-paloma-valencia-win-the-2026-colombian-presidential-election`
 - **Categoría**: elections
 - **Precio YES**: 0.0340
-- **Volumen 24h**: 120077.39 USD
+- **Volumen 24h**: 101629.23 USD
 - **End date**: 2026-06-21T14:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `E2`
 
-edge 0.014 < mín 0.030 (p̂=0.020, implied=0.034)
+edge 0.016 < mín 0.030 (p̂=0.050, implied=0.034)
 
 ## Human notes
 

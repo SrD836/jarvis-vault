@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `openai-ipo-closing-market-cap-above-1t`
 - **Categoría**: crypto-launch
-- **Precio YES**: 0.8200
+- **Precio YES**: 0.8400
 - **Volumen 24h**: 1044237.65 USD
 - **End date**: 2027-12-31T00:00:00Z
 

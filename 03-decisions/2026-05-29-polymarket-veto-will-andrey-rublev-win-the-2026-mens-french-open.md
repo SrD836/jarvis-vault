@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-andrey-rublev-win-the-2026-mens-french-open"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Andrey Rublev win the 2026 Men's French Open?' (rule E2): edge 0.027 < mín 0.030 (p̂=0.010, implied=0.037)"
+decision: "Veto de tesis 'Will Andrey Rublev win the 2026 Men's French Open?' (rule V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.): V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 día..."
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, e2]
+tags: [decision, polymarket, bot, veto, v6 sin catalyst: no hay evento discreto identificable en los próximos 7 días.]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-andrey-rublev-win-the-2026-mens-french-open`
 - **Categoría**: other
-- **Precio YES**: 0.0370
-- **Volumen 24h**: 87898.31 USD
+- **Precio YES**: 0.0350
+- **Volumen 24h**: 85374.27 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `E2`
+**Regla aplicada**: `V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.`
 
-edge 0.027 < mín 0.030 (p̂=0.010, implied=0.037)
+V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.: V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días que pueda cambiar significativamente la probabilidad de que Rublev gane Roland Garros 2026. El mercado es a muy largo plazo (más de un año) y se basa en especulación general sobre la forma física, ranking y rendimiento en tierra batida, sin un catalizador concreto verificable.
 
 ## Human notes
 

@@ -38,10 +38,25 @@ type LossDecision struct {
 	ExitReason    string
 }
 
+// nodesEnabled reports whether per-decision Obsidian .md nodes should be written.
+// Default OFF: memory.md and the inbox/trading/*.jsonl logs already capture every
+// decision; the per-event .md nodes were ~50% of the vault's markdown with zero
+// human signal. Set DECISION_NODES=1 (true/on/yes) to re-enable.
+func nodesEnabled() bool {
+	switch strings.ToLower(strings.TrimSpace(os.Getenv("DECISION_NODES"))) {
+	case "1", "true", "on", "yes":
+		return true
+	}
+	return false
+}
+
 // WriteVeto creates 03-decisions/<date>-polymarket-veto-<slug>.md.
 // `baseDir` should point to vault/03-decisions/.
-// Returns the path written.
+// Returns the path written. No-op (returns "", nil) when DECISION_NODES is off.
 func WriteVeto(baseDir string, d VetoDecision) (string, error) {
+	if !nodesEnabled() {
+		return "", nil
+	}
 	if d.Slug == "" {
 		return "", fmt.Errorf("slug required")
 	}
@@ -66,7 +81,11 @@ func WriteVeto(baseDir string, d VetoDecision) (string, error) {
 }
 
 // WriteLoss creates 03-decisions/<date>-polymarket-loss-<slug>.md.
+// No-op (returns "", nil) when DECISION_NODES is off.
 func WriteLoss(baseDir string, d LossDecision) (string, error) {
+	if !nodesEnabled() {
+		return "", nil
+	}
 	if d.Slug == "" {
 		return "", fmt.Errorf("slug required")
 	}
@@ -250,6 +269,9 @@ type TradeSource struct {
 // WriteTrade creates 03-decisions/<date>-polymarket-trade-<slug>.md with outcome: pending.
 // exit_monitor later patches the frontmatter on close.
 func WriteTrade(baseDir string, d TradeDecision) (string, error) {
+	if !nodesEnabled() {
+		return "", nil
+	}
 	if d.Slug == "" {
 		return "", fmt.Errorf("slug required")
 	}

@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-russia-enter-kramatorsk-by-june-30-821-192"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Russia enter Kramatorsk by June 30?' (rule E1): edge no declarado por LLM (edge_type=none)"
+decision: "Veto de tesis 'Will Russia enter Kramatorsk by June 30?' (rule E2): edge 0.012 < mín 0.030 (p̂=0.040, implied=0.028)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, e1]
+tags: [decision, polymarket, bot, veto, e2]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -27,9 +27,9 @@ related:
 
 ## Razón del veto
 
-**Regla aplicada**: `E1`
+**Regla aplicada**: `E2`
 
-edge no declarado por LLM (edge_type=none)
+edge 0.012 < mín 0.030 (p̂=0.040, implied=0.028)
 
 ## Human notes
 

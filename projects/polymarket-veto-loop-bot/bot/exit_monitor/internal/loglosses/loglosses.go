@@ -46,6 +46,19 @@ func LogLoss(
 	LogClose(decisionsDir, memoryPath, ct)
 }
 
+// nodesEnabled reports whether per-decision Obsidian .md nodes should be written.
+// Default OFF (mirrors decisionlog.nodesEnabled): memory.md + the inbox/trading
+// *.jsonl logs already capture every close, and the post-mortem anti-pattern
+// learning lands in memory.md regardless of the node. Set DECISION_NODES=1
+// (true/on/yes) to re-enable nodes.
+func nodesEnabled() bool {
+	switch strings.ToLower(strings.TrimSpace(os.Getenv("DECISION_NODES"))) {
+	case "1", "true", "on", "yes":
+		return true
+	}
+	return false
+}
+
 func writeDecisionLog(decisionsDir string, ct types.ClosedTrade) {
 	date := time.Now().UTC().Format("2006-01-02")
 	slug := ct.Slug
@@ -58,9 +71,16 @@ func writeDecisionLog(decisionsDir string, ct types.ClosedTrade) {
 	}
 	name := fmt.Sprintf("%s-polymarket-loss-%s.md", date, slugSan)
 	path := filepath.Join(decisionsDir, name)
-	if err := os.MkdirAll(decisionsDir, 0755); err != nil {
-		fmt.Fprintf(os.Stderr, "[loglosses] mkdir %s: %v\n", decisionsDir, err)
-		return
+	// Obsidian loss node gated behind DECISION_NODES (default OFF). The claudemax
+	// post-mortem below STILL runs: its anti-pattern learning lands in memory.md
+	// (## Anti-patterns identificados, consumed by the brain via M3), independent
+	// of the .md node — so gating the node does NOT break learning.
+	writeNode := nodesEnabled()
+	if writeNode {
+		if err := os.MkdirAll(decisionsDir, 0755); err != nil {
+			fmt.Fprintf(os.Stderr, "[loglosses] mkdir %s: %v\n", decisionsDir, err)
+			writeNode = false
+		}
 	}
 
 	var b strings.Builder
@@ -113,9 +133,10 @@ func writeDecisionLog(decisionsDir string, ct types.ClosedTrade) {
 	b.WriteString("\n## Análisis\n\n_(autogenerado tras cierre — revisar manualmente para extraer lección)_\n\n")
 	b.WriteString("## Human notes\n\n_(no se toca por automatización)_\n")
 
-	if err := os.WriteFile(path, []byte(b.String()), 0644); err != nil {
-		fmt.Fprintf(os.Stderr, "[loglosses] write %s: %v\n", path, err)
-		return
+	if writeNode {
+		if err := os.WriteFile(path, []byte(b.String()), 0644); err != nil {
+			fmt.Fprintf(os.Stderr, "[loglosses] write %s: %v\n", path, err)
+		}
 	}
 
 	// Synchronous post-mortem via claudemax (~30-60s). exit_monitor runs as a

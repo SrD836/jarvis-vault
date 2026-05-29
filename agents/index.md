@@ -1,7 +1,7 @@
 ---
 title: "🤖 Agentes JARVIS"
 type: moc
-updated: 2026-05-29T21:30:01
+updated: 2026-05-29T22:30:01
 tags: [moc, agent, jarvis]
 related:
   - "[[../00-MOC]]"
@@ -15,21 +15,21 @@ related:
 
 | Agente | Rol | Modelo | allowAgents | Children runtime |
 |---|---|---|---|---|
-| [[main]] | main | `anthropic/claude-opus-4-7` | planner, researcher, archivist, polymarket-handler, skill-dispatcher, job-hunter | — |
-| [[planner]] | orchestrator | `anthropic/claude-opus-4-7` | researcher, code-reviewer, debugger, tester, documenter, designer, apier, archivist, auditor, monitor, skill-reviewer, job-hunter, polymarket-handler, skill-dispatcher | — |
-| [[code-reviewer]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
+| [[main]] | main | `anthropic/claude-opus-4-8` | planner, researcher, archivist, polymarket-handler, skill-dispatcher, job-hunter | — |
+| [[planner]] | orchestrator | `anthropic/claude-opus-4-8` | researcher, code-reviewer, debugger, tester, documenter, designer, apier, archivist, auditor, monitor, skill-reviewer, job-hunter, polymarket-handler, skill-dispatcher | — |
+| [[code-reviewer]] | worker | `anthropic/claude-opus-4-8` | — | — |
 | [[researcher]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
 | [[documenter]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
 | [[apier]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
 | [[skill-reviewer]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
-| [[debugger]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
+| [[debugger]] | worker | `anthropic/claude-opus-4-8` | — | — |
 | [[tester]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
 | [[auditor]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
 | [[archivist]] | worker | `anthropic/claude-haiku-4-5` | — | — |
 | [[monitor]] | worker | `anthropic/claude-haiku-4-5` | — | — |
 | [[designer]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
 | [[job-hunter]] | orchestrator | `anthropic/claude-sonnet-4-6` | researcher, documenter, archivist | — |
-| [[polymarket-handler]] | orchestrator | `anthropic/claude-sonnet-4-6` | researcher | — |
+| [[polymarket-handler]] | orchestrator | `anthropic/claude-opus-4-8` | researcher | — |
 | [[skill-dispatcher]] | worker | `anthropic/claude-sonnet-4-6` | — | — |
 
 ## Org chart (Mermaid)

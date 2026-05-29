@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-the-san-antonio-spurs-win-the-nba-western-conference-finals"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will the San Antonio Spurs win the NBA Western Conference Finals?' (rule V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.): V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 día..."
+decision: "Veto de tesis 'Will the San Antonio Spurs win the NBA Western Conference Finals?' (rule V3: El mercado debe referirse a un evento discreto con fecha concreta o rango verificable. Sin la temporada explícita, la resolución es ambigua.): V3: El mercado debe referirse a un evento discreto con fecha concreta o rango..."
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, v6 sin catalyst: no hay evento discreto identificable en los próximos 7 días.]
+tags: [decision, polymarket, bot, veto, v3: el mercado debe referirse a un evento discreto con fecha concreta o rango verificable. sin la temporada explícita, la resolución es ambigua.]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-the-san-antonio-spurs-win-the-nba-western-conference-finals`
 - **Categoría**: sports-season
-- **Precio YES**: 0.4390
-- **Volumen 24h**: 259873.38 USD
+- **Precio YES**: 0.4260
+- **Volumen 24h**: 261796.30 USD
 - **End date**: 2026-06-16T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.`
+**Regla aplicada**: `V3: El mercado debe referirse a un evento discreto con fecha concreta o rango verificable. Sin la temporada explícita, la resolución es ambigua.`
 
-V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.: Evento deportivo sin catalyst concreto en los próximos 7 días y sin fecha específica de las Finales de la Conferencia Oeste 2026. La pregunta es sobre un evento lejano (junio 2026) y no hay un evento discreto verificable a corto plazo que justifique una ventaja informacional.
+V3: El mercado debe referirse a un evento discreto con fecha concreta o rango verificable. Sin la temporada explícita, la resolución es ambigua.: V3 Trigger vago: la pregunta no especifica una temporada concreta (ej. 2025-26 o 2026-27) y el evento de 'Western Conference Finals' no tiene fecha verificable única; además, el mercado vence en junio 2026, lo que sugiere que se refiere a la temporada 2025-26 que aún no ha comenzado, pero no hay certidumbre sobre la fecha del evento discreto.
 
 ## Human notes
 

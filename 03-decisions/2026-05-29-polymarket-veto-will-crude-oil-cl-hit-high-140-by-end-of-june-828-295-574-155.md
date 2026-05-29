@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-crude-oil-cl-hit-high-140-by-end-of-june-828-295-574-155`
 - **Categoría**: market
-- **Precio YES**: 0.0320
-- **Volumen 24h**: 119723.20 USD
+- **Precio YES**: 0.0340
+- **Volumen 24h**: 114653.81 USD
 - **End date**: 2026-06-30T18:30:00Z
 
 ## Razón del veto

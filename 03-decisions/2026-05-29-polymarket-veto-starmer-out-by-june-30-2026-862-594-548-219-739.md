@@ -2,13 +2,13 @@
 title: "Polymarket veto — starmer-out-by-june-30-2026-862-594-548-219-739"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Starmer out by June 30, 2026?' (rule E1): edge no declarado por LLM (edge_type=none)"
+decision: "Veto de tesis 'Starmer out by June 30, 2026?' (rule E2): edge 0.020 < mín 0.030 (p̂=0.120, implied=0.140)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, e1]
+tags: [decision, polymarket, bot, veto, e2]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -22,14 +22,14 @@ related:
 - **Slug**: `starmer-out-by-june-30-2026-862-594-548-219-739`
 - **Categoría**: executive-action
 - **Precio YES**: 0.1400
-- **Volumen 24h**: 56663.41 USD
+- **Volumen 24h**: 56290.60 USD
 - **End date**: 2026-06-30T12:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `E1`
+**Regla aplicada**: `E2`
 
-edge no declarado por LLM (edge_type=none)
+edge 0.020 < mín 0.030 (p̂=0.120, implied=0.140)
 
 ## Human notes
 

@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-francisco-cerundolo-win-the-2026-mens-french-open"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Francisco Cerundolo win the 2026 Men's French Open?' (rule V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.): V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 día..."
+decision: "Veto de tesis 'Will Francisco Cerundolo win the 2026 Men's French Open?' (rule V6 Sin catalyst): V6 Sin catalyst: V3 Trigger vago: la pregunta carece de un evento concreto y ..."
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, v6 sin catalyst: no hay evento discreto identificable en los próximos 7 días.]
+tags: [decision, polymarket, bot, veto, v6 sin catalyst]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-francisco-cerundolo-win-the-2026-mens-french-open`
 - **Categoría**: other
-- **Precio YES**: 0.0610
-- **Volumen 24h**: 83311.95 USD
+- **Precio YES**: 0.0620
+- **Volumen 24h**: 84059.45 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.`
+**Regla aplicada**: `V6 Sin catalyst`
 
-V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.: V6 Sin catalyst: No hay evento discreto identificable en los próximos 7 días que mueva significativamente la probabilidad de que Cerundolo gane Roland Garros 2026. El mercado depende de resultados de torneos futuros y lesiones, no de un evento verificable a corto plazo.
+V6 Sin catalyst: V3 Trigger vago: la pregunta carece de un evento concreto y verificable en los próximos 7 días. Cerúndolo ganar Roland Garros 2026 es un resultado de largo plazo sin ningún catalizador discreto identificable en el horizonte inmediato.
 
 ## Human notes
 
