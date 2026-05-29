@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `israel-x-hezbollah-permanent-peace-deal-by-may-31-2026`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.0590
-- **Volumen 24h**: 66013.30 USD
+- **Precio YES**: 0.0610
+- **Volumen 24h**: 66051.81 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto

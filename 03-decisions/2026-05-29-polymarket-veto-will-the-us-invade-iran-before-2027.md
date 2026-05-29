@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-the-us-invade-iran-before-2027`
 - **Categoría**: geopolitics
 - **Precio YES**: 0.1800
-- **Volumen 24h**: 209651.76 USD
+- **Volumen 24h**: 208289.59 USD
 - **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto
@@ -36,8 +36,8 @@ memoria: exact slug match (score 1.00)
 - veto `will-the-us-invade-iran-before-2027` score=1.00 (exact slug match)
 - veto `us-announces-new-iran-agreementceasefire-extension-by-may-29` score=0.40 (same category; same price bucket low)
 - veto `us-announces-new-iran-agreementceasefire-extension-by-may-30` score=0.40 (same category; same price bucket low)
-- veto `israel-x-hezbollah-permanent-peace-deal-by-may-31-2026` score=0.40 (same category; same price bucket low)
-- veto `iran-agrees-to-unrestricted-shipping-through-hormuz-by-may-31` score=0.40 (same category; same price bucket low)
+- veto `us-iran-nuclear-deal-by-may-31-974` score=0.40 (same category; same price bucket low)
+- veto `iran-agrees-to-surrender-enriched-uranium-stockpile-by-may-31-2026` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

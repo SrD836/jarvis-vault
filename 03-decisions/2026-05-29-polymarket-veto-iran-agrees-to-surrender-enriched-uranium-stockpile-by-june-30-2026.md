@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `iran-agrees-to-surrender-enriched-uranium-stockpile-by-june-30-2026`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.1900
-- **Volumen 24h**: 132587.86 USD
+- **Precio YES**: 0.2000
+- **Volumen 24h**: 133143.58 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto
@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `iran-agrees-to-surrender-enriched-uranium-stockpile-by-june-30-2026` score=1.00 (exact slug match)
-- veto `iran-agrees-to-surrender-enriched-uranium-stockpile-by-may-31-2026` score=0.90 (slug prefix match; same category; same price bucket low)
-- veto `us-announces-new-iran-agreementceasefire-extension-by-may-30` score=0.40 (same category; same price bucket low)
-- veto `israel-x-hezbollah-permanent-peace-deal-by-may-31-2026` score=0.40 (same category; same price bucket low)
-- veto `iran-agrees-to-unrestricted-shipping-through-hormuz-by-may-31` score=0.40 (same category; same price bucket low)
+- veto `iran-agrees-to-surrender-enriched-uranium-stockpile-by-may-31-2026` score=0.70 (slug prefix match; same category)
+- veto `us-x-iran-permanent-peace-deal-by-june-30-2026-837-641-896-877-363-892-537-597` score=0.40 (same category; same price bucket mid)
+- veto `us-x-iran-diplomatic-meeting-by-june-15-2026-671` score=0.40 (same category; same price bucket mid)
+- veto `us-announces-new-iran-agreementceasefire-extension-by-june-3-569` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

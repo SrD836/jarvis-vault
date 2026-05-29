@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `metamask-fdv-above-700m-one-day-after-launch-696-977-652-246-632`
 - **Categoría**: crypto-launch
-- **Precio YES**: 0.3190
+- **Precio YES**: 0.3170
 - **Volumen 24h**: 1351115.69 USD
 - **End date**: 2027-01-01T05:00:00Z
 

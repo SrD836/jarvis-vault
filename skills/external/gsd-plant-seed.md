@@ -3,27 +3,20 @@ title: "gsd-plant-seed (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-28T03:15:01+00:00
+date: 2026-05-29T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-plant-seed
 source_file: SKILL.md
-related:
-  - "[[00-MOC]]"
-  - "[[skills/external/gsd-intel]]"
-  - "[[skills/external/gsd-list-phase-assumptions]]"
-  - "[[skills/external/gsd-milestone-summary]]"
-  - "[[skills/external/gsd-new-milestone]]"
-  - "[[skills/external/gsd-next]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-28
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `gsd-plant-seed` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/gsd-plant-seed/`  
-**Mirrored at**: 2026-05-28T03:15:01+00:00
+**Mirrored at**: 2026-05-29T03:15:01+00:00
 
 ## Descripción
 

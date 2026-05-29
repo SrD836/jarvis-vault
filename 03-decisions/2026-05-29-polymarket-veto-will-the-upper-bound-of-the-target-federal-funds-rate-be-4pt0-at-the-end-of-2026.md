@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `will-the-upper-bound-of-the-target-federal-funds-rate-be-4pt0-at-the-end-of-2026-386`
 - **Categoría**: other
-- **Precio YES**: 0.2400
+- **Precio YES**: 0.2390
 - **Volumen 24h**: 1359794.00 USD
 - **End date**: 2026-12-09T00:00:00Z
 
@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-the-upper-bound-of-the-target-federal-funds-rate-be-4pt0-at-the-end-of-2026-386` score=1.00 (exact slug match)
-- veto `will-the-upper-bound-of-the-target-federal-funds-rate-be-1pt0-at-the-end-of-2026-434` score=0.70 (slug prefix match; same category)
 - veto `will-the-upper-bound-of-the-target-federal-funds-rate-be-1pt75-at-the-end-of-2026-739` score=0.70 (slug prefix match; same category)
-- veto `will-the-upper-bound-of-the-target-federal-funds-rate-be-4pt25-at-the-end-of-2026-984` score=0.70 (slug prefix match; same category)
 - veto `will-the-upper-bound-of-the-target-federal-funds-rate-be-2pt5-at-the-end-of-2026-876` score=0.70 (slug prefix match; same category)
+- veto `will-the-upper-bound-of-the-target-federal-funds-rate-be-1pt25-at-the-end-of-2026-681` score=0.70 (slug prefix match; same category)
+- veto `will-the-upper-bound-of-the-target-federal-funds-rate-be-1pt0-at-the-end-of-2026-434` score=0.70 (slug prefix match; same category)
 
 ## Human notes
 

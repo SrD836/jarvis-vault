@@ -3,27 +3,20 @@ title: "triage-issue (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-28T03:15:01+00:00
+date: 2026-05-29T03:15:01+00:00
 source_path: ~/.claude/skills/triage-issue
 source_file: SKILL.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/skill-dispatcher]]"
-  - "[[skills/external/dispatching-parallel-agents]]"
-  - "[[skills/external/gsd-add-backlog]]"
-  - "[[skills/external/gsd-inbox]]"
-  - "[[skills/external/gsd-review-backlog]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-28
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `triage-issue` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/triage-issue/`  
-**Mirrored at**: 2026-05-28T03:15:01+00:00
+**Mirrored at**: 2026-05-29T03:15:01+00:00
 
 ## Descripción
 

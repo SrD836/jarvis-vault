@@ -8,7 +8,7 @@ model_primary: anthropic/claude-sonnet-4-6
 delegation_mode: suggest
 allow_agents: [researcher]
 runtime_children: []
-updated: 2026-05-29T03:00:01
+updated: 2026-05-29T04:00:02
 tags: [agent, jarvis, orchestrator]
 related:
   - "[[../00-MOC]]"
@@ -40,6 +40,8 @@ _(Si no tienes plugin Dataview, mira `02-sessions/` y filtra por frontmatter `ag
 ## Human notes
 
 _(Espacio para notas manuales de David. Cron NO sobreescribe este bloque.)_
+
+
 
 
 
