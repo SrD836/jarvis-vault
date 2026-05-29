@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-tom-steyer-win-the-california-governor-election-in-2026`
 - **Categoría**: elections
-- **Precio YES**: 0.1970
-- **Volumen 24h**: 54526.52 USD
+- **Precio YES**: 0.2000
+- **Volumen 24h**: 56228.98 USD
 - **End date**: 2026-11-03T00:00:00Z
 
 ## Razón del veto
@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-tom-steyer-win-the-california-governor-election-in-2026` score=1.00 (exact slug match)
-- veto `will-renan-santos-win-the-2026-brazilian-presidential-election` score=0.40 (same category; same price bucket low)
-- veto `will-kim-boo-kyum-win-the-2026-daegu-mayoral-election` score=0.40 (same category; same price bucket low)
-- veto `will-the-republican-party-hold-exactly-52-senate-seats-after-the-2026-midterm-elections-829` score=0.40 (same category; same price bucket low)
-- veto `will-rebecca-shepherd-win-the-2026-makerfield-by-election` score=0.40 (same category; same price bucket low)
+- veto `will-oh-se-hoon-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
+- veto `will-chong-won-oh-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
+- veto `will-roberto-snchez-palomino-win-the-2026-peruvian-presidential-election` score=0.40 (same category; same price bucket mid)
+- veto `will-keiko-fujimori-win-the-2026-peruvian-presidential-election` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

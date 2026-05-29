@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `will-vancouver-whitecaps-fc-win-the-2026-mls-cup`
 - **Categoría**: other
-- **Precio YES**: 0.1170
+- **Precio YES**: 0.1240
 - **Volumen 24h**: 366651.38 USD
 - **End date**: 2026-12-19T00:00:00Z
 
@@ -36,8 +36,8 @@ memoria: exact slug match (score 1.00)
 - veto `will-vancouver-whitecaps-fc-win-the-2026-mls-cup` score=1.00 (exact slug match)
 - veto `will-us-unemployment-reach-at-least-5pt5-in-2026` score=0.40 (same category; same price bucket low)
 - veto `nicols-maduro-released-from-custody-by-december-31-2026` score=0.40 (same category; same price bucket low)
-- veto `will-trump-agree-to-unfreeze-iranian-assets-by-may-31` score=0.40 (same category; same price bucket low)
 - veto `will-trump-restart-project-freedom-by-may-31` score=0.40 (same category; same price bucket low)
+- veto `will-trump-agree-to-unfreeze-iranian-assets-by-may-31` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 
