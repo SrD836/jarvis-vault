@@ -1,8 +1,8 @@
-// Package postmortem — async claudemax post-mortem analysis on a closed loss.
+// Package postmortem — async DeepSeek post-mortem analysis on a closed loss.
 //
 // Replaces the hardcoded "## Análisis _(revisar manualmente)_" placeholder
 // in the loss .md with a one-line lesson + 3-5 anti-pattern tags extracted
-// by Claude Max from the trade context.
+// by DeepSeek from the trade context.
 //
 // Also appends a row to memory.md under "## Anti-patterns identificados"
 // which the brain reads on the next cycle (M3 rule) to veto future
@@ -25,8 +25,11 @@ import (
 
 const (
 	dashboardCall = "/api/llm/call"
-	mdlClaudemax  = "claudemax/claude-sonnet-4-6"
-	systemPrompt  = `Eres un analista de post-mortem de trading. Recibes una operación PERDEDORA en polymarket y extraes una lección concisa + tags de anti-pattern que servirán para vetar futuros candidatos similares.
+	// DeepSeek, NOT claudemax: this post-mortem fires from the exit_monitor cron
+	// (*/5), so it must never use Claude Max — automated Max usage is the ban risk
+	// the model-routing guardrail eliminates. Lesson+tag extraction needs no frontier.
+	postmortemModel = "deepseek/deepseek-chat"
+	systemPrompt    = `Eres un analista de post-mortem de trading. Recibes una operación PERDEDORA en polymarket y extraes una lección concisa + tags de anti-pattern que servirán para vetar futuros candidatos similares.
 
 Devuelves EXCLUSIVAMENTE un JSON válido (sin markdown, sin code-fence):
 {
@@ -50,16 +53,16 @@ type Output struct {
 	AntiPatternTags []string `json:"anti_pattern_tags"`
 }
 
-// Run extracts the lesson + tags via claudemax, then:
+// Run extracts the lesson + tags via DeepSeek, then:
 //  1. Rewrites the loss .md replacing the Análisis placeholder.
 //  2. Appends a row to memory.md "## Anti-patterns identificados".
 //
 // Best-effort: any error is logged to stderr and swallowed (we don't want
 // post-mortem failures to corrupt the loss .md or stall exit_monitor).
 func Run(dashboardURL, lossMdPath, memoryPath string, ct LossContext) {
-	out, err := callClaudemax(dashboardURL, ct)
+	out, err := callPostmortemLLM(dashboardURL, ct)
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "[postmortem] claudemax error: %v\n", err)
+		fmt.Fprintf(os.Stderr, "[postmortem] llm error: %v\n", err)
 		return
 	}
 	if out == nil || (out.Lesson == "" && len(out.AntiPatternTags) == 0) {
@@ -86,7 +89,7 @@ type LossContext struct {
 	Date        string
 }
 
-func callClaudemax(dashboardURL string, ct LossContext) (*Output, error) {
+func callPostmortemLLM(dashboardURL string, ct LossContext) (*Output, error) {
 	srcLines := ""
 	for _, s := range ct.SourcesUsed {
 		srcLines += fmt.Sprintf("- %s · %s · %s\n", s.Domain, s.PublishedDate, s.HeadlineTitle)
@@ -109,7 +112,7 @@ Extrae lesson + 3-5 anti-pattern tags (kebab-case, reusables).`,
 		strings.TrimSpace(srcLines))
 
 	body := map[string]interface{}{
-		"model":      mdlClaudemax,
+		"model":      postmortemModel,
 		"system":     systemPrompt,
 		"messages":   []map[string]interface{}{{"role": "user", "content": user}},
 		"max_tokens": 400,
