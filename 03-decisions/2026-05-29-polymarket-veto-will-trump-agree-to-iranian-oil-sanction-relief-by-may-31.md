@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-trump-agree-to-iranian-oil-sanction-relief-by-may-31`
 - **Categoría**: executive-action
-- **Precio YES**: 0.1300
-- **Volumen 24h**: 86883.00 USD
+- **Precio YES**: 0.1400
+- **Volumen 24h**: 85749.35 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
@@ -35,8 +35,8 @@ memoria: exact slug match (score 1.00)
 
 - veto `will-trump-agree-to-iranian-oil-sanction-relief-by-may-31` score=1.00 (exact slug match)
 - veto `will-trump-agree-to-unfreeze-iranian-assets-by-may-31` score=0.70 (slug prefix match; same price bucket low)
-- veto `will-trump-agree-to-iranian-enrichment-of-uranium-by-may-31` score=0.50 (slug prefix match)
 - veto `will-trump-agree-to-iranian-transit-fees-in-the-strait-of-hormuz-by-may-31` score=0.50 (slug prefix match)
+- veto `will-trump-agree-to-iranian-enrichment-of-uranium-by-may-31` score=0.50 (slug prefix match)
 - veto `starmer-out-by-june-30-2026-862-594-548-219-739` score=0.40 (same category; same price bucket low)
 
 ## Human notes

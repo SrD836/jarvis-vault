@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-trump-restart-project-freedom-by-may-31`
 - **Categoría**: other
 - **Precio YES**: 0.0620
-- **Volumen 24h**: 55299.62 USD
+- **Volumen 24h**: 55082.36 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-trump-restart-project-freedom-by-may-31` score=1.00 (exact slug match)
-- veto `another-us-strike-on-venezuela-by-december-31` score=0.40 (same category; same price bucket low)
 - veto `will-trump-agree-to-unfreeze-iranian-assets-by-may-31` score=0.40 (same category; same price bucket low)
-- veto `will-us-unemployment-reach-at-least-5pt5-in-2026` score=0.40 (same category; same price bucket low)
-- veto `will-casper-ruud-win-the-2026-mens-french-open` score=0.40 (same category; same price bucket low)
+- veto `another-us-strike-on-venezuela-by-december-31` score=0.40 (same category; same price bucket low)
+- veto `will-novak-djokovic-win-the-2026-mens-french-open` score=0.40 (same category; same price bucket low)
+- veto `will-francisco-cerundolo-win-the-2026-mens-french-open` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 

@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-keiko-fujimori-win-the-2026-peruvian-presidential-election`
 - **Categoría**: elections
 - **Precio YES**: 0.8000
-- **Volumen 24h**: 114984.85 USD
+- **Volumen 24h**: 114079.55 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto

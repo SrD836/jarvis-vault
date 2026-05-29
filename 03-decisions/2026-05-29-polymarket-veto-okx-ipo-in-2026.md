@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — spacex-ipo-closing-market-cap-above-2t-649-783"
+title: "Polymarket veto — okx-ipo-in-2026"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'SpaceX IPO closing market cap above $2T?' (rule P4_pre_event): pre-event slug + 580 d to resolution (>=7 threshold)"
+decision: "Veto de tesis 'OKX IPO in 2026?' (rule P4_pre_event): pre-event slug + 216 d to resolution (>=7 threshold)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,21 +15,21 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: SpaceX IPO closing market cap above $2T?
+# Veto: OKX IPO in 2026?
 
 ## Mercado
 
-- **Slug**: `spacex-ipo-closing-market-cap-above-2t-649-783`
+- **Slug**: `okx-ipo-in-2026`
 - **Categoría**: crypto-launch
-- **Precio YES**: 0.7900
-- **Volumen 24h**: 52019.33 USD
-- **End date**: 2027-12-31T00:00:00Z
+- **Precio YES**: 0.1200
+- **Volumen 24h**: 556565.02 USD
+- **End date**: 2027-01-01T05:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `P4_pre_event`
 
-pre-event slug + 580 d to resolution (>=7 threshold)
+pre-event slug + 216 d to resolution (>=7 threshold)
 
 ## Human notes
 

@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `iran-agrees-to-unrestricted-shipping-through-hormuz-by-may-31`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.1210
-- **Volumen 24h**: 54851.38 USD
+- **Precio YES**: 0.1230
+- **Volumen 24h**: 54806.85 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto

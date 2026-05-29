@@ -22,7 +22,7 @@ related:
 - **Slug**: `us-announces-new-iran-agreementceasefire-extension-by-june-3-569`
 - **Categoría**: geopolitics
 - **Precio YES**: 0.4200
-- **Volumen 24h**: 137580.12 USD
+- **Volumen 24h**: 137418.03 USD
 - **End date**: 2026-06-03T00:00:00Z
 
 ## Razón del veto
