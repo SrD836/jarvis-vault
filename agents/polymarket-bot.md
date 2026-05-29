@@ -1,8 +1,9 @@
 ---
 title: "polymarket-bot"
-type: agent
-role: worker
+type: autonomous-system
+role: autonomous
 agent_id: polymarket-bot
+note: "Sistema Go autonomo (cron */30 scanner/brain/executor + */5 exit_monitor). NO es agente delegable; sin parent por diseno. Excluido del conteo de starvation (learnings.py usa el roster role=worker de CATALOG.md)."
 workspace: /home/agent/agent-stack/vault/projects/polymarket-veto-loop-bot
 model_primary: deepseek/deepseek-chat
 delegation_mode: standalone

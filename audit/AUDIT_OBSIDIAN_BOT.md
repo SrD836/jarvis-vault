@@ -3,7 +3,7 @@ title: "Auditoria Obsidian — nodos del bot Polymarket: residuo vs senal"
 date: 2026-05-29
 audit_scope: "Clasificacion de TODOS los nodos del vault relacionados con polymarket-veto-loop-bot; % de ruido; estructura limpia; plan de limpieza reversible"
 auditor: "Claude Opus 4.8 (1M context)"
-status: PLAN_PENDIENTE_OK
+status: EJECUTADO_2026-05-29
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
