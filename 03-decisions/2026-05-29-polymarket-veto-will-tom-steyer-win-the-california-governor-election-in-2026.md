@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-tom-steyer-win-the-california-governor-election-in-2026`
 - **Categoría**: elections
 - **Precio YES**: 0.2000
-- **Volumen 24h**: 55680.10 USD
+- **Volumen 24h**: 55511.18 USD
 - **End date**: 2026-11-03T00:00:00Z
 
 ## Razón del veto

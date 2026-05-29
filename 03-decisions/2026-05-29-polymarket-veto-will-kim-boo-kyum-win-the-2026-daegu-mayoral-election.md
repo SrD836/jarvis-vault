@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-kim-boo-kyum-win-the-2026-daegu-mayoral-election`
 - **Categoría**: elections
-- **Precio YES**: 0.1400
-- **Volumen 24h**: 53039.39 USD
+- **Precio YES**: 0.1500
+- **Volumen 24h**: 53537.24 USD
 - **End date**: 2026-06-03T00:00:00Z
 
 ## Razón del veto
@@ -34,6 +34,7 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-kim-boo-kyum-win-the-2026-daegu-mayoral-election` score=1.00 (exact slug match)
+- veto `will-paloma-valencia-win-the-2026-colombian-presidential-election` score=0.40 (same category; same price bucket low)
 - veto `will-renan-santos-win-the-2026-brazilian-presidential-election` score=0.40 (same category; same price bucket low)
 - veto `will-rebecca-shepherd-win-the-2026-makerfield-by-election` score=0.40 (same category; same price bucket low)
 - veto `will-the-republican-party-hold-exactly-52-senate-seats-after-the-2026-midterm-elections-829` score=0.40 (same category; same price bucket low)

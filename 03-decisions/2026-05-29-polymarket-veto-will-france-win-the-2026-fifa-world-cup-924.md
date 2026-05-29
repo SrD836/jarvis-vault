@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-france-win-the-2026-fifa-world-cup-924`
 - **Categoría**: sports-season
 - **Precio YES**: 0.1670
-- **Volumen 24h**: 375007.30 USD
+- **Volumen 24h**: 372789.51 USD
 - **End date**: 2026-07-20T00:00:00Z
 
 ## Razón del veto
@@ -35,9 +35,9 @@ memoria: exact slug match (score 1.00)
 
 - veto `will-france-win-the-2026-fifa-world-cup-924` score=1.00 (exact slug match)
 - veto `will-spain-win-the-2026-fifa-world-cup-963` score=0.40 (same category; same price bucket low)
-- veto `will-portugal-win-the-2026-fifa-world-cup-912` score=0.40 (same category; same price bucket low)
 - veto `will-brazil-win-the-2026-fifa-world-cup-183` score=0.40 (same category; same price bucket low)
 - veto `will-argentina-win-the-2026-fifa-world-cup-245` score=0.40 (same category; same price bucket low)
+- veto `will-germany-win-the-2026-fifa-world-cup-467` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 
