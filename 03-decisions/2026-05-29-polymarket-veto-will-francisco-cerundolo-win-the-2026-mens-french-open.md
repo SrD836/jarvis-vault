@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-francisco-cerundolo-win-the-2026-mens-french-open"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Francisco Cerundolo win the 2026 Men's French Open?' (rule V3 Trigger vago: sin fecha concreta o sin evento verificable.): V3 Trigger vago: sin fecha concreta o sin evento verificable.: V3 Trigger vag..."
+decision: "Veto de tesis 'Will Francisco Cerundolo win the 2026 Men's French Open?' (rule V6 Sin catalyst): V6 Sin catalyst: V6 Sin catalyst: No hay un evento discreto identificable en ..."
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, v3 trigger vago: sin fecha concreta o sin evento verificable.]
+tags: [decision, polymarket, bot, veto, v6 sin catalyst]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-francisco-cerundolo-win-the-2026-mens-french-open`
 - **Categoría**: other
-- **Precio YES**: 0.0600
-- **Volumen 24h**: 72301.63 USD
+- **Precio YES**: 0.0620
+- **Volumen 24h**: 78614.09 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `V3 Trigger vago: sin fecha concreta o sin evento verificable.`
+**Regla aplicada**: `V6 Sin catalyst`
 
-V3 Trigger vago: sin fecha concreta o sin evento verificable.: V3 Trigger vago: sin fecha concreta o sin evento verificable. La pregunta se refiere a un torneo en junio de 2026, pero no hay un catalizador específico o evento verificable que permita evaluar la probabilidad objetiva en este momento. La carrera de Cerundolo es incierta y no hay una base sólida para una estimación informada.
+V6 Sin catalyst: V6 Sin catalyst: No hay un evento discreto identificable en los próximos 7 días que pueda cambiar significativamente la probabilidad de que Cerundolo gane Roland Garros 2026. El torneo es en junio de 2026, no hay partidos, lesiones, o noticias relevantes inmediatas.
 
 ## Human notes
 

@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-felix-auger-aliassime-win-the-2026-mens-french-open"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Felix Auger Aliassime win the 2026 Men's French Open?' (rule V3: No menciona fecha concreta ni evento verificable próximo.): V3: No menciona fecha concreta ni evento verificable próximo.: V3 Trigger va..."
+decision: "Veto de tesis 'Will Felix Auger Aliassime win the 2026 Men's French Open?' (rule V6 Sin catalyst): V6 Sin catalyst: V6 Sin catalyst: no hay evento discreto identificable en los..."
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, v3: no menciona fecha concreta ni evento verificable próximo.]
+tags: [decision, polymarket, bot, veto, v6 sin catalyst]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-felix-auger-aliassime-win-the-2026-mens-french-open`
 - **Categoría**: other
-- **Precio YES**: 0.0420
-- **Volumen 24h**: 107484.16 USD
+- **Precio YES**: 0.0440
+- **Volumen 24h**: 110287.97 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `V3: No menciona fecha concreta ni evento verificable próximo.`
+**Regla aplicada**: `V6 Sin catalyst`
 
-V3: No menciona fecha concreta ni evento verificable próximo.: V3 Trigger vago: el evento 'ganar el French Open 2026' depende de múltiples factores impredecibles (rendimiento en 2025-2026, lesiones, rivales, condición física) sin una fecha concreta ni evento verificable a corto plazo. El mercado está demasiado lejos para que un análisis táctico tenga validez.
+V6 Sin catalyst: V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días que pueda cambiar significativamente la probabilidad de que Felix Auger Aliassime gane Roland Garros 2026, un evento que ocurre en más de 9 meses. No hay partidos cruciales cercanos ni anuncios relevantes.
 
 ## Human notes
 

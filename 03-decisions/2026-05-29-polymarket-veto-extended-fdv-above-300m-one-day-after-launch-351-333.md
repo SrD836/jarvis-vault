@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `extended-fdv-above-300m-one-day-after-launch-351-333`
 - **Categoría**: crypto-launch
-- **Precio YES**: 0.5000
-- **Volumen 24h**: 73027.42 USD
+- **Precio YES**: 0.4700
+- **Volumen 24h**: 73232.42 USD
 - **End date**: 2027-01-01T05:00:00Z
 
 ## Razón del veto

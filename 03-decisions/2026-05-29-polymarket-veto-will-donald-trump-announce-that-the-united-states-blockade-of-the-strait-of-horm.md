@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-june-30-2026-159-962"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Donald Trump announce that the United States blockade of the Strait of H...' (rule V3 Trigger vago: sin fecha concreta o sin evento verificable): V3 Trigger vago: sin fecha concreta o sin evento verificable: evento especula..."
+decision: "Veto de tesis 'Will Donald Trump announce that the United States blockade of the Strait of H...' (rule V3 Trigger vago): V3 Trigger vago: V3 Trigger vago: No hay una fecha concreta ni evento verific..."
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, v3 trigger vago: sin fecha concreta o sin evento verificable]
+tags: [decision, polymarket, bot, veto, v3 trigger vago]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-june-30-2026-159-962`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.8800
-- **Volumen 24h**: 232333.41 USD
+- **Precio YES**: 0.8400
+- **Volumen 24h**: 246435.61 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `V3 Trigger vago: sin fecha concreta o sin evento verificable`
+**Regla aplicada**: `V3 Trigger vago`
 
-V3 Trigger vago: sin fecha concreta o sin evento verificable: evento especulativo sin fecha concreta ni fuente verificable; no hay indicio público de un bloqueo de EE.UU. al Estrecho de Ormuz que vaya a ser levantado
+V3 Trigger vago: V3 Trigger vago: No hay una fecha concreta ni evento verificable más allá de una declaración genérica de Trump. El evento depende de una acción de un político (Trump) que no tiene plazo definido ni señal de que ocurra en los próximos 7 días. Además, la probabilidad implícita de 0.84 parece excesiva para un evento sin catalyst inmediato.
 
 ## Human notes
 

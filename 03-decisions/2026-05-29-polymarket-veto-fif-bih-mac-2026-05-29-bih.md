@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — will-casper-ruud-win-the-2026-mens-french-open"
+title: "Polymarket veto — fif-bih-mac-2026-05-29-bih"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Casper Ruud win the 2026 Men's French Open?' (rule E2): edge 0.029 < mín 0.030 (p̂=0.040, implied=0.069)"
+decision: "Veto de tesis 'Will Bosnia and Herzegovina win on 2026-05-29?' (rule E2): edge 0.020 < mín 0.030 (p̂=0.450, implied=0.470)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,21 +15,21 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: Will Casper Ruud win the 2026 Men's French Open?
+# Veto: Will Bosnia and Herzegovina win on 2026-05-29?
 
 ## Mercado
 
-- **Slug**: `will-casper-ruud-win-the-2026-mens-french-open`
+- **Slug**: `fif-bih-mac-2026-05-29-bih`
 - **Categoría**: other
-- **Precio YES**: 0.0690
-- **Volumen 24h**: 143422.33 USD
-- **End date**: 2026-06-07T00:00:00Z
+- **Precio YES**: 0.4700
+- **Volumen 24h**: 125222.66 USD
+- **End date**: 2026-05-29T16:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `E2`
 
-edge 0.029 < mín 0.030 (p̂=0.040, implied=0.069)
+edge 0.020 < mín 0.030 (p̂=0.450, implied=0.470)
 
 ## Human notes
 

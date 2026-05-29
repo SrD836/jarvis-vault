@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-argentina-win-the-2026-fifa-world-cup-245"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Argentina win the 2026 FIFA World Cup?' (rule E2): edge 0.026 < mín 0.030 (p̂=0.060, implied=0.086)"
+decision: "Veto de tesis 'Will Argentina win the 2026 FIFA World Cup?' (rule E2): edge 0.014 < mín 0.030 (p̂=0.100, implied=0.086)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -22,14 +22,14 @@ related:
 - **Slug**: `will-argentina-win-the-2026-fifa-world-cup-245`
 - **Categoría**: sports-season
 - **Precio YES**: 0.0860
-- **Volumen 24h**: 206592.75 USD
+- **Volumen 24h**: 207244.11 USD
 - **End date**: 2026-07-20T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `E2`
 
-edge 0.026 < mín 0.030 (p̂=0.060, implied=0.086)
+edge 0.014 < mín 0.030 (p̂=0.100, implied=0.086)
 
 ## Human notes
 

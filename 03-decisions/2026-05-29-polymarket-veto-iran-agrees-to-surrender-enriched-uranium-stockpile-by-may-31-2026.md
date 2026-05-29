@@ -2,7 +2,7 @@
 title: "Polymarket veto — iran-agrees-to-surrender-enriched-uranium-stockpile-by-may-31-2026"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Iran agrees to surrender enriched uranium stockpile by May 31, 2026?' (rule E2): edge 0.018 < mín 0.030 (p̂=0.020, implied=0.038)"
+decision: "Veto de tesis 'Iran agrees to surrender enriched uranium stockpile by May 31, 2026?' (rule E2): edge 0.020 < mín 0.030 (p̂=0.020, implied=0.040)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `iran-agrees-to-surrender-enriched-uranium-stockpile-by-may-31-2026`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.0380
-- **Volumen 24h**: 273515.56 USD
+- **Precio YES**: 0.0400
+- **Volumen 24h**: 264626.57 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `E2`
 
-edge 0.018 < mín 0.030 (p̂=0.020, implied=0.038)
+edge 0.020 < mín 0.030 (p̂=0.020, implied=0.040)
 
 ## Human notes
 

@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-bitcoin-dip-to-70k-in-may-2026-438-356-919"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Bitcoin dip to $70,000 in May?' (rule E2): edge 0.027 < mín 0.030 (p̂=0.080, implied=0.053)"
+decision: "Veto de tesis 'Will Bitcoin dip to $70,000 in May?' (rule E2): edge 0.015 < mín 0.030 (p̂=0.080, implied=0.065)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-bitcoin-dip-to-70k-in-may-2026-438-356-919`
 - **Categoría**: market
-- **Precio YES**: 0.0530
-- **Volumen 24h**: 219921.53 USD
+- **Precio YES**: 0.0650
+- **Volumen 24h**: 233731.77 USD
 - **End date**: 2026-06-01T04:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `E2`
 
-edge 0.027 < mín 0.030 (p̂=0.080, implied=0.053)
+edge 0.015 < mín 0.030 (p̂=0.080, implied=0.065)
 
 ## Human notes
 

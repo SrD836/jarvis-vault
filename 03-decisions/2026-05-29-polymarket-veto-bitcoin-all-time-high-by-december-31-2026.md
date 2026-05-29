@@ -2,7 +2,7 @@
 title: "Polymarket veto — bitcoin-all-time-high-by-december-31-2026"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Bitcoin all time high by December 31, 2026?' (rule P11): tradingview BTCUSDT sentiment=bullish (conf 0.80) contradicts bear thesis (pr..."
+decision: "Veto de tesis 'Bitcoin all time high by December 31, 2026?' (rule P11): tradingview BTCUSDT sentiment=bearish (conf 0.65) contradicts bull thesis (pr..."
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -22,14 +22,14 @@ related:
 - **Slug**: `bitcoin-all-time-high-by-december-31-2026`
 - **Categoría**: market
 - **Precio YES**: 0.1500
-- **Volumen 24h**: 65970.65 USD
+- **Volumen 24h**: 64794.37 USD
 - **End date**: 2027-01-01T05:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `P11`
 
-tradingview BTCUSDT sentiment=bullish (conf 0.80) contradicts bear thesis (price_yes=0.42)
+tradingview BTCUSDT sentiment=bearish (conf 0.65) contradicts bull thesis (price_yes=0.95)
 
 ## Human notes
 

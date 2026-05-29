@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-germany-win-the-2026-fifa-world-cup-467"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Germany win the 2026 FIFA World Cup?' (rule E2): edge 0.028 < mín 0.030 (p̂=0.080, implied=0.052)"
+decision: "Veto de tesis 'Will Germany win the 2026 FIFA World Cup?' (rule E2): edge 0.008 < mín 0.030 (p̂=0.060, implied=0.052)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -22,14 +22,14 @@ related:
 - **Slug**: `will-germany-win-the-2026-fifa-world-cup-467`
 - **Categoría**: sports-season
 - **Precio YES**: 0.0520
-- **Volumen 24h**: 377424.15 USD
+- **Volumen 24h**: 376819.44 USD
 - **End date**: 2026-07-20T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `E2`
 
-edge 0.028 < mín 0.030 (p̂=0.080, implied=0.052)
+edge 0.008 < mín 0.030 (p̂=0.060, implied=0.052)
 
 ## Human notes
 

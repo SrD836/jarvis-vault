@@ -10,13 +10,17 @@ size_usd: 184.71
 horizon: short
 days_to_resolution: 1
 sources_used: []
-outcome: pending
+outcome: win
 outcome_observed_after_days: 1
 tags: [decision, polymarket, bot, trade, approved]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
   - "[[projects/polymarket-veto-loop-bot]]"
+pnl_usd: 8.12
+closed_at: 2026-05-29T19:45:01Z
+exit_reason: target_hit
+days_open: 0.17
 ---
 
 # Trade aprobado: Israel x Lebanon diplomatic meeting by May 31?
