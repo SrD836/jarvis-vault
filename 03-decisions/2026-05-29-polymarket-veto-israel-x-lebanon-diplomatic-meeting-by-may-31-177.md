@@ -2,13 +2,13 @@
 title: "Polymarket veto — israel-x-lebanon-diplomatic-meeting-by-may-31-177"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Israel x Lebanon diplomatic meeting by May 31?' (rule V6): V6: V6 Sin catalyst: No hay un evento discreto verificable en los próximos 7..."
+decision: "Veto de tesis 'Israel x Lebanon diplomatic meeting by May 31?' (rule E2): edge 0.020 < mín 0.030 (p̂=0.960, implied=0.940)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, v6]
+tags: [decision, polymarket, bot, veto, e2]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -22,14 +22,14 @@ related:
 - **Slug**: `israel-x-lebanon-diplomatic-meeting-by-may-31-177`
 - **Categoría**: geopolitics
 - **Precio YES**: 0.9400
-- **Volumen 24h**: 52425.45 USD
+- **Volumen 24h**: 52471.48 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `V6`
+**Regla aplicada**: `E2`
 
-V6: V6 Sin catalyst: No hay un evento discreto verificable en los próximos 7 días que pueda mover el precio de manera clara. El precio ya está en 0.94 y el volumen es alto, sugiriendo que el mercado descuenta información reciente no pública.
+edge 0.020 < mín 0.030 (p̂=0.960, implied=0.940)
 
 ## Human notes
 

@@ -15,8 +15,16 @@ aborted: false
 abort_reason: ""
 spawned_children: []
 skill: "gsd-research-phase"
+related:
+  - "[[agents/CATALOG]]"
+  - "[[agents/apier]]"
+  - "[[agents/researcher]]"
+  - "[[agents/researcher/runs/2026-05-29/162008-from-planner]]"
+  - "[[agents/runs-today]]"
 tags: ["agent-run", "researcher", "planner-routed"]
+# auto-linked 2026-05-29
 ---
+
 
 ## TL;DR
 researcher: Lista de 5 bullets con buenas practicas de rate-limiting, cada uno con fuente citada. -> OK.

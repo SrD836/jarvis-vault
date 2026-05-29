@@ -15,8 +15,16 @@ aborted: true
 abort_reason: "success_criterion no cumplido"
 spawned_children: []
 skill: "gsd-debug"
+related:
+  - "[[agents/debugger]]"
+  - "[[agents/debugger/runs/2026-05-29/152243-from-planner]]"
+  - "[[agents/debugger/runs/2026-05-29/152800-from-planner]]"
+  - "[[agents/debugger/runs/2026-05-29/152826-from-planner]]"
+  - "[[agents/planner]]"
 tags: ["agent-run", "debugger", "planner-routed"]
+# auto-linked 2026-05-29
 ---
+
 
 ## TL;DR
 debugger: Un informe estructurado que contenga: 1) Descripción del síntoma, 2) Hipótesis inicial, 3) Experimentos realizados y resultados, 4) Causa raíz identificada con evidencia. -> FALLO.

@@ -15,8 +15,16 @@ aborted: false
 abort_reason: ""
 spawned_children: []
 skill: "test-driven-development"
+related:
+  - "[[agents/CATALOG]]"
+  - "[[agents/code-reviewer/runs/2026-05-29/152234-from-planner]]"
+  - "[[agents/debugger/runs/2026-05-29/152243-from-planner]]"
+  - "[[agents/planner]]"
+  - "[[agents/tester]]"
 tags: ["agent-run", "tester", "planner-routed"]
+# auto-linked 2026-05-29
 ---
+
 
 ## TL;DR
 tester: 5 casos de test con entrada, salida esperada y tipo de caso. -> OK.

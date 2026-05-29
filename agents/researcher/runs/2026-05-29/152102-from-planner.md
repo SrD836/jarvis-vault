@@ -15,8 +15,16 @@ aborted: false
 abort_reason: ""
 spawned_children: []
 skill: "gsd-research-phase"
+related:
+  - "[[03-decisions/2026-05-29-polymarket-veto-will-ethereum-reach-5500-by-december-31-2026]]"
+  - "[[agents/CATALOG]]"
+  - "[[agents/planner]]"
+  - "[[agents/researcher]]"
+  - "[[agents/runs-today]]"
 tags: ["agent-run", "researcher", "planner-routed"]
+# auto-linked 2026-05-29
 ---
+
 
 ## TL;DR
 researcher: Un texto plano con exactamente 3 bullets numerados (1., 2., 3.) que respondan a la pregunta. Cada bullet debe ser una oración completa y factual. -> OK.

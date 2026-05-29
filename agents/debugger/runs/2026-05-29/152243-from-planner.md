@@ -15,8 +15,16 @@ aborted: false
 abort_reason: ""
 spawned_children: []
 skill: "gsd-debug"
+related:
+  - "[[agents/CATALOG]]"
+  - "[[agents/debugger]]"
+  - "[[agents/debugger/runs/2026-05-29/152826-from-planner]]"
+  - "[[agents/planner]]"
+  - "[[agents/runs-today]]"
 tags: ["agent-run", "debugger", "planner-routed"]
+# auto-linked 2026-05-29
 ---
+
 
 ## TL;DR
 debugger: Lista de hipotesis ordenadas por probabilidad y descripcion del fix de raiz. -> OK.

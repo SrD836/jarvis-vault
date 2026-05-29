@@ -2,7 +2,7 @@
 title: "Polymarket veto — ukraine-agrees-not-to-join-nato-by-june-30"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Ukraine agrees not to join NATO by June 30? ' (rule E2): edge 0.004 < mín 0.030 (p̂=0.030, implied=0.034)"
+decision: "Veto de tesis 'Ukraine agrees not to join NATO by June 30? ' (rule E2): edge 0.016 < mín 0.030 (p̂=0.050, implied=0.034)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -22,14 +22,14 @@ related:
 - **Slug**: `ukraine-agrees-not-to-join-nato-by-june-30`
 - **Categoría**: geopolitics
 - **Precio YES**: 0.0340
-- **Volumen 24h**: 99982.55 USD
+- **Volumen 24h**: 98264.97 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `E2`
 
-edge 0.004 < mín 0.030 (p̂=0.030, implied=0.034)
+edge 0.016 < mín 0.030 (p̂=0.050, implied=0.034)
 
 ## Human notes
 

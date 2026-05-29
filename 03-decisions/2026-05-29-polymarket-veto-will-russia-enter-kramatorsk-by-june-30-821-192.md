@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-russia-enter-kramatorsk-by-june-30-821-192"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Russia enter Kramatorsk by June 30?' (rule V3 Trigger vago: sin fecha concreta o sin evento verificable. V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.): V3 Trigger vago: sin fecha concreta o sin evento verificable. V6 Sin catalyst..."
+decision: "Veto de tesis 'Will Russia enter Kramatorsk by June 30?' (rule E2): edge 0.002 < mín 0.030 (p̂=0.030, implied=0.028)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, v3 trigger vago: sin fecha concreta o sin evento verificable. v6 sin catalyst: no hay evento discreto identificable en los próximos 7 días.]
+tags: [decision, polymarket, bot, veto, e2]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -27,9 +27,9 @@ related:
 
 ## Razón del veto
 
-**Regla aplicada**: `V3 Trigger vago: sin fecha concreta o sin evento verificable. V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.`
+**Regla aplicada**: `E2`
 
-V3 Trigger vago: sin fecha concreta o sin evento verificable. V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.: V3 Trigger vago: la pregunta no especifica qué constituye 'enter' Kramatorsk (control administrativo, presencia militar, captura total?), ni hay una fecha concreta de evento verificable más allá del 30 de junio de 2026. No se identifica un catalizador discreto (ej. anuncio, ofensiva, reporte de ISW) en los próximos 7 días.
+edge 0.002 < mín 0.030 (p̂=0.030, implied=0.028)
 
 ## Human notes
 

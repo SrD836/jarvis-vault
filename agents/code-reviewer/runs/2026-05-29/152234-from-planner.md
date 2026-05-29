@@ -15,8 +15,16 @@ aborted: false
 abort_reason: ""
 spawned_children: []
 skill: "gsd-code-review"
+related:
+  - "[[agents/CATALOG]]"
+  - "[[agents/auditor]]"
+  - "[[agents/code-reviewer]]"
+  - "[[agents/debugger]]"
+  - "[[agents/tester]]"
 tags: ["agent-run", "code-reviewer", "planner-routed"]
+# auto-linked 2026-05-29
 ---
+
 
 ## TL;DR
 code-reviewer: Lista de hallazgos con severidad y codigo fix para cada uno. -> OK.

@@ -15,8 +15,16 @@ aborted: false
 abort_reason: ""
 spawned_children: []
 skill: "gsd-research-phase"
+related:
+  - "[[03-decisions/2026-05-29-polymarket-trade-will-trump-agree-to-iranian-enrichment-of-uranium-by-may-31]]"
+  - "[[agents/CATALOG]]"
+  - "[[agents/researcher]]"
+  - "[[agents/runs-today]]"
+  - "[[projects/polymarket-veto-loop-bot/vault/03-decisions/2026-05-29-polymarket-trade-will-trump-agree-to-iranian-oil-sanction-relief-by-may-31]]"
 tags: ["agent-run", "researcher", "planner-routed"]
+# auto-linked 2026-05-29
 ---
+
 
 ## TL;DR
 researcher: Texto plano de exactamente 2 lineas: linea 1 define el Brier score, linea 2 indica su uso. -> OK.

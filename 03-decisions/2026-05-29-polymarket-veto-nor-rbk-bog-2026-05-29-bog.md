@@ -2,13 +2,13 @@
 title: "Polymarket veto — nor-rbk-bog-2026-05-29-bog"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will FK Bodø/Glimt win on 2026-05-29?' (rule E2): edge 0.020 < mín 0.030 (p̂=0.620, implied=0.600)"
+decision: "Veto de tesis 'Will FK Bodø/Glimt win on 2026-05-29?' (rule E1): edge no declarado por LLM (edge_type=none)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, e2]
+tags: [decision, polymarket, bot, veto, e1]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `nor-rbk-bog-2026-05-29-bog`
 - **Categoría**: other
-- **Precio YES**: 0.6000
-- **Volumen 24h**: 175382.98 USD
+- **Precio YES**: 0.4800
+- **Volumen 24h**: 297486.06 USD
 - **End date**: 2026-05-29T17:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `E2`
+**Regla aplicada**: `E1`
 
-edge 0.020 < mín 0.030 (p̂=0.620, implied=0.600)
+edge no declarado por LLM (edge_type=none)
 
 ## Human notes
 

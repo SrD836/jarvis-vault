@@ -6,11 +6,18 @@ category: general
 date: 2026-05-29T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-undo
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/debugger]]"
+  - "[[agents/planner]]"
+  - "[[agents/skill-dispatcher]]"
+  - "[[agents/skill-reviewer]]"
+  - "[[agents/tester]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-29
 ---
+
 
 # `gsd-undo` (external skill)
 

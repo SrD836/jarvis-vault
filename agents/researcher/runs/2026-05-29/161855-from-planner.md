@@ -15,8 +15,16 @@ aborted: false
 abort_reason: ""
 spawned_children: []
 skill: "gsd-research-phase"
+related:
+  - "[[agents/CATALOG]]"
+  - "[[agents/planner]]"
+  - "[[agents/researcher]]"
+  - "[[agents/researcher/runs/2026-05-29/162008-from-planner]]"
+  - "[[agents/runs-today]]"
 tags: ["agent-run", "researcher", "planner-routed"]
+# auto-linked 2026-05-29
 ---
+
 
 ## TL;DR
 researcher: Un array JSON con 3 objetos, cada uno con campos: 'ventaja' (string descriptivo), 'evidencia' (string con datos/fuente), 'relevancia_mecanica' (string explicando por qué aplica a tareas mecánicas). Ejemplo: [{'ventaja': 'Menor costo por token en inferencia', 'evidencia': 'DeepSeek-V2 cobra $0.14/M tokens vs Claude 3.5 Sonnet $3.00/M (fuente: Artificial Analysis, 2024)', 'relevancia_mecanica': 'Tareas mecánicas requieren muchas llamadas API; menor costo permite escalar sin presupuesto elevado'}] -> OK.

@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-ethereum-reach-5500-by-december-31-2026"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Ethereum reach $5,500 by December 31, 2026?' (rule P11): tradingview ETHUSDT sentiment=bullish (conf 0.80) contradicts bear thesis (pr..."
+decision: "Veto de tesis 'Will Ethereum reach $5,500 by December 31, 2026?' (rule P11): tradingview ETHUSDT sentiment=bullish (conf 0.65) contradicts bear thesis (pr..."
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -29,7 +29,7 @@ related:
 
 **Regla aplicada**: `P11`
 
-tradingview ETHUSDT sentiment=bullish (conf 0.80) contradicts bear thesis (price_yes=0.02)
+tradingview ETHUSDT sentiment=bullish (conf 0.65) contradicts bear thesis (price_yes=0.21)
 
 ## Human notes
 

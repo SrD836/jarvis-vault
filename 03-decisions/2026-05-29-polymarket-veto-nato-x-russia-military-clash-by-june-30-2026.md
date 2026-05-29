@@ -2,7 +2,7 @@
 title: "Polymarket veto — nato-x-russia-military-clash-by-june-30-2026"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'NATO x Russia military clash by June 30, 2026?' (rule E2): edge 0.016 < mín 0.030 (p̂=0.040, implied=0.056)"
+decision: "Veto de tesis 'NATO x Russia military clash by June 30, 2026?' (rule E2): edge 0.023 < mín 0.030 (p̂=0.040, implied=0.063)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `nato-x-russia-military-clash-by-june-30-2026`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.0560
-- **Volumen 24h**: 99866.44 USD
+- **Precio YES**: 0.0630
+- **Volumen 24h**: 99511.49 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `E2`
 
-edge 0.016 < mín 0.030 (p̂=0.040, implied=0.056)
+edge 0.023 < mín 0.030 (p̂=0.040, implied=0.063)
 
 ## Human notes
 

@@ -15,8 +15,16 @@ aborted: false
 abort_reason: ""
 spawned_children: []
 skill: "gsd-health"
+related:
+  - "[[agents/CATALOG]]"
+  - "[[agents/monitor]]"
+  - "[[agents/monitor/runs/2026-05-29/152323-from-planner]]"
+  - "[[agents/planner]]"
+  - "[[agents/runs-today]]"
 tags: ["agent-run", "monitor", "planner-routed"]
+# auto-linked 2026-05-29
 ---
+
 
 ## TL;DR
 monitor: Un bloque de texto plano que contiene: (1) 3 líneas sobre el estado del dashboard, (2) un breve resumen de monitor de hasta 5 líneas. -> OK.

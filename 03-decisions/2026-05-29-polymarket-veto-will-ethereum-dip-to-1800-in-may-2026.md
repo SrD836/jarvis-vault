@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-ethereum-dip-to-1800-in-may-2026`
 - **Categoría**: market
-- **Precio YES**: 0.0230
-- **Volumen 24h**: 58456.11 USD
+- **Precio YES**: 0.0210
+- **Volumen 24h**: 59853.61 USD
 - **End date**: 2026-06-01T04:00:00Z
 
 ## Razón del veto

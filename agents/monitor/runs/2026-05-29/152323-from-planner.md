@@ -15,8 +15,16 @@ aborted: false
 abort_reason: ""
 spawned_children: []
 skill: "gsd-health"
+related:
+  - "[[03-decisions/2026-05-29-polymarket-veto-abstract-fdv-above-3b-one-day-after-launch]]"
+  - "[[agents/monitor]]"
+  - "[[agents/planner]]"
+  - "[[agents/polymarket-handler]]"
+  - "[[agents/runs-today]]"
 tags: ["agent-run", "monitor", "planner-routed"]
+# auto-linked 2026-05-29
 ---
+
 
 ## TL;DR
 monitor: Resumen de 3 lineas con los puntos clave. -> OK.

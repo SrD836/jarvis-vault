@@ -15,8 +15,16 @@ aborted: false
 abort_reason: ""
 spawned_children: []
 skill: "gsd-audit-uat"
+related:
+  - "[[agents/CATALOG]]"
+  - "[[agents/auditor]]"
+  - "[[agents/debugger/runs/2026-05-29/152826-from-planner]]"
+  - "[[agents/planner]]"
+  - "[[agents/runs-today]]"
 tags: ["agent-run", "auditor", "planner-routed"]
+# auto-linked 2026-05-29
 ---
+
 
 ## TL;DR
 auditor: Lista de hallazgos con severidad y remediacion. -> OK.

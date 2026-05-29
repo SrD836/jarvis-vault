@@ -1,0 +1,9 @@
+{
+  "ready": false,
+  "evaluated_at": "2026-05-29T18:00:02.061958+00:00",
+  "qualifying_categories": [],
+  "release_threshold": {
+    "brier_lt": 0.2,
+    "min_n": 20
+  }
+}

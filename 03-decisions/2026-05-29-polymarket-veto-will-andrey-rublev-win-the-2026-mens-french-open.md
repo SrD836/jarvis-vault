@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-andrey-rublev-win-the-2026-mens-french-open"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Andrey Rublev win the 2026 Men's French Open?' (rule V6 Sin catalyst): V6 Sin catalyst: V6 Sin catalyst: no hay evento discreto identificable en los..."
+decision: "Veto de tesis 'Will Andrey Rublev win the 2026 Men's French Open?' (rule V6 Sin catalyst): V6 Sin catalyst: El evento no tiene un catalizador concreto identificable en ..."
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-andrey-rublev-win-the-2026-mens-french-open`
 - **Categoría**: other
-- **Precio YES**: 0.0340
-- **Volumen 24h**: 82552.44 USD
+- **Precio YES**: 0.0300
+- **Volumen 24h**: 88116.60 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `V6 Sin catalyst`
 
-V6 Sin catalyst: V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días que pueda afectar el resultado de un torneo que termina en junio de 2026. No hay partidos, lesiones reportadas o noticias relevantes en el horizonte inmediato.
+V6 Sin catalyst: El evento no tiene un catalizador concreto identificable en los próximos 7 días; es una pregunta sobre un torneo que comienza en mayo de 2026, demasiado lejano para una decisión táctico-informacional con edge cuantificable.
 
 ## Human notes
 

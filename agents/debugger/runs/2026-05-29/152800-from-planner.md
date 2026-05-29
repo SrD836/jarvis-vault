@@ -15,8 +15,16 @@ aborted: true
 abort_reason: "success_criterion no cumplido"
 spawned_children: []
 skill: "gsd-debug"
+related:
+  - "[[agents/debugger]]"
+  - "[[agents/debugger/runs/2026-05-29/152813-from-planner]]"
+  - "[[agents/debugger/runs/2026-05-29/152826-from-planner]]"
+  - "[[agents/monitor/runs/2026-05-29/163623-from-planner]]"
+  - "[[agents/planner]]"
 tags: ["agent-run", "debugger", "planner-routed"]
+# auto-linked 2026-05-29
 ---
+
 
 ## TL;DR
 debugger: Un reporte breve (3-5 lineas) con: (1) resumen de errores encontrados, (2) causa raiz sospechada, (3) evidencia de logs que la respalde. -> FALLO.

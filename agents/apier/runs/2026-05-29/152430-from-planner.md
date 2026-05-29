@@ -15,8 +15,16 @@ aborted: false
 abort_reason: ""
 spawned_children: []
 skill: "gsd-graphify"
+related:
+  - "[[agents/CATALOG]]"
+  - "[[agents/apier]]"
+  - "[[agents/designer/runs/2026-05-29/152438-from-planner]]"
+  - "[[agents/planner]]"
+  - "[[agents/tester/runs/2026-05-29/152245-from-planner]]"
 tags: ["agent-run", "apier", "planner-routed"]
+# auto-linked 2026-05-29
 ---
+
 
 ## TL;DR
 apier: Tabla o lista con metodos, paths y payloads. -> OK.

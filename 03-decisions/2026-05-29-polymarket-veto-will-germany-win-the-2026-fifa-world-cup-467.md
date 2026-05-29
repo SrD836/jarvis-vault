@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-germany-win-the-2026-fifa-world-cup-467`
 - **Categoría**: sports-season
 - **Precio YES**: 0.0520
-- **Volumen 24h**: 369856.79 USD
+- **Volumen 24h**: 377424.15 USD
 - **End date**: 2026-07-20T00:00:00Z
 
 ## Razón del veto

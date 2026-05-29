@@ -15,8 +15,16 @@ aborted: true
 abort_reason: "success_criterion no cumplido"
 spawned_children: []
 skill: "gsd-debug"
+related:
+  - "[[agents/CATALOG]]"
+  - "[[agents/code-reviewer]]"
+  - "[[agents/debugger]]"
+  - "[[agents/planner]]"
+  - "[[agents/tester]]"
 tags: ["agent-run", "debugger", "planner-routed"]
+# auto-linked 2026-05-29
 ---
+
 
 ## TL;DR
 debugger: Un informe de diagnóstico que incluya: 1) Hipótesis inicial, 2) Experimento diseñado, 3) Causa raíz identificada (ej: 'NullPointerException al acceder a campo email sin validar'), 4) Evidencia que soporta la causa raíz. -> FALLO.

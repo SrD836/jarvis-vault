@@ -15,8 +15,16 @@ aborted: false
 abort_reason: ""
 spawned_children: []
 skill: "gsd-research-phase"
+related:
+  - "[[agents/CATALOG]]"
+  - "[[agents/planner]]"
+  - "[[agents/researcher]]"
+  - "[[agents/researcher/runs/2026-05-29/152228-from-planner]]"
+  - "[[agents/researcher/runs/2026-05-29/162008-from-planner]]"
 tags: ["agent-run", "researcher", "planner-routed"]
+# auto-linked 2026-05-29
 ---
+
 
 ## TL;DR
 researcher: Una unica linea de texto que defina rate limiting en APIs. -> OK.

@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-jay-z-be-confirmed-to-have-visited-epsteins-island"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Jay-Z be confirmed to have visited Epstein’s island?' (rule V6): V6: V6 Sin catalyst: No hay un evento discreto identificable en los próximos..."
+decision: "Veto de tesis 'Will Jay-Z be confirmed to have visited Epstein’s island?' (rule Si no hay un evento discreto identificable en los próximos 7 días (como una filtración, reportaje, declaración oficial o avance judicial), se bloquea.): Si no hay un evento discreto identificable en los próximos 7 días (como una..."
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, v6]
+tags: [decision, polymarket, bot, veto, si no hay un evento discreto identificable en los próximos 7 días (como una filtración, reportaje, declaración oficial o avance judicial), se bloquea.]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -27,9 +27,9 @@ related:
 
 ## Razón del veto
 
-**Regla aplicada**: `V6`
+**Regla aplicada**: `Si no hay un evento discreto identificable en los próximos 7 días (como una filtración, reportaje, declaración oficial o avance judicial), se bloquea.`
 
-V6: V6 Sin catalyst: No hay un evento discreto identificable en los próximos 7 días que pueda resolver la pregunta. La confirmación de una visita de Jay-Z a la isla de Epstein es un rumor sin fuentes verificables ni un evento concreto próximo.
+Si no hay un evento discreto identificable en los próximos 7 días (como una filtración, reportaje, declaración oficial o avance judicial), se bloquea.: V6 Sin catalyst: no hay evento discreto verificable en los próximos 7 días que pueda resolver la pregunta. 'Ser confirmado' es vago: no hay una fecha, investigación formal o publicación concreta programada.
 
 ## Human notes
 

@@ -15,8 +15,16 @@ aborted: false
 abort_reason: ""
 spawned_children: []
 skill: "gsd-docs-update"
+related:
+  - "[[agents/CATALOG]]"
+  - "[[agents/documenter]]"
+  - "[[agents/main]]"
+  - "[[agents/planner]]"
+  - "[[agents/runs-today]]"
 tags: ["agent-run", "documenter", "planner-routed"]
+# auto-linked 2026-05-29
 ---
+
 
 ## TL;DR
 documenter: Texto de Quickstart con 3 pasos: arrancar, mostrar estado, parar. Incluye comandos como 'jarvisctl start', 'jarvisctl status', 'jarvisctl stop'. -> OK.

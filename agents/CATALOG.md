@@ -3,11 +3,17 @@ title: "Agent CATALOG — fuente unica de routing del Planner"
 type: agent-catalog
 date: 2026-05-29
 generated_from: ["role-bindings.yaml", "openclaw.json", "AUDIT.md s1"]
-tags: [agents, catalog, routing, jarvis]
 related:
-  - "[[agents/index]]"
   - "[[00-MOC]]"
+  - "[[agents/index]]"
+  - "[[agents/main]]"
+  - "[[agents/planner]]"
+  - "[[agents/runs-today]]"
+  - "[[agents/skill-dispatcher]]"
+tags: [agents, catalog, routing, jarvis]
+# auto-linked 2026-05-29
 ---
+
 
 # Agent CATALOG
 

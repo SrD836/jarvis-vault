@@ -15,8 +15,16 @@ aborted: false
 abort_reason: ""
 spawned_children: []
 skill: "gsd-research-phase"
+related:
+  - "[[agents/CATALOG]]"
+  - "[[agents/planner]]"
+  - "[[agents/researcher]]"
+  - "[[agents/researcher/runs/2026-05-29/152228-from-planner]]"
+  - "[[agents/runs-today]]"
 tags: ["agent-run", "researcher", "planner-routed"]
+# auto-linked 2026-05-29
 ---
+
 
 ## TL;DR
 researcher: Una lista de 3 ventajas de DeepSeek para tareas mecánicas, cada una con explicación y fuente. -> OK.

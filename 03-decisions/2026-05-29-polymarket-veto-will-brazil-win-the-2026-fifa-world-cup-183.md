@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-brazil-win-the-2026-fifa-world-cup-183"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Brazil win the 2026 FIFA World Cup?' (rule E2): edge 0.006 < mín 0.030 (p̂=0.100, implied=0.094)"
+decision: "Veto de tesis 'Will Brazil win the 2026 FIFA World Cup?' (rule E2): edge 0.014 < mín 0.030 (p̂=0.080, implied=0.094)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -22,14 +22,14 @@ related:
 - **Slug**: `will-brazil-win-the-2026-fifa-world-cup-183`
 - **Categoría**: sports-season
 - **Precio YES**: 0.0940
-- **Volumen 24h**: 223116.23 USD
+- **Volumen 24h**: 218030.35 USD
 - **End date**: 2026-07-20T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `E2`
 
-edge 0.006 < mín 0.030 (p̂=0.100, implied=0.094)
+edge 0.014 < mín 0.030 (p̂=0.080, implied=0.094)
 
 ## Human notes
 

@@ -15,8 +15,16 @@ aborted: false
 abort_reason: ""
 spawned_children: []
 skill: "banner-design"
+related:
+  - "[[agents/CATALOG]]"
+  - "[[agents/archivist/runs/2026-05-29/152426-from-planner]]"
+  - "[[agents/designer]]"
+  - "[[agents/planner]]"
+  - "[[agents/runs-today]]"
 tags: ["agent-run", "designer", "planner-routed"]
+# auto-linked 2026-05-29
 ---
+
 
 ## TL;DR
 designer: Descripcion del banner: layout, colores, copy (titulo, subtitulo, call-to-action si aplica). -> OK.
