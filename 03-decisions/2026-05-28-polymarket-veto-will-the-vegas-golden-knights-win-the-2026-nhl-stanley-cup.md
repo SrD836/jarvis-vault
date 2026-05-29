@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-the-vegas-golden-knights-win-the-2026-nhl-stanley-cup`
 - **Categoría**: other
 - **Precio YES**: 0.4270
-- **Volumen 24h**: 57986.85 USD
+- **Volumen 24h**: 58394.45 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto
@@ -35,8 +35,8 @@ memoria: exact slug match (score 1.00)
 
 - veto `will-the-vegas-golden-knights-win-the-2026-nhl-stanley-cup` score=1.00 (exact slug match)
 - veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.40 (same category; same price bucket mid)
-- veto `ucl-psg-ars-2026-05-30-psg` score=0.40 (same category; same price bucket mid)
 - veto `ucl-psg-ars-2026-05-30-ars` score=0.40 (same category; same price bucket mid)
+- veto `ucl-psg-ars-2026-05-30-psg` score=0.40 (same category; same price bucket mid)
 - veto `will-alexander-zverev-win-the-2026-mens-french-open` score=0.40 (same category; same price bucket mid)
 
 ## Human notes

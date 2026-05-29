@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-arsenal-win-the-202526-champions-league`
 - **Categoría**: sports-season
 - **Precio YES**: 0.4300
-- **Volumen 24h**: 67931.20 USD
+- **Volumen 24h**: 85435.02 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto

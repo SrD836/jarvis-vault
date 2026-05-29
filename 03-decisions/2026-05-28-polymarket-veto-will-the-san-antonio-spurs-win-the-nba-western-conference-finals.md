@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-the-san-antonio-spurs-win-the-nba-western-conference-finals`
 - **Categoría**: sports-season
-- **Precio YES**: 0.2350
-- **Volumen 24h**: 50399.40 USD
+- **Precio YES**: 0.2430
+- **Volumen 24h**: 51224.01 USD
 - **End date**: 2026-06-16T00:00:00Z
 
 ## Razón del veto
@@ -34,10 +34,10 @@ memoria: slug prefix match; same category (score 0.70)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-the-san-antonio-spurs-win-the-2026-nba-finals` score=0.70 (slug prefix match; same category)
-- veto `will-the-oklahoma-city-thunder-win-the-nba-western-conference-finals` score=0.40 (same category; same price bucket mid)
-- veto `will-the-new-york-knicks-win-the-2026-nba-finals` score=0.40 (same category; same price bucket mid)
 - veto `will-psg-win-the-202526-champions-league` score=0.40 (same category; same price bucket mid)
+- veto `will-the-oklahoma-city-thunder-win-the-nba-western-conference-finals` score=0.40 (same category; same price bucket mid)
 - veto `will-the-oklahoma-city-thunder-win-the-2026-nba-finals` score=0.40 (same category; same price bucket mid)
+- veto `will-arsenal-win-the-202526-champions-league` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 
