@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-nithya-raman-win-the-2026-los-angeles-mayoral-election-876`
 - **Categoría**: elections
 - **Precio YES**: 0.2000
-- **Volumen 24h**: 50682.45 USD
+- **Volumen 24h**: 50387.94 USD
 - **End date**: 2026-06-02T00:00:00Z
 
 ## Razón del veto
@@ -37,7 +37,7 @@ memoria: exact slug match (score 1.00)
 - veto `will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983` score=0.40 (same category; same price bucket mid)
 - veto `will-chong-won-oh-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
 - veto `will-oh-se-hoon-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
-- veto `will-keiko-fujimori-win-the-2026-peruvian-presidential-election` score=0.40 (same category; same price bucket mid)
+- veto `will-roberto-snchez-palomino-win-the-2026-peruvian-presidential-election` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

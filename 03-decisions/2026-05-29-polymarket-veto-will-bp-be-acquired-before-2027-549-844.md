@@ -36,8 +36,8 @@ memoria: exact slug match (score 1.00)
 - veto `will-bp-be-acquired-before-2027-549-844` score=1.00 (exact slug match)
 - veto `will-us-unemployment-reach-at-least-5pt5-in-2026` score=0.40 (same category; same price bucket low)
 - veto `nicols-maduro-released-from-custody-by-december-31-2026` score=0.40 (same category; same price bucket low)
-- veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.40 (same category; same price bucket low)
 - veto `will-trump-agree-to-unfreeze-iranian-assets-by-may-31` score=0.40 (same category; same price bucket low)
+- veto `will-trump-restart-project-freedom-by-may-31` score=0.40 (same category; same price bucket low)
 
 ## Human notes
 
