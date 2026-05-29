@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-trump-agree-to-iranian-enrichment-of-uranium-by-may-31"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Trump agree to Iranian enrichment of uranium by May 31?' (rule E1): edge no declarado por LLM (edge_type=none)"
+decision: "Veto de tesis 'Will Trump agree to Iranian enrichment of uranium by May 31?' (rule E2): edge 0.013 < mín 0.030 (p̂=0.035, implied=0.022)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, e1]
+tags: [decision, polymarket, bot, veto, e2]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-trump-agree-to-iranian-enrichment-of-uranium-by-may-31`
 - **Categoría**: other
-- **Precio YES**: 0.0300
-- **Volumen 24h**: 250778.04 USD
+- **Precio YES**: 0.0220
+- **Volumen 24h**: 128262.66 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `E1`
+**Regla aplicada**: `E2`
 
-edge no declarado por LLM (edge_type=none)
+edge 0.013 < mín 0.030 (p̂=0.035, implied=0.022)
 
 ## Human notes
 

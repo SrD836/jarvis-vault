@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-the-oklahoma-city-thunder-win-the-nba-western-conference-finals`
 - **Categoría**: sports-season
-- **Precio YES**: 0.5900
-- **Volumen 24h**: 281924.23 USD
+- **Precio YES**: 0.5800
+- **Volumen 24h**: 282412.34 USD
 - **End date**: 2026-06-16T00:00:00Z
 
 ## Razón del veto

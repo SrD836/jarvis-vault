@@ -2,7 +2,7 @@
 title: "Polymarket veto — israel-and-indonesia-normalize-relations-by-june-30-2026"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Israel and Indonesia normalize relations by June 30, 2026?' (rule E2): edge 0.007 < mín 0.030 (p̂=0.030, implied=0.037)"
+decision: "Veto de tesis 'Israel and Indonesia normalize relations by June 30, 2026?' (rule E2): edge 0.006 < mín 0.030 (p̂=0.020, implied=0.026)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `israel-and-indonesia-normalize-relations-by-june-30-2026`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.0370
-- **Volumen 24h**: 77550.34 USD
+- **Precio YES**: 0.0260
+- **Volumen 24h**: 81177.49 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `E2`
 
-edge 0.007 < mín 0.030 (p̂=0.030, implied=0.037)
+edge 0.006 < mín 0.030 (p̂=0.020, implied=0.026)
 
 ## Human notes
 

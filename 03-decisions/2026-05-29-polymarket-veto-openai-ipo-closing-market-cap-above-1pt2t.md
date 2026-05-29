@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — spacex-ipo-closing-market-cap-above-2t-649-783"
+title: "Polymarket veto — openai-ipo-closing-market-cap-above-1pt2t"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'SpaceX IPO closing market cap above $2T?' (rule P4_pre_event): pre-event slug + 580 d to resolution (>=7 threshold)"
+decision: "Veto de tesis 'OpenAI IPO closing market cap above $1.2T?' (rule P4_pre_event): pre-event slug + 580 d to resolution (>=7 threshold)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,14 +15,14 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: SpaceX IPO closing market cap above $2T?
+# Veto: OpenAI IPO closing market cap above $1.2T?
 
 ## Mercado
 
-- **Slug**: `spacex-ipo-closing-market-cap-above-2t-649-783`
+- **Slug**: `openai-ipo-closing-market-cap-above-1pt2t`
 - **Categoría**: crypto-launch
-- **Precio YES**: 0.7700
-- **Volumen 24h**: 54849.38 USD
+- **Precio YES**: 0.7400
+- **Volumen 24h**: 248105.57 USD
 - **End date**: 2027-12-31T00:00:00Z
 
 ## Razón del veto

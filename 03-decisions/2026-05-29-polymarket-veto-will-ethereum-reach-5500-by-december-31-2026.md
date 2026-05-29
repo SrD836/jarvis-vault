@@ -29,7 +29,7 @@ related:
 
 **Regla aplicada**: `P11`
 
-tradingview ETHUSDT sentiment=bullish (conf 0.80) contradicts bear thesis (price_yes=0.07)
+tradingview ETHUSDT sentiment=bullish (conf 0.80) contradicts bear thesis (price_yes=0.02)
 
 ## Human notes
 

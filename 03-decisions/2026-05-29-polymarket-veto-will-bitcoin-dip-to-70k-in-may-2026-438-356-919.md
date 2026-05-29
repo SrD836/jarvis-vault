@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-bitcoin-dip-to-70k-in-may-2026-438-356-919"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Bitcoin dip to $70,000 in May?' (rule P11): tradingview BTCUSDT sentiment=bullish (conf 0.80) contradicts bear thesis (pr..."
+decision: "Veto de tesis 'Will Bitcoin dip to $70,000 in May?' (rule E2): edge 0.027 < mín 0.030 (p̂=0.080, implied=0.053)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, p11]
+tags: [decision, polymarket, bot, veto, e2]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-bitcoin-dip-to-70k-in-may-2026-438-356-919`
 - **Categoría**: market
-- **Precio YES**: 0.0590
-- **Volumen 24h**: 204769.07 USD
+- **Precio YES**: 0.0530
+- **Volumen 24h**: 219921.53 USD
 - **End date**: 2026-06-01T04:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `P11`
+**Regla aplicada**: `E2`
 
-tradingview BTCUSDT sentiment=bullish (conf 0.80) contradicts bear thesis (price_yes=0.42)
+edge 0.027 < mín 0.030 (p̂=0.080, implied=0.053)
 
 ## Human notes
 

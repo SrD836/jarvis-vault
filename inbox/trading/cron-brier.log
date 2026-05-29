@@ -1,0 +1,22 @@
+# Brier — last 30 days (skips=include)
+resolved=2  overall_brier=0.5000
+
+### Por categoría
+
+| group | n | brier |
+|-------|---|-------|
+| other | 2 | 0.5000 |
+
+### Por horizonte
+
+| group | n | brier |
+|-------|---|-------|
+| medium | 1 | 0.0000 |
+| long | 1 | 1.0000 |
+
+### Por edge_type
+
+| group | n | brier |
+|-------|---|-------|
+| unknown | 2 | 0.5000 |
+

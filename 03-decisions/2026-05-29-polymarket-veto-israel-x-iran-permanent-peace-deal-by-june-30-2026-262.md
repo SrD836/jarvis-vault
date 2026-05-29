@@ -2,13 +2,13 @@
 title: "Polymarket veto — israel-x-iran-permanent-peace-deal-by-june-30-2026-262"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Israel x Iran permanent peace deal by June 30, 2026?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Israel x Iran permanent peace deal by June 30, 2026?' (rule V3: Trigger vago (sin fecha concreta ni evento verificable). V6: Sin catalyst discreto en los próximos 7 días.): V3: Trigger vago (sin fecha concreta ni evento verificable). V6: Sin catalyst..."
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, m1]
+tags: [decision, polymarket, bot, veto, v3: trigger vago (sin fecha concreta ni evento verificable). v6: sin catalyst discreto en los próximos 7 días.]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,23 +21,15 @@ related:
 
 - **Slug**: `israel-x-iran-permanent-peace-deal-by-june-30-2026-262`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.1450
-- **Volumen 24h**: 53732.25 USD
+- **Precio YES**: 0.1880
+- **Volumen 24h**: 81057.86 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `M1`
+**Regla aplicada**: `V3: Trigger vago (sin fecha concreta ni evento verificable). V6: Sin catalyst discreto en los próximos 7 días.`
 
-memoria: exact slug match (score 1.00)
-
-## Patterns en memoria que contribuyeron
-
-- veto `israel-x-iran-permanent-peace-deal-by-june-30-2026-262` score=1.00 (exact slug match)
-- veto `israel-x-iran-permanent-peace-deal-by-may-31-2026` score=0.70 (slug prefix match; same category)
-- veto `us-announces-new-iran-agreementceasefire-extension-by-may-30` score=0.40 (same category; same price bucket low)
-- veto `us-announces-new-iran-agreementceasefire-extension-by-may-29` score=0.40 (same category; same price bucket low)
-- veto `us-x-iran-permanent-peace-deal-by-may-31-2026-333-871-241-192-799-449-125` score=0.40 (same category; same price bucket low)
+V3: Trigger vago (sin fecha concreta ni evento verificable). V6: Sin catalyst discreto en los próximos 7 días.: La pregunta carece de un catalizador verificable y discreto en los próximos 7 días (ausencia de negociaciones activas confirmadas o eventos vinculantes), y no hay fuentes independientes que sugieran un cambio inminente. Veto V3 (vago) y V6 (sin catalyst).
 
 ## Human notes
 

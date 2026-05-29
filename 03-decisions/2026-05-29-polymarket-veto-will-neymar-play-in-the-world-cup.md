@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-neymar-play-in-the-world-cup"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Neymar play in the World Cup?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Will Neymar play in the World Cup?' (rule E2): edge 0.010 < mín 0.030 (p̂=0.820, implied=0.810)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, m1]
+tags: [decision, polymarket, bot, veto, e2]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -22,18 +22,14 @@ related:
 - **Slug**: `will-neymar-play-in-the-world-cup`
 - **Categoría**: sports-season
 - **Precio YES**: 0.8100
-- **Volumen 24h**: 88518.82 USD
+- **Volumen 24h**: 76731.18 USD
 - **End date**: 2026-07-19T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `M1`
+**Regla aplicada**: `E2`
 
-memoria: exact slug match (score 1.00)
-
-## Patterns en memoria que contribuyeron
-
-- veto `will-neymar-play-in-the-world-cup` score=1.00 (exact slug match)
+edge 0.010 < mín 0.030 (p̂=0.820, implied=0.810)
 
 ## Human notes
 

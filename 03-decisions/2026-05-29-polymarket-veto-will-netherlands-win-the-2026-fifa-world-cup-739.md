@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-netherlands-win-the-2026-fifa-world-cup-739`
 - **Categoría**: sports-season
 - **Precio YES**: 0.0390
-- **Volumen 24h**: 352668.44 USD
+- **Volumen 24h**: 352174.18 USD
 - **End date**: 2026-07-20T00:00:00Z
 
 ## Razón del veto

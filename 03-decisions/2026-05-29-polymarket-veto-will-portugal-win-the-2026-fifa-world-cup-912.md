@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-portugal-win-the-2026-fifa-world-cup-912"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Portugal win the 2026 FIFA World Cup?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Will Portugal win the 2026 FIFA World Cup?' (rule V6 Sin catalyst): V6 Sin catalyst: El evento no tiene un catalizador discreto verificable en lo..."
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, m1]
+tags: [decision, polymarket, bot, veto, v6 sin catalyst]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,23 +21,15 @@ related:
 
 - **Slug**: `will-portugal-win-the-2026-fifa-world-cup-912`
 - **Categoría**: sports-season
-- **Precio YES**: 0.1040
-- **Volumen 24h**: 678875.62 USD
+- **Precio YES**: 0.1030
+- **Volumen 24h**: 626125.79 USD
 - **End date**: 2026-07-20T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `M1`
+**Regla aplicada**: `V6 Sin catalyst`
 
-memoria: exact slug match (score 1.00)
-
-## Patterns en memoria que contribuyeron
-
-- veto `will-portugal-win-the-2026-fifa-world-cup-912` score=1.00 (exact slug match)
-- veto `will-spain-win-the-2026-fifa-world-cup-963` score=0.40 (same category; same price bucket low)
-- veto `will-england-win-the-2026-fifa-world-cup-937` score=0.40 (same category; same price bucket low)
-- veto `will-france-win-the-2026-fifa-world-cup-924` score=0.40 (same category; same price bucket low)
-- veto `will-germany-win-the-2026-fifa-world-cup-467` score=0.40 (same category; same price bucket low)
+V6 Sin catalyst: El evento no tiene un catalizador discreto verificable en los próximos 7 días. Se trata de un torneo que comienza en 2026, sin ninguna fecha concreta de partido o anuncio clave en el corto plazo.
 
 ## Human notes
 
