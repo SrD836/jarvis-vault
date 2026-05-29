@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-alexander-zverev-win-the-2026-mens-french-open`
 - **Categoría**: other
-- **Precio YES**: 0.3330
-- **Volumen 24h**: 259824.46 USD
+- **Precio YES**: 0.3360
+- **Volumen 24h**: 177406.00 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto
@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-alexander-zverev-win-the-2026-mens-french-open` score=1.00 (exact slug match)
-- veto `will-a-claude-mythos-model-be-released-by-june-30-2026-684-583` score=0.40 (same category; same price bucket mid)
-- veto `elon-musk-of-tweets-may-22-may-29-160-179` score=0.40 (same category; same price bucket mid)
-- veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.40 (same category; same price bucket mid)
 - veto `nor-rbk-bog-2026-05-29-bog` score=0.40 (same category; same price bucket mid)
+- veto `ucl-psg-ars-2026-05-30-ars` score=0.40 (same category; same price bucket mid)
+- veto `ucl-psg-ars-2026-05-30-psg` score=0.40 (same category; same price bucket mid)
+- veto `will-a-claude-mythos-model-be-released-by-june-30-2026-684-583` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

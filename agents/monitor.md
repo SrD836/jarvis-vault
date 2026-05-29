@@ -8,7 +8,7 @@ model_primary: anthropic/claude-haiku-4-5
 delegation_mode: suggest
 allow_agents: []
 runtime_children: []
-updated: 2026-05-29T14:00:02
+updated: 2026-05-29T14:30:01
 tags: [agent, jarvis, worker]
 related:
   - "[[../00-MOC]]"
@@ -56,6 +56,7 @@ Al cerrar cada turn, escribir run file a:
 con el mismo frontmatter+secciones que planner (ver [[agents/planner/runs/2026-05-16/225903-from-main]] como referencia). Incluir: task recibida íntegra, output enviado, tool_calls, spawned_children, duration_ms, tokens, aborted.
 
 _(Espacio para notas manuales de David. Cron NO sobreescribe este bloque.)_
+
 
 
 

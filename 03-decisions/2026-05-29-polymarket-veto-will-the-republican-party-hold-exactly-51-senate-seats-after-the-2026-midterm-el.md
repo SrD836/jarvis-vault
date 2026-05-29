@@ -36,8 +36,8 @@ memoria: exact slug match (score 1.00)
 - veto `will-the-republican-party-hold-exactly-51-senate-seats-after-the-2026-midterm-elections-753` score=1.00 (exact slug match)
 - veto `will-the-republican-party-hold-exactly-52-senate-seats-after-the-2026-midterm-elections-829` score=0.90 (slug prefix match; same category; same price bucket low)
 - veto `will-the-republican-party-hold-exactly-56-senate-seats-after-the-2026-midterm-elections` score=0.70 (slug prefix match; same category)
-- veto `will-the-republican-party-hold-exactly-54-senate-seats-after-the-2026-midterm-elections` score=0.70 (slug prefix match; same category)
 - veto `will-the-republican-party-hold-exactly-55-senate-seats-after-the-2026-midterm-elections` score=0.70 (slug prefix match; same category)
+- veto `will-the-republican-party-hold-exactly-54-senate-seats-after-the-2026-midterm-elections` score=0.70 (slug prefix match; same category)
 
 ## Human notes
 

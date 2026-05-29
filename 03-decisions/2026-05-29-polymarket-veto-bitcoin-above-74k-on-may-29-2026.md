@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `bitcoin-above-74k-on-may-29-2026`
 - **Categoría**: market
-- **Precio YES**: 0.1700
-- **Volumen 24h**: 117699.48 USD
+- **Precio YES**: 0.0600
+- **Volumen 24h**: 137576.72 USD
 - **End date**: 2026-05-29T16:00:00Z
 
 ## Razón del veto
@@ -36,7 +36,7 @@ memoria: exact slug match (score 1.00)
 - veto `bitcoin-above-74k-on-may-29-2026` score=1.00 (exact slug match)
 - veto `will-wti-dip-to-80-in-may-2026-734-629-766-626-157-663-256-712-397-816-113-876-832` score=0.40 (same category; same price bucket low)
 - veto `will-bitcoin-dip-to-70k-in-may-2026-438-356-919` score=0.40 (same category; same price bucket low)
-- veto `will-ethereum-reach-6500-by-december-31-2026` score=0.40 (same category; same price bucket low)
+- veto `bitcoin-all-time-high-by-december-31-2026` score=0.40 (same category; same price bucket low)
 - veto `will-ethereum-reach-5500-by-december-31-2026` score=0.40 (same category; same price bucket low)
 
 ## Human notes

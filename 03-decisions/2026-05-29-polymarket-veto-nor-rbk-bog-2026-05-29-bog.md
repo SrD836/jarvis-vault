@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `nor-rbk-bog-2026-05-29-bog`
 - **Categoría**: other
-- **Precio YES**: 0.6000
-- **Volumen 24h**: 163864.83 USD
+- **Precio YES**: 0.5900
+- **Volumen 24h**: 171647.99 USD
 - **End date**: 2026-05-29T17:00:00Z
 
 ## Razón del veto
@@ -35,9 +35,9 @@ memoria: exact slug match (score 1.00)
 
 - veto `nor-rbk-bog-2026-05-29-bog` score=1.00 (exact slug match)
 - veto `will-a-claude-mythos-model-be-released-by-june-30-2026-684-583` score=0.40 (same category; same price bucket mid)
-- veto `elon-musk-of-tweets-may-22-may-29-160-179` score=0.40 (same category; same price bucket mid)
-- veto `elon-musk-of-tweets-may-22-may-29-180-199` score=0.40 (same category; same price bucket mid)
-- veto `will-us-unemployment-reach-at-least-5pt5-in-2026` score=0.40 (same category; same price bucket mid)
+- veto `ucl-psg-ars-2026-05-30-ars` score=0.40 (same category; same price bucket mid)
+- veto `ucl-psg-ars-2026-05-30-psg` score=0.40 (same category; same price bucket mid)
+- veto `will-alexander-zverev-win-the-2026-mens-french-open` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 
