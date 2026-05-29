@@ -34,9 +34,9 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `bitcoin-all-time-high-by-december-31-2026` score=1.00 (exact slug match)
-- veto `will-bitcoin-dip-to-70k-in-may-2026-438-356-919` score=0.40 (same category; same price bucket low)
 - veto `will-crude-oil-cl-hit-high-140-by-end-of-june-828-295-574-155` score=0.40 (same category; same price bucket low)
 - veto `microstrategy-sells-any-bitcoin-by-may-31-2026` score=0.40 (same category; same price bucket low)
+- veto `will-bitcoin-dip-to-70k-in-may-2026-438-356-919` score=0.40 (same category; same price bucket low)
 - veto `will-ethereum-reach-6000-by-december-31-2026` score=0.40 (same category; same price bucket low)
 
 ## Human notes

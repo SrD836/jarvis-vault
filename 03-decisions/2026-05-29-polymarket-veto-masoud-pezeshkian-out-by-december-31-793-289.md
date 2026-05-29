@@ -34,7 +34,6 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `masoud-pezeshkian-out-by-december-31-793-289` score=1.00 (exact slug match)
-- veto `will-trump-agree-to-iranian-oil-sanction-relief-by-may-31` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

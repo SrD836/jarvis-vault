@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-the-oklahoma-city-thunder-win-the-2026-nba-finals`
 - **Categoría**: sports-season
-- **Precio YES**: 0.5800
-- **Volumen 24h**: 83582.89 USD
+- **Precio YES**: 0.5100
+- **Volumen 24h**: 103312.23 USD
 - **End date**: 2026-07-01T00:00:00Z
 
 ## Razón del veto
@@ -35,9 +35,9 @@ memoria: exact slug match (score 1.00)
 
 - veto `will-the-oklahoma-city-thunder-win-the-2026-nba-finals` score=1.00 (exact slug match)
 - veto `will-the-oklahoma-city-thunder-win-the-nba-western-conference-finals` score=0.90 (slug prefix match; same category; same price bucket mid)
+- veto `will-arsenal-win-the-202526-champions-league` score=0.40 (same category; same price bucket mid)
 - veto `will-the-san-antonio-spurs-win-the-nba-western-conference-finals` score=0.40 (same category; same price bucket mid)
 - veto `will-psg-win-the-202526-champions-league` score=0.40 (same category; same price bucket mid)
-- veto `will-arsenal-win-the-202526-champions-league` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
 

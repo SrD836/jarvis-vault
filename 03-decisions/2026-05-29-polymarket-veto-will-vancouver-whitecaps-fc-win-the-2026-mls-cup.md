@@ -21,7 +21,7 @@ related:
 
 - **Slug**: `will-vancouver-whitecaps-fc-win-the-2026-mls-cup`
 - **Categoría**: other
-- **Precio YES**: 0.1200
+- **Precio YES**: 0.1170
 - **Volumen 24h**: 366651.38 USD
 - **End date**: 2026-12-19T00:00:00Z
 

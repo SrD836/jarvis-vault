@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-casper-ruud-win-the-2026-mens-french-open`
 - **Categoría**: other
 - **Precio YES**: 0.1060
-- **Volumen 24h**: 111791.06 USD
+- **Volumen 24h**: 111985.70 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto
