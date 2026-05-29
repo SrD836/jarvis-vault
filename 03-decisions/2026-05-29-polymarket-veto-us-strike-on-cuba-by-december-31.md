@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `us-strike-on-cuba-by-december-31`
 - **Categoría**: other
-- **Precio YES**: 0.5600
-- **Volumen 24h**: 81894.92 USD
+- **Precio YES**: 0.5500
+- **Volumen 24h**: 87579.17 USD
 - **End date**: 2026-12-31T00:00:00Z
 
 ## Razón del veto

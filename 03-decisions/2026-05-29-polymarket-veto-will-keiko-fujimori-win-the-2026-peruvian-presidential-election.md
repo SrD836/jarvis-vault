@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-keiko-fujimori-win-the-2026-peruvian-presidential-election`
 - **Categoría**: elections
 - **Precio YES**: 0.7700
-- **Volumen 24h**: 81878.51 USD
+- **Volumen 24h**: 82351.81 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto
@@ -35,8 +35,8 @@ memoria: exact slug match (score 1.00)
 
 - veto `will-keiko-fujimori-win-the-2026-peruvian-presidential-election` score=1.00 (exact slug match)
 - veto `will-nithya-raman-win-the-2026-los-angeles-mayoral-election-876` score=0.40 (same category; same price bucket mid)
-- veto `will-chong-won-oh-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
 - veto `will-oh-se-hoon-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
+- veto `will-chong-won-oh-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
 - veto `will-roberto-snchez-palomino-win-the-2026-peruvian-presidential-election` score=0.40 (same category; same price bucket mid)
 
 ## Human notes

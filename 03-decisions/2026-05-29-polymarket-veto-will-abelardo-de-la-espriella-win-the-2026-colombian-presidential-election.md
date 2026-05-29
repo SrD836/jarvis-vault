@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-abelardo-de-la-espriella-win-the-2026-colombian-presidential-election`
 - **Categoría**: elections
-- **Precio YES**: 0.6600
-- **Volumen 24h**: 105097.79 USD
+- **Precio YES**: 0.6500
+- **Volumen 24h**: 110355.83 USD
 - **End date**: 2026-06-21T14:00:00Z
 
 ## Razón del veto
@@ -35,8 +35,8 @@ memoria: exact slug match (score 1.00)
 
 - veto `will-abelardo-de-la-espriella-win-the-2026-colombian-presidential-election` score=1.00 (exact slug match)
 - veto `will-nithya-raman-win-the-2026-los-angeles-mayoral-election-876` score=0.40 (same category; same price bucket mid)
-- veto `will-chong-won-oh-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
 - veto `will-oh-se-hoon-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
+- veto `will-chong-won-oh-win-the-2026-seoul-mayoral-election` score=0.40 (same category; same price bucket mid)
 - veto `will-roberto-snchez-palomino-win-the-2026-peruvian-presidential-election` score=0.40 (same category; same price bucket mid)
 
 ## Human notes
