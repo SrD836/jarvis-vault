@@ -485,30 +485,98 @@ func (c *Client) EvaluateFull(question, side string) (Verdict, []Headline, []com
 	return verdict, headlines, citesFromVerdict(verdict, headlines)
 }
 
-// citesFromVerdict turns the LLM's cited_dates into SourceCite by matching headline titles.
-// If the verdict is silent or has no cited_dates, returns nil (no attribution).
+// citesFromVerdict turns the LLM's cited_dates into SourceCite. Matching is
+// layered so real attribution survives LLM paraphrasing of headline titles:
+//  1. exact title, 2. normalized title, 3. fuzzy contains — all against the
+//     surfaced headlines (gives the indexed Source host + metadata).
+//  4. fallback: if the cited_date carries its own URL, derive the domain from
+//     it directly (the claudemax prompt mandates a URL), so a cite with a real
+//     link always yields a real domain even when no headline matched.
+//
+// Results are deduped by domain and capped at 3. Returns nil only when the
+// verdict is silent or has no usable cited_dates.
 func citesFromVerdict(v Verdict, headlines []Headline) []commontypes.SourceCite {
 	if v.Silent || len(v.CitedDates) == 0 {
 		return nil
 	}
-	titleIdx := map[string]Headline{}
+	exact := map[string]Headline{}
+	norm := map[string]Headline{}
 	for _, h := range headlines {
-		titleIdx[strings.ToLower(strings.TrimSpace(h.Title))] = h
+		exact[strings.ToLower(strings.TrimSpace(h.Title))] = h
+		if nt := normalizeTitle(h.Title); nt != "" {
+			norm[nt] = h
+		}
 	}
 	out := make([]commontypes.SourceCite, 0, len(v.CitedDates))
+	seen := map[string]bool{}
+	add := func(domain, url, title, date string) {
+		domain = strings.ToLower(strings.TrimSpace(domain))
+		if domain == "" || seen[domain] || len(out) >= 3 {
+			return
+		}
+		seen[domain] = true
+		out = append(out, commontypes.SourceCite{
+			Domain: domain, URL: url, HeadlineTitle: title, PublishedDate: date,
+		})
+	}
 	for _, cd := range v.CitedDates {
-		key := strings.ToLower(strings.TrimSpace(cd.HeadlineTitle))
-		if h, ok := titleIdx[key]; ok {
-			out = append(out, commontypes.SourceCite{
-				Domain:        h.Source,
-				URL:           h.URL,
-				HeadlineTitle: h.Title,
-				PublishedDate: h.PublishedDate,
-			})
-			if len(out) >= 3 {
-				break
-			}
+		title := strings.TrimSpace(cd.HeadlineTitle)
+		var h Headline
+		matched := false
+		if m, ok := exact[strings.ToLower(title)]; ok {
+			h, matched = m, true
+		} else if m, ok := norm[normalizeTitle(title)]; ok && normalizeTitle(title) != "" {
+			h, matched = m, true
+		} else if m, ok := fuzzyHeadline(title, headlines); ok {
+			h, matched = m, true
+		}
+		if matched {
+			add(h.Source, h.URL, h.Title, h.PublishedDate)
+			continue
+		}
+		// Fallback: trust the cite's own URL when no headline matched.
+		if host := extractHostname(cd.URL); host != "" {
+			add(host, cd.URL, cd.HeadlineTitle, cd.Date)
 		}
 	}
 	return out
+}
+
+// normalizeTitle lowercases, collapses every non-alphanumeric run to a single
+// space, and trims — so "Trump's deal, signed!" and "trump s deal signed"
+// collide. Returns "" for titles with no alphanumeric content.
+func normalizeTitle(s string) string {
+	s = strings.ToLower(strings.TrimSpace(s))
+	var b strings.Builder
+	prevSpace := true // leading-space suppression
+	for _, r := range s {
+		if (r >= 'a' && r <= 'z') || (r >= '0' && r <= '9') {
+			b.WriteRune(r)
+			prevSpace = false
+		} else if !prevSpace {
+			b.WriteByte(' ')
+			prevSpace = true
+		}
+	}
+	return strings.TrimSpace(b.String())
+}
+
+// fuzzyHeadline returns the first headline whose normalized title contains (or
+// is contained by) the normalized cited title, requiring >=20 normalized chars
+// of overlap to avoid spurious short-substring matches.
+func fuzzyHeadline(citedTitle string, headlines []Headline) (Headline, bool) {
+	ct := normalizeTitle(citedTitle)
+	if len(ct) < 20 {
+		return Headline{}, false
+	}
+	for _, h := range headlines {
+		ht := normalizeTitle(h.Title)
+		if len(ht) < 20 {
+			continue
+		}
+		if strings.Contains(ht, ct) || strings.Contains(ct, ht) {
+			return h, true
+		}
+	}
+	return Headline{}, false
 }

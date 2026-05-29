@@ -1,8 +1,12 @@
-// One-shot: close every position in active.jsonl regardless of horizon / PnL.
+// One-shot: close positions in active.jsonl. By default closes everything
+// regardless of horizon / PnL; with --keep-horizons (CSV, e.g. "short") it
+// closes only the positions whose horizon is NOT listed, keeping the rest open.
 //
 // v7 safety halt: before flipping the bot into shadow mode we purge all open
-// positions. Defaults to --dry-run; pass --apply to mutate. Always writes
-// .bak-YYYY-MM-DD next to active.jsonl/portfolio.json before mutating.
+// positions. v8 short-only: --keep-horizons short closes the medium/long book
+// while leaving short positions to resolve (calibration-velocity focus).
+// Defaults to --dry-run; pass --apply to mutate. Always writes .bak-YYYY-MM-DD
+// next to active.jsonl/portfolio.json before mutating.
 //
 // Differs from force_close_horizon_excess (deprecated, do NOT cron) which
 // selected the "worst" N positions per horizon bucket — that command violates
@@ -16,6 +20,7 @@ import (
 	"math"
 	"os"
 	"path/filepath"
+	"strings"
 	"time"
 
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/exit_monitor/internal/closer"
@@ -37,6 +42,7 @@ func main() {
 	dryRun := flag.Bool("dry-run", true, "print the plan without mutating (default)")
 	apply := flag.Bool("apply", false, "execute the plan; required together with --dry-run=false")
 	reason := flag.String("reason", "manual_reset_v7", "exit_reason written to closed.jsonl")
+	keepHorizons := flag.String("keep-horizons", "", "CSV of horizons to KEEP open (e.g. \"short\"); empty = close everything")
 	flag.Parse()
 	if *apply {
 		*dryRun = false
@@ -44,17 +50,27 @@ func main() {
 
 	log.SetFlags(log.LstdFlags | log.Lshortfile)
 
+	keep := map[string]bool{}
+	for _, h := range strings.Split(*keepHorizons, ",") {
+		if h = strings.ToLower(strings.TrimSpace(h)); h != "" {
+			keep[h] = true
+		}
+	}
+
 	actives := closer.ReadActive()
 	if len(actives) == 0 {
 		log.Println("force_close_all: no active positions, nothing to do")
 		return
 	}
 
+	toClose, kept := splitKeep(actives, keep)
+
 	var rows []scored
-	for _, a := range actives {
+	for _, a := range toClose {
 		quote, err := polyclient.FetchQuote(a.MarketID)
 		if err != nil {
-			log.Printf("force_close_all: quote error for %s (%s) — skipping: %v", a.MarketID, a.Slug, err)
+			log.Printf("force_close_all: quote error for %s (%s) — keeping open (not closing on error): %v", a.MarketID, a.Slug, err)
+			kept = append(kept, a)
 			continue
 		}
 		price, src := polyclient.PriceForExecution(quote, a.Side, "sell")
@@ -71,7 +87,11 @@ func main() {
 		rows = append(rows, scored{a, price, pnlUSD, pnlPct, quote, src})
 	}
 
-	fmt.Println("\nplan: close ALL positions")
+	if len(keep) > 0 {
+		fmt.Printf("\nplan: close positions NOT in keep-horizons=%q (%d kept open)\n", *keepHorizons, len(kept))
+	} else {
+		fmt.Println("\nplan: close ALL positions")
+	}
 	fmt.Println("slug | horizon | entry → exit | pnl_usd | pnl_pct | price_src")
 	total := 0.0
 	for _, s := range rows {
@@ -143,7 +163,7 @@ func main() {
 
 	closer.AppendClosed(closedTrades)
 	closer.UpdatePortfolio(closedTrades)
-	closer.RewriteActive(nil)
+	closer.RewriteActive(kept)
 
 	memoryPath := os.Getenv("EXIT_MEMORY_PATH")
 	if memoryPath == "" {
@@ -152,8 +172,8 @@ func main() {
 	for _, ct := range closedTrades {
 		loglosses.LogClose(closer.DecisionsDir, memoryPath, ct)
 	}
-	log.Printf("force_close_all: closed %d positions, 0 remain (reason=%s, logged to %s)",
-		len(closedTrades), *reason, memoryPath)
+	log.Printf("force_close_all: closed %d positions, %d remain (reason=%s, logged to %s)",
+		len(closedTrades), len(kept), *reason, memoryPath)
 }
 
 func computeDaysOpen(entryTS string, now time.Time) float64 {
@@ -169,4 +189,18 @@ func trunc(s string, n int) string {
 		return s
 	}
 	return s[:n-3] + "..."
+}
+
+// splitKeep partitions actives into those to close (horizon NOT in keep) and
+// those to keep open (horizon in keep). An empty keep set sends everything to
+// toClose — the original close-all behavior.
+func splitKeep(actives []types.ActiveTrade, keep map[string]bool) (toClose, kept []types.ActiveTrade) {
+	for _, a := range actives {
+		if keep[strings.ToLower(strings.TrimSpace(a.Horizon))] {
+			kept = append(kept, a)
+		} else {
+			toClose = append(toClose, a)
+		}
+	}
+	return
 }

@@ -11,6 +11,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/calibration"
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/config"
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/decisionlog"
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/predictions"
@@ -74,6 +75,15 @@ func Run() error {
 	log.Printf("Brain v3: config loaded mode=%s v2_under=%dh horizon=[short<=%dd, medium<=%dd, long>%dd] quota=%.0f/%.0f/%.0f",
 		cfg.Mode, cfg.V2VetoUnderHours, cfg.HorizonShortMaxDays, cfg.HorizonMediumMaxDays, cfg.HorizonMediumMaxDays,
 		cfg.HorizonQuotaShort*100, cfg.HorizonQuotaMedium*100, cfg.HorizonQuotaLong*100)
+
+	// v8: adaptive layer written daily by analytics/daily_calibration.py. Absent
+	// file → zero value → no edge override here (and shrink=1.0 in the executor).
+	calib := calibration.Load()
+	minEdge := cfg.MinEdgePoints
+	if calib.MinEdgePointsOverride > minEdge {
+		minEdge = calib.MinEdgePointsOverride
+		log.Printf("E2: calibration raises min_edge_points %.3f -> %.3f (%s)", cfg.MinEdgePoints, minEdge, calib.Rationale)
+	}
 
 	if err := ensureDir(approvedPath); err != nil {
 		return fmt.Errorf("ensure output dir: %w", err)
@@ -364,13 +374,14 @@ func Run() error {
 			}
 		}
 
-		// N1/N2: news research. Rate-limited: only candidates in the "news matters"
-		// price band (0.20-0.80) and capped per cycle to keep cron tick under
-		// budget. Outside that band the price is too lopsided for a single
-		// headline to swing the trade enough to matter.
+		// N1/N2: news research. Rate-limited: candidates from the price floor up to
+		// 0.80, capped per cycle to keep the cron tick under budget. v8 widened the
+		// lower bound from 0.20 to cfg.PriceFloor so the longshots we actually trade
+		// (<0.20) also get news attribution; above 0.80 the YES is too lopsided for
+		// a single headline to matter. (Dormant while BRAIN_DISABLE_RESEARCH is set.)
 		var researchSummary string
 		var sourceCites []commontypes.SourceCite
-		if researcher != nil && c.CurrentPriceYes >= 0.20 && c.CurrentPriceYes <= 0.80 && researchCalls < maxResearchPerCycle {
+		if researcher != nil && c.CurrentPriceYes >= cfg.PriceFloor && c.CurrentPriceYes <= 0.80 && researchCalls < maxResearchPerCycle {
 			researchCalls++
 			verdict, _, cites := researcher.EvaluateFull(c.Question, "yes")
 			sourceCites = cites
@@ -460,10 +471,10 @@ func Run() error {
 		// E2: edge below configured minimum (default 5pp). Even if the LLM
 		// declared an edge type, we require the magnitude to clear fees + noise.
 		edgePts := math.Abs(llmResult.EstimatedProb - c.CurrentPriceYes)
-		if edgePts < cfg.MinEdgePoints {
+		if edgePts < minEdge {
 			vr := types.VetoResult{
 				CandidateID: c.ID, Slug: c.Slug, Blocked: true,
-				Reason:   fmt.Sprintf("edge %.3f < mín %.3f (p̂=%.3f, implied=%.3f)", edgePts, cfg.MinEdgePoints, llmResult.EstimatedProb, c.CurrentPriceYes),
+				Reason:   fmt.Sprintf("edge %.3f < mín %.3f (p̂=%.3f, implied=%.3f)", edgePts, minEdge, llmResult.EstimatedProb, c.CurrentPriceYes),
 				VetoedBy: ruleEdgeBelowMin,
 			}
 			blocked = append(blocked, vr)

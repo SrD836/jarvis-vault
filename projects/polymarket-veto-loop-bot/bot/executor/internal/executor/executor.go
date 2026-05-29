@@ -11,6 +11,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/calibration"
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/config"
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/decisionlog"
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/predictions"
@@ -51,6 +52,15 @@ func Run() {
 		cfg.MinEdgePoints, cfg.MaxOpenPositions, cfg.MaxSameCategory, cfg.MaxNewTradesPerDay,
 		cfg.HorizonQuotaShort*100, cfg.HorizonQuotaMedium*100, cfg.HorizonQuotaLong*100)
 
+	// v8: Brier/expectancy calibration shrink (analytics/daily_calibration.py).
+	// Absent file → shrink 1.0 (identical to raw Kelly). Applied to the model
+	// probability before sizing so overconfident edges size down. Side and exit
+	// target keep the raw estimate (shrink never crosses the implied price).
+	calib := calibration.Load()
+	if s := calib.Shrink(); s < 1.0 {
+		log.Printf("executor v8: calibration kelly_shrink=%.3f (%s)", s, calib.Rationale)
+	}
+
 	portfolio := loadOrCreatePortfolio(cfg)
 	approved := readApproved()
 	if len(approved) == 0 {
@@ -65,7 +75,7 @@ func Run() {
 		nowStr := time.Now().UTC().Format(time.RFC3339)
 		predPath := envOr("EXECUTOR_PREDICTIONS_PATH", predictions.DefaultPath)
 		for _, a := range approved {
-			tradeSize := cfg.ComputeTradeSize(portfolio.Bankroll, a.EstimatedProb, a.CurrentPriceYes)
+			tradeSize := cfg.ComputeTradeSize(portfolio.Bankroll, calib.ShrinkProb(a.EstimatedProb, a.CurrentPriceYes), a.CurrentPriceYes)
 			side := "buy_yes"
 			if a.EstimatedProb < a.CurrentPriceYes {
 				side = "buy_no"
@@ -163,7 +173,7 @@ func Run() {
 		// v7 sizing: Kelly fractional needs the LLM's estimated probability and
 		// the current price. If the LLM did not declare a real edge or Kelly
 		// returns 0 (no edge after fees), we reject without consuming quota.
-		tradeSize := cfg.ComputeTradeSize(portfolio.Bankroll, a.EstimatedProb, a.CurrentPriceYes)
+		tradeSize := cfg.ComputeTradeSize(portfolio.Bankroll, calib.ShrinkProb(a.EstimatedProb, a.CurrentPriceYes), a.CurrentPriceYes)
 		if tradeSize <= 0 {
 			rejects = append(rejects, types.Rejection{
 				Timestamp: nowStr, MarketID: a.CandidateID,
