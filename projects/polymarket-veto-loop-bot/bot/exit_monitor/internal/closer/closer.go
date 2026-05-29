@@ -148,6 +148,9 @@ func AppendSourceStats(ct types.ClosedTrade) error {
 	}
 	defer f.Close()
 	enc := json.NewEncoder(f)
+	// One row per distinct domain per trade: a domain cited several times in a
+	// single trade must count as one trade, not N, or per-domain win-rates inflate.
+	seen := map[string]bool{}
 	for _, s := range ct.SourcesUsed {
 		// v7 P2: synthetic cites (no resolvable URL) would all collapse the
 		// blacklist to "claudemax-websearch" and disable domain-level scoring.
@@ -158,6 +161,10 @@ func AppendSourceStats(ct types.ClosedTrade) error {
 		if dom == "" || dom == "legacy" || dom == "claudemax-websearch" {
 			continue
 		}
+		if seen[dom] {
+			continue
+		}
+		seen[dom] = true
 		_ = enc.Encode(map[string]interface{}{
 			"ts":        ct.ExitTime,
 			"trade_id":  ct.ID,
