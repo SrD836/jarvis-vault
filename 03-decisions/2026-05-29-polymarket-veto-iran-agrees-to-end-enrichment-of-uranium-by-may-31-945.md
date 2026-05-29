@@ -2,7 +2,7 @@
 title: "Polymarket veto — iran-agrees-to-end-enrichment-of-uranium-by-may-31-945"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Iran agrees to end enrichment of uranium by May 31?' (rule P9): P9: geopolitics pump cluster (price 0.15, 1d)"
+decision: "Veto de tesis 'Iran agrees to end enrichment of uranium by May 31?' (rule P9): P9: geopolitics pump cluster (price 0.16, 1d)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `iran-agrees-to-end-enrichment-of-uranium-by-may-31-945`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.1490
-- **Volumen 24h**: 157980.36 USD
+- **Precio YES**: 0.1580
+- **Volumen 24h**: 177466.62 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `P9`
 
-P9: geopolitics pump cluster (price 0.15, 1d)
+P9: geopolitics pump cluster (price 0.16, 1d)
 
 ## Human notes
 

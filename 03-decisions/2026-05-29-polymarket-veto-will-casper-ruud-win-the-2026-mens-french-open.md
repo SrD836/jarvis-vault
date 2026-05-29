@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-casper-ruud-win-the-2026-mens-french-open"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Casper Ruud win the 2026 Men's French Open?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Will Casper Ruud win the 2026 Men's French Open?' (rule E1): edge no declarado por LLM (edge_type=none)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, m1]
+tags: [decision, polymarket, bot, veto, e1]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,23 +21,15 @@ related:
 
 - **Slug**: `will-casper-ruud-win-the-2026-mens-french-open`
 - **Categoría**: other
-- **Precio YES**: 0.1040
-- **Volumen 24h**: 92514.36 USD
+- **Precio YES**: 0.0880
+- **Volumen 24h**: 99587.42 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `M1`
+**Regla aplicada**: `E1`
 
-memoria: exact slug match (score 1.00)
-
-## Patterns en memoria que contribuyeron
-
-- veto `will-casper-ruud-win-the-2026-mens-french-open` score=1.00 (exact slug match)
-- veto `another-us-strike-on-venezuela-by-december-31` score=0.40 (same category; same price bucket low)
-- veto `will-trump-agree-to-unfreeze-iranian-assets-by-may-31` score=0.40 (same category; same price bucket low)
-- veto `will-trump-restart-project-freedom-by-may-31` score=0.40 (same category; same price bucket low)
-- veto `will-francisco-cerundolo-win-the-2026-mens-french-open` score=0.40 (same category; same price bucket low)
+edge no declarado por LLM (edge_type=none)
 
 ## Human notes
 

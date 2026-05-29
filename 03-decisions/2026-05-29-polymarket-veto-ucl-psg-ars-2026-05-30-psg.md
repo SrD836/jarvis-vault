@@ -2,13 +2,13 @@
 title: "Polymarket veto — ucl-psg-ars-2026-05-30-psg"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Paris Saint-Germain FC win on 2026-05-30?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Will Paris Saint-Germain FC win on 2026-05-30?' (rule E1): edge no declarado por LLM (edge_type=none)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, m1]
+tags: [decision, polymarket, bot, veto, e1]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,23 +21,15 @@ related:
 
 - **Slug**: `ucl-psg-ars-2026-05-30-psg`
 - **Categoría**: other
-- **Precio YES**: 0.4200
-- **Volumen 24h**: 238706.83 USD
+- **Precio YES**: 0.4100
+- **Volumen 24h**: 493641.51 USD
 - **End date**: 2026-05-30T16:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `M1`
+**Regla aplicada**: `E1`
 
-memoria: exact slug match (score 1.00)
-
-## Patterns en memoria que contribuyeron
-
-- veto `ucl-psg-ars-2026-05-30-psg` score=1.00 (exact slug match)
-- veto `ucl-psg-ars-2026-05-30-ars` score=0.90 (slug prefix match; same category; same price bucket mid)
-- veto `nor-rbk-bog-2026-05-29-bog` score=0.40 (same category; same price bucket mid)
-- veto `will-a-claude-mythos-model-be-released-by-june-30-2026-684-583` score=0.40 (same category; same price bucket mid)
-- veto `will-alexander-zverev-win-the-2026-mens-french-open` score=0.40 (same category; same price bucket mid)
+edge no declarado por LLM (edge_type=none)
 
 ## Human notes
 

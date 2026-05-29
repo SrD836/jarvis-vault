@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-alex-de-minaur-win-the-2026-mens-french-open"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Alex De Minaur win the 2026 Men's French Open?' (rule V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.): V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 día..."
+decision: "Veto de tesis 'Will Alex De Minaur win the 2026 Men's French Open?' (rule E1): edge no declarado por LLM (edge_type=none)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, v6 sin catalyst: no hay evento discreto identificable en los próximos 7 días.]
+tags: [decision, polymarket, bot, veto, e1]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-alex-de-minaur-win-the-2026-mens-french-open`
 - **Categoría**: other
-- **Precio YES**: 0.0280
-- **Volumen 24h**: 137685.87 USD
+- **Precio YES**: 0.0530
+- **Volumen 24h**: 149814.55 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.`
+**Regla aplicada**: `E1`
 
-V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.: No se puede verificar un evento discreto o información concreta que dé una ventaja informacional para un evento tan lejano (junio 2026). El mercado está a más de 12 meses y carece de un catalizador verificable en los próximos 7 días.
+edge no declarado por LLM (edge_type=none)
 
 ## Human notes
 

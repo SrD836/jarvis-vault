@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — nato-x-russia-military-clash-by-june-30-2026"
+title: "Polymarket veto — will-trump-agree-to-iranian-enrichment-of-uranium-by-may-31"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'NATO x Russia military clash by June 30, 2026?' (rule E1): edge no declarado por LLM (edge_type=none)"
+decision: "Veto de tesis 'Will Trump agree to Iranian enrichment of uranium by May 31?' (rule E1): edge no declarado por LLM (edge_type=none)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: NATO x Russia military clash by June 30, 2026?
+# Veto: Will Trump agree to Iranian enrichment of uranium by May 31?
 
 ## Mercado
 
-- **Slug**: `nato-x-russia-military-clash-by-june-30-2026`
-- **Categoría**: geopolitics
-- **Precio YES**: 0.0560
-- **Volumen 24h**: 99373.10 USD
-- **End date**: 2026-06-30T00:00:00Z
+- **Slug**: `will-trump-agree-to-iranian-enrichment-of-uranium-by-may-31`
+- **Categoría**: other
+- **Precio YES**: 0.0300
+- **Volumen 24h**: 250778.04 USD
+- **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 

@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-russia-enter-kramatorsk-by-june-30-821-192"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Russia enter Kramatorsk by June 30?' (rule E2): edge 0.002 < mín 0.030 (p̂=0.030, implied=0.028)"
+decision: "Veto de tesis 'Will Russia enter Kramatorsk by June 30?' (rule E2): edge 0.022 < mín 0.030 (p̂=0.050, implied=0.028)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -29,7 +29,7 @@ related:
 
 **Regla aplicada**: `E2`
 
-edge 0.002 < mín 0.030 (p̂=0.030, implied=0.028)
+edge 0.022 < mín 0.030 (p̂=0.050, implied=0.028)
 
 ## Human notes
 

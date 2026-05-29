@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-roberto-snchez-palomino-win-the-2026-peruvian-presidential-election"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Roberto Sánchez Palomino win the 2026 Peruvian presidential election?' (rule M1): memoria: exact slug match (score 1.00)"
+decision: "Veto de tesis 'Will Roberto Sánchez Palomino win the 2026 Peruvian presidential election?' (rule E1): edge no declarado por LLM (edge_type=none)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, m1]
+tags: [decision, polymarket, bot, veto, e1]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,23 +21,15 @@ related:
 
 - **Slug**: `will-roberto-snchez-palomino-win-the-2026-peruvian-presidential-election`
 - **Categoría**: elections
-- **Precio YES**: 0.1990
-- **Volumen 24h**: 145816.91 USD
+- **Precio YES**: 0.2130
+- **Volumen 24h**: 145417.87 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `M1`
+**Regla aplicada**: `E1`
 
-memoria: exact slug match (score 1.00)
-
-## Patterns en memoria que contribuyeron
-
-- veto `will-roberto-snchez-palomino-win-the-2026-peruvian-presidential-election` score=1.00 (exact slug match)
-- veto `will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983` score=0.40 (same category; same price bucket low)
-- veto `will-renan-santos-win-the-2026-brazilian-presidential-election` score=0.40 (same category; same price bucket low)
-- veto `will-the-republican-party-hold-exactly-51-senate-seats-after-the-2026-midterm-elections-753` score=0.40 (same category; same price bucket low)
-- veto `will-the-republican-party-hold-exactly-52-senate-seats-after-the-2026-midterm-elections-829` score=0.40 (same category; same price bucket low)
+edge no declarado por LLM (edge_type=none)
 
 ## Human notes
 

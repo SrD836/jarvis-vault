@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-brazil-win-the-2026-fifa-world-cup-183`
 - **Categoría**: sports-season
 - **Precio YES**: 0.0940
-- **Volumen 24h**: 240605.56 USD
+- **Volumen 24h**: 222095.63 USD
 - **End date**: 2026-07-20T00:00:00Z
 
 ## Razón del veto

@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-steve-hershey-win-the-2026-maryland-governor-republican-primary-election"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Steve Hershey win the 2026 Maryland Governor Republican primary election?' (rule V3): V3: V3 Trigger vago: El evento es una primaria para gobernador en 2026, sin f..."
+decision: "Veto de tesis 'Will Steve Hershey win the 2026 Maryland Governor Republican primary election?' (rule E1): edge no declarado por LLM (edge_type=none)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, v3]
+tags: [decision, polymarket, bot, veto, e1]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -27,9 +27,9 @@ related:
 
 ## Razón del veto
 
-**Regla aplicada**: `V3`
+**Regla aplicada**: `E1`
 
-V3: V3 Trigger vago: El evento es una primaria para gobernador en 2026, sin fecha concreta de primaria (más allá del end date del market) y sin un evento verificable inminente que permita evaluar información asimétrica. El precio implícito (0.02) es extremadamente bajo y no hay suficiente información pública reciente para estimar una ventaja.
+edge no declarado por LLM (edge_type=none)
 
 ## Human notes
 

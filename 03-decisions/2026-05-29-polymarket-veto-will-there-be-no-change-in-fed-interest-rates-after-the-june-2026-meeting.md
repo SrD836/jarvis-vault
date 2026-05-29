@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-there-be-no-change-in-fed-interest-rates-after-the-june-2026-meeting"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will there be no change in Fed interest rates after the June 2026 meeting?' (rule E2): edge 0.017 < mín 0.030 (p̂=0.960, implied=0.977)"
+decision: "Veto de tesis 'Will there be no change in Fed interest rates after the June 2026 meeting?' (rule E1): edge no declarado por LLM (edge_type=none)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, e2]
+tags: [decision, polymarket, bot, veto, e1]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-there-be-no-change-in-fed-interest-rates-after-the-june-2026-meeting`
 - **Categoría**: other
-- **Precio YES**: 0.9770
-- **Volumen 24h**: 196008.36 USD
+- **Precio YES**: 0.9780
+- **Volumen 24h**: 196113.89 USD
 - **End date**: 2026-06-17T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `E2`
+**Regla aplicada**: `E1`
 
-edge 0.017 < mín 0.030 (p̂=0.960, implied=0.977)
+edge no declarado por LLM (edge_type=none)
 
 ## Human notes
 

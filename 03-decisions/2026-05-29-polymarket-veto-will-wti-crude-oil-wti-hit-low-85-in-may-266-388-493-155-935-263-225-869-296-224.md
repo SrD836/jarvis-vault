@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-wti-crude-oil-wti-hit-low-85-in-may-266-388-493-155-935-263-225-869-296-224-342-748-678"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will WTI Crude Oil (WTI) hit (LOW) $85 in May?' (rule E2): edge 0.010 < mín 0.030 (p̂=0.550, implied=0.540)"
+decision: "Veto de tesis 'Will WTI Crude Oil (WTI) hit (LOW) $85 in May?' (rule P6): P6 market: CL=F spot $87.70 already > target $85.00 but yes=0.31 (confused book)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, e2]
+tags: [decision, polymarket, bot, veto, p6]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-wti-crude-oil-wti-hit-low-85-in-may-266-388-493-155-935-263-225-869-296-224-342-748-678`
 - **Categoría**: market
-- **Precio YES**: 0.5400
-- **Volumen 24h**: 206047.42 USD
+- **Precio YES**: 0.3100
+- **Volumen 24h**: 229282.68 USD
 - **End date**: 2026-06-01T03:59:59.999Z
 
 ## Razón del veto
 
-**Regla aplicada**: `E2`
+**Regla aplicada**: `P6`
 
-edge 0.010 < mín 0.030 (p̂=0.550, implied=0.540)
+P6 market: CL=F spot $87.70 already > target $85.00 but yes=0.31 (confused book)
 
 ## Human notes
 

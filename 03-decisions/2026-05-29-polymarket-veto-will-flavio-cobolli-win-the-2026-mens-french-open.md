@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-flavio-cobolli-win-the-2026-mens-french-open"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Flavio Cobolli win the 2026 Men's French Open?' (rule V6 Sin catalyst): V6 Sin catalyst: V6 Sin catalyst: no hay evento discreto identificable en los..."
+decision: "Veto de tesis 'Will Flavio Cobolli win the 2026 Men's French Open?' (rule E1): edge no declarado por LLM (edge_type=none)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, v6 sin catalyst]
+tags: [decision, polymarket, bot, veto, e1]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-flavio-cobolli-win-the-2026-mens-french-open`
 - **Categoría**: other
-- **Precio YES**: 0.0370
-- **Volumen 24h**: 57620.84 USD
+- **Precio YES**: 0.0400
+- **Volumen 24h**: 70221.26 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `V6 Sin catalyst`
+**Regla aplicada**: `E1`
 
-V6 Sin catalyst: V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días que pueda modificar significativamente la probabilidad de que Cobolli gane Roland Garros 2026. El torneo está a más de un año y no hay partidos clasificatorios ni anuncios relevantes en el horizonte inmediato.
+edge no declarado por LLM (edge_type=none)
 
 ## Human notes
 

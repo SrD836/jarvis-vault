@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-argentina-win-the-2026-fifa-world-cup-245"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Argentina win the 2026 FIFA World Cup?' (rule V6 Sin catalyst): V6 Sin catalyst: V6 Sin catalyst: no hay evento discreto identificable en los..."
+decision: "Veto de tesis 'Will Argentina win the 2026 FIFA World Cup?' (rule E2): edge 0.004 < mín 0.030 (p̂=0.090, implied=0.086)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, v6 sin catalyst]
+tags: [decision, polymarket, bot, veto, e2]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -22,14 +22,14 @@ related:
 - **Slug**: `will-argentina-win-the-2026-fifa-world-cup-245`
 - **Categoría**: sports-season
 - **Precio YES**: 0.0860
-- **Volumen 24h**: 264270.15 USD
+- **Volumen 24h**: 242721.48 USD
 - **End date**: 2026-07-20T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `V6 Sin catalyst`
+**Regla aplicada**: `E2`
 
-V6 Sin catalyst: V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días. La Copa del Mundo 2026 comienza en junio de 2026, y el mercado se basa en un resultado futuro lejano sin un catalizador verificable inminente.
+edge 0.004 < mín 0.030 (p̂=0.090, implied=0.086)
 
 ## Human notes
 

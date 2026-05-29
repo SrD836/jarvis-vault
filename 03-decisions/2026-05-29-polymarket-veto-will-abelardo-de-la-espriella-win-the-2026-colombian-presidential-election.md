@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-abelardo-de-la-espriella-win-the-2026-colombian-presidential-election"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Abelardo de la Espriella  win the 2026 Colombian presidential election?' (rule V3 Trigger vago: sin fecha concreta o sin evento verificable.): V3 Trigger vago: sin fecha concreta o sin evento verificable.: Veto V3: Trigg..."
+decision: "Veto de tesis 'Will Abelardo de la Espriella  win the 2026 Colombian presidential election?' (rule E1): edge no declarado por LLM (edge_type=none)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, v3 trigger vago: sin fecha concreta o sin evento verificable.]
+tags: [decision, polymarket, bot, veto, e1]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -22,14 +22,14 @@ related:
 - **Slug**: `will-abelardo-de-la-espriella-win-the-2026-colombian-presidential-election`
 - **Categoría**: elections
 - **Precio YES**: 0.6400
-- **Volumen 24h**: 101427.63 USD
+- **Volumen 24h**: 95277.77 USD
 - **End date**: 2026-06-21T14:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `V3 Trigger vago: sin fecha concreta o sin evento verificable.`
+**Regla aplicada**: `E1`
 
-V3 Trigger vago: sin fecha concreta o sin evento verificable.: Veto V3: Trigger vago. La pregunta no especifica una fecha concreta para 'ganar' (primera vuelta, segunda vuelta, certificación oficial). Además, no hay un evento discreto verificable en el corto plazo.
+edge no declarado por LLM (edge_type=none)
 
 ## Human notes
 

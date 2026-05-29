@@ -22,7 +22,7 @@ related:
 - **Slug**: `kharg-island-no-longer-under-iranian-control-by-june-30-561-854`
 - **Categoría**: other
 - **Precio YES**: 0.0500
-- **Volumen 24h**: 56972.22 USD
+- **Volumen 24h**: 57038.96 USD
 - **End date**: 2026-06-30T23:55:00Z
 
 ## Razón del veto

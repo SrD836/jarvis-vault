@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-francisco-cerundolo-win-the-2026-mens-french-open"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Francisco Cerundolo win the 2026 Men's French Open?' (rule V3 Trigger vago: sin fecha concreta o sin evento verificable.): V3 Trigger vago: sin fecha concreta o sin evento verificable.: V3 Trigger vag..."
+decision: "Veto de tesis 'Will Francisco Cerundolo win the 2026 Men's French Open?' (rule E1): edge no declarado por LLM (edge_type=none)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, v3 trigger vago: sin fecha concreta o sin evento verificable.]
+tags: [decision, polymarket, bot, veto, e1]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -22,14 +22,14 @@ related:
 - **Slug**: `will-francisco-cerundolo-win-the-2026-mens-french-open`
 - **Categoría**: other
 - **Precio YES**: 0.0600
-- **Volumen 24h**: 88790.46 USD
+- **Volumen 24h**: 96660.30 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `V3 Trigger vago: sin fecha concreta o sin evento verificable.`
+**Regla aplicada**: `E1`
 
-V3 Trigger vago: sin fecha concreta o sin evento verificable.: V3 Trigger vago: La pregunta no especifica un evento concreto y verificable en el corto plazo. Cerundolo ganar un Grand Slam en 2026 es una predicción lejana sin catalizador discreto en los próximos 7 días.
+edge no declarado por LLM (edge_type=none)
 
 ## Human notes
 

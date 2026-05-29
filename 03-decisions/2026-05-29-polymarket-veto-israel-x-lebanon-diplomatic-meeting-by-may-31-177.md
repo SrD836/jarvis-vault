@@ -1,8 +1,8 @@
 ---
-title: "Polymarket veto — nato-x-russia-military-clash-by-june-30-2026"
+title: "Polymarket veto — israel-x-lebanon-diplomatic-meeting-by-may-31-177"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'NATO x Russia military clash by June 30, 2026?' (rule E1): edge no declarado por LLM (edge_type=none)"
+decision: "Veto de tesis 'Israel x Lebanon diplomatic meeting by May 31?' (rule E1): edge no declarado por LLM (edge_type=none)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -15,15 +15,15 @@ related:
   - "[[projects/polymarket-veto-loop-bot]]"
 ---
 
-# Veto: NATO x Russia military clash by June 30, 2026?
+# Veto: Israel x Lebanon diplomatic meeting by May 31?
 
 ## Mercado
 
-- **Slug**: `nato-x-russia-military-clash-by-june-30-2026`
+- **Slug**: `israel-x-lebanon-diplomatic-meeting-by-may-31-177`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.0560
-- **Volumen 24h**: 99373.10 USD
-- **End date**: 2026-06-30T00:00:00Z
+- **Precio YES**: 0.9000
+- **Volumen 24h**: 52401.98 USD
+- **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 

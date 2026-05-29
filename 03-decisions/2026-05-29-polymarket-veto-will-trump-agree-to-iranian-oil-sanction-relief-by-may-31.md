@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-trump-agree-to-iranian-oil-sanction-relief-by-may-31"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Trump agree to Iranian oil sanction relief by May 31?' (rule E2): edge 0.020 < mín 0.030 (p̂=0.280, implied=0.300)"
+decision: "Veto de tesis 'Will Trump agree to Iranian oil sanction relief by May 31?' (rule E1): edge no declarado por LLM (edge_type=none)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, e2]
+tags: [decision, polymarket, bot, veto, e1]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-trump-agree-to-iranian-oil-sanction-relief-by-may-31`
 - **Categoría**: executive-action
-- **Precio YES**: 0.3000
-- **Volumen 24h**: 67516.70 USD
+- **Precio YES**: 0.2300
+- **Volumen 24h**: 74461.10 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `E2`
+**Regla aplicada**: `E1`
 
-edge 0.020 < mín 0.030 (p̂=0.280, implied=0.300)
+edge no declarado por LLM (edge_type=none)
 
 ## Human notes
 
