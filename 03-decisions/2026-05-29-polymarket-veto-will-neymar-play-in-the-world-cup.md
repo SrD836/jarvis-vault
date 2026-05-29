@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-neymar-play-in-the-world-cup`
 - **Categoría**: sports-season
-- **Precio YES**: 0.8100
-- **Volumen 24h**: 122492.56 USD
+- **Precio YES**: 0.8200
+- **Volumen 24h**: 125257.79 USD
 - **End date**: 2026-07-19T00:00:00Z
 
 ## Razón del veto

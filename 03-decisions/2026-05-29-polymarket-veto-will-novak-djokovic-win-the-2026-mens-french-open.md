@@ -21,8 +21,8 @@ related:
 
 - **Slug**: `will-novak-djokovic-win-the-2026-mens-french-open`
 - **Categoría**: other
-- **Precio YES**: 0.1750
-- **Volumen 24h**: 252945.64 USD
+- **Precio YES**: 0.1770
+- **Volumen 24h**: 234502.15 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto

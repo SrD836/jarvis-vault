@@ -22,7 +22,7 @@ related:
 - **Slug**: `will-bitcoin-dip-to-70k-in-may-2026-438-356-919`
 - **Categoría**: market
 - **Precio YES**: 0.0770
-- **Volumen 24h**: 187183.85 USD
+- **Volumen 24h**: 168565.41 USD
 - **End date**: 2026-06-01T04:00:00Z
 
 ## Razón del veto
@@ -34,10 +34,10 @@ memoria: exact slug match (score 1.00)
 ## Patterns en memoria que contribuyeron
 
 - veto `will-bitcoin-dip-to-70k-in-may-2026-438-356-919` score=1.00 (exact slug match)
+- veto `will-bitcoin-dip-to-45k-in-may-2026-669-185-973` score=0.70 (slug prefix match; same category)
 - veto `will-bitcoin-dip-to-35k-in-may-2026-217-769-834` score=0.70 (slug prefix match; same category)
+- veto `will-bitcoin-dip-to-65k-in-may-2026-183-857-425` score=0.70 (slug prefix match; same category)
 - veto `will-bitcoin-dip-to-55k-in-may-2026-941` score=0.70 (slug prefix match; same category)
-- veto `will-bitcoin-dip-to-72500-in-may-2026-from-may-27` score=0.70 (slug prefix match; same category)
-- veto `will-bitcoin-dip-to-60k-in-may-2026-973-269` score=0.70 (slug prefix match; same category)
 
 ## Human notes
 
