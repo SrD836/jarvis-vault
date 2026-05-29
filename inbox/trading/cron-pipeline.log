@@ -12337,3 +12337,6 @@
 2026/05/29 10:30:04 executor.go:49: executor v7: mode=shadow sizingMode=kelly_fractional kellyFrac=0.25 maxPerTrade=5.00% maxExposure=40.00% minEdge=0.030 maxOpen=50 maxSameCat=10 maxPerDay=50 quota=75/15/10
 2026/05/29 10:30:04 executor.go:57: executor: no approved candidates
 2026/05/29 10:30:04 main.go:13: executor: done
+2026/05/29 11:00:01 [scanner] config loaded: mode=shadow sort=end_date_asc window=[2,30]d
+[scanner] starting scan
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=0&order=volumeNum&volume_num_min=50000
