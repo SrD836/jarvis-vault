@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-the-san-antonio-spurs-win-the-nba-western-conference-finals"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will the San Antonio Spurs win the NBA Western Conference Finals?' (rule V6 Sin catalyst): V6 Sin catalyst: V6 Sin catalyst: no hay evento discreto identificable en los..."
+decision: "Veto de tesis 'Will the San Antonio Spurs win the NBA Western Conference Finals?' (rule V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.): V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 día..."
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, v6 sin catalyst]
+tags: [decision, polymarket, bot, veto, v6 sin catalyst: no hay evento discreto identificable en los próximos 7 días.]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-the-san-antonio-spurs-win-the-nba-western-conference-finals`
 - **Categoría**: sports-season
-- **Precio YES**: 0.4260
-- **Volumen 24h**: 144842.86 USD
+- **Precio YES**: 0.4390
+- **Volumen 24h**: 259873.38 USD
 - **End date**: 2026-06-16T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `V6 Sin catalyst`
+**Regla aplicada**: `V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.`
 
-V6 Sin catalyst: V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días que pueda mover la probabilidad de manera significativa. La temporada NBA 2025-26 aún no ha comenzado; los playoffs y las finales de conferencia están a meses de distancia, y no hay información concreta actual (lesiones, trades, resultados) que justifique una estimación informada.
+V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.: Evento deportivo sin catalyst concreto en los próximos 7 días y sin fecha específica de las Finales de la Conferencia Oeste 2026. La pregunta es sobre un evento lejano (junio 2026) y no hay un evento discreto verificable a corto plazo que justifique una ventaja informacional.
 
 ## Human notes
 

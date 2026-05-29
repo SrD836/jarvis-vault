@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-russia-capture-all-of-hryshyne-by-may-31`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.9450
-- **Volumen 24h**: 74337.34 USD
+- **Precio YES**: 0.9390
+- **Volumen 24h**: 75384.20 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `V3 Trigger vago: sin fecha concreta o sin evento verificable.`
 
-V3 Trigger vago: sin fecha concreta o sin evento verificable.: V3 Trigger vago: el objetivo 'Hryshyne' es un topónimo no identificable en fuentes abiertas; sin fecha concreta ni evento verificable; 'capture all of' es indefinido y no hay un hito discreto observable.
+V3 Trigger vago: sin fecha concreta o sin evento verificable.: V3 Trigger vago: 'Hryshyne' no es una localización verificable con coordenadas o definición clara en fuentes abiertas. No se puede determinar si el evento es binario y objetivo.
 
 ## Human notes
 

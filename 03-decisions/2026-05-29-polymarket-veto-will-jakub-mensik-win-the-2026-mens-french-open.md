@@ -2,13 +2,13 @@
 title: "Polymarket veto — will-jakub-mensik-win-the-2026-mens-french-open"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Jakub Mensik win the 2026 Men's French Open?' (rule V6 Sin catalyst): V6 Sin catalyst: El evento es demasiado lejano (jun 2026) sin un catalyst ver..."
+decision: "Veto de tesis 'Will Jakub Mensik win the 2026 Men's French Open?' (rule V3 Trigger vago): V3 Trigger vago: V3 Trigger vago: la pregunta no especifica fecha concreta m�..."
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, v6 sin catalyst]
+tags: [decision, polymarket, bot, veto, v3 trigger vago]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-jakub-mensik-win-the-2026-mens-french-open`
 - **Categoría**: other
-- **Precio YES**: 0.0220
-- **Volumen 24h**: 116799.84 USD
+- **Precio YES**: 0.0260
+- **Volumen 24h**: 119467.00 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `V6 Sin catalyst`
+**Regla aplicada**: `V3 Trigger vago`
 
-V6 Sin catalyst: El evento es demasiado lejano (jun 2026) sin un catalyst verificable en los próximos 7 días ni una fuente concreta que respalde un movimiento de probabilidad a corto plazo. El mercado es altamente especulativo sin información asimétrica disponible.
+V3 Trigger vago: V3 Trigger vago: la pregunta no especifica fecha concreta más allá del torneo, y el evento está a más de un año sin un catalyst verificable a corto plazo.
 
 ## Human notes
 

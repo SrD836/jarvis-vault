@@ -2,13 +2,13 @@
 title: "Polymarket veto — israel-closes-its-airspace-by-may-31"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Israel closes its airspace by May 31?' (rule E2): edge 0.017 < mín 0.030 (p̂=0.020, implied=0.037)"
+decision: "Veto de tesis 'Israel closes its airspace by May 31?' (rule P9): P9: geopolitics pump cluster (price 0.05, 1d)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, e2]
+tags: [decision, polymarket, bot, veto, p9]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `israel-closes-its-airspace-by-may-31`
 - **Categoría**: geopolitics
-- **Precio YES**: 0.0370
-- **Volumen 24h**: 154527.94 USD
+- **Precio YES**: 0.0520
+- **Volumen 24h**: 153717.18 USD
 - **End date**: 2026-05-31T00:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `E2`
+**Regla aplicada**: `P9`
 
-edge 0.017 < mín 0.030 (p̂=0.020, implied=0.037)
+P9: geopolitics pump cluster (price 0.05, 1d)
 
 ## Human notes
 

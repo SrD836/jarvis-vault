@@ -22,7 +22,7 @@ related:
 - **Slug**: `us-obtains-iranian-enriched-uranium-by-june-30`
 - **Categoría**: other
 - **Precio YES**: 0.0600
-- **Volumen 24h**: 149475.30 USD
+- **Volumen 24h**: 122720.11 USD
 - **End date**: 2026-06-30T00:00:00Z
 
 ## Razón del veto

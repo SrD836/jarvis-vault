@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `will-rafael-jodar-win-the-2026-mens-french-open`
 - **Categoría**: other
-- **Precio YES**: 0.1270
-- **Volumen 24h**: 182959.51 USD
+- **Precio YES**: 0.1180
+- **Volumen 24h**: 183175.07 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.`
 
-V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.: El evento está a más de 2 años de distancia, sin catalyst concreto en los próximos 7 días. No hay información pública reciente que permita una edge informacional. El volumen es bajo para un mercado de tenis y la probabilidad implícita es muy baja, pero no hay patrón claro ni fuente independiente que respalde una desviación significativa.
+V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.: V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días, y la pregunta se refiere a un torneo que comienza en 2026 sin información concreta verificable a corto plazo.
 
 ## Human notes
 

@@ -12300,3 +12300,51 @@
 2026/05/29 20:55:01 main.go:13: exit_monitor: done
 2026/05/29 21:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/29 21:00:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/29 21:00:01 monitor.go:179: exit_monitor: 0 closed, 9 remaining
+2026/05/29 21:00:01 main.go:13: exit_monitor: done
+2026/05/29 21:05:02 main.go:11: exit_monitor: starting one-shot pass
+2026/05/29 21:05:02 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/29 21:05:02 monitor.go:179: exit_monitor: 0 closed, 10 remaining
+2026/05/29 21:05:02 main.go:13: exit_monitor: done
+2026/05/29 21:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/29 21:10:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/29 21:10:02 monitor.go:179: exit_monitor: 0 closed, 10 remaining
+2026/05/29 21:10:02 main.go:13: exit_monitor: done
+2026/05/29 21:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/29 21:15:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/29 21:15:01 monitor.go:179: exit_monitor: 0 closed, 10 remaining
+2026/05/29 21:15:01 main.go:13: exit_monitor: done
+2026/05/29 21:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/29 21:20:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/29 21:20:01 monitor.go:179: exit_monitor: 0 closed, 10 remaining
+2026/05/29 21:20:01 main.go:13: exit_monitor: done
+2026/05/29 21:25:02 main.go:11: exit_monitor: starting one-shot pass
+2026/05/29 21:25:02 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/29 21:25:02 monitor.go:179: exit_monitor: 0 closed, 10 remaining
+2026/05/29 21:25:02 main.go:13: exit_monitor: done
+2026/05/29 21:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/29 21:30:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/29 21:30:02 monitor.go:179: exit_monitor: 0 closed, 10 remaining
+2026/05/29 21:30:02 main.go:13: exit_monitor: done
+2026/05/29 21:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/29 21:35:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/29 21:35:01 monitor.go:179: exit_monitor: 0 closed, 11 remaining
+2026/05/29 21:35:01 main.go:13: exit_monitor: done
+2026/05/29 21:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/29 21:40:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/29 21:40:01 monitor.go:179: exit_monitor: 0 closed, 11 remaining
+2026/05/29 21:40:01 main.go:13: exit_monitor: done
+2026/05/29 21:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/29 21:45:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/29 21:45:02 monitor.go:179: exit_monitor: 0 closed, 11 remaining
+2026/05/29 21:45:02 main.go:13: exit_monitor: done
+2026/05/29 21:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/29 21:50:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/29 21:50:01 monitor.go:179: exit_monitor: 0 closed, 11 remaining
+2026/05/29 21:50:01 main.go:13: exit_monitor: done
+2026/05/29 21:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/29 21:55:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/29 21:55:01 monitor.go:179: exit_monitor: 0 closed, 11 remaining
+2026/05/29 21:55:01 main.go:13: exit_monitor: done
+2026/05/29 22:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/29 22:00:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030

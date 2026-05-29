@@ -2,7 +2,7 @@
 title: "Polymarket veto — will-england-win-the-2026-fifa-world-cup-937"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will England win the 2026 FIFA World Cup?' (rule E2): edge 0.012 < mín 0.030 (p̂=0.100, implied=0.112)"
+decision: "Veto de tesis 'Will England win the 2026 FIFA World Cup?' (rule E2): edge 0.022 < mín 0.030 (p̂=0.090, implied=0.112)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
@@ -22,14 +22,14 @@ related:
 - **Slug**: `will-england-win-the-2026-fifa-world-cup-937`
 - **Categoría**: sports-season
 - **Precio YES**: 0.1120
-- **Volumen 24h**: 349185.61 USD
+- **Volumen 24h**: 318114.67 USD
 - **End date**: 2026-07-20T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `E2`
 
-edge 0.012 < mín 0.030 (p̂=0.100, implied=0.112)
+edge 0.022 < mín 0.030 (p̂=0.090, implied=0.112)
 
 ## Human notes
 

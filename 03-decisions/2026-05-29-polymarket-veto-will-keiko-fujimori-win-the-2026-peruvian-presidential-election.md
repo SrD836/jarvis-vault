@@ -22,14 +22,14 @@ related:
 - **Slug**: `will-keiko-fujimori-win-the-2026-peruvian-presidential-election`
 - **Categoría**: elections
 - **Precio YES**: 0.7900
-- **Volumen 24h**: 104099.36 USD
+- **Volumen 24h**: 79050.88 USD
 - **End date**: 2026-06-07T00:00:00Z
 
 ## Razón del veto
 
 **Regla aplicada**: `V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.`
 
-V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.: V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días que impacte directamente la probabilidad de que Keiko Fujimori gane las elecciones presidenciales peruanas en 2026.
+V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días.: V6 Sin catalyst: No hay evento discreto identificable en los próximos 7 días que pueda modificar sustancialmente la probabilidad de que Keiko Fujimori gane en junio de 2026.
 
 ## Human notes
 

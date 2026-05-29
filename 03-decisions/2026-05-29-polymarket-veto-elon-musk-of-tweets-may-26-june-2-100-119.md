@@ -2,13 +2,13 @@
 title: "Polymarket veto — elon-musk-of-tweets-may-26-june-2-100-119"
 type: decision
 date: 2026-05-29
-decision: "Veto de tesis 'Will Elon Musk post 100-119 tweets from May 26 to June 2, 2026?' (rule V3): V3: V3 Trigger vago: sin fecha concreta o sin evento verificable. La pregunta..."
+decision: "Veto de tesis 'Will Elon Musk post 100-119 tweets from May 26 to June 2, 2026?' (rule E2): edge 0.004 < mín 0.030 (p̂=0.025, implied=0.021)"
 alternatives:
   - "Aprobar tesis y entrar trade simulado"
   - "Vetar y mantener bankroll"
 outcome: pending
 outcome_observed_after_days: 30
-tags: [decision, polymarket, bot, veto, v3]
+tags: [decision, polymarket, bot, veto, e2]
 related:
   - "[[agents/polymarket-bot]]"
   - "[[agents/polymarket-bot/memory]]"
@@ -21,15 +21,15 @@ related:
 
 - **Slug**: `elon-musk-of-tweets-may-26-june-2-100-119`
 - **Categoría**: other
-- **Precio YES**: 0.0230
-- **Volumen 24h**: 62605.25 USD
+- **Precio YES**: 0.0210
+- **Volumen 24h**: 63094.36 USD
 - **End date**: 2026-06-02T16:00:00Z
 
 ## Razón del veto
 
-**Regla aplicada**: `V3`
+**Regla aplicada**: `E2`
 
-V3: V3 Trigger vago: sin fecha concreta o sin evento verificable. La pregunta depende de la actividad futura de una persona específica en un periodo corto, sin un catalizador claro.
+edge 0.004 < mín 0.030 (p̂=0.025, implied=0.021)
 
 ## Human notes
 
