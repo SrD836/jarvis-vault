@@ -6,11 +6,18 @@ category: general
 date: 2026-05-28T03:15:01+00:00
 source_path: ~/.claude/skills/ecc-common
 source_file: ?
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/skill-dispatcher]]"
+  - "[[skills/external/dispatching-parallel-agents]]"
+  - "[[skills/external/superpowers]]"
+  - "[[skills/external/voltagent-best-practices]]"
+  - "[[skills/external/voltagent-core-reference]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-29
 ---
+
 
 # `ecc-common` (external skill)
 

@@ -6,11 +6,18 @@ category: general
 date: 2026-05-28T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-add-todo
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/gsd-add-backlog]]"
+  - "[[skills/external/gsd-add-tests]]"
+  - "[[skills/external/gsd-check-todos]]"
+  - "[[skills/external/gsd-do]]"
+  - "[[skills/external/gsd-note]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-29
 ---
+
 
 # `gsd-add-todo` (external skill)
 
