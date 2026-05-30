@@ -158,6 +158,30 @@ def main() -> int:
     report = "\n".join(L) + "\n"
     print(report)
 
+    # Resumen maquina-legible (dashboard + Telegram). Estado, no informe: se emite siempre.
+    why_parts = []
+    if not crit_market:
+        why_parts.append(f"combinada a mercado {exp_comb:+.2f}")
+    if not crit_worst:
+        why_parts.append(f"peor caso {exp_worst:+.2f} (libro longshot abierto ${open_stake:.0f})")
+    if not crit_brier:
+        why_parts.append(f"Brier {b:.4f}")
+    if not rules_ok:
+        why_parts.append("reglas no firing")
+    summary = {
+        "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
+        "realized_v7": {"pnl": round(realized_pnl, 2), "n": n_real, "wr": round(wr_real, 1), "exp": round(exp_real, 2)},
+        "combined": {"pnl": round(comb_pnl, 2), "n": n_comb, "exp": round(exp_comb, 2)},
+        "worst_case": {"pnl": round(worst_pnl, 2), "n": n_worst, "exp": round(exp_worst, 2), "open_stake": round(open_stake, 2)},
+        "open_mtm": {"unrealized": round(unreal, 2), "n_priced": n_priced, "n_open": n_open},
+        "brier": {"score": round(b, 4), "n": n_brier},
+        "verdict": verdict,
+        "why": "; ".join(why_parts),
+    }
+    summary_path = pathlib.Path(args.mtm).parent / "expectancy_summary.json"
+    summary_path.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"[written] {summary_path}", file=__import__("sys").stderr)
+
     if not args.no_write:
         out = pathlib.Path(args.out)
         out.parent.mkdir(parents=True, exist_ok=True)

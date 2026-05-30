@@ -61,8 +61,31 @@ de modelo). **HALLAZGO HONESTO: cripto líquido de 0-1 día es EFICIENTE** — e
 con el precio (Model fires pero ~0 aprobados; E2 bloquea edge<0.03). El "+15.97/t market" histórico era
 n=14 (vetos P6/P11 + supervivencia), no edge repetible del modelo. DECISIÓN: NO seguir cripto (corto
 eficiente; medio especulativo + scanner no lo surte). **El dinero real está en DEPORTES vs casas sharp**
-(arbitraje vs líneas Pinnacle = información asimétrica real, no apostar contra mercado eficiente) =
-spec #2, BLOQUEADO en una odds API key que solo David puede dar de alta. El router ya soporta enchufarlo.
+(arbitraje vs líneas Pinnacle) = spec #2.
+
+**Spec #2 deportes — CONSTRUIDO Y PROBADO (vault VPS `fd09ee2a`):** estimador deportes vs Pinnacle
+(devig, caché disco, the-odds-api con key de David). **HALLAZGO MAYOR:** los futuros de Polymarket YA
+trackean las líneas sharp — NBA OKC devig 0.437 vs implícito 0.420 (1.7pp); World Cup 54-team field todos
+<0.002 de diferencia. Model=48 priceados, **0 aprobados** (E2 bloquea todo edge<0.03). **Conclusión dura:
+AMBOS nichos estructurales (cripto barrera + deportes sharp) son EFICIENTES en Polymarket líquido — no hay
+edge fácil de modelo/arbitraje.** El arbitraje sharp clásico está en h2h same-day (no hay candidatos +
+no construido). Las únicas vías reales que quedan: h2h same-day intradía (no probado), info/timing genuino,
+o aceptar que el bot es calibración (Brier 0.12 bueno) no máquina de dinero. NO seguir construyendo
+estimadores especulativos contra mercados eficientes. Infra correcta, se mide vía Brier, opera si aparece
+ineficiencia. Ver `~/.claude/.../memory/jarvis_polymarket_sports_and_efficiency.md`.
+
+### Observabilidad honesta (2026-05-30) - dashboard + Telegram dejan de mentir
+Sintoma: el dashboard mostraba como hero "P&L regimen v7 +$239" = SOLO ganadores cerrados (sesgo
+supervivencia); ocultaba el libro abierto. Fix (observabilidad PURA, CERO logica de trading):
+`expectancy_report.py` emite `vault/inbox/trading/expectancy_summary.json` (fuente unica: realized_v7,
+combined, worst_case, brier, verdict). `server.js` lee `mark_to_market.json` (combinada viva) +
+`expectancy_summary.json` (veredicto); `Bot.jsx` hero pasa a "P&L honesto (a mercado)" con peor caso +
+badge PASS/FAIL, y el v7 se degrada a "Realizado v7 (sesgo superviv.)". `morning_summary.py` anexa 1
+linea honesta al push diario ("Acumulado real (a mercado): ...").
+Numeros hoy: realizado v7 +$240 (enganoso), combinada honesta +$130, peor caso -$228, veredicto FAIL.
+La logica de trading (scanner/brain/executor/exit_monitor/config) NO se toco -> ventana forward
+limpia, veredicto fiable 06-13. Diferido a 06-13: G4 cap Kelly longshots, G7 caps, mark-to-market al
+kelly_shrink, G3 spread/fees.
 
 ## Veredicto de criterio
 NO ir a dinero real con el estado actual. El bloqueo no es de herramientas — **falta edge real (research
