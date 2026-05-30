@@ -6,11 +6,17 @@ category: general
 date: 2026-05-29T03:15:01+00:00
 source_path: ~/.claude/skills/ecc-common
 source_file: ?
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/CATALOG]]"
+  - "[[agents/external/skill-dispatcher]]"
+  - "[[agents/skill-dispatcher]]"
+  - "[[skills/external/dispatching-parallel-agents]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-30
 ---
+
 
 # `ecc-common` (external skill)
 

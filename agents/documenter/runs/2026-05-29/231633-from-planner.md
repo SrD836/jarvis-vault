@@ -15,8 +15,16 @@ aborted: false
 abort_reason: ""
 spawned_children: []
 skill: "gsd-docs-update"
+related:
+  - "[[agents/documenter]]"
+  - "[[agents/planner]]"
+  - "[[agents/polymarket-bot]]"
+  - "[[audit/AUDIT_OBSIDIAN_BOT]]"
+  - "[[skills/external/executing-plans]]"
 tags: ["agent-run", "documenter", "planner-routed"]
+# auto-linked 2026-05-30
 ---
+
 
 ## TL;DR
 documenter: Texto de 6 líneas máximo. -> OK.

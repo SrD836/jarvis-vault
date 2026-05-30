@@ -6,11 +6,18 @@ category: general
 date: 2026-05-29T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-sketch
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/design]]"
+  - "[[skills/external/gsd-sketch-wrap-up]]"
+  - "[[skills/external/gsd-spike]]"
+  - "[[skills/external/gsd-ui-phase]]"
+  - "[[skills/external/ui-ux-pro-max]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-30
 ---
+
 
 # `gsd-sketch` (external skill)
 

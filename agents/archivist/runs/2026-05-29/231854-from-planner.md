@@ -15,8 +15,16 @@ aborted: false
 abort_reason: ""
 spawned_children: []
 skill: "gsd-cleanup"
+related:
+  - "[[agents/archivist]]"
+  - "[[agents/archivist/runs/2026-05-29/152426-from-planner]]"
+  - "[[agents/planner]]"
+  - "[[agents/runs-today]]"
+  - "[[skills/external/gsd-cleanup]]"
 tags: ["agent-run", "archivist", "planner-routed"]
+# auto-linked 2026-05-30
 ---
+
 
 ## TL;DR
 archivist: Lista con clasificación y razón para cada ítem. -> OK.

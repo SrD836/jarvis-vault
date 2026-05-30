@@ -15,8 +15,16 @@ aborted: false
 abort_reason: ""
 spawned_children: []
 skill: "test-driven-development"
+related:
+  - "[[agents/planner]]"
+  - "[[agents/tester]]"
+  - "[[skills/external/gsd-add-tests]]"
+  - "[[skills/external/tdd]]"
+  - "[[skills/external/test-driven-development]]"
 tags: ["agent-run", "tester", "planner-routed"]
+# auto-linked 2026-05-30
 ---
+
 
 ## TL;DR
 tester: Lista de casos de test con entrada, salida esperada, y si es red (falla) o green (pasa) inicialmente. -> OK.

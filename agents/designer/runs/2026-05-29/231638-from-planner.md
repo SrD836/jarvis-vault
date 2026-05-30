@@ -15,8 +15,16 @@ aborted: false
 abort_reason: ""
 spawned_children: []
 skill: "ui-ux-pro-max"
+related:
+  - "[[agents/designer]]"
+  - "[[agents/planner]]"
+  - "[[agents/runs-today]]"
+  - "[[skills/external/design-system]]"
+  - "[[skills/external/ui-ux-pro-max]]"
 tags: ["agent-run", "designer", "planner-routed"]
+# auto-linked 2026-05-30
 ---
+
 
 ## TL;DR
 designer: Descripción textual de estados, colores y microcopy. -> OK.

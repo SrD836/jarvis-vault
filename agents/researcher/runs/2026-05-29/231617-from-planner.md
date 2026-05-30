@@ -15,8 +15,16 @@ aborted: false
 abort_reason: ""
 spawned_children: []
 skill: "gsd-research-phase"
+related:
+  - "[[agents/CATALOG]]"
+  - "[[agents/planner]]"
+  - "[[agents/researcher]]"
+  - "[[agents/runs-today]]"
+  - "[[seeds/2026-05-29-model-routing-matrix]]"
 tags: ["agent-run", "researcher", "planner-routed"]
+# auto-linked 2026-05-30
 ---
+
 
 ## TL;DR
 researcher: Texto con 3 bullets, cada uno con una fuente citada (URL o referencia). -> OK.

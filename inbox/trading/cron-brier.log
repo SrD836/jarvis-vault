@@ -20,3 +20,31 @@ resolved=2  overall_brier=0.5000
 |-------|---|-------|
 | unknown | 2 | 0.5000 |
 
+# Brier — last 30 days (skips=include)
+resolved=12  overall_brier=0.2034
+
+### Por categoría
+
+| group | n | brier |
+|-------|---|-------|
+| other | 11 | 0.1944 |
+| market | 1 | 0.3025 |
+
+### Por horizonte
+
+| group | n | brier |
+|-------|---|-------|
+| medium | 1 | 0.0000 |
+| short | 10 | 0.1441 |
+| long | 1 | 1.0000 |
+
+### Por edge_type
+
+| group | n | brier |
+|-------|---|-------|
+| info | 2 | 0.0137 |
+| other | 1 | 0.1225 |
+| none | 4 | 0.1671 |
+| calibration | 3 | 0.2076 |
+| unknown | 2 | 0.5000 |
+

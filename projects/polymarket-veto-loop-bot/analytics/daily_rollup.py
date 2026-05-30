@@ -176,6 +176,24 @@ def render(g: dict) -> str:
     return "\n".join(fm) + "\n" + "\n".join(body)
 
 
+def _notify_day_closed(g: dict) -> None:
+    """Mensaje Telegram humano del cierre del dia (solo si hubo cierres)."""
+    if g.get("closed_n", 0) <= 0:
+        return
+    try:
+        hermes = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                              "..", "..", "..", "..", "hermes")
+        sys.path.insert(0, os.path.abspath(hermes))
+        from humanize import notify_human
+        notify_human("bot_day_closed", {
+            "won": g.get("wins", 0),
+            "total": g.get("closed_n", 0),
+            "pnl": g.get("pnl_total", 0.0),
+        })
+    except Exception as e:
+        sys.stderr.write(f"[daily_rollup] notify failed: {e}\n")
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description="Polymarket daily rollup node")
     ap.add_argument("--date", default=dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d"))
@@ -195,6 +213,7 @@ def main(argv=None) -> int:
     out = pathlib.Path(args.out) if args.out else root / DECISIONS / f"{args.date}-polymarket-daily.md"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(md, encoding="utf-8")
+    _notify_day_closed(g)
     print(f"wrote {out}  (preds={g['preds_n']} opened={g['opened_n']} "
           f"closed={g['closed_n']} pnl={g['pnl_total']:+.2f})")
     return 0

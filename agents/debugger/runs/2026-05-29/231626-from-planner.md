@@ -15,8 +15,16 @@ aborted: false
 abort_reason: ""
 spawned_children: []
 skill: "gsd-debug"
+related:
+  - "[[agents/debugger]]"
+  - "[[agents/debugger/runs/2026-05-29/152800-from-planner]]"
+  - "[[agents/planner]]"
+  - "[[seeds/2026-05-29-model-routing-matrix]]"
+  - "[[skills/external/systematic-debugging]]"
 tags: ["agent-run", "debugger", "planner-routed"]
+# auto-linked 2026-05-30
 ---
+
 
 ## TL;DR
 debugger: Lista de hipótesis con pasos para verificar cada una. -> OK.

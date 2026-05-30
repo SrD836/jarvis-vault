@@ -15,8 +15,16 @@ aborted: false
 abort_reason: ""
 spawned_children: []
 skill: "gsd-health"
+related:
+  - "[[agents/CATALOG]]"
+  - "[[agents/monitor]]"
+  - "[[agents/planner]]"
+  - "[[agents/runs-today]]"
+  - "[[seeds/2026-05-29-model-routing-matrix]]"
 tags: ["agent-run", "monitor", "planner-routed"]
+# auto-linked 2026-05-30
 ---
+
 
 ## TL;DR
 monitor: Severidad y acción recomendada. -> OK.

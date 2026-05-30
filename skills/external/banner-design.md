@@ -6,11 +6,18 @@ category: general
 date: 2026-05-29T03:15:01+00:00
 source_path: ~/.claude/skills/banner-design
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/brand]]"
+  - "[[skills/external/design]]"
+  - "[[skills/external/design-system]]"
+  - "[[skills/external/ui-styling]]"
+  - "[[skills/external/ui-ux-pro-max]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-30
 ---
+
 
 # `banner-design` (external skill)
 

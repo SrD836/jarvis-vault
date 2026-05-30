@@ -6,11 +6,18 @@ category: general
 date: 2026-05-29T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-review-backlog
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/gsd-add-backlog]]"
+  - "[[skills/external/gsd-milestone-summary]]"
+  - "[[skills/external/gsd-next]]"
+  - "[[skills/external/gsd-plan-milestone-gaps]]"
+  - "[[skills/external/gsd-review]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-30
 ---
+
 
 # `gsd-review-backlog` (external skill)
 

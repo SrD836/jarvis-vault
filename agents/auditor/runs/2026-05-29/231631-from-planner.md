@@ -15,8 +15,16 @@ aborted: false
 abort_reason: ""
 spawned_children: []
 skill: "gsd-audit-uat"
+related:
+  - "[[agents/apier/runs/2026-05-29/231641-from-planner]]"
+  - "[[agents/auditor]]"
+  - "[[agents/planner]]"
+  - "[[agents/tester/runs/2026-05-29/231628-from-planner]]"
+  - "[[skills/external/gsd-audit-uat]]"
 tags: ["agent-run", "auditor", "planner-routed"]
+# auto-linked 2026-05-30
 ---
+
 
 ## TL;DR
 auditor: Lista de ítems de verificación con descripción. -> OK.

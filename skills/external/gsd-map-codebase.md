@@ -6,11 +6,18 @@ category: general
 date: 2026-05-29T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-map-codebase
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/external/gsd-codebase-mapper]]"
+  - "[[skills/external/dispatching-parallel-agents]]"
+  - "[[skills/external/gsd-explore]]"
+  - "[[skills/external/gsd-graphify]]"
+  - "[[skills/external/gsd-ingest-docs]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-30
 ---
+
 
 # `gsd-map-codebase` (external skill)
 

@@ -15,8 +15,16 @@ aborted: false
 abort_reason: ""
 spawned_children: []
 skill: "gsd-graphify"
+related:
+  - "[[agents/CATALOG]]"
+  - "[[agents/apier]]"
+  - "[[agents/planner]]"
+  - "[[seeds/2026-05-29-model-routing-matrix]]"
+  - "[[skills/external/gsd-graphify]]"
 tags: ["agent-run", "apier", "planner-routed"]
+# auto-linked 2026-05-30
 ---
+
 
 ## TL;DR
 apier: Descripción del endpoint con request, response y códigos de error. -> OK.

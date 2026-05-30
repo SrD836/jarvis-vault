@@ -3,11 +3,18 @@ title: "Matriz de routing de modelos — agente x contexto"
 type: seed
 date: 2026-05-29
 status: vigente
-tags: [seed, arquitectura, llm-routing, claude, max, anti-baneo]
 related:
+  - "[[03-decisions/2026-05-29-polymarket-daily]]"
   - "[[CLAUDE]]"
+  - "[[agents/CATALOG]]"
   - "[[agents/index]]"
+  - "[[agents/planner]]"
+  - "[[agents/polymarket-bot]]"
+  - "[[agents/skill-dispatcher]]"
+tags: [seed, arquitectura, llm-routing, claude, max, anti-baneo]
+# auto-linked 2026-05-30
 ---
+
 
 # Matriz de routing de modelos (2026-05-29)
 
