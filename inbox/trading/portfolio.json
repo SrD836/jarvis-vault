@@ -1,6 +1,6 @@
 {
-  "bankroll": 3279.641862347593,
-  "used_exposure": 1091.886233130219,
+  "bankroll": 3142.99011808311,
+  "used_exposure": 1228.5379773947018,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -319,6 +319,27 @@
       "target_prob": 0.15,
       "thesis_invalidation": "Calma diplomática confirmada por fuentes oficiales israelíes o iraníes antes del 31 de mayo, o ausencia de cualquier alerta de seguridad que justifique restricciones aéreas.",
       "edge_type": "calibration"
+    },
+    {
+      "id": "T-2324493-1780131807761",
+      "market_id": "2324493",
+      "slug": "ucl-psg-ars-2026-05-30-btts",
+      "question": "Paris Saint-Germain FC vs. Arsenal FC: Both Teams to Score",
+      "side": "yes",
+      "entry_price": 0.52,
+      "size": 136.65174426448297,
+      "category": "other",
+      "entry_timestamp": "2026-05-30T09:03:27Z",
+      "approved_price": 0.52,
+      "days_to_resolution": 0,
+      "horizon": "short",
+      "end_date": "2026-05-30T16:00:00Z",
+      "size_usd": 136.65174426448297,
+      "liquidity_usd": 160482.2889,
+      "estimated_prob": 0.6,
+      "target_prob": 0.6,
+      "thesis_invalidation": "Lesión de Mbappé o Saka antes del partido; o Arsenal juega ultradefensivo y PSG no logra rematar.",
+      "edge_type": "info"
     }
   ]
 }
