@@ -43,5 +43,6 @@
   "thesis_stale_days": 1.0,
   "thesis_stale_margin": 0.03,
   "edge_research_enabled": true,
-  "edge_research_shrink_silent": 0.5
+  "edge_research_shrink_silent": 0.5,
+  "niche_estimators_enabled": true
 }

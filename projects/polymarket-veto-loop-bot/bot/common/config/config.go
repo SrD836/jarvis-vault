@@ -102,6 +102,12 @@ type BotConfig struct {
 	// BRAIN_DISABLE_RESEARCH sigue siendo kill-switch que lo fuerza off).
 	EdgeResearchEnabled     bool    `json:"edge_research_enabled"`
 	EdgeResearchShrinkSilent float64 `json:"edge_research_shrink_silent"` // default 0.5
+
+	// Niche specialization v1 (2026-05-30): route asset price-level candidates
+	// (crypto/index) to a barrier-probability estimator (live spot + realized
+	// vol) instead of the generic LLM — the only category with a structural edge.
+	// Explicit-from-config (absence => false => 100% LLM path, fail-safe).
+	NicheEstimatorsEnabled bool `json:"niche_estimators_enabled"`
 }
 
 // ShadowEnabled reports whether the bot must skip real fills and only log

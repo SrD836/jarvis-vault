@@ -14,14 +14,12 @@
 package marketcheck
 
 import (
-	"encoding/json"
 	"fmt"
-	"io"
-	"net/http"
 	"regexp"
 	"strconv"
 	"strings"
-	"time"
+
+	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/marketdata"
 )
 
 // SlugPattern maps a regex-matchable polymarket slug fragment to a Yahoo
@@ -48,9 +46,12 @@ var assetPatterns = []slugPattern{
 // targetPriceRE captures phrases like "above $78,000", "hit $90", "reach 6500".
 var targetPriceRE = regexp.MustCompile(`(?i)\b(?:above|below|hit|reach|over|under|at)\b[^\d]*\$?(\d{1,3}(?:[,.]\d{3})*(?:\.\d+)?)`)
 
-// directionRE detects "above/over/hit/reach" (long) vs "below/under" (short).
-var aboveRE = regexp.MustCompile(`(?i)\b(above|over|hit|reach|high)\b`)
-var belowRE = regexp.MustCompile(`(?i)\b(below|under|low|dip)\b`)
+// Direction words. "hit"/"reach" are NEUTRAL (you can hit a high OR a low), so
+// they are NOT in aboveRE — otherwise "hit (LOW) $80" would resolve to "above".
+// Direction is carried by above/over/high vs below/under/low/dip/drop/fall;
+// default (no word) is "above".
+var aboveRE = regexp.MustCompile(`(?i)\b(above|over|high)\b`)
+var belowRE = regexp.MustCompile(`(?i)\b(below|under|low|dip|drop|fall)\b`)
 
 // CheckResult is returned by Evaluate. Block=true means brain should veto.
 type CheckResult struct {
@@ -63,9 +64,12 @@ type CheckResult struct {
 	Block       bool
 }
 
-// Evaluate returns a result for market-related candidates only. Non-market
-// slugs return nil (no opinion). Network errors return nil — best effort.
-func Evaluate(slug, question string, currentPriceYes float64) *CheckResult {
+// Parse extracts the tradeable asset (Yahoo symbol), the target price and the
+// direction ("above"|"below") from a polymarket slug+question. ok=false when the
+// candidate is not an asset-price market or the target can't be read. Shared by
+// the P6 veto (Evaluate) and the crypto barrier estimator so both agree on what
+// "the asset, the target and the side" are.
+func Parse(slug, question string) (symbol string, target float64, dir string, ok bool) {
 	text := slug + " " + question
 	var pat *slugPattern
 	for i := range assetPatterns {
@@ -75,31 +79,38 @@ func Evaluate(slug, question string, currentPriceYes float64) *CheckResult {
 		}
 	}
 	if pat == nil {
-		return nil
+		return "", 0, "", false
 	}
-
 	m := targetPriceRE.FindStringSubmatch(question)
 	if len(m) < 2 {
-		return nil
+		return "", 0, "", false
 	}
-	targetStr := strings.ReplaceAll(m[1], ",", "")
-	target, err := strconv.ParseFloat(targetStr, 64)
+	t, err := strconv.ParseFloat(strings.ReplaceAll(m[1], ",", ""), 64)
 	if err != nil {
-		return nil
+		return "", 0, "", false
 	}
-
-	dir := "above"
+	dir = "above"
 	if belowRE.MatchString(question) && !aboveRE.MatchString(question) {
 		dir = "below"
 	}
+	return pat.symbol, t, dir, true
+}
 
-	spot, err := yahooSpot(pat.symbol)
+// Evaluate returns a result for market-related candidates only. Non-market
+// slugs return nil (no opinion). Network errors return nil — best effort.
+func Evaluate(slug, question string, currentPriceYes float64) *CheckResult {
+	symbol, target, dir, ok := Parse(slug, question)
+	if !ok {
+		return nil
+	}
+
+	spot, err := marketdata.Spot(symbol)
 	if err != nil || spot <= 0 {
 		return nil
 	}
 
 	res := &CheckResult{
-		Asset: pat.symbol, Symbol: pat.symbol, SpotPrice: spot,
+		Asset: symbol, Symbol: symbol, SpotPrice: spot,
 		TargetPrice: target, Direction: dir,
 	}
 
@@ -120,53 +131,16 @@ func Evaluate(slug, question string, currentPriceYes float64) *CheckResult {
 	switch {
 	case dir == "above" && spot > target*1.02 && currentPriceYes < 0.50:
 		res.Block = true
-		res.Reason = fmt.Sprintf("P6 market: %s spot $%.2f already > target $%.2f but yes=%.2f (confused book)", pat.symbol, spot, target, currentPriceYes)
+		res.Reason = fmt.Sprintf("P6 market: %s spot $%.2f already > target $%.2f but yes=%.2f (confused book)", symbol, spot, target, currentPriceYes)
 	case dir == "above" && gap > 0.10 && currentPriceYes > 0.30:
 		res.Block = true
-		res.Reason = fmt.Sprintf("P6 market: %s spot $%.2f is %.1f%% below target $%.2f, yes=%.2f implausible", pat.symbol, spot, gap*100, target, currentPriceYes)
+		res.Reason = fmt.Sprintf("P6 market: %s spot $%.2f is %.1f%% below target $%.2f, yes=%.2f implausible", symbol, spot, gap*100, target, currentPriceYes)
 	case dir == "below" && spot < target*0.98 && currentPriceYes < 0.50:
 		res.Block = true
-		res.Reason = fmt.Sprintf("P6 market: %s spot $%.2f already < target $%.2f but yes=%.2f (confused book)", pat.symbol, spot, target, currentPriceYes)
+		res.Reason = fmt.Sprintf("P6 market: %s spot $%.2f already < target $%.2f but yes=%.2f (confused book)", symbol, spot, target, currentPriceYes)
 	case dir == "below" && gap > 0.10 && currentPriceYes > 0.30:
 		res.Block = true
-		res.Reason = fmt.Sprintf("P6 market: %s spot $%.2f is %.1f%% above target $%.2f, yes=%.2f implausible", pat.symbol, spot, gap*100, target, currentPriceYes)
+		res.Reason = fmt.Sprintf("P6 market: %s spot $%.2f is %.1f%% above target $%.2f, yes=%.2f implausible", symbol, spot, gap*100, target, currentPriceYes)
 	}
 	return res
-}
-
-// yahooSpot fetches the current regular-market price from Yahoo Finance.
-// Returns 0 on any error (caller treats as no-op).
-func yahooSpot(symbol string) (float64, error) {
-	url := fmt.Sprintf("https://query1.finance.yahoo.com/v8/finance/chart/%s?interval=1d&range=1d", symbol)
-	req, err := http.NewRequest("GET", url, nil)
-	if err != nil {
-		return 0, err
-	}
-	req.Header.Set("User-Agent", "Mozilla/5.0 (polymarket-veto-bot)")
-	client := &http.Client{Timeout: 6 * time.Second}
-	resp, err := client.Do(req)
-	if err != nil {
-		return 0, err
-	}
-	defer resp.Body.Close()
-	body, err := io.ReadAll(resp.Body)
-	if err != nil {
-		return 0, err
-	}
-	var out struct {
-		Chart struct {
-			Result []struct {
-				Meta struct {
-					RegularMarketPrice float64 `json:"regularMarketPrice"`
-				} `json:"meta"`
-			} `json:"result"`
-		} `json:"chart"`
-	}
-	if err := json.Unmarshal(body, &out); err != nil {
-		return 0, err
-	}
-	if len(out.Chart.Result) == 0 {
-		return 0, fmt.Errorf("no chart result")
-	}
-	return out.Chart.Result[0].Meta.RegularMarketPrice, nil
 }
