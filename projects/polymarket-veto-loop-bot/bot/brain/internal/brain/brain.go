@@ -19,6 +19,7 @@ import (
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/antipatterns"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/estimator"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/estimator/crypto"
+	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/estimator/sports"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/llmclient"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/marketcheck"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/memory"
@@ -171,8 +172,8 @@ func Run() error {
 	// index barrier model. Disabled => empty slice => 100% LLM path (fail-safe).
 	var niche []estimator.Estimator
 	if cfg.NicheEstimatorsEnabled {
-		niche = append(niche, crypto.New())
-		log.Printf("Niche estimators ON: %d registered (crypto-barrier)", len(niche))
+		niche = append(niche, crypto.New(), sports.New())
+		log.Printf("Niche estimators ON: %d registered (crypto-barrier, sports-sharp-odds)", len(niche))
 	}
 
 	// M2 prep: load soft-learned veto rules from memory.md. These are the
