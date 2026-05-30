@@ -6,11 +6,18 @@ category: general
 date: 2026-05-30T03:15:01+00:00
 source_path: ~/.claude/skills/using-superpowers
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/skill-dispatcher]]"
+  - "[[skills/external/dispatching-parallel-agents]]"
+  - "[[skills/external/subagent-driven-development]]"
+  - "[[skills/external/superpowers]]"
+  - "[[skills/external/voltagent-core-reference]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-30
 ---
+
 
 # `using-superpowers` (external skill)
 
