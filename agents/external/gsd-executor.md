@@ -4,11 +4,18 @@ type: agent-mirror
 external: true
 date: 2026-05-30T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-executor.md
-tags: [agent, external, mirror]
 related:
-  - "[[agents/external/index]]"
   - "[[00-MOC]]"
+  - "[[agents/debugger]]"
+  - "[[agents/external/index]]"
+  - "[[agents/planner]]"
+  - "[[skills/external/dispatching-parallel-agents]]"
+  - "[[skills/external/executing-plans]]"
+  - "[[skills/external/gsd-execute-phase]]"
+tags: [agent, external, mirror]
+# auto-linked 2026-05-30
 ---
+
 
 # `gsd-executor` (external Claude Code agent)
 

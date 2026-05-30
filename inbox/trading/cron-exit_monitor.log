@@ -12730,3 +12730,57 @@
 2026/05/30 05:55:01 main.go:13: exit_monitor: done
 2026/05/30 06:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/30 06:00:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 06:00:01 monitor.go:179: exit_monitor: 0 closed, 16 remaining
+2026/05/30 06:00:01 main.go:13: exit_monitor: done
+2026/05/30 06:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 06:05:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 06:05:01 monitor.go:179: exit_monitor: 0 closed, 16 remaining
+2026/05/30 06:05:01 main.go:13: exit_monitor: done
+2026/05/30 06:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 06:10:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 06:10:01 monitor.go:143: exit_monitor: closed Will Bosnia and Herzegovina win on 2026-05-29? (market_closed) @ 0.0010 src=lastTradePrice_fallback liq=$0: PnL $-94.51 (-99.77%)
+[postmortem] llm error: no JSON in response
+2026/05/30 06:10:03 monitor.go:169: exit_monitor: backfilled 3 prediction(s) for 2139900 (outcome=0)
+2026/05/30 06:10:03 monitor.go:143: exit_monitor: closed US announces new Iran agreement/ceasefire extension by May 29? (market_closed) @ 0.0010 src=lastTradePrice_fallback liq=$0: PnL $-28.46 (-96.55%)
+[postmortem] read vault/03-decisions/2026-05-30-polymarket-loss-us-announces-new-iran-agreementceasefire-extension-by-may-29.md: open vault/03-decisions/2026-05-30-polymarket-loss-us-announces-new-iran-agreementceasefire-extension-by-may-29.md: no such file or directory
+2026/05/30 06:10:04 monitor.go:169: exit_monitor: backfilled 7 prediction(s) for 2364498 (outcome=0)
+2026/05/30 06:10:04 monitor.go:179: exit_monitor: 2 closed, 14 remaining
+2026/05/30 06:10:04 main.go:13: exit_monitor: done
+2026/05/30 06:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 06:15:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 06:15:02 monitor.go:179: exit_monitor: 0 closed, 14 remaining
+2026/05/30 06:15:02 main.go:13: exit_monitor: done
+2026/05/30 06:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 06:20:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 06:20:01 monitor.go:179: exit_monitor: 0 closed, 14 remaining
+2026/05/30 06:20:01 main.go:13: exit_monitor: done
+2026/05/30 06:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 06:25:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 06:25:02 monitor.go:179: exit_monitor: 0 closed, 14 remaining
+2026/05/30 06:25:02 main.go:13: exit_monitor: done
+2026/05/30 06:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 06:30:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 06:30:01 monitor.go:179: exit_monitor: 0 closed, 14 remaining
+2026/05/30 06:30:01 main.go:13: exit_monitor: done
+2026/05/30 06:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 06:35:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 06:35:01 monitor.go:179: exit_monitor: 0 closed, 15 remaining
+2026/05/30 06:35:01 main.go:13: exit_monitor: done
+2026/05/30 06:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 06:40:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 06:40:01 monitor.go:179: exit_monitor: 0 closed, 15 remaining
+2026/05/30 06:40:01 main.go:13: exit_monitor: done
+2026/05/30 06:45:02 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 06:45:02 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 06:45:02 monitor.go:179: exit_monitor: 0 closed, 15 remaining
+2026/05/30 06:45:02 main.go:13: exit_monitor: done
+2026/05/30 06:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 06:50:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 06:50:02 monitor.go:179: exit_monitor: 0 closed, 15 remaining
+2026/05/30 06:50:02 main.go:13: exit_monitor: done
+2026/05/30 06:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 06:55:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 06:55:01 monitor.go:179: exit_monitor: 0 closed, 15 remaining
+2026/05/30 06:55:01 main.go:13: exit_monitor: done
+2026/05/30 07:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 07:00:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030

@@ -6,9 +6,15 @@ source: cron/overnight-research-parallel
 model: deepseek-chat
 scope: vault-local (sin web-search)
 related:
+  - "[[01-briefs/2026-05-30]]"
   - "[[agents/researcher]]"
+  - "[[outputs/memory/cron_overnight_research]]"
+  - "[[research-queue]]"
+  - "[[seeds/2026-05-29-model-routing-matrix]]"
 tags: [research, overnight, parallel]
+# auto-linked 2026-05-30
 ---
+
 
 # Research brief — 2026-05-30
 

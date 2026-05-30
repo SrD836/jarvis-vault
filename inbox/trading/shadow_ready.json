@@ -1,7 +1,18 @@
 {
-  "ready": false,
-  "evaluated_at": "2026-05-30T00:00:01.899946+00:00",
-  "qualifying_categories": [],
+  "ready": true,
+  "evaluated_at": "2026-05-30T06:00:01.578481+00:00",
+  "qualifying_categories": [
+    {
+      "category": "other",
+      "n": 38,
+      "brier": 0.14098865789473683
+    },
+    {
+      "category": "geopolitics",
+      "n": 22,
+      "brier": 0.19572727272727272
+    }
+  ],
   "release_threshold": {
     "brier_lt": 0.2,
     "min_n": 20

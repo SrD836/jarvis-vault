@@ -48,3 +48,33 @@ resolved=12  overall_brier=0.2034
 | calibration | 3 | 0.2076 |
 | unknown | 2 | 0.5000 |
 
+READY_TO_RESUME: other, geopolitics
+# Brier — last 30 days (skips=include)
+resolved=62  overall_brier=0.1608
+
+### Por categoría
+
+| group | n | brier |
+|-------|---|-------|
+| other | 38 | 0.1410 |
+| market | 2 | 0.1531 |
+| geopolitics | 22 | 0.1957 |
+
+### Por horizonte
+
+| group | n | brier |
+|-------|---|-------|
+| medium | 6 | 0.0008 |
+| short | 55 | 0.1630 |
+| long | 1 | 1.0000 |
+
+### Por edge_type
+
+| group | n | brier |
+|-------|---|-------|
+| calibration | 14 | 0.1028 |
+| info | 20 | 0.1068 |
+| other | 1 | 0.1225 |
+| none | 22 | 0.1942 |
+| unknown | 5 | 0.4000 |
+
