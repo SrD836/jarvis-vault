@@ -41,7 +41,22 @@ RELEASE_BRIER = 0.20
 SUSPEND_BRIER_FAST = 0.30
 SUSPEND_MIN_N = 20
 
+# Category P&L suspension (fase categorización): una categoría que PIERDE dinero
+# de forma sistemática en una VENTANA RECIENTE se suspende aunque su Brier esté
+# bien (mercado eficiente / ya priceado — el caso "sports"). Ventana acotada a
+# propósito para evitar el sesgo del régimen muerto pre-v7 + bucket fallback
+# (lección R3). Config-gated; alimenta el MISMO suspended_categories.json que ya
+# lee brain S1 (sin cambio en brain).
+CATEGORY_PNL_SUSPEND = os.environ.get("CATEGORY_PNL_SUSPEND", "1").lower() not in ("0", "false", "no")
+CATEGORY_PNL_MIN_N = int(os.environ.get("CATEGORY_PNL_MIN_N", "20"))
+CATEGORY_PNL_MAX_LOSS = float(os.environ.get("CATEGORY_PNL_MAX_LOSS", "-1.0"))
+CATEGORY_PNL_WINDOW_DAYS = int(os.environ.get("CATEGORY_PNL_WINDOW_DAYS", "30"))
+# Cierres realizados que reflejan el edge de la política (excluye stop_loss del
+# régimen muerto + el bucket del fallback-bug). Espejo de daily_calibration.REAL_REASONS.
+REAL_REASONS = {"market_closed", "target_hit", "no_remaining_edge"}
+
 DEFAULT_PREDICTIONS = "vault/inbox/trading/predictions.jsonl"
+DEFAULT_CLOSED = "vault/inbox/trading/closed.jsonl"
 DEFAULT_MEMORY = "vault/agents/polymarket-bot/memory.md"
 DEFAULT_SUSPENDED = "vault/inbox/trading/suspended_categories.json"
 DEFAULT_SHADOW_READY = "vault/inbox/trading/shadow_ready.json"
@@ -162,15 +177,73 @@ def compute_suspended(hist: dict) -> list[str]:
     return sorted(consistent)
 
 
-def write_suspended(path: pathlib.Path, cats: list[str], now: str) -> None:
+def write_suspended(path: pathlib.Path, entries: list[tuple[str, str]], now: str) -> None:
+    """entries: lista de (categoria, rule). brain S1 solo lee `category`; `rule`
+    es para auditoría (distingue Brier-S1 de pnl_expectancy)."""
     payload = {
         "suspended": [
-            {"category": c, "since": now, "rule": "Brier > 0.25 × 3w"}
-            for c in cats
+            {"category": c, "since": now, "rule": rule}
+            for c, rule in entries
         ]
     }
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+
+
+def _pnl(r: dict) -> float:
+    for k in ("pnl_usd", "pnl"):
+        v = r.get(k)
+        if v is not None:
+            try:
+                return float(v)
+            except (TypeError, ValueError):
+                pass
+    return 0.0
+
+
+def category_pnl_expectancy(closed_rows: list[dict], since: dt.datetime | None) -> dict:
+    """Expectancy realizada por categoría sobre cierres REAL_REASONS en la ventana."""
+    agg: dict[str, dict] = defaultdict(lambda: {"n": 0, "pnl": 0.0, "wins": 0})
+    for r in closed_rows:
+        if r.get("exit_reason") not in REAL_REASONS:
+            continue
+        if since is not None:
+            ts = parse_ts(r.get("exit_timestamp") or r.get("exit_time") or "")
+            if ts is None or ts < since:
+                continue
+        a = agg[str(r.get("category") or "uncategorized")]
+        p = _pnl(r)
+        a["n"] += 1
+        a["pnl"] += p
+        a["wins"] += 1 if p > 0 else 0
+    for a in agg.values():
+        a["expectancy"] = a["pnl"] / a["n"] if a["n"] else 0.0
+    return dict(agg)
+
+
+def category_pnl_suspended(expect: dict, min_n: int, max_loss: float) -> list[str]:
+    """Categorías que pierden de forma sistemática: n >= min_n y expectancy < max_loss."""
+    return sorted(c for c, a in expect.items() if a["n"] >= min_n and a["expectancy"] < max_loss)
+
+
+def render_pnl_by_category(closed_rows: list[dict]) -> str:
+    """P&L realizado por categoría sobre TODO el histórico (deliverable legible)."""
+    agg: dict[str, dict] = defaultdict(lambda: {"n": 0, "pnl": 0.0, "wins": 0})
+    for r in closed_rows:
+        a = agg[str(r.get("category") or "uncategorized")]
+        p = _pnl(r)
+        a["n"] += 1
+        a["pnl"] += p
+        a["wins"] += 1 if p > 0 else 0
+    if not agg:
+        return "### P&L realizado por categoría\n\n_no closed trades_\n"
+    lines = ["### P&L realizado por categoría", "",
+             "| categoría | n | pnl | win% | avg/trade |", "|---|---|---|---|---|"]
+    for c, a in sorted(agg.items(), key=lambda kv: kv[1]["pnl"]):
+        wr = 100 * a["wins"] / a["n"] if a["n"] else 0
+        avg = a["pnl"] / a["n"] if a["n"] else 0
+        lines.append(f"| {c} | {a['n']} | {a['pnl']:+.2f} | {wr:.0f}% | {avg:+.2f} |")
+    return "\n".join(lines) + "\n"
 
 
 def append_memory_section(memory_path: pathlib.Path, body: str) -> None:
@@ -185,6 +258,7 @@ def append_memory_section(memory_path: pathlib.Path, body: str) -> None:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--predictions", default=DEFAULT_PREDICTIONS)
+    ap.add_argument("--closed", default=DEFAULT_CLOSED)
     ap.add_argument("--days", default="7", help='"7", "30", or "all"')
     ap.add_argument("--memory", default=DEFAULT_MEMORY)
     ap.add_argument("--suspended-out", default=DEFAULT_SUSPENDED)
@@ -246,6 +320,21 @@ def main() -> int:
     print(render_table("Por horizonte", by_hor))
     print(render_table("Por edge_type", by_edge))
 
+    # P&L realizado por categoría (deliverable legible) + suspensión por P&L en
+    # ventana reciente (config-gated, evita el sesgo del régimen muerto pre-v7).
+    closed_rows = load_rows(pathlib.Path(args.closed))
+    print(render_pnl_by_category(closed_rows))
+    pnl_since = now - dt.timedelta(days=CATEGORY_PNL_WINDOW_DAYS)
+    pnl_expect = category_pnl_expectancy(closed_rows, pnl_since)
+    pnl_susp = (category_pnl_suspended(pnl_expect, CATEGORY_PNL_MIN_N, CATEGORY_PNL_MAX_LOSS)
+                if CATEGORY_PNL_SUSPEND else [])
+    print(f"# P&L expectancy ventana {CATEGORY_PNL_WINDOW_DAYS}d (REAL_REASONS; "
+          f"suspende si n>={CATEGORY_PNL_MIN_N} y avg<{CATEGORY_PNL_MAX_LOSS}; "
+          f"enabled={CATEGORY_PNL_SUSPEND})")
+    for c, a in sorted(pnl_expect.items(), key=lambda kv: kv[1]["expectancy"]):
+        flag = "  <= SUSPEND" if c in pnl_susp else ""
+        print(f"  {c}: n={a['n']} expectancy={a['expectancy']:+.2f}{flag}")
+
     if args.no_write:
         return 0
 
@@ -255,6 +344,7 @@ def main() -> int:
         render_table("Por categoría", by_cat),
         render_table("Por horizonte", by_hor),
         render_table("Por edge_type", by_edge),
+        render_pnl_by_category(closed_rows),
     ]
     append_memory_section(pathlib.Path(args.memory), "\n".join(body_lines))
 
@@ -266,12 +356,20 @@ def main() -> int:
         cat for cat, n, b in by_cat
         if n >= SUSPEND_MIN_N and b > SUSPEND_BRIER_FAST
     })
-    suspended = sorted(set(suspended_3w) | set(suspended_count))
-    write_suspended(pathlib.Path(args.suspended_out), suspended, now.isoformat())
+    # Une las tres fuentes en suspended_categories.json. brain S1 solo lee
+    # `category`; `rule` distingue Brier vs P&L para auditoría.
+    rules_map: dict[str, str] = {}
+    for c in sorted(set(suspended_3w) | set(suspended_count)):
+        rules_map[c] = "Brier > 0.25 × 3w"
+    for c in pnl_susp:
+        rules_map[c] = "pnl_expectancy" if c not in rules_map else "Brier+pnl_expectancy"
+    write_suspended(pathlib.Path(args.suspended_out), sorted(rules_map.items()), now.isoformat())
     if suspended_count:
         print(f"S1 (count-based, Brier>{SUSPEND_BRIER_FAST} N>={SUSPEND_MIN_N}): {suspended_count}", file=sys.stderr)
     if suspended_3w:
         print(f"S1 (3-week, Brier>{SUSPEND_BRIER} x{SUSPEND_CONSECUTIVE}w): {suspended_3w}", file=sys.stderr)
+    if pnl_susp:
+        print(f"S1 (pnl_expectancy, n>={CATEGORY_PNL_MIN_N} avg<{CATEGORY_PNL_MAX_LOSS} en {CATEGORY_PNL_WINDOW_DAYS}d): {pnl_susp}", file=sys.stderr)
 
     qualifying = [
         (name, n, b) for name, n, b in by_cat
