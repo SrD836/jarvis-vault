@@ -41,5 +41,7 @@
   "llm_fail_closed": true,
   "thesis_stale_enabled": true,
   "thesis_stale_days": 1.0,
-  "thesis_stale_margin": 0.03
+  "thesis_stale_margin": 0.03,
+  "edge_research_enabled": true,
+  "edge_research_shrink_silent": 0.5
 }

@@ -91,6 +91,17 @@ type BotConfig struct {
 	ThesisStaleEnabled bool    `json:"thesis_stale_enabled"`
 	ThesisStaleDays    float64 `json:"thesis_stale_days"`   // default 1.0
 	ThesisStaleMargin  float64 `json:"thesis_stale_margin"` // default 0.03
+
+	// G2 edge informado (Fase B, 2026-05-30): el research (claudemax websearch)
+	// deja de ser un pre-filtro de 30 candidatos/ciclo y pasa a ser el GATE FINAL
+	// sobre el puñado de casi-aprobados (post E1/E2/R1/R3/R5). Confirma la dirección
+	// del edge con noticias frescas en vez de operar la desviación no informada de
+	// DeepSeek (-EV estructural). contradicts→block; silent+catalyst→block;
+	// silent→encoge el edge ×EdgeResearchShrinkSilent y re-chequea E2; confirms→opera.
+	// Reversible: enabled=false vuelve al comportamiento sin research (env
+	// BRAIN_DISABLE_RESEARCH sigue siendo kill-switch que lo fuerza off).
+	EdgeResearchEnabled     bool    `json:"edge_research_enabled"`
+	EdgeResearchShrinkSilent float64 `json:"edge_research_shrink_silent"` // default 0.5
 }
 
 // ShadowEnabled reports whether the bot must skip real fills and only log
@@ -213,6 +224,11 @@ func (c *BotConfig) applyDefaults() {
 	}
 	if c.ThesisStaleMargin == 0 {
 		c.ThesisStaleMargin = 0.03
+	}
+	// G2: el bool edge_research_enabled viene explícito de config.json (ausencia =>
+	// false => research off, fail-safe). Solo el factor de shrink tiene default.
+	if c.EdgeResearchShrinkSilent == 0 {
+		c.EdgeResearchShrinkSilent = 0.5
 	}
 }
 

@@ -104,8 +104,11 @@ func Run() error {
 		log.Printf("Memory loaded: %d vetos, %d losses", vetos, losses)
 	}
 
+	// G2: research is the post-veto edge gate (claudemax websearch on near-approvals
+	// only). Enabled via config; env BRAIN_DISABLE_RESEARCH stays as a hard kill-switch.
+	researchOn := cfg.EdgeResearchEnabled && !disableResearch
 	var researcher *research.Client
-	if !disableResearch {
+	if researchOn {
 		researcher, err = research.NewClient(tavilyConnPath, dashboardURL, researchCachePath)
 		if err != nil {
 			log.Printf("WARN: Tavily connector missing (%v) — falling back to Claude Max research (no external API key)", err)
@@ -375,47 +378,12 @@ func Run() error {
 			}
 		}
 
-		// N1/N2: news research. Rate-limited: candidates from the price floor up to
-		// 0.80, capped per cycle to keep the cron tick under budget. v8 widened the
-		// lower bound from 0.20 to cfg.PriceFloor so the longshots we actually trade
-		// (<0.20) also get news attribution; above 0.80 the YES is too lopsided for
-		// a single headline to matter. (Dormant while BRAIN_DISABLE_RESEARCH is set.)
+		// G2: research moved AFTER the LLM edge declaration + R1/R3/R5 (see below).
+		// It now confirms the edge on near-approvals instead of pre-filtering 30
+		// candidates/cycle, so claudemax fires only on the handful we'd actually
+		// trade. researchSummary/sourceCites are populated by that gate.
 		var researchSummary string
 		var sourceCites []commontypes.SourceCite
-		if researcher != nil && c.CurrentPriceYes >= cfg.PriceFloor && c.CurrentPriceYes <= 0.80 && researchCalls < maxResearchPerCycle {
-			researchCalls++
-			verdict, _, cites := researcher.EvaluateFull(c.Question, "yes")
-			sourceCites = cites
-			researchSummary = fmt.Sprintf("Tavily+DeepSeek: confirms=%v contradicts=%v silent=%v score=%.2f — %s",
-				verdict.Confirms, verdict.Contradicts, verdict.Silent, verdict.Score, verdict.Summary)
-			daysToEnd := daysUntil(c.EndDate)
-			if verdict.Contradicts {
-				vr := types.VetoResult{
-					CandidateID: c.ID,
-					Slug:        c.Slug,
-					Blocked:     true,
-					Reason:      fmt.Sprintf("noticias contradicen tesis: %s", verdict.Summary),
-					VetoedBy:    ruleNews1,
-				}
-				blocked = append(blocked, vr)
-				recordVetoWithExtras(mem, &c, vr, decisionsDir, true, researchSummary, nil)
-				stats.N1++
-				continue
-			}
-			if verdict.Silent && daysToEnd > 0 && daysToEnd < 30 {
-				vr := types.VetoResult{
-					CandidateID: c.ID,
-					Slug:        c.Slug,
-					Blocked:     true,
-					Reason:      fmt.Sprintf("silencio mediático sobre catalyst inminente (%d días al cierre)", daysToEnd),
-					VetoedBy:    ruleNews2,
-				}
-				blocked = append(blocked, vr)
-				recordVetoWithExtras(mem, &c, vr, decisionsDir, true, researchSummary, nil)
-				stats.N2++
-				continue
-			}
-		}
 
 		// v8 BOT-CAL: cap LLM (DeepSeek) evals/cycle. Candidates beyond the cap are
 		// deferred to the next cycle (left as candidates, NOT blocked) so DeepSeek
@@ -532,6 +500,57 @@ func Run() error {
 			appendDecisionPrediction(&c, cfg, llmResult, "skip", vr.Reason, 0)
 			stats.R5++
 			continue
+		}
+
+		// ----- G2 (Fase B): research gate sobre el candidato casi-aprobado. -----
+		// Todo lo anterior pasó: el LLM declaró edge y R1/R3/R5 quedaron limpios.
+		// Aquí confirmamos el edge con noticias frescas (claudemax websearch). Es la
+		// ÚNICA llamada claudemax del pipeline y solo dispara sobre este puñado, así
+		// que el volumen Claude queda acotado. La dirección importa: para un buy_no,
+		// "noticias confirman YES" va EN CONTRA de nuestra posición.
+		if researchOn && researcher != nil {
+			if researchCalls >= maxResearchPerCycle {
+				// Sin presupuesto de research este ciclo: NO aprobamos sin confirmar.
+				// Se deja como candidato (defer) → se re-evalúa en el próximo tick.
+				log.Printf("G2: research cap %d alcanzado, difiriendo %s", maxResearchPerCycle, c.Slug)
+				continue
+			}
+			researchCalls++
+			qSide := "yes"
+			if llmResult.EstimatedProb < c.CurrentPriceYes {
+				qSide = "no"
+			}
+			verdict, _, cites := researcher.EvaluateFull(c.Question, qSide)
+			researchSummary = fmt.Sprintf("claudemax: confirms=%v contradicts=%v silent=%v score=%.2f — %s",
+				verdict.Confirms, verdict.Contradicts, verdict.Silent, verdict.Score, verdict.Summary)
+			against := (qSide == "yes" && verdict.Contradicts) || (qSide == "no" && verdict.Confirms)
+			support := (qSide == "yes" && verdict.Confirms) || (qSide == "no" && verdict.Contradicts)
+			silent := verdict.Silent || (!against && !support)
+			dec := DecideEdgeResearch(against, silent, llmResult.EstimatedProb, c.CurrentPriceYes,
+				minEdge, cfg.EdgeResearchShrinkSilent, daysUntil(c.EndDate), verdict.Summary)
+			if dec.Block {
+				rule := ruleNews1
+				if dec.Rule == "N2" {
+					rule = ruleNews2
+				}
+				vr := types.VetoResult{
+					CandidateID: c.ID, Slug: c.Slug, Blocked: true,
+					Reason: dec.Reason, VetoedBy: rule,
+				}
+				blocked = append(blocked, vr)
+				recordVetoWithExtras(mem, &c, vr, decisionsDir, true, researchSummary, nil)
+				appendDecisionPrediction(&c, cfg, llmResult, "skip", vr.Reason, 0)
+				if dec.Rule == "N2" {
+					stats.N2++
+				} else {
+					stats.N1++
+				}
+				continue
+			}
+			// Edge confirmado (o superviviente del silent-shrink): adoptamos la
+			// probabilidad informada y adjuntamos las fuentes del veredicto.
+			llmResult.EstimatedProb = dec.AdjustedProb
+			sourceCites = cites
 		}
 
 		d := daysUntil(c.EndDate)
