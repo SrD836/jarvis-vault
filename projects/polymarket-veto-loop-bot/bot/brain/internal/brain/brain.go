@@ -17,6 +17,8 @@ import (
 	"github.com/davidgn/polymarket-veto-loop-bot/bot/common/predictions"
 	commontypes "github.com/davidgn/polymarket-veto-loop-bot/bot/common/types"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/antipatterns"
+	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/estimator"
+	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/estimator/crypto"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/llmclient"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/marketcheck"
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/memory"
@@ -141,6 +143,7 @@ func Run() error {
 	stats := struct {
 		P0, P1, P2, P3, P4, P6, P7, P8, P9, P10, P11, V1, V2, V4, M1, M2, M3, N1, N2, LLM, E1, E2, S1, LLMNoEdge, LLMParseFail int
 		R1, R3, R5, FailClosed int // Fase 9
+		Model                  int // G-niche: candidates priced by a niche estimator
 	}{}
 
 	// v7: load suspended categories. Brier-driven auto-suspend writes this file
@@ -162,6 +165,15 @@ func Run() error {
 	researchCalls := 0
 	_ = researchCalls // referenced in loop below
 	llmCalls := 0
+
+	// Niche specialization v1: estimators that price candidates from real data
+	// instead of the generic LLM. Order matters (first OK wins). Today: crypto/
+	// index barrier model. Disabled => empty slice => 100% LLM path (fail-safe).
+	var niche []estimator.Estimator
+	if cfg.NicheEstimatorsEnabled {
+		niche = append(niche, crypto.New())
+		log.Printf("Niche estimators ON: %d registered (crypto-barrier)", len(niche))
+	}
 
 	// M2 prep: load soft-learned veto rules from memory.md. These are the
 	// auto-generated cluster rules (category·horizon·priceBand → win rate < 30%).
@@ -191,12 +203,27 @@ func Run() error {
 			}
 		}
 
+		// G-niche: price the candidate with a niche estimator EARLY (before P0).
+		// Asset price-level markets (crypto/index) cluster at the extremes (implied
+		// ~0.001 or ~0.999) — exactly where a calibrated barrier model has the most
+		// edge and where the blunt P0 floor would otherwise kill them. A model edge
+		// therefore SKIPS P0 (decisión David); R1 (longshot requires edge≥0.15), E2,
+		// P6 (confused book) y P11 (TA contra) siguen aplicando. Parse es regex puro
+		// (sin red) → para no-cripto devuelve OK=false al instante, sin coste.
+		var modelEst estimator.Estimate
+		if len(niche) > 0 {
+			modelEst = estimator.Route(&c, niche)
+		}
+
 		// P0: price band sanity (v7 P4 — floor 0.05 default; 0.03 if horizon≤7d AND liquidity≥$20k).
-		if vr := rules.EvalPriceBandV7(&c, cfg.PriceFloor, cfg.PriceCeiling, cfg.PriceFloorShortLiqRelax, cfg.PriceFloorShortLiqRelaxUSD); vr != nil {
-			blocked = append(blocked, *vr)
-			recordVeto(mem, &c, *vr, decisionsDir, false)
-			stats.P0++
-			continue
+		// Skipped for model-edge candidates (the model + E2 decide, not the blunt floor).
+		if !modelEst.OK {
+			if vr := rules.EvalPriceBandV7(&c, cfg.PriceFloor, cfg.PriceCeiling, cfg.PriceFloorShortLiqRelax, cfg.PriceFloorShortLiqRelaxUSD); vr != nil {
+				blocked = append(blocked, *vr)
+				recordVeto(mem, &c, *vr, decisionsDir, false)
+				stats.P0++
+				continue
+			}
 		}
 
 		// P3: absolute liquidity floor (v6 — orderbook depth in USD, independent of trade size)
@@ -385,71 +412,96 @@ func Run() error {
 		var researchSummary string
 		var sourceCites []commontypes.SourceCite
 
-		// v8 BOT-CAL: cap LLM (DeepSeek) evals/cycle. Candidates beyond the cap are
-		// deferred to the next cycle (left as candidates, NOT blocked) so DeepSeek
-		// cost/latency stay bounded while calibration data accrues steadily.
-		if llmCalls >= maxLLMPerCycle {
-			continue
-		}
-		llmCalls++
-
-		// LLM: semantic V3/V5/V6 + v7 edge declaration.
-		llmResult := llmclient.EvaluateV3V5V6(&c)
-		if llmResult == nil {
-			log.Printf("WARN: LLM returned nil for %s, passing", c.Slug)
-			llmResult = &types.LLMBlockResult{}
-		}
-		// Asimetría (Fase 9): si la llamada al LLM falló (infra/parse) y llm_fail_closed,
-		// BLOQUEAR — preferir falso negativo (oportunidad perdida) sobre falso positivo.
-		// Reversible vía cfg.LLMFailClosed. NUEVA 2026-05-30.
-		if llmResult.InfraFail && cfg.LLMFailClosed {
-			vr := types.VetoResult{
-				CandidateID: c.ID, Slug: c.Slug, Blocked: true,
-				Reason:   fmt.Sprintf("fail-closed: %s", llmResult.Reason),
-				VetoedBy: "LLM_FAILCLOSED",
+		// Niche estimator first: for asset price-level markets (crypto/index) a
+		// barrier model derives estimated_prob from live spot + realized vol — a
+		// real structural edge — replacing the generic LLM guess. OK=false (not in
+		// niche / data unavailable) falls back to the LLM path below.
+		var llmResult *types.LLMBlockResult
+		modelEdge := false
+		if modelEst.OK {
+			modelEdge = true
+			llmResult = &types.LLMBlockResult{
+				EstimatedProb:   modelEst.EstimatedProb,
+				EdgeType:        modelEst.EdgeType,
+				EdgeDescription: modelEst.EdgeDescription,
+				PrecedentCount:  cfg.MinPrecedents, // R5 N/A to a math model → pass
 			}
-			blocked = append(blocked, vr)
-			recordVeto(mem, &c, vr, decisionsDir, false)
-			stats.FailClosed++
-			continue
-		}
-		if llmResult.Block {
-			vr := types.VetoResult{
-				CandidateID: c.ID,
-				Slug:        c.Slug,
-				Blocked:     true,
-				Reason:      fmt.Sprintf("%s: %s", llmResult.Rule, llmResult.Reason),
-				VetoedBy:    llmResult.Rule,
-			}
-			blocked = append(blocked, vr)
-			recordVetoWithExtras(mem, &c, vr, decisionsDir, true, researchSummary, nil)
-			appendDecisionPrediction(&c, cfg, llmResult, "skip", vr.Reason, 0)
-			stats.LLM++
-			continue
+			stats.Model++
+			log.Printf("[MODEL] %s | %s", c.Slug, modelEst.EdgeDescription)
 		}
 
-		// E1: LLM did not declare a real edge. Without an edge we are not
-		// allowed to enter — see prompt maestro principle #2.
-		// v7 P3: track LLM parse failures (rule=PARSE) and edge=none separately
-		// from generic E1 so we can tell apart "LLM broken" vs "LLM declined".
+		if !modelEdge {
+			// v8 BOT-CAL: cap LLM (DeepSeek) evals/cycle. Candidates beyond the cap are
+			// deferred to the next cycle (left as candidates, NOT blocked) so DeepSeek
+			// cost/latency stay bounded while calibration data accrues steadily. Model
+			// edges do NOT consume the LLM budget.
+			if llmCalls >= maxLLMPerCycle {
+				continue
+			}
+			llmCalls++
+
+			// LLM: semantic V3/V5/V6 + v7 edge declaration.
+			llmResult = llmclient.EvaluateV3V5V6(&c)
+			if llmResult == nil {
+				log.Printf("WARN: LLM returned nil for %s, passing", c.Slug)
+				llmResult = &types.LLMBlockResult{}
+			}
+			// Asimetría (Fase 9): si la llamada al LLM falló (infra/parse) y llm_fail_closed,
+			// BLOQUEAR — preferir falso negativo (oportunidad perdida) sobre falso positivo.
+			// Reversible vía cfg.LLMFailClosed. NUEVA 2026-05-30.
+			if llmResult.InfraFail && cfg.LLMFailClosed {
+				vr := types.VetoResult{
+					CandidateID: c.ID, Slug: c.Slug, Blocked: true,
+					Reason:   fmt.Sprintf("fail-closed: %s", llmResult.Reason),
+					VetoedBy: "LLM_FAILCLOSED",
+				}
+				blocked = append(blocked, vr)
+				recordVeto(mem, &c, vr, decisionsDir, false)
+				stats.FailClosed++
+				continue
+			}
+			if llmResult.Block {
+				vr := types.VetoResult{
+					CandidateID: c.ID,
+					Slug:        c.Slug,
+					Blocked:     true,
+					Reason:      fmt.Sprintf("%s: %s", llmResult.Rule, llmResult.Reason),
+					VetoedBy:    llmResult.Rule,
+				}
+				blocked = append(blocked, vr)
+				recordVetoWithExtras(mem, &c, vr, decisionsDir, true, researchSummary, nil)
+				appendDecisionPrediction(&c, cfg, llmResult, "skip", vr.Reason, 0)
+				stats.LLM++
+				continue
+			}
+
+			// E1: LLM did not declare a real edge. Without an edge we are not
+			// allowed to enter — see prompt maestro principle #2.
+			// v7 P3: track LLM parse failures (rule=PARSE) and edge=none separately
+			// from generic E1 so we can tell apart "LLM broken" vs "LLM declined".
+			et := strings.ToLower(strings.TrimSpace(llmResult.EdgeType))
+			if llmResult.Rule == "PARSE" {
+				stats.LLMParseFail++
+			} else if et == "" || et == "none" {
+				stats.LLMNoEdge++
+			}
+			if et == "" || et == "none" {
+				vr := types.VetoResult{
+					CandidateID: c.ID, Slug: c.Slug, Blocked: true,
+					Reason:   "edge no declarado por LLM (edge_type=none)",
+					VetoedBy: ruleEdgeMissing,
+				}
+				blocked = append(blocked, vr)
+				recordVetoWithExtras(mem, &c, vr, decisionsDir, true, researchSummary, nil)
+				appendDecisionPrediction(&c, cfg, llmResult, "skip", vr.Reason, 0)
+				stats.E1++
+				continue
+			}
+		}
+
+		// Common edge type (model edges declare "model-barrier"; LLM path declared
+		// a non-none edge above).
 		edgeType := strings.ToLower(strings.TrimSpace(llmResult.EdgeType))
-		if llmResult.Rule == "PARSE" {
-			stats.LLMParseFail++
-		} else if edgeType == "" || edgeType == "none" {
-			stats.LLMNoEdge++
-		}
-		if edgeType == "" || edgeType == "none" {
-			vr := types.VetoResult{
-				CandidateID: c.ID, Slug: c.Slug, Blocked: true,
-				Reason:   "edge no declarado por LLM (edge_type=none)",
-				VetoedBy: ruleEdgeMissing,
-			}
-			blocked = append(blocked, vr)
-			recordVetoWithExtras(mem, &c, vr, decisionsDir, true, researchSummary, nil)
-			appendDecisionPrediction(&c, cfg, llmResult, "skip", vr.Reason, 0)
-			stats.E1++
-			continue
-		}
 
 		// E2: edge below configured minimum (default 5pp). Even if the LLM
 		// declared an edge type, we require the magnitude to clear fees + noise.
@@ -508,7 +560,9 @@ func Run() error {
 		// ÚNICA llamada claudemax del pipeline y solo dispara sobre este puñado, así
 		// que el volumen Claude queda acotado. La dirección importa: para un buy_no,
 		// "noticias confirman YES" va EN CONTRA de nuestra posición.
-		if researchOn && researcher != nil {
+		// Los model edges (cripto/barrera) SALTAN el gate: el modelo numérico ES la
+		// confirmación y las noticias no mueven "BTC>$X en 2d" (además baja claudemax).
+		if !modelEdge && researchOn && researcher != nil {
 			if researchCalls >= maxResearchPerCycle {
 				// Sin presupuesto de research este ciclo: NO aprobamos sin confirmar.
 				// Se deja como candidato (defer) → se re-evalúa en el próximo tick.
@@ -599,9 +653,9 @@ func Run() error {
 	}
 
 	softrules.GenerateAndAppend(memoryPath)
-	log.Printf("Brain v9 done: %d approved, %d blocked (P0=%d P2=%d P3=%d P4=%d P6=%d P7=%d P8=%d P9=%d P10=%d P11=%d V1=%d V2=%d V4=%d M1=%d M2=%d M3=%d N1=%d N2=%d LLM=%d E1=%d E2=%d S1=%d R1=%d R3=%d R5=%d FailClosed=%d LLM_NoEdge=%d LLM_ParseFail=%d) horizons in approved: short=%d medium=%d long=%d",
+	log.Printf("Brain v9 done: %d approved, %d blocked (P0=%d P2=%d P3=%d P4=%d P6=%d P7=%d P8=%d P9=%d P10=%d P11=%d V1=%d V2=%d V4=%d M1=%d M2=%d M3=%d N1=%d N2=%d LLM=%d E1=%d E2=%d S1=%d R1=%d R3=%d R5=%d FailClosed=%d Model=%d LLM_NoEdge=%d LLM_ParseFail=%d) horizons in approved: short=%d medium=%d long=%d",
 		len(approved), len(blocked),
-		stats.P0, stats.P2, stats.P3, stats.P4, stats.P6, stats.P7, stats.P8, stats.P9, stats.P10, stats.P11, stats.V1, stats.V2, stats.V4, stats.M1, stats.M2, stats.M3, stats.N1, stats.N2, stats.LLM, stats.E1, stats.E2, stats.S1, stats.R1, stats.R3, stats.R5, stats.FailClosed, stats.LLMNoEdge, stats.LLMParseFail,
+		stats.P0, stats.P2, stats.P3, stats.P4, stats.P6, stats.P7, stats.P8, stats.P9, stats.P10, stats.P11, stats.V1, stats.V2, stats.V4, stats.M1, stats.M2, stats.M3, stats.N1, stats.N2, stats.LLM, stats.E1, stats.E2, stats.S1, stats.R1, stats.R3, stats.R5, stats.FailClosed, stats.Model, stats.LLMNoEdge, stats.LLMParseFail,
 		countHorizon(approved, "short"), countHorizon(approved, "medium"), countHorizon(approved, "long"))
 	return nil
 }

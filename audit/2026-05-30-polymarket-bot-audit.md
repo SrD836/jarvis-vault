@@ -55,6 +55,15 @@ pérdidas; la capa de dinero real NO existe. La rentabilidad está bloqueada por
   Y Brier ≤0.25 Y sostenida (serie diaria), N≥50.
 - **D — Build dinero real (SOLO si C pasa):** capa CLOB + controles live + canary capital pequeño.
 
+### Especialización por nicho v1 (2026-05-30, vault VPS `04093b68`) — track aparte
+Construido: router de estimadores + modelo barrera cripto (live spot + vol realizada, P0-skip para edges
+de modelo). **HALLAZGO HONESTO: cripto líquido de 0-1 día es EFICIENTE** — el modelo de barrera coincide
+con el precio (Model fires pero ~0 aprobados; E2 bloquea edge<0.03). El "+15.97/t market" histórico era
+n=14 (vetos P6/P11 + supervivencia), no edge repetible del modelo. DECISIÓN: NO seguir cripto (corto
+eficiente; medio especulativo + scanner no lo surte). **El dinero real está en DEPORTES vs casas sharp**
+(arbitraje vs líneas Pinnacle = información asimétrica real, no apostar contra mercado eficiente) =
+spec #2, BLOQUEADO en una odds API key que solo David puede dar de alta. El router ya soporta enchufarlo.
+
 ## Veredicto de criterio
 NO ir a dinero real con el estado actual. El bloqueo no es de herramientas — **falta edge real (research
 off) y falta cortar pérdidas (no stop)**. Calibración buena ≠ rentabilidad. La prueba debe venir de la

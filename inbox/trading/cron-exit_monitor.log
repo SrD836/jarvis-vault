@@ -13382,3 +13382,84 @@
 2026/05/30 17:55:02 main.go:13: exit_monitor: done
 2026/05/30 18:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/30 18:00:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 18:00:01 monitor.go:57: exit_monitor: sin precio fiable para 1999661 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0020) — se mantiene abierta
+2026/05/30 18:00:01 monitor.go:57: exit_monitor: sin precio fiable para 2354184 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0010) — se mantiene abierta
+2026/05/30 18:00:01 monitor.go:202: exit_monitor: 0 closed, 6 remaining
+2026/05/30 18:00:01 main.go:13: exit_monitor: done
+2026/05/30 18:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 18:05:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 18:05:02 monitor.go:57: exit_monitor: sin precio fiable para 1999661 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0020) — se mantiene abierta
+2026/05/30 18:05:02 monitor.go:57: exit_monitor: sin precio fiable para 2354184 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0010) — se mantiene abierta
+2026/05/30 18:05:02 monitor.go:202: exit_monitor: 0 closed, 6 remaining
+2026/05/30 18:05:02 main.go:13: exit_monitor: done
+2026/05/30 18:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 18:10:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 18:10:01 monitor.go:54: exit_monitor: BLOCKED close 2316216 — precio 0.0100 vs ref 0.4200 (banda de sanidad), marcado para revision
+2026/05/30 18:10:01 monitor.go:57: exit_monitor: sin precio fiable para 1999661 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0020) — se mantiene abierta
+2026/05/30 18:10:01 monitor.go:57: exit_monitor: sin precio fiable para 2354184 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0010) — se mantiene abierta
+2026/05/30 18:10:01 monitor.go:202: exit_monitor: 0 closed, 6 remaining
+2026/05/30 18:10:01 main.go:13: exit_monitor: done
+2026/05/30 18:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 18:15:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 18:15:01 monitor.go:54: exit_monitor: BLOCKED close 2316216 — precio 0.0100 vs ref 0.4200 (banda de sanidad), marcado para revision
+2026/05/30 18:15:01 monitor.go:57: exit_monitor: sin precio fiable para 1999661 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0020) — se mantiene abierta
+2026/05/30 18:15:01 monitor.go:57: exit_monitor: sin precio fiable para 2354184 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0010) — se mantiene abierta
+2026/05/30 18:15:01 monitor.go:202: exit_monitor: 0 closed, 6 remaining
+2026/05/30 18:15:01 main.go:13: exit_monitor: done
+2026/05/30 18:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 18:20:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 18:20:01 monitor.go:54: exit_monitor: BLOCKED close 2316216 — precio 0.0100 vs ref 0.4200 (banda de sanidad), marcado para revision
+2026/05/30 18:20:01 monitor.go:57: exit_monitor: sin precio fiable para 1999661 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0020) — se mantiene abierta
+2026/05/30 18:20:01 monitor.go:57: exit_monitor: sin precio fiable para 2354184 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0010) — se mantiene abierta
+2026/05/30 18:20:01 monitor.go:202: exit_monitor: 0 closed, 6 remaining
+2026/05/30 18:20:01 main.go:13: exit_monitor: done
+2026/05/30 18:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 18:25:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 18:25:01 monitor.go:57: exit_monitor: sin precio fiable para 2316216 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0010) — se mantiene abierta
+2026/05/30 18:25:01 monitor.go:57: exit_monitor: sin precio fiable para 1999661 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0020) — se mantiene abierta
+2026/05/30 18:25:01 monitor.go:57: exit_monitor: sin precio fiable para 2354184 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0010) — se mantiene abierta
+2026/05/30 18:25:01 monitor.go:202: exit_monitor: 0 closed, 6 remaining
+2026/05/30 18:25:01 main.go:13: exit_monitor: done
+2026/05/30 18:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 18:30:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 18:30:01 monitor.go:57: exit_monitor: sin precio fiable para 2316216 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0010) — se mantiene abierta
+2026/05/30 18:30:01 monitor.go:57: exit_monitor: sin precio fiable para 1999661 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0020) — se mantiene abierta
+2026/05/30 18:30:01 monitor.go:166: exit_monitor: closed Will Elon Musk post 65-89 tweets from May 28 to May 30, 2026? (market_closed) @ 0.0000 src=resolved_settlement liq=$0: PnL $-26.79 (-100.00%)
+[postmortem] read vault/03-decisions/2026-05-30-polymarket-loss-elon-musk-of-tweets-may-28-may-30-65-89.md: open vault/03-decisions/2026-05-30-polymarket-loss-elon-musk-of-tweets-may-28-may-30-65-89.md: no such file or directory
+2026/05/30 18:30:03 monitor.go:192: exit_monitor: backfilled 10 prediction(s) for 2354184 (outcome=0)
+2026/05/30 18:30:03 monitor.go:202: exit_monitor: 1 closed, 5 remaining
+2026/05/30 18:30:03 main.go:13: exit_monitor: done
+2026/05/30 18:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 18:35:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 18:35:01 monitor.go:57: exit_monitor: sin precio fiable para 2316216 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0010) — se mantiene abierta
+2026/05/30 18:35:01 monitor.go:57: exit_monitor: sin precio fiable para 1999661 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0020) — se mantiene abierta
+2026/05/30 18:35:01 monitor.go:202: exit_monitor: 0 closed, 5 remaining
+2026/05/30 18:35:01 main.go:13: exit_monitor: done
+2026/05/30 18:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 18:40:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 18:40:01 monitor.go:57: exit_monitor: sin precio fiable para 2316216 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0010) — se mantiene abierta
+2026/05/30 18:40:01 monitor.go:57: exit_monitor: sin precio fiable para 1999661 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0020) — se mantiene abierta
+2026/05/30 18:40:01 monitor.go:202: exit_monitor: 0 closed, 5 remaining
+2026/05/30 18:40:01 main.go:13: exit_monitor: done
+2026/05/30 18:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 18:45:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 18:45:01 monitor.go:57: exit_monitor: sin precio fiable para 2316216 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0010) — se mantiene abierta
+2026/05/30 18:45:01 monitor.go:57: exit_monitor: sin precio fiable para 1999661 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0020) — se mantiene abierta
+2026/05/30 18:45:01 monitor.go:202: exit_monitor: 0 closed, 5 remaining
+2026/05/30 18:45:01 main.go:13: exit_monitor: done
+2026/05/30 18:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 18:50:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 18:50:02 monitor.go:57: exit_monitor: sin precio fiable para 2316216 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0010) — se mantiene abierta
+2026/05/30 18:50:02 monitor.go:57: exit_monitor: sin precio fiable para 1999661 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0020) — se mantiene abierta
+2026/05/30 18:50:02 monitor.go:202: exit_monitor: 0 closed, 5 remaining
+2026/05/30 18:50:02 main.go:13: exit_monitor: done
+2026/05/30 18:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 18:55:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 18:55:01 monitor.go:57: exit_monitor: sin precio fiable para 2316216 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0020) — se mantiene abierta
+2026/05/30 18:55:01 monitor.go:57: exit_monitor: sin precio fiable para 1999661 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0020) — se mantiene abierta
+2026/05/30 18:55:01 monitor.go:202: exit_monitor: 0 closed, 5 remaining
+2026/05/30 18:55:01 main.go:13: exit_monitor: done
+2026/05/30 19:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 19:00:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 19:00:01 monitor.go:57: exit_monitor: sin precio fiable para 2316216 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0020) — se mantiene abierta
+2026/05/30 19:00:01 monitor.go:57: exit_monitor: sin precio fiable para 1999661 (src=no_reliable_price bestBid=0.0000 bestAsk=0.0020) — se mantiene abierta

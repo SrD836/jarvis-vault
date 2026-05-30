@@ -1,6 +1,6 @@
 {
-  "bankroll": 3896.351530792283,
-  "used_exposure": 299.726564685528,
+  "bankroll": 3896.348378389582,
+  "used_exposure": 272.93971708822875,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -108,27 +108,6 @@
       "estimated_prob": 0.06,
       "target_prob": 0.06,
       "thesis_invalidation": "Si no hay anuncios regulatorios positivos o adopción mayorista significativa antes de fin de mayo, la probabilidad real puede caer cerca de 0.",
-      "edge_type": "info"
-    },
-    {
-      "id": "T-2354184-1780135407266",
-      "market_id": "2354184",
-      "slug": "elon-musk-of-tweets-may-28-may-30-65-89",
-      "question": "Will Elon Musk post 65-89 tweets from May 28 to May 30, 2026?",
-      "side": "yes",
-      "entry_price": 0.12,
-      "size": 26.78684759729924,
-      "category": "other",
-      "entry_timestamp": "2026-05-30T10:03:27Z",
-      "approved_price": 0.12,
-      "days_to_resolution": 0,
-      "horizon": "short",
-      "end_date": "2026-05-30T16:00:00Z",
-      "size_usd": 26.78684759729924,
-      "liquidity_usd": 10560.0174,
-      "estimated_prob": 0.15,
-      "target_prob": 0.15,
-      "thesis_invalidation": "Musk anuncia una pausa voluntaria de tweets o su cuenta es suspendida temporalmente durante el período.",
       "edge_type": "info"
     }
   ]
