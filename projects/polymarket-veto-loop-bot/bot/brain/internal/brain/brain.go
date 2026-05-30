@@ -137,6 +137,7 @@ func Run() error {
 
 	stats := struct {
 		P0, P1, P2, P3, P4, P6, P7, P8, P9, P10, P11, V1, V2, V4, M1, M2, M3, N1, N2, LLM, E1, E2, S1, LLMNoEdge, LLMParseFail int
+		R1, R3, R5, FailClosed int // Fase 9
 	}{}
 
 	// v7: load suspended categories. Brier-driven auto-suspend writes this file
@@ -256,8 +257,8 @@ func Run() error {
 			continue
 		}
 
-		// V1/V2/V4: numeric rules
-		if vr := rules.EvaluateNumeric(&c, cfg.V2VetoUnderHours); vr != nil {
+		// V1/V2/V4: numeric rules (R4: umbral de volumen configurable cfg.MinVolume24hUSD)
+		if vr := rules.EvaluateNumeric(&c, cfg.V2VetoUnderHours, cfg.MinVolume24hUSD); vr != nil {
 			blocked = append(blocked, *vr)
 			significant := vr.VetoedBy == "V2"
 			recordVeto(mem, &c, *vr, decisionsDir, significant)
@@ -430,6 +431,20 @@ func Run() error {
 			log.Printf("WARN: LLM returned nil for %s, passing", c.Slug)
 			llmResult = &types.LLMBlockResult{}
 		}
+		// Asimetría (Fase 9): si la llamada al LLM falló (infra/parse) y llm_fail_closed,
+		// BLOQUEAR — preferir falso negativo (oportunidad perdida) sobre falso positivo.
+		// Reversible vía cfg.LLMFailClosed. NUEVA 2026-05-30.
+		if llmResult.InfraFail && cfg.LLMFailClosed {
+			vr := types.VetoResult{
+				CandidateID: c.ID, Slug: c.Slug, Blocked: true,
+				Reason:   fmt.Sprintf("fail-closed: %s", llmResult.Reason),
+				VetoedBy: "LLM_FAILCLOSED",
+			}
+			blocked = append(blocked, vr)
+			recordVeto(mem, &c, vr, decisionsDir, false)
+			stats.FailClosed++
+			continue
+		}
 		if llmResult.Block {
 			vr := types.VetoResult{
 				CandidateID: c.ID,
@@ -484,6 +499,41 @@ func Run() error {
 			continue
 		}
 
+		// ----- Fase 9: reglas duras desde pérdidas reales (post-edge). -----
+		// R1 longshot: entradas baratas sin edge fuerte = lotería (-$895 histórico).
+		if cfg.LongshotBlockEnabled {
+			if vr := rules.EvalLongshotEdgeGate(&c, edgeType, llmResult.EstimatedProb, cfg.LongshotPriceThreshold, cfg.LongshotMinEdge); vr != nil {
+				blocked = append(blocked, *vr)
+				recordVetoWithExtras(mem, &c, *vr, decisionsDir, true, researchSummary, nil)
+				appendDecisionPrediction(&c, cfg, llmResult, "skip", vr.Reason, 0)
+				stats.R1++
+				continue
+			}
+		}
+		// R3 catalyst <24h: evento público inminente sin edge contemplado = coin-flip.
+		if cfg.CatalystBlockEnabled {
+			if vr := rules.EvalCatalyst24h(&c, edgeType, llmResult.ThesisInvalidation, cfg.CatalystBlockHours); vr != nil {
+				blocked = append(blocked, *vr)
+				recordVetoWithExtras(mem, &c, *vr, decisionsDir, true, researchSummary, nil)
+				appendDecisionPrediction(&c, cfg, llmResult, "skip", vr.Reason, 0)
+				stats.R3++
+				continue
+			}
+		}
+		// R5 precedentes: tesis con < min precedentes análogos = patrón débil (refuerza V5).
+		if cfg.MinPrecedents > 0 && llmResult.PrecedentCount < cfg.MinPrecedents {
+			vr := types.VetoResult{
+				CandidateID: c.ID, Slug: c.Slug, Blocked: true,
+				Reason:   fmt.Sprintf("R5 precedentes: %d < %d casos análogos", llmResult.PrecedentCount, cfg.MinPrecedents),
+				VetoedBy: "R5_precedents",
+			}
+			blocked = append(blocked, vr)
+			recordVetoWithExtras(mem, &c, vr, decisionsDir, true, researchSummary, nil)
+			appendDecisionPrediction(&c, cfg, llmResult, "skip", vr.Reason, 0)
+			stats.R5++
+			continue
+		}
+
 		d := daysUntil(c.EndDate)
 		horizon := cfg.Classify(d)
 		side := "buy_yes"
@@ -509,6 +559,7 @@ func Run() error {
 			EdgeType:           edgeType,
 			EdgeDescription:    llmResult.EdgeDescription,
 			ThesisInvalidation: llmResult.ThesisInvalidation,
+			PrecedentCount:     llmResult.PrecedentCount,
 		})
 		appendDecisionPrediction(&c, cfg, llmResult, side, "", 0)
 
@@ -529,9 +580,9 @@ func Run() error {
 	}
 
 	softrules.GenerateAndAppend(memoryPath)
-	log.Printf("Brain v7 done: %d approved, %d blocked (P0=%d P2=%d P3=%d P4=%d P6=%d P7=%d P8=%d P9=%d P10=%d P11=%d V1=%d V2=%d V4=%d M1=%d M2=%d M3=%d N1=%d N2=%d LLM=%d E1=%d E2=%d S1=%d LLM_NoEdge=%d LLM_ParseFail=%d) horizons in approved: short=%d medium=%d long=%d",
+	log.Printf("Brain v9 done: %d approved, %d blocked (P0=%d P2=%d P3=%d P4=%d P6=%d P7=%d P8=%d P9=%d P10=%d P11=%d V1=%d V2=%d V4=%d M1=%d M2=%d M3=%d N1=%d N2=%d LLM=%d E1=%d E2=%d S1=%d R1=%d R3=%d R5=%d FailClosed=%d LLM_NoEdge=%d LLM_ParseFail=%d) horizons in approved: short=%d medium=%d long=%d",
 		len(approved), len(blocked),
-		stats.P0, stats.P2, stats.P3, stats.P4, stats.P6, stats.P7, stats.P8, stats.P9, stats.P10, stats.P11, stats.V1, stats.V2, stats.V4, stats.M1, stats.M2, stats.M3, stats.N1, stats.N2, stats.LLM, stats.E1, stats.E2, stats.S1, stats.LLMNoEdge, stats.LLMParseFail,
+		stats.P0, stats.P2, stats.P3, stats.P4, stats.P6, stats.P7, stats.P8, stats.P9, stats.P10, stats.P11, stats.V1, stats.V2, stats.V4, stats.M1, stats.M2, stats.M3, stats.N1, stats.N2, stats.LLM, stats.E1, stats.E2, stats.S1, stats.R1, stats.R3, stats.R5, stats.FailClosed, stats.LLMNoEdge, stats.LLMParseFail,
 		countHorizon(approved, "short"), countHorizon(approved, "medium"), countHorizon(approved, "long"))
 	return nil
 }

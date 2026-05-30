@@ -66,6 +66,24 @@ type BotConfig struct {
 	PriceFloorShortLiqRelaxUSD  float64 `json:"price_floor_short_liq_relax_usd"`
 
 	Mode               string  `json:"mode"`
+
+	// ----- Fase 9 (2026-05-30): reglas de veto desde pérdidas reales. -----
+	// Todas reversibles: flag a false / umbral a 0 las desactiva sin rebuild.
+	// R1 longshot: bloquear entradas por debajo de un precio salvo edge info/arb fuerte.
+	LongshotBlockEnabled   bool    `json:"longshot_block_enabled"`
+	LongshotPriceThreshold float64 `json:"longshot_price_threshold"` // default 0.10
+	LongshotMinEdge        float64 `json:"longshot_min_edge"`        // default 0.15
+	// R3 catalyst 24h: bloquear evento público inminente sin edge contemplado.
+	CatalystBlockEnabled bool `json:"catalyst_block_enabled"`
+	CatalystBlockHours   int  `json:"catalyst_block_hours"` // default 24
+	// R4 volumen: expone el umbral antes hardcoded en VetoV1.
+	MinVolume24hUSD float64 `json:"min_volume_24h_usd"` // default 50000
+	// R2 tamaño/confianza: bloquear bet a confianza máxima con edge especulativo.
+	SizeConfidenceGateEnabled bool `json:"size_confidence_gate_enabled"`
+	// R5 precedentes: bloquear si la tesis se apoya en < N precedentes.
+	MinPrecedents int `json:"min_precedents"` // default 3
+	// Asimetría: fallo de infra del LLM => BLOQUEAR (preferir falso negativo).
+	LLMFailClosed bool `json:"llm_fail_closed"`
 }
 
 // ShadowEnabled reports whether the bot must skip real fills and only log
@@ -164,6 +182,23 @@ func (c *BotConfig) applyDefaults() {
 	}
 	if c.Mode == "" {
 		c.Mode = "shadow"
+	}
+	// Fase 9 numeric defaults (los bool vienen explícitos de config.json;
+	// ausencia => false => regla desactivada, fail-safe).
+	if c.LongshotPriceThreshold == 0 {
+		c.LongshotPriceThreshold = 0.10
+	}
+	if c.LongshotMinEdge == 0 {
+		c.LongshotMinEdge = 0.15
+	}
+	if c.CatalystBlockHours == 0 {
+		c.CatalystBlockHours = 24
+	}
+	if c.MinVolume24hUSD == 0 {
+		c.MinVolume24hUSD = 50000
+	}
+	if c.MinPrecedents == 0 {
+		c.MinPrecedents = 3
 	}
 }
 

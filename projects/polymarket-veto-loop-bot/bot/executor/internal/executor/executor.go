@@ -182,6 +182,23 @@ func Run() {
 			continue
 		}
 
+		// R2 (Fase 9): coherencia tamaño/confianza. Si Kelly pide la apuesta máxima
+		// (toca el cap por trade = confianza máxima) pero el edge declarado es
+		// especulativo (no info/arb duro), el tamaño no lo respalda la tesis → bloquear.
+		// NUEVA 2026-05-30 (reversible vía size_confidence_gate_enabled).
+		if cfg.SizeConfidenceGateEnabled {
+			capPerTrade := portfolio.Bankroll * cfg.MaxPerTradePct
+			et := strings.ToLower(strings.TrimSpace(a.EdgeType))
+			speculative := et == "other" || et == "calibration" || et == "liquidity"
+			if capPerTrade > 0 && tradeSize >= capPerTrade*0.999 && speculative {
+				rejects = append(rejects, types.Rejection{
+					Timestamp: nowStr, MarketID: a.CandidateID, Question: a.Question,
+					Reason: fmt.Sprintf("R2_size_confidence: bet máximo $%.0f con edge especulativo (edge_type=%s)", tradeSize, et),
+				})
+				continue
+			}
+		}
+
 		// USD horizon quota (replaces Q1/Q2 trade-count caps from v6).
 		var usdCap float64
 		switch a.Horizon {

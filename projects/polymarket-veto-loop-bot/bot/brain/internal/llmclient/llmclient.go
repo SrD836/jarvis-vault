@@ -60,7 +60,8 @@ Devuelves SIEMPRE un único JSON con esta estructura exacta:
   "estimated_prob": float,
   "edge_type": "info" | "arb" | "calibration" | "liquidity" | "other" | "none",
   "edge_description": string,
-  "thesis_invalidation": string
+  "thesis_invalidation": string,
+  "precedent_count": int
 }
 
 Vetos textuales (block=true):
@@ -81,6 +82,7 @@ Si NO bloqueas:
   · "none": el market es eficiente y NO tienes ventaja. El brain bloqueará con E1.
 - edge_description: una frase concreta con la fuente o el dato. Ejemplo bueno: "Reuters 2026-05-26 confirma anuncio Trump-Powell antes del 30; precio aún en 0.34". Ejemplo malo: "el precio parece bajo".
 - thesis_invalidation: qué tendría que pasar para cerrar la posición. Ejemplo: "Trump retira la nominación o el Senado vota en contra antes del 30".
+- precedent_count: nº de precedentes históricos análogos (mismo tipo de evento ya resuelto en el pasado) que sostienen tu tesis. Sé honesto: 0 si es un evento sin precedente claro, 1-2 si hay pocos casos, 3+ si hay un patrón robusto. El brain bloqueará (R5) las tesis con <3 precedentes.
 
 Regla de calibración: si ≥80% de tus respuestas en una sesión son edge_type="none", probablemente estás siendo demasiado conservador. Re-evalúa.
 
@@ -94,7 +96,7 @@ const SystemPromptV3V5V6 = SystemPromptEdgeGate
 // Returns the LLM result. If the dashboard is unreachable, returns a pass
 // (conservative: don't block on infra failure).
 func EvaluateV3V5V6(c *types.Candidate) *types.LLMBlockResult {
-	userMsg := fmt.Sprintf("Market: %s\nCategory: %s\nQuestion: %s\nEnd date: %s\nVolume: %.0f\nImplied price (YES): %.4f\n\nDevuelve el JSON con tu estimated_prob, edge_type, edge_description y thesis_invalidation.",
+	userMsg := fmt.Sprintf("Market: %s\nCategory: %s\nQuestion: %s\nEnd date: %s\nVolume: %.0f\nImplied price (YES): %.4f\n\nDevuelve el JSON con tu estimated_prob, edge_type, edge_description, thesis_invalidation y precedent_count.",
 		c.Slug, c.Category, c.Question, c.EndDate, c.Volume24h, c.CurrentPriceYes)
 	payload := llmCallRequest{
 		Model:     defaultModel,
@@ -105,26 +107,26 @@ func EvaluateV3V5V6(c *types.Candidate) *types.LLMBlockResult {
 
 	body, err := json.Marshal(payload)
 	if err != nil {
-		return &types.LLMBlockResult{Block: false, Reason: fmt.Sprintf("LLM marshal error: %v", err), Rule: ""}
+		return &types.LLMBlockResult{Block: false, Reason: fmt.Sprintf("LLM marshal error: %v", err), Rule: "", InfraFail: true}
 	}
 
 	client := &http.Client{Timeout: 45 * time.Second}
 	resp, err := client.Post(dashboardURL, "application/json", bytes.NewReader(body))
 	if err != nil {
-		return &types.LLMBlockResult{Block: false, Reason: fmt.Sprintf("LLM unreachable: %v", err), Rule: ""}
+		return &types.LLMBlockResult{Block: false, Reason: fmt.Sprintf("LLM unreachable: %v", err), Rule: "", InfraFail: true}
 	}
 	defer resp.Body.Close()
 
 	if resp.StatusCode != http.StatusOK {
-		return &types.LLMBlockResult{Block: false, Reason: fmt.Sprintf("LLM status %d", resp.StatusCode), Rule: ""}
+		return &types.LLMBlockResult{Block: false, Reason: fmt.Sprintf("LLM status %d", resp.StatusCode), Rule: "", InfraFail: true}
 	}
 
 	var llmResp llmCallResponse
 	if err := json.NewDecoder(resp.Body).Decode(&llmResp); err != nil {
-		return &types.LLMBlockResult{Block: false, Reason: fmt.Sprintf("LLM decode error: %v", err), Rule: "PARSE"}
+		return &types.LLMBlockResult{Block: false, Reason: fmt.Sprintf("LLM decode error: %v", err), Rule: "PARSE", InfraFail: true}
 	}
 	if llmResp.Error != "" {
-		return &types.LLMBlockResult{Block: false, Reason: fmt.Sprintf("LLM router error: %s", llmResp.Error), Rule: ""}
+		return &types.LLMBlockResult{Block: false, Reason: fmt.Sprintf("LLM router error: %s", llmResp.Error), Rule: "", InfraFail: true}
 	}
 
 	// Dashboard /api/llm/call returns the completion in `text`. Tolerate stray
@@ -134,12 +136,12 @@ func EvaluateV3V5V6(c *types.Candidate) *types.LLMBlockResult {
 	jend := strings.LastIndex(raw, "}")
 	if jstart < 0 || jend <= jstart {
 		log.Printf("[LLM] %s | parse_fail raw=%q", c.Slug, truncateForLog(raw, 300))
-		return &types.LLMBlockResult{Block: false, Reason: "LLM no JSON in output", Rule: "PARSE"}
+		return &types.LLMBlockResult{Block: false, Reason: "LLM no JSON in output", Rule: "PARSE", InfraFail: true}
 	}
 	var result types.LLMBlockResult
 	if err := json.Unmarshal([]byte(raw[jstart:jend+1]), &result); err != nil {
 		log.Printf("[LLM] %s | parse_fail err=%v raw=%q", c.Slug, err, truncateForLog(raw, 300))
-		return &types.LLMBlockResult{Block: false, Reason: fmt.Sprintf("LLM output parse error: %v", err), Rule: "PARSE"}
+		return &types.LLMBlockResult{Block: false, Reason: fmt.Sprintf("LLM output parse error: %v", err), Rule: "PARSE", InfraFail: true}
 	}
 
 	log.Printf("[LLM] %s | block=%t rule=%s est_prob=%.3f edge=%s desc=%q",

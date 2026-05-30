@@ -8,14 +8,18 @@ import (
 	"github.com/jarvis/polymarket-veto-loop-bot/bot/brain/internal/types"
 )
 
-// VetoV1 checks volume: Veto if Vol 24h < 50,000 USD.
-func VetoV1(c *types.Candidate) *types.VetoResult {
-	if c.Volume24h < 50000 {
+// VetoV1 checks volume: Veto if Vol 24h < minVol USD.
+// R4 (Fase 9): umbral ahora configurable (cfg.MinVolume24hUSD). minVol<=0 => default 50000.
+func VetoV1(c *types.Candidate, minVol float64) *types.VetoResult {
+	if minVol <= 0 {
+		minVol = 50000
+	}
+	if c.Volume24h < minVol {
 		return &types.VetoResult{
 			CandidateID: c.ID,
 			Slug:        c.Slug,
 			Blocked:     true,
-			Reason:      fmt.Sprintf("volumen insuficiente: %.2f USD < 50000 USD", c.Volume24h),
+			Reason:      fmt.Sprintf("volumen insuficiente: %.2f USD < %.0f USD", c.Volume24h, minVol),
 			VetoedBy:    "V1",
 		}
 	}
@@ -58,14 +62,76 @@ func VetoV4(c *types.Candidate) *types.VetoResult {
 }
 
 // EvaluateNumeric runs V1, V2, V4 sequentially. Returns first veto or nil.
-func EvaluateNumeric(c *types.Candidate, v2UnderHours int) *types.VetoResult {
-	if r := VetoV1(c); r != nil {
+func EvaluateNumeric(c *types.Candidate, v2UnderHours int, minVol float64) *types.VetoResult {
+	if r := VetoV1(c, minVol); r != nil {
 		return r
 	}
 	if r := VetoV2(c, v2UnderHours); r != nil {
 		return r
 	}
 	return VetoV4(c)
+}
+
+// ---------------------------------------------------------------------------
+// Fase 9 (2026-05-30): reglas duras desde pérdidas reales (tabla forense).
+// Filosofía veto-loop: default BLOQUEAR; aprobar exige pasar todas las duras.
+// Reversibles vía flags de config.
+// ---------------------------------------------------------------------------
+
+// EvalLongshotEdgeGate (R1): bloquea entradas baratas (lotería) salvo edge informacional
+// fuerte y medible. Pérdida real: entradas <0.10 = -$895 (60% de la pérdida neta histórica).
+// Se llama DESPUÉS del LLM porque necesita edge_type + estimated_prob.
+// NUEVA 2026-05-30 (reversible vía longshot_block_enabled / longshot_price_threshold).
+func EvalLongshotEdgeGate(c *types.Candidate, edgeType string, estimatedProb, priceThreshold, minEdge float64) *types.VetoResult {
+	if c.CurrentPriceYes >= priceThreshold {
+		return nil
+	}
+	// Excepción: edge informacional/arb explícito y de magnitud suficiente.
+	strongEdge := (edgeType == "info" || edgeType == "arb")
+	edgePts := estimatedProb - c.CurrentPriceYes
+	if edgePts < 0 {
+		edgePts = -edgePts
+	}
+	if strongEdge && edgePts >= minEdge {
+		return nil
+	}
+	return &types.VetoResult{
+		CandidateID: c.ID, Slug: c.Slug, Blocked: true,
+		Reason: fmt.Sprintf("R1 longshot: precio %.4f < %.2f sin edge fuerte (edge_type=%s, edge=%.3f < %.2f)",
+			c.CurrentPriceYes, priceThreshold, edgeType, edgePts, minEdge),
+		VetoedBy: "R1_longshot",
+	}
+}
+
+// EvalCatalyst24h (R3): bloquea mercados que resuelven por un evento público inminente
+// (<N horas) salvo que la tesis lo contemple explícitamente (edge_type=info + invalidación
+// declarada). Un binario que resuelve en <24h sin edge específico es un coin-flip.
+// NUEVA 2026-05-30 (reversible vía catalyst_block_enabled / catalyst_block_hours).
+func EvalCatalyst24h(c *types.Candidate, edgeType, thesisInvalidation string, blockHours int) *types.VetoResult {
+	if c.EndDate == "" || blockHours <= 0 {
+		return nil
+	}
+	end, err := time.Parse(time.RFC3339, c.EndDate)
+	if err != nil {
+		end, err = time.Parse("2006-01-02T15:04:05Z", c.EndDate)
+		if err != nil {
+			return nil
+		}
+	}
+	remaining := end.Sub(time.Now().UTC())
+	if remaining <= 0 || remaining >= time.Duration(blockHours)*time.Hour {
+		return nil
+	}
+	// Excepción: catalyst contemplado por la tesis.
+	if edgeType == "info" && thesisInvalidation != "" {
+		return nil
+	}
+	return &types.VetoResult{
+		CandidateID: c.ID, Slug: c.Slug, Blocked: true,
+		Reason: fmt.Sprintf("R3 catalyst <%dh: resuelve en %.1fh sin edge contemplado (edge_type=%s)",
+			blockHours, remaining.Hours(), edgeType),
+		VetoedBy: "R3_catalyst_24h",
+	}
 }
 
 // ---------------------------------------------------------------------------

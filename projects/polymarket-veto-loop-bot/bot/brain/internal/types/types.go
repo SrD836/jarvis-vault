@@ -54,6 +54,8 @@ type Approved struct {
 	EdgeType           string  `json:"edge_type,omitempty"`
 	EdgeDescription    string  `json:"edge_description,omitempty"`
 	ThesisInvalidation string  `json:"thesis_invalidation,omitempty"`
+	// R5 (Fase 9): nº de precedentes análogos que sostienen la tesis. <min => block.
+	PrecedentCount     int     `json:"precedent_count,omitempty"`
 }
 
 // LLMRequest payload to the JARVIS dashboard LLM bridge.
@@ -87,6 +89,10 @@ type LLMBlockResult struct {
 	EdgeType           string  `json:"edge_type,omitempty"` // info|arb|calibration|liquidity|other|none
 	EdgeDescription    string  `json:"edge_description,omitempty"`
 	ThesisInvalidation string  `json:"thesis_invalidation,omitempty"`
+	PrecedentCount     int     `json:"precedent_count,omitempty"` // R5: precedentes análogos
+	// InfraFail (no serializado al LLM): true si la llamada falló (unreachable/
+	// status/parse). Permite al brain aplicar fail-closed (asimetría Fase 9).
+	InfraFail          bool    `json:"-"`
 }
 
 // PriceHistory for V4 chasing check (tracking price movement in last 4h).

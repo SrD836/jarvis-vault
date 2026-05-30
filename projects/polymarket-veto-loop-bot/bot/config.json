@@ -24,10 +24,19 @@
   "sizing_mode": "kelly_fractional",
   "kelly_fraction": 0.25,
   "max_per_trade_pct": 0.05,
-  "max_total_exposure_pct": 0.40,
+  "max_total_exposure_pct": 0.4,
   "min_edge_points": 0.03,
   "price_floor": 0.02,
   "price_ceiling": 0.98,
   "price_floor_short_liq_relax": 0.05,
-  "price_floor_short_liq_relax_usd": 20000
+  "price_floor_short_liq_relax_usd": 20000,
+  "longshot_block_enabled": true,
+  "longshot_price_threshold": 0.1,
+  "longshot_min_edge": 0.15,
+  "catalyst_block_enabled": true,
+  "catalyst_block_hours": 24,
+  "min_volume_24h_usd": 50000,
+  "size_confidence_gate_enabled": true,
+  "min_precedents": 3,
+  "llm_fail_closed": true
 }
