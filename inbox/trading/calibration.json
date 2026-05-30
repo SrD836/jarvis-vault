@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-05-29T20:35:41.399295+00:00",
+  "generated_at": "2026-05-30T01:30:02.225717+00:00",
   "window_days": 7,
   "short": {
-    "n": 26,
-    "wins": 26,
+    "n": 25,
+    "wins": 25,
     "losses": 0,
     "win_rate": 1.0,
-    "avg_win": 12.78,
+    "avg_win": 12.51,
     "avg_loss": 0.0,
     "payoff": 0.0,
     "breakeven_win_rate": 0.0,
-    "expectancy_per_trade": 12.7792,
-    "total_pnl": 332.26
+    "expectancy_per_trade": 12.5072,
+    "total_pnl": 312.68
   },
   "brier": {
-    "n": 4,
-    "score": 0.0925
+    "n": 33,
+    "score": 0.1743
   },
   "kelly_shrink": 1.0,
   "min_edge_points_override": 0.0,
-  "rationale": "short n=26 wr=1.000 expectancy=+12.7792/trade; shrink=1.0 (no losers in window, shrink_exp=1.0); min_edge 0.030->0.030"
+  "rationale": "short n=25 wr=1.000 expectancy=+12.5072/trade; shrink=1.0 (no losers in window, shrink_exp=1.0 * brier_factor=1.000 (brier=0.174 n=33)); min_edge 0.030->0.030"
 }

@@ -16,35 +16,31 @@ related:
 
 ## Decisiones del dia
 
-- Evaluadas (predictions): **1362**
-- Abiertas hoy (approved): **43**
+- Evaluadas (predictions): **1447**
+- Abiertas hoy (approved): **0**
 - Cerradas hoy (closed): **13**  ·  P&L dia: **-75.01 USD**  ·  wins 2 / losses 10
 
 ### Por tipo de decision
 
 | decision | n |
 |---|---|
-| skip | 680 |
-| buy_no | 534 |
-| buy_yes | 148 |
+| skip | 725 |
+| buy_no | 567 |
+| buy_yes | 155 |
 
 ### Top motivos skip/veto
 
 | motivo | n |
 |---|---|
-| edge no declarado por LLM (edge_type=none) | 92 |
+| edge no declarado por LLM (edge_type=none) | 97 |
 | edge 0.017 < mín 0.030 (p̂=0.020, implied=0.037) | 8 |
-| edge 0.020 < mín 0.030 (p̂=0.030, implied=0.050) | 6 |
+| edge 0.020 < mín 0.030 (p̂=0.030, implied=0.050) | 7 |
 | edge 0.010 < mín 0.030 (p̂=0.030, implied=0.020) | 6 |
-| edge 0.018 < mín 0.030 (p̂=0.070, implied=0.052) | 5 |
+| edge 0.014 < mín 0.030 (p̂=0.080, implied=0.094) | 6 |
 
 ### Trades abiertos por horizonte
 
-| horizonte | n |
-|---|---|
-| long | 20 |
-| medium | 14 |
-| short | 9 |
+_ninguno_
 
 ### Top 3 cierres (por |P&L|)
 
@@ -56,8 +52,8 @@ related:
 
 ## Calibracion actual (`calibration.json`)
 
-- short: n=26 wr=1.000 expectancy=+12.7792/trade total_pnl=+332.26
-- kelly_shrink=1.0 min_edge_override=0.0 brier=0.0925 (n=4)
+- short: n=25 wr=1.000 expectancy=+12.5072/trade total_pnl=+312.68
+- kelly_shrink=1.0 min_edge_override=0.0 brier=0.1743 (n=33)
 
 ## Human notes
 

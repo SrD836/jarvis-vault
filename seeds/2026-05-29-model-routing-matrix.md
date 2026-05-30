@@ -18,6 +18,14 @@ tags: [seed, arquitectura, llm-routing, claude, max, anti-baneo]
 
 # Matriz de routing de modelos (2026-05-29)
 
+> **ACTUALIZACION 2026-05-30 - REGLA REVERTIDA (decision consciente de David).** La "regla de oro" de
+> abajo ("cualquier cron = Claude IMPOSIBLE") fue REVERTIDA. Ahora los crons-producto de noche de la
+> allowlist `run_logger.NIGHT_CLAUDE` (overnight_audit->sonnet; nightly_digest / overnight_research /
+> daily_brief / learnings->opus) SI usan Claude via env `JARVIS_NIGHT_CLAUDE` (doble opt-in). Sigue
+> intacto: `nunca api key` (solo docker exec gateway), CRITERIO->cola pending-review, y los crons NO
+> listados siguen bloqueados. Ver STATE.md Fase 6. Cita: *"quiero sacarle mas provecho a los modelos
+> de Claude... corrige dicha regla"*.
+
 **Objetivo:** usar Claude (incl. Opus 4.8) en los agentes interactivos SIN uso automatizado de Max (riesgo de baneo). Eje de decision: **interactivo (David presente) = Claude OK; cualquier cron/unattended = Claude IMPOSIBLE**.
 
 ## Regla de oro
