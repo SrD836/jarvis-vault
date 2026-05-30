@@ -1,0 +1,367 @@
+{
+  "entries": {
+    "baseball_mlb_world_series_winner": {
+      "fetched_at": "2026-05-30T19:33:59Z",
+      "outcomes": [
+        {
+          "name": "Los Angeles Dodgers",
+          "price": 3.34
+        },
+        {
+          "name": "New York Yankees",
+          "price": 7.22
+        },
+        {
+          "name": "Atlanta Braves",
+          "price": 11.2
+        },
+        {
+          "name": "Seattle Mariners",
+          "price": 13.08
+        },
+        {
+          "name": "Tampa Bay Rays",
+          "price": 15.18
+        },
+        {
+          "name": "Chicago Cubs",
+          "price": 15.22
+        },
+        {
+          "name": "Philadelphia Phillies",
+          "price": 17.78
+        },
+        {
+          "name": "Milwaukee Brewers",
+          "price": 18.76
+        },
+        {
+          "name": "Texas Rangers",
+          "price": 23.01
+        },
+        {
+          "name": "Toronto Blue Jays",
+          "price": 23.65
+        },
+        {
+          "name": "Cleveland Guardians",
+          "price": 27.78
+        },
+        {
+          "name": "San Diego Padres",
+          "price": 32.4
+        },
+        {
+          "name": "Detroit Tigers",
+          "price": 39.7
+        },
+        {
+          "name": "Houston Astros",
+          "price": 51.63
+        },
+        {
+          "name": "Athletics",
+          "price": 53.25
+        },
+        {
+          "name": "Pittsburgh Pirates",
+          "price": 56.37
+        },
+        {
+          "name": "Boston Red Sox",
+          "price": 57.06
+        },
+        {
+          "name": "New York Mets",
+          "price": 62.64
+        },
+        {
+          "name": "Baltimore Orioles",
+          "price": 63.67
+        },
+        {
+          "name": "Kansas City Royals",
+          "price": 65.74
+        },
+        {
+          "name": "Arizona Diamondbacks",
+          "price": 71.95
+        },
+        {
+          "name": "Chicago White Sox",
+          "price": 88.31
+        },
+        {
+          "name": "Cincinnati Reds",
+          "price": 105.31
+        },
+        {
+          "name": "St. Louis Cardinals",
+          "price": 110.45
+        },
+        {
+          "name": "Minnesota Twins",
+          "price": 115.69
+        },
+        {
+          "name": "San Francisco Giants",
+          "price": 188.45
+        },
+        {
+          "name": "Miami Marlins",
+          "price": 271.48
+        },
+        {
+          "name": "Los Angeles Angels",
+          "price": 312.96
+        },
+        {
+          "name": "Washington Nationals",
+          "price": 435.23
+        },
+        {
+          "name": "Colorado Rockies",
+          "price": 778.58
+        }
+      ]
+    },
+    "basketball_nba_championship_winner": {
+      "fetched_at": "2026-05-30T19:32:02Z",
+      "outcomes": [
+        {
+          "name": "Oklahoma City Thunder",
+          "price": 2.17
+        },
+        {
+          "name": "New York Knicks",
+          "price": 3.08
+        },
+        {
+          "name": "San Antonio Spurs",
+          "price": 3.7
+        }
+      ]
+    },
+    "soccer_fifa_world_cup_winner": {
+      "fetched_at": "2026-05-30T19:32:09Z",
+      "outcomes": [
+        {
+          "name": "Spain",
+          "price": 6
+        },
+        {
+          "name": "France",
+          "price": 6.2
+        },
+        {
+          "name": "England",
+          "price": 8
+        },
+        {
+          "name": "Brazil",
+          "price": 10.5
+        },
+        {
+          "name": "Argentina",
+          "price": 10.5
+        },
+        {
+          "name": "Portugal",
+          "price": 12
+        },
+        {
+          "name": "Germany",
+          "price": 17.5
+        },
+        {
+          "name": "Netherlands",
+          "price": 26
+        },
+        {
+          "name": "Norway",
+          "price": 38
+        },
+        {
+          "name": "Belgium",
+          "price": 48
+        },
+        {
+          "name": "Colombia",
+          "price": 50
+        },
+        {
+          "name": "Japan",
+          "price": 65
+        },
+        {
+          "name": "Morocco",
+          "price": 70
+        },
+        {
+          "name": "USA",
+          "price": 85
+        },
+        {
+          "name": "Mexico",
+          "price": 90
+        },
+        {
+          "name": "Switzerland",
+          "price": 95
+        },
+        {
+          "name": "Uruguay",
+          "price": 100
+        },
+        {
+          "name": "Ecuador",
+          "price": 100
+        },
+        {
+          "name": "Turkey",
+          "price": 130
+        },
+        {
+          "name": "Croatia",
+          "price": 150
+        },
+        {
+          "name": "Senegal",
+          "price": 160
+        },
+        {
+          "name": "Austria",
+          "price": 170
+        },
+        {
+          "name": "Sweden",
+          "price": 180
+        },
+        {
+          "name": "Scotland",
+          "price": 270
+        },
+        {
+          "name": "Ivory Coast",
+          "price": 350
+        },
+        {
+          "name": "Canada",
+          "price": 370
+        },
+        {
+          "name": "Paraguay",
+          "price": 410
+        },
+        {
+          "name": "South Korea",
+          "price": 460
+        },
+        {
+          "name": "Egypt",
+          "price": 470
+        },
+        {
+          "name": "Czech Republic",
+          "price": 470
+        },
+        {
+          "name": "Italy",
+          "price": 530
+        },
+        {
+          "name": "Australia",
+          "price": 530
+        },
+        {
+          "name": "Bosnia \u0026 Herzegovina",
+          "price": 580
+        },
+        {
+          "name": "Algeria",
+          "price": 580
+        },
+        {
+          "name": "Ghana",
+          "price": 640
+        },
+        {
+          "name": "Tunisia",
+          "price": 1000
+        },
+        {
+          "name": "Denmark",
+          "price": 1000
+        },
+        {
+          "name": "Iran",
+          "price": 1000
+        },
+        {
+          "name": "Jordan",
+          "price": 1000
+        },
+        {
+          "name": "Uzbekistan",
+          "price": 1000
+        },
+        {
+          "name": "New Zealand",
+          "price": 1000
+        },
+        {
+          "name": "Poland",
+          "price": 1000
+        },
+        {
+          "name": "Qatar",
+          "price": 1000
+        },
+        {
+          "name": "Saudi Arabia",
+          "price": 1000
+        },
+        {
+          "name": "Cape Verde",
+          "price": 1000
+        },
+        {
+          "name": "South Africa",
+          "price": 1000
+        },
+        {
+          "name": "Bolivia",
+          "price": 1000
+        },
+        {
+          "name": "Curaçao",
+          "price": 1000
+        },
+        {
+          "name": "DR Congo",
+          "price": 1000
+        },
+        {
+          "name": "Haiti",
+          "price": 1000
+        },
+        {
+          "name": "Iraq",
+          "price": 1000
+        },
+        {
+          "name": "Jamaica",
+          "price": 1000
+        },
+        {
+          "name": "Kosovo",
+          "price": 1000
+        },
+        {
+          "name": "Panama",
+          "price": 1000
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-05-30T19:46:30.830111+00:00",
+  "realized_v7": {
+    "pnl": 239.86,
+    "n": 66,
+    "wr": 81.8,
+    "exp": 3.63
+  },
+  "combined": {
+    "pnl": 129.57,
+    "n": 70,
+    "exp": 1.85
+  },
+  "worst_case": {
+    "pnl": -227.9,
+    "n": 72,
+    "exp": -3.17,
+    "open_stake": 467.76
+  },
+  "open_mtm": {
+    "unrealized": -110.29,
+    "n_priced": 4,
+    "n_open": 6
+  },
+  "brier": {
+    "score": 0.0828,
+    "n": 209
+  },
+  "verdict": "FAIL",
+  "why": "peor caso -3.17 (libro longshot abierto $468)"
+}

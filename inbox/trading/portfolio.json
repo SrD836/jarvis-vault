@@ -1,6 +1,6 @@
 {
-  "bankroll": 3896.348378389582,
-  "used_exposure": 272.93971708822875,
+  "bankroll": 3701.530959470103,
+  "used_exposure": 467.75713600770786,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -108,6 +108,47 @@
       "estimated_prob": 0.06,
       "target_prob": 0.06,
       "thesis_invalidation": "Si no hay anuncios regulatorios positivos o adopción mayorista significativa antes de fin de mayo, la probabilidad real puede caer cerca de 0.",
+      "edge_type": "info"
+    },
+    {
+      "id": "T-2361313-1780167889157",
+      "market_id": "2361313",
+      "slug": "will-the-breadwinner-opening-weekend-box-office-be-greater-than-7m",
+      "question": "Will \"The Breadwinner\" Opening Weekend Box Office be greater than 7m?",
+      "side": "yes",
+      "entry_price": 0.88,
+      "size": 194.8174189194791,
+      "category": "entertainment",
+      "entry_timestamp": "2026-05-30T19:04:49Z",
+      "approved_price": 0.88,
+      "days_to_resolution": 1,
+      "horizon": "short",
+      "end_date": "2026-06-01T12:00:00Z",
+      "size_usd": 194.8174189194791,
+      "liquidity_usd": 12832.4657,
+      "sources_used": [
+        {
+          "domain": "comingsoon.net",
+          "url": "https://www.comingsoon.net/movies/features/2140405-the-breadwinner-nate-bargatze-box-office-forecast-predictions",
+          "headline_title": "Nate Bargatze's The Breadwinner Is Sadly Slipping Amid New Box Office Forecasts",
+          "published_date": "2026-05-28"
+        },
+        {
+          "domain": "the-numbers.com",
+          "url": "https://www.the-numbers.com/movie/Breadwinner-The-(2026)",
+          "headline_title": "The Breadwinner (2026) - Box Office and Financial Information",
+          "published_date": "2026-05-29"
+        },
+        {
+          "domain": "popculture.com",
+          "url": "https://popculture.com/entertainment/news/the-breadwinner-opening-box-office/",
+          "headline_title": "Will 'The Breadwinner' Gross More Than $10 Million Its Opening Weekend at the Box Office?",
+          "published_date": "2026-05-29"
+        }
+      ],
+      "estimated_prob": 0.92,
+      "target_prob": 0.92,
+      "thesis_invalidation": "Si las críticas son mixtas o la distribución se limita a menos de 500 salas en el opening weekend, o si la competencia de estrenos simultáneos (blockbusters) reduce la asistencia.",
       "edge_type": "info"
     }
   ]

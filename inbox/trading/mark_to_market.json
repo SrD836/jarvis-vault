@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-30T16:54:50Z",
+  "generated_at": "2026-05-30T19:46:30Z",
   "n": 6,
   "n_priced": 4,
   "n_unpriceable": 2,
-  "total_unrealized": -168.962525456472,
-  "cost_unpriceable": 64.4060092668623,
+  "total_unrealized": -110.28734393628869,
+  "cost_unpriceable": 137.3913226179924,
   "positions": [
     {
       "market_id": "2316216",
@@ -13,11 +13,11 @@
       "side": "yes",
       "entry_price": 0.42,
       "size_usd": 99.77216094842932,
-      "exit_price": 0.2,
-      "source": "bestBid",
+      "exit_price": 0,
+      "source": "no_reliable_price",
       "resolved": false,
-      "priceable": true,
-      "unrealized_pnl": -52.26160811584392
+      "priceable": false,
+      "unrealized_pnl": null
     },
     {
       "market_id": "2132800",
@@ -39,11 +39,11 @@
       "side": "yes",
       "entry_price": 0.052,
       "size_usd": 49.61485129154349,
-      "exit_price": 0.006,
+      "exit_price": 0.007,
       "source": "bestBid",
       "resolved": false,
       "priceable": true,
-      "unrealized_pnl": -43.89006075790385
+      "unrealized_pnl": -42.93592900229725
     },
     {
       "market_id": "1999661",
@@ -65,24 +65,24 @@
       "side": "yes",
       "entry_price": 0.021,
       "size_usd": 34.07887709971088,
-      "exit_price": 0.002,
+      "exit_price": 0.004,
       "source": "bestBid",
       "resolved": false,
       "priceable": true,
-      "unrealized_pnl": -30.833269756881272
+      "unrealized_pnl": -27.587662414051664
     },
     {
-      "market_id": "2354184",
-      "slug": "elon-musk-of-tweets-may-28-may-30-65-89",
-      "category": "other",
+      "market_id": "2361313",
+      "slug": "will-the-breadwinner-opening-weekend-box-office-be-greater-than-7m",
+      "category": "entertainment",
       "side": "yes",
-      "entry_price": 0.12,
-      "size_usd": 26.78684759729924,
-      "exit_price": 0,
-      "source": "no_reliable_price",
+      "entry_price": 0.88,
+      "size_usd": 194.8174189194791,
+      "exit_price": 0.89,
+      "source": "bestBid",
       "resolved": false,
-      "priceable": false,
-      "unrealized_pnl": null
+      "priceable": true,
+      "unrealized_pnl": 2.2138343059031915
     }
   ]
 }
