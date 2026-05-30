@@ -38,5 +38,8 @@
   "min_volume_24h_usd": 50000,
   "size_confidence_gate_enabled": true,
   "min_precedents": 3,
-  "llm_fail_closed": true
+  "llm_fail_closed": true,
+  "thesis_stale_enabled": true,
+  "thesis_stale_days": 1.0,
+  "thesis_stale_margin": 0.03
 }

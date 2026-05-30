@@ -84,6 +84,13 @@ type BotConfig struct {
 	MinPrecedents int `json:"min_precedents"` // default 3
 	// Asimetría: fallo de infra del LLM => BLOQUEAR (preferir falso negativo).
 	LLMFailClosed bool `json:"llm_fail_closed"`
+	// G1 corte de pérdidas (Fase B): thesis_stale = contraparte simétrica de
+	// target_hit. Cerca de resolución, si la tesis no se materializó (precio no
+	// subió hacia EstimatedProb y sigue <= entrada) => cerrar. Respeta "no % stop"
+	// (solo cerca de expiry, nunca con tiempo por delante) => cero whipsaw.
+	ThesisStaleEnabled bool    `json:"thesis_stale_enabled"`
+	ThesisStaleDays    float64 `json:"thesis_stale_days"`   // default 1.0
+	ThesisStaleMargin  float64 `json:"thesis_stale_margin"` // default 0.03
 }
 
 // ShadowEnabled reports whether the bot must skip real fills and only log
@@ -199,6 +206,13 @@ func (c *BotConfig) applyDefaults() {
 	}
 	if c.MinPrecedents == 0 {
 		c.MinPrecedents = 3
+	}
+	// G1: defaults numéricos (el bool thesis_stale_enabled viene explícito de config.json).
+	if c.ThesisStaleDays == 0 {
+		c.ThesisStaleDays = 1.0
+	}
+	if c.ThesisStaleMargin == 0 {
+		c.ThesisStaleMargin = 0.03
 	}
 }
 

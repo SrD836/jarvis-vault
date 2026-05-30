@@ -30,7 +30,7 @@ import brier  # noqa: E402  reuse load_rows, brier, _pnl
 
 N_MIN = int(os.environ.get("EXPECTANCY_N_MIN", "50"))
 BRIER_MAX = float(os.environ.get("EXPECTANCY_BRIER_MAX", "0.25"))
-V7_REASONS = {"market_closed", "target_hit", "no_remaining_edge"}
+V7_REASONS = {"market_closed", "target_hit", "no_remaining_edge", "thesis_stale"}
 FALLBACK = "lastTradePrice_fallback"
 T = "vault/inbox/trading/"
 

@@ -53,7 +53,7 @@ CATEGORY_PNL_MAX_LOSS = float(os.environ.get("CATEGORY_PNL_MAX_LOSS", "-1.0"))
 CATEGORY_PNL_WINDOW_DAYS = int(os.environ.get("CATEGORY_PNL_WINDOW_DAYS", "30"))
 # Cierres realizados que reflejan el edge de la política (excluye stop_loss del
 # régimen muerto + el bucket del fallback-bug). Espejo de daily_calibration.REAL_REASONS.
-REAL_REASONS = {"market_closed", "target_hit", "no_remaining_edge"}
+REAL_REASONS = {"market_closed", "target_hit", "no_remaining_edge", "thesis_stale"}
 
 DEFAULT_PREDICTIONS = "vault/inbox/trading/predictions.jsonl"
 DEFAULT_CLOSED = "vault/inbox/trading/closed.jsonl"

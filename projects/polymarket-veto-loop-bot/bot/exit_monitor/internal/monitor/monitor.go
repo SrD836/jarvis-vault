@@ -102,6 +102,14 @@ func Run() {
 		}
 		noEdge := a.EstimatedProb > 0 && daysLeft >= 0 && daysLeft < 1 && math.Abs(price-a.EstimatedProb) < 0.02
 
+		// G1 thesis_stale (Fase B, NUEVA 2026-05-30, reversible vía thesis_stale_enabled):
+		// contraparte simétrica de target_hit. Cerca de resolución, si la tesis no se
+		// materializó (precio no subió hacia EstimatedProb y sigue <= entrada) => cerrar.
+		// Respeta "no % stop": solo cerca de expiry, nunca con tiempo por delante (sin whipsaw).
+		// price ya está VALIDADO por ExitPrice (las no-fiables se difieren arriba).
+		thesisStale := cfg.ThesisStaleEnabled && IsThesisStale(a.Side, price, entryPrice,
+			a.EstimatedProb, daysLeft, cfg.ThesisStaleDays, cfg.ThesisStaleMargin)
+
 		reason := ""
 		switch {
 		case mktClosed:
@@ -110,6 +118,8 @@ func Run() {
 			reason = "no_remaining_edge"
 		case targetHit:
 			reason = "target_hit"
+		case thesisStale:
+			reason = "thesis_stale"
 		default:
 			remaining = append(remaining, a)
 			continue
@@ -198,6 +208,24 @@ func computeDaysOpen(entryTS string, now time.Time) float64 {
 		return 0
 	}
 	return math.Round(now.Sub(t).Hours()/24*100) / 100
+}
+
+// IsThesisStale (G1): la tesis no se materializó cerca de la resolución. Contraparte
+// simétrica de target_hit. Solo dispara con 0 <= daysLeft < staleDays (ventana de expiry)
+// y est > 0; nunca con tiempo por delante => respeta "no % stop" (sin whipsaw). Para YES:
+// el precio sigue <= entrada (no progresó) y < est-margin (no convergió al alza). Para NO,
+// simétrico (precio >= entrada y > est+margin). margin evita cortar por ruido pegado al estimado.
+func IsThesisStale(side string, price, entry, est, daysLeft, staleDays, margin float64) bool {
+	if est <= 0 || daysLeft < 0 || daysLeft >= staleDays {
+		return false
+	}
+	switch side {
+	case "yes":
+		return price <= entry && price < est-margin
+	case "no":
+		return price >= entry && price > est+margin
+	}
+	return false
 }
 
 // daysToResolution returns days remaining until endDate. -1 if unparseable.

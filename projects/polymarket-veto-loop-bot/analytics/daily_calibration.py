@@ -42,7 +42,7 @@ DEFAULT_CONFIG = "vault/projects/polymarket-veto-loop-bot/bot/config.json"
 # Only v7 thesis exits are the strategy's real outcomes. Everything else
 # (audit liquidations, horizon rebalances, manual resets) is excluded so the
 # expectancy reflects the policy, not bookkeeping events.
-REAL_REASONS = {"market_closed", "target_hit", "no_remaining_edge"}
+REAL_REASONS = {"market_closed", "target_hit", "no_remaining_edge", "thesis_stale"}
 
 N_MIN = 10            # min real short closes before we act on expectancy
 SHRINK_FLOOR = 0.25   # never shrink Kelly below 1/4 of the edge
