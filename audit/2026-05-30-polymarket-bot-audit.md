@@ -23,8 +23,13 @@ pérdidas; la capa de dinero real NO existe. La rentabilidad está bloqueada por
   por target_hit / no_remaining_edge / resolución. Longshots perdedores cabalgan hasta 0. Asimetría
   (ganadores pronto, perdedores se mantienen) → realizado siempre parece bueno = sesgo supervivencia.
   Causa del peor-caso −$784. `stop_loss_*`/`take_profit_pct` del config están MUERTOS.
-- **G2 · Sin fuente de edge.** `BRAIN_DISABLE_RESEARCH=1`. Opera sin research → calibrado sin alpha →
-  no bate un mercado eficiente neto de spread. Calibración ≠ beneficio.
+- **G2 · Sin fuente de edge. [HECHO 2026-05-30, vault VPS `296a4a9a`]** Raíz real: edge y research
+  estaban DESCONECTADOS — el LLM declaraba `estimated_prob` sin web (desviación no informada vs precio =
+  -EV), y el research solo vetaba aparte. Fix: research pasa a GATE POST-VETO (claudemax websearch solo
+  sobre casi-aprobados, sobre el lado real; `DecideEdgeResearch` testeada: against→N1, silent+catalyst→N2,
+  silent lejano→shrink edge + re-E2, support→opera+sources). `edge_research_enabled` config-gated.
+  Verificado live: 9 approved (8 c/sources), N1=15 N2=3 → 67% de casi-aprobados muertos por noticia.
+  ~27 claudemax/ciclo (tope 30, caché 6h). NO prueba expectancy+ aún → se mide en forward (06-13).
 - **G3 · Spread/fees no modelados.** entry=bestAsk, exit=bestBid; libros finos → coste round-trip alto
   que NO entra en `min_edge_points` (0.03).
 - **G4 · Kelly sobre-dimensiona longshots.** Kelly sobre edges sobreconfiados de baja prob → $50-165 en
@@ -44,8 +49,8 @@ pérdidas; la capa de dinero real NO existe. La rentabilidad está bloqueada por
 ## Roadmap
 - **A — Prueba (ahora → 2026-06-13):** ya montada. R1/R3 activos, NO tocar estrategia (contamina datos).
   Cron diario acumula serie. Re-eval agendada 13-jun (cron VPS → Telegram).
-- **B — Arreglar expectancy (tras 06-13):** G1 gestión de pérdidas (matar asimetría) → G2 reactivar edge
-  → G3 spread/fees en el gate → G4 sizing (cap Kelly low-price + shrink) → G7 caps estrictos.
+- **B — Arreglar expectancy (tras 06-13):** ~~G1 gestión de pérdidas~~ [HECHO] → ~~G2 reactivar edge~~
+  [HECHO] → G3 spread/fees en el gate → G4 sizing (cap Kelly low-price + shrink) → G7 caps estrictos.
 - **C — Re-probar:** ventana forward con fixes B; criterio: expectancy combinada >0 Y robusta peor-caso
   Y Brier ≤0.25 Y sostenida (serie diaria), N≥50.
 - **D — Build dinero real (SOLO si C pasa):** capa CLOB + controles live + canary capital pequeño.
