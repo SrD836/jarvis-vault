@@ -1,7 +1,7 @@
 ---
 title: "Memoria JARVIS — índice"
 type: memory-export-index
-generated_at: 2026-05-29T10:02:57Z
+generated_at: 2026-05-30T05:00:03Z
 tags: [memory-export, jarvis, read-only, MOC]
 ---
 
@@ -11,6 +11,8 @@ tags: [memory-export, jarvis, read-only, MOC]
 
 | Agente | Total | Por tipo |
 |---|---|---|
-| [[polymarket-bot]] | 614 | veto:500, loss:96, antipattern:15, note:3 |
+| [[polymarket-bot]] | 1145 | veto:1000, loss:110, note:19, antipattern:16 |
+| [[cron:overnight_audit]] | 18 | audit_finding:15, audit:3 |
 | [[job-hunter]] | 15 | note:8, profile:7 |
-| [[cron:nightly_digest]] | 2 | insight:2 |
+| [[cron:overnight_research]] | 6 | research_finding:4, research:2 |
+| [[cron:nightly_digest]] | 3 | insight:3 |

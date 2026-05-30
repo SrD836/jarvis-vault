@@ -2,7 +2,7 @@
 title: "Memoria — job-hunter"
 type: memory-export
 agent: job-hunter
-generated_at: 2026-05-29T10:02:57Z
+generated_at: 2026-05-30T05:00:03Z
 source: memory/jarvis_memory.db
 tags: [memory-export, jarvis, read-only]
 ---
