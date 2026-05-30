@@ -1,16 +1,19 @@
 #!/usr/bin/env python3
-"""Honest expectancy report for the polymarket bot (v7 cohort, simulation).
+"""Honest expectancy report for the polymarket bot (v7 policy cohort, simulation).
 
-Defeats the survivorship bias of "P&L desde v7" (winners close fast, longshot
-losers sit open because v7 has no stop) by NETTING realized P&L of the v7 cohort
-with the mark-to-market unrealized P&L of the still-open book (mark_to_market.json,
-produced by the Go cmd that reuses polyclient.ExitPrice). Adds Brier on resolved
-predictions and rule-firing counts, then emits a PASS/FAIL verdict against David's
-explicit criterion: expectancy/trade > 0 over N>=50, Brier <= 0.25, new rules firing.
+Defeats the survivorship bias of "P&L desde v7" (winners close fast via
+target_hit/market_closed, longshot losers sit OPEN because v7 has no stop) by
+NETTING the realized v7-policy P&L with the mark-to-market unrealized P&L of the
+still-open book (mark_to_market.json, produced by the Go cmd reusing
+polyclient.ExitPrice). Reports a market-priced figure AND a worst case (open book
+resolves to 0), plus Brier on resolved predictions and rule firing. Emits a
+PASS/FAIL verdict against David's criterion: expectancy/trade > 0 over N>=50,
+Brier <= 0.25, new rules firing — AND robust to the open book cratering, because
+we do NOT advance to real money on a fragile snapshot.
 
-Honest by construction: it also reports a WORST-CASE where open positions we cannot
-price (dead longshots with no bid) resolve to total loss — so the verdict never
-hides behind "unpriceable".
+v7 cohort = exit_reason in {market_closed, target_hit, no_remaining_edge} and not
+the fallback-bug bucket — same definition as the dashboard pnl_v7 metric. The rest
+(stop_loss / fallback / dead regime) is the "histórico contaminado" David excludes.
 """
 from __future__ import annotations
 
@@ -23,16 +26,13 @@ import sys
 from collections import Counter, defaultdict
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import brier  # noqa: E402  reuse load_rows, brier, group_brier, parse_ts, _pnl
+import brier  # noqa: E402  reuse load_rows, brier, _pnl
 
-V7_START = os.environ.get("V7_START", "2026-05-19")
 N_MIN = int(os.environ.get("EXPECTANCY_N_MIN", "50"))
 BRIER_MAX = float(os.environ.get("EXPECTANCY_BRIER_MAX", "0.25"))
+V7_REASONS = {"market_closed", "target_hit", "no_remaining_edge"}
+FALLBACK = "lastTradePrice_fallback"
 T = "vault/inbox/trading/"
-
-
-def _entry_dt(r: dict):
-    return brier.parse_ts(r.get("entry_time") or r.get("entry_timestamp") or "")
 
 
 def main() -> int:
@@ -45,18 +45,17 @@ def main() -> int:
     ap.add_argument("--no-write", action="store_true")
     args = ap.parse_args()
 
-    floor = dt.datetime.min.replace(tzinfo=dt.timezone.utc)
-    v7_start = brier.parse_ts(V7_START + "T00:00:00Z") or floor
-
-    # --- realized v7 cohort (by ENTRY date; incluye perdedores, no maquilla) ---
+    # --- realized v7-policy cohort (winners-heavy by construction; los perdedores
+    #     v7 siguen ABIERTOS) ---
     closed = brier.load_rows(pathlib.Path(args.closed))
-    cohort = [r for r in closed if (_entry_dt(r) or floor) >= v7_start]
-    realized_pnl = sum(brier._pnl(r) for r in cohort)
-    n_real = len(cohort)
-    wins = sum(1 for r in cohort if brier._pnl(r) > 0)
-    fb = [r for r in cohort if r.get("exit_price_source") == "lastTradePrice_fallback"]
+    v7 = [r for r in closed if r.get("exit_reason") in V7_REASONS and r.get("exit_price_source") != FALLBACK]
+    realized_pnl = sum(brier._pnl(r) for r in v7)
+    n_real = len(v7)
+    wins = sum(1 for r in v7 if brier._pnl(r) > 0)
     exp_real = realized_pnl / n_real if n_real else 0.0
     wr_real = 100 * wins / n_real if n_real else 0.0
+    cont_pnl = sum(brier._pnl(r) for r in closed) - realized_pnl
+    n_cont = len(closed) - n_real
 
     # --- mark-to-market of still-open book ---
     mtm = {}
@@ -68,16 +67,16 @@ def main() -> int:
             pass
     unreal = float(mtm.get("total_unrealized", 0.0))
     n_priced = int(mtm.get("n_priced", 0))
-    n_unpriceable = int(mtm.get("n_unpriceable", 0))
-    cost_unpriceable = float(mtm.get("cost_unpriceable", 0.0))
+    n_open = int(mtm.get("n", 0))
+    open_stake = sum(float(p.get("size_usd", 0) or 0) for p in mtm.get("positions", []))
 
     # --- combined honest expectancy ---
     n_comb = n_real + n_priced
     comb_pnl = realized_pnl + unreal
     exp_comb = comb_pnl / n_comb if n_comb else 0.0
-    # worst case: unpriceable open (dead longshots) resolve to 0 -> lose full stake.
-    worst_pnl = comb_pnl - cost_unpriceable
-    n_worst = n_comb + n_unpriceable
+    # worst case: TODO el libro abierto resuelve a 0 -> pierde el stake completo.
+    worst_pnl = realized_pnl - open_stake
+    n_worst = n_real + n_open
     exp_worst = worst_pnl / n_worst if n_worst else 0.0
 
     # --- Brier on resolved predictions (clean, no survivorship) ---
@@ -91,66 +90,71 @@ def main() -> int:
                  if k.startswith(("R1", "R3", "R5", "S1", "pnl_expectancy"))}
     rules_ok = any(k.startswith(("R1", "R3", "R5")) for k in rule_counts)
 
-    # --- per-category P&L in cohort (qué sangra) ---
-    cat: dict[str, dict] = defaultdict(lambda: {"n": 0, "pnl": 0.0})
-    for r in cohort:
-        a = cat[str(r.get("category") or "uncategorized")]
+    # --- per-category P&L of the open book (dónde está el riesgo latente) ---
+    cat: dict[str, dict] = defaultdict(lambda: {"n": 0, "unreal": 0.0})
+    for p in mtm.get("positions", []):
+        a = cat[str(p.get("category") or "uncategorized")]
         a["n"] += 1
-        a["pnl"] += brier._pnl(r)
-    bleeders = sorted(((c, a["n"], a["pnl"]) for c, a in cat.items() if a["pnl"] < 0),
-                      key=lambda x: x[2])
+        a["unreal"] += float(p.get("unrealized_pnl") or 0.0)
+    bleeders = sorted(((c, a["n"], a["unreal"]) for c, a in cat.items()), key=lambda x: x[2])
 
-    # --- verdict ---
-    crit_exp = exp_comb > 0 and n_comb >= N_MIN
+    # --- verdict: PASS solo si positivo a mercado Y robusto al peor caso ---
+    crit_market = exp_comb > 0 and n_comb >= N_MIN
+    crit_worst = exp_worst > 0
     crit_brier = n_brier > 0 and b <= BRIER_MAX
-    verdict = "PASS" if (crit_exp and crit_brier and rules_ok) else "FAIL"
+    verdict = "PASS" if (crit_market and crit_worst and crit_brier and rules_ok) else "FAIL"
 
-    # --- render ---
-    L = []
-    L.append(f"# Expectancy report — v7 cohort (entry >= {V7_START}) — {dt.date.today().isoformat()}")
-    L.append("")
-    L.append("> Honesto: netea realizado v7 con mark-to-market del libro abierto (sin sesgo de supervivencia).")
-    L.append("")
-    L.append("| métrica | valor |")
-    L.append("|---|---|")
-    L.append(f"| realizado v7 (cerrados) | {realized_pnl:+.2f} USD · n={n_real} · wr={wr_real:.1f}% · exp/trade={exp_real:+.2f} |")
-    L.append(f"| mark-to-market abiertas (priced) | {unreal:+.2f} USD · n={n_priced} |")
-    L.append(f"| **expectancy COMBINADA** | **{comb_pnl:+.2f} USD · n={n_comb} · exp/trade={exp_comb:+.2f}** |")
-    L.append(f"| peor caso (unpriceable→0) | {worst_pnl:+.2f} USD · n={n_worst} · exp/trade={exp_worst:+.2f} · ({n_unpriceable} sin precio, ${cost_unpriceable:.0f} en riesgo) |")
-    L.append(f"| Brier (predicciones resueltas) | {b:.4f} · n={n_brier} |")
-    L.append(f"| bucket fallback-bug en cohorte | n={len(fb)} (nota: precios ~0.001 de Fase 7) |")
-    L.append("")
-    L.append("### Reglas nuevas firing (blocked.jsonl)")
+    L = [
+        f"# Expectancy report — v7 policy cohort — {dt.date.today().isoformat()}",
+        "",
+        "> Honesto: netea el realizado v7 (ganadores cerrados) con el mark-to-market del libro abierto",
+        "> (perdedores latentes). Sin esto, el 98% wr es puro sesgo de supervivencia.",
+        "",
+        "| métrica | valor |",
+        "|---|---|",
+        f"| realizado v7 (cerrados, policy) | {realized_pnl:+.2f} USD · n={n_real} · wr={wr_real:.1f}% · exp/trade={exp_real:+.2f} |",
+        f"| histórico contaminado (excluido) | {cont_pnl:+.2f} USD · n={n_cont} (stop_loss/fallback régimen muerto) |",
+        f"| mark-to-market abiertas | {unreal:+.2f} USD · n={n_priced} priced / {n_open} |",
+        f"| **expectancy COMBINADA (a mercado)** | **{comb_pnl:+.2f} USD · n={n_comb} · exp/trade={exp_comb:+.2f}** |",
+        f"| peor caso (abiertas→0) | {worst_pnl:+.2f} USD · n={n_worst} · exp/trade={exp_worst:+.2f} · (stake abierto ${open_stake:.0f}) |",
+        f"| Brier (predicciones resueltas) | {b:.4f} · n={n_brier} |",
+        "",
+        "### Reglas nuevas firing (blocked.jsonl)",
+    ]
     if new_rules:
-        for k, v in sorted(new_rules.items(), key=lambda kv: -kv[1]):
-            L.append(f"- {k}: {v}")
+        L += [f"- {k}: {v}" for k, v in sorted(new_rules.items(), key=lambda kv: -kv[1])]
     else:
         L.append("- (ninguna regla nueva ha bloqueado todavía)")
-    L.append("")
-    L.append("### Categorías que sangran (cohorte v7, realizado)")
+    L += ["", "### Libro abierto por categoría (riesgo latente, mark-to-market)"]
     if bleeders:
-        for c, n, pnl in bleeders:
-            L.append(f"- {c}: {pnl:+.2f} USD (n={n})")
+        L += [f"- {c}: {u:+.2f} USD (n={n})" for c, n, u in bleeders]
     else:
-        L.append("- (ninguna categoría en pérdida realizada)")
-    L.append("")
-    L.append("### Veredicto")
-    L.append(f"- expectancy combinada > 0 con n>={N_MIN}: {'SÍ' if crit_exp else 'NO'} "
-             f"(exp={exp_comb:+.2f}, n={n_comb})")
-    L.append(f"- Brier <= {BRIER_MAX} (estable): {'SÍ' if crit_brier else 'NO'} (Brier={b:.4f})")
-    L.append(f"- reglas nuevas bloqueando: {'SÍ' if rules_ok else 'NO'}")
-    L.append("")
-    L.append(f"## {verdict} — {'expectancy positiva sostenida demostrable' if verdict == 'PASS' else 'NO avanzar a dinero real'}")
+        L.append("- (sin posiciones abiertas)")
+    L += [
+        "",
+        "### Veredicto (criterio de David)",
+        f"- expectancy combinada > 0 con n>={N_MIN}: {'SÍ' if crit_market else 'NO'} (exp={exp_comb:+.2f}, n={n_comb})",
+        f"- robusto al peor caso (abiertas→0) > 0: {'SÍ' if crit_worst else 'NO'} (exp={exp_worst:+.2f})",
+        f"- Brier <= {BRIER_MAX}: {'SÍ' if crit_brier else 'NO'} (Brier={b:.4f})",
+        f"- reglas nuevas bloqueando: {'SÍ' if rules_ok else 'NO'}",
+        "",
+        f"## {verdict} — {'expectancy positiva sostenida demostrable' if verdict == 'PASS' else 'NO avanzar a dinero real'}",
+    ]
     if verdict == "FAIL":
         why = []
-        if not crit_exp:
-            why.append(f"expectancy combinada {exp_comb:+.2f} (n={n_comb})")
+        if not crit_market:
+            why.append(f"combinada a mercado {exp_comb:+.2f}")
+        if not crit_worst:
+            why.append(f"peor caso {exp_worst:+.2f} (libro longshot abierto ${open_stake:.0f})")
         if not crit_brier:
             why.append(f"Brier {b:.4f}")
         if not rules_ok:
-            why.append("reglas nuevas no firing")
-        L.append(f"Falla: {', '.join(why)}. Sangra: " +
-                 (", ".join(f"{c} ({pnl:+.0f})" for c, _, pnl in bleeders[:3]) or "—") + ".")
+            why.append("reglas no firing")
+        L.append(f"Falla: {'; '.join(why)}.")
+        L.append(f"Sangra (abiertas): " + (", ".join(f"{c} ({u:+.0f})" for c, _, u in bleeders[:3] if u < 0) or "—") + ".")
+        L.append("La estrategia v7 cierra ganadores rápido y deja correr perdedores (sin stop) → el "
+                 "realizado SIEMPRE parece bueno hasta que el libro abierto resuelve. Prueba de "
+                 "sostenibilidad = ventana forward con R1/R3 activos desde el inicio (ya bloquean longshots).")
     report = "\n".join(L) + "\n"
     print(report)
 
