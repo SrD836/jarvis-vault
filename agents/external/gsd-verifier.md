@@ -2,25 +2,18 @@
 title: "gsd-verifier (external agent)"
 type: agent-mirror
 external: true
-date: 2026-05-29T03:15:01+00:00
+date: 2026-05-30T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-verifier.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/external/gsd-doc-verifier]]"
-  - "[[agents/external/gsd-eval-auditor]]"
-  - "[[agents/external/gsd-plan-checker]]"
-  - "[[agents/external/index]]"
-  - "[[skills/external/gsd-verify-work]]"
-  - "[[skills/external/verification-before-completion]]"
 tags: [agent, external, mirror]
-# auto-linked 2026-05-29
+related:
+  - "[[agents/external/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `gsd-verifier` (external Claude Code agent)
 
 **Source**: `~/.claude/agents/gsd-verifier.md`  
-**Mirrored at**: 2026-05-29T03:15:01+00:00
+**Mirrored at**: 2026-05-30T03:15:01+00:00
 
 ## Descripción
 

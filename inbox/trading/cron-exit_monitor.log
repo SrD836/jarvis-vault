@@ -12584,3 +12584,52 @@
 2026/05/30 03:00:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
 2026/05/30 03:00:02 monitor.go:179: exit_monitor: 0 closed, 15 remaining
 2026/05/30 03:00:02 main.go:13: exit_monitor: done
+2026/05/30 03:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 03:05:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 03:05:02 monitor.go:179: exit_monitor: 0 closed, 15 remaining
+2026/05/30 03:05:02 main.go:13: exit_monitor: done
+2026/05/30 03:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 03:10:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 03:10:01 monitor.go:179: exit_monitor: 0 closed, 15 remaining
+2026/05/30 03:10:01 main.go:13: exit_monitor: done
+2026/05/30 03:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 03:15:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 03:15:01 monitor.go:179: exit_monitor: 0 closed, 15 remaining
+2026/05/30 03:15:01 main.go:13: exit_monitor: done
+2026/05/30 03:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 03:20:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 03:20:01 monitor.go:179: exit_monitor: 0 closed, 15 remaining
+2026/05/30 03:20:01 main.go:13: exit_monitor: done
+2026/05/30 03:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 03:25:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 03:25:02 monitor.go:179: exit_monitor: 0 closed, 15 remaining
+2026/05/30 03:25:02 main.go:13: exit_monitor: done
+2026/05/30 03:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 03:30:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 03:30:01 monitor.go:143: exit_monitor: closed Will Apple be the second-largest company in the world by market cap on May 31? (market_closed) @ 0.0120 src=bestBid liq=$0: PnL $-169.63 (-98.12%)
+[postmortem] read vault/03-decisions/2026-05-30-polymarket-loss-will-apple-be-the-second-largest-company-in-the-world-by-market-cap-on-may-31.md: open vault/03-decisions/2026-05-30-polymarket-loss-will-apple-be-the-second-largest-company-in-the-world-by-market-cap-on-may-31.md: no such file or directory
+2026/05/30 03:30:03 monitor.go:169: exit_monitor: backfilled 13 prediction(s) for 1999689 (outcome=0)
+2026/05/30 03:30:03 monitor.go:179: exit_monitor: 1 closed, 14 remaining
+2026/05/30 03:30:03 main.go:13: exit_monitor: done
+2026/05/30 03:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 03:35:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 03:35:01 monitor.go:179: exit_monitor: 0 closed, 15 remaining
+2026/05/30 03:35:01 main.go:13: exit_monitor: done
+2026/05/30 03:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 03:40:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 03:40:02 monitor.go:179: exit_monitor: 0 closed, 15 remaining
+2026/05/30 03:40:02 main.go:13: exit_monitor: done
+2026/05/30 03:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 03:45:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 03:45:02 monitor.go:179: exit_monitor: 0 closed, 15 remaining
+2026/05/30 03:45:02 main.go:13: exit_monitor: done
+2026/05/30 03:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 03:50:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 03:50:02 monitor.go:179: exit_monitor: 0 closed, 15 remaining
+2026/05/30 03:50:02 main.go:13: exit_monitor: done
+2026/05/30 03:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 03:55:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/30 03:55:01 monitor.go:179: exit_monitor: 0 closed, 15 remaining
+2026/05/30 03:55:01 main.go:13: exit_monitor: done
+2026/05/30 04:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/30 04:00:01 monitor.go:24: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030

@@ -2,24 +2,18 @@
 title: "skill-dispatcher (external agent)"
 type: agent-mirror
 external: true
-date: 2026-05-29T03:15:01+00:00
+date: 2026-05-30T03:15:01+00:00
 source_path: ~/.claude/agents/skill-dispatcher.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/external/index]]"
-  - "[[agents/index]]"
-  - "[[agents/skill-dispatcher]]"
-  - "[[skills/external/dispatching-parallel-agents]]"
-  - "[[skills/external/subagent-driven-development]]"
 tags: [agent, external, mirror]
-# auto-linked 2026-05-29
+related:
+  - "[[agents/external/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `skill-dispatcher` (external Claude Code agent)
 
 **Source**: `~/.claude/agents/skill-dispatcher.md`  
-**Mirrored at**: 2026-05-29T03:15:01+00:00
+**Mirrored at**: 2026-05-30T03:15:01+00:00
 
 ## Descripción
 

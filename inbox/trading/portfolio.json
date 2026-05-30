@@ -1,6 +1,6 @@
 {
-  "bankroll": 3416.003387702029,
-  "used_exposure": 1206.4947077757824,
+  "bankroll": 3325.5758655808363,
+  "used_exposure": 1127.2922298969752,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -153,27 +153,6 @@
       "edge_type": "calibration"
     },
     {
-      "id": "T-1999689-1780087006486",
-      "market_id": "1999689",
-      "slug": "will-apple-be-the-second-largest-company-in-the-world-by-market-cap-on-may-31",
-      "question": "Will Apple be the second-largest company in the world by market cap on May 31?",
-      "side": "yes",
-      "entry_price": 0.639,
-      "size": 172.8806712754503,
-      "category": "other",
-      "entry_timestamp": "2026-05-29T20:36:46Z",
-      "approved_price": 0.639,
-      "days_to_resolution": 1,
-      "horizon": "short",
-      "end_date": "2026-05-31T06:00:00Z",
-      "size_usd": 172.8806712754503,
-      "liquidity_usd": 6741.59984,
-      "estimated_prob": 0.7,
-      "target_prob": 0.7,
-      "thesis_invalidation": "Una caída abrupta en el precio de acciones de Apple (ej. por fracaso de producto o regulación adversa) o un repunte extraordinario de otro competidor directo (como Microsoft o Alphabet) antes del 31 de mayo.",
-      "edge_type": "info"
-    },
-    {
       "id": "T-2132779-1780087006486",
       "market_id": "2132779",
       "slug": "will-bitcoin-dip-to-70k-in-may-2026-438-356-919",
@@ -318,6 +297,27 @@
       "estimated_prob": 0.1,
       "target_prob": 0.1,
       "thesis_invalidation": "A major negative earnings revision for Amazon or Saudi Aramco, or a surprise positive catalyst for Alphabet (e.g., antitrust case dismissal), would invalidate the thesis.",
+      "edge_type": "info"
+    },
+    {
+      "id": "T-2365528-1780111994961",
+      "market_id": "2365528",
+      "slug": "will-bitcoin-dip-to-72500-in-may-2026-from-may-27",
+      "question": "Will Bitcoin dip to $72,500 in May?",
+      "side": "yes",
+      "entry_price": 0.27,
+      "size": 93.67819339664321,
+      "category": "market",
+      "entry_timestamp": "2026-05-30T03:33:14Z",
+      "approved_price": 0.27,
+      "days_to_resolution": 2,
+      "horizon": "short",
+      "end_date": "2026-06-01T04:00:00Z",
+      "size_usd": 93.67819339664321,
+      "liquidity_usd": 53884.27,
+      "estimated_prob": 0.35,
+      "target_prob": 0.35,
+      "thesis_invalidation": "Que Bitcoin se mantenga estable o suba durante la última semana de mayo sin acercarse a $72,500, o que un anuncio de la Fed o un evento macro reduzca drásticamente la volatilidad.",
       "edge_type": "info"
     }
   ]

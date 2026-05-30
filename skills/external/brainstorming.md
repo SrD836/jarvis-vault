@@ -3,27 +3,20 @@ title: "brainstorming (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-29T03:15:01+00:00
+date: 2026-05-30T03:15:01+00:00
 source_path: ~/.claude/skills/brainstorming
 source_file: SKILL.md
-related:
-  - "[[00-MOC]]"
-  - "[[skills/external/design]]"
-  - "[[skills/external/gsd-explore]]"
-  - "[[skills/external/gsd-research-phase]]"
-  - "[[skills/external/gsd-sketch]]"
-  - "[[skills/external/gsd-spike]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-30
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `brainstorming` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/brainstorming/`  
-**Mirrored at**: 2026-05-29T03:15:01+00:00
+**Mirrored at**: 2026-05-30T03:15:01+00:00
 
 ## Descripción
 

@@ -3,27 +3,20 @@ title: "test-driven-development (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-29T03:15:01+00:00
+date: 2026-05-30T03:15:01+00:00
 source_path: ~/.claude/skills/test-driven-development
 source_file: SKILL.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/tester]]"
-  - "[[skills/external/gsd-add-tests]]"
-  - "[[skills/external/gsd-verify-work]]"
-  - "[[skills/external/tdd]]"
-  - "[[skills/external/verification-before-completion]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-29
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `test-driven-development` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/test-driven-development/`  
-**Mirrored at**: 2026-05-29T03:15:01+00:00
+**Mirrored at**: 2026-05-30T03:15:01+00:00
 
 ## Descripción
 
