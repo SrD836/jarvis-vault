@@ -1,6 +1,7 @@
 package monitor
 
 import (
+	"encoding/json"
 	"log"
 	"math"
 	"os"
@@ -40,14 +41,26 @@ func Run() {
 			remaining = append(remaining, a)
 			continue
 		}
-		// v5: sell YES at bestBid (realistic execution).
-		price, priceSrc := polyclient.PriceForExecution(quote, a.Side, "sell")
-		if price <= 0 {
-			log.Printf("exit_monitor: no sell price for %s (bestBid=%.4f bestAsk=%.4f)", a.MarketID, quote.BestBid, quote.BestAsk)
+		// Fix 2026-05-30: precio de cierre VALIDADO. Un cierre nunca se ejecuta a un
+		// fallback no fiable (lastTradePrice de un libro muerto). ExitPrice distingue
+		// "mercado resolvió" (settlement real 0/1) de "no pude obtener precio" (diferir).
+		ref := a.EntryPrice
+		if a.ApprovedPrice > 0 {
+			ref = a.ApprovedPrice
+		}
+		dec := polyclient.ExitPrice(quote, a.Side, ref)
+		if !dec.OK {
+			if dec.Source == "blocked_sanity_band" {
+				log.Printf("exit_monitor: BLOCKED close %s — precio %.4f vs ref %.4f (banda de sanidad), marcado para revision", a.MarketID, dec.Price, ref)
+				enqueuePriceReview(a, dec, ref, now)
+			} else {
+				log.Printf("exit_monitor: sin precio fiable para %s (src=%s bestBid=%.4f bestAsk=%.4f) — se mantiene abierta", a.MarketID, dec.Source, quote.BestBid, quote.BestAsk)
+			}
 			remaining = append(remaining, a)
 			continue
 		}
-		mktClosed := quote.Closed
+		price, priceSrc := dec.Price, dec.Source
+		mktClosed := dec.Resolved
 
 		// v5: liquidity gating — if our position is >25% of visible depth, defer exit.
 		// (Selling would push price below bestBid; better to wait for deeper book.)
@@ -158,7 +171,7 @@ func Run() {
 		// resolution, not our early exit — those rows stay open in
 		// predictions.jsonl until a later pass closes the underlying market.
 		if reason == "market_closed" {
-			outcome := outcomeFromQuote(quote, a.Side)
+			outcome := polyclient.Settlement(quote, a.Side)
 			predPath := os.Getenv("EXIT_PREDICTIONS_PATH")
 			if predPath == "" {
 				predPath = predictions.DefaultPath
@@ -202,34 +215,34 @@ func daysToResolution(endDate string, now time.Time) float64 {
 	return t.Sub(now).Hours() / 24
 }
 
-// outcomeFromQuote maps a resolved market's OutcomePricesY/N into the 0/1
-// outcome relevant to our position side. If outcome prices are unavailable
-// we fall back to lastTradePrice rounded.
-func outcomeFromQuote(q polyclient.MarketQuote, side string) float64 {
-	switch side {
-	case "yes":
-		if q.OutcomePricesY > 0 || q.OutcomePricesN > 0 {
-			if q.OutcomePricesY >= 0.5 {
-				return 1
-			}
-			return 0
-		}
-	case "no":
-		if q.OutcomePricesY > 0 || q.OutcomePricesN > 0 {
-			if q.OutcomePricesN >= 0.5 {
-				return 1
-			}
-			return 0
-		}
+// priceReviewPath: cierres bloqueados por la banda de sanidad se encolan aquí
+// para revisión humana (superficie Telegram/dashboard la consume aparte).
+const priceReviewPath = "vault/inbox/trading/price_review.jsonl"
+
+// enqueuePriceReview persiste un cierre bloqueado (precio sospechoso, mercado no
+// resuelto). Append JSON; nunca aborta el monitor si falla la escritura.
+func enqueuePriceReview(a types.ActiveTrade, dec polyclient.ExitDecision, ref float64, now time.Time) {
+	rec := map[string]interface{}{
+		"id":              a.ID,
+		"market_id":       a.MarketID,
+		"slug":            a.Slug,
+		"entry_price":     a.EntryPrice,
+		"candidate_price": dec.Price,
+		"ref":             ref,
+		"ts":              now.Format(time.RFC3339),
+		"source":          dec.Source,
 	}
-	if q.LastTradePrice >= 0.5 {
-		if side == "no" {
-			return 0
-		}
-		return 1
+	b, err := json.Marshal(rec)
+	if err != nil {
+		return
 	}
-	if side == "no" {
-		return 1
+	f, err := os.OpenFile(priceReviewPath, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	if err != nil {
+		log.Printf("exit_monitor: price-review append failed: %v", err)
+		return
 	}
-	return 0
+	defer f.Close()
+	if _, err := f.Write(append(b, '\n')); err != nil {
+		log.Printf("exit_monitor: price-review write failed: %v", err)
+	}
 }

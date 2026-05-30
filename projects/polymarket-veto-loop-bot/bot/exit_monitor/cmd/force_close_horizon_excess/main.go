@@ -76,12 +76,18 @@ func main() {
 			log.Printf("force_close: quote error for %s (%s) — skipping: %v", a.MarketID, a.Slug, err)
 			continue
 		}
-		price, src := polyclient.PriceForExecution(quote, a.Side, "sell")
-		if price <= 0 {
-			// Use last trade as a soft fallback for PnL ranking only (not for close).
-			price = quote.LastTradePrice
-			src = "last_trade_fallback"
+		// Fix 2026-05-30: precio de cierre validado. Sin precio fiable (y no resuelto) la
+		// posicion se excluye del ranking → no se fuerza el cierre a un fallback basura.
+		ref := a.EntryPrice
+		if a.ApprovedPrice > 0 {
+			ref = a.ApprovedPrice
 		}
+		dec := polyclient.ExitPrice(quote, a.Side, ref)
+		if !dec.OK {
+			log.Printf("force_close: %s (%s) sin precio fiable (src=%s) — se mantiene abierta", a.MarketID, a.Slug, dec.Source)
+			continue
+		}
+		price, src := dec.Price, dec.Source
 		size := a.Size
 		if a.SizeUSD > 0 {
 			size = a.SizeUSD

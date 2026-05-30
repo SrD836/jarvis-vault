@@ -116,6 +116,99 @@ func PriceForExecution(q MarketQuote, side, intent string) (float64, string) {
 	return 0, ""
 }
 
+// ---------------------------------------------------------------------------
+// Exit-price guardrail (fix 2026-05-30): un cierre NUNCA debe ejecutarse a un
+// precio que el sistema no puede validar como real. Distingue "mercado resolvió"
+// (resultado real, settlement 0/1) de "no pude obtener precio" (diferir, no cerrar).
+// ---------------------------------------------------------------------------
+
+// Banda de sanidad: con mercado NO resuelto, un precio que se desploma de forma
+// absurda respecto al último válido conocido (ref) se bloquea para revisión.
+const (
+	sanityRefFloor = 0.10 // solo aplicamos la banda si el ref era >= 10%
+	sanityAbsFloor = 0.02 // un colapso a < 2% (p.ej. 0.44 -> 0.001) es sospechoso
+	sanityRatio    = 0.10 // o caer a < 10% del ref
+)
+
+// ExitDecision es el precio de cierre validado para una posición.
+type ExitDecision struct {
+	Price    float64
+	Source   string
+	Resolved bool // true => mercado genuinamente resuelto (settlement real)
+	OK       bool // false => sin precio fiable; el caller DEBE diferir (no cerrar)
+}
+
+// suspicious detecta un desplome absurdo de precio en un mercado NO resuelto.
+func suspicious(p, ref float64) bool {
+	if ref < sanityRefFloor {
+		return false // ref bajo: longshots legítimamente baratos, no aplicar banda
+	}
+	return p < sanityAbsFloor || p < ref*sanityRatio
+}
+
+// Settlement deriva el valor de liquidación real (0 o 1) de un mercado resuelto,
+// para el side dado. outcomePrices manda; si no, lastTradePrice>=0.5 como proxy.
+func Settlement(q MarketQuote, side string) float64 {
+	if side == "" {
+		side = "yes"
+	}
+	if q.OutcomePricesY > 0 || q.OutcomePricesN > 0 {
+		switch side {
+		case "no":
+			if q.OutcomePricesN >= 0.5 {
+				return 1
+			}
+			return 0
+		default: // yes
+			if q.OutcomePricesY >= 0.5 {
+				return 1
+			}
+			return 0
+		}
+	}
+	// Sin outcomePrices: usar lastTradePrice como proxy del resultado YES.
+	yesWon := q.LastTradePrice >= 0.5
+	if side == "no" {
+		if yesWon {
+			return 0
+		}
+		return 1
+	}
+	if yesWon {
+		return 1
+	}
+	return 0
+}
+
+// ExitPrice decide el precio de cierre SIN volcar nunca a un fallback no validado.
+// ref = último precio válido conocido (entry/approved) para la banda de sanidad.
+func ExitPrice(q MarketQuote, side string, ref float64) ExitDecision {
+	if side == "" {
+		side = "yes"
+	}
+	// 1. Resolución genuina: liquidar al resultado real (0 o 1).
+	if q.Closed {
+		return ExitDecision{Price: Settlement(q, side), Source: "resolved_settlement", Resolved: true, OK: true}
+	}
+	// 2. Mercado vivo: solo un precio real de orderbook es aceptable.
+	if side == "yes" && q.BestBid > 0 {
+		p := q.BestBid
+		if suspicious(p, ref) {
+			return ExitDecision{Price: p, Source: "blocked_sanity_band", OK: false}
+		}
+		return ExitDecision{Price: p, Source: "bestBid", OK: true}
+	}
+	if side == "no" && q.BestAsk > 0 {
+		p := 1.0 - q.BestAsk
+		if suspicious(p, ref) {
+			return ExitDecision{Price: p, Source: "blocked_sanity_band", OK: false}
+		}
+		return ExitDecision{Price: p, Source: "bestBid_NO_derived", OK: true}
+	}
+	// 3. Sin precio fiable y no resuelto: NO cerrar. Nunca lastTradePrice para ejecución.
+	return ExitDecision{Price: 0, Source: "no_reliable_price", OK: false}
+}
+
 // GetMarketPrice is the legacy entry point. Preserves the old signature for callers
 // that don't need side/liquidity (kept for backward compat — should be migrated).
 // Uses mid-price (last trade or bid_ask_mid) as a neutral estimator. NEVER use for

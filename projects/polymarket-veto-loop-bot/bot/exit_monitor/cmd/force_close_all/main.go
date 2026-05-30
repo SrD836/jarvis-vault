@@ -73,11 +73,19 @@ func main() {
 			kept = append(kept, a)
 			continue
 		}
-		price, src := polyclient.PriceForExecution(quote, a.Side, "sell")
-		if price <= 0 {
-			price = quote.LastTradePrice
-			src = "last_trade_fallback"
+		// Fix 2026-05-30: precio de cierre validado. No volcar a un fallback no fiable;
+		// si no hay precio real y el mercado no resolvió, se mantiene la posición abierta.
+		ref := a.EntryPrice
+		if a.ApprovedPrice > 0 {
+			ref = a.ApprovedPrice
 		}
+		dec := polyclient.ExitPrice(quote, a.Side, ref)
+		if !dec.OK {
+			log.Printf("force_close_all: %s (%s) sin precio fiable (src=%s) — se mantiene abierta", a.MarketID, a.Slug, dec.Source)
+			kept = append(kept, a)
+			continue
+		}
+		price, src := dec.Price, dec.Source
 		size := a.Size
 		if a.SizeUSD > 0 {
 			size = a.SizeUSD
