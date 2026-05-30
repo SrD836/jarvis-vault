@@ -1,0 +1,8 @@
+{
+  "id": "20260530-023001-investigate_unhealthy",
+  "ts": "2026-05-30T02:30:01Z",
+  "kind": "investigate_unhealthy",
+  "summary": "openclaw-fork-openclaw-cli-1 lleva mucho 'unhealthy' (streak 1264); reiniciar a ciegas no arregla la causa.",
+  "proposed_action": "revisar healthcheck/logs de openclaw-fork-openclaw-cli-1 y reiniciar si procede",
+  "status": "pending"
+}
