@@ -1,0 +1,1 @@
+{"id": "20260530-144501-disk_full", "ts": "2026-05-30T14:45:01Z", "kind": "disk_full", "summary": "Disco casi lleno; puedo liberar espacio (limpieza de docker, reversible).", "proposed_action": "Limpiar cache e imagenes de docker", "status": "resolved", "tier": "green", "action": {"type": "clean_disk"}, "restore": null, "resolved_by": "autonomous-disk-cleanup"}
