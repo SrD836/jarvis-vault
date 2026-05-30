@@ -101,3 +101,5 @@
 2026/05/30 07:00:01 main.go:49: passive_resolver: 128 distinct unresolved markets in vault/inbox/trading/predictions.jsonl
 2026/05/30 07:00:05 main.go:89: passive_resolver: done — processed=128 closed=0 patched_rows=0 still_open=128 errors=0
 2026/05/30 08:00:02 main.go:49: passive_resolver: 129 distinct unresolved markets in vault/inbox/trading/predictions.jsonl
+2026/05/30 08:00:05 main.go:89: passive_resolver: done — processed=129 closed=0 patched_rows=0 still_open=129 errors=0
+2026/05/30 09:00:01 main.go:49: passive_resolver: 130 distinct unresolved markets in vault/inbox/trading/predictions.jsonl
