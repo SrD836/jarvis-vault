@@ -1,6 +1,6 @@
 {
-  "bankroll": 3730.4808361326327,
-  "used_exposure": 167.21725934517957,
+  "bankroll": 3543.956794326001,
+  "used_exposure": 353.74130115181123,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -66,6 +66,27 @@
       "estimated_prob": 0.25,
       "target_prob": 0.25,
       "thesis_invalidation": "Musk anuncia una pausa en Twitter/X o reduce drásticamente su actividad por más de 3 días consecutivos antes del 2 de junio.",
+      "edge_type": "info"
+    },
+    {
+      "id": "T-569343-1780245245555",
+      "market_id": "569343",
+      "slug": "will-ivn-cepeda-castro-win-the-1st-round-of-the-2026-colombian-presidential-election",
+      "question": "Will Iván Cepeda Castro win the 1st round of the 2026 Colombian presidential election?",
+      "side": "yes",
+      "entry_price": 0.84,
+      "size": 186.52404180663166,
+      "category": "elections",
+      "entry_timestamp": "2026-05-31T16:34:05Z",
+      "approved_price": 0.84,
+      "days_to_resolution": 0,
+      "horizon": "short",
+      "end_date": "2026-05-31T16:00:00Z",
+      "size_usd": 186.52404180663166,
+      "liquidity_usd": 26700.6823,
+      "estimated_prob": 0.88,
+      "target_prob": 0.88,
+      "thesis_invalidation": "Encuesta publicada en los próximos 3 días que muestre una disminución del margen a \u003c3 puntos, o un escándalo de corrupción confirmado con pruebas (ej. imputación fiscal) antes del cierre del mercado.",
       "edge_type": "info"
     }
   ]
