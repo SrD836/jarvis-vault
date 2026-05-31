@@ -1,127 +1,127 @@
 {
   "entries": {
     "baseball_mlb_world_series_winner": {
-      "fetched_at": "2026-05-30T19:33:59Z",
+      "fetched_at": "2026-05-31T02:05:16Z",
       "outcomes": [
         {
           "name": "Los Angeles Dodgers",
-          "price": 3.34
+          "price": 3.36
         },
         {
           "name": "New York Yankees",
-          "price": 7.22
+          "price": 7.26
         },
         {
           "name": "Atlanta Braves",
-          "price": 11.2
+          "price": 11.27
         },
         {
           "name": "Seattle Mariners",
-          "price": 13.08
+          "price": 13.16
         },
         {
           "name": "Tampa Bay Rays",
-          "price": 15.18
+          "price": 15.27
         },
         {
           "name": "Chicago Cubs",
-          "price": 15.22
+          "price": 15.31
         },
         {
           "name": "Philadelphia Phillies",
-          "price": 17.78
+          "price": 17.88
         },
         {
           "name": "Milwaukee Brewers",
-          "price": 18.76
-        },
-        {
-          "name": "Texas Rangers",
-          "price": 23.01
+          "price": 18.87
         },
         {
           "name": "Toronto Blue Jays",
-          "price": 23.65
+          "price": 20.3
+        },
+        {
+          "name": "Texas Rangers",
+          "price": 23.14
         },
         {
           "name": "Cleveland Guardians",
-          "price": 27.78
+          "price": 27.94
         },
         {
           "name": "San Diego Padres",
-          "price": 32.4
+          "price": 32.58
         },
         {
           "name": "Detroit Tigers",
-          "price": 39.7
+          "price": 39.92
         },
         {
           "name": "Houston Astros",
-          "price": 51.63
+          "price": 51.91
         },
         {
           "name": "Athletics",
-          "price": 53.25
+          "price": 53.54
         },
         {
           "name": "Pittsburgh Pirates",
-          "price": 56.37
+          "price": 56.68
         },
         {
           "name": "Boston Red Sox",
-          "price": 57.06
+          "price": 57.37
         },
         {
           "name": "New York Mets",
-          "price": 62.64
+          "price": 62.98
         },
         {
           "name": "Baltimore Orioles",
-          "price": 63.67
+          "price": 64.02
         },
         {
           "name": "Kansas City Royals",
-          "price": 65.74
+          "price": 66.1
         },
         {
           "name": "Arizona Diamondbacks",
-          "price": 71.95
+          "price": 72.34
         },
         {
           "name": "Chicago White Sox",
-          "price": 88.31
+          "price": 88.78
         },
         {
           "name": "Cincinnati Reds",
-          "price": 105.31
+          "price": 105.87
         },
         {
           "name": "St. Louis Cardinals",
-          "price": 110.45
+          "price": 111.03
         },
         {
           "name": "Minnesota Twins",
-          "price": 115.69
+          "price": 116.3
         },
         {
           "name": "San Francisco Giants",
-          "price": 188.45
+          "price": 189.41
         },
         {
           "name": "Miami Marlins",
-          "price": 271.48
+          "price": 272.83
         },
         {
           "name": "Los Angeles Angels",
-          "price": 312.96
+          "price": 314.51
         },
         {
           "name": "Washington Nationals",
-          "price": 435.23
+          "price": 437.33
         },
         {
           "name": "Colorado Rockies",
-          "price": 778.58
+          "price": 782.14
         }
       ]
     },
