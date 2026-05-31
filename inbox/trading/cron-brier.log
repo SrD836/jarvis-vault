@@ -211,3 +211,59 @@ resolved=511  overall_brier=0.1561
   elections: n=3 expectancy=+4.68
   market: n=14 expectancy=+15.97
   crypto-launch: n=1 expectancy=+19.22
+S1 (count-based, Brier>0.3 N>=20): ['sports-season']
+READY_TO_RESUME: market, other, geopolitics
+# Brier — last 30 days (skips=include)
+resolved=525  overall_brier=0.1542
+
+### Por categoría
+
+| group | n | brier |
+|-------|---|-------|
+| market | 63 | 0.0828 |
+| other | 316 | 0.1087 |
+| geopolitics | 29 | 0.1530 |
+| sports-season | 117 | 0.3157 |
+
+### Por horizonte
+
+| group | n | brier |
+|-------|---|-------|
+| medium | 104 | 0.0010 |
+| short | 419 | 0.1905 |
+| long | 2 | 0.5002 |
+
+### Por edge_type
+
+| group | n | brier |
+|-------|---|-------|
+| model-barrier | 7 | 0.0001 |
+| none | 174 | 0.1271 |
+| info | 130 | 0.1279 |
+| other | 19 | 0.1355 |
+| unknown | 15 | 0.2000 |
+| calibration | 179 | 0.2033 |
+| liquidity | 1 | 0.2209 |
+
+### P&L realizado por categoría
+
+| categoría | n | pnl | win% | avg/trade |
+|---|---|---|---|---|
+| other | 237 | -781.62 | 52% | -3.30 |
+| market | 60 | -720.10 | 47% | -12.00 |
+| geopolitics | 82 | -233.24 | 48% | -2.84 |
+| elections | 17 | -148.92 | 18% | -8.76 |
+| executive-action | 3 | -94.50 | 0% | -31.50 |
+| sports-season | 4 | -45.26 | 25% | -11.32 |
+| crypto-launch | 2 | -21.01 | 50% | -10.50 |
+| entertainment | 1 | +8.86 | 100% | +8.86 |
+
+# P&L expectancy ventana 30d (REAL_REASONS; suspende si n>=20 y avg<-1.0; enabled=True)
+  executive-action: n=1 expectancy=-78.58
+  sports-season: n=1 expectancy=-69.22
+  geopolitics: n=8 expectancy=-17.25
+  other: n=43 expectancy=-0.54
+  market: n=17 expectancy=+2.38
+  elections: n=3 expectancy=+4.68
+  entertainment: n=1 expectancy=+8.86
+  crypto-launch: n=1 expectancy=+19.22
