@@ -3,27 +3,20 @@ title: "dispatching-parallel-agents (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-30T03:15:01+00:00
+date: 2026-05-31T03:15:01+00:00
 source_path: ~/.claude/skills/dispatching-parallel-agents
 source_file: SKILL.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/skill-dispatcher]]"
-  - "[[skills/external/gsd-autonomous]]"
-  - "[[skills/external/gsd-execute-phase]]"
-  - "[[skills/external/gsd-workstreams]]"
-  - "[[skills/external/subagent-driven-development]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-30
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `dispatching-parallel-agents` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/dispatching-parallel-agents/`  
-**Mirrored at**: 2026-05-30T03:15:01+00:00
+**Mirrored at**: 2026-05-31T03:15:01+00:00
 
 ## Descripción
 

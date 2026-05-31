@@ -2,25 +2,18 @@
 title: "gsd-plan-checker (external agent)"
 type: agent-mirror
 external: true
-date: 2026-05-30T03:15:01+00:00
+date: 2026-05-31T03:15:01+00:00
 source_path: ~/.claude/agents/gsd-plan-checker.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/eval-planner]]"
-  - "[[agents/external/index]]"
-  - "[[agents/planner]]"
-  - "[[skills/external/gsd-plan-phase]]"
-  - "[[skills/external/gsd-plan-review-convergence]]"
-  - "[[skills/external/writing-plans]]"
 tags: [agent, external, mirror]
-# auto-linked 2026-05-30
+related:
+  - "[[agents/external/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `gsd-plan-checker` (external Claude Code agent)
 
 **Source**: `~/.claude/agents/gsd-plan-checker.md`  
-**Mirrored at**: 2026-05-30T03:15:01+00:00
+**Mirrored at**: 2026-05-31T03:15:01+00:00
 
 ## Descripción
 

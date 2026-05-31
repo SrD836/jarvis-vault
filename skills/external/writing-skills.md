@@ -3,27 +3,20 @@ title: "writing-skills (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-30T03:15:01+00:00
+date: 2026-05-31T03:15:01+00:00
 source_path: ~/.claude/skills/writing-skills
 source_file: SKILL.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/skill-reviewer]]"
-  - "[[skills/external/dispatching-parallel-agents]]"
-  - "[[skills/external/gsd-sync-skills]]"
-  - "[[skills/external/subagent-driven-development]]"
-  - "[[skills/external/voltagent-core-reference]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-30
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `writing-skills` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/writing-skills/`  
-**Mirrored at**: 2026-05-30T03:15:01+00:00
+**Mirrored at**: 2026-05-31T03:15:01+00:00
 
 ## Descripción
 

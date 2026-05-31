@@ -3,27 +3,20 @@ title: "gsd-next (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-30T03:15:01+00:00
+date: 2026-05-31T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-next
 source_file: SKILL.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/skill-dispatcher]]"
-  - "[[skills/external/gsd-do]]"
-  - "[[skills/external/gsd-execute-phase]]"
-  - "[[skills/external/gsd-inbox]]"
-  - "[[skills/external/gsd-progress]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-30
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `gsd-next` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/gsd-next/`  
-**Mirrored at**: 2026-05-30T03:15:01+00:00
+**Mirrored at**: 2026-05-31T03:15:01+00:00
 
 ## Descripción
 

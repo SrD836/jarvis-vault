@@ -3,27 +3,20 @@ title: "receiving-code-review (external skill)"
 type: skill-mirror
 external: true
 category: general
-date: 2026-05-30T03:15:01+00:00
+date: 2026-05-31T03:15:01+00:00
 source_path: ~/.claude/skills/receiving-code-review
 source_file: SKILL.md
-related:
-  - "[[00-MOC]]"
-  - "[[agents/code-reviewer]]"
-  - "[[skills/external/gsd-code-review]]"
-  - "[[skills/external/gsd-code-review-fix]]"
-  - "[[skills/external/requesting-code-review]]"
-  - "[[skills/external/verification-before-completion]]"
-  - "[[skills/index]]"
 tags: [skill, external, general, mirror]
-# auto-linked 2026-05-31
+related:
+  - "[[skills/index]]"
+  - "[[00-MOC]]"
 ---
-
 
 # `receiving-code-review` (external skill)
 
 **Categoría**: `general`  
 **Source**: `~/.claude/skills/receiving-code-review/`  
-**Mirrored at**: 2026-05-30T03:15:01+00:00
+**Mirrored at**: 2026-05-31T03:15:01+00:00
 
 ## Descripción
 
