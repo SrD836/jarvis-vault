@@ -13976,3 +13976,61 @@
 2026/05/31 04:00:01 main.go:11: exit_monitor: starting one-shot pass
 2026/05/31 04:00:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
 2026/05/31 04:00:02 monitor.go:166: exit_monitor: closed Will Ethereum dip to $1,800 in May? (thesis_stale EARLY) @ 0.0030 src=bestBid liq=$37034: PnL $-44.45 (-85.71%)
+[postmortem] read vault/03-decisions/2026-05-31-polymarket-loss-will-ethereum-dip-to-1800-in-may-2026.md: open vault/03-decisions/2026-05-31-polymarket-loss-will-ethereum-dip-to-1800-in-may-2026.md: no such file or directory
+2026/05/31 04:00:03 monitor.go:166: exit_monitor: closed Will Bitcoin dip to $70,000 in May? (thesis_stale EARLY) @ 0.0050 src=bestBid liq=$64517: PnL $-44.84 (-90.38%)
+[postmortem] read vault/03-decisions/2026-05-31-polymarket-loss-will-bitcoin-dip-to-70k-in-may-2026-438-356-919.md: open vault/03-decisions/2026-05-31-polymarket-loss-will-bitcoin-dip-to-70k-in-may-2026-438-356-919.md: no such file or directory
+2026/05/31 04:00:04 monitor.go:166: exit_monitor: closed Will XRP reach $1.60 in May? (thesis_stale EARLY) @ 0.0010 src=bestBid liq=$11586: PnL $-32.46 (-95.24%)
+[postmortem] read vault/03-decisions/2026-05-31-polymarket-loss-will-xrp-reach-1pt6-in-may-2026.md: open vault/03-decisions/2026-05-31-polymarket-loss-will-xrp-reach-1pt6-in-may-2026.md: no such file or directory
+2026/05/31 04:00:06 monitor.go:166: exit_monitor: closed Will Bitcoin dip to $72,500 in May? (thesis_stale EARLY) @ 0.0900 src=bestBid liq=$33882: PnL $-93.71 (-57.14%)
+[postmortem] read vault/03-decisions/2026-05-31-polymarket-loss-will-bitcoin-dip-to-72500-in-may-2026-from-may-27.md: open vault/03-decisions/2026-05-31-polymarket-loss-will-bitcoin-dip-to-72500-in-may-2026-from-may-27.md: no such file or directory
+2026/05/31 04:00:07 monitor.go:202: exit_monitor: 4 closed, 1 remaining
+2026/05/31 04:00:07 main.go:13: exit_monitor: done
+2026/05/31 04:05:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/31 04:05:02 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/31 04:05:02 monitor.go:202: exit_monitor: 0 closed, 1 remaining
+2026/05/31 04:05:02 main.go:13: exit_monitor: done
+2026/05/31 04:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/31 04:10:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/31 04:10:01 monitor.go:202: exit_monitor: 0 closed, 1 remaining
+2026/05/31 04:10:01 main.go:13: exit_monitor: done
+2026/05/31 04:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/31 04:15:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/31 04:15:01 monitor.go:202: exit_monitor: 0 closed, 1 remaining
+2026/05/31 04:15:01 main.go:13: exit_monitor: done
+2026/05/31 04:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/31 04:20:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/31 04:20:01 monitor.go:166: exit_monitor: closed Will "The Breadwinner" Opening Weekend Box Office be greater than 7m? (target_hit EARLY) @ 0.9200 src=bestBid liq=$15631: PnL $8.86 (4.55%)
+2026/05/31 04:20:01 monitor.go:202: exit_monitor: 1 closed, 0 remaining
+2026/05/31 04:20:01 main.go:13: exit_monitor: done
+2026/05/31 04:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/31 04:25:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/31 04:25:01 monitor.go:29: exit_monitor: no active positions
+2026/05/31 04:25:01 main.go:13: exit_monitor: done
+2026/05/31 04:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/31 04:30:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/31 04:30:01 monitor.go:29: exit_monitor: no active positions
+2026/05/31 04:30:01 main.go:13: exit_monitor: done
+2026/05/31 04:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/31 04:35:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/31 04:35:01 monitor.go:29: exit_monitor: no active positions
+2026/05/31 04:35:01 main.go:13: exit_monitor: done
+2026/05/31 04:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/31 04:40:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/31 04:40:01 monitor.go:29: exit_monitor: no active positions
+2026/05/31 04:40:01 main.go:13: exit_monitor: done
+2026/05/31 04:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/31 04:45:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/31 04:45:01 monitor.go:29: exit_monitor: no active positions
+2026/05/31 04:45:01 main.go:13: exit_monitor: done
+2026/05/31 04:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/31 04:50:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/31 04:50:01 monitor.go:29: exit_monitor: no active positions
+2026/05/31 04:50:01 main.go:13: exit_monitor: done
+2026/05/31 04:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/31 04:55:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/31 04:55:01 monitor.go:29: exit_monitor: no active positions
+2026/05/31 04:55:01 main.go:13: exit_monitor: done
+2026/05/31 05:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/31 05:00:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/31 05:00:01 monitor.go:29: exit_monitor: no active positions
+2026/05/31 05:00:01 main.go:13: exit_monitor: done

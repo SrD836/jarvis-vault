@@ -21,3 +21,9 @@
 {"ts":"2026-05-28T07:48:17Z","trade_id":"T-569366-1779809574675","domain":"claudemax-websearch","outcome":"loss","pnl_usd":-6.14,"days_open":1.68}
 {"ts":"2026-05-28T07:48:17Z","trade_id":"T-947269-1779870679596","domain":"claudemax-websearch","outcome":"breakeven","pnl_usd":0,"days_open":0.97}
 {"ts":"2026-05-28T07:48:17Z","trade_id":"T-1087513-1779894004820","domain":"claudemax-websearch","outcome":"loss","pnl_usd":-1.04,"days_open":0.7}
+{"days_open":0.31,"domain":"fortune.com","outcome":"loss","pnl_usd":-93.71,"trade_id":"T-2365528-1780173320643","ts":"2026-05-31T04:00:01Z"}
+{"days_open":0.31,"domain":"finance.yahoo.com","outcome":"loss","pnl_usd":-93.71,"trade_id":"T-2365528-1780173320643","ts":"2026-05-31T04:00:01Z"}
+{"days_open":0.31,"domain":"coindesk.com","outcome":"loss","pnl_usd":-93.71,"trade_id":"T-2365528-1780173320643","ts":"2026-05-31T04:00:01Z"}
+{"days_open":0.39,"domain":"comingsoon.net","outcome":"win","pnl_usd":8.86,"trade_id":"T-2361313-1780167889157","ts":"2026-05-31T04:20:01Z"}
+{"days_open":0.39,"domain":"the-numbers.com","outcome":"win","pnl_usd":8.86,"trade_id":"T-2361313-1780167889157","ts":"2026-05-31T04:20:01Z"}
+{"days_open":0.39,"domain":"popculture.com","outcome":"win","pnl_usd":8.86,"trade_id":"T-2361313-1780167889157","ts":"2026-05-31T04:20:01Z"}

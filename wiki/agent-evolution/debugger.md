@@ -1,7 +1,7 @@
 ---
 title: "Evolution proposal — debugger"
 type: agent-evolution
-date: 2026-05-30T04:00:38+00:00
+date: 2026-05-31T04:00:37+00:00
 agent: "[[agents/debugger]]"
 pattern: abort-recurrent
 confidence: medium
@@ -15,7 +15,7 @@ related:
 
 # Evolución propuesta — `debugger`
 
-_Generado por `hermes/learnings.py` el 2026-05-30T04:00:38+00:00. Ventana: 7 días._
+_Generado por `hermes/learnings.py` el 2026-05-31T04:00:37+00:00. Ventana: 7 días._
 
 ## Patrón: `abort-recurrent`
 
@@ -33,67 +33,64 @@ _Generado por `hermes/learnings.py` el 2026-05-30T04:00:38+00:00. Ventana: 7 dí
 
 ## Diagnóstico
 
-Los tres runs comparten tres señales que apuntan al mismo fallo, no a tres distintos:
+Señal dominante en los 3 runs: **`tool_calls_n: 0`** + abort en **`iter: 1`**. El debugger aborta antes de investigar nada — produce solo texto y no cumple el `success_criterion`. Además, **`model: deepseek-chat`** en runtime contradice el `model_primary: anthropic/claude-opus-4-8` del briefing: la skill `gsd-debug` corre en un modelo barato que devuelve conclusión sin tool use. Causa raíz probable: el agente no sabe qué criterio debe cumplir ni que debe usar herramientas.
 
-1. **`model: deepseek-chat` / `provider: deepseek`** — pero el briefing declara `model_primary: anthropic/claude-opus-4-8`. El agente NO corre en el modelo configurado; hay un override de routing que lo manda a deepseek-chat.
-2. **`tool_calls_n: 0` en los tres** — el debugger nunca investiga: emite texto y aborta en `iter: 1`. Un debugger con cero tool_calls jamás puede cumplir un `success_criterion` que exige reproducir/verificar.
-3. Tokens minúsculos (46–93 in) → tareas que ni se intentan.
+## Cambios
 
-La causa raíz más probable: modelo barato sin disciplina de herramientas + briefing sin "definition of done", así que ante la primera duda aborta en vez de reportar hallazgos.
+**1. Briefing — exigir investigación antes de cualquier verdict/abort**
 
----
+(a) `agents/debugger/index.md` (o el `.md` del briefing), en "Human notes".
 
-## Cambios propuestos
-
-### 1. Pinear el modelo (corregir el routing a deepseek)
-**(a)** `openclaw.json` (entrada del agente `debugger`)
-**(b)**
-```diff
-   "debugger": {
-     "agent_id": "debugger",
--    "model": "deepseek-chat",
-+    "model": "anthropic/claude-opus-4-8",
-+    "model_fallback": "anthropic/claude-sonnet-4-6",
-     "delegation_mode": "suggest"
-   }
-```
-**(c)** Los runs ejecutan en deepseek-chat pese a `model_primary: opus`; alinear evita el modelo que aborta sin usar tools.
-
-> Si el override no está en `openclaw.json` sino en una regla de routing/coste, indícame ese archivo: **sin acceso a la config de routing no puedo garantizar el path exacto** (ver "Datos que faltan").
-
-### 2. Añadir contrato de ejecución al briefing (anti-abort vacío)
-**(a)** `agents/debugger/index.md` (dentro de Human notes, fuera del bloque que el cron sobreescribe)
-**(b)**
+(b) snippet a añadir:
 ```markdown
-### Contrato de debugging (obligatorio antes de abortar)
+### Contrato de ejecución (anti-abort)
 
-- PROHIBIDO cerrar con `tool_calls_n: 0`. Antes de cualquier conclusión:
-  reproducir → localizar (grep/read) → hipótesis → fix → verificar.
-- `success_criterion no cumplido` NO es razón de abort si no investigaste.
-  Si tras ≥1 ciclo de tools no se cumple → `aborted: false` + reportar
-  hallazgos parciales y siguiente paso, no abortar en seco.
-- Abort solo permitido si: falta acceso/credenciales, o tarea ambigua
-  irreversible. En ese caso, `abort_reason` debe nombrar el blocker concreto.
+- PROHIBIDO abortar en `iter: 1` con `tool_calls_n: 0`. Un debugger que no
+  inspecciona nada no ha debugueado. Mínimo 1 tool call (read/grep/run) antes
+  de concluir.
+- Si falta contexto para reproducir el bug, NO abortes: emite hipótesis +
+  qué dato/log falta y devuélvelo como output parcial (no como abort).
+- `aborted: true` solo es válido si: tarea fuera de scope de debug, o
+  bloqueo externo irrecuperable. Documenta cuál en `abort_reason`.
 ```
-**(c)** El agente aborta en iter 1 sin tocar ninguna herramienta; el contrato fuerza investigación y convierte "no cumplido" en reporte útil.
+(c) Razón: 0 tool calls es el factor común de los 3 fallos; convierte el abort prematuro en output parcial accionable.
 
-### 3. Cap de iteraciones mínimas / fail-on-empty
-**(a)** caps env del agente (`openclaw.json` → `env` o `caps`)
-**(b)**
+**2. Briefing — explicitar el `success_criterion`**
+
+(a) mismo archivo.
+
+(b) snippet:
+```markdown
+### Definition of Done (debugger)
+
+Un run cumple `success_criterion` si entrega AL MENOS:
+1. Causa raíz identificada **o** hipótesis rankeadas con evidencia citada
+   (path:línea / log).
+2. Fix propuesto (diff) **o** siguiente paso de instrumentación concreto.
+3. Reproducción confirmada o, si no, el dato exacto que falta para reproducir.
+```
+(c) Razón: el abort recurrente es "criterio no cumplido" pero el agente no tiene el criterio escrito; sin Done explícito no puede satisfacerlo.
+
+**3. openclaw.json — pinnear modelo del debugger (no degradar a deepseek)**
+
+(a) `openclaw.json` (entrada del agente `debugger`).
+
+(b) diff orientativo:
 ```diff
    "debugger": {
-+    "min_tool_calls_before_abort": 1,
-+    "max_iters": 6
+     "model_primary": "anthropic/claude-opus-4-8",
++    "model_override_allowed": false,
++    "skills": {
++      "gsd-debug": { "model": "anthropic/claude-opus-4-8" }
++    },
+     "allow_agents": []
    }
 ```
-**(c)** Bloquea el patrón "0 tools → abort"; obliga al menos un intento real antes de rendirse.
+(c) Razón: el runtime corre `deepseek-chat` pese al briefing; un modelo débil tiende a responder sin tool use y a fallar el criterio.
 
----
+## Confianza y datos que faltan
 
-## Si no hay fix obvio
-Hay propuesta clara para (2) y (3). Para (1) la **confianza es media**: no veo `openclaw.json` ni dónde se origina el override a deepseek-chat.
-
-**Datos que faltarían:** (a) `openclaw.json` completo del bloque `debugger` + reglas de routing/coste; (b) el cuerpo (no solo frontmatter) de un run abortado, para ver si el `success_criterion` venía mal definido desde `planner`; (c) si `min_tool_calls_before_abort` es una cap soportada por el runtime o requiere hook.
+Confianza **media**. El cambio 3 asume que la clave que fuerza `deepseek-chat` vive en `openclaw.json` o en la config de la skill `gsd-debug`; **no tengo ese archivo**. Para confirmar necesitaría: (a) `openclaw.json` real (sección `debugger` y routing de skills), y (b) el cuerpo (no solo frontmatter) de un run fallido, para ver si el agente recibió tarea válida o devolvió texto vacío. Si el cuerpo muestra tareas mal formadas desde `planner`, el fix correcto sería en el briefing del **planner**, no del debugger.
 
 ## Apply
 
