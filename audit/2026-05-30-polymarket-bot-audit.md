@@ -1,8 +1,16 @@
 ---
 title: Auditoría Polymarket-bot — estado y roadmap a dinero real
 date: 2026-05-30
+related:
+  - "[[agents/polymarket-bot/memory]]"
+  - "[[agents/polymarket-handler]]"
+  - "[[outputs/expectancy-report-2026-05-30]]"
+  - "[[outputs/memory/polymarket-bot]]"
+  - "[[projects/polymarket-veto-loop-bot/vault/agents/polymarket-bot/memory]]"
 tags: [polymarket, bot, audit, decision]
+# auto-linked 2026-05-31
 ---
+
 
 # Auditoría Polymarket-bot + roadmap a beneficios y dinero real
 

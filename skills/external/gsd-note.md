@@ -6,11 +6,18 @@ category: general
 date: 2026-05-30T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-note
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/gsd-add-backlog]]"
+  - "[[skills/external/gsd-add-todo]]"
+  - "[[skills/external/gsd-check-todos]]"
+  - "[[skills/external/gsd-inbox]]"
+  - "[[skills/external/gsd-review-backlog]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-31
 ---
+
 
 # `gsd-note` (external skill)
 

@@ -6,11 +6,18 @@ category: general
 date: 2026-05-30T03:15:01+00:00
 source_path: ~/.claude/skills/finishing-a-development-branch
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/gsd-code-review]]"
+  - "[[skills/external/gsd-complete-milestone]]"
+  - "[[skills/external/gsd-pr-branch]]"
+  - "[[skills/external/gsd-ship]]"
+  - "[[skills/external/verification-before-completion]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-31
 ---
+
 
 # `finishing-a-development-branch` (external skill)
 

@@ -6,11 +6,18 @@ category: general
 date: 2026-05-30T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-session-report
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/gsd-eval-review]]"
+  - "[[skills/external/gsd-extract_learnings]]"
+  - "[[skills/external/gsd-milestone-summary]]"
+  - "[[skills/external/gsd-progress]]"
+  - "[[skills/external/gsd-stats]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-31
 ---
+
 
 # `gsd-session-report` (external skill)
 
