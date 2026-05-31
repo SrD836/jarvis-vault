@@ -1,6 +1,6 @@
 {
-  "bankroll": 3543.956794326001,
-  "used_exposure": 353.74130115181123,
+  "bankroll": 3442.0384359346676,
+  "used_exposure": 455.65965954314436,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
@@ -88,6 +88,27 @@
       "target_prob": 0.88,
       "thesis_invalidation": "Encuesta publicada en los próximos 3 días que muestre una disminución del margen a \u003c3 puntos, o un escándalo de corrupción confirmado con pruebas (ej. imputación fiscal) antes del cierre del mercado.",
       "edge_type": "info"
+    },
+    {
+      "id": "T-569454-1780248823792",
+      "market_id": "569454",
+      "slug": "will-any-presidential-candidate-win-outright-in-the-first-round-of-the-colombias-election",
+      "question": "Will any presidential candidate win outright in the first round of the Colombia's election?",
+      "side": "yes",
+      "entry_price": 0.126,
+      "size": 101.91835839133313,
+      "category": "elections",
+      "entry_timestamp": "2026-05-31T17:33:43Z",
+      "approved_price": 0.126,
+      "days_to_resolution": 0,
+      "horizon": "short",
+      "end_date": "2026-05-31T14:00:00Z",
+      "size_usd": 101.91835839133313,
+      "liquidity_usd": 28452.27221,
+      "estimated_prob": 0.25,
+      "target_prob": 0.25,
+      "thesis_invalidation": "Encuestas recientes muestran una fragmentación extrema que impide mayorías absolutas, o el mercado reacciona a un evento concreto que reduce aún más la probabilidad (ej. candidato dominante se retira).",
+      "edge_type": "calibration"
     }
   ]
 }
