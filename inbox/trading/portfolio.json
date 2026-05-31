@@ -1,8 +1,30 @@
 {
-  "bankroll": 3825.9380954778117,
-  "used_exposure": 0,
+  "bankroll": 3759.7353690915497,
+  "used_exposure": 66.20272638626183,
   "max_exposure": 5000,
   "max_per_trade": 500,
   "max_same_category": 10,
-  "positions": []
+  "positions": [
+    {
+      "id": "T-678929-1780223588986",
+      "market_id": "678929",
+      "slug": "will-oh-se-hoon-win-the-2026-seoul-mayoral-election",
+      "question": "Will Oh Se-hoon win the 2026 Seoul Mayoral Election",
+      "side": "yes",
+      "entry_price": 0.18,
+      "size": 66.20272638626183,
+      "category": "elections",
+      "entry_timestamp": "2026-05-31T10:33:08Z",
+      "approved_price": 0.18,
+      "days_to_resolution": 2,
+      "horizon": "short",
+      "end_date": "2026-06-03T00:00:00Z",
+      "size_usd": 66.20272638626183,
+      "liquidity_usd": 117315.9333,
+      "estimated_prob": 0.25,
+      "target_prob": 0.25,
+      "thesis_invalidation": "Oh Se-hoon pierde la nominación del Partido del Poder Popular antes de las elecciones, o surge un escándalo de corrupción verificado por medios coreanos mayoritarios antes del 3 de junio de 2026.",
+      "edge_type": "info"
+    }
+  ]
 }

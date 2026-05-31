@@ -4,5 +4,7 @@
   "kind": "investigate_unhealthy",
   "summary": "openclaw-fork-openclaw-cli-1 lleva mucho 'unhealthy' (streak 1264); reiniciar a ciegas no arregla la causa.",
   "proposed_action": "revisar healthcheck/logs de openclaw-fork-openclaw-cli-1 y reiniciar si procede",
-  "status": "pending"
+  "status": "auto_resolved",
+  "resolved_note": "ahora auto: night_remediation reinicia unhealthy/crash-loop sin OK (2026-05-31)",
+  "resolved_at": "2026-05-31T10:04:01.202833+00:00"
 }
