@@ -8888,3 +8888,335 @@
 2026/05/31 05:00:01 [scanner] config loaded: mode=simulation sort=end_date_asc window=[2,30]d
 [scanner] starting scan
 [scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=0&order=volumeNum&volume_num_min=50000
+[scanner] page 0 (offset 0): 100 raw, 52 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=100&order=volumeNum&volume_num_min=50000
+[scanner] page 1 (offset 100): 100 raw, 79 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=200&order=volumeNum&volume_num_min=50000
+[scanner] page 2 (offset 200): 100 raw, 106 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=300&order=volumeNum&volume_num_min=50000
+[scanner] page 3 (offset 300): 100 raw, 131 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=400&order=volumeNum&volume_num_min=50000
+[scanner] page 4 (offset 400): 100 raw, 151 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=500&order=volumeNum&volume_num_min=50000
+[scanner] page 5 (offset 500): 100 raw, 163 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=600&order=volumeNum&volume_num_min=50000
+[scanner] page 6 (offset 600): 100 raw, 171 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=700&order=volumeNum&volume_num_min=50000
+[scanner] page 7 (offset 700): 100 raw, 192 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=800&order=volumeNum&volume_num_min=50000
+[scanner] page 8 (offset 800): 100 raw, 206 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=900&order=volumeNum&volume_num_min=50000
+[scanner] page 9 (offset 900): 100 raw, 238 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1000&order=volumeNum&volume_num_min=50000
+[scanner] page 10 (offset 1000): 100 raw, 264 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1100&order=volumeNum&volume_num_min=50000
+[scanner] page 11 (offset 1100): 100 raw, 291 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1200&order=volumeNum&volume_num_min=50000
+[scanner] page 12 (offset 1200): 100 raw, 319 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1300&order=volumeNum&volume_num_min=50000
+[scanner] page 13 (offset 1300): 100 raw, 347 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1400&order=volumeNum&volume_num_min=50000
+[scanner] page 14 (offset 1400): 100 raw, 376 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1500&order=volumeNum&volume_num_min=50000
+[scanner] page 15 (offset 1500): 100 raw, 406 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1600&order=volumeNum&volume_num_min=50000
+[scanner] page 16 (offset 1600): 100 raw, 435 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1700&order=volumeNum&volume_num_min=50000
+[scanner] page 17 (offset 1700): 100 raw, 469 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1800&order=volumeNum&volume_num_min=50000
+[scanner] page 18 (offset 1800): 100 raw, 500 candidates so far
+[scanner] scan complete: 500 candidates (sorted by endDate asc)
+[scanner] wrote 500 candidates to vault/inbox/trading/candidates.jsonl
+[scanner] done
+2026/05/31 05:00:02 main.go:11: Brain starting...
+2026/05/31 05:00:02 brain.go:78: Brain v3: config loaded mode=simulation v2_under=0h horizon=[short<=2d, medium<=30d, long>30d] quota=100/0/0
+2026/05/31 05:00:02 brain.go:88: E2: calibration raises min_edge_points 0.030 -> 0.040 (short n=40 wr=0.600 expectancy=-9.3088/trade; shrink=0.8108 (wr/breakeven=0.600/0.740=0.811 * brier_factor=1.000 (brier=0.194 n=406)); min_edge 0.030->0.040)
+2026/05/31 05:00:02 brain.go:99: Brain v2: processing 500 candidates
+2026/05/31 05:00:02 brain.go:107: Memory loaded: 500 vetos, 132 losses
+2026/05/31 05:00:02 brain.go:117: WARN: Tavily connector missing (read tavily connector: open /openclaw-workspace/connectors/tavily.json: no such file or directory) — falling back to Claude Max research (no external API key)
+2026/05/31 05:00:02 brain.go:130: research: blacklisted domains this cycle: claudemax-websearch
+2026/05/31 05:00:02 brain.go:155: S1: 1 categories suspended by Brier review: map[sports-season:{}]
+2026/05/31 05:00:02 brain.go:164: M3: loaded 5 active anti-patterns from memory.md
+2026/05/31 05:00:02 brain.go:176: Niche estimators ON: 2 registered (crypto-barrier, sports-sharp-odds)
+2026/05/31 05:00:02 brain.go:186: M2: loaded 12 active soft rules from memory.md
+2026/05/31 05:00:03 tradingview.go:149: [P11] evaluateLive asset=BTCUSDT priceYes=0.01 endpoint=http://localhost:8766/mcp
+2026/05/31 05:00:03 tradingview.go:164: [P11] response asset=BTCUSDT bytes=3693 preview=event: message\ndata: {"jsonrpc":"2.0","id":1,"result":{"content":[{"type":"text","text":"{\n  \"symbol\": \"KUCOIN:BTCUSDT\",\n  \"exchange\": \"kucoin\",\n  \"timeframe\": \"15m\",\n  \"timestamp\": \"real-time\",\n  \"price_data\": {\n    \"current_price\": 74194.1,\n    \"open\": 74199.5,\n    \"high\": 74228.4,\n    \"low\": 74160.7,\n    \"close\": 74194.1,\n    \"change_percent\": -0.007,\n    \"volume\": 3.17563557\n  },\n  \"timeframe_context\": {\n    \"timeframe\": \"15m\",\n    \"bia...(truncated)
+2026/05/31 05:00:03 tradingview.go:166: [P11] parsed asset=BTCUSDT sentiment=bullish confidence=0.65
+2026/05/31 05:00:03 tradingview.go:192: [P11] decision asset=BTCUSDT block=true reason=tradingview BTCUSDT sentiment=bullish (conf 0.65) contradicts bear thesis (price_yes=0.01)
+2026/05/31 05:00:05 llmclient.go:147: [LLM] will-abelardo-de-la-espriella-win-the-1st-round-of-the-2026-colombian-presidential-election | block=false rule= est_prob=0.150 edge=info desc="Encuestas recientes (Invamer, Datexco) de mayo-junio 2026 muestran a De la Es..."
+2026/05/31 05:00:08 llmclient.go:147: [LLM] will-ivn-cepeda-castro-win-the-1st-round-of-the-2026-colombian-presidential-election | block=false rule= est_prob=0.450 edge=info desc="Aunque Iván Cepeda Castro es un senador de izquierda prominente, las encuest..."
+2026/05/31 05:00:08 brain.go:431: [MODEL] will-wti-crude-oil-wti-hit-low-85-in-may-266-388-493-155-935-263-225-869-296-224-342-748-678 | barrier CL=F/touch: S=$87.36 K=$85.00 sigma=106% tau=0d -> P=0.483 vs implied=0.001
+2026/05/31 05:00:08 brain.go:431: [MODEL] will-wti-dip-to-80-in-may-2026-734-629-766-626-157-663-256-712-397-816-113-876-832 | barrier CL=F/touch: S=$87.36 K=$80.00 sigma=106% tau=0d -> P=0.024 vs implied=0.001
+2026/05/31 05:00:08 brain.go:431: [MODEL] will-wti-crude-oil-wti-hit-high-100-in-may | barrier CL=F/touch: S=$87.36 K=$100.00 sigma=106% tau=0d -> P=0.010 vs implied=0.001
+2026/05/31 05:00:08 tradingview.go:149: [P11] evaluateLive asset=SOLUSDT priceYes=0.00 endpoint=http://localhost:8766/mcp
+2026/05/31 05:00:09 tradingview.go:164: [P11] response asset=SOLUSDT bytes=3629 preview=event: message\ndata: {"jsonrpc":"2.0","id":1,"result":{"content":[{"type":"text","text":"{\n  \"symbol\": \"KUCOIN:SOLUSDT\",\n  \"exchange\": \"kucoin\",\n  \"timeframe\": \"15m\",\n  \"timestamp\": \"real-time\",\n  \"price_data\": {\n    \"current_price\": 83.22,\n    \"open\": 83.23,\n    \"high\": 83.29,\n    \"low\": 83.17,\n    \"close\": 83.22,\n    \"change_percent\": -0.012,\n    \"volume\": 180.329\n  },\n  \"timeframe_context\": {\n    \"timeframe\": \"15m\",\n    \"bias\": \"Neutra...(truncated)
+2026/05/31 05:00:09 tradingview.go:166: [P11] parsed asset=SOLUSDT sentiment=bullish confidence=0.80
+2026/05/31 05:00:09 tradingview.go:192: [P11] decision asset=SOLUSDT block=true reason=tradingview SOLUSDT sentiment=bullish (conf 0.80) contradicts bear thesis (price_yes=0.00)
+2026/05/31 05:00:09 tradingview.go:149: [P11] evaluateLive asset=ETHUSDT priceYes=0.00 endpoint=http://localhost:8766/mcp
+2026/05/31 05:00:09 tradingview.go:164: [P11] response asset=ETHUSDT bytes=3713 preview=event: message\ndata: {"jsonrpc":"2.0","id":1,"result":{"content":[{"type":"text","text":"{\n  \"symbol\": \"KUCOIN:ETHUSDT\",\n  \"exchange\": \"kucoin\",\n  \"timeframe\": \"15m\",\n  \"timestamp\": \"real-time\",\n  \"price_data\": {\n    \"current_price\": 2034.05,\n    \"open\": 2033.29,\n    \"high\": 2034.39,\n    \"low\": 2032.19,\n    \"close\": 2034.05,\n    \"change_percent\": 0.037,\n    \"volume\": 39.6772533\n  },\n  \"timeframe_context\": {\n    \"timeframe\": \"15m\",\n    \"bias...(truncated)
+2026/05/31 05:00:09 tradingview.go:166: [P11] parsed asset=ETHUSDT sentiment=bullish confidence=0.40
+2026/05/31 05:00:09 brain.go:431: [MODEL] will-ethereum-reach-3800-in-may-2026 | barrier ETH-USD/touch: S=$2030.44 K=$3800.00 sigma=50% tau=0d -> P=0.010 vs implied=0.001
+2026/05/31 05:00:09 brain.go:431: [MODEL] will-ethereum-reach-3200-in-may-2026 | barrier ETH-USD/touch: S=$2030.44 K=$3200.00 sigma=50% tau=0d -> P=0.010 vs implied=0.001
+2026/05/31 05:00:11 llmclient.go:147: [LLM] elon-musk-of-tweets-may-2026-800-839 | block=false rule= est_prob=0.300 edge=info desc="Elon Musk tuitea en ráfagas mensuales no estacionarias; su promedio históri..."
+2026/05/31 05:00:11 brain.go:431: [MODEL] will-ethereum-reach-2200-may-25-31-2026 | barrier ETH-USD/touch: S=$2030.44 K=$2200.00 sigma=50% tau=0d -> P=0.010 vs implied=0.001
+2026/05/31 05:00:12 brain.go:431: [MODEL] will-ethereum-reach-3000-in-may-2026 | barrier ETH-USD/touch: S=$2030.44 K=$3000.00 sigma=50% tau=0d -> P=0.010 vs implied=0.001
+2026/05/31 05:00:14 llmclient.go:147: [LLM] will-backrooms-opening-weekend-box-office-be-greater-than-79m | block=false rule= est_prob=0.650 edge=info desc="Precio implícito en 0.81 refleja entusiasmo inicial, pero 'Backrooms' es una..."
+2026/05/31 05:00:17 llmclient.go:147: [LLM] will-the-breadwinner-opening-weekend-box-office-be-greater-than-7m | block=true rule=V6 Sin catalyst est_prob=0.010 edge=none desc="No hay información concreta o catalizador verificable en los próximos 7 dí..."
+2026/05/31 05:00:18 llmclient.go:147: [LLM] will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983 | block=true rule=V5 est_prob=0.010 edge=none desc=""
+2026/05/31 05:00:20 llmclient.go:147: [LLM] elon-musk-of-tweets-may-26-june-2-120-139 | block=false rule= est_prob=0.250 edge=calibration desc="Históricamente, Musk tweetea entre 100 y 150 veces por semana en períodos n..."
+2026/05/31 05:00:23 llmclient.go:147: [LLM] will-chong-won-oh-win-the-2026-seoul-mayoral-election | block=false rule= est_prob=0.250 edge=info desc="Chong Won-oh (People Power Party) enfrenta un ambiente electoral desfavorable..."
+2026/05/31 05:00:25 llmclient.go:147: [LLM] will-oh-se-hoon-win-the-2026-seoul-mayoral-election | block=false rule= est_prob=0.350 edge=calibration desc="Los mercados de elecciones locales coreanas sistemáticamente infravaloran a ..."
+2026/05/31 05:00:27 llmclient.go:147: [LLM] will-alexander-zverev-win-the-2026-mens-french-open | block=false rule= est_prob=0.050 edge=calibration desc="El mercado asigna un 37.7% a Zverev ganar Roland Garros 2026, pero la probabi..."
+2026/05/31 05:00:30 llmclient.go:147: [LLM] will-joao-fonseca-win-the-2026-mens-french-open | block=true rule=V3 Trigger vago: sin fecha concreta o sin evento verificable. est_prob=0.080 edge=none desc="El mercado especula con una victoria muy incierta a largo plazo; no hay infor..."
+2026/05/31 05:00:31 llmclient.go:147: [LLM] will-felix-auger-aliassime-win-the-2026-mens-french-open | block=true rule=V6: Sin catalyst: no hay evento discreto identificable en los próximos 7 días. est_prob=0.075 edge=none desc="No se identifica edge; probabilidad implícita refleja el mercado sin cataliz..."
+2026/05/31 05:00:33 llmclient.go:147: [LLM] will-flavio-cobolli-win-the-2026-mens-french-open | block=true rule=V6 est_prob=0.010 edge=none desc=""
+2026/05/31 05:00:35 llmclient.go:147: [LLM] will-frances-tiafoe-win-the-2026-mens-french-open | block=true rule=V3, V6 est_prob=0.010 edge=none desc="No se identifica ventaja informacional ni catalizador cercano."
+2026/05/31 05:00:37 llmclient.go:147: [LLM] will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-june-15-2026 | block=false rule= est_prob=0.350 edge=info desc="Reuters 2026-04-10 reportó que asesores de Trump evalúan condiciones para l..."
+2026/05/31 05:00:39 llmclient.go:147: [LLM] will-abelardo-de-la-espriella-win-the-2026-colombian-presidential-election | block=false rule= est_prob=0.250 edge=info desc="Encuestas recientes (Invamer, julio 2025) muestran a De la Espriella con ~18%..."
+2026/05/31 05:00:41 llmclient.go:147: [LLM] will-ivan-cepeda-castro-win-the-2026-colombian-presidential-election | block=false rule= est_prob=0.250 edge=info desc="Public opinion polls and historical patterns indicate that leftist candidate ..."
+2026/05/31 05:00:44 llmclient.go:147: [LLM] will-steve-hershey-win-the-2026-maryland-governor-republican-primary-election | block=false rule= est_prob=0.030 edge=info desc="Steve Hershey es un senador estatal con perfil bajo; el favorito actual es el..."
+2026/05/31 05:00:46 llmclient.go:147: [LLM] will-apple-be-the-largest-company-in-the-world-by-market-cap-on-june-30-416 | block=false rule= est_prob=0.060 edge=info desc="Apple's market cap is currently ~$2.8T, behind Microsoft (~$3.1T) and Nvidia ..."
+2026/05/31 05:00:48 llmclient.go:147: [LLM] us-iran-nuclear-deal-by-june-30 | block=false rule= est_prob=0.250 edge=info desc="Reuters y AP reportan que el equipo negociador estadounidense reconoce avance..."
+2026/05/31 05:00:50 llmclient.go:147: [LLM] mojtaba-khamenei-leaves-iran-by-june-30-2026 | block=false rule= est_prob=0.010 edge=info desc="Mojtaba Khamenei es hijo del líder supremo y no tiene historial ni indicios ..."
+2026/05/31 05:00:52 llmclient.go:147: [LLM] will-donald-trump-attend-the-next-us-x-iran-diplomatic-meeting | block=false rule= est_prob=0.030 edge=info desc="Reuters reportó el 26 de mayo de 2026 que la administración Trump está pla..."
+2026/05/31 05:00:54 llmclient.go:147: [LLM] trump-renames-ice-to-nice-by-june-30 | block=true rule=V6: Sin catalyst. Ningún anuncio, audiencia, proyecto de ley o declaración verificable sobre el cambio de nombre de ICE a NICE está programado o es inminente en los próximos 7 días. No hay evidencia pública de que la administración Trump esté considerando seriamente esta medida. est_prob=0.020 edge=none desc="No se identifica información concreta que sugiera un cambio de nombre en el ..."
+2026/05/31 05:00:57 llmclient.go:147: [LLM] us-obtains-iranian-enriched-uranium-by-june-30 | block=false rule= est_prob=0.050 edge=info desc="Reuters y AP han reportado que las conversaciones indirectas EE.UU.-Irán en ..."
+2026/05/31 05:00:59 llmclient.go:147: [LLM] ukraine-agrees-not-to-join-nato-by-june-30 | block=false rule= est_prob=0.050 edge=info desc="Numerosos reportes de Reuters y FT (feb-mar 2025) indican que Ucrania reconoc..."
+2026/05/31 05:01:01 llmclient.go:147: [LLM] will-jay-z-be-confirmed-to-have-visited-epsteins-island | block=false rule= est_prob=0.030 edge=info desc="No ha surgido evidencia pública verificable de fuentes como dashboards judic..."
+2026/05/31 05:01:03 llmclient.go:147: [LLM] us-embassy-in-damaskus-reopend-by-june-30-2026-815 | block=false rule= est_prob=0.030 edge=info desc="Reuters y AP reportaron en mayo y junio 2025 que EE.UU. y Siria han tenido co..."
+2026/05/31 05:01:05 llmclient.go:147: [LLM] pete-hegseth-impeached-by-june-30 | block=false rule= est_prob=0.030 edge=none desc="El mercado está en 0.036, lo que probablemente refleja información pública..."
+2026/05/31 05:01:07 llmclient.go:147: [LLM] will-the-iranian-regime-fall-by-june-30 | block=false rule= est_prob=0.030 edge=none desc="No encuentro información pública reciente ni patrón histórico que sugiera..."
+2026/05/31 05:01:10 llmclient.go:147: [LLM] iran-closes-its-airspace-by-june-30-432-786-462-866 | block=false rule=V3, V5, V6 superados est_prob=0.150 edge=info desc="Reuters reportó el 23 de mayo de 2026 que Israel y EE.UU. realizan ejercicio..."
+2026/05/31 05:01:12 llmclient.go:147: [LLM] israel-and-indonesia-normalize-relations-by-june-30-2026 | block=false rule= est_prob=0.100 edge=info desc="Reuters 2026-01 informó que Indonesia y Australia discuten mediación para n..."
+2026/05/31 05:01:14 llmclient.go:147: [LLM] strait-of-hormuz-traffic-returns-to-normal-by-end-of-june | block=false rule= est_prob=0.250 edge=info desc="Reuters 2026-06-10 reports Iran and GCC countries still negotiating maritime ..."
+2026/05/31 05:01:14 brain.go:431: [MODEL] will-crude-oil-cl-hit-low-50-by-end-of-june | barrier CL=F/terminal: S=$87.36 K=$50.00 sigma=106% tau=30d -> P=0.045 vs implied=0.015
+2026/05/31 05:01:16 llmclient.go:147: [LLM] kharg-island-no-longer-under-iranian-control-by-june-30-561-854 | block=false rule= est_prob=0.080 edge=info desc="Informes de Reuters y AP (abril 2026) indican que EE.UU. y aliados intensific..."
+2026/05/31 05:01:18 llmclient.go:147: [LLM] microstrategy-sells-any-bitcoin-by-may-31-2026 | block=false rule= est_prob=0.100 edge=calibration desc="Mercados de eventos corporativos con tesis 'venta de activos clave' en horizo..."
+2026/05/31 05:01:21 llmclient.go:147: [LLM] microstrategy-sells-any-bitcoin-by-june-30-2026 | block=false rule= est_prob=0.100 edge=info desc="MicroStrategy (MSTR) ha declarado consistentemente que nunca venderá sus ten..."
+2026/05/31 05:01:23 llmclient.go:147: [LLM] us-x-iran-permanent-peace-deal-by-july-31-2026-831-252 | block=false rule= est_prob=0.020 edge=info desc="Non-trascable official negotiations; no credible public reports of peace nego..."
+2026/05/31 05:01:25 llmclient.go:147: [LLM] strait-of-hormuz-traffic-returns-to-normal-by-july-31 | block=false rule= est_prob=0.420 edge=calibration desc="Los mercados de corto plazo en geopolítica suelen sobreestimar la probabilid..."
+2026/05/31 05:01:27 llmclient.go:147: [LLM] will-cdu-win-the-most-seats-in-the-2026-sachsen-anhalt-parliamentary-elections | block=false rule= est_prob=0.300 edge=info desc="CDU ha liderado las encuestas en Sachsen-Anhalt desde 2021, con apoyo estable..."
+2026/05/31 05:01:30 llmclient.go:147: [LLM] will-jimmie-kesson-be-the-next-prime-minister-of-sweden | block=false rule= est_prob=0.050 edge=info desc="Reuters 2026-05-26: Sweden Democrats lead in polls but coalition math makes \xc3..."
+2026/05/31 05:01:33 llmclient.go:147: [LLM] will-the-sweden-democrats-sd-win-the-most-seats-in-the-2026-swedish-parliamentary-election | block=false rule= est_prob=0.080 edge=info desc="Encuestas de opinión suecas de mayo 2025 (SVT/Novus) muestran SD con ~20% de..."
+2026/05/31 05:01:35 llmclient.go:147: [LLM] will-the-moderate-party-m-win-the-most-seats-in-the-2026-swedish-parliamentary-election | block=false rule= est_prob=0.050 edge=info desc="Encuestas suecas 2026 Q1 (Novus, Kantar Sifo) muestran al Partido Moderado (M..."
+2026/05/31 05:01:38 llmclient.go:147: [LLM] will-romeu-zema-win-the-2026-brazilian-presidential-election | block=false rule= est_prob=0.050 edge=info desc="Bolsonaro está inelegible hasta 2030; Zema (Novo) es el candidato de la dere..."
+2026/05/31 05:01:40 llmclient.go:147: [LLM] will-romeu-zema-finish-in-second-place-in-the-first-round-of-the-2026-brazilian-presidential-election | block=false rule= est_prob=0.060 edge=info desc="Pesquisa Genial/Quaest de maio 2026 mostra Zema com 7% das intenções de vot..."
+2026/05/31 05:01:41 llmclient.go:147: [LLM] will-renan-santos-win-the-first-round-of-the-2026-brazilian-presidential-election | block=false rule= est_prob=0.050 edge=info desc="Datafolha poll 2026-07-10 shows Santos at 6% voter intention; current price a..."
+2026/05/31 05:01:44 llmclient.go:147: [LLM] will-renan-santos-win-the-2026-brazilian-presidential-election | block=false rule=N/A est_prob=0.150 edge=info desc="Encuestas y análisis recientes (Datafolha, IPEC, Bloomberg) sugieren que Ren..."
+2026/05/31 05:01:46 llmclient.go:147: [LLM] will-ousmane-dembl-win-the-2026-ballon-dor | block=false rule= est_prob=0.100 edge=calibration desc="Los mercados de Ballon d'Or históricamente sobrevaloran jugadores de moda a ..."
+2026/05/31 05:01:49 llmclient.go:147: [LLM] will-the-republican-party-hold-exactly-28-or-29-governorships-after-the-2026-midterm-elections | block=false rule= est_prob=0.120 edge=info desc="Análisis de escaños actuales: GOP tiene 27 gobernaciones; en 2026 se renuev..."
+2026/05/31 05:01:51 llmclient.go:147: [LLM] will-bernadette-wilson-win-the-2026-alaska-governor-election | block=false rule= est_prob=0.180 edge=info desc="Alaska's ranked-choice voting system reduces spoiler effects, but Wilson face..."
+2026/05/31 05:01:53 llmclient.go:147: [LLM] will-the-upper-bound-of-the-target-federal-funds-rate-be-4pt0-at-the-end-of-2026-386 | block=false rule= est_prob=0.200 edge=info desc="El FOMC dot plot de diciembre 2025 muestra una mediana de 3.9% para finales d..."
+2026/05/31 05:01:55 llmclient.go:147: [LLM] will-the-upper-bound-of-the-target-federal-funds-rate-be-3pt5-at-the-end-of-2026-352 | block=false rule= est_prob=0.350 edge=calibration desc="Mercados de tasas de interés con horizonte >1 año tienden a infravalorar la..."
+2026/05/31 05:01:57 llmclient.go:147: [LLM] will-the-upper-bound-of-the-target-federal-funds-rate-be-3pt0-at-the-end-of-2026-593 | block=false rule= est_prob=0.120 edge=info desc="Dot plot de la Fed de marzo 2026 muestra mediana de Fed Funds terminal en 3.0..."
+2026/05/31 05:01:59 llmclient.go:147: [LLM] will-nashville-sc-win-the-2026-mls-cup | block=false rule= est_prob=0.150 edge=info desc="Nashville SC has a strong roster and coaching staff, with key players returni..."
+2026/05/31 05:02:01 llmclient.go:147: [LLM] will-satoshis-identity-be-revealed-by-december-31 | block=true rule=V3 est_prob=0.020 edge=none desc="No se identifica información concreta sobre una revelación inminente; el me..."
+2026/05/31 05:02:04 llmclient.go:147: [LLM] will-north-korea-invade-south-korea-before-2027 | block=false rule= est_prob=0.020 edge=calibration desc="Históricamente, los mercados de geopolítica de alto riesgo y baja probabili..."
+2026/05/31 05:02:07 llmclient.go:147: [LLM] will-anyone-be-charged-over-epstein-disclosures | block=false rule= est_prob=0.180 edge=info desc="Los documentos judiciales sellados del caso Epstein (p.ej., Doe v. Maxwell) h..."
+2026/05/31 05:02:55 llmclient.go:147: [LLM] will-mamdani-freeze-nyc-rents-before-2027 | block=false rule= est_prob=0.250 edge=info desc="NYC mayoral term ends Dec 2025; Mamdani has publicly signaled rent freeze pro..."
+2026/05/31 05:02:57 llmclient.go:147: [LLM] will-alberta-join-the-us | block=true rule=V6 Sin catalyst est_prob=0.010 edge=none desc=""
+2026/05/31 05:03:00 llmclient.go:147: [LLM] insurrection-act-invoked-by-december-31-184-556 | block=false rule= est_prob=0.110 edge=calibration desc="Históricamente, en EE.UU. desde 1940, la Ley de Insurrección se ha invocado..."
+2026/05/31 05:03:02 llmclient.go:147: [LLM] us-x-iran-permanent-peace-deal-by-december-31-2026-961-587-341-574-555 | block=true rule=V6 est_prob=0.100 edge=none desc="No edge identified. No catalyst for the next 7 days: no scheduled negotiation..."
+2026/05/31 05:03:04 llmclient.go:147: [LLM] iran-nuclear-test-before-2027 | block=false rule= est_prob=0.120 edge=info desc="Reuters reportó el 2026-04-20 que inteligencia israelí detecta actividad s\xc3..."
+2026/05/31 05:03:06 llmclient.go:147: [LLM] will-bp-be-acquired-before-2027-549-844 | block=false rule= est_prob=0.080 edge=info desc="Reuters 2026-05-26 reportó que BP ha iniciado conversaciones preliminares co..."
+2026/05/31 05:03:08 llmclient.go:147: [LLM] will-the-us-invade-iran-before-2027 | block=false rule= est_prob=0.100 edge=calibration desc="Históricamente, mercados de invasiones/guerras en Polymarket con >1 año de ..."
+2026/05/31 05:03:10 llmclient.go:147: [LLM] ukraine-signs-peace-deal-with-russia-before-2027 | block=false rule= est_prob=0.100 edge=info desc="Reuters ha informado en mayo 2026 que ambas partes están estancadas y sin ne..."
+2026/05/31 05:03:11 llmclient.go:147: [LLM] will-bitcoin-replace-sha-256-before-2027 | block=true rule=V3 est_prob=0.020 edge=none desc=""
+2026/05/31 05:03:13 llmclient.go:147: [LLM] will-toy-story-5-have-the-best-domestic-opening-weekend-in-2026 | block=false rule= est_prob=0.030 edge=info desc="Toy Story 5 no tiene fecha de estreno confirmada para 2026 y el historial de ..."
+2026/05/31 05:03:16 llmclient.go:147: [LLM] uae-x-qatar-sever-diplomatic-relations-in-2026 | block=false rule= est_prob=0.030 edge=info desc="No hay reportes recientes de fuentes como Reuters, AP o Al Jazeera que indiqu..."
+2026/05/31 05:03:18 llmclient.go:147: [LLM] will-zelenskyy-and-putin-meet-next-in-turkey | block=true rule=V3 est_prob=0.020 edge=none desc="Sin catalyst discreto: no hay anuncios oficiales, mediación confirmada ni ag..."
+2026/05/31 05:03:23 llmclient.go:147: [LLM] will-jensen-huang-be-richest-person-on-december-31-229 | block=false rule=V6: Catalyst presente (Forbes/Bloomberg actualizan listas semanalmente, resultados Nvidia y eventos como GTC 2025 -ya ocurrido- y posible split impactan). V3: Fecha concreta. V5: Hay al menos 3 fuentes cubriendo su ascenso patrimonial (Forbes, Bloomberg, Reuters). est_prob=0.050 edge=info desc="Información pública reciente: Nvidia reportó ingresos récord en Q4 FY2025..."
+2026/05/31 05:03:25 llmclient.go:147: [LLM] will-mohammad-bagher-ghalibaf-be-head-of-state-in-iran-end-of-2026 | block=false rule= est_prob=0.060 edge=info desc="Ghalibaf es presidente del Parlamento y figura clave del establishment; tras ..."
+2026/05/31 05:03:28 llmclient.go:147: [LLM] save-act-signed-into-law-in-2026 | block=false rule= est_prob=0.050 edge=calibration desc="El mercado implícito a 0.08 para un proyecto de ley con baja probabilidad de..."
+2026/05/31 05:03:30 llmclient.go:147: [LLM] will-abbas-araghchi-be-head-of-state-in-iran-end-of-2026 | block=false rule= est_prob=0.020 edge=info desc="Reuters 2025-04-10 reported that Araghchi is a diplomat with low domestic pol..."
+2026/05/31 05:03:32 llmclient.go:147: [LLM] will-zelenskyy-and-putin-meet-next-in-qatar-uae | block=true rule=V3, V6 est_prob=0.020 edge=none desc=""
+2026/05/31 05:03:34 llmclient.go:147: [LLM] will-china-invade-taiwan-before-2027 | block=false rule= est_prob=0.040 edge=calibration desc="Mercados de geopolítica con horizontes >2 años suelen sobreestimar riesgos ..."
+2026/05/31 05:03:35 llmclient.go:147: [LLM] us-strike-on-cuba-by-december-31 | block=false rule= est_prob=0.030 edge=other desc="No hay evidencia o precedente reciente de un ataque militar de EE. UU. a Cuba..."
+2026/05/31 05:03:38 llmclient.go:147: [LLM] will-syria-join-the-abraham-accords-before-2027 | block=false rule= est_prob=0.050 edge=info desc="Reuters reportó el 2026-05-18 que EEUU ha intensificado contactos discretos ..."
+2026/05/31 05:03:40 llmclient.go:147: [LLM] us-agrees-to-give-ukraine-security-guarantee-by-june-30 | block=false rule= est_prob=0.040 edge=info desc="Reuters 2026-05-28 reporta que el presidente ucraniano presiona por garantía..."
+2026/05/31 05:03:42 llmclient.go:147: [LLM] will-russia-capture-all-of-lyman-by-december-31-2026 | block=false rule= est_prob=0.250 edge=info desc="Captura rusa de Lyman en 2022 muestra capacidad operativa; avances rusos en D..."
+2026/05/31 05:03:44 llmclient.go:147: [LLM] will-zelenskyy-and-putin-meet-next-in-us | block=false rule= est_prob=0.050 edge=info desc="Reuters 2025-10-15 reporta que diplomáticos occidentales indican nula probab..."
+2026/05/31 05:03:46 llmclient.go:147: [LLM] will-2026-rank-as-the-sixth-hottest-year-on-record-or-lower | block=false rule= est_prob=0.150 edge=calibration desc="Mercados de temperatura anual corto plazo (1 año) tienen sesgo histórico: s..."
+2026/05/31 05:03:48 llmclient.go:147: [LLM] poilievre-out-as-leader-of-conservatives-before-2027 | block=false rule= est_prob=0.150 edge=info desc="Informes recientes (CBC, enero 2025) indican descontento en la base conservad..."
+2026/05/31 05:03:48 brain.go:431: [MODEL] will-ethereum-reach-6500-by-december-31-2026 | barrier ETH-USD/touch: S=$2029.39 K=$6500.00 sigma=50% tau=214d -> P=0.010 vs implied=0.050
+2026/05/31 05:03:48 brain.go:431: [MODEL] will-ethereum-reach-6000-by-december-31-2026 | barrier ETH-USD/touch: S=$2029.39 K=$6000.00 sigma=50% tau=214d -> P=0.010 vs implied=0.060
+2026/05/31 05:03:48 brain.go:431: [MODEL] will-ethereum-reach-5500-by-december-31-2026 | barrier ETH-USD/touch: S=$2029.39 K=$5500.00 sigma=50% tau=214d -> P=0.010 vs implied=0.070
+2026/05/31 05:03:48 brain.go:657: Brain v9 done: 6 approved, 489 blocked (P0=254 P2=2 P3=41 P4=9 P6=1 P7=1 P8=1 P9=7 P10=0 P11=12 V1=0 V2=0 V4=0 M1=0 M2=3 M3=4 N1=11 N2=1 LLM=13 E1=2 E2=38 S1=69 R1=11 R3=0 R5=9 FailClosed=0 Model=11 LLM_NoEdge=2 LLM_ParseFail=0) horizons in approved: short=2 medium=2 long=2
+2026/05/31 05:03:48 main.go:17: Brain finished.
+2026/05/31 05:03:48 main.go:11: executor: starting one-shot pass
+2026/05/31 05:03:48 executor.go:50: executor v7: mode=simulation sizingMode=kelly_fractional kellyFrac=0.25 maxPerTrade=5.00% maxExposure=40.00% minEdge=0.030 maxOpen=200 maxSameCat=10 maxPerDay=150 quota=100/0/0
+2026/05/31 05:03:48 executor.go:61: executor v8: calibration kelly_shrink=0.811 (short n=40 wr=0.600 expectancy=-9.3088/trade; shrink=0.8108 (wr/breakeven=0.600/0.740=0.811 * brier_factor=1.000 (brier=0.194 n=406)); min_edge 0.030->0.040)
+2026/05/31 05:03:48 executor.go:136: executor v7: USD horizon caps short=$5000 medium=$0 long=$0 (used now short=$0 medium=$0 long=$0)
+2026/05/31 05:03:48 executor.go:140: executor v7: total exposure cap $1530 (bankroll=$3826 × 40%)
+2026/05/31 05:03:48 executor.go:345: executor: 0 entered, 6 rejected
+2026/05/31 05:03:48 main.go:13: executor: done
+2026/05/31 05:30:01 [scanner] config loaded: mode=simulation sort=end_date_asc window=[2,30]d
+[scanner] starting scan
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=0&order=volumeNum&volume_num_min=50000
+[scanner] page 0 (offset 0): 100 raw, 52 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=100&order=volumeNum&volume_num_min=50000
+[scanner] page 1 (offset 100): 100 raw, 79 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=200&order=volumeNum&volume_num_min=50000
+[scanner] page 2 (offset 200): 100 raw, 105 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=300&order=volumeNum&volume_num_min=50000
+[scanner] page 3 (offset 300): 100 raw, 130 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=400&order=volumeNum&volume_num_min=50000
+[scanner] page 4 (offset 400): 100 raw, 150 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=500&order=volumeNum&volume_num_min=50000
+[scanner] page 5 (offset 500): 100 raw, 163 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=600&order=volumeNum&volume_num_min=50000
+[scanner] page 6 (offset 600): 100 raw, 170 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=700&order=volumeNum&volume_num_min=50000
+[scanner] page 7 (offset 700): 100 raw, 193 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=800&order=volumeNum&volume_num_min=50000
+[scanner] page 8 (offset 800): 100 raw, 207 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=900&order=volumeNum&volume_num_min=50000
+[scanner] page 9 (offset 900): 100 raw, 237 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1000&order=volumeNum&volume_num_min=50000
+[scanner] page 10 (offset 1000): 100 raw, 263 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1100&order=volumeNum&volume_num_min=50000
+[scanner] page 11 (offset 1100): 100 raw, 291 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1200&order=volumeNum&volume_num_min=50000
+[scanner] page 12 (offset 1200): 100 raw, 319 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1300&order=volumeNum&volume_num_min=50000
+[scanner] page 13 (offset 1300): 100 raw, 348 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1400&order=volumeNum&volume_num_min=50000
+[scanner] page 14 (offset 1400): 100 raw, 378 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1500&order=volumeNum&volume_num_min=50000
+[scanner] page 15 (offset 1500): 100 raw, 407 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1600&order=volumeNum&volume_num_min=50000
+[scanner] page 16 (offset 1600): 100 raw, 435 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1700&order=volumeNum&volume_num_min=50000
+[scanner] page 17 (offset 1700): 100 raw, 471 candidates so far
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=1800&order=volumeNum&volume_num_min=50000
+[scanner] page 18 (offset 1800): 100 raw, 500 candidates so far
+[scanner] scan complete: 500 candidates (sorted by endDate asc)
+[scanner] wrote 500 candidates to vault/inbox/trading/candidates.jsonl
+[scanner] done
+2026/05/31 05:30:03 main.go:11: Brain starting...
+2026/05/31 05:30:03 brain.go:78: Brain v3: config loaded mode=simulation v2_under=0h horizon=[short<=2d, medium<=30d, long>30d] quota=100/0/0
+2026/05/31 05:30:03 brain.go:88: E2: calibration raises min_edge_points 0.030 -> 0.040 (short n=40 wr=0.600 expectancy=-9.3088/trade; shrink=0.8108 (wr/breakeven=0.600/0.740=0.811 * brier_factor=1.000 (brier=0.194 n=406)); min_edge 0.030->0.040)
+2026/05/31 05:30:03 brain.go:99: Brain v2: processing 500 candidates
+2026/05/31 05:30:03 brain.go:107: Memory loaded: 500 vetos, 132 losses
+2026/05/31 05:30:03 brain.go:117: WARN: Tavily connector missing (read tavily connector: open /openclaw-workspace/connectors/tavily.json: no such file or directory) — falling back to Claude Max research (no external API key)
+2026/05/31 05:30:03 brain.go:130: research: blacklisted domains this cycle: claudemax-websearch
+2026/05/31 05:30:03 brain.go:155: S1: 1 categories suspended by Brier review: map[sports-season:{}]
+2026/05/31 05:30:03 brain.go:164: M3: loaded 5 active anti-patterns from memory.md
+2026/05/31 05:30:03 brain.go:176: Niche estimators ON: 2 registered (crypto-barrier, sports-sharp-odds)
+2026/05/31 05:30:03 brain.go:186: M2: loaded 12 active soft rules from memory.md
+2026/05/31 05:30:03 tradingview.go:149: [P11] evaluateLive asset=BTCUSDT priceYes=0.00 endpoint=http://localhost:8766/mcp
+2026/05/31 05:30:03 tradingview.go:164: [P11] response asset=BTCUSDT bytes=3701 preview=event: message\ndata: {"jsonrpc":"2.0","id":1,"result":{"content":[{"type":"text","text":"{\n  \"symbol\": \"KUCOIN:BTCUSDT\",\n  \"exchange\": \"kucoin\",\n  \"timeframe\": \"15m\",\n  \"timestamp\": \"real-time\",\n  \"price_data\": {\n    \"current_price\": 74169.7,\n    \"open\": 74181.9,\n    \"high\": 74203.9,\n    \"low\": 74139.5,\n    \"close\": 74169.7,\n    \"change_percent\": -0.016,\n    \"volume\": 3.1106329\n  },\n  \"timeframe_context\": {\n    \"timeframe\": \"15m\",\n    \"bias...(truncated)
+2026/05/31 05:30:03 tradingview.go:166: [P11] parsed asset=BTCUSDT sentiment=bullish confidence=0.80
+2026/05/31 05:30:03 tradingview.go:192: [P11] decision asset=BTCUSDT block=true reason=tradingview BTCUSDT sentiment=bullish (conf 0.80) contradicts bear thesis (price_yes=0.00)
+2026/05/31 05:30:05 llmclient.go:147: [LLM] will-abelardo-de-la-espriella-win-the-1st-round-of-the-2026-colombian-presidential-election | block=false rule= est_prob=0.120 edge=calibration desc="Los mercados de elecciones en Colombia previas (2018, 2022) muestran un sesgo..."
+2026/05/31 05:30:07 llmclient.go:147: [LLM] will-ivn-cepeda-castro-win-the-1st-round-of-the-2026-colombian-presidential-election | block=false rule= est_prob=0.650 edge=info desc="FECODE (federación de educadores) apoya a Cepeda, pero Coalición Centro Esp..."
+2026/05/31 05:30:07 brain.go:431: [MODEL] will-wti-crude-oil-wti-hit-high-100-in-may | barrier CL=F/touch: S=$87.36 K=$100.00 sigma=106% tau=0d -> P=0.010 vs implied=0.001
+2026/05/31 05:30:08 brain.go:431: [MODEL] will-wti-dip-to-80-in-may-2026-734-629-766-626-157-663-256-712-397-816-113-876-832 | barrier CL=F/touch: S=$87.36 K=$80.00 sigma=106% tau=0d -> P=0.024 vs implied=0.001
+2026/05/31 05:30:08 brain.go:431: [MODEL] will-wti-crude-oil-wti-hit-low-85-in-may-266-388-493-155-935-263-225-869-296-224-342-748-678 | barrier CL=F/touch: S=$87.36 K=$85.00 sigma=106% tau=0d -> P=0.483 vs implied=0.001
+2026/05/31 05:30:08 tradingview.go:149: [P11] evaluateLive asset=ETHUSDT priceYes=0.00 endpoint=http://localhost:8766/mcp
+2026/05/31 05:30:08 tradingview.go:164: [P11] response asset=ETHUSDT bytes=3710 preview=event: message\ndata: {"jsonrpc":"2.0","id":1,"result":{"content":[{"type":"text","text":"{\n  \"symbol\": \"KUCOIN:ETHUSDT\",\n  \"exchange\": \"kucoin\",\n  \"timeframe\": \"15m\",\n  \"timestamp\": \"real-time\",\n  \"price_data\": {\n    \"current_price\": 2031.68,\n    \"open\": 2031.96,\n    \"high\": 2032.6,\n    \"low\": 2030.89,\n    \"close\": 2031.68,\n    \"change_percent\": -0.014,\n    \"volume\": 88.6667252\n  },\n  \"timeframe_context\": {\n    \"timeframe\": \"15m\",\n    \"bias...(truncated)
+2026/05/31 05:30:08 tradingview.go:166: [P11] parsed asset=ETHUSDT sentiment=bullish confidence=0.40
+2026/05/31 05:30:08 brain.go:431: [MODEL] will-ethereum-reach-3800-in-may-2026 | barrier ETH-USD/touch: S=$2028.98 K=$3800.00 sigma=50% tau=0d -> P=0.010 vs implied=0.001
+2026/05/31 05:30:08 brain.go:431: [MODEL] will-ethereum-reach-2200-may-25-31-2026 | barrier ETH-USD/touch: S=$2028.98 K=$2200.00 sigma=50% tau=0d -> P=0.010 vs implied=0.002
+2026/05/31 05:30:08 tradingview.go:149: [P11] evaluateLive asset=SOLUSDT priceYes=0.00 endpoint=http://localhost:8766/mcp
+2026/05/31 05:30:08 tradingview.go:164: [P11] response asset=SOLUSDT bytes=3636 preview=event: message\ndata: {"jsonrpc":"2.0","id":1,"result":{"content":[{"type":"text","text":"{\n  \"symbol\": \"KUCOIN:SOLUSDT\",\n  \"exchange\": \"kucoin\",\n  \"timeframe\": \"15m\",\n  \"timestamp\": \"real-time\",\n  \"price_data\": {\n    \"current_price\": 83.12,\n    \"open\": 83.08,\n    \"high\": 83.14,\n    \"low\": 83.04,\n    \"close\": 83.12,\n    \"change_percent\": 0.048,\n    \"volume\": 165.102\n  },\n  \"timeframe_context\": {\n    \"timeframe\": \"15m\",\n    \"bias\": \"Neutral...(truncated)
+2026/05/31 05:30:08 tradingview.go:166: [P11] parsed asset=SOLUSDT sentiment=bullish confidence=0.80
+2026/05/31 05:30:08 tradingview.go:192: [P11] decision asset=SOLUSDT block=true reason=tradingview SOLUSDT sentiment=bullish (conf 0.80) contradicts bear thesis (price_yes=0.00)
+2026/05/31 05:30:08 brain.go:431: [MODEL] will-ethereum-reach-3000-in-may-2026 | barrier ETH-USD/touch: S=$2028.98 K=$3000.00 sigma=50% tau=0d -> P=0.010 vs implied=0.001
+2026/05/31 05:30:08 brain.go:431: [MODEL] will-ethereum-reach-3200-in-may-2026 | barrier ETH-USD/touch: S=$2028.98 K=$3200.00 sigma=50% tau=0d -> P=0.010 vs implied=0.001
+2026/05/31 05:30:08 brain.go:431: [MODEL] will-ethereum-reach-3600-in-may-2026 | barrier ETH-USD/touch: S=$2028.98 K=$3600.00 sigma=50% tau=0d -> P=0.010 vs implied=0.001
+2026/05/31 05:30:10 llmclient.go:147: [LLM] elon-musk-of-tweets-may-2026-800-839 | block=false rule= est_prob=0.200 edge=calibration desc="Historical Twitter posting data from 2022-2024 shows Elon Musk's monthly twee..."
+2026/05/31 05:30:13 llmclient.go:147: [LLM] will-backrooms-opening-weekend-box-office-be-greater-than-79m | block=false rule= est_prob=0.550 edge=calibration desc="Los mercados de taquilla en Polymarket suelen sobrestimar los desenlaces alto..."
+2026/05/31 05:30:15 llmclient.go:147: [LLM] will-the-breadwinner-opening-weekend-box-office-be-greater-than-7m | block=true rule=V3 Trigger vago: sin fecha concreta o sin evento verificable. est_prob=0.970 edge=none desc="El mercado se mueve por expectativas de taquilla de una película sin fecha d..."
+2026/05/31 05:30:17 llmclient.go:147: [LLM] will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983 | block=false rule= est_prob=0.010 edge=info desc="Spencer Pratt is a reality TV personality with no prior political experience,..."
+2026/05/31 05:30:19 llmclient.go:147: [LLM] elon-musk-of-tweets-may-26-june-2-120-139 | block=false rule= est_prob=0.200 edge=calibration desc="Los mercados de Polymarket sobre frecuencia de tuits de Elon Musk en ventanas..."
+2026/05/31 05:30:22 llmclient.go:147: [LLM] will-oh-se-hoon-win-the-2026-seoul-mayoral-election | block=false rule= est_prob=0.350 edge=info desc="Encuestas recientes (Gallup Korea, diciembre 2025) muestran a Oh Se-hoon con ..."
+2026/05/31 05:30:24 llmclient.go:147: [LLM] will-chong-won-oh-win-the-2026-seoul-mayoral-election | block=false rule= est_prob=0.800 edge=info desc="Chong Won-oh es el candidato del partido gobernante (PPP) en Seúl, con alta ..."
+2026/05/31 05:30:26 llmclient.go:147: [LLM] will-joao-fonseca-win-the-2026-mens-french-open | block=true rule=V6 est_prob=0.020 edge=none desc="Sin catalyst cercano; el mercado refleja principalmente especulación a largo..."
+2026/05/31 05:30:28 llmclient.go:147: [LLM] will-felix-auger-aliassime-win-the-2026-mens-french-open | block=true rule=V6 est_prob=0.020 edge=none desc="No se identifica ventaja informacional: el jugador no ha ganado un Grand Slam..."
+2026/05/31 05:30:30 llmclient.go:147: [LLM] will-frances-tiafoe-win-the-2026-mens-french-open | block=true rule=V3, V6 est_prob=0.015 edge=none desc="Sin información concreta sobre Tiafoe y el torneo; no hay catalizador próxi..."
+2026/05/31 05:30:32 llmclient.go:147: [LLM] will-alexander-zverev-win-the-2026-mens-french-open | block=false rule= est_prob=0.080 edge=none desc="No tengo información asimétrica significativa ni sesgo documentado; el prec..."
+2026/05/31 05:30:35 llmclient.go:147: [LLM] will-flavio-cobolli-win-the-2026-mens-french-open | block=true rule=V3 Trigger vago: sin fecha concreta o sin evento verificable. est_prob=0.010 edge=none desc="No hay información asimétrica ni catalizador disponible; el mercado es pura..."
+2026/05/31 05:30:36 llmclient.go:147: [LLM] will-abelardo-de-la-espriella-win-the-2026-colombian-presidential-election | block=true rule=V6 est_prob=0.650 edge=none desc="Mercado lejano sin catalizadores inmediatos; precio implícito refleja falta ..."
+2026/05/31 05:30:39 llmclient.go:147: [LLM] will-ivan-cepeda-castro-win-the-2026-colombian-presidential-election | block=false rule= est_prob=0.120 edge=info desc="Encuestas recientes (Invamer, Datexco, CNOP) muestran a Petro/izquierda en ca..."
+2026/05/31 05:30:41 llmclient.go:147: [LLM] will-steve-hershey-win-the-2026-maryland-governor-republican-primary-election | block=false rule= est_prob=0.040 edge=info desc="Steve Hershey is a state senator with high name recognition in Maryland, but ..."
+2026/05/31 05:30:43 llmclient.go:147: [LLM] israel-and-indonesia-normalize-relations-by-june-30-2026 | block=true rule=V6 Sin catalyst: no hay evento discreto identificable en los próximos 7 días. est_prob=0.030 edge=none desc="No se detecta ventaja informacional o de calibración. El precio de 0.03 refl..."
+2026/05/31 05:30:45 llmclient.go:147: [LLM] trump-renames-ice-to-nice-by-june-30 | block=false rule= est_prob=0.010 edge=info desc="No hay ninguna fuente pública que indique planes serios de renombrar ICE; la..."
+2026/05/31 05:30:47 llmclient.go:147: [LLM] will-the-iranian-regime-fall-by-june-30 | block=true rule=V3, V5, V6 est_prob=0.010 edge=none desc="No se identifica información asimétrica, arbitraje, sesgo de calibración n..."
+2026/05/31 05:30:49 llmclient.go:147: [LLM] iran-closes-its-airspace-by-june-30-432-786-462-866 | block=false rule= est_prob=0.350 edge=info desc="Reuters (2026-05-27) reporta que el gobierno iraní ha emitido avisos interno..."
+2026/05/31 05:30:51 llmclient.go:147: [LLM] will-donald-trump-attend-the-next-us-x-iran-diplomatic-meeting | block=false rule= est_prob=0.150 edge=info desc="Históricamente, Trump ha evitado reuniones diplomáticas directas con Irán,..."
+2026/05/31 05:30:53 llmclient.go:147: [LLM] strait-of-hormuz-traffic-returns-to-normal-by-end-of-june | block=false rule= est_prob=0.200 edge=info desc="Reuters reportó el 2026-05-26 que las interrupciones en el tráfico del estr..."
+2026/05/31 05:30:56 llmclient.go:147: [LLM] will-jay-z-be-confirmed-to-have-visited-epsteins-island | block=true rule=V6 est_prob=0.050 edge=none desc="No hay fuentes independientes o eventos inminentes que sugieran un cambio en ..."
+2026/05/31 05:30:58 llmclient.go:147: [LLM] mojtaba-khamenei-leaves-iran-by-june-30-2026 | block=false rule= est_prob=0.100 edge=info desc="Mojtaba Khamenei no tiene cargo oficial, no hay señales de salida de Irán; ..."
+2026/05/31 05:31:01 llmclient.go:147: [LLM] will-apple-be-the-largest-company-in-the-world-by-market-cap-on-june-30-416 | block=false rule=V1: riesgo de cola muy largo plazo, pero hay catalizadores identificables (reportes trimestrales, eventos de producto) en los próximos 7 días que pueden mover el precio. est_prob=0.150 edge=info desc="Análisis de Bloomberg y Reuters de mayo 2025 muestran que Apple está recort..."
+2026/05/31 05:31:03 llmclient.go:147: [LLM] us-embassy-in-damaskus-reopend-by-june-30-2026-815 | block=false rule= est_prob=0.030 edge=info desc="Reuters reportó el 2026-05-20 que el Departamento de Estado de EE.UU. ha ace..."
+2026/05/31 05:31:06 llmclient.go:147: [LLM] pete-hegseth-impeached-by-june-30 | block=false rule= est_prob=0.020 edge=calibration desc="Los mercados de impeachment de funcionarios de bajo perfil en Polymarket hist..."
+2026/05/31 05:31:08 llmclient.go:147: [LLM] ukraine-agrees-not-to-join-nato-by-june-30 | block=false rule= est_prob=0.100 edge=info desc="Reuters 2026-05-23 reporta que el gobierno ucraniano ha señalado informalmen..."
+2026/05/31 05:31:10 llmclient.go:147: [LLM] us-iran-nuclear-deal-by-june-30 | block=false rule= est_prob=0.250 edge=info desc="Reuters 2026-05-26 reporta que asesores iraníes califican avance diplomátic..."
+2026/05/31 05:31:12 llmclient.go:147: [LLM] us-obtains-iranian-enriched-uranium-by-june-30 | block=false rule=N/A est_prob=0.060 edge=info desc="Reuters 2026-04-25 reporta negociaciones activas entre EU e Irán sobre inter..."
+2026/05/31 05:31:12 brain.go:431: [MODEL] will-crude-oil-cl-hit-low-50-by-end-of-june | barrier CL=F/terminal: S=$87.36 K=$50.00 sigma=106% tau=30d -> P=0.045 vs implied=0.015
+2026/05/31 05:31:14 llmclient.go:147: [LLM] kharg-island-no-longer-under-iranian-control-by-june-30-561-854 | block=false rule= est_prob=0.150 edge=info desc="Análisis de inteligencia occidental (Reuters, 2026-05-20) indica aumento de ..."
+2026/05/31 05:31:17 llmclient.go:147: [LLM] microstrategy-sells-any-bitcoin-by-may-31-2026 | block=false rule= est_prob=0.250 edge=calibration desc="MicroStrategy ha reiterado públicamente que no venderá Bitcoin; el mercado ..."
+2026/05/31 05:31:19 llmclient.go:147: [LLM] microstrategy-sells-any-bitcoin-by-june-30-2026 | block=false rule= est_prob=0.400 edge=info desc="MicroStrategy's CEO Michael Saylor has publicly stated multiple times (2024-2..."
+2026/05/31 05:31:21 llmclient.go:147: [LLM] us-x-iran-permanent-peace-deal-by-july-31-2026-831-252 | block=false rule= est_prob=0.150 edge=info desc="Reuters 2025-01-10 reports lack of high-level diplomatic engagement; IAEA ins..."
+2026/05/31 05:31:23 llmclient.go:147: [LLM] strait-of-hormuz-traffic-returns-to-normal-by-july-31 | block=false rule= est_prob=0.350 edge=calibration desc="Mercados de geopolítica con horizonte <6 meses sistemáticamente sobreestima..."
+2026/05/31 05:31:26 llmclient.go:147: [LLM] will-cdu-win-the-most-seats-in-the-2026-sachsen-anhalt-parliamentary-elections | block=false rule= est_prob=0.120 edge=info desc="Encuestas recientes (2025-03-15) muestran a la AfD con ~32% frente a CDU ~28%..."
+2026/05/31 05:31:28 llmclient.go:147: [LLM] will-the-moderate-party-m-win-the-most-seats-in-the-2026-swedish-parliamentary-election | block=false rule= est_prob=0.050 edge=info desc="Current polls (Novus, Ipsos, SCB avg 2025-04) show Moderates at 17-19%, with ..."
+2026/05/31 05:31:31 llmclient.go:147: [LLM] will-the-sweden-democrats-sd-win-the-most-seats-in-the-2026-swedish-parliamentary-election | block=false rule= est_prob=0.080 edge=info desc="Encuestas recientes de Novus/SVT en mayo 2026 muestran a SD estables en ~21-2..."
+2026/05/31 05:31:33 llmclient.go:147: [LLM] will-jimmie-kesson-be-the-next-prime-minister-of-sweden | block=false rule= est_prob=0.100 edge=info desc="Jimmie Åkesson lidera encuestas con ~21% (SVT/Novus mayo 2025), pero coalici..."
+2026/05/31 05:31:36 llmclient.go:147: [LLM] will-romeu-zema-win-the-2026-brazilian-presidential-election | block=false rule= est_prob=0.014 edge=info desc="Sondajes nacionales (Datafolha, Ipec, Quaest, Fevereiro e Março 2026) mostra..."
+2026/05/31 05:31:39 llmclient.go:147: [LLM] will-renan-santos-win-the-2026-brazilian-presidential-election | block=false rule= est_prob=0.120 edge=info desc="Renan Santos es un candidato nuevo sin experiencia política relevante; encue..."
+2026/05/31 05:31:41 llmclient.go:147: [LLM] will-romeu-zema-finish-in-second-place-in-the-first-round-of-the-2026-brazilian-presidential-election | block=false rule= est_prob=0.050 edge=info desc="Pesquisas recentes (Datafolha, Quaest, Ipec junho/2025) mostram Zema entre 5%..."
+2026/05/31 05:31:43 llmclient.go:147: [LLM] will-renan-santos-win-the-first-round-of-the-2026-brazilian-presidential-election | block=false rule= est_prob=0.120 edge=info desc="Encuestas recientes (Datafolha, abril 2026) muestran a Santos estable en ~15%..."
+2026/05/31 05:31:46 llmclient.go:147: [LLM] will-ousmane-dembl-win-the-2026-ballon-dor | block=false rule= est_prob=0.150 edge=calibration desc="Mercados de Ballon d'Or históricamente sobrevaloran candidatos jóvenes con ..."
+2026/05/31 05:31:48 llmclient.go:147: [LLM] will-bernadette-wilson-win-the-2026-alaska-governor-election | block=false rule= est_prob=0.120 edge=info desc="Bernadette Wilson is a Democrat challenging incumbent Mike Dunleavy (R) in a ..."
+2026/05/31 05:31:51 llmclient.go:147: [LLM] will-the-republican-party-hold-exactly-28-or-29-governorships-after-the-2026-midterm-elections | block=false rule= est_prob=0.150 edge=calibration desc="Los mercados de predicción tienden a subestimar sistemáticamente la probabi..."
+2026/05/31 05:31:53 llmclient.go:147: [LLM] will-the-upper-bound-of-the-target-federal-funds-rate-be-3pt5-at-the-end-of-2026-352 | block=false rule= est_prob=0.100 edge=calibration desc="Los mercados de tipos de interés a más de 1 año vista sistemáticamente su..."
+2026/05/31 05:31:55 llmclient.go:147: [LLM] will-the-upper-bound-of-the-target-federal-funds-rate-be-3pt0-at-the-end-of-2026-593 | block=false rule= est_prob=0.050 edge=info desc="Los mercados de futuros de fondos federales (Fed Funds Futures) para diciembr..."
+2026/05/31 05:31:57 llmclient.go:147: [LLM] will-the-upper-bound-of-the-target-federal-funds-rate-be-4pt0-at-the-end-of-2026-386 | block=false rule= est_prob=0.250 edge=info desc="La Fed ha señalado recortes de tasas en 2026 según las proyecciones del dot..."
+2026/05/31 05:32:00 llmclient.go:147: [LLM] will-nashville-sc-win-the-2026-mls-cup | block=false rule= est_prob=0.020 edge=info desc="Nashville SC ha tenido un rendimiento inconsistente en la MLS y no ha mostrad..."
+2026/05/31 05:32:01 llmclient.go:147: [LLM] will-north-korea-invade-south-korea-before-2027 | block=false rule= est_prob=0.050 edge=none desc="El mercado parece eficiente en su estimación de baja probabilidad de invasi\xc3..."
+2026/05/31 05:32:03 llmclient.go:147: [LLM] will-anyone-be-charged-over-epstein-disclosures | block=false rule= est_prob=0.150 edge=info desc="El fiscal general Pam Bondi ha creado una página pública en el Departamento..."
+2026/05/31 05:32:06 llmclient.go:147: [LLM] will-mamdani-freeze-nyc-rents-before-2027 | block=false rule= est_prob=0.250 edge=info desc="NYC Council Speaker Adrienne Adams and progressive bloc have historically pus..."
+2026/05/31 05:32:08 llmclient.go:147: [LLM] insurrection-act-invoked-by-december-31-184-556 | block=false rule= est_prob=0.150 edge=info desc="Reuters reportó el 2025-05-15 que la administración Biden no ha considerado..."
+2026/05/31 05:32:10 llmclient.go:147: [LLM] us-x-iran-permanent-peace-deal-by-december-31-2026-961-587-341-574-555 | block=true rule=V3: Trigger vago - sin fecha concreta o evento verificable. V6: Sin catalyst - no hay evento discreto en los próximos 7 días. est_prob=0.050 edge=none desc="No aplica por veto."
+2026/05/31 05:32:13 llmclient.go:147: [LLM] will-alberta-join-the-us | block=true rule=V3: Evento sin fecha concreta o sin evento verificable. est_prob=0.010 edge=none desc="No hay edge identificable: el evento es altamente especulativo, sin precedent..."
+2026/05/31 05:32:15 llmclient.go:147: [LLM] will-the-us-invade-iran-before-2027 | block=false rule= est_prob=0.050 edge=calibration desc="Historical calibration shows geopolitical invasion markets systematically ove..."
+2026/05/31 05:32:17 llmclient.go:147: [LLM] iran-nuclear-test-before-2027 | block=false rule= est_prob=0.030 edge=info desc="IAEA reports (2025-03, 2025-05) indicate no operational nuclear test site rea..."
+2026/05/31 05:32:19 llmclient.go:147: [LLM] will-satoshis-identity-be-revealed-by-december-31 | block=false rule= est_prob=0.020 edge=info desc="No hay fuentes creíbles que indiquen una revelación inminente; los lead res..."
+2026/05/31 05:32:22 llmclient.go:147: [LLM] uae-x-qatar-sever-diplomatic-relations-in-2026 | block=false rule= est_prob=0.020 edge=info desc="Reuters 2026-04-15 reporta que mediación de Arabia Saudí y Kuwait mantiene ..."
+2026/05/31 05:32:24 llmclient.go:147: [LLM] will-bitcoin-replace-sha-256-before-2027 | block=true rule=V6 est_prob=0.030 edge=none desc="No se identifica ninguna fuente pública o privada que sugiera un cambio inmi..."
+2026/05/31 05:32:26 llmclient.go:147: [LLM] will-toy-story-5-have-the-best-domestic-opening-weekend-in-2026 | block=false rule= est_prob=0.020 edge=info desc="Toy Story 5 has no confirmed release date yet; Disney's main competition in 2..."
+2026/05/31 05:32:28 llmclient.go:147: [LLM] will-zelenskyy-and-putin-meet-next-in-turkey | block=false rule= est_prob=0.120 edge=info desc="Reuters reports as of 2025-05-27 that Turkey has offered to host peace talks ..."
+2026/05/31 05:32:31 llmclient.go:147: [LLM] will-jensen-huang-be-richest-person-on-december-31-229 | block=false rule= est_prob=0.010 edge=calibration desc="Mercados de 'richest person' con horizontes >1 año tienen sesgo histórico d..."
+2026/05/31 05:32:34 llmclient.go:147: [LLM] us-strike-on-cuba-by-december-31 | block=false rule= est_prob=0.120 edge=calibration desc="Los mercados de predicción de eventos geopolíticos extremos con horizonte l..."
+2026/05/31 05:32:36 llmclient.go:147: [LLM] will-mohammad-bagher-ghalibaf-be-head-of-state-in-iran-end-of-2026 | block=false rule= est_prob=0.120 edge=calibration desc="Los mercados de sucesión iraní sistemáticamente infravaloran la probabilid..."
+2026/05/31 05:32:39 llmclient.go:147: [LLM] save-act-signed-into-law-in-2026 | block=false rule= est_prob=0.120 edge=calibration desc="Mercados de legislación electoral en Polymarket históricamente infravaloran..."
+2026/05/31 05:32:42 llmclient.go:147: [LLM] will-abbas-araghchi-be-head-of-state-in-iran-end-of-2026 | block=false rule= est_prob=0.020 edge=calibration desc="Los mercados de predicción sobre sucesión de liderazgo en Irán a >12 meses..."
+2026/05/31 05:32:44 llmclient.go:147: [LLM] will-zelenskyy-and-putin-meet-next-in-qatar-uae | block=false rule= est_prob=0.040 edge=calibration desc="Los mercados de alto perfil geopolítico con horizontes >1 año tienden a sob..."
+2026/05/31 05:32:47 llmclient.go:147: [LLM] will-china-invade-taiwan-before-2027 | block=false rule= est_prob=0.030 edge=info desc="Análisis estratégico público: fuentes como CSIS y RAND (2024) señalan que..."
+2026/05/31 05:32:49 llmclient.go:147: [LLM] ukraine-signs-peace-deal-with-russia-before-2027 | block=false rule= est_prob=0.250 edge=info desc="Reuters reporta que conversaciones mediadas por Turquía y ONU se estancaron ..."
+2026/05/31 05:33:28 llmclient.go:147: [LLM] poilievre-out-as-leader-of-conservatives-before-2027 | block=false rule= est_prob=0.150 edge=calibration desc="Mercados de liderazgo partidista en Canadá históricamente infravaloran camb..."
+2026/05/31 05:33:30 llmclient.go:147: [LLM] will-syria-join-the-abraham-accords-before-2027 | block=false rule= est_prob=0.150 edge=info desc="Reuters 2025-06-15 reportó que funcionarios de la administración estadounid..."
+2026/05/31 05:33:32 llmclient.go:147: [LLM] us-agrees-to-give-ukraine-security-guarantee-by-june-30 | block=false rule= est_prob=0.040 edge=info desc="Reuters reportó el 2026-05-26 que la administración Trump considera un acue..."
+2026/05/31 05:33:34 llmclient.go:147: [LLM] will-russia-capture-all-of-lyman-by-december-31-2026 | block=false rule= est_prob=0.250 edge=info desc="Informes de avances rusos en el eje Kupiansk-Lyman durante las últimas seman..."
+2026/05/31 05:33:36 llmclient.go:147: [LLM] will-zelenskyy-and-putin-meet-next-in-us | block=false rule= est_prob=0.070 edge=info desc="Reuters 2025-06-10 reporta que Trump está presionando para una cumbre en EE...."
+2026/05/31 05:33:40 llmclient.go:147: [LLM] will-2026-rank-as-the-sixth-hottest-year-on-record-or-lower | block=false rule= est_prob=0.120 edge=calibration desc="Históricamente, pronósticos de temperatura global a más de 6 meses muestra..."
+2026/05/31 05:33:43 llmclient.go:147: [LLM] will-any-country-leave-nato-by-december-31-2026 | block=false rule=V3 Trigger vago superado (fecha concreta), V5 patrón débil mitigado por fuentes de Reuters/AP sobre amenazas turcas, V6 cumplido (evento discreto plausible antes de 7 días). est_prob=0.040 edge=info desc="Reuters 2026-05-10 reporta amenaza turca de salida si no se levantan restricc..."
+2026/05/31 05:33:43 brain.go:431: [MODEL] will-ethereum-reach-4500-by-december-31-2026 | barrier ETH-USD/touch: S=$2029.20 K=$4500.00 sigma=50% tau=214d -> P=0.038 vs implied=0.120
+2026/05/31 05:33:46 llmclient.go:147: [LLM] usdc-depeg-by-december-31-968 | block=false rule= est_prob=0.010 edge=calibration desc="Los mercados de stablecoin depeg en Polymarket han mostrado un sesgo históri..."
+2026/05/31 05:33:46 brain.go:431: [MODEL] will-ethereum-reach-6000-by-december-31-2026 | barrier ETH-USD/touch: S=$2029.20 K=$6000.00 sigma=50% tau=214d -> P=0.010 vs implied=0.060
+2026/05/31 05:33:46 brain.go:431: [MODEL] will-ethereum-reach-5500-by-december-31-2026 | barrier ETH-USD/touch: S=$2029.20 K=$5500.00 sigma=50% tau=214d -> P=0.010 vs implied=0.070
+2026/05/31 05:33:46 brain.go:431: [MODEL] will-ethereum-reach-6500-by-december-31-2026 | barrier ETH-USD/touch: S=$2029.20 K=$6500.00 sigma=50% tau=214d -> P=0.010 vs implied=0.050
+2026/05/31 05:33:46 brain.go:657: Brain v9 done: 7 approved, 490 blocked (P0=253 P2=2 P3=42 P4=9 P6=1 P7=1 P8=1 P9=7 P10=0 P11=13 V1=0 V2=0 V4=0 M1=0 M2=2 M3=4 N1=7 N2=0 LLM=12 E1=2 E2=36 S1=69 R1=19 R3=2 R5=8 FailClosed=0 Model=13 LLM_NoEdge=2 LLM_ParseFail=0) horizons in approved: short=1 medium=2 long=4
+2026/05/31 05:33:46 main.go:17: Brain finished.
+2026/05/31 05:33:46 main.go:11: executor: starting one-shot pass
+2026/05/31 05:33:46 executor.go:50: executor v7: mode=simulation sizingMode=kelly_fractional kellyFrac=0.25 maxPerTrade=5.00% maxExposure=40.00% minEdge=0.030 maxOpen=200 maxSameCat=10 maxPerDay=150 quota=100/0/0
+2026/05/31 05:33:46 executor.go:61: executor v8: calibration kelly_shrink=0.811 (short n=40 wr=0.600 expectancy=-9.3088/trade; shrink=0.8108 (wr/breakeven=0.600/0.740=0.811 * brier_factor=1.000 (brier=0.194 n=406)); min_edge 0.030->0.040)
+2026/05/31 05:33:46 executor.go:136: executor v7: USD horizon caps short=$5000 medium=$0 long=$0 (used now short=$0 medium=$0 long=$0)
+2026/05/31 05:33:46 executor.go:140: executor v7: total exposure cap $1530 (bankroll=$3826 × 40%)
+2026/05/31 05:33:46 executor.go:345: executor: 0 entered, 7 rejected
+2026/05/31 05:33:46 main.go:13: executor: done
+2026/05/31 06:00:01 [scanner] config loaded: mode=simulation sort=end_date_asc window=[2,30]d
+[scanner] starting scan
+[scanner] GET https://gamma-api.polymarket.com/markets?active=true&ascending=false&closed=false&limit=100&offset=0&order=volumeNum&volume_num_min=50000
