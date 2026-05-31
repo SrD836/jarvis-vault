@@ -1,0 +1,9 @@
+2026/05/31 08:20:01 main.go:127: mark_to_market: n=0 priced=0 unpriceable=0 total_unrealized=0.00 cost_unpriceable=0.00
+Traceback (most recent call last):
+  File "/home/agent/agent-stack/vault/projects/polymarket-veto-loop-bot/analytics/expectancy_report.py", line 194, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/agent/agent-stack/vault/projects/polymarket-veto-loop-bot/analytics/expectancy_report.py", line 71, in main
+    open_stake = sum(float(p.get("size_usd", 0) or 0) for p in mtm.get("positions", []))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
