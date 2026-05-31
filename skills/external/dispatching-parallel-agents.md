@@ -6,11 +6,18 @@ category: general
 date: 2026-05-31T03:15:01+00:00
 source_path: ~/.claude/skills/dispatching-parallel-agents
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/external/skill-dispatcher]]"
+  - "[[agents/skill-dispatcher]]"
+  - "[[skills/external/executing-plans]]"
+  - "[[skills/external/gsd-execute-phase]]"
+  - "[[skills/external/subagent-driven-development]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-31
 ---
+
 
 # `dispatching-parallel-agents` (external skill)
 

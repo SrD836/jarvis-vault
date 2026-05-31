@@ -6,11 +6,18 @@ category: general
 date: 2026-05-31T03:15:01+00:00
 source_path: ~/.claude/skills/voltagent-best-practices
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/skill-dispatcher]]"
+  - "[[skills/external/dispatching-parallel-agents]]"
+  - "[[skills/external/gsd-sync-skills]]"
+  - "[[skills/external/subagent-driven-development]]"
+  - "[[skills/external/voltagent-core-reference]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-31
 ---
+
 
 # `voltagent-best-practices` (external skill)
 

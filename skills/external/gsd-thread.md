@@ -6,11 +6,18 @@ category: general
 date: 2026-05-31T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-thread
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/gsd-intel]]"
+  - "[[skills/external/gsd-manager]]"
+  - "[[skills/external/gsd-note]]"
+  - "[[skills/external/gsd-resume-work]]"
+  - "[[skills/external/gsd-session-report]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-31
 ---
+
 
 # `gsd-thread` (external skill)
 

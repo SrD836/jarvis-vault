@@ -6,11 +6,18 @@ category: general
 date: 2026-05-31T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-pause-work
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[skills/external/gsd-progress]]"
+  - "[[skills/external/gsd-resume-work]]"
+  - "[[skills/external/gsd-review-backlog]]"
+  - "[[skills/external/gsd-session-report]]"
+  - "[[skills/external/gsd-verify-work]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-31
 ---
+
 
 # `gsd-pause-work` (external skill)
 

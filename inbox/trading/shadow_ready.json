@@ -1,6 +1,6 @@
 {
   "ready": true,
-  "evaluated_at": "2026-05-31T06:00:01.546578+00:00",
+  "evaluated_at": "2026-05-31T12:00:02.097681+00:00",
   "qualifying_categories": [
     {
       "category": "market",
@@ -9,13 +9,13 @@
     },
     {
       "category": "other",
-      "n": 316,
-      "brier": 0.10868898737341773
+      "n": 356,
+      "brier": 0.09650889053370786
     },
     {
       "category": "geopolitics",
-      "n": 29,
-      "brier": 0.15296206896551726
+      "n": 37,
+      "brier": 0.12906486486486488
     }
   ],
   "release_threshold": {

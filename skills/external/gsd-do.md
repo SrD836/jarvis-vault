@@ -6,11 +6,18 @@ category: general
 date: 2026-05-31T03:15:01+00:00
 source_path: ~/.claude/skills/gsd-do
 source_file: SKILL.md
-tags: [skill, external, general, mirror]
 related:
-  - "[[skills/index]]"
   - "[[00-MOC]]"
+  - "[[agents/skill-dispatcher]]"
+  - "[[skills/external/gsd-help]]"
+  - "[[skills/external/gsd-manager]]"
+  - "[[skills/external/gsd-settings]]"
+  - "[[skills/external/gsd-sync-skills]]"
+  - "[[skills/index]]"
+tags: [skill, external, general, mirror]
+# auto-linked 2026-05-31
 ---
+
 
 # `gsd-do` (external skill)
 
