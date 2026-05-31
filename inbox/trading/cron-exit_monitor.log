@@ -14420,3 +14420,52 @@
 2026/05/31 13:00:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
 2026/05/31 13:00:01 monitor.go:202: exit_monitor: 0 closed, 2 remaining
 2026/05/31 13:00:01 main.go:13: exit_monitor: done
+2026/05/31 13:05:02 main.go:11: exit_monitor: starting one-shot pass
+2026/05/31 13:05:02 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/31 13:05:02 monitor.go:202: exit_monitor: 0 closed, 2 remaining
+2026/05/31 13:05:02 main.go:13: exit_monitor: done
+2026/05/31 13:10:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/31 13:10:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/31 13:10:01 monitor.go:202: exit_monitor: 0 closed, 2 remaining
+2026/05/31 13:10:01 main.go:13: exit_monitor: done
+2026/05/31 13:15:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/31 13:15:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/31 13:15:01 monitor.go:202: exit_monitor: 0 closed, 2 remaining
+2026/05/31 13:15:01 main.go:13: exit_monitor: done
+2026/05/31 13:20:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/31 13:20:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/31 13:20:01 monitor.go:202: exit_monitor: 0 closed, 2 remaining
+2026/05/31 13:20:01 main.go:13: exit_monitor: done
+2026/05/31 13:25:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/31 13:25:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/31 13:25:01 monitor.go:202: exit_monitor: 0 closed, 2 remaining
+2026/05/31 13:25:01 main.go:13: exit_monitor: done
+2026/05/31 13:30:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/31 13:30:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/31 13:30:02 monitor.go:202: exit_monitor: 0 closed, 2 remaining
+2026/05/31 13:30:02 main.go:13: exit_monitor: done
+2026/05/31 13:35:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/31 13:35:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/31 13:35:01 monitor.go:202: exit_monitor: 0 closed, 3 remaining
+2026/05/31 13:35:01 main.go:13: exit_monitor: done
+2026/05/31 13:40:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/31 13:40:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/31 13:40:02 monitor.go:202: exit_monitor: 0 closed, 3 remaining
+2026/05/31 13:40:02 main.go:13: exit_monitor: done
+2026/05/31 13:45:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/31 13:45:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/31 13:45:01 monitor.go:202: exit_monitor: 0 closed, 3 remaining
+2026/05/31 13:45:01 main.go:13: exit_monitor: done
+2026/05/31 13:50:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/31 13:50:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/31 13:50:01 monitor.go:166: exit_monitor: closed Will BK Hacken win on 2026-05-31? (target_hit) @ 0.7600 src=bestBid liq=$17114: PnL $82.96 (194.57%)
+2026/05/31 13:50:01 monitor.go:202: exit_monitor: 1 closed, 2 remaining
+2026/05/31 13:50:01 main.go:13: exit_monitor: done
+2026/05/31 13:55:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/31 13:55:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/31 13:55:01 monitor.go:202: exit_monitor: 0 closed, 2 remaining
+2026/05/31 13:55:01 main.go:13: exit_monitor: done
+2026/05/31 14:00:01 main.go:11: exit_monitor: starting one-shot pass
+2026/05/31 14:00:01 monitor.go:25: exit_monitor v7: mode=simulation thesis-exits (no SL/TP). MinEdgePoints=0.030
+2026/05/31 14:00:01 monitor.go:202: exit_monitor: 0 closed, 2 remaining
+2026/05/31 14:00:01 main.go:13: exit_monitor: done
